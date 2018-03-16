@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI AnatomicalLocation Profile</b></p>\n  <p>A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>entity.AnatomicalLocation maps to BodySite:\n  CodeableConcept maps to code\n  Laterality maps to qualifier (slice on = coding.code)\n  Directionality maps to qualifier\n  PortionTotality maps to qualifier\t\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation",
-  "name": "BCI AnatomicalLocation Profile",
+  "name": "AnatomicalLocation",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -54,7 +54,7 @@
       {
         "id": "BodySite:entity-AnatomicalLocation",
         "path": "BodySite",
-        "short": "BCI AnatomicalLocation Profile",
+        "short": "AnatomicalLocation",
         "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.",
         "alias": [
           "anatomical location"
@@ -690,7 +690,7 @@
       {
         "id": "BodySite:entity-AnatomicalLocation",
         "path": "BodySite",
-        "short": "BCI AnatomicalLocation Profile",
+        "short": "AnatomicalLocation",
         "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes."
       },
       {
@@ -773,5 +773,6 @@
       "system": "http://hl7.org/fhir/us/breastcancer",
       "value": "entity.AnatomicalLocation"
     }
-  ]
+  ],
+  "title": "BCI AnatomicalLocation Profile"
 }

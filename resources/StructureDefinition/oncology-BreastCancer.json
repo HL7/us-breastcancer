@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI BreastCancer Profile</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancer maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  CodeableConcept maps to code\n  Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   \n  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancer",
-  "name": "BCI BreastCancer Profile",
+  "name": "BreastCancer",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -74,7 +74,7 @@
       {
         "id": "Condition:oncology-BreastCancer",
         "path": "Condition",
-        "short": "BCI BreastCancer Profile",
+        "short": "BreastCancer",
         "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
         "min": 0,
         "max": "*",
@@ -1909,7 +1909,7 @@
       {
         "id": "Condition:oncology-BreastCancer",
         "path": "Condition",
-        "short": "BCI BreastCancer Profile",
+        "short": "BreastCancer",
         "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
         "mustSupport": false
       },
@@ -2167,5 +2167,6 @@
       "value": "oncology.BreastCancer"
     }
   ],
+  "title": "BCI BreastCancer Profile",
   "description": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body."
 }

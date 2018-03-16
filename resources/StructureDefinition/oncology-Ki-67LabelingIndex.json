@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI Ki-67LabelingIndex Profile</b></p>\n  <p>Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence. The more positive cells there are, the more quickly they are dividing and forming new cells.\tReferenceRange: Low &lt;10, Intermediate 10-20, &gt;20 High</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.Ki-67LabelingIndex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  Quantity maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  Specimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-Ki-67LabelingIndex",
-  "name": "BCI Ki-67LabelingIndex Profile",
+  "name": "Ki-67LabelingIndex",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -79,7 +79,7 @@
       {
         "id": "Observation:oncology-Ki-67LabelingIndex",
         "path": "Observation",
-        "short": "BCI Ki-67LabelingIndex Profile",
+        "short": "Ki-67LabelingIndex",
         "definition": "Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence. The more positive cells there are, the more quickly they are dividing and forming new cells.\tReferenceRange: Low <10, Intermediate 10-20, >20 High",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
@@ -4329,7 +4329,7 @@
       {
         "id": "Observation:oncology-Ki-67LabelingIndex",
         "path": "Observation",
-        "short": "BCI Ki-67LabelingIndex Profile",
+        "short": "Ki-67LabelingIndex",
         "definition": "Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence. The more positive cells there are, the more quickly they are dividing and forming new cells.\tReferenceRange: Low <10, Intermediate 10-20, >20 High",
         "mustSupport": false
       },
@@ -4753,5 +4753,6 @@
       "value": "oncology.Ki-67LabelingIndex"
     }
   ],
+  "title": "BCI Ki-67LabelingIndex Profile",
   "description": "Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence. The more positive cells there are, the more quickly they are dividing and forming new cells.\tReferenceRange: Low <10, Intermediate 10-20, >20 High"
 }

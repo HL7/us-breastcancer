@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI Condition Profile</b></p>\n  <p>A condition that is or may be present in a subject. &#039;Condition&#039; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent. The name of the CIMI archetype has not been determined as of V0.0.4;. Here, the class is called Condition because it corresponds with FHIR Condition.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>condition.Condition maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  CodeableConcept maps to code\n  Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   \n  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/condition-Condition",
-  "name": "BCI Condition Profile",
+  "name": "Condition",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -74,7 +74,7 @@
       {
         "id": "Condition:condition-Condition",
         "path": "Condition",
-        "short": "BCI Condition Profile",
+        "short": "Condition",
         "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent. The name of the CIMI archetype has not been determined as of V0.0.4;. Here, the class is called Condition because it corresponds with FHIR Condition.",
         "min": 0,
         "max": "*",
@@ -1501,7 +1501,7 @@
       {
         "id": "Condition:condition-Condition",
         "path": "Condition",
-        "short": "BCI Condition Profile",
+        "short": "Condition",
         "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent. The name of the CIMI archetype has not been determined as of V0.0.4;. Here, the class is called Condition because it corresponds with FHIR Condition.",
         "mustSupport": false
       },
@@ -1666,5 +1666,6 @@
       "value": "condition.Condition"
     }
   ],
+  "title": "BCI Condition Profile",
   "description": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent. The name of the CIMI archetype has not been determined as of V0.0.4;. Here, the class is called Condition because it corresponds with FHIR Condition."
 }

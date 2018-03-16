@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI BodyStructurePresent Profile</b></p>\n  <p>Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>finding.BodyStructurePresent maps to Basic:\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-BodyStructurePresent",
-  "name": "BCI BodyStructurePresent Profile",
+  "name": "BodyStructurePresent",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -45,7 +45,7 @@
       {
         "id": "Basic:finding-BodyStructurePresent",
         "path": "Basic",
-        "short": "BCI BodyStructurePresent Profile",
+        "short": "BodyStructurePresent",
         "definition": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.",
         "alias": [
           "Z-resource",
@@ -1401,7 +1401,7 @@
       {
         "id": "Basic:finding-BodyStructurePresent",
         "path": "Basic",
-        "short": "BCI BodyStructurePresent Profile",
+        "short": "BodyStructurePresent",
         "definition": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time."
       },
       {
@@ -1696,5 +1696,6 @@
       "system": "http://hl7.org/fhir/us/breastcancer",
       "value": "finding.BodyStructurePresent"
     }
-  ]
+  ],
+  "title": "BCI BodyStructurePresent Profile"
 }

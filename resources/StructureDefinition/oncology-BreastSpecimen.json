@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI BreastSpecimen Profile</b></p>\n  <p>Specimen resulting from biopsy or excision of breast and surrounding tissue.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.BreastSpecimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSpecimen",
-  "name": "BCI BreastSpecimen Profile",
+  "name": "BreastSpecimen",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -49,7 +49,7 @@
       {
         "id": "Specimen:oncology-BreastSpecimen",
         "path": "Specimen",
-        "short": "BCI BreastSpecimen Profile",
+        "short": "BreastSpecimen",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "min": 0,
         "max": "*",
@@ -1515,7 +1515,7 @@
       {
         "id": "Specimen:oncology-BreastSpecimen",
         "path": "Specimen",
-        "short": "BCI BreastSpecimen Profile",
+        "short": "BreastSpecimen",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue."
       },
       {
@@ -1591,5 +1591,6 @@
       "system": "http://hl7.org/fhir/us/breastcancer",
       "value": "oncology.BreastSpecimen"
     }
-  ]
+  ],
+  "title": "BCI BreastSpecimen Profile"
 }

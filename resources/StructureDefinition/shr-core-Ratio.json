@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI Ratio Profile</b></p>\n  <p>A unit of measurement for the quotient of the amount of one entity to another.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>shr.core.Ratio maps to Ratio:\n  Numerator maps to numerator\n  Denominator maps to denominator\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio",
-  "name": "BCI Ratio Profile",
+  "name": "Ratio",
   "status": "draft",
   "date": "2018-03-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -45,7 +45,7 @@
       {
         "id": "Ratio:shr-core-Ratio",
         "path": "Ratio",
-        "short": "BCI Ratio Profile",
+        "short": "Ratio",
         "definition": "A unit of measurement for the quotient of the amount of one entity to another.",
         "min": 0,
         "max": "*",
@@ -197,7 +197,7 @@
       {
         "id": "Ratio:shr-core-Ratio",
         "path": "Ratio",
-        "short": "BCI Ratio Profile",
+        "short": "Ratio",
         "definition": "A unit of measurement for the quotient of the amount of one entity to another."
       },
       {
@@ -219,5 +219,6 @@
       "system": "http://hl7.org/fhir/us/breastcancer",
       "value": "shr.core.Ratio"
     }
-  ]
+  ],
+  "title": "BCI Ratio Profile"
 }
