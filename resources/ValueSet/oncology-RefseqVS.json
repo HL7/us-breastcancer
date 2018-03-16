@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-RefseqVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI RefseqVS ValueSet</b></p>\n<p></p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/RefseqVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.RefseqVS"
+    }
+  ],
+  "name": "BCI RefseqVS ValueSet",
+  "title": "BCI RefseqVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/refseq"
+      }
+    ]
+  }
+}

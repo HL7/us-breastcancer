@@ -1,0 +1,20 @@
+
+<p> </p>
+<p><b>BCI Mapping Source</b></p>
+<p>This structure represents the following BCI mapping definition:</p>
+<pre>
+oncology.BreastCancer maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:
+  CodeableConcept maps to code
+  Category maps to category
+  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus
+  ConditionPresenceContext.VerificationStatus maps to verificationStatus
+  ConditionPresenceContext.Onset maps to onset[x]
+  ConditionPresenceContext.Abatement maps to abatement[x]
+  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   
+  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance
+  ConditionPresenceContext.Severity maps to severity
+  ConditionPresenceContext.Stage maps to stage
+  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary
+  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment
+
+</pre>

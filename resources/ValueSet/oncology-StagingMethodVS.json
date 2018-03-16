@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-StagingMethodVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI StagingMethodVS ValueSet</b></p>\n<p>The methodology or standard used to do the staging.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/StagingMethodVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.StagingMethodVS"
+    }
+  ],
+  "name": "BCI StagingMethodVS ValueSet",
+  "title": "BCI StagingMethodVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "description": "The methodology or standard used to do the staging.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/StagingMethodCS",
+        "concept": [
+          {
+            "code": "ajcc_v7",
+            "display": "AJCC Breast Carcinoma Version 7"
+          },
+          {
+            "code": "ajcc_v8",
+            "display": "AJCC Breast Carcinoma Version 8"
+          }
+        ]
+      }
+    ]
+  }
+}

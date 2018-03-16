@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-YesNoVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI YesNoVS ValueSet</b></p>\n<p></p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/shr/core/vs/YesNoVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.core.YesNoVS"
+    }
+  ],
+  "name": "BCI YesNoVS ValueSet",
+  "title": "BCI YesNoVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/breastcancer/shr/core/cs/YesNoCS",
+        "concept": [
+          {
+            "code": "yes",
+            "display": "Yes, or true"
+          },
+          {
+            "code": "no",
+            "display": "No, or false"
+          }
+        ]
+      }
+    ]
+  }
+}

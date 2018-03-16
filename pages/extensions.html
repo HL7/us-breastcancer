@@ -1,0 +1,327 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2>
+  Extensions defined for this Guide
+</h2>
+<table class="codes">
+  <thead>
+    <tr>
+      <td>
+        <b>BCI Namespace</b>
+      </td>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-condition-Abatement-extension.html">Abatement</a></td>
+      <td>The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-condition-Onset-extension.html">Onset</a></td>
+      <td>The beginning or first appearance of a mental or physical disorder.
+			This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-entity-AnatomicalLocation-extension.html">AnatomicalLocation</a></td>
+      <td>A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.
+
+Note: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-entity-CollectionSite-extension.html">CollectionSite</a></td>
+      <td>The body site where specimen was collected</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-entity-Specimen-extension.html">Specimen</a></td>
+      <td>Sample for analysis. NOTE: This logical model has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-ApplicableAgeRange-extension.html">ApplicableAgeRange</a></td>
+      <td>The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-ApplicableSubpopulation-extension.html">ApplicableSubpopulation</a></td>
+      <td>Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Certainty-extension.html">Certainty</a></td>
+      <td>The degree of confidence in a conclusion or assertion.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-DeltaFlag-extension.html">DeltaFlag</a></td>
+      <td>Indicator of significant change (delta) from the last or previous measurement.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-DiagnosticService-extension.html">DiagnosticService</a></td>
+      <td>A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-EvaluationComponent-extension.html">EvaluationComponent</a></td>
+      <td>A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-EvaluationResultTopic-extension.html">EvaluationResultTopic</a></td>
+      <td>The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
+
+In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.
+
+In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related (&#039;has-member&#039;) observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-ExceptionValue-extension.html">ExceptionValue</a></td>
+      <td>Reason that a value associated with a test or other finding is missing.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-FindingMethod-extension.html">FindingMethod</a></td>
+      <td>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#039;method&#039;.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Focus-extension.html">Focus</a></td>
+      <td>The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.
+		
+		CIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Interpretation-extension.html">Interpretation</a></td>
+      <td>A clinical interpretation of a finding.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-KnownOrSuspectedPresentContext-extension.html">KnownOrSuspectedPresentContext</a></td>
+      <td>KnownOrSuspectedPresentContext indicates the finding in question exists or is present to some level of certainty. For example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present, i.e., the present time.
+	
+	In CIMI Version 0.0.4, this class is called KnownOrSuspectedPresent, but the name is being changed to include &#039;Context&#039;. In addition, the class AssertionKnownOrSuspectedPresent is being collapsed into KnownOrSuspectedPresent, so the attributes of that class are included here.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Members-extension.html">Members</a></td>
+      <td>Members represent the elements of a group of a related but independent evaluations. Examples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.
+		
+		CIMI V0.0.4 does not have this attribute.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Morphology-extension.html">Morphology</a></td>
+      <td>The kind of structure being represented. This can define both normal and abnormal morphologies.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Precondition-extension.html">Precondition</a></td>
+      <td>A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-ReferenceRange-extension.html">ReferenceRange</a></td>
+      <td>The usual or acceptable range for a test result.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-Type-extension.html">Type</a></td>
+      <td>The most specific code (lowest level term) describing the kind or sort of thing being represented.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-finding-VerificationStatus-extension.html">VerificationStatus</a></td>
+      <td>Whether an assessment has been confirmed by testing or observation.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-oncology-ColdIschemicTime-extension.html">ColdIschemicTime</a></td>
+      <td>The time between the chilling of a tissue or tissue sample and the time it is warmed. 
+		NOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-oncology-DistanceToNipple-extension.html">DistanceToNipple</a></td>
+      <td>The body site location in relation to the nipple.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-oncology-MorphologyBehavior-extension.html">MorphologyBehavior</a></td>
+      <td>A description of the morphology characteristics of the cancer.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="StructureDefinition-oncology-StageTimingPrefix-extension.html">StageTimingPrefix</a></td>
+      <td>Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#039;yc&#039; (e.g. ycNX)</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-base64Binary-extension.html">base64Binary</a></td>
+      <td>The base64Binary that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-boolean-extension.html">boolean</a></td>
+      <td>The boolean that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-code-extension.html">code</a></td>
+      <td>The code that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-date-extension.html">date</a></td>
+      <td>The date that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-dateTime-extension.html">dateTime</a></td>
+      <td>The dateTime that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-decimal-extension.html">decimal</a></td>
+      <td>The decimal that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-id-extension.html">id</a></td>
+      <td>The id that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-instant-extension.html">instant</a></td>
+      <td>The instant that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-integer-extension.html">integer</a></td>
+      <td>The integer that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-markdown-extension.html">markdown</a></td>
+      <td>The markdown that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-oid-extension.html">oid</a></td>
+      <td>The oid that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-positiveInt-extension.html">positiveInt</a></td>
+      <td>The positiveInt that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-string-extension.html">string</a></td>
+      <td>The string that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-time-extension.html">time</a></td>
+      <td>The time that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-unsignedInt-extension.html">unsignedInt</a></td>
+      <td>The unsignedInt that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-uri-extension.html">uri</a></td>
+      <td>The uri that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Primitive</td>
+      <td><a href="StructureDefinition-primitive-xhtml-extension.html">xhtml</a></td>
+      <td>The xhtml that represents the value of the BCI element to which it is applied.</td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td><a href="StructureDefinition-shr-base-ContextCode-extension.html">ContextCode</a></td>
+      <td>A code ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: &#039;Finding context (attribute)&#039; (SCTID: 408729009) and &#039;Procedure context (attribute)&#039; (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.
+		
+		This attribute was named &#039;type&#039; in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.</td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td><a href="StructureDefinition-shr-base-StatementTopic-extension.html">StatementTopic</a></td>
+      <td>Compositional and reusable grouping of attributes that make up the clinical focus of an entry. A topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).</td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td><a href="StructureDefinition-shr-base-TopicCode-extension.html">TopicCode</a></td>
+      <td>The concept representing the finding or action that is the topic of the statement. For actions, the key represents the action being described. For findings, the key represents the &#039;question&#039; or property being investigated. For evaluation result findings, the key contains a concept for an observable entity, such as systolic blood pressure. For assertion findings (which by nature lack an explicit question), the key contains a default concept signifying that an assertion is being made. In all cases, the key describes the topic independent of the context of the action or the finding.
+		
+		This attribute was named &#039;key&#039; in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-Category-extension.html">Category</a></td>
+      <td>A class or division of people or things having particular shared characteristics</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-ClockDirection-extension.html">ClockDirection</a></td>
+      <td>A direction indicated by an angle relative to 12 o&#039;clock.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-CodeableConcept-extension.html">CodeableConcept</a></td>
+      <td>A set of codes drawn from different coding systems, representing the same concept.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-Quantity-extension.html">Quantity</a></td>
+      <td>A quantity with units, whose value may be bounded from above or below, as defined in FHIR.
+
+This definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-Range-extension.html">Range</a></td>
+      <td>An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-Ratio-extension.html">Ratio</a></td>
+      <td>A unit of measurement for the quotient of the amount of one entity to another.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="StructureDefinition-shr-core-TimePeriod-extension.html">TimePeriod</a></td>
+      <td>A period of time defined by a start and end time, date, or year. If the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+{% include footer.html %}

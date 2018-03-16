@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "condition-ConditionVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ConditionVS ValueSet</b></p>\n<p></p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "condition.ConditionVS"
+    }
+  ],
+  "name": "BCI ConditionVS ValueSet",
+  "title": "BCI ConditionVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "64572001"
+          }
+        ]
+      }
+    ]
+  }
+}

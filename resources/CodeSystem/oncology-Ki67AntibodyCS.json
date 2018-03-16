@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-Ki67AntibodyCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI Ki67AntibodyCS CodeSystem</b></p>\n<p>Antibodies relevant to Ki-67 Text.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/cs/Ki67AntibodyCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.Ki67AntibodyCS"
+  },
+  "name": "BCI Ki67AntibodyCS CodeSystem",
+  "title": "BCI Ki67AntibodyCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "description": "Antibodies relevant to Ki-67 Text.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "MIB1",
+      "definition": "MIB1 - CAP#31125",
+      "display": "MIB1 - CAP#31125"
+    },
+    {
+      "code": "SP6",
+      "definition": "SP6 - CAP#31126",
+      "display": "SP6 - CAP#31126"
+    },
+    {
+      "code": "MM1",
+      "definition": "MM1 - CAP#32169",
+      "display": "MM1 - CAP#32169"
+    },
+    {
+      "code": "30-9",
+      "definition": "30-9 - CAP#32160",
+      "display": "30-9 - CAP#32160"
+    },
+    {
+      "code": "IR/IS62",
+      "definition": "IR / IS626 - CAP#32168",
+      "display": "IR / IS626 - CAP#32168"
+    }
+  ]
+}

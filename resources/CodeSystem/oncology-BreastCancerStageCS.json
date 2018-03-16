@@ -1,0 +1,79 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-BreastCancerStageCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI BreastCancerStageCS CodeSystem</b></p>\n<p>The AJCC stage group.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastCancerStageCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.BreastCancerStageCS"
+  },
+  "name": "BCI BreastCancerStageCS CodeSystem",
+  "title": "BCI BreastCancerStageCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "description": "The AJCC stage group.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 9,
+  "concept": [
+    {
+      "code": "0",
+      "definition": "AJCC Stage 0",
+      "display": "AJCC Stage 0"
+    },
+    {
+      "code": "IA",
+      "definition": "AJCC Stage IA",
+      "display": "AJCC Stage IA"
+    },
+    {
+      "code": "IB",
+      "definition": "AJCC Stage IB",
+      "display": "AJCC Stage IB"
+    },
+    {
+      "code": "IIA",
+      "definition": "AJCC Stage IIA",
+      "display": "AJCC Stage IIA"
+    },
+    {
+      "code": "IIB",
+      "definition": "AJCC Stage IIB",
+      "display": "AJCC Stage IIB"
+    },
+    {
+      "code": "IIIA",
+      "definition": "AJCC Stage IIIA",
+      "display": "AJCC Stage IIIA"
+    },
+    {
+      "code": "IIIB",
+      "definition": "AJCC Stage IIIB",
+      "display": "AJCC Stage IIIB"
+    },
+    {
+      "code": "IIIC",
+      "definition": "AJCC Stage IIIC",
+      "display": "AJCC Stage IIIC"
+    },
+    {
+      "code": "IV",
+      "definition": "AJCC Stage IV",
+      "display": "AJCC Stage IV"
+    }
+  ]
+}

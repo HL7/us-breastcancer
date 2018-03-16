@@ -1,0 +1,259 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2>
+  ValueSets defined as part of this Implementation Guide:
+</h2>
+
+<h3>Value Sets</h3>
+<table class="codes">
+  <thead>
+    <tr>
+      <td>
+        <b>BCI Namespace</b>
+      </td>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-condition-ConditionCategoryVS.html">ConditionCategoryVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-condition-ConditionVS.html">ConditionVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-entity-AnatomicalLocationVS.html">AnatomicalLocationVS</a></td>
+      <td>Codes that describe normal and pathologic anatomic systems, regions, cavities, and spaces.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-entity-DirectionalityVS.html">DirectionalityVS</a></td>
+      <td>Anatomical location or specimen further detailing directionality. Codes are from NCI</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-entity-LateralityVS.html">LateralityVS</a></td>
+      <td>Anatomical location or specimen further detailing the side(s) of interest. Codes are from NCI</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-entity-PortionTotalityVS.html">PortionTotalityVS</a></td>
+      <td>Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-finding-DeltaFlagVS.html">DeltaFlagVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-finding-DiagnosticServiceVS.html">DiagnosticServiceVS</a></td>
+      <td>The type of laboratory service used in producing a laboratory result</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-finding-ExceptionValueVS.html">ExceptionValueVS</a></td>
+      <td>Reasons that a value associated with a test or other finding is missing. Extended set based on http://hl7.org/fhir/ValueSet/observation-valueabsentreason</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-finding-KnownOrSuspectedPresentContextVS.html">KnownOrSuspectedPresentContextVS</a></td>
+      <td>A code describing whether the finding in question is present, possible, suspected, etc.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastCancerMStageVS.html">BreastCancerMStageVS</a></td>
+      <td>Metastasis category according to AJCC breast cancer staging recommendations.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastCancerNStageVS.html">BreastCancerNStageVS</a></td>
+      <td>Regional nodes N category according to AJCC breast cancer staging recommendations. The codes do not include the stage timing prefix, recorded separately in the StageTimingPrefix attribute.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastCancerStageVS.html">BreastCancerStageVS</a></td>
+      <td>The AJCC stage group.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastCancerTStageVS.html">BreastCancerTStageVS</a></td>
+      <td>Tumor category according to AJCC breast cancer staging recommendations.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastCancerTypeVS.html">BreastCancerTypeVS</a></td>
+      <td>Histologic types of breast cancer. Codes are drawn from ICD-O-3.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastSiteVS.html">BreastSiteVS</a></td>
+      <td>Topography of the breast. Codes are drawn from ICD-O-3.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastSpecimenCollectionMethodVS.html">BreastSpecimenCollectionMethodVS</a></td>
+      <td>The surgical method used to obtain the tissue sample.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-BreastSpecimenTypeVS.html">BreastSpecimenTypeVS</a></td>
+      <td>The type of specimen obtained from the breast.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-DegreeOfLymphaticInvolvementVS.html">DegreeOfLymphaticInvolvementVS</a></td>
+      <td>Value set containing the degree of lymphatic involvement.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-EstrogenAntibodyVS.html">EstrogenAntibodyVS</a></td>
+      <td>Antibodies relevant to Estrogen receptor.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-GeneIdentifierVS.html">GeneIdentifierVS</a></td>
+      <td>A unique code for a gene, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous communication, drawn from HUGO Gene Nomenclature Committee.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-HER2AntibodyIHCVS.html">HER2AntibodyIHCVS</a></td>
+      <td>Antibodies relevant to HER2 receptor (IHC Test).</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-HER2ISHMethodVS.html">HER2ISHMethodVS</a></td>
+      <td>Value set containing In Situ Hybridization methods of determining HER2 status</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-HER2MethodVS.html">HER2MethodVS</a></td>
+      <td>Value set containing methods of determining HER2 status</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-HER2StatusVS.html">HER2StatusVS</a></td>
+      <td>HER2 status overall result</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-Ki67AntibodyVS.html">Ki67AntibodyVS</a></td>
+      <td>Antibodies relevant to Ki-67 Text.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-LeftRightLateralityVS.html">LeftRightLateralityVS</a></td>
+      <td>Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-LymphSystemSubdivisionVS.html">LymphSystemSubdivisionVS</a></td>
+      <td>A lymph node area or nodal group; a subdivision of the entire lymphatic system. For breast cancer, this includes 5 areas: internal mammary lymph nodes, axillary lymph nodes level I, II, and III, and the supraclavicular lymph nodes.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-MorphologyBehaviorVS.html">MorphologyBehaviorVS</a></td>
+      <td>The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-NottinghamCombinedGradeVS.html">NottinghamCombinedGradeVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-NuclearPleomorphismScoreVS.html">NuclearPleomorphismScoreVS</a></td>
+      <td>Value set containing the scores for nuclear pleomorphism.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-OncotypeDXRiskScoreInterpretationVS.html">OncotypeDXRiskScoreInterpretationVS</a></td>
+      <td>Intepretation of OncotypeDX Recurrence Score</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-PositiveNegativeVS.html">PositiveNegativeVS</a></td>
+      <td>Value set containing the values positive and negative.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-ProgesteroneAntibodyVS.html">ProgesteroneAntibodyVS</a></td>
+      <td>Antibodies relevant to Estrogen receptor.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-RefseqVS.html">RefseqVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-StageTimingPrefixVS.html">StageTimingPrefixVS</a></td>
+      <td>When staging was done, relative to treatment events.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-StagingMethodVS.html">StagingMethodVS</a></td>
+      <td>The methodology or standard used to do the staging.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-StainingControlVS.html">StainingControlVS</a></td>
+      <td>Staining of control cells, required if staining is negative.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-StainingIntensityVS.html">StainingIntensityVS</a></td>
+      <td>Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-TubuleFormationScoreVS.html">TubuleFormationScoreVS</a></td>
+      <td>Value set containing the extent (scope) of tubule formation.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="ValueSet-oncology-TumorMarginDescriptionVS.html">TumorMarginDescriptionVS</a></td>
+      <td>Value set containing the descriptions of tumor margin.</td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="ValueSet-shr-core-ClockDirectionVS.html">ClockDirectionVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="ValueSet-shr-core-YesNoUnknownVS.html">YesNoUnknownVS</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Core</td>
+      <td><a href="ValueSet-shr-core-YesNoVS.html">YesNoVS</a></td>
+      <td></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+{% include footer.html %}

@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-DegreeOfLymphaticInvolvementCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI DegreeOfLymphaticInvolvementCS CodeSystem</b></p>\n<p>Value set containing the degree of lymphatic involvement.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/cs/DegreeOfLymphaticInvolvementCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.DegreeOfLymphaticInvolvementCS"
+  },
+  "name": "BCI DegreeOfLymphaticInvolvementCS CodeSystem",
+  "title": "BCI DegreeOfLymphaticInvolvementCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-16",
+  "description": "Value set containing the degree of lymphatic involvement.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "microscopic",
+      "definition": "Only a few cancer cells are in the node.",
+      "display": "Only a few cancer cells are in the node."
+    },
+    {
+      "code": "gross",
+      "definition": "The cancer can be seen or felt without aid of microscopy.",
+      "display": "The cancer can be seen or felt without aid of microscopy."
+    },
+    {
+      "code": "extracapsular",
+      "definition": "Cancer has spread outside the wall of the node.",
+      "display": "Cancer has spread outside the wall of the node."
+    }
+  ]
+}
