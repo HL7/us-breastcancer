@@ -1,0 +1,1129 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+    <id value="1" />
+    <url value="http://hl7.org/fhir/us/breastcancer/ImplementationGuide/1" />
+    <name value="Breast Cancer Interoperability FHIR Profiles" />
+    <status value="draft" />
+    <fhirVersion value="3.0.1"/>
+    <package>
+        <name value="Profiles in this Implementation Guide" />
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/entity-AnatomicalLocation" />
+                <display value="BCI AnatomicalLocation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BRCA1Variant" />
+                <display value="BCI BRCA1Variant Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BRCA2Variant" />
+                <display value="BCI BRCA2Variant Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-BodyStructurePresent" />
+                <display value="BCI BodyStructurePresent Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BreastCancer" />
+                <display value="BCI BreastCancer Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BreastCancerGeneticAnalysisPanel" />
+                <display value="BCI BreastCancerGeneticAnalysisPanel Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BreastCancerTNMStage" />
+                <display value="BCI BreastCancerTNMStage Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BreastSite" />
+                <display value="BCI BreastSite Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-BreastSpecimen" />
+                <display value="BCI BreastSpecimen Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/condition-Condition" />
+                <display value="BCI Condition Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-EstrogenReceptorStatus" />
+                <display value="BCI EstrogenReceptorStatus Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-EvaluationResultRecorded" />
+                <display value="BCI EvaluationResultRecorded Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-GeneticVariant" />
+                <display value="BCI GeneticVariant Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-HER2ReceptorStatus" />
+                <display value="BCI HER2ReceptorStatus Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-HER2ReceptorStatusIHC" />
+                <display value="BCI HER2ReceptorStatusIHC Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-HER2ReceptorStatusISH" />
+                <display value="BCI HER2ReceptorStatusISH Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-HistologicGrade" />
+                <display value="BCI HistologicGrade Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-Ki-67LabelingIndex" />
+                <display value="BCI Ki-67LabelingIndex Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-LaboratoryTestResultRecorded" />
+                <display value="BCI LaboratoryTestResultRecorded Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-LymphaticInvolvement" />
+                <display value="BCI LymphaticInvolvement Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-OncotypeDxRecurrenceScore" />
+                <display value="BCI OncotypeDxRecurrenceScore Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-PercentageRange" />
+                <display value="BCI PercentageRange Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-ProgesteroneReceptorStatus" />
+                <display value="BCI ProgesteroneReceptorStatus Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Range" />
+                <display value="BCI Range Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Ratio" />
+                <display value="BCI Ratio Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-S-PhaseFraction" />
+                <display value="BCI S-PhaseFraction Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-SimplifiedLaboratoryTestResultRecorded" />
+                <display value="BCI SimplifiedLaboratoryTestResultRecorded Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/entity-Specimen" />
+                <display value="BCI Specimen Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-TumorDimensions" />
+                <display value="BCI TumorDimensions Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-TumorMargins" />
+                <display value="BCI TumorMargins Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/condition-Abatement-extension" />
+                <display value="BCI Abatement Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/entity-AnatomicalLocation-extension" />
+                <display value="BCI AnatomicalLocation Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-ApplicableAgeRange-extension" />
+                <display value="BCI ApplicableAgeRange Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-ApplicableSubpopulation-extension" />
+                <display value="BCI ApplicableSubpopulation Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Category-extension" />
+                <display value="BCI Category Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Certainty-extension" />
+                <display value="BCI Certainty Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-ClockDirection-extension" />
+                <display value="BCI ClockDirection Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-CodeableConcept-extension" />
+                <display value="BCI CodeableConcept Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-ColdIschemicTime-extension" />
+                <display value="BCI ColdIschemicTime Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/entity-CollectionSite-extension" />
+                <display value="BCI CollectionSite Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-base-ContextCode-extension" />
+                <display value="BCI ContextCode Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-DeltaFlag-extension" />
+                <display value="BCI DeltaFlag Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-DiagnosticService-extension" />
+                <display value="BCI DiagnosticService Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-DistanceToNipple-extension" />
+                <display value="BCI DistanceToNipple Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-EvaluationComponent-extension" />
+                <display value="BCI EvaluationComponent Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-EvaluationResultTopic-extension" />
+                <display value="BCI EvaluationResultTopic Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-ExceptionValue-extension" />
+                <display value="BCI ExceptionValue Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-FindingMethod-extension" />
+                <display value="BCI FindingMethod Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Focus-extension" />
+                <display value="BCI Focus Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Interpretation-extension" />
+                <display value="BCI Interpretation Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-KnownOrSuspectedPresentContext-extension" />
+                <display value="BCI KnownOrSuspectedPresentContext Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Members-extension" />
+                <display value="BCI Members Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-MorphologyBehavior-extension" />
+                <display value="BCI MorphologyBehavior Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Morphology-extension" />
+                <display value="BCI Morphology Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/condition-Onset-extension" />
+                <display value="BCI Onset Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Precondition-extension" />
+                <display value="BCI Precondition Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Quantity-extension" />
+                <display value="BCI Quantity Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Range-extension" />
+                <display value="BCI Range Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Ratio-extension" />
+                <display value="BCI Ratio Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-ReferenceRange-extension" />
+                <display value="BCI ReferenceRange Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/entity-Specimen-extension" />
+                <display value="BCI Specimen Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-StageTimingPrefix-extension" />
+                <display value="BCI StageTimingPrefix Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-base-StatementTopic-extension" />
+                <display value="BCI StatementTopic Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-TimePeriod-extension" />
+                <display value="BCI TimePeriod Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-base-TopicCode-extension" />
+                <display value="BCI TopicCode Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-Type-extension" />
+                <display value="BCI Type Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/finding-VerificationStatus-extension" />
+                <display value="BCI VerificationStatus Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-base64Binary-extension" />
+                <display value="BCI base64Binary Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-boolean-extension" />
+                <display value="BCI boolean Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-code-extension" />
+                <display value="BCI code Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-date-extension" />
+                <display value="BCI date Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-dateTime-extension" />
+                <display value="BCI dateTime Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-decimal-extension" />
+                <display value="BCI decimal Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-id-extension" />
+                <display value="BCI id Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-instant-extension" />
+                <display value="BCI instant Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-integer-extension" />
+                <display value="BCI integer Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-markdown-extension" />
+                <display value="BCI markdown Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-oid-extension" />
+                <display value="BCI oid Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-positiveInt-extension" />
+                <display value="BCI positiveInt Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-string-extension" />
+                <display value="BCI string Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-time-extension" />
+                <display value="BCI time Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-unsignedInt-extension" />
+                <display value="BCI unsignedInt Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-uri-extension" />
+                <display value="BCI uri Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-xhtml-extension" />
+                <display value="BCI xhtml Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/entity-AnatomicalLocationVS" />
+                <display value="BCI AnatomicalLocationVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerMStageVS" />
+                <display value="BCI BreastCancerMStageVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerNStageVS" />
+                <display value="BCI BreastCancerNStageVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerStageVS" />
+                <display value="BCI BreastCancerStageVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerTStageVS" />
+                <display value="BCI BreastCancerTStageVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerTypeVS" />
+                <display value="BCI BreastCancerTypeVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastSiteVS" />
+                <display value="BCI BreastSiteVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastSpecimenCollectionMethodVS" />
+                <display value="BCI BreastSpecimenCollectionMethodVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastSpecimenTypeVS" />
+                <display value="BCI BreastSpecimenTypeVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-ClockDirectionVS" />
+                <display value="BCI ClockDirectionVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/condition-ConditionCategoryVS" />
+                <display value="BCI ConditionCategoryVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/condition-ConditionVS" />
+                <display value="BCI ConditionVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-DegreeOfLymphaticInvolvementVS" />
+                <display value="BCI DegreeOfLymphaticInvolvementVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/finding-DeltaFlagVS" />
+                <display value="BCI DeltaFlagVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/finding-DiagnosticServiceVS" />
+                <display value="BCI DiagnosticServiceVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/entity-DirectionalityVS" />
+                <display value="BCI DirectionalityVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-EstrogenAntibodyVS" />
+                <display value="BCI EstrogenAntibodyVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/finding-ExceptionValueVS" />
+                <display value="BCI ExceptionValueVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-GeneIdentifierVS" />
+                <display value="BCI GeneIdentifierVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-HER2AntibodyIHCVS" />
+                <display value="BCI HER2AntibodyIHCVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-HER2ISHMethodVS" />
+                <display value="BCI HER2ISHMethodVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-HER2MethodVS" />
+                <display value="BCI HER2MethodVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-HER2StatusVS" />
+                <display value="BCI HER2StatusVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-Ki67AntibodyVS" />
+                <display value="BCI Ki67AntibodyVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/finding-KnownOrSuspectedPresentContextVS" />
+                <display value="BCI KnownOrSuspectedPresentContextVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/entity-LateralityVS" />
+                <display value="BCI LateralityVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-LeftRightLateralityVS" />
+                <display value="BCI LeftRightLateralityVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-LymphSystemSubdivisionVS" />
+                <display value="BCI LymphSystemSubdivisionVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-MorphologyBehaviorVS" />
+                <display value="BCI MorphologyBehaviorVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-NottinghamCombinedGradeVS" />
+                <display value="BCI NottinghamCombinedGradeVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-NuclearPleomorphismScoreVS" />
+                <display value="BCI NuclearPleomorphismScoreVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-OncotypeDXRiskScoreInterpretationVS" />
+                <display value="BCI OncotypeDXRiskScoreInterpretationVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/entity-PortionTotalityVS" />
+                <display value="BCI PortionTotalityVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-PositiveNegativeVS" />
+                <display value="BCI PositiveNegativeVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-ProgesteroneAntibodyVS" />
+                <display value="BCI ProgesteroneAntibodyVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-RefseqVS" />
+                <display value="BCI RefseqVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-StageTimingPrefixVS" />
+                <display value="BCI StageTimingPrefixVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-StagingMethodVS" />
+                <display value="BCI StagingMethodVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-StainingControlVS" />
+                <display value="BCI StainingControlVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-StainingIntensityVS" />
+                <display value="BCI StainingIntensityVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-TubuleFormationScoreVS" />
+                <display value="BCI TubuleFormationScoreVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-TumorMarginDescriptionVS" />
+                <display value="BCI TumorMarginDescriptionVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-YesNoUnknownVS" />
+                <display value="BCI YesNoUnknownVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-YesNoVS" />
+                <display value="BCI YesNoVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerMStageCS" />
+                <display value="BCI BreastCancerMStageCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerNStageCS" />
+                <display value="BCI BreastCancerNStageCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerStageCS" />
+                <display value="BCI BreastCancerStageCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerTStageCS" />
+                <display value="BCI BreastCancerTStageCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerTypeCS" />
+                <display value="BCI BreastCancerTypeCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastSiteCS" />
+                <display value="BCI BreastSiteCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastSpecimenCollectionMethodCS" />
+                <display value="BCI BreastSpecimenCollectionMethodCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastSpecimenTypeCS" />
+                <display value="BCI BreastSpecimenTypeCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/condition-ConditionCategoryCS" />
+                <display value="BCI ConditionCategoryCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-DegreeOfLymphaticInvolvementCS" />
+                <display value="BCI DegreeOfLymphaticInvolvementCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/finding-DiagnosticServiceCS" />
+                <display value="BCI DiagnosticServiceCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/entity-DirectionalityCS" />
+                <display value="BCI DirectionalityCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-EstrogenAntibodyCS" />
+                <display value="BCI EstrogenAntibodyCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/finding-ExceptionValueCS" />
+                <display value="BCI ExceptionValueCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-HER2AntibodyIHCCS" />
+                <display value="BCI HER2AntibodyIHCCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-HER2ISHMethodCS" />
+                <display value="BCI HER2ISHMethodCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-HER2MethodCS" />
+                <display value="BCI HER2MethodCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-HER2StatusCS" />
+                <display value="BCI HER2StatusCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-Ki67AntibodyCS" />
+                <display value="BCI Ki67AntibodyCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/entity-LateralityCS" />
+                <display value="BCI LateralityCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-LeftRightLateralityCS" />
+                <display value="BCI LeftRightLateralityCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-MorphologyBehaviorCS" />
+                <display value="BCI MorphologyBehaviorCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-OncotypeDXRiskScoreInterpretationCS" />
+                <display value="BCI OncotypeDXRiskScoreInterpretationCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/entity-PortionTotalityCS" />
+                <display value="BCI PortionTotalityCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-ProgesteroneAntibodyCS" />
+                <display value="BCI ProgesteroneAntibodyCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-StageTimingPrefixCS" />
+                <display value="BCI StageTimingPrefixCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-StagingMethodCS" />
+                <display value="BCI StagingMethodCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-StainingControlCS" />
+                <display value="BCI StainingControlCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-StainingIntensityCS" />
+                <display value="BCI StainingIntensityCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/shr-core-YesNoCS" />
+                <display value="BCI YesNoCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/shr-core-YesNoUnknownCS" />
+                <display value="BCI YesNoUnknownCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        
+    </package>
+    <page>
+        <source value="index.html" />
+        <title value="Breast Cancer Interoperability" />
+        <kind value="page" />
+    </page>
+</ImplementationGuide>

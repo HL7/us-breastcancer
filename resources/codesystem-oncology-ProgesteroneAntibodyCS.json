@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-ProgesteroneAntibodyCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ProgesteroneAntibodyCS CodeSystem</b></p>\n<p>Antibodies relevant to Estrogen receptor.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/cs/ProgesteroneAntibodyCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.ProgesteroneAntibodyCS"
+  },
+  "name": "ProgesteroneAntibodyCS",
+  "title": "BCI ProgesteroneAntibodyCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-17",
+  "description": "Antibodies relevant to Estrogen receptor.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "1E2",
+      "definition": "1E2 - CAP#31103",
+      "display": "1E2 - CAP#31103"
+    },
+    {
+      "code": "636",
+      "definition": "636 - CAP#31104",
+      "display": "636 - CAP#31104"
+    },
+    {
+      "code": "16",
+      "definition": "16 - CAP#31105",
+      "display": "16 - CAP#31105"
+    },
+    {
+      "code": "SP2",
+      "definition": "SP2 - CAP#31097",
+      "display": "SP2 - CAP#31097"
+    },
+    {
+      "code": "1A6",
+      "definition": "1A6 - CAP#31098",
+      "display": "1A6 - CAP#31098"
+    },
+    {
+      "code": "1294",
+      "definition": "1294 - CAP#32115",
+      "display": "1294 - CAP#32115"
+    },
+    {
+      "code": "312",
+      "definition": "312 - CAP#32116",
+      "display": "312 - CAP#32116"
+    }
+  ]
+}

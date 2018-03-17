@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-StageTimingPrefixCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI StageTimingPrefixCS CodeSystem</b></p>\n<p>When staging was done, relative to treatment events.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/cs/StageTimingPrefixCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.StageTimingPrefixCS"
+  },
+  "name": "StageTimingPrefixCS",
+  "title": "BCI StageTimingPrefixCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-17",
+  "description": "When staging was done, relative to treatment events.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "c",
+      "definition": "Clinical staging, upon initial diagnosis",
+      "display": "Clinical staging, upon initial diagnosis"
+    },
+    {
+      "code": "p",
+      "definition": "Pathologic staging, post-operative, after resection surgery",
+      "display": "Pathologic staging, post-operative, after resection surgery"
+    },
+    {
+      "code": "yc",
+      "definition": "Post-neoadjuvant clinical stage timing",
+      "display": "Post-neoadjuvant clinical stage timing"
+    },
+    {
+      "code": "yp",
+      "definition": "Post-neoadjuvant pathologic stage timing",
+      "display": "Post-neoadjuvant pathologic stage timing"
+    }
+  ]
+}

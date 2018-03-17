@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-LeftRightLateralityVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI LeftRightLateralityVS ValueSet</b></p>\n<p>Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/LeftRightLateralityVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.LeftRightLateralityVS"
+    }
+  ],
+  "name": "LeftRightLateralityVS",
+  "title": "BCI LeftRightLateralityVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-17",
+  "description": "Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/LeftRightLateralityCS",
+        "concept": [
+          {
+            "code": "C25229",
+            "display": "LEFT Being or located on or directed toward the side of the body to the west when facing north."
+          },
+          {
+            "code": "C25228",
+            "display": "RIGHT Being or located on or directed toward the side of the body to the east when facing north."
+          }
+        ]
+      }
+    ]
+  }
+}

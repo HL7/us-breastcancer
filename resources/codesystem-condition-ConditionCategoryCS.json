@@ -1,0 +1,63 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "condition-ConditionCategoryCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ConditionCategoryCS CodeSystem</b></p>\n<p></p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/condition/cs/ConditionCategoryCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "condition.ConditionCategoryCS"
+  },
+  "name": "ConditionCategoryCS",
+  "title": "BCI ConditionCategoryCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-17",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "disease",
+      "definition": "A disorder of structure or function in a human, animal, or plant, especially one that produces specific signs or symptoms or that affects a specific location and is not simply a direct result of physical injury.",
+      "display": "A disorder of structure or function in a human, animal, or plant, especially one that produces specific signs or symptoms or that affects a specific location and is not simply a direct result of physical injury."
+    },
+    {
+      "code": "functional_impairment",
+      "definition": "A disability experienced by the subject.",
+      "display": "A disability experienced by the subject."
+    },
+    {
+      "code": "structural_abnormality",
+      "definition": "An abnormality of physiologic structure.",
+      "display": "An abnormality of physiologic structure."
+    },
+    {
+      "code": "concern",
+      "definition": "Something the subject is worried about, which may or may not have yet been manifested. The object of the concern does not have to be a medical disorder.",
+      "display": "Something the subject is worried about, which may or may not have yet been manifested. The object of the concern does not have to be a medical disorder."
+    },
+    {
+      "code": "symptom",
+      "definition": "A sign or manifestation of a deeper cause, of known or unknown etiology, e.g. pain or ringing in the ears.",
+      "display": "A sign or manifestation of a deeper cause, of known or unknown etiology, e.g. pain or ringing in the ears."
+    },
+    {
+      "code": "adverse_reaction",
+      "definition": "An adverse reaction to an intervention.",
+      "display": "An adverse reaction to an intervention."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "source": "ImplementationGuide/ig.xml",
+  "source": "ig.xml",
   "version": "3.0.1",
   "fixed-business-version": "0.0.1",
   "paths": {
@@ -17,6 +17,13 @@
   "gen-examples": "false",
   "do-transforms": "false",
   "canonicalBase": "http://hl7.org/fhir/us/breastcancer",
+  "dependencyList": [
+    {
+      "name": "USCore",
+      "location": "http://hl7.org/fhir/us/core/1.0.1",
+      "source": "uscore"
+    }
+  ],
   "defaults": {
     "StructureDefinition": {
       "template-base": "sd.html",
@@ -36,32 +43,17 @@
     }
   },
   "resources": {
-    "StructureDefinition/condition-Condition": {
-      "base": "StructureDefinition-condition-Condition.html"
-    },
     "StructureDefinition/entity-AnatomicalLocation": {
       "base": "StructureDefinition-entity-AnatomicalLocation.html"
-    },
-    "StructureDefinition/entity-Specimen": {
-      "base": "StructureDefinition-entity-Specimen.html"
-    },
-    "StructureDefinition/finding-BodyStructurePresent": {
-      "base": "StructureDefinition-finding-BodyStructurePresent.html"
-    },
-    "StructureDefinition/finding-EvaluationResultRecorded": {
-      "base": "StructureDefinition-finding-EvaluationResultRecorded.html"
-    },
-    "StructureDefinition/finding-LaboratoryTestResultRecorded": {
-      "base": "StructureDefinition-finding-LaboratoryTestResultRecorded.html"
-    },
-    "StructureDefinition/finding-SimplifiedLaboratoryTestResultRecorded": {
-      "base": "StructureDefinition-finding-SimplifiedLaboratoryTestResultRecorded.html"
     },
     "StructureDefinition/oncology-BRCA1Variant": {
       "base": "StructureDefinition-oncology-BRCA1Variant.html"
     },
     "StructureDefinition/oncology-BRCA2Variant": {
       "base": "StructureDefinition-oncology-BRCA2Variant.html"
+    },
+    "StructureDefinition/finding-BodyStructurePresent": {
+      "base": "StructureDefinition-finding-BodyStructurePresent.html"
     },
     "StructureDefinition/oncology-BreastCancer": {
       "base": "StructureDefinition-oncology-BreastCancer.html"
@@ -78,8 +70,14 @@
     "StructureDefinition/oncology-BreastSpecimen": {
       "base": "StructureDefinition-oncology-BreastSpecimen.html"
     },
+    "StructureDefinition/condition-Condition": {
+      "base": "StructureDefinition-condition-Condition.html"
+    },
     "StructureDefinition/oncology-EstrogenReceptorStatus": {
       "base": "StructureDefinition-oncology-EstrogenReceptorStatus.html"
+    },
+    "StructureDefinition/finding-EvaluationResultRecorded": {
+      "base": "StructureDefinition-finding-EvaluationResultRecorded.html"
     },
     "StructureDefinition/oncology-GeneticVariant": {
       "base": "StructureDefinition-oncology-GeneticVariant.html"
@@ -99,6 +97,9 @@
     "StructureDefinition/oncology-Ki-67LabelingIndex": {
       "base": "StructureDefinition-oncology-Ki-67LabelingIndex.html"
     },
+    "StructureDefinition/finding-LaboratoryTestResultRecorded": {
+      "base": "StructureDefinition-finding-LaboratoryTestResultRecorded.html"
+    },
     "StructureDefinition/oncology-LymphaticInvolvement": {
       "base": "StructureDefinition-oncology-LymphaticInvolvement.html"
     },
@@ -111,8 +112,20 @@
     "StructureDefinition/oncology-ProgesteroneReceptorStatus": {
       "base": "StructureDefinition-oncology-ProgesteroneReceptorStatus.html"
     },
+    "StructureDefinition/shr-core-Range": {
+      "base": "StructureDefinition-shr-core-Range.html"
+    },
+    "StructureDefinition/shr-core-Ratio": {
+      "base": "StructureDefinition-shr-core-Ratio.html"
+    },
     "StructureDefinition/oncology-S-PhaseFraction": {
       "base": "StructureDefinition-oncology-S-PhaseFraction.html"
+    },
+    "StructureDefinition/finding-SimplifiedLaboratoryTestResultRecorded": {
+      "base": "StructureDefinition-finding-SimplifiedLaboratoryTestResultRecorded.html"
+    },
+    "StructureDefinition/entity-Specimen": {
+      "base": "StructureDefinition-entity-Specimen.html"
     },
     "StructureDefinition/oncology-TumorDimensions": {
       "base": "StructureDefinition-oncology-TumorDimensions.html"
@@ -120,26 +133,11 @@
     "StructureDefinition/oncology-TumorMargins": {
       "base": "StructureDefinition-oncology-TumorMargins.html"
     },
-    "StructureDefinition/shr-core-Range": {
-      "base": "StructureDefinition-shr-core-Range.html"
-    },
-    "StructureDefinition/shr-core-Ratio": {
-      "base": "StructureDefinition-shr-core-Ratio.html"
-    },
     "StructureDefinition/condition-Abatement-extension": {
       "base": "StructureDefinition-condition-Abatement-extension.html"
     },
-    "StructureDefinition/condition-Onset-extension": {
-      "base": "StructureDefinition-condition-Onset-extension.html"
-    },
     "StructureDefinition/entity-AnatomicalLocation-extension": {
       "base": "StructureDefinition-entity-AnatomicalLocation-extension.html"
-    },
-    "StructureDefinition/entity-CollectionSite-extension": {
-      "base": "StructureDefinition-entity-CollectionSite-extension.html"
-    },
-    "StructureDefinition/entity-Specimen-extension": {
-      "base": "StructureDefinition-entity-Specimen-extension.html"
     },
     "StructureDefinition/finding-ApplicableAgeRange-extension": {
       "base": "StructureDefinition-finding-ApplicableAgeRange-extension.html"
@@ -147,14 +145,35 @@
     "StructureDefinition/finding-ApplicableSubpopulation-extension": {
       "base": "StructureDefinition-finding-ApplicableSubpopulation-extension.html"
     },
+    "StructureDefinition/shr-core-Category-extension": {
+      "base": "StructureDefinition-shr-core-Category-extension.html"
+    },
     "StructureDefinition/finding-Certainty-extension": {
       "base": "StructureDefinition-finding-Certainty-extension.html"
+    },
+    "StructureDefinition/shr-core-ClockDirection-extension": {
+      "base": "StructureDefinition-shr-core-ClockDirection-extension.html"
+    },
+    "StructureDefinition/shr-core-CodeableConcept-extension": {
+      "base": "StructureDefinition-shr-core-CodeableConcept-extension.html"
+    },
+    "StructureDefinition/oncology-ColdIschemicTime-extension": {
+      "base": "StructureDefinition-oncology-ColdIschemicTime-extension.html"
+    },
+    "StructureDefinition/entity-CollectionSite-extension": {
+      "base": "StructureDefinition-entity-CollectionSite-extension.html"
+    },
+    "StructureDefinition/shr-base-ContextCode-extension": {
+      "base": "StructureDefinition-shr-base-ContextCode-extension.html"
     },
     "StructureDefinition/finding-DeltaFlag-extension": {
       "base": "StructureDefinition-finding-DeltaFlag-extension.html"
     },
     "StructureDefinition/finding-DiagnosticService-extension": {
       "base": "StructureDefinition-finding-DiagnosticService-extension.html"
+    },
+    "StructureDefinition/oncology-DistanceToNipple-extension": {
+      "base": "StructureDefinition-oncology-DistanceToNipple-extension.html"
     },
     "StructureDefinition/finding-EvaluationComponent-extension": {
       "base": "StructureDefinition-finding-EvaluationComponent-extension.html"
@@ -180,32 +199,50 @@
     "StructureDefinition/finding-Members-extension": {
       "base": "StructureDefinition-finding-Members-extension.html"
     },
+    "StructureDefinition/oncology-MorphologyBehavior-extension": {
+      "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html"
+    },
     "StructureDefinition/finding-Morphology-extension": {
       "base": "StructureDefinition-finding-Morphology-extension.html"
+    },
+    "StructureDefinition/condition-Onset-extension": {
+      "base": "StructureDefinition-condition-Onset-extension.html"
     },
     "StructureDefinition/finding-Precondition-extension": {
       "base": "StructureDefinition-finding-Precondition-extension.html"
     },
+    "StructureDefinition/shr-core-Quantity-extension": {
+      "base": "StructureDefinition-shr-core-Quantity-extension.html"
+    },
+    "StructureDefinition/shr-core-Range-extension": {
+      "base": "StructureDefinition-shr-core-Range-extension.html"
+    },
+    "StructureDefinition/shr-core-Ratio-extension": {
+      "base": "StructureDefinition-shr-core-Ratio-extension.html"
+    },
     "StructureDefinition/finding-ReferenceRange-extension": {
       "base": "StructureDefinition-finding-ReferenceRange-extension.html"
+    },
+    "StructureDefinition/entity-Specimen-extension": {
+      "base": "StructureDefinition-entity-Specimen-extension.html"
+    },
+    "StructureDefinition/oncology-StageTimingPrefix-extension": {
+      "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html"
+    },
+    "StructureDefinition/shr-base-StatementTopic-extension": {
+      "base": "StructureDefinition-shr-base-StatementTopic-extension.html"
+    },
+    "StructureDefinition/shr-core-TimePeriod-extension": {
+      "base": "StructureDefinition-shr-core-TimePeriod-extension.html"
+    },
+    "StructureDefinition/shr-base-TopicCode-extension": {
+      "base": "StructureDefinition-shr-base-TopicCode-extension.html"
     },
     "StructureDefinition/finding-Type-extension": {
       "base": "StructureDefinition-finding-Type-extension.html"
     },
     "StructureDefinition/finding-VerificationStatus-extension": {
       "base": "StructureDefinition-finding-VerificationStatus-extension.html"
-    },
-    "StructureDefinition/oncology-ColdIschemicTime-extension": {
-      "base": "StructureDefinition-oncology-ColdIschemicTime-extension.html"
-    },
-    "StructureDefinition/oncology-DistanceToNipple-extension": {
-      "base": "StructureDefinition-oncology-DistanceToNipple-extension.html"
-    },
-    "StructureDefinition/oncology-MorphologyBehavior-extension": {
-      "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html"
-    },
-    "StructureDefinition/oncology-StageTimingPrefix-extension": {
-      "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html"
     },
     "StructureDefinition/primitive-base64Binary-extension": {
       "base": "StructureDefinition-primitive-base64Binary-extension.html"
@@ -258,65 +295,8 @@
     "StructureDefinition/primitive-xhtml-extension": {
       "base": "StructureDefinition-primitive-xhtml-extension.html"
     },
-    "StructureDefinition/shr-base-ContextCode-extension": {
-      "base": "StructureDefinition-shr-base-ContextCode-extension.html"
-    },
-    "StructureDefinition/shr-base-StatementTopic-extension": {
-      "base": "StructureDefinition-shr-base-StatementTopic-extension.html"
-    },
-    "StructureDefinition/shr-base-TopicCode-extension": {
-      "base": "StructureDefinition-shr-base-TopicCode-extension.html"
-    },
-    "StructureDefinition/shr-core-Category-extension": {
-      "base": "StructureDefinition-shr-core-Category-extension.html"
-    },
-    "StructureDefinition/shr-core-ClockDirection-extension": {
-      "base": "StructureDefinition-shr-core-ClockDirection-extension.html"
-    },
-    "StructureDefinition/shr-core-CodeableConcept-extension": {
-      "base": "StructureDefinition-shr-core-CodeableConcept-extension.html"
-    },
-    "StructureDefinition/shr-core-Quantity-extension": {
-      "base": "StructureDefinition-shr-core-Quantity-extension.html"
-    },
-    "StructureDefinition/shr-core-Range-extension": {
-      "base": "StructureDefinition-shr-core-Range-extension.html"
-    },
-    "StructureDefinition/shr-core-Ratio-extension": {
-      "base": "StructureDefinition-shr-core-Ratio-extension.html"
-    },
-    "StructureDefinition/shr-core-TimePeriod-extension": {
-      "base": "StructureDefinition-shr-core-TimePeriod-extension.html"
-    },
-    "ValueSet/condition-ConditionCategoryVS": {
-      "base": "ValueSet-condition-ConditionCategoryVS.html"
-    },
-    "ValueSet/condition-ConditionVS": {
-      "base": "ValueSet-condition-ConditionVS.html"
-    },
     "ValueSet/entity-AnatomicalLocationVS": {
       "base": "ValueSet-entity-AnatomicalLocationVS.html"
-    },
-    "ValueSet/entity-DirectionalityVS": {
-      "base": "ValueSet-entity-DirectionalityVS.html"
-    },
-    "ValueSet/entity-LateralityVS": {
-      "base": "ValueSet-entity-LateralityVS.html"
-    },
-    "ValueSet/entity-PortionTotalityVS": {
-      "base": "ValueSet-entity-PortionTotalityVS.html"
-    },
-    "ValueSet/finding-DeltaFlagVS": {
-      "base": "ValueSet-finding-DeltaFlagVS.html"
-    },
-    "ValueSet/finding-DiagnosticServiceVS": {
-      "base": "ValueSet-finding-DiagnosticServiceVS.html"
-    },
-    "ValueSet/finding-ExceptionValueVS": {
-      "base": "ValueSet-finding-ExceptionValueVS.html"
-    },
-    "ValueSet/finding-KnownOrSuspectedPresentContextVS": {
-      "base": "ValueSet-finding-KnownOrSuspectedPresentContextVS.html"
     },
     "ValueSet/oncology-BreastCancerMStageVS": {
       "base": "ValueSet-oncology-BreastCancerMStageVS.html"
@@ -342,11 +322,32 @@
     "ValueSet/oncology-BreastSpecimenTypeVS": {
       "base": "ValueSet-oncology-BreastSpecimenTypeVS.html"
     },
+    "ValueSet/shr-core-ClockDirectionVS": {
+      "base": "ValueSet-shr-core-ClockDirectionVS.html"
+    },
+    "ValueSet/condition-ConditionCategoryVS": {
+      "base": "ValueSet-condition-ConditionCategoryVS.html"
+    },
+    "ValueSet/condition-ConditionVS": {
+      "base": "ValueSet-condition-ConditionVS.html"
+    },
     "ValueSet/oncology-DegreeOfLymphaticInvolvementVS": {
       "base": "ValueSet-oncology-DegreeOfLymphaticInvolvementVS.html"
     },
+    "ValueSet/finding-DeltaFlagVS": {
+      "base": "ValueSet-finding-DeltaFlagVS.html"
+    },
+    "ValueSet/finding-DiagnosticServiceVS": {
+      "base": "ValueSet-finding-DiagnosticServiceVS.html"
+    },
+    "ValueSet/entity-DirectionalityVS": {
+      "base": "ValueSet-entity-DirectionalityVS.html"
+    },
     "ValueSet/oncology-EstrogenAntibodyVS": {
       "base": "ValueSet-oncology-EstrogenAntibodyVS.html"
+    },
+    "ValueSet/finding-ExceptionValueVS": {
+      "base": "ValueSet-finding-ExceptionValueVS.html"
     },
     "ValueSet/oncology-GeneIdentifierVS": {
       "base": "ValueSet-oncology-GeneIdentifierVS.html"
@@ -366,6 +367,12 @@
     "ValueSet/oncology-Ki67AntibodyVS": {
       "base": "ValueSet-oncology-Ki67AntibodyVS.html"
     },
+    "ValueSet/finding-KnownOrSuspectedPresentContextVS": {
+      "base": "ValueSet-finding-KnownOrSuspectedPresentContextVS.html"
+    },
+    "ValueSet/entity-LateralityVS": {
+      "base": "ValueSet-entity-LateralityVS.html"
+    },
     "ValueSet/oncology-LeftRightLateralityVS": {
       "base": "ValueSet-oncology-LeftRightLateralityVS.html"
     },
@@ -383,6 +390,9 @@
     },
     "ValueSet/oncology-OncotypeDXRiskScoreInterpretationVS": {
       "base": "ValueSet-oncology-OncotypeDXRiskScoreInterpretationVS.html"
+    },
+    "ValueSet/entity-PortionTotalityVS": {
+      "base": "ValueSet-entity-PortionTotalityVS.html"
     },
     "ValueSet/oncology-PositiveNegativeVS": {
       "base": "ValueSet-oncology-PositiveNegativeVS.html"
@@ -411,32 +421,11 @@
     "ValueSet/oncology-TumorMarginDescriptionVS": {
       "base": "ValueSet-oncology-TumorMarginDescriptionVS.html"
     },
-    "ValueSet/shr-core-ClockDirectionVS": {
-      "base": "ValueSet-shr-core-ClockDirectionVS.html"
-    },
     "ValueSet/shr-core-YesNoUnknownVS": {
       "base": "ValueSet-shr-core-YesNoUnknownVS.html"
     },
     "ValueSet/shr-core-YesNoVS": {
       "base": "ValueSet-shr-core-YesNoVS.html"
-    },
-    "CodeSystem/condition-ConditionCategoryCS": {
-      "base": "CodeSystem-condition-ConditionCategoryCS.html"
-    },
-    "CodeSystem/entity-DirectionalityCS": {
-      "base": "CodeSystem-entity-DirectionalityCS.html"
-    },
-    "CodeSystem/entity-LateralityCS": {
-      "base": "CodeSystem-entity-LateralityCS.html"
-    },
-    "CodeSystem/entity-PortionTotalityCS": {
-      "base": "CodeSystem-entity-PortionTotalityCS.html"
-    },
-    "CodeSystem/finding-DiagnosticServiceCS": {
-      "base": "CodeSystem-finding-DiagnosticServiceCS.html"
-    },
-    "CodeSystem/finding-ExceptionValueCS": {
-      "base": "CodeSystem-finding-ExceptionValueCS.html"
     },
     "CodeSystem/oncology-BreastCancerMStageCS": {
       "base": "CodeSystem-oncology-BreastCancerMStageCS.html"
@@ -462,11 +451,23 @@
     "CodeSystem/oncology-BreastSpecimenTypeCS": {
       "base": "CodeSystem-oncology-BreastSpecimenTypeCS.html"
     },
+    "CodeSystem/condition-ConditionCategoryCS": {
+      "base": "CodeSystem-condition-ConditionCategoryCS.html"
+    },
     "CodeSystem/oncology-DegreeOfLymphaticInvolvementCS": {
       "base": "CodeSystem-oncology-DegreeOfLymphaticInvolvementCS.html"
     },
+    "CodeSystem/finding-DiagnosticServiceCS": {
+      "base": "CodeSystem-finding-DiagnosticServiceCS.html"
+    },
+    "CodeSystem/entity-DirectionalityCS": {
+      "base": "CodeSystem-entity-DirectionalityCS.html"
+    },
     "CodeSystem/oncology-EstrogenAntibodyCS": {
       "base": "CodeSystem-oncology-EstrogenAntibodyCS.html"
+    },
+    "CodeSystem/finding-ExceptionValueCS": {
+      "base": "CodeSystem-finding-ExceptionValueCS.html"
     },
     "CodeSystem/oncology-HER2AntibodyIHCCS": {
       "base": "CodeSystem-oncology-HER2AntibodyIHCCS.html"
@@ -483,6 +484,9 @@
     "CodeSystem/oncology-Ki67AntibodyCS": {
       "base": "CodeSystem-oncology-Ki67AntibodyCS.html"
     },
+    "CodeSystem/entity-LateralityCS": {
+      "base": "CodeSystem-entity-LateralityCS.html"
+    },
     "CodeSystem/oncology-LeftRightLateralityCS": {
       "base": "CodeSystem-oncology-LeftRightLateralityCS.html"
     },
@@ -491,6 +495,9 @@
     },
     "CodeSystem/oncology-OncotypeDXRiskScoreInterpretationCS": {
       "base": "CodeSystem-oncology-OncotypeDXRiskScoreInterpretationCS.html"
+    },
+    "CodeSystem/entity-PortionTotalityCS": {
+      "base": "CodeSystem-entity-PortionTotalityCS.html"
     },
     "CodeSystem/oncology-ProgesteroneAntibodyCS": {
       "base": "CodeSystem-oncology-ProgesteroneAntibodyCS.html"
@@ -515,16 +522,7 @@
     }
   },
   "special-urls": [
-    "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS",
-    "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionVS",
     "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS",
-    "http://hl7.org/fhir/us/breastcancer/entity/vs/DirectionalityVS",
-    "http://hl7.org/fhir/us/breastcancer/entity/vs/LateralityVS",
-    "http://hl7.org/fhir/us/breastcancer/entity/vs/PortionTotalityVS",
-    "http://hl7.org/fhir/us/breastcancer/finding/vs/DeltaFlagVS",
-    "http://hl7.org/fhir/us/breastcancer/finding/vs/DiagnosticServiceVS",
-    "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS",
-    "http://hl7.org/fhir/us/breastcancer/finding/vs/KnownOrSuspectedPresentContextVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerMStageVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerNStageVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerStageVS",
@@ -533,20 +531,30 @@
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSiteVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSpecimenCollectionMethodVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSpecimenTypeVS",
+    "http://hl7.org/fhir/us/breastcancer/shr/core/vs/ClockDirectionVS",
+    "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS",
+    "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/DegreeOfLymphaticInvolvementVS",
+    "http://hl7.org/fhir/us/breastcancer/finding/vs/DeltaFlagVS",
+    "http://hl7.org/fhir/us/breastcancer/finding/vs/DiagnosticServiceVS",
+    "http://hl7.org/fhir/us/breastcancer/entity/vs/DirectionalityVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/EstrogenAntibodyVS",
+    "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/GeneIdentifierVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/HER2AntibodyIHCVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/HER2ISHMethodVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/HER2MethodVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/HER2StatusVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/Ki67AntibodyVS",
+    "http://hl7.org/fhir/us/breastcancer/finding/vs/KnownOrSuspectedPresentContextVS",
+    "http://hl7.org/fhir/us/breastcancer/entity/vs/LateralityVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/LeftRightLateralityVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/LymphSystemSubdivisionVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/MorphologyBehaviorVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/NottinghamCombinedGradeVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/NuclearPleomorphismScoreVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/OncotypeDXRiskScoreInterpretationVS",
+    "http://hl7.org/fhir/us/breastcancer/entity/vs/PortionTotalityVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/PositiveNegativeVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/ProgesteroneAntibodyVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/RefseqVS",
@@ -556,15 +564,8 @@
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/StainingIntensityVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/TubuleFormationScoreVS",
     "http://hl7.org/fhir/us/breastcancer/oncology/vs/TumorMarginDescriptionVS",
-    "http://hl7.org/fhir/us/breastcancer/shr/core/vs/ClockDirectionVS",
     "http://hl7.org/fhir/us/breastcancer/shr/core/vs/YesNoUnknownVS",
     "http://hl7.org/fhir/us/breastcancer/shr/core/vs/YesNoVS",
-    "http://hl7.org/fhir/us/breastcancer/condition/cs/ConditionCategoryCS",
-    "http://hl7.org/fhir/us/breastcancer/entity/cs/DirectionalityCS",
-    "http://hl7.org/fhir/us/breastcancer/entity/cs/LateralityCS",
-    "http://hl7.org/fhir/us/breastcancer/entity/cs/PortionTotalityCS",
-    "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS",
-    "http://hl7.org/fhir/us/breastcancer/finding/cs/ExceptionValueCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastCancerMStageCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastCancerNStageCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastCancerStageCS",
@@ -573,16 +574,22 @@
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastSiteCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastSpecimenCollectionMethodCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastSpecimenTypeCS",
+    "http://hl7.org/fhir/us/breastcancer/condition/cs/ConditionCategoryCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/DegreeOfLymphaticInvolvementCS",
+    "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS",
+    "http://hl7.org/fhir/us/breastcancer/entity/cs/DirectionalityCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/EstrogenAntibodyCS",
+    "http://hl7.org/fhir/us/breastcancer/finding/cs/ExceptionValueCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/HER2AntibodyIHCCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/HER2ISHMethodCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/HER2MethodCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/HER2StatusCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/Ki67AntibodyCS",
+    "http://hl7.org/fhir/us/breastcancer/entity/cs/LateralityCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/LeftRightLateralityCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/MorphologyBehaviorCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/OncotypeDXRiskScoreInterpretationCS",
+    "http://hl7.org/fhir/us/breastcancer/entity/cs/PortionTotalityCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/ProgesteroneAntibodyCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/StageTimingPrefixCS",
     "http://hl7.org/fhir/us/breastcancer/oncology/cs/StagingMethodCS",
