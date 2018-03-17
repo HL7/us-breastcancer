@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI MorphologyBehaviorVS ValueSet</b></p>\n<p>The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/MorphologyBehaviorVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/MorphologyBehaviorCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-MorphologyBehaviorCS",
         "concept": [
           {
             "code": "0",

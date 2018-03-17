@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI EstrogenAntibodyVS ValueSet</b></p>\n<p>Antibodies relevant to Estrogen receptor.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/EstrogenAntibodyVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-EstrogenAntibodyVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/EstrogenAntibodyCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-EstrogenAntibodyCS",
         "concept": [
           {
             "code": "SP1",

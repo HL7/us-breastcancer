@@ -26,7 +26,7 @@
         {
           "system": "urn:iso:std:iso:3166",
           "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "display": "United States of America"
         }
       ]
     }
@@ -35,7 +35,7 @@
   "mapping": [
     {
       "identity": "argonaut-dq-dstu2",
-      "uri": "http://unknown.org/Argonaut DQ DSTU2",
+      "uri": "http://unknown.org/Argonaut%20DQ%20DSTU2",
       "name": "Argonaut DQ DSTU2"
     },
     {
@@ -520,7 +520,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/DiagnosticServiceVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-DiagnosticServiceVS"
           }
         }
       },
@@ -740,7 +740,7 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS"
       },
       {
         "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.version",
@@ -2226,7 +2226,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/NottinghamCombinedGradeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NottinghamCombinedGradeVS"
           }
         }
       },
@@ -2256,7 +2256,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -2385,7 +2385,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         },
         "mapping": [
@@ -3698,7 +3698,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/TubuleFormationScoreVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-TubuleFormationScoreVS"
           }
         }
       },
@@ -3727,7 +3727,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -4295,7 +4295,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/NuclearPleomorphismScoreVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearPleomorphismScoreVS"
           }
         }
       },
@@ -4324,7 +4324,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -5312,7 +5312,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -5754,7 +5754,7 @@
       {
         "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.system",
         "path": "Observation.extension.valueCodeableConcept.coding.system",
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS"
       },
       {
         "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.code",
@@ -5858,7 +5858,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/NottinghamCombinedGradeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NottinghamCombinedGradeVS"
           }
         }
       },
@@ -5868,7 +5868,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },
@@ -5897,7 +5897,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         }
       },
@@ -6073,7 +6073,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/TubuleFormationScoreVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-TubuleFormationScoreVS"
           }
         }
       },
@@ -6083,7 +6083,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },
@@ -6124,7 +6124,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/NuclearPleomorphismScoreVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearPleomorphismScoreVS"
           }
         }
       },
@@ -6134,7 +6134,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },
@@ -6222,7 +6222,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },

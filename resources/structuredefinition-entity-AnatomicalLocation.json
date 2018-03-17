@@ -411,7 +411,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         },
         "mapping": [
@@ -503,7 +503,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/LateralityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-LateralityVS"
           }
         },
         "mapping": [
@@ -541,7 +541,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/DirectionalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-DirectionalityVS"
           }
         },
         "mapping": [
@@ -579,7 +579,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/PortionTotalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-PortionTotalityVS"
           }
         },
         "mapping": [
@@ -701,7 +701,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         },
         "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes."
@@ -732,7 +732,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/LateralityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-LateralityVS"
           }
         }
       },
@@ -747,7 +747,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/DirectionalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-DirectionalityVS"
           }
         }
       },
@@ -762,7 +762,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/PortionTotalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-PortionTotalityVS"
           }
         }
       }

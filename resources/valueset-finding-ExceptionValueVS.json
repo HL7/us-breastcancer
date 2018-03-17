@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ExceptionValueVS ValueSet</b></p>\n<p>Reasons that a value associated with a test or other finding is missing. Extended set based on http://hl7.org/fhir/ValueSet/observation-valueabsentreason</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/finding/cs/ExceptionValueCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-ExceptionValueCS",
         "concept": [
           {
             "code": "unknown",

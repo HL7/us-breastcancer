@@ -26,7 +26,7 @@
         {
           "system": "urn:iso:std:iso:3166",
           "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "display": "United States of America"
         }
       ]
     }
@@ -35,7 +35,7 @@
   "mapping": [
     {
       "identity": "argonaut-dq-dstu2",
-      "uri": "http://unknown.org/Argonaut DQ DSTU2",
+      "uri": "http://unknown.org/Argonaut%20DQ%20DSTU2",
       "name": "Argonaut DQ DSTU2"
     },
     {
@@ -616,7 +616,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
           }
         },
         "mapping": [
@@ -775,7 +775,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         },
         "mapping": [
@@ -1559,7 +1559,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
           }
         }
       },
@@ -1591,7 +1591,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         }
       },

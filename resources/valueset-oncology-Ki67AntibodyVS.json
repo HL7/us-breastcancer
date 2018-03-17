@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI Ki67AntibodyVS ValueSet</b></p>\n<p>Antibodies relevant to Ki-67 Text.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/Ki67AntibodyVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-Ki67AntibodyVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/Ki67AntibodyCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-Ki67AntibodyCS",
         "concept": [
           {
             "code": "MIB1",

@@ -26,7 +26,7 @@
         {
           "system": "urn:iso:std:iso:3166",
           "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "display": "United States of America"
         }
       ]
     }
@@ -35,7 +35,7 @@
   "mapping": [
     {
       "identity": "argonaut-dq-dstu2",
-      "uri": "http://unknown.org/Argonaut DQ DSTU2",
+      "uri": "http://unknown.org/Argonaut%20DQ%20DSTU2",
       "name": "Argonaut DQ DSTU2"
     },
     {
@@ -630,7 +630,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
           }
         },
         "mapping": [
@@ -896,7 +896,7 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/condition/cs/ConditionCategoryCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/condition-ConditionCategoryCS"
       },
       {
         "id": "Condition:oncology-BreastCancer.category:Includes_disease.coding:Fixed_disease.version",
@@ -1138,7 +1138,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
           }
         },
         "mapping": [
@@ -1190,7 +1190,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         },
         "mapping": [
@@ -1616,7 +1616,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
           }
         },
         "mapping": [
@@ -1981,7 +1981,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
           }
         },
         "slicing": {
@@ -2041,7 +2041,7 @@
       {
         "id": "Condition:oncology-BreastCancer.category:Includes_disease.coding:Fixed_disease.system",
         "path": "Condition.category.coding.system",
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/condition/cs/ConditionCategoryCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/condition-ConditionCategoryCS"
       },
       {
         "id": "Condition:oncology-BreastCancer.category:Includes_disease.coding:Fixed_disease.code",
@@ -2071,7 +2071,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
           }
         },
         "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body."
@@ -2082,7 +2082,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
           }
         }
       },
@@ -2143,7 +2143,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
           }
         }
       },

@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI BreastCancerTypeVS ValueSet</b></p>\n<p>Histologic types of breast cancer. Codes are drawn from ICD-O-3.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastCancerTypeVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/BreastCancerTypeCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTypeCS",
         "concept": [
           {
             "code": "8000",

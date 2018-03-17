@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ProgesteroneAntibodyVS ValueSet</b></p>\n<p>Antibodies relevant to Estrogen receptor.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/oncology/vs/ProgesteroneAntibodyVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-ProgesteroneAntibodyVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/oncology/cs/ProgesteroneAntibodyCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-ProgesteroneAntibodyCS",
         "concept": [
           {
             "code": "1E2",

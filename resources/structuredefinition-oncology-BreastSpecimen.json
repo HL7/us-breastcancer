@@ -582,7 +582,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSpecimenTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenTypeVS"
           }
         },
         "mapping": [
@@ -936,7 +936,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSpecimenCollectionMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenCollectionMethodVS"
           }
         },
         "mapping": [
@@ -1554,7 +1554,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSpecimenTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenTypeVS"
           }
         }
       },
@@ -1580,7 +1580,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSpecimenCollectionMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenCollectionMethodVS"
           }
         }
       }

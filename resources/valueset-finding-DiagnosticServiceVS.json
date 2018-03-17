@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI DiagnosticServiceVS ValueSet</b></p>\n<p>The type of laboratory service used in producing a laboratory result</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/finding/vs/DiagnosticServiceVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-DiagnosticServiceVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
         "concept": [
           {
             "code": "microbiology",

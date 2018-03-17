@@ -26,7 +26,7 @@
         {
           "system": "urn:iso:std:iso:3166",
           "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "display": "United States of America"
         }
       ]
     }
@@ -35,7 +35,7 @@
   "mapping": [
     {
       "identity": "argonaut-dq-dstu2",
-      "uri": "http://unknown.org/Argonaut DQ DSTU2",
+      "uri": "http://unknown.org/Argonaut%20DQ%20DSTU2",
       "name": "Argonaut DQ DSTU2"
     },
     {
@@ -506,7 +506,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/DiagnosticServiceVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-DiagnosticServiceVS"
           }
         }
       },
@@ -726,7 +726,7 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS"
       },
       {
         "id": "Observation:oncology-LymphaticInvolvement.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.version",
@@ -1834,7 +1834,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/PositiveNegativeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
           }
         }
       },
@@ -1864,7 +1864,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -1993,7 +1993,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/LymphSystemSubdivisionVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LymphSystemSubdivisionVS"
           }
         },
         "mapping": [
@@ -3549,7 +3549,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -4360,7 +4360,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -4927,7 +4927,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/DegreeOfLymphaticInvolvementVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-DegreeOfLymphaticInvolvementVS"
           }
         }
       },
@@ -4956,7 +4956,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -5384,7 +5384,7 @@
       {
         "id": "Observation:oncology-LymphaticInvolvement.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.system",
         "path": "Observation.extension.valueCodeableConcept.coding.system",
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/finding/cs/DiagnosticServiceCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS"
       },
       {
         "id": "Observation:oncology-LymphaticInvolvement.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.code",
@@ -5462,7 +5462,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/PositiveNegativeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
           }
         }
       },
@@ -5472,7 +5472,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },
@@ -5501,7 +5501,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/LymphSystemSubdivisionVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LymphSystemSubdivisionVS"
           }
         }
       },
@@ -5691,7 +5691,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },
@@ -5746,7 +5746,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },
@@ -5787,7 +5787,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/DegreeOfLymphaticInvolvementVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-DegreeOfLymphaticInvolvementVS"
           }
         }
       },
@@ -5797,7 +5797,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/finding/vs/ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
           }
         }
       },

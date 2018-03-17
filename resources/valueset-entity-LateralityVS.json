@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI LateralityVS ValueSet</b></p>\n<p>Anatomical location or specimen further detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/entity/vs/LateralityVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-LateralityVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -31,7 +31,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/entity/cs/LateralityCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/entity-LateralityCS",
         "concept": [
           {
             "code": "C13332",

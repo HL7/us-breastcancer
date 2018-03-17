@@ -450,7 +450,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSiteVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSiteVS"
           }
         },
         "mapping": [
@@ -542,7 +542,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/LeftRightLateralityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS"
           }
         },
         "mapping": [
@@ -580,7 +580,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/DirectionalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-DirectionalityVS"
           }
         },
         "mapping": [
@@ -618,7 +618,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/PortionTotalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-PortionTotalityVS"
           }
         },
         "mapping": [
@@ -768,7 +768,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/BreastSiteVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSiteVS"
           }
         },
         "definition": "Code representing a body site specific to the breast structure."
@@ -799,7 +799,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/oncology/vs/LeftRightLateralityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS"
           }
         }
       },
@@ -814,7 +814,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/DirectionalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-DirectionalityVS"
           }
         }
       },
@@ -829,7 +829,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/entity/vs/PortionTotalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-PortionTotalityVS"
           }
         }
       }

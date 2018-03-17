@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ConditionCategoryVS ValueSet</b></p>\n<p></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/condition/vs/ConditionCategoryVS",
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
@@ -30,7 +30,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/condition/cs/ConditionCategoryCS",
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/condition-ConditionCategoryCS",
         "concept": [
           {
             "code": "disease",
