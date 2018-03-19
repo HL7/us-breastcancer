@@ -3,12 +3,12 @@
   "id": "shr-core-Range",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI Range Profile</b></p>\n  <p>An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>shr.core.Range maps to Range:\n  LowerBound maps to low\n  UpperBound maps to high\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Range Profile</b></p>\n  <p>An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.core.Range maps to Range:\n  LowerBound maps to low\n  UpperBound maps to high\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range",
   "name": "Range",
   "status": "draft",
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -247,5 +247,5 @@
       "value": "shr.core.Range"
     }
   ],
-  "title": "BCI Range Profile"
+  "title": "BC Range Profile"
 }

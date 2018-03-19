@@ -3,7 +3,7 @@
   "id": "oncology-StageTimingPrefixVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI StageTimingPrefixVS ValueSet</b></p>\n<p>When staging was done, relative to treatment events.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC StageTimingPrefixVS ValueSet</b></p>\n<p>When staging was done, relative to treatment events.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StageTimingPrefixVS",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "StageTimingPrefixVS",
-  "title": "BCI StageTimingPrefixVS ValueSet",
+  "title": "BC StageTimingPrefixVS ValueSet",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "When staging was done, relative to treatment events.",
   "compose": {
     "include": [

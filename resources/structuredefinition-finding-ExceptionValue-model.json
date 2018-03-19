@@ -1,0 +1,114 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "finding-ExceptionValue-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ExceptionValue Logical Model</b></p>\n  <p>Reason that a value associated with a test or other finding is missing.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "finding.ExceptionValue"
+    }
+  ],
+  "name": "ExceptionValue",
+  "title": "BC ExceptionValue Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Reason that a value associated with a test or other finding is missing.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "finding-ExceptionValue-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "finding-ExceptionValue-model",
+        "path": "finding-ExceptionValue-model",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-ExceptionValue-model.value",
+        "path": "finding-ExceptionValue-model.value",
+        "short": "Code representing reason that a value associated with a test or other finding is missing.",
+        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "finding-ExceptionValue-model",
+        "path": "finding-ExceptionValue-model",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-ExceptionValue-model.value",
+        "path": "finding-ExceptionValue-model.value",
+        "short": "Code representing reason that a value associated with a test or other finding is missing.",
+        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
+          }
+        }
+      }
+    ]
+  }
+}

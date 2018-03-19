@@ -3,7 +3,7 @@
   "id": "oncology-NottinghamCombinedGradeVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI NottinghamCombinedGradeVS ValueSet</b></p>\n<p></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC NottinghamCombinedGradeVS ValueSet</b></p>\n<p></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NottinghamCombinedGradeVS",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "NottinghamCombinedGradeVS",
-  "title": "BCI NottinghamCombinedGradeVS ValueSet",
+  "title": "BC NottinghamCombinedGradeVS ValueSet",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "compose": {
     "include": [
       {
@@ -34,15 +34,15 @@
         "concept": [
           {
             "code": "369790002",
-            "display": "Low grade or well differentiated"
+            "display": "Nottingham Combined Grade I: 3-5 points (finding)"
           },
           {
             "code": "369791003",
-            "display": "Intermediate/moderate grade or moderately differentiated"
+            "display": "Nottingham Combined Grade II: 6-7 points (finding)"
           },
           {
             "code": "369792005",
-            "display": "High grade or pooly differentiated"
+            "display": "Nottingham Combined Grade III: 8-9 points (finding)"
           }
         ]
       }

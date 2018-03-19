@@ -1,0 +1,374 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-BreastSite-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSite Logical Model</b></p>\n  <p>A body site specific to the breast structure.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.BreastSite"
+    }
+  ],
+  "name": "BreastSite",
+  "title": "BC BreastSite Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "A body site specific to the breast structure.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-BreastSite-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-BreastSite-model",
+        "path": "oncology-BreastSite-model",
+        "definition": "A body site specific to the breast structure.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.value",
+        "path": "oncology-BreastSite-model.value",
+        "short": "Code representing a body site specific to the breast structure.",
+        "definition": "Code representing a body site specific to the breast structure.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSiteVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastSite-model.laterality",
+        "path": "oncology-BreastSite-model.laterality",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0925205",
+            "display": "Anatomical laterality"
+          }
+        ],
+        "short": "Anatomical location or specimen further detailing the side(s) of interest.",
+        "definition": "Anatomical location or specimen further detailing the side(s) of interest.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Laterality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.laterality.value",
+        "path": "oncology-BreastSite-model.laterality.value",
+        "short": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
+        "definition": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastSite-model.directionality",
+        "path": "oncology-BreastSite-model.directionality",
+        "code": [
+          {
+            "system": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/",
+            "code": "C99074"
+          }
+        ],
+        "short": "Anatomical location or specimen further detailing directionality.",
+        "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Directionality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.portionTotality",
+        "path": "oncology-BreastSite-model.portionTotality",
+        "code": [
+          {
+            "system": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/",
+            "code": "C99075"
+          }
+        ],
+        "short": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
+        "definition": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-PortionTotality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.clockDirection",
+        "path": "oncology-BreastSite-model.clockDirection",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72294-2"
+          }
+        ],
+        "short": "A direction indicated by an angle relative to 12 o'clock.",
+        "definition": "A direction indicated by an angle relative to 12 o'clock.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ClockDirection-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.distanceToNipple",
+        "path": "oncology-BreastSite-model.distanceToNipple",
+        "short": "The body site location in relation to the nipple.",
+        "definition": "The body site location in relation to the nipple.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-DistanceToNipple-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-BreastSite-model",
+        "path": "oncology-BreastSite-model",
+        "definition": "A body site specific to the breast structure.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.value",
+        "path": "oncology-BreastSite-model.value",
+        "short": "Code representing a body site specific to the breast structure.",
+        "definition": "Code representing a body site specific to the breast structure.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSiteVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastSite-model.laterality",
+        "path": "oncology-BreastSite-model.laterality",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0925205",
+            "display": "Anatomical laterality"
+          }
+        ],
+        "short": "Anatomical location or specimen further detailing the side(s) of interest.",
+        "definition": "Anatomical location or specimen further detailing the side(s) of interest.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Laterality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.laterality.value",
+        "path": "oncology-BreastSite-model.laterality.value",
+        "short": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
+        "definition": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastSite-model.directionality",
+        "path": "oncology-BreastSite-model.directionality",
+        "code": [
+          {
+            "system": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/",
+            "code": "C99074"
+          }
+        ],
+        "short": "Anatomical location or specimen further detailing directionality.",
+        "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Directionality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.portionTotality",
+        "path": "oncology-BreastSite-model.portionTotality",
+        "code": [
+          {
+            "system": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/",
+            "code": "C99075"
+          }
+        ],
+        "short": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
+        "definition": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-PortionTotality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.clockDirection",
+        "path": "oncology-BreastSite-model.clockDirection",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72294-2"
+          }
+        ],
+        "short": "A direction indicated by an angle relative to 12 o'clock.",
+        "definition": "A direction indicated by an angle relative to 12 o'clock.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ClockDirection-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSite-model.distanceToNipple",
+        "path": "oncology-BreastSite-model.distanceToNipple",
+        "short": "The body site location in relation to the nipple.",
+        "definition": "The body site location in relation to the nipple.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-DistanceToNipple-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

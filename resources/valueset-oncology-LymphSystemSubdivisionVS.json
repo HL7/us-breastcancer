@@ -3,7 +3,7 @@
   "id": "oncology-LymphSystemSubdivisionVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI LymphSystemSubdivisionVS ValueSet</b></p>\n<p>A lymph node area or nodal group; a subdivision of the entire lymphatic system. For breast cancer, this includes 5 areas: internal mammary lymph nodes, axillary lymph nodes level I, II, and III, and the supraclavicular lymph nodes.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LymphSystemSubdivisionVS ValueSet</b></p>\n<p>A lymph node area or nodal group; a subdivision of the entire lymphatic system. For breast cancer, this includes 5 areas: internal mammary lymph nodes, axillary lymph nodes level I, II, and III, and the supraclavicular lymph nodes.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LymphSystemSubdivisionVS",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "LymphSystemSubdivisionVS",
-  "title": "BCI LymphSystemSubdivisionVS ValueSet",
+  "title": "BC LymphSystemSubdivisionVS ValueSet",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "A lymph node area or nodal group; a subdivision of the entire lymphatic system. For breast cancer, this includes 5 areas: internal mammary lymph nodes, axillary lymph nodes level I, II, and III, and the supraclavicular lymph nodes.",
   "compose": {
     "include": [

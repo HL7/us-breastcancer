@@ -3,7 +3,7 @@
   "id": "finding-FindingMethod-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI FindingMethod Extension</b></p>\n  <p>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#039;method&#039;.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingMethod Extension</b></p>\n  <p>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#039;method&#039;.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "FindingMethodExtension",
-  "title": "BCI FindingMethod Extension",
+  "title": "BC FindingMethod Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -43,7 +43,7 @@
       {
         "id": "Extension:findingmethod",
         "path": "Extension",
-        "short": "BCI FindingMethod Extension",
+        "short": "BC FindingMethod Extension",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
         "min": 0,
         "max": "*",
@@ -186,7 +186,7 @@
       {
         "id": "Extension:findingmethod",
         "path": "Extension",
-        "short": "BCI FindingMethod Extension",
+        "short": "BC FindingMethod Extension",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
         "min": 0,
         "max": "*"

@@ -3,12 +3,12 @@
   "id": "oncology-BreastSite",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI BreastSite Profile</b></p>\n  <p>A body site specific to the breast structure.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.BreastSite maps to BodySite:\n  CodeableConcept maps to code\n  Laterality maps to qualifier (slice on = coding.code)\n  Directionality maps to qualifier\n  PortionTotality maps to qualifier\t\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSite Profile</b></p>\n  <p>A body site specific to the breast structure.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSite maps to BodySite:\n  CodeableConcept maps to code\n  Laterality maps to qualifier (slice on = coding.code)\n  Directionality maps to qualifier\n  PortionTotality maps to qualifier\t\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite",
   "name": "BreastSite",
   "status": "draft",
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -841,5 +841,5 @@
       "value": "oncology.BreastSite"
     }
   ],
-  "title": "BCI BreastSite Profile"
+  "title": "BC BreastSite Profile"
 }

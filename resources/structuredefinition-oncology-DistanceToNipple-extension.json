@@ -3,7 +3,7 @@
   "id": "oncology-DistanceToNipple-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI DistanceToNipple Extension</b></p>\n  <p>The body site location in relation to the nipple.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DistanceToNipple Extension</b></p>\n  <p>The body site location in relation to the nipple.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-DistanceToNipple-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "DistanceToNippleExtension",
-  "title": "BCI DistanceToNipple Extension",
+  "title": "BC DistanceToNipple Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "The body site location in relation to the nipple.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -43,7 +43,7 @@
       {
         "id": "Extension:distancetonipple",
         "path": "Extension",
-        "short": "BCI DistanceToNipple Extension",
+        "short": "BC DistanceToNipple Extension",
         "definition": "The body site location in relation to the nipple.",
         "min": 0,
         "max": "*",
@@ -400,7 +400,7 @@
       {
         "id": "Extension:distancetonipple",
         "path": "Extension",
-        "short": "BCI DistanceToNipple Extension",
+        "short": "BC DistanceToNipple Extension",
         "definition": "The body site location in relation to the nipple.",
         "min": 0,
         "max": "*"

@@ -3,7 +3,7 @@
   "id": "oncology-LeftRightLateralityCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI LeftRightLateralityCS CodeSystem</b></p>\n<p>Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LeftRightLateralityCS CodeSystem</b></p>\n<p>Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-LeftRightLateralityCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "oncology.LeftRightLateralityCS"
   },
   "name": "LeftRightLateralityCS",
-  "title": "BCI LeftRightLateralityCS CodeSystem",
+  "title": "BC LeftRightLateralityCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI",
   "caseSensitive": true,
   "content": "complete",

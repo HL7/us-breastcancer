@@ -1,0 +1,228 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-HER2toCEP17Ratio-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2toCEP17Ratio Logical Model</b></p>\n  <p>HER2 to CEP17 Ratio (dual probe only)</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2toCEP17Ratio-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.HER2toCEP17Ratio"
+    }
+  ],
+  "name": "HER2toCEP17Ratio",
+  "title": "BC HER2toCEP17Ratio Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "HER2 to CEP17 Ratio (dual probe only)",
+  "keyword": [
+    {
+      "system": "http://loinc.org",
+      "code": "49683-6"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-HER2toCEP17Ratio-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-HER2toCEP17Ratio-model",
+        "path": "oncology-HER2toCEP17Ratio-model",
+        "definition": "HER2 to CEP17 Ratio (dual probe only)",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.value",
+        "path": "oncology-HER2toCEP17Ratio-model.value",
+        "short": "Quantity representing hER2 to CEP17 Ratio (dual probe only)",
+        "definition": "Quantity representing hER2 to CEP17 Ratio (dual probe only)",
+        "alias": [
+          "quantity"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.exceptionValue",
+        "path": "oncology-HER2toCEP17Ratio-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.interpretation",
+        "path": "oncology-HER2toCEP17Ratio-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.referenceRange",
+        "path": "oncology-HER2toCEP17Ratio-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-HER2toCEP17Ratio-model",
+        "path": "oncology-HER2toCEP17Ratio-model",
+        "definition": "HER2 to CEP17 Ratio (dual probe only)",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.value",
+        "path": "oncology-HER2toCEP17Ratio-model.value",
+        "short": "Quantity representing hER2 to CEP17 Ratio (dual probe only)",
+        "definition": "Quantity representing hER2 to CEP17 Ratio (dual probe only)",
+        "alias": [
+          "quantity"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.exceptionValue",
+        "path": "oncology-HER2toCEP17Ratio-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.interpretation",
+        "path": "oncology-HER2toCEP17Ratio-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2toCEP17Ratio-model.referenceRange",
+        "path": "oncology-HER2toCEP17Ratio-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

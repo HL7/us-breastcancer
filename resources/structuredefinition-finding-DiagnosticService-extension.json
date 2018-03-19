@@ -3,7 +3,7 @@
   "id": "finding-DiagnosticService-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI DiagnosticService Extension</b></p>\n  <p>A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DiagnosticService Extension</b></p>\n  <p>A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "DiagnosticServiceExtension",
-  "title": "BCI DiagnosticService Extension",
+  "title": "BC DiagnosticService Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -43,7 +43,7 @@
       {
         "id": "Extension:diagnosticservice",
         "path": "Extension",
-        "short": "BCI DiagnosticService Extension",
+        "short": "BC DiagnosticService Extension",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
         "max": "*",
@@ -186,7 +186,7 @@
       {
         "id": "Extension:diagnosticservice",
         "path": "Extension",
-        "short": "BCI DiagnosticService Extension",
+        "short": "BC DiagnosticService Extension",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
         "max": "*"

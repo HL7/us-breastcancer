@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "entity-Entity-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Entity Logical Model</b></p>\n  <p>Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.\n\nIn CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.\n\nFurther, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI&#039;s participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Entity-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "entity.Entity"
+    }
+  ],
+  "name": "Entity",
+  "title": "BC Entity Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.\n\nIn CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.\n\nFurther, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI's participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "entity-Entity-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "entity-Entity-model",
+        "path": "entity-Entity-model",
+        "definition": "Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.\n\nIn CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.\n\nFurther, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI's participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-Entity-model.intentionallyBlank",
+        "path": "entity-Entity-model.intentionallyBlank",
+        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "min": 0,
+        "max": "0",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "entity-Entity-model",
+        "path": "entity-Entity-model",
+        "definition": "Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.\n\nIn CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.\n\nFurther, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI's participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-Entity-model.intentionallyBlank",
+        "path": "entity-Entity-model.intentionallyBlank",
+        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "min": 0,
+        "max": "0",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

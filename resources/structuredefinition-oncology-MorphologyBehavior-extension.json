@@ -3,7 +3,7 @@
   "id": "oncology-MorphologyBehavior-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI MorphologyBehavior Extension</b></p>\n  <p>A description of the morphology characteristics of the cancer.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MorphologyBehavior Extension</b></p>\n  <p>A description of the morphology characteristics of the cancer.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MorphologyBehavior-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "MorphologyBehaviorExtension",
-  "title": "BCI MorphologyBehavior Extension",
+  "title": "BC MorphologyBehavior Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "A description of the morphology characteristics of the cancer.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -43,7 +43,7 @@
       {
         "id": "Extension:morphologybehavior",
         "path": "Extension",
-        "short": "BCI MorphologyBehavior Extension",
+        "short": "BC MorphologyBehavior Extension",
         "definition": "A description of the morphology characteristics of the cancer.",
         "min": 0,
         "max": "*",
@@ -171,13 +171,7 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS"
-          }
-        }
+        ]
       }
     ]
   },
@@ -186,7 +180,7 @@
       {
         "id": "Extension:morphologybehavior",
         "path": "Extension",
-        "short": "BCI MorphologyBehavior Extension",
+        "short": "BC MorphologyBehavior Extension",
         "definition": "A description of the morphology characteristics of the cancer.",
         "min": 0,
         "max": "*"
@@ -215,13 +209,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS"
-          }
-        }
+        ]
       }
     ]
   }

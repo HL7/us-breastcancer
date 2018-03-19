@@ -3,12 +3,12 @@
   "id": "oncology-BreastCancerTNMStage",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI BreastCancerTNMStage Profile</b></p>\n  <p>The stage of a cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). TNM Stage Grouping categorizes the progression of cancer using a modified Roman Numeral system.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerTNMStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  Specimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerTNMStage Profile</b></p>\n  <p>The stage of a cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). TNM Stage Grouping categorizes the progression of cancer using a modified Roman Numeral system.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerTNMStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  Specimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerTNMStage",
   "name": "BreastCancerTNMStage",
   "status": "draft",
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -394,7 +394,7 @@
       {
         "id": "Observation:oncology-BreastCancerTNMStage.extension:focus",
         "path": "Observation.extension",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.",
+        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
         "min": 0,
         "max": "1",
         "type": [
@@ -596,7 +596,7 @@
         "id": "Observation:oncology-BreastCancerTNMStage.extension:focus.extension:statementtopic",
         "path": "Observation.extension.extension",
         "sliceName": "statementtopic",
-        "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. A topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. \n\nA topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
         "base": {
@@ -678,7 +678,7 @@
         "id": "Observation:oncology-BreastCancerTNMStage.extension:focus.extension:statementtopic.extension:topiccode",
         "path": "Observation.extension.extension.extension",
         "sliceName": "topiccode",
-        "definition": "The concept representing the finding or action that is the topic of the statement. For actions, the key represents the action being described. For findings, the key represents the 'question' or property being investigated. For evaluation result findings, the key contains a concept for an observable entity, such as systolic blood pressure. For assertion findings (which by nature lack an explicit question), the key contains a default concept signifying that an assertion is being made. In all cases, the key describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
         "base": {
@@ -1045,7 +1045,7 @@
       {
         "id": "Observation:oncology-BreastCancerTNMStage.extension:precondition",
         "path": "Observation.extension",
-        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
         "type": [
@@ -5953,7 +5953,7 @@
       {
         "id": "Observation:oncology-BreastCancerTNMStage.extension:focus",
         "path": "Observation.extension",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.",
+        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
         "min": 0,
         "max": "1",
         "type": [
@@ -5995,7 +5995,7 @@
       {
         "id": "Observation:oncology-BreastCancerTNMStage.extension:precondition",
         "path": "Observation.extension",
-        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
         "type": [
@@ -6539,6 +6539,6 @@
       "value": "oncology.BreastCancerTNMStage"
     }
   ],
-  "title": "BCI BreastCancerTNMStage Profile",
+  "title": "BC BreastCancerTNMStage Profile",
   "description": "The stage of a cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). TNM Stage Grouping categorizes the progression of cancer using a modified Roman Numeral system."
 }

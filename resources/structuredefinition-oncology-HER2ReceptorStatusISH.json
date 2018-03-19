@@ -3,12 +3,12 @@
   "id": "oncology-HER2ReceptorStatusISH",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI HER2ReceptorStatusISH Profile</b></p>\n  <p>HER2 receptor status as determined by In Situ HybridizationISH.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.HER2ReceptorStatusISH maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatusISH Profile</b></p>\n  <p>HER2 receptor status as determined by In Situ Hybridization (ISH).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2ReceptorStatusISH maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2ReceptorStatusISH",
   "name": "HER2ReceptorStatusISH",
   "status": "draft",
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -80,7 +80,7 @@
         "id": "Observation:oncology-HER2ReceptorStatusISH",
         "path": "Observation",
         "short": "HER2ReceptorStatusISH",
-        "definition": "HER2 receptor status as determined by In Situ HybridizationISH.",
+        "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -3407,9 +3407,9 @@
         }
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8",
         "path": "Observation.component.code.coding",
-        "sliceName": "Fixed_25910",
+        "sliceName": "Fixed_74860-8",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 0,
         "max": "*",
@@ -3421,7 +3421,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.id",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -3448,7 +3448,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.extension",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -3487,7 +3487,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.system",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -3515,10 +3515,10 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "https://sdt.cap.org"
+        "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.version",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -3547,7 +3547,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.code",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -3574,10 +3574,10 @@
             "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
           }
         ],
-        "fixedCode": "25910"
+        "fixedCode": "74860-8"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.display",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -3612,7 +3612,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.userSelected",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -4356,9 +4356,9 @@
         }
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6",
         "path": "Observation.component.code.coding",
-        "sliceName": "Fixed_25911",
+        "sliceName": "Fixed_74861-6",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 0,
         "max": "*",
@@ -4370,7 +4370,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.id",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -4397,7 +4397,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.extension",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -4436,7 +4436,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.system",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -4464,10 +4464,10 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "https://sdt.cap.org"
+        "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.version",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -4496,7 +4496,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.code",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -4523,10 +4523,10 @@
             "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
           }
         ],
-        "fixedCode": "25911"
+        "fixedCode": "74861-6"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.display",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4561,7 +4561,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.userSelected",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -9112,7 +9112,7 @@
         "id": "Observation:oncology-HER2ReceptorStatusISH",
         "path": "Observation",
         "short": "HER2ReceptorStatusISH",
-        "definition": "HER2 receptor status as determined by In Situ HybridizationISH.",
+        "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
         "mustSupport": false
       },
       {
@@ -9464,9 +9464,9 @@
         }
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8",
         "path": "Observation.component.code.coding",
-        "sliceName": "Fixed_25910",
+        "sliceName": "Fixed_74860-8",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 0,
         "max": "*",
@@ -9478,14 +9478,14 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.system",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.system",
         "path": "Observation.component.code.coding.system",
-        "fixedUri": "https://sdt.cap.org"
+        "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_25910.code",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8.code",
         "path": "Observation.component.code.coding.code",
-        "fixedCode": "25910"
+        "fixedCode": "74860-8"
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageHER2SignalsPerCell.dataAbsentReason",
@@ -9543,9 +9543,9 @@
         }
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6",
         "path": "Observation.component.code.coding",
-        "sliceName": "Fixed_25911",
+        "sliceName": "Fixed_74861-6",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 0,
         "max": "*",
@@ -9557,14 +9557,14 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.system",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.system",
         "path": "Observation.component.code.coding.system",
-        "fixedUri": "https://sdt.cap.org"
+        "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_25911.code",
+        "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6.code",
         "path": "Observation.component.code.coding.code",
-        "fixedCode": "25911"
+        "fixedCode": "74861-6"
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatusISH.component:oncology-AverageCEP17SignalsPerCell.dataAbsentReason",
@@ -9966,6 +9966,6 @@
       "value": "oncology.HER2ReceptorStatusISH"
     }
   ],
-  "title": "BCI HER2ReceptorStatusISH Profile",
-  "description": "HER2 receptor status as determined by In Situ HybridizationISH."
+  "title": "BC HER2ReceptorStatusISH Profile",
+  "description": "HER2 receptor status as determined by In Situ Hybridization (ISH)."
 }

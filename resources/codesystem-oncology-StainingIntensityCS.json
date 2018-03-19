@@ -3,7 +3,7 @@
   "id": "oncology-StainingIntensityCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI StainingIntensityCS CodeSystem</b></p>\n<p>Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC StainingIntensityCS CodeSystem</b></p>\n<p>Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StainingIntensityCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "oncology.StainingIntensityCS"
   },
   "name": "StainingIntensityCS",
-  "title": "BCI StainingIntensityCS CodeSystem",
+  "title": "BC StainingIntensityCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).",
   "caseSensitive": true,
   "content": "complete",

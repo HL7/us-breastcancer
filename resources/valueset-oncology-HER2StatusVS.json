@@ -3,7 +3,7 @@
   "id": "oncology-HER2StatusVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI HER2StatusVS ValueSet</b></p>\n<p>HER2 status overall result</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC HER2StatusVS ValueSet</b></p>\n<p>HER2 status overall result</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2StatusVS",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "HER2StatusVS",
-  "title": "BCI HER2StatusVS ValueSet",
+  "title": "BC HER2StatusVS ValueSet",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "HER2 status overall result",
   "compose": {
     "include": [

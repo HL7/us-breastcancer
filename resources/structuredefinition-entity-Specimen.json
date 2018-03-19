@@ -3,12 +3,12 @@
   "id": "entity-Specimen",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI Specimen Profile</b></p>\n  <p>Sample for analysis. NOTE: This logical model has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>entity.Specimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Specimen Profile</b></p>\n  <p>Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>entity.Specimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen",
   "name": "Specimen",
   "status": "draft",
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Sample for analysis. NOTE: This logical model has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
+  "description": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -50,7 +50,7 @@
         "id": "Specimen:entity-Specimen",
         "path": "Specimen",
         "short": "Specimen",
-        "definition": "Sample for analysis. NOTE: This logical model has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
+        "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "*",
         "constraint": [
@@ -1416,7 +1416,7 @@
         "id": "Specimen:entity-Specimen",
         "path": "Specimen",
         "short": "Specimen",
-        "definition": "Sample for analysis. NOTE: This logical model has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot."
+        "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot."
       },
       {
         "id": "Specimen:entity-Specimen.extension:collectionsite",
@@ -1458,5 +1458,5 @@
       "value": "entity.Specimen"
     }
   ],
-  "title": "BCI Specimen Profile"
+  "title": "BC Specimen Profile"
 }

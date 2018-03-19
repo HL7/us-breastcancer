@@ -3,7 +3,7 @@
   "id": "entity-CollectionSite-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI CollectionSite Extension</b></p>\n  <p>The body site where specimen was collected</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC CollectionSite Extension</b></p>\n  <p>The body site where specimen was collected</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionSite-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "CollectionSiteExtension",
-  "title": "BCI CollectionSite Extension",
+  "title": "BC CollectionSite Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "The body site where specimen was collected",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -43,7 +43,7 @@
       {
         "id": "Extension:collectionsite",
         "path": "Extension",
-        "short": "BCI CollectionSite Extension",
+        "short": "BC CollectionSite Extension",
         "definition": "The body site where specimen was collected",
         "min": 0,
         "max": "*",
@@ -181,7 +181,7 @@
       {
         "id": "Extension:collectionsite",
         "path": "Extension",
-        "short": "BCI CollectionSite Extension",
+        "short": "BC CollectionSite Extension",
         "definition": "The body site where specimen was collected",
         "min": 0,
         "max": "*"

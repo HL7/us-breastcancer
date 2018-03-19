@@ -1,0 +1,298 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "condition-ConditionTopic-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionTopic Logical Model</b></p>\n  <p>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/condition-ConditionTopic-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "condition.ConditionTopic"
+    }
+  ],
+  "name": "ConditionTopic",
+  "title": "BC ConditionTopic Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0348080"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "condition-ConditionTopic-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "condition-ConditionTopic-model",
+        "path": "condition-ConditionTopic-model",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.value",
+        "path": "condition-ConditionTopic-model.value",
+        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. ",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
+          }
+        }
+      },
+      {
+        "id": "condition-ConditionTopic-model.topicCode",
+        "path": "condition-ConditionTopic-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.findingMethod",
+        "path": "condition-ConditionTopic-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.category",
+        "path": "condition-ConditionTopic-model.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.category.value",
+        "path": "condition-ConditionTopic-model.category.value",
+        "short": "Code representing a class or division of people or things having particular shared characteristics",
+        "definition": "Code representing a class or division of people or things having particular shared characteristics",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "condition-ConditionTopic-model.anatomicalLocationOrCode",
+        "path": "condition-ConditionTopic-model.anatomicalLocationOrCode",
+        "short": "A body site entity or a body site code.",
+        "definition": "A body site entity or a body site code.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocationOrCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "condition-ConditionTopic-model",
+        "path": "condition-ConditionTopic-model",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.value",
+        "path": "condition-ConditionTopic-model.value",
+        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. ",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
+          }
+        }
+      },
+      {
+        "id": "condition-ConditionTopic-model.topicCode",
+        "path": "condition-ConditionTopic-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.findingMethod",
+        "path": "condition-ConditionTopic-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.category",
+        "path": "condition-ConditionTopic-model.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "condition-ConditionTopic-model.category.value",
+        "path": "condition-ConditionTopic-model.category.value",
+        "short": "Code representing a class or division of people or things having particular shared characteristics",
+        "definition": "Code representing a class or division of people or things having particular shared characteristics",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "condition-ConditionTopic-model.anatomicalLocationOrCode",
+        "path": "condition-ConditionTopic-model.anatomicalLocationOrCode",
+        "short": "A body site entity or a body site code.",
+        "definition": "A body site entity or a body site code.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocationOrCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

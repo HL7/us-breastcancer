@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerTStageCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI BreastCancerTStageCS CodeSystem</b></p>\n<p>Tumor category according to AJCC breast cancer staging recommendations.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerTStageCS CodeSystem</b></p>\n<p>Tumor category according to AJCC breast cancer staging recommendations.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTStageCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "oncology.BreastCancerTStageCS"
   },
   "name": "BreastCancerTStageCS",
-  "title": "BCI BreastCancerTStageCS CodeSystem",
+  "title": "BC BreastCancerTStageCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "Tumor category according to AJCC breast cancer staging recommendations.",
   "caseSensitive": true,
   "content": "complete",

@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerNStageCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI BreastCancerNStageCS CodeSystem</b></p>\n<p>Regional nodes N category according to AJCC breast cancer staging recommendations. The codes do not include the stage timing prefix, recorded separately in the StageTimingPrefix attribute.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerNStageCS CodeSystem</b></p>\n<p>Regional nodes N category according to AJCC breast cancer staging recommendations. The codes do not include the stage timing prefix, recorded separately in the StageTimingPrefix attribute.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerNStageCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "oncology.BreastCancerNStageCS"
   },
   "name": "BreastCancerNStageCS",
-  "title": "BCI BreastCancerNStageCS CodeSystem",
+  "title": "BC BreastCancerNStageCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "Regional nodes N category according to AJCC breast cancer staging recommendations. The codes do not include the stage timing prefix, recorded separately in the StageTimingPrefix attribute.",
   "caseSensitive": true,
   "content": "complete",

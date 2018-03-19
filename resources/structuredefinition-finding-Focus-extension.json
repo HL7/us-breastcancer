@@ -3,7 +3,7 @@
   "id": "finding-Focus-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI Focus Extension</b></p>\n  <p>The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Focus Extension</b></p>\n  <p>The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Focus-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "FocusExtension",
-  "title": "BCI Focus Extension",
+  "title": "BC Focus Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-03-17",
-  "description": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.",
+  "date": "2018-03-19",
+  "description": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -43,8 +43,8 @@
       {
         "id": "Extension:focus",
         "path": "Extension",
-        "short": "BCI Focus Extension",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.",
+        "short": "BC Focus Extension",
+        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
         "min": 0,
         "max": "*",
         "base": {
@@ -166,7 +166,7 @@
         "id": "Extension:focus.extension:statementtopic",
         "path": "Extension.extension",
         "sliceName": "statementtopic",
-        "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. A topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. \n\nA topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
         "base": {
@@ -359,8 +359,8 @@
       {
         "id": "Extension:focus",
         "path": "Extension",
-        "short": "BCI Focus Extension",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. For use when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, an issue has been approved for adding an attribute (focalSubject) to FHIR. That change to FHIR is anticipated here.",
+        "short": "BC Focus Extension",
+        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
         "min": 0,
         "max": "*",
         "constraint": [
@@ -390,7 +390,7 @@
         "id": "Extension:focus.extension:statementtopic",
         "path": "Extension.extension",
         "sliceName": "statementtopic",
-        "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. A topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. \n\nA topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
         "type": [

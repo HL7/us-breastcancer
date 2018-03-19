@@ -46,23 +46,14 @@
     "StructureDefinition/entity-AnatomicalLocation": {
       "base": "StructureDefinition-entity-AnatomicalLocation.html"
     },
-    "StructureDefinition/oncology-BRCA1Variant": {
-      "base": "StructureDefinition-oncology-BRCA1Variant.html"
-    },
-    "StructureDefinition/oncology-BRCA2Variant": {
-      "base": "StructureDefinition-oncology-BRCA2Variant.html"
-    },
-    "StructureDefinition/finding-BodyStructurePresent": {
-      "base": "StructureDefinition-finding-BodyStructurePresent.html"
-    },
     "StructureDefinition/oncology-BreastCancer": {
       "base": "StructureDefinition-oncology-BreastCancer.html"
     },
-    "StructureDefinition/oncology-BreastCancerGeneticAnalysisPanel": {
-      "base": "StructureDefinition-oncology-BreastCancerGeneticAnalysisPanel.html"
-    },
     "StructureDefinition/oncology-BreastCancerTNMStage": {
       "base": "StructureDefinition-oncology-BreastCancerTNMStage.html"
+    },
+    "StructureDefinition/oncology-BreastRegionalLymphNodeSpecimen": {
+      "base": "StructureDefinition-oncology-BreastRegionalLymphNodeSpecimen.html"
     },
     "StructureDefinition/oncology-BreastSite": {
       "base": "StructureDefinition-oncology-BreastSite.html"
@@ -78,9 +69,6 @@
     },
     "StructureDefinition/finding-EvaluationResultRecorded": {
       "base": "StructureDefinition-finding-EvaluationResultRecorded.html"
-    },
-    "StructureDefinition/oncology-GeneticVariant": {
-      "base": "StructureDefinition-oncology-GeneticVariant.html"
     },
     "StructureDefinition/oncology-HER2ReceptorStatus": {
       "base": "StructureDefinition-oncology-HER2ReceptorStatus.html"
@@ -103,14 +91,26 @@
     "StructureDefinition/oncology-LymphaticInvolvement": {
       "base": "StructureDefinition-oncology-LymphaticInvolvement.html"
     },
-    "StructureDefinition/oncology-OncotypeDxRecurrenceScore": {
-      "base": "StructureDefinition-oncology-OncotypeDxRecurrenceScore.html"
+    "StructureDefinition/oncology-MammaprintRecurrenceScore": {
+      "base": "StructureDefinition-oncology-MammaprintRecurrenceScore.html"
     },
-    "StructureDefinition/oncology-PercentageRange": {
-      "base": "StructureDefinition-oncology-PercentageRange.html"
+    "StructureDefinition/oncology-NuclearGrade": {
+      "base": "StructureDefinition-oncology-NuclearGrade.html"
+    },
+    "StructureDefinition/oncology-OncotypeDxDCISRecurrenceScore": {
+      "base": "StructureDefinition-oncology-OncotypeDxDCISRecurrenceScore.html"
+    },
+    "StructureDefinition/oncology-OncotypeDxInvasiveRecurrenceScore": {
+      "base": "StructureDefinition-oncology-OncotypeDxInvasiveRecurrenceScore.html"
+    },
+    "StructureDefinition/shr-core-PercentageRange": {
+      "base": "StructureDefinition-shr-core-PercentageRange.html"
     },
     "StructureDefinition/oncology-ProgesteroneReceptorStatus": {
       "base": "StructureDefinition-oncology-ProgesteroneReceptorStatus.html"
+    },
+    "StructureDefinition/oncology-ProsignaRecurrenceScore": {
+      "base": "StructureDefinition-oncology-ProsignaRecurrenceScore.html"
     },
     "StructureDefinition/shr-core-Range": {
       "base": "StructureDefinition-shr-core-Range.html"
@@ -133,24 +133,6 @@
     "StructureDefinition/oncology-TumorMargins": {
       "base": "StructureDefinition-oncology-TumorMargins.html"
     },
-    "StructureDefinition/condition-Abatement-extension": {
-      "base": "StructureDefinition-condition-Abatement-extension.html"
-    },
-    "StructureDefinition/entity-AnatomicalLocation-extension": {
-      "base": "StructureDefinition-entity-AnatomicalLocation-extension.html"
-    },
-    "StructureDefinition/finding-ApplicableAgeRange-extension": {
-      "base": "StructureDefinition-finding-ApplicableAgeRange-extension.html"
-    },
-    "StructureDefinition/finding-ApplicableSubpopulation-extension": {
-      "base": "StructureDefinition-finding-ApplicableSubpopulation-extension.html"
-    },
-    "StructureDefinition/shr-core-Category-extension": {
-      "base": "StructureDefinition-shr-core-Category-extension.html"
-    },
-    "StructureDefinition/finding-Certainty-extension": {
-      "base": "StructureDefinition-finding-Certainty-extension.html"
-    },
     "StructureDefinition/shr-core-ClockDirection-extension": {
       "base": "StructureDefinition-shr-core-ClockDirection-extension.html"
     },
@@ -163,9 +145,6 @@
     "StructureDefinition/entity-CollectionSite-extension": {
       "base": "StructureDefinition-entity-CollectionSite-extension.html"
     },
-    "StructureDefinition/shr-base-ContextCode-extension": {
-      "base": "StructureDefinition-shr-base-ContextCode-extension.html"
-    },
     "StructureDefinition/finding-DeltaFlag-extension": {
       "base": "StructureDefinition-finding-DeltaFlag-extension.html"
     },
@@ -175,56 +154,17 @@
     "StructureDefinition/oncology-DistanceToNipple-extension": {
       "base": "StructureDefinition-oncology-DistanceToNipple-extension.html"
     },
-    "StructureDefinition/finding-EvaluationComponent-extension": {
-      "base": "StructureDefinition-finding-EvaluationComponent-extension.html"
-    },
-    "StructureDefinition/finding-EvaluationResultTopic-extension": {
-      "base": "StructureDefinition-finding-EvaluationResultTopic-extension.html"
-    },
-    "StructureDefinition/finding-ExceptionValue-extension": {
-      "base": "StructureDefinition-finding-ExceptionValue-extension.html"
-    },
     "StructureDefinition/finding-FindingMethod-extension": {
       "base": "StructureDefinition-finding-FindingMethod-extension.html"
     },
     "StructureDefinition/finding-Focus-extension": {
       "base": "StructureDefinition-finding-Focus-extension.html"
     },
-    "StructureDefinition/finding-Interpretation-extension": {
-      "base": "StructureDefinition-finding-Interpretation-extension.html"
-    },
-    "StructureDefinition/finding-KnownOrSuspectedPresentContext-extension": {
-      "base": "StructureDefinition-finding-KnownOrSuspectedPresentContext-extension.html"
-    },
-    "StructureDefinition/finding-Members-extension": {
-      "base": "StructureDefinition-finding-Members-extension.html"
-    },
     "StructureDefinition/oncology-MorphologyBehavior-extension": {
       "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html"
     },
-    "StructureDefinition/finding-Morphology-extension": {
-      "base": "StructureDefinition-finding-Morphology-extension.html"
-    },
-    "StructureDefinition/condition-Onset-extension": {
-      "base": "StructureDefinition-condition-Onset-extension.html"
-    },
     "StructureDefinition/finding-Precondition-extension": {
       "base": "StructureDefinition-finding-Precondition-extension.html"
-    },
-    "StructureDefinition/shr-core-Quantity-extension": {
-      "base": "StructureDefinition-shr-core-Quantity-extension.html"
-    },
-    "StructureDefinition/shr-core-Range-extension": {
-      "base": "StructureDefinition-shr-core-Range-extension.html"
-    },
-    "StructureDefinition/shr-core-Ratio-extension": {
-      "base": "StructureDefinition-shr-core-Ratio-extension.html"
-    },
-    "StructureDefinition/finding-ReferenceRange-extension": {
-      "base": "StructureDefinition-finding-ReferenceRange-extension.html"
-    },
-    "StructureDefinition/entity-Specimen-extension": {
-      "base": "StructureDefinition-entity-Specimen-extension.html"
     },
     "StructureDefinition/oncology-StageTimingPrefix-extension": {
       "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html"
@@ -232,17 +172,8 @@
     "StructureDefinition/shr-base-StatementTopic-extension": {
       "base": "StructureDefinition-shr-base-StatementTopic-extension.html"
     },
-    "StructureDefinition/shr-core-TimePeriod-extension": {
-      "base": "StructureDefinition-shr-core-TimePeriod-extension.html"
-    },
     "StructureDefinition/shr-base-TopicCode-extension": {
       "base": "StructureDefinition-shr-base-TopicCode-extension.html"
-    },
-    "StructureDefinition/finding-Type-extension": {
-      "base": "StructureDefinition-finding-Type-extension.html"
-    },
-    "StructureDefinition/finding-VerificationStatus-extension": {
-      "base": "StructureDefinition-finding-VerificationStatus-extension.html"
     },
     "StructureDefinition/primitive-base64Binary-extension": {
       "base": "StructureDefinition-primitive-base64Binary-extension.html"
@@ -343,17 +274,8 @@
     "ValueSet/entity-DirectionalityVS": {
       "base": "ValueSet-entity-DirectionalityVS.html"
     },
-    "ValueSet/oncology-EstrogenAntibodyVS": {
-      "base": "ValueSet-oncology-EstrogenAntibodyVS.html"
-    },
     "ValueSet/finding-ExceptionValueVS": {
       "base": "ValueSet-finding-ExceptionValueVS.html"
-    },
-    "ValueSet/oncology-GeneIdentifierVS": {
-      "base": "ValueSet-oncology-GeneIdentifierVS.html"
-    },
-    "ValueSet/oncology-HER2AntibodyIHCVS": {
-      "base": "ValueSet-oncology-HER2AntibodyIHCVS.html"
     },
     "ValueSet/oncology-HER2ISHMethodVS": {
       "base": "ValueSet-oncology-HER2ISHMethodVS.html"
@@ -364,12 +286,6 @@
     "ValueSet/oncology-HER2StatusVS": {
       "base": "ValueSet-oncology-HER2StatusVS.html"
     },
-    "ValueSet/oncology-Ki67AntibodyVS": {
-      "base": "ValueSet-oncology-Ki67AntibodyVS.html"
-    },
-    "ValueSet/finding-KnownOrSuspectedPresentContextVS": {
-      "base": "ValueSet-finding-KnownOrSuspectedPresentContextVS.html"
-    },
     "ValueSet/entity-LateralityVS": {
       "base": "ValueSet-entity-LateralityVS.html"
     },
@@ -379,17 +295,26 @@
     "ValueSet/oncology-LymphSystemSubdivisionVS": {
       "base": "ValueSet-oncology-LymphSystemSubdivisionVS.html"
     },
+    "ValueSet/oncology-MammaprintRiskScoreInterpretationVS": {
+      "base": "ValueSet-oncology-MammaprintRiskScoreInterpretationVS.html"
+    },
     "ValueSet/oncology-MorphologyBehaviorVS": {
       "base": "ValueSet-oncology-MorphologyBehaviorVS.html"
     },
     "ValueSet/oncology-NottinghamCombinedGradeVS": {
       "base": "ValueSet-oncology-NottinghamCombinedGradeVS.html"
     },
+    "ValueSet/oncology-NuclearGradeVS": {
+      "base": "ValueSet-oncology-NuclearGradeVS.html"
+    },
     "ValueSet/oncology-NuclearPleomorphismScoreVS": {
       "base": "ValueSet-oncology-NuclearPleomorphismScoreVS.html"
     },
-    "ValueSet/oncology-OncotypeDXRiskScoreInterpretationVS": {
-      "base": "ValueSet-oncology-OncotypeDXRiskScoreInterpretationVS.html"
+    "ValueSet/oncology-OncotypeDxDCISRiskScoreInterpretationVS": {
+      "base": "ValueSet-oncology-OncotypeDxDCISRiskScoreInterpretationVS.html"
+    },
+    "ValueSet/oncology-OncotypeDxInvasiveRiskScoreInterpretationVS": {
+      "base": "ValueSet-oncology-OncotypeDxInvasiveRiskScoreInterpretationVS.html"
     },
     "ValueSet/entity-PortionTotalityVS": {
       "base": "ValueSet-entity-PortionTotalityVS.html"
@@ -397,20 +322,17 @@
     "ValueSet/oncology-PositiveNegativeVS": {
       "base": "ValueSet-oncology-PositiveNegativeVS.html"
     },
-    "ValueSet/oncology-ProgesteroneAntibodyVS": {
-      "base": "ValueSet-oncology-ProgesteroneAntibodyVS.html"
+    "ValueSet/finding-PresenceContextVS": {
+      "base": "ValueSet-finding-PresenceContextVS.html"
     },
-    "ValueSet/oncology-RefseqVS": {
-      "base": "ValueSet-oncology-RefseqVS.html"
+    "ValueSet/oncology-RecurrenceRiskScoreInterpretationVS": {
+      "base": "ValueSet-oncology-RecurrenceRiskScoreInterpretationVS.html"
     },
     "ValueSet/oncology-StageTimingPrefixVS": {
       "base": "ValueSet-oncology-StageTimingPrefixVS.html"
     },
     "ValueSet/oncology-StagingMethodVS": {
       "base": "ValueSet-oncology-StagingMethodVS.html"
-    },
-    "ValueSet/oncology-StainingControlVS": {
-      "base": "ValueSet-oncology-StainingControlVS.html"
     },
     "ValueSet/oncology-StainingIntensityVS": {
       "base": "ValueSet-oncology-StainingIntensityVS.html"
@@ -463,14 +385,8 @@
     "CodeSystem/entity-DirectionalityCS": {
       "base": "CodeSystem-entity-DirectionalityCS.html"
     },
-    "CodeSystem/oncology-EstrogenAntibodyCS": {
-      "base": "CodeSystem-oncology-EstrogenAntibodyCS.html"
-    },
     "CodeSystem/finding-ExceptionValueCS": {
       "base": "CodeSystem-finding-ExceptionValueCS.html"
-    },
-    "CodeSystem/oncology-HER2AntibodyIHCCS": {
-      "base": "CodeSystem-oncology-HER2AntibodyIHCCS.html"
     },
     "CodeSystem/oncology-HER2ISHMethodCS": {
       "base": "CodeSystem-oncology-HER2ISHMethodCS.html"
@@ -481,35 +397,38 @@
     "CodeSystem/oncology-HER2StatusCS": {
       "base": "CodeSystem-oncology-HER2StatusCS.html"
     },
-    "CodeSystem/oncology-Ki67AntibodyCS": {
-      "base": "CodeSystem-oncology-Ki67AntibodyCS.html"
-    },
     "CodeSystem/entity-LateralityCS": {
       "base": "CodeSystem-entity-LateralityCS.html"
     },
     "CodeSystem/oncology-LeftRightLateralityCS": {
       "base": "CodeSystem-oncology-LeftRightLateralityCS.html"
     },
+    "CodeSystem/oncology-MammaprintRiskScoreInterpretationCS": {
+      "base": "CodeSystem-oncology-MammaprintRiskScoreInterpretationCS.html"
+    },
     "CodeSystem/oncology-MorphologyBehaviorCS": {
       "base": "CodeSystem-oncology-MorphologyBehaviorCS.html"
     },
-    "CodeSystem/oncology-OncotypeDXRiskScoreInterpretationCS": {
-      "base": "CodeSystem-oncology-OncotypeDXRiskScoreInterpretationCS.html"
+    "CodeSystem/oncology-NuclearGradeCS": {
+      "base": "CodeSystem-oncology-NuclearGradeCS.html"
+    },
+    "CodeSystem/oncology-OncotypeDxDCISRiskScoreInterpretationCS": {
+      "base": "CodeSystem-oncology-OncotypeDxDCISRiskScoreInterpretationCS.html"
+    },
+    "CodeSystem/oncology-OncotypeDxInvasiveRiskScoreInterpretationCS": {
+      "base": "CodeSystem-oncology-OncotypeDxInvasiveRiskScoreInterpretationCS.html"
     },
     "CodeSystem/entity-PortionTotalityCS": {
       "base": "CodeSystem-entity-PortionTotalityCS.html"
     },
-    "CodeSystem/oncology-ProgesteroneAntibodyCS": {
-      "base": "CodeSystem-oncology-ProgesteroneAntibodyCS.html"
+    "CodeSystem/oncology-RecurrenceRiskScoreInterpretationCS": {
+      "base": "CodeSystem-oncology-RecurrenceRiskScoreInterpretationCS.html"
     },
     "CodeSystem/oncology-StageTimingPrefixCS": {
       "base": "CodeSystem-oncology-StageTimingPrefixCS.html"
     },
     "CodeSystem/oncology-StagingMethodCS": {
       "base": "CodeSystem-oncology-StagingMethodCS.html"
-    },
-    "CodeSystem/oncology-StainingControlCS": {
-      "base": "CodeSystem-oncology-StainingControlCS.html"
     },
     "CodeSystem/oncology-StainingIntensityCS": {
       "base": "CodeSystem-oncology-StainingIntensityCS.html"
@@ -519,84 +438,946 @@
     },
     "CodeSystem/shr-core-YesNoUnknownCS": {
       "base": "CodeSystem-shr-core-YesNoUnknownCS.html"
+    },
+    "StructureDefinition/condition-Abatement-model": {
+      "base": "StructureDefinition-condition-Abatement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Age-model": {
+      "base": "StructureDefinition-shr-core-Age-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-AgeRange-model": {
+      "base": "StructureDefinition-shr-core-AgeRange-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-AnatomicalLocation-model": {
+      "base": "StructureDefinition-entity-AnatomicalLocation-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-AnatomicalLocationOrCode-model": {
+      "base": "StructureDefinition-entity-AnatomicalLocationOrCode-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-Aneusomy-model": {
+      "base": "StructureDefinition-oncology-Aneusomy-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-ApplicableAgeRange-model": {
+      "base": "StructureDefinition-finding-ApplicableAgeRange-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-ApplicableSubpopulation-model": {
+      "base": "StructureDefinition-finding-ApplicableSubpopulation-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-AssertionContext-model": {
+      "base": "StructureDefinition-finding-AssertionContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-AssertionTopic-model": {
+      "base": "StructureDefinition-finding-AssertionTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-AverageCEP17SignalsPerCell-model": {
+      "base": "StructureDefinition-oncology-AverageCEP17SignalsPerCell-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-AverageHER2SignalsPerCell-model": {
+      "base": "StructureDefinition-oncology-AverageHER2SignalsPerCell-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-AverageStainingIntensity-model": {
+      "base": "StructureDefinition-oncology-AverageStainingIntensity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-BodyStructurePresent-model": {
+      "base": "StructureDefinition-finding-BodyStructurePresent-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-BodyStructureTopic-model": {
+      "base": "StructureDefinition-finding-BodyStructureTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancer-model": {
+      "base": "StructureDefinition-oncology-BreastCancer-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancerMStage-model": {
+      "base": "StructureDefinition-oncology-BreastCancerMStage-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancerNStage-model": {
+      "base": "StructureDefinition-oncology-BreastCancerNStage-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancerTNMStage-model": {
+      "base": "StructureDefinition-oncology-BreastCancerTNMStage-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancerTStage-model": {
+      "base": "StructureDefinition-oncology-BreastCancerTStage-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastRegionalLymphNodeSpecimen-model": {
+      "base": "StructureDefinition-oncology-BreastRegionalLymphNodeSpecimen-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastSite-model": {
+      "base": "StructureDefinition-oncology-BreastSite-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastSpecimen-model": {
+      "base": "StructureDefinition-oncology-BreastSpecimen-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Category-model": {
+      "base": "StructureDefinition-shr-core-Category-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-Cellularity-model": {
+      "base": "StructureDefinition-oncology-Cellularity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Certainty-model": {
+      "base": "StructureDefinition-finding-Certainty-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-ClinicalStatement-model": {
+      "base": "StructureDefinition-shr-base-ClinicalStatement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-ClinicalStatus-model": {
+      "base": "StructureDefinition-condition-ClinicalStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-ClockDirection-model": {
+      "base": "StructureDefinition-shr-core-ClockDirection-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-CodeSystem-model": {
+      "base": "StructureDefinition-shr-core-CodeSystem-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-CodeSystemVersion-model": {
+      "base": "StructureDefinition-shr-core-CodeSystemVersion-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-ColdIschemicTime-model": {
+      "base": "StructureDefinition-oncology-ColdIschemicTime-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-CollectionMethod-model": {
+      "base": "StructureDefinition-entity-CollectionMethod-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-CollectionSite-model": {
+      "base": "StructureDefinition-entity-CollectionSite-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-CollectionTime-model": {
+      "base": "StructureDefinition-entity-CollectionTime-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Comparator-model": {
+      "base": "StructureDefinition-shr-core-Comparator-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-CompleteMembraneStainingPercent-model": {
+      "base": "StructureDefinition-oncology-CompleteMembraneStainingPercent-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-Condition-model": {
+      "base": "StructureDefinition-condition-Condition-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-ConditionPresenceContext-model": {
+      "base": "StructureDefinition-condition-ConditionPresenceContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-ConditionTopic-model": {
+      "base": "StructureDefinition-condition-ConditionTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-ContextCode-model": {
+      "base": "StructureDefinition-shr-base-ContextCode-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-Criticality-model": {
+      "base": "StructureDefinition-condition-Criticality-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-DegreeOfLymphaticInvolvement-model": {
+      "base": "StructureDefinition-oncology-DegreeOfLymphaticInvolvement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-DeltaFlag-model": {
+      "base": "StructureDefinition-finding-DeltaFlag-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Denominator-model": {
+      "base": "StructureDefinition-shr-core-Denominator-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-DiagnosticService-model": {
+      "base": "StructureDefinition-finding-DiagnosticService-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-Directionality-model": {
+      "base": "StructureDefinition-entity-Directionality-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-DisplayText-model": {
+      "base": "StructureDefinition-shr-core-DisplayText-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-DistanceToNipple-model": {
+      "base": "StructureDefinition-oncology-DistanceToNipple-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-Entity-model": {
+      "base": "StructureDefinition-entity-Entity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-Entry-model": {
+      "base": "StructureDefinition-shr-base-Entry-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-EstrogenReceptorStatus-model": {
+      "base": "StructureDefinition-oncology-EstrogenReceptorStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-EvaluationComponent-model": {
+      "base": "StructureDefinition-finding-EvaluationComponent-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-EvaluationResultContext-model": {
+      "base": "StructureDefinition-finding-EvaluationResultContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-EvaluationResultRecorded-model": {
+      "base": "StructureDefinition-finding-EvaluationResultRecorded-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-EvaluationResultTopic-model": {
+      "base": "StructureDefinition-finding-EvaluationResultTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-ExceptionValue-model": {
+      "base": "StructureDefinition-finding-ExceptionValue-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-FindingContext-model": {
+      "base": "StructureDefinition-finding-FindingContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-FindingMethod-model": {
+      "base": "StructureDefinition-finding-FindingMethod-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-FindingStatus-model": {
+      "base": "StructureDefinition-finding-FindingStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-FindingTopic-model": {
+      "base": "StructureDefinition-finding-FindingTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Focus-model": {
+      "base": "StructureDefinition-finding-Focus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-HER2ReceptorStatus-model": {
+      "base": "StructureDefinition-oncology-HER2ReceptorStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-HER2ReceptorStatusIHC-model": {
+      "base": "StructureDefinition-oncology-HER2ReceptorStatusIHC-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-HER2ReceptorStatusISH-model": {
+      "base": "StructureDefinition-oncology-HER2ReceptorStatusISH-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-HER2toCEP17Ratio-model": {
+      "base": "StructureDefinition-oncology-HER2toCEP17Ratio-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-HeterogeneousSignals-model": {
+      "base": "StructureDefinition-oncology-HeterogeneousSignals-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-HistologicGrade-model": {
+      "base": "StructureDefinition-oncology-HistologicGrade-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-InformationEntry-model": {
+      "base": "StructureDefinition-shr-base-InformationEntry-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Interpretation-model": {
+      "base": "StructureDefinition-finding-Interpretation-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-Ki-67LabelingIndex-model": {
+      "base": "StructureDefinition-oncology-Ki-67LabelingIndex-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-LaboratoryTestResultRecorded-model": {
+      "base": "StructureDefinition-finding-LaboratoryTestResultRecorded-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-LargestLymphNodeSize-model": {
+      "base": "StructureDefinition-oncology-LargestLymphNodeSize-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-Laterality-model": {
+      "base": "StructureDefinition-entity-Laterality-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-Locatable-model": {
+      "base": "StructureDefinition-shr-base-Locatable-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-LowerBound-model": {
+      "base": "StructureDefinition-shr-core-LowerBound-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-LymphaticInvolvement-model": {
+      "base": "StructureDefinition-oncology-LymphaticInvolvement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-MammaprintRecurrenceScore-model": {
+      "base": "StructureDefinition-oncology-MammaprintRecurrenceScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Members-model": {
+      "base": "StructureDefinition-finding-Members-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-MitoticCountScore-model": {
+      "base": "StructureDefinition-oncology-MitoticCountScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Morphology-model": {
+      "base": "StructureDefinition-finding-Morphology-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-MorphologyBehavior-model": {
+      "base": "StructureDefinition-oncology-MorphologyBehavior-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-NuclearGrade-model": {
+      "base": "StructureDefinition-oncology-NuclearGrade-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-NuclearPleomorphismScore-model": {
+      "base": "StructureDefinition-oncology-NuclearPleomorphismScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-NuclearPositivity-model": {
+      "base": "StructureDefinition-oncology-NuclearPositivity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-NumberOfLymphNodesInvolved-model": {
+      "base": "StructureDefinition-oncology-NumberOfLymphNodesInvolved-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Numerator-model": {
+      "base": "StructureDefinition-shr-core-Numerator-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-OncotypeDxDCISRecurrenceScore-model": {
+      "base": "StructureDefinition-oncology-OncotypeDxDCISRecurrenceScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-OncotypeDxInvasiveRecurrenceScore-model": {
+      "base": "StructureDefinition-oncology-OncotypeDxInvasiveRecurrenceScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-Onset-model": {
+      "base": "StructureDefinition-condition-Onset-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Percentage-model": {
+      "base": "StructureDefinition-shr-core-Percentage-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-PercentageAmplified-model": {
+      "base": "StructureDefinition-oncology-PercentageAmplified-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-PercentageInSituCarcinoma-model": {
+      "base": "StructureDefinition-oncology-PercentageInSituCarcinoma-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-PercentageRange-model": {
+      "base": "StructureDefinition-shr-core-PercentageRange-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-PortionTotality-model": {
+      "base": "StructureDefinition-entity-PortionTotality-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Precondition-model": {
+      "base": "StructureDefinition-finding-Precondition-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-PresenceContext-model": {
+      "base": "StructureDefinition-finding-PresenceContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-PresentOnAdmission-model": {
+      "base": "StructureDefinition-condition-PresentOnAdmission-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-ProgesteroneReceptorStatus-model": {
+      "base": "StructureDefinition-oncology-ProgesteroneReceptorStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-ProsignaRecurrenceScore-model": {
+      "base": "StructureDefinition-oncology-ProsignaRecurrenceScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Quantity-model": {
+      "base": "StructureDefinition-shr-core-Quantity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Range-model": {
+      "base": "StructureDefinition-shr-core-Range-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Ratio-model": {
+      "base": "StructureDefinition-shr-core-Ratio-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-ReceivedTime-model": {
+      "base": "StructureDefinition-shr-core-ReceivedTime-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-RecordedContext-model": {
+      "base": "StructureDefinition-finding-RecordedContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-ReferenceRange-model": {
+      "base": "StructureDefinition-finding-ReferenceRange-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-RelevantTime-model": {
+      "base": "StructureDefinition-finding-RelevantTime-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-S-PhaseFraction-model": {
+      "base": "StructureDefinition-oncology-S-PhaseFraction-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-Severity-model": {
+      "base": "StructureDefinition-condition-Severity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-SimpleQuantity-model": {
+      "base": "StructureDefinition-shr-core-SimpleQuantity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-SimplifiedLaboratoryTestResultRecorded-model": {
+      "base": "StructureDefinition-finding-SimplifiedLaboratoryTestResultRecorded-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-SizeOfGrossTumorBed-model": {
+      "base": "StructureDefinition-oncology-SizeOfGrossTumorBed-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-SourceSpecimen-model": {
+      "base": "StructureDefinition-entity-SourceSpecimen-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/entity-Specimen-model": {
+      "base": "StructureDefinition-entity-Specimen-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-Stage-model": {
+      "base": "StructureDefinition-condition-Stage-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/condition-StageDetail-model": {
+      "base": "StructureDefinition-condition-StageDetail-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-StageSuffix-model": {
+      "base": "StructureDefinition-oncology-StageSuffix-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-StageTimingPrefix-model": {
+      "base": "StructureDefinition-oncology-StageTimingPrefix-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-StatementContext-model": {
+      "base": "StructureDefinition-shr-base-StatementContext-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-StatementTopic-model": {
+      "base": "StructureDefinition-shr-base-StatementTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-TimePeriod-model": {
+      "base": "StructureDefinition-shr-core-TimePeriod-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-TimePeriodEnd-model": {
+      "base": "StructureDefinition-shr-core-TimePeriodEnd-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-TimePeriodStart-model": {
+      "base": "StructureDefinition-shr-core-TimePeriodStart-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-base-TopicCode-model": {
+      "base": "StructureDefinition-shr-base-TopicCode-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-TubuleFormationScore-model": {
+      "base": "StructureDefinition-oncology-TubuleFormationScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-TumorDimensions-model": {
+      "base": "StructureDefinition-oncology-TumorDimensions-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-TumorMarginDescription-model": {
+      "base": "StructureDefinition-oncology-TumorMarginDescription-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-TumorMargins-model": {
+      "base": "StructureDefinition-oncology-TumorMargins-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-TumorPrimaryDimensionSize-model": {
+      "base": "StructureDefinition-oncology-TumorPrimaryDimensionSize-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-TumorSecondaryDimensionSize-model": {
+      "base": "StructureDefinition-oncology-TumorSecondaryDimensionSize-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-Type-model": {
+      "base": "StructureDefinition-finding-Type-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-Units-model": {
+      "base": "StructureDefinition-shr-core-Units-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-core-UpperBound-model": {
+      "base": "StructureDefinition-shr-core-UpperBound-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/finding-VerificationStatus-model": {
+      "base": "StructureDefinition-finding-VerificationStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
     }
   },
-  "special-urls": [
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMStageVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerNStageVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTStageVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSiteVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenCollectionMethodVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenTypeVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ClockDirectionVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-DegreeOfLymphaticInvolvementVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-DeltaFlagVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-DiagnosticServiceVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-DirectionalityVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-EstrogenAntibodyVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-GeneIdentifierVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2AntibodyIHCVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2ISHMethodVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2MethodVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2StatusVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-Ki67AntibodyVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-KnownOrSuspectedPresentContextVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-LateralityVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LymphSystemSubdivisionVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NottinghamCombinedGradeVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearPleomorphismScoreVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-OncotypeDXRiskScoreInterpretationVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-PortionTotalityVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-ProgesteroneAntibodyVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-RefseqVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StageTimingPrefixVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StagingMethodVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StainingControlVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StainingIntensityVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-TubuleFormationScoreVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-TumorMarginDescriptionVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-YesNoUnknownVS",
-    "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-YesNoVS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerMStageCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerNStageCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerStageCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTStageCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTypeCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastSiteCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastSpecimenCollectionMethodCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastSpecimenTypeCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/condition-ConditionCategoryCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-DegreeOfLymphaticInvolvementCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/entity-DirectionalityCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-EstrogenAntibodyCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-ExceptionValueCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-HER2AntibodyIHCCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-HER2ISHMethodCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-HER2MethodCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-HER2StatusCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-Ki67AntibodyCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/entity-LateralityCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-LeftRightLateralityCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-MorphologyBehaviorCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-OncotypeDXRiskScoreInterpretationCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/entity-PortionTotalityCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-ProgesteroneAntibodyCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StageTimingPrefixCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StagingMethodCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StainingControlCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StainingIntensityCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-core-YesNoCS",
-    "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-core-YesNoUnknownCS"
-  ],
+  "special-urls": [],
   "tool": "jekyll"
 }

@@ -3,7 +3,7 @@
   "id": "oncology-BreastSpecimenTypeCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI BreastSpecimenTypeCS CodeSystem</b></p>\n<p>The type of specimen obtained from the breast.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastSpecimenTypeCS CodeSystem</b></p>\n<p>The type of specimen obtained from the breast.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastSpecimenTypeCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "oncology.BreastSpecimenTypeCS"
   },
   "name": "BreastSpecimenTypeCS",
-  "title": "BCI BreastSpecimenTypeCS CodeSystem",
+  "title": "BC BreastSpecimenTypeCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "The type of specimen obtained from the breast.",
   "caseSensitive": true,
   "content": "complete",

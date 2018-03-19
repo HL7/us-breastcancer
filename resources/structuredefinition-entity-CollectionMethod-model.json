@@ -1,0 +1,102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "entity-CollectionMethod-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC CollectionMethod Logical Model</b></p>\n  <p>How the specimen was obtained.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionMethod-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "entity.CollectionMethod"
+    }
+  ],
+  "name": "CollectionMethod",
+  "title": "BC CollectionMethod Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "How the specimen was obtained.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "entity-CollectionMethod-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "entity-CollectionMethod-model",
+        "path": "entity-CollectionMethod-model",
+        "definition": "How the specimen was obtained.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-CollectionMethod-model.value",
+        "path": "entity-CollectionMethod-model.value",
+        "short": "Code representing how the specimen was obtained.",
+        "definition": "Code representing how the specimen was obtained.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "entity-CollectionMethod-model",
+        "path": "entity-CollectionMethod-model",
+        "definition": "How the specimen was obtained.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-CollectionMethod-model.value",
+        "path": "entity-CollectionMethod-model.value",
+        "short": "Code representing how the specimen was obtained.",
+        "definition": "Code representing how the specimen was obtained.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

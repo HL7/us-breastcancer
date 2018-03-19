@@ -3,7 +3,7 @@
   "id": "finding-ExceptionValueCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI ExceptionValueCS CodeSystem</b></p>\n<p>Reasons that a value associated with a test or other finding is missing. Extended set based on http://hl7.org/fhir/ValueSet/observation-valueabsentreason</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC ExceptionValueCS CodeSystem</b></p>\n<p>Reasons that a value associated with a test or other finding is missing. Extended set based on http://hl7.org/fhir/ValueSet/observation-valueabsentreason</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-ExceptionValueCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "finding.ExceptionValueCS"
   },
   "name": "ExceptionValueCS",
-  "title": "BCI ExceptionValueCS CodeSystem",
+  "title": "BC ExceptionValueCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "Reasons that a value associated with a test or other finding is missing. Extended set based on http://hl7.org/fhir/ValueSet/observation-valueabsentreason",
   "caseSensitive": true,
   "content": "complete",

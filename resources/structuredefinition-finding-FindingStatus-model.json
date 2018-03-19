@@ -1,0 +1,114 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "finding-FindingStatus-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingStatus Logical Model</b></p>\n  <p>Indicates whether the finding is preliminary, amended, final, etc..</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingStatus-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "finding.FindingStatus"
+    }
+  ],
+  "name": "FindingStatus",
+  "title": "BC FindingStatus Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates whether the finding is preliminary, amended, final, etc..",
+  "kind": "logical",
+  "abstract": false,
+  "type": "finding-FindingStatus-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "finding-FindingStatus-model",
+        "path": "finding-FindingStatus-model",
+        "definition": "Indicates whether the finding is preliminary, amended, final, etc..",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-FindingStatus-model.value",
+        "path": "finding-FindingStatus-model.value",
+        "short": "Code representing indicates whether the finding is preliminary, amended, final, etc..",
+        "definition": "Code representing indicates whether the finding is preliminary, amended, final, etc..",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "finding-FindingStatus-model",
+        "path": "finding-FindingStatus-model",
+        "definition": "Indicates whether the finding is preliminary, amended, final, etc..",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-FindingStatus-model.value",
+        "path": "finding-FindingStatus-model.value",
+        "short": "Code representing indicates whether the finding is preliminary, amended, final, etc..",
+        "definition": "Code representing indicates whether the finding is preliminary, amended, final, etc..",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
+      }
+    ]
+  }
+}

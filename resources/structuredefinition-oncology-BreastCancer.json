@@ -3,12 +3,12 @@
   "id": "oncology-BreastCancer",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI BreastCancer Profile</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.</p>\n  <p><b>BCI Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancer maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  CodeableConcept maps to code\n  Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   \n  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancer Profile</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe following steps are required to create this class in CIMI:\n\n1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.\n2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.\n\nIn this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.\n\nThe attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancer maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  CodeableConcept maps to code\n  Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   \n  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancer",
   "name": "BreastCancer",
   "status": "draft",
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -75,7 +75,7 @@
         "id": "Condition:oncology-BreastCancer",
         "path": "Condition",
         "short": "BreastCancer",
-        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
+        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe following steps are required to create this class in CIMI:\n\n1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.\n2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.\n\nIn this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.\n\nThe attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry.",
         "min": 0,
         "max": "*",
         "base": {
@@ -397,7 +397,7 @@
       {
         "id": "Condition:oncology-BreastCancer.extension:topiccode",
         "path": "Condition.extension",
-        "definition": "The concept representing the finding or action that is the topic of the statement. For actions, the key represents the action being described. For findings, the key represents the 'question' or property being investigated. For evaluation result findings, the key contains a concept for an observable entity, such as systolic blood pressure. For assertion findings (which by nature lack an explicit question), the key contains a default concept signifying that an assertion is being made. In all cases, the key describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
         "type": [
@@ -435,6 +435,111 @@
           }
         ],
         "sliceName": "morphologybehavior"
+      },
+      {
+        "id": "Condition:oncology-BreastCancer.extension:morphologybehavior.id",
+        "path": "Condition.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:oncology-BreastCancer.extension:morphologybehavior.extension:extension",
+        "path": "Condition.extension.extension",
+        "sliceName": "extension",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Condition:oncology-BreastCancer.extension:morphologybehavior.url",
+        "path": "Condition.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MorphologyBehavior-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:oncology-BreastCancer.extension:morphologybehavior.valueCodeableConcept",
+        "path": "Condition.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS"
+          }
+        }
       },
       {
         "id": "Condition:oncology-BreastCancer.modifierExtension",
@@ -1116,7 +1221,7 @@
         "id": "Condition:oncology-BreastCancer.code",
         "path": "Condition.code",
         "short": "Identification of the condition, problem or diagnosis",
-        "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
+        "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe following steps are required to create this class in CIMI:\n\n1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.\n2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.\n\nIn this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.\n\nThe attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry.",
         "requirements": "0..1 to account for primarily narrative only resources.",
         "alias": [
           "type"
@@ -1910,7 +2015,7 @@
         "id": "Condition:oncology-BreastCancer",
         "path": "Condition",
         "short": "BreastCancer",
-        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
+        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe following steps are required to create this class in CIMI:\n\n1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.\n2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.\n\nIn this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.\n\nThe attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry.",
         "mustSupport": false
       },
       {
@@ -1930,7 +2035,7 @@
       {
         "id": "Condition:oncology-BreastCancer.extension:topiccode",
         "path": "Condition.extension",
-        "definition": "The concept representing the finding or action that is the topic of the statement. For actions, the key represents the action being described. For findings, the key represents the 'question' or property being investigated. For evaluation result findings, the key contains a concept for an observable entity, such as systolic blood pressure. For assertion findings (which by nature lack an explicit question), the key contains a default concept signifying that an assertion is being made. In all cases, the key describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1968,6 +2073,16 @@
           }
         ],
         "sliceName": "morphologybehavior"
+      },
+      {
+        "id": "Condition:oncology-BreastCancer.extension:morphologybehavior.valueCodeableConcept",
+        "path": "Condition.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS"
+          }
+        }
       },
       {
         "id": "Condition:oncology-BreastCancer.clinicalStatus",
@@ -2074,7 +2189,7 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
           }
         },
-        "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body."
+        "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe following steps are required to create this class in CIMI:\n\n1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.\n2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.\n\nIn this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.\n\nThe attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry."
       },
       {
         "id": "Condition:oncology-BreastCancer.bodySite",
@@ -2167,6 +2282,6 @@
       "value": "oncology.BreastCancer"
     }
   ],
-  "title": "BCI BreastCancer Profile",
-  "description": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body."
+  "title": "BC BreastCancer Profile",
+  "description": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe following steps are required to create this class in CIMI:\n\n1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.\n2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.\n\nIn this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.\n\nThe attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry."
 }

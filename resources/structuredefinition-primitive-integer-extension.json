@@ -3,7 +3,7 @@
   "id": "primitive-integer-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BCI integer Extension</b></p>\n  <p></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC integer Extension</b></p>\n  <p></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/primitive-integer-extension",
   "identifier": [
@@ -13,7 +13,7 @@
     }
   ],
   "name": "integerExtension",
-  "title": "BCI integer Extension",
+  "title": "BC integer Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-03-17",
-  "description": "The integer that represents the value of the BCI element to which it is applied.",
+  "date": "2018-03-19",
+  "description": "The integer that represents the value of the BC element to which it is applied.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:integer",
         "path": "Extension",
         "short": "integer",
-        "definition": "The integer that represents the value of the BCI element to which it is applied.",
+        "definition": "The integer that represents the value of the BC element to which it is applied.",
         "min": 0,
         "max": "*",
         "base": {
@@ -181,7 +181,7 @@
         "id": "Extension:integer",
         "path": "Extension",
         "short": "integer",
-        "definition": "The integer that represents the value of the BCI element to which it is applied.",
+        "definition": "The integer that represents the value of the BC element to which it is applied.",
         "min": 0,
         "max": "*"
       },

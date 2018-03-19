@@ -3,7 +3,7 @@
   "id": "entity-LateralityCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BCI LateralityCS CodeSystem</b></p>\n<p>Anatomical location or specimen further detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LateralityCS CodeSystem</b></p>\n<p>Anatomical location or specimen further detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/entity-LateralityCS",
   "identifier": {
@@ -11,7 +11,7 @@
     "value": "entity.LateralityCS"
   },
   "name": "LateralityCS",
-  "title": "BCI LateralityCS CodeSystem",
+  "title": "BC LateralityCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-17",
+  "date": "2018-03-19",
   "description": "Anatomical location or specimen further detailing the side(s) of interest. Codes are from NCI",
   "caseSensitive": true,
   "content": "complete",

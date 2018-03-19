@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "finding-Type-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Type Logical Model</b></p>\n  <p>The most specific code (lowest level term) describing the kind or sort of thing being represented.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Type-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "finding.Type"
+    }
+  ],
+  "name": "Type",
+  "title": "BC Type Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0332307"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "finding-Type-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "finding-Type-model",
+        "path": "finding-Type-model",
+        "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-Type-model.value",
+        "path": "finding-Type-model.value",
+        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
+        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "finding-Type-model",
+        "path": "finding-Type-model",
+        "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-Type-model.value",
+        "path": "finding-Type-model.value",
+        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
+        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

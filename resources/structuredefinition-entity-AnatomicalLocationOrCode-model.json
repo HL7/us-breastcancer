@@ -1,0 +1,182 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "entity-AnatomicalLocationOrCode-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AnatomicalLocationOrCode Logical Model</b></p>\n  <p>A body site entity or a body site code.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocationOrCode-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "entity.AnatomicalLocationOrCode"
+    }
+  ],
+  "name": "AnatomicalLocationOrCode",
+  "title": "BC AnatomicalLocationOrCode Logical Model",
+  "status": "draft",
+  "date": "2018-03-19",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "A body site entity or a body site code.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "entity-AnatomicalLocationOrCode-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "entity-AnatomicalLocationOrCode-model",
+        "path": "entity-AnatomicalLocationOrCode-model",
+        "definition": "A body site entity or a body site code.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-AnatomicalLocationOrCode-model.value[x]",
+        "path": "entity-AnatomicalLocationOrCode-model.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Code or AnatomicalLocation representing a body site entity or a body site code.",
+        "definition": "Code or AnatomicalLocation representing a body site entity or a body site code.",
+        "alias": [
+          "codeableConcept",
+          "anatomicalLocation"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept:CodeableConcept",
+        "path": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept",
+        "sliceName": "CodeableConcept",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "entity-AnatomicalLocationOrCode-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "entity-AnatomicalLocationOrCode-model",
+        "path": "entity-AnatomicalLocationOrCode-model",
+        "definition": "A body site entity or a body site code.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-AnatomicalLocationOrCode-model.value[x]",
+        "path": "entity-AnatomicalLocationOrCode-model.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Code or AnatomicalLocation representing a body site entity or a body site code.",
+        "definition": "Code or AnatomicalLocation representing a body site entity or a body site code.",
+        "alias": [
+          "codeableConcept",
+          "anatomicalLocation"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept:CodeableConcept",
+        "path": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept",
+        "sliceName": "CodeableConcept",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "entity-AnatomicalLocationOrCode-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
+          }
+        }
+      }
+    ]
+  }
+}
