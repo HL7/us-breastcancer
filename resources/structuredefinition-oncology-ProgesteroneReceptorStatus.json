@@ -3,12 +3,12 @@
   "id": "oncology-ProgesteroneReceptorStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ProgesteroneReceptorStatus Profile</b></p>\n  <p>Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was no rationale to collect the following components: StainingControl, PrimaryAntibody, Allred Score (total and component scores).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.ProgesteroneReceptorStatus maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ProgesteroneReceptorStatus Profile</b></p>\n  <p>Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.ProgesteroneReceptorStatus maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  Quantity maps to value[x]\n  CodeableConcept maps to value[x]\n  string maps to value[x]\n  boolean maps to value[x]\n  Range maps to value[x]\n  Ratio maps to value[x]\n  time maps to value[x]\n  dateTime maps to value[x]\n  TimePeriod maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ProgesteroneReceptorStatus",
   "name": "ProgesteroneReceptorStatus",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -80,7 +80,7 @@
         "id": "Observation:oncology-ProgesteroneReceptorStatus",
         "path": "Observation",
         "short": "ProgesteroneReceptorStatus",
-        "definition": "Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was no rationale to collect the following components: StainingControl, PrimaryAntibody, Allred Score (total and component scores).",
+        "definition": "Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -380,7 +380,7 @@
           }
         ],
         "slicing": {
-          "id": "9",
+          "id": "8",
           "discriminator": [
             {
               "type": "value",
@@ -620,7 +620,7 @@
           }
         ],
         "slicing": {
-          "id": "8",
+          "id": "7",
           "discriminator": [
             {
               "type": "value",
@@ -2206,29 +2206,103 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProgesteroneReceptorStatus.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation:oncology-ProgesteroneReceptorStatus.value[x]",
+        "path": "Observation.value[x]",
         "short": "Result Value",
-        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
-        "min": 1,
-        "max": "1",
+        "definition": "Choice of types representing progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
+        "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Observation.value[x]",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
+            "code": "Quantity"
+          },
+          {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
-        "isSummary": true,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
+        "condition": [
+          "obs-7"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "valueBoolean": true
+              }
+            ],
+            "key": "us-core-4",
+            "severity": "warning",
+            "human": "SHOULD use Snomed CT for coded Results",
+            "expression": "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
+            "xpath": "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
+          },
+          {
+            "key": "us-core-3",
+            "severity": "error",
+            "human": "SHALL use UCUM for coded quantity units.",
+            "expression": "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
+            "xpath": "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
           }
-        }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Event.notDone, Event.notDoneReason  (maps to valeu[x] or dataAbsentReason)"
+          },
+          {
+            "identity": "sct-concept",
+            "map": "< 441742003 |Evaluation finding|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX.2, OBX.5, OBX.6"
+          },
+          {
+            "identity": "rim",
+            "map": "value"
+          },
+          {
+            "identity": "sct-attr",
+            "map": "363714003 |Interprets|"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Observation.value[x]"
+          }
+        ]
       },
       {
         "id": "Observation:oncology-ProgesteroneReceptorStatus.dataAbsentReason",
@@ -2300,16 +2374,9 @@
           }
         ],
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
           }
         },
         "mapping": [
@@ -3420,7 +3487,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -4394,7 +4461,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -4693,7 +4760,7 @@
         "id": "Observation:oncology-ProgesteroneReceptorStatus",
         "path": "Observation",
         "short": "ProgesteroneReceptorStatus",
-        "definition": "Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was no rationale to collect the following components: StainingControl, PrimaryAntibody, Allred Score (total and component scores).",
+        "definition": "Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "mustSupport": false
       },
       {
@@ -4732,7 +4799,7 @@
         "id": "Observation:oncology-ProgesteroneReceptorStatus.extension:diagnosticservice.valueCodeableConcept.coding",
         "path": "Observation.extension.valueCodeableConcept.coding",
         "slicing": {
-          "id": "8",
+          "id": "7",
           "discriminator": [
             {
               "type": "value",
@@ -4854,19 +4921,42 @@
         "fixedCode": "16113-3"
       },
       {
-        "id": "Observation:oncology-ProgesteroneReceptorStatus.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation:oncology-ProgesteroneReceptorStatus.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "0",
+        "definition": "Choice of types representing progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "type": [
           {
+            "code": "Quantity"
+          },
+          {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
-          }
-        }
+        ]
       },
       {
         "id": "Observation:oncology-ProgesteroneReceptorStatus.dataAbsentReason",
@@ -4882,16 +4972,9 @@
         "id": "Observation:oncology-ProgesteroneReceptorStatus.interpretation",
         "path": "Observation.interpretation",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
           }
         }
       },
@@ -5063,6 +5146,12 @@
         }
       },
       {
+        "id": "Observation:oncology-ProgesteroneReceptorStatus.component:oncology-NuclearPositivity.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "id": "Observation:oncology-ProgesteroneReceptorStatus.component:oncology-AverageStainingIntensity",
         "path": "Observation.component",
         "sliceName": "oncology-AverageStainingIntensity",
@@ -5155,6 +5244,12 @@
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
+      },
+      {
+        "id": "Observation:oncology-ProgesteroneReceptorStatus.component:oncology-AverageStainingIntensity.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
       }
     ]
   },
@@ -5165,5 +5260,5 @@
     }
   ],
   "title": "BC ProgesteroneReceptorStatus Profile",
-  "description": "Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was no rationale to collect the following components: StainingControl, PrimaryAntibody, Allred Score (total and component scores)."
+  "description": "Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2)."
 }

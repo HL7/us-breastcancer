@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerTNMStage",
   "name": "BreastCancerTNMStage",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -1060,7 +1060,7 @@
         "id": "Observation:oncology-BreastCancerTNMStage.extension:stagetimingprefix",
         "path": "Observation.extension",
         "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -3016,9 +3016,9 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory",
         "path": "Observation.component",
-        "short": "BreastCancerTStage",
+        "short": "BreastCancerTCategory",
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "1",
@@ -3053,10 +3053,10 @@
             "map": "outBoundRelationship[typeCode=COMP]"
           }
         ],
-        "sliceName": "oncology-BreastCancerTStage"
+        "sliceName": "oncology-BreastCancerTCategory"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -3083,7 +3083,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -3112,7 +3112,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.modifierExtension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3144,7 +3144,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -3195,7 +3195,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.id",
         "path": "Observation.component.code.id",
         "representation": [
           "xmlAttr"
@@ -3222,7 +3222,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.extension",
         "path": "Observation.component.code.extension",
         "slicing": {
           "discriminator": [
@@ -3261,7 +3261,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding",
         "path": "Observation.component.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -3302,7 +3302,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_59528-0",
         "definition": "A reference to a code defined by a terminology system.",
@@ -3316,7 +3316,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -3343,7 +3343,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -3382,7 +3382,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.system",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -3413,7 +3413,7 @@
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.version",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -3442,7 +3442,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -3472,7 +3472,7 @@
         "fixedCode": "59528-0"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.display",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -3507,7 +3507,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.userSelected",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -3537,7 +3537,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.text",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -3573,7 +3573,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -3593,12 +3593,12 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategoryVS"
           }
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -3637,7 +3637,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.interpretation",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -3691,14 +3691,14 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -3721,7 +3721,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -3748,7 +3748,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -3777,7 +3777,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3809,7 +3809,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -3836,7 +3836,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -3863,7 +3863,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -3905,7 +3905,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -3947,7 +3947,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -3967,7 +3967,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -3990,9 +3990,9 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory",
         "path": "Observation.component",
-        "short": "BreastCancerNStage",
+        "short": "BreastCancerNCategory",
         "definition": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "1",
@@ -4027,10 +4027,10 @@
             "map": "outBoundRelationship[typeCode=COMP]"
           }
         ],
-        "sliceName": "oncology-BreastCancerNStage"
+        "sliceName": "oncology-BreastCancerNCategory"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -4057,7 +4057,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -4086,7 +4086,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.modifierExtension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -4118,7 +4118,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -4169,7 +4169,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.id",
         "path": "Observation.component.code.id",
         "representation": [
           "xmlAttr"
@@ -4196,7 +4196,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.extension",
         "path": "Observation.component.code.extension",
         "slicing": {
           "discriminator": [
@@ -4235,7 +4235,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding",
         "path": "Observation.component.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -4276,7 +4276,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_59525-6",
         "definition": "A reference to a code defined by a terminology system.",
@@ -4290,7 +4290,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -4317,7 +4317,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -4356,7 +4356,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.system",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -4387,7 +4387,7 @@
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.version",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -4416,7 +4416,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -4446,7 +4446,7 @@
         "fixedCode": "59525-6"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.display",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4481,7 +4481,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.userSelected",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -4511,7 +4511,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.text",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4547,7 +4547,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.valueCodeableConcept:CodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "sliceName": "CodeableConcept",
         "short": "Actual component result",
@@ -4568,12 +4568,12 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerNStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerNCategoryVS"
           }
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -4612,7 +4612,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.interpretation",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -4666,14 +4666,14 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -4696,7 +4696,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -4723,7 +4723,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -4752,7 +4752,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -4784,7 +4784,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -4811,7 +4811,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -4838,7 +4838,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -4880,7 +4880,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -4922,7 +4922,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -4942,7 +4942,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -4965,9 +4965,9 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory",
         "path": "Observation.component",
-        "short": "BreastCancerMStage",
+        "short": "BreastCancerMCategory",
         "definition": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
         "min": 0,
         "max": "1",
@@ -5002,10 +5002,10 @@
             "map": "outBoundRelationship[typeCode=COMP]"
           }
         ],
-        "sliceName": "oncology-BreastCancerMStage"
+        "sliceName": "oncology-BreastCancerMCategory"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -5032,7 +5032,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -5061,7 +5061,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.modifierExtension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -5093,7 +5093,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -5144,7 +5144,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.id",
         "path": "Observation.component.code.id",
         "representation": [
           "xmlAttr"
@@ -5171,7 +5171,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.extension",
         "path": "Observation.component.code.extension",
         "slicing": {
           "discriminator": [
@@ -5210,7 +5210,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding",
         "path": "Observation.component.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -5251,7 +5251,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_59522-3",
         "definition": "A reference to a code defined by a terminology system.",
@@ -5265,7 +5265,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -5292,7 +5292,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -5331,7 +5331,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.system",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -5362,7 +5362,7 @@
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.version",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -5391,7 +5391,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -5421,7 +5421,7 @@
         "fixedCode": "59522-3"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.display",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -5456,7 +5456,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.userSelected",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -5486,7 +5486,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.text",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -5522,7 +5522,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.valueCodeableConcept:CodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "sliceName": "CodeableConcept",
         "short": "Actual component result",
@@ -5543,12 +5543,12 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMCategoryVS"
           }
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -5587,7 +5587,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.interpretation",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -5641,14 +5641,14 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -5671,7 +5671,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -5698,7 +5698,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -5727,7 +5727,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -5759,7 +5759,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -5786,7 +5786,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -5813,7 +5813,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -5855,7 +5855,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -5897,7 +5897,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -5917,7 +5917,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -6010,7 +6010,7 @@
         "id": "Observation:oncology-BreastCancerTNMStage.extension:stagetimingprefix",
         "path": "Observation.extension",
         "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -6250,20 +6250,20 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory",
         "path": "Observation.component",
-        "sliceName": "oncology-BreastCancerTStage",
-        "short": "BreastCancerTStage",
+        "sliceName": "oncology-BreastCancerTCategory",
+        "short": "BreastCancerTCategory",
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code",
         "path": "Observation.component.code"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "id": "3",
@@ -6278,7 +6278,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_59528-0",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6292,17 +6292,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.system",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.code.coding:Fixed_59528-0.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.code.coding:Fixed_59528-0.code",
         "path": "Observation.component.code.coding.code",
         "fixedCode": "59528-0"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6312,12 +6312,12 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategoryVS"
           }
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6327,7 +6327,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTStage.interpretation",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.interpretation",
         "path": "Observation.component.interpretation",
         "binding": {
           "extension": [
@@ -6344,20 +6344,26 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerTCategory.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory",
         "path": "Observation.component",
-        "sliceName": "oncology-BreastCancerNStage",
-        "short": "BreastCancerNStage",
+        "sliceName": "oncology-BreastCancerNCategory",
+        "short": "BreastCancerNCategory",
         "definition": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code",
         "path": "Observation.component.code"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "id": "4",
@@ -6372,7 +6378,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_59525-6",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6386,17 +6392,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.system",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.code.coding:Fixed_59525-6.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.code.coding:Fixed_59525-6.code",
         "path": "Observation.component.code.coding.code",
         "fixedCode": "59525-6"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.valueCodeableConcept:CodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6406,12 +6412,12 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerNStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerNCategoryVS"
           }
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6421,7 +6427,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNStage.interpretation",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.interpretation",
         "path": "Observation.component.interpretation",
         "binding": {
           "extension": [
@@ -6438,20 +6444,26 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerNCategory.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory",
         "path": "Observation.component",
-        "sliceName": "oncology-BreastCancerMStage",
-        "short": "BreastCancerMStage",
+        "sliceName": "oncology-BreastCancerMCategory",
+        "short": "BreastCancerMCategory",
         "definition": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code",
         "path": "Observation.component.code"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "id": "5",
@@ -6466,7 +6478,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_59522-3",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6480,17 +6492,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.system",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.code.coding:Fixed_59522-3.code",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.code.coding:Fixed_59522-3.code",
         "path": "Observation.component.code.coding.code",
         "fixedCode": "59522-3"
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.valueCodeableConcept:CodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6500,12 +6512,12 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMStageVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMCategoryVS"
           }
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6515,7 +6527,7 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMStage.interpretation",
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.interpretation",
         "path": "Observation.component.interpretation",
         "binding": {
           "extension": [
@@ -6530,6 +6542,12 @@
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
+      },
+      {
+        "id": "Observation:oncology-BreastCancerTNMStage.component:oncology-BreastCancerMCategory.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
       }
     ]
   },

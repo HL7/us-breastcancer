@@ -1,0 +1,104 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-BreastCancerNCategoryCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerNCategoryCS CodeSystem</b></p>\n<p>Codes that designate concepts describing Node category according to AJCC breast cancer staging recommendations.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerNCategoryCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.BreastCancerNCategoryCS"
+  },
+  "name": "BreastCancerNCategoryCS",
+  "title": "BC BreastCancerNCategoryCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-21",
+  "description": "Codes that designate concepts describing Node category according to AJCC breast cancer staging recommendations.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 14,
+  "concept": [
+    {
+      "code": "NX",
+      "definition": "The concept designated by the symbol NX in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol NX in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N0",
+      "definition": "The concept designated by the symbol N0 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N0 in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N1",
+      "definition": "The concept designated by the symbol N1 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N1 in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N1mi",
+      "definition": "The concept designated by the symbol N1mi in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N1mi in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N1a",
+      "definition": "The concept designated by the symbol N1a in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N1a in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N1b",
+      "definition": "The concept designated by the symbol N1b in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N1b in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N1c",
+      "definition": "The concept designated by the symbol N1c in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N1c in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N2",
+      "definition": "The concept designated by the symbol N2 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N2 in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N2a",
+      "definition": "The concept designated by the symbol N2a in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N2a in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N2b",
+      "definition": "The concept designated by the symbol N2b in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N2b in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N3",
+      "definition": "The concept designated by the symbol N3 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N3 in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N3a",
+      "definition": "The concept designated by the symbol N3a in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N3a in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N3b",
+      "definition": "The concept designated by the symbol N3b in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N3b in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "N3c",
+      "definition": "The concept designated by the symbol N3c in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol N3c in Version 8 of AJCC's breast cancer staging guide."
+    }
+  ]
+}

@@ -15,7 +15,7 @@
   "name": "PresenceContext",
   "title": "BC PresenceContext Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -79,7 +79,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -210,7 +210,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

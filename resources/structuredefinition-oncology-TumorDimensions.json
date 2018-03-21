@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-TumorDimensions",
   "name": "TumorDimensions",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -3741,7 +3741,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -4930,7 +4930,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -5741,7 +5741,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -6480,6 +6480,12 @@
         }
       },
       {
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorPrimaryDimensionSize.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize",
         "path": "Observation.component",
         "sliceName": "oncology-TumorSecondaryDimensionSize",
@@ -6578,6 +6584,12 @@
         }
       },
       {
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed",
         "path": "Observation.component",
         "sliceName": "oncology-SizeOfGrossTumorBed",
@@ -6631,6 +6643,12 @@
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
+      },
+      {
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
       }
     ]
   },

@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "description": "HER2 status overall result",
   "compose": {
     "include": [
@@ -35,19 +35,19 @@
         "concept": [
           {
             "code": "not_amplified",
-            "display": "Negative/Not Amplified (IHC Score 0) - CAP#31015"
+            "display": "Negative/Not Amplified (IHC Score 0)"
           },
           {
             "code": "negative",
-            "display": "Negative (IHC Score 1+) - CAP#31016"
+            "display": "Negative (IHC Score 1+)"
           },
           {
             "code": "equivocal",
-            "display": "Equivocal (IHC Score 2+) - CAP#31017"
+            "display": "Equivocal (IHC Score 2+)"
           },
           {
             "code": "positive",
-            "display": "Positive/Amplified (IHC Score 3+) - CAP#31018"
+            "display": "Positive/Amplified (IHC Score 3+)"
           }
         ]
       }

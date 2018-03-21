@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerStageCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerStageCS CodeSystem</b></p>\n<p>The AJCC stage group.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerStageCS CodeSystem</b></p>\n<p>Codes that designate concepts describing breast cancer stage group, according to AJCC breast cancer staging recommendations.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerStageCS",
   "identifier": {
@@ -24,56 +24,56 @@
       ]
     }
   ],
-  "date": "2018-03-19",
-  "description": "The AJCC stage group.",
+  "date": "2018-03-21",
+  "description": "Codes that designate concepts describing breast cancer stage group, according to AJCC breast cancer staging recommendations.",
   "caseSensitive": true,
   "content": "complete",
   "count": 9,
   "concept": [
     {
       "code": "0",
-      "definition": "AJCC Stage 0",
-      "display": "AJCC Stage 0"
+      "definition": "The concept designated by the symbol 0 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol 0 in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IA",
-      "definition": "AJCC Stage IA",
-      "display": "AJCC Stage IA"
+      "definition": "The concept designated by the symbol IA in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IA in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IB",
-      "definition": "AJCC Stage IB",
-      "display": "AJCC Stage IB"
+      "definition": "The concept designated by the symbol IB in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IB in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IIA",
-      "definition": "AJCC Stage IIA",
-      "display": "AJCC Stage IIA"
+      "definition": "The concept designated by the symbol IIA in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IIA in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IIB",
-      "definition": "AJCC Stage IIB",
-      "display": "AJCC Stage IIB"
+      "definition": "The concept designated by the symbol IIB in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IIB in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IIIA",
-      "definition": "AJCC Stage IIIA",
-      "display": "AJCC Stage IIIA"
+      "definition": "The concept designated by the symbol IIIA in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IIIA in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IIIB",
-      "definition": "AJCC Stage IIIB",
-      "display": "AJCC Stage IIIB"
+      "definition": "The concept designated by the symbol IIIB in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IIIB in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IIIC",
-      "definition": "AJCC Stage IIIC",
-      "display": "AJCC Stage IIIC"
+      "definition": "The concept designated by the symbol IIIC in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IIIC in Version 8 of AJCC's breast cancer staging guide."
     },
     {
       "code": "IV",
-      "definition": "AJCC Stage IV",
-      "display": "AJCC Stage IV"
+      "definition": "The concept designated by the symbol IV in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol IV in Version 8 of AJCC's breast cancer staging guide."
     }
   ]
 }

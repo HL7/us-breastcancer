@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-LymphaticInvolvement",
   "name": "LymphaticInvolvement",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -3625,7 +3625,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -4436,7 +4436,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -5032,7 +5032,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -5713,6 +5713,12 @@
         }
       },
       {
+        "id": "Observation:oncology-LymphaticInvolvement.component:oncology-LargestLymphNodeSize.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "id": "Observation:oncology-LymphaticInvolvement.component:oncology-NumberOfLymphNodesInvolved",
         "path": "Observation.component",
         "sliceName": "oncology-NumberOfLymphNodesInvolved",
@@ -5768,6 +5774,12 @@
         }
       },
       {
+        "id": "Observation:oncology-LymphaticInvolvement.component:oncology-NumberOfLymphNodesInvolved.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "id": "Observation:oncology-LymphaticInvolvement.component:oncology-DegreeOfLymphaticInvolvement",
         "path": "Observation.component",
         "sliceName": "oncology-DegreeOfLymphaticInvolvement",
@@ -5817,6 +5829,12 @@
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
+      },
+      {
+        "id": "Observation:oncology-LymphaticInvolvement.component:oncology-DegreeOfLymphaticInvolvement.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
       }
     ]
   },

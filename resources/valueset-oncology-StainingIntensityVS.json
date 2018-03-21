@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "description": "Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).",
   "compose": {
     "include": [
@@ -35,19 +35,19 @@
         "concept": [
           {
             "code": "none",
-            "display": "None/Negative - CAP#29915"
+            "display": "None/Negative"
           },
           {
             "code": "weak",
-            "display": "Weak - CAP#29811"
+            "display": "Weak"
           },
           {
             "code": "moderate",
-            "display": "Moderate - CAP#29812"
+            "display": "Moderate"
           },
           {
             "code": "strong",
-            "display": "Strong - CAP#29914"
+            "display": "Strong"
           }
         ]
       }

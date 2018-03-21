@@ -26,17 +26,13 @@
       ]
     }
   ],
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "description": "The methodology or standard used to do the staging.",
   "compose": {
     "include": [
       {
         "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StagingMethodCS",
         "concept": [
-          {
-            "code": "ajcc_v7",
-            "display": "AJCC Breast Carcinoma Version 7"
-          },
           {
             "code": "ajcc_v8",
             "display": "AJCC Breast Carcinoma Version 8"

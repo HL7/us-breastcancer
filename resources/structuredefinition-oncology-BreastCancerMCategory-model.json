@@ -1,0 +1,240 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-BreastCancerMCategory-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerMCategory Logical Model</b></p>\n  <p>Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerMCategory-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.BreastCancerMCategory"
+    }
+  ],
+  "name": "BreastCancerMCategory",
+  "title": "BC BreastCancerMCategory Logical Model",
+  "status": "draft",
+  "date": "2018-03-21",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+  "keyword": [
+    {
+      "system": "http://loinc.org",
+      "code": "59522-3"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-BreastCancerMCategory-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-BreastCancerMCategory-model",
+        "path": "oncology-BreastCancerMCategory-model",
+        "definition": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.value",
+        "path": "oncology-BreastCancerMCategory-model.value",
+        "short": "Code representing part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+        "definition": "Code representing part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.exceptionValue",
+        "path": "oncology-BreastCancerMCategory-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.interpretation",
+        "path": "oncology-BreastCancerMCategory-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.referenceRange",
+        "path": "oncology-BreastCancerMCategory-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-BreastCancerMCategory-model",
+        "path": "oncology-BreastCancerMCategory-model",
+        "definition": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.value",
+        "path": "oncology-BreastCancerMCategory-model.value",
+        "short": "Code representing part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+        "definition": "Code representing part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerMCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.exceptionValue",
+        "path": "oncology-BreastCancerMCategory-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.interpretation",
+        "path": "oncology-BreastCancerMCategory-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerMCategory-model.referenceRange",
+        "path": "oncology-BreastCancerMCategory-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

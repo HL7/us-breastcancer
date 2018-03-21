@@ -3,7 +3,7 @@
   "id": "oncology-HER2ReceptorStatus-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatus Logical Model</b></p>\n  <p>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatus Logical Model</b></p>\n  <p>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2ReceptorStatus-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "HER2ReceptorStatus",
   "title": "BC HER2ReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -27,11 +27,12 @@
       ]
     }
   ],
-  "description": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+  "description": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
   "keyword": [
     {
       "system": "http://loinc.org",
-      "code": "48676-1"
+      "code": "48676-1",
+      "display": "HER2 [Interpretation] in Tissue"
     }
   ],
   "kind": "logical",
@@ -44,7 +45,7 @@
       {
         "id": "oncology-HER2ReceptorStatus-model",
         "path": "oncology-HER2ReceptorStatus-model",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -52,29 +53,55 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.value",
-        "path": "oncology-HER2ReceptorStatus-model.value",
-        "short": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "id": "oncology-HER2ReceptorStatus-model.value[x]",
+        "path": "oncology-HER2ReceptorStatus-model.value[x]",
+        "short": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "alias": [
-          "codeableConcept"
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
         ],
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2StatusVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.topicCode",
@@ -104,7 +131,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -178,137 +205,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-        "sliceName": "Fixed_48676-1",
-        "short": "HER2 Interpretation in Tissue",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.id",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.extension",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.system",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.system",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.system",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -338,8 +236,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.version",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.version",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.version",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -367,8 +265,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.code",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.code",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.code",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -397,14 +295,14 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.display",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.display",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -432,8 +330,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.userSelected",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.userSelected",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.userSelected",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -462,48 +360,12 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
-          }
-        ]
-      },
-      {
         "id": "oncology-HER2ReceptorStatus-model.findingMethod",
         "path": "oncology-HER2ReceptorStatus-model.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
@@ -512,31 +374,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.findingMethod.value",
-        "path": "oncology-HER2ReceptorStatus-model.findingMethod.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2MethodVS"
-          }
-        }
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.category",
@@ -566,7 +403,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -640,136 +477,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding",
-        "sliceName": "Fixed_laboratory",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.category.value.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.id",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.extension",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.system",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.system",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.system",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -799,8 +508,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.version",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.version",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.version",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -828,8 +537,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.code",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.code",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.code",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -858,14 +567,14 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.display",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.display",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -893,8 +602,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.userSelected",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.userSelected",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.userSelected",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -919,42 +628,6 @@
           {
             "identity": "orim",
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-HER2ReceptorStatus-model.category.value.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
           }
         ]
       },
@@ -1060,6 +733,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-HER2ReceptorStatus-model.interpretation.value",
+        "path": "oncology-HER2ReceptorStatus-model.interpretation.value",
+        "short": "Code representing a clinical interpretation of a finding.",
+        "definition": "Code representing a clinical interpretation of a finding.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
+          }
+        }
+      },
+      {
         "id": "oncology-HER2ReceptorStatus-model.precondition",
         "path": "oncology-HER2ReceptorStatus-model.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
@@ -1122,7 +820,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -1144,11 +842,51 @@
           "evaluationResultTopic"
         ],
         "min": 0,
-        "max": "0",
+        "max": "1",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2ReceptorStatus-model.members.value.hER2byIHC",
+        "path": "oncology-HER2ReceptorStatus-model.members.value.hER2byIHC",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72383-3"
+          }
+        ],
+        "short": "HER2 receptor status as determined by Immunohistochemistry (IHC).",
+        "definition": "HER2 receptor status as determined by Immunohistochemistry (IHC).",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultTopic-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byIHC-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2ReceptorStatus-model.members.value.hER2byISH",
+        "path": "oncology-HER2ReceptorStatus-model.members.value.hER2byISH",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72383-3"
+          }
+        ],
+        "short": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
+        "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byISH-model"
           }
         ],
         "mustSupport": false,
@@ -1199,7 +937,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -1273,136 +1011,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-        "sliceName": "Fixed_pathology",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.id",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.extension",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.system",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.system",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.system",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1432,8 +1042,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.version",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.version",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.version",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1461,8 +1071,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.code",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.code",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.code",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1491,14 +1101,14 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.display",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.display",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1526,8 +1136,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.userSelected",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.userSelected",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.userSelected",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1556,40 +1166,20 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
+        "id": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "path": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "type": [
           {
-            "code": "string"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
           }
         ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
-          }
-        ]
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
       }
     ]
   },
@@ -1598,7 +1188,7 @@
       {
         "id": "oncology-HER2ReceptorStatus-model",
         "path": "oncology-HER2ReceptorStatus-model",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -1606,29 +1196,55 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.value",
-        "path": "oncology-HER2ReceptorStatus-model.value",
-        "short": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "id": "oncology-HER2ReceptorStatus-model.value[x]",
+        "path": "oncology-HER2ReceptorStatus-model.value[x]",
+        "short": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "alias": [
-          "codeableConcept"
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
         ],
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2StatusVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.topicCode",
@@ -1658,7 +1274,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -1732,137 +1348,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-        "sliceName": "Fixed_48676-1",
-        "short": "HER2 Interpretation in Tissue",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.id",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.extension",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.system",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.system",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.system",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1892,8 +1379,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.version",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.version",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.version",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1921,8 +1408,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.code",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.code",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.code",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1951,14 +1438,14 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.display",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.display",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1986,8 +1473,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.coding:Fixed_48676-1.userSelected",
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.coding.userSelected",
+        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.userSelected",
+        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2016,48 +1503,12 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.topicCode.value.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-HER2ReceptorStatus-model.topicCode.value.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
-          }
-        ]
-      },
-      {
         "id": "oncology-HER2ReceptorStatus-model.findingMethod",
         "path": "oncology-HER2ReceptorStatus-model.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
@@ -2066,31 +1517,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.findingMethod.value",
-        "path": "oncology-HER2ReceptorStatus-model.findingMethod.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2MethodVS"
-          }
-        }
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.category",
@@ -2120,7 +1546,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -2194,136 +1620,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding",
-        "sliceName": "Fixed_laboratory",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.category.value.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.id",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.extension",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.system",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.system",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.system",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2353,8 +1651,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.version",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.version",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.version",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2382,8 +1680,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.code",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.code",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.code",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2412,14 +1710,14 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.display",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.display",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2447,8 +1745,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.coding:Fixed_laboratory.userSelected",
-        "path": "oncology-HER2ReceptorStatus-model.category.value.coding.userSelected",
+        "id": "oncology-HER2ReceptorStatus-model.category.value.userSelected",
+        "path": "oncology-HER2ReceptorStatus-model.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2473,42 +1771,6 @@
           {
             "identity": "orim",
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.category.value.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-HER2ReceptorStatus-model.category.value.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
           }
         ]
       },
@@ -2614,6 +1876,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-HER2ReceptorStatus-model.interpretation.value",
+        "path": "oncology-HER2ReceptorStatus-model.interpretation.value",
+        "short": "Code representing a clinical interpretation of a finding.",
+        "definition": "Code representing a clinical interpretation of a finding.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
+          }
+        }
+      },
+      {
         "id": "oncology-HER2ReceptorStatus-model.precondition",
         "path": "oncology-HER2ReceptorStatus-model.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
@@ -2676,7 +1963,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -2698,11 +1985,51 @@
           "evaluationResultTopic"
         ],
         "min": 0,
-        "max": "0",
+        "max": "1",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2ReceptorStatus-model.members.value.hER2byIHC",
+        "path": "oncology-HER2ReceptorStatus-model.members.value.hER2byIHC",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72383-3"
+          }
+        ],
+        "short": "HER2 receptor status as determined by Immunohistochemistry (IHC).",
+        "definition": "HER2 receptor status as determined by Immunohistochemistry (IHC).",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultTopic-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byIHC-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2ReceptorStatus-model.members.value.hER2byISH",
+        "path": "oncology-HER2ReceptorStatus-model.members.value.hER2byISH",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72383-3"
+          }
+        ],
+        "short": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
+        "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byISH-model"
           }
         ],
         "mustSupport": false,
@@ -2753,7 +2080,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -2827,136 +2154,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Code defined by a terminology system",
-        "definition": "A reference to a code defined by a terminology system.",
-        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
-        "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1-8, C*E.10-22"
-          },
-          {
-            "identity": "rim",
-            "map": "union(., ./translation)"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-        "sliceName": "Fixed_pathology",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.id",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.extension",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.system",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.system",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.system",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2986,8 +2185,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.version",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.version",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.version",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -3015,8 +2214,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.code",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.code",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.code",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -3045,14 +2244,14 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.display",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.display",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -3080,8 +2279,8 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding:Fixed_pathology.userSelected",
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.coding.userSelected",
+        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.userSelected",
+        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -3110,40 +2309,20 @@
         ]
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.diagnosticService.value.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-HER2ReceptorStatus-model.diagnosticService.value.text",
-        "short": "Plain text representation of the concept",
-        "definition": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
-        "comment": "Very often the text is the same as a displayName of one of the codings.",
-        "requirements": "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
+        "id": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "path": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "type": [
           {
-            "code": "string"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
           }
         ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.9. But note many systems use C*E.2 for this"
-          },
-          {
-            "identity": "rim",
-            "map": "./originalText[mediaType/code=\"text/plain\"]/data"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
-          }
-        ]
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
       }
     ]
   }

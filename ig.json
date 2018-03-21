@@ -46,8 +46,8 @@
     "StructureDefinition/entity-AnatomicalLocation": {
       "base": "StructureDefinition-entity-AnatomicalLocation.html"
     },
-    "StructureDefinition/oncology-BreastCancer": {
-      "base": "StructureDefinition-oncology-BreastCancer.html"
+    "StructureDefinition/oncology-BreastCancerPresenceStatement": {
+      "base": "StructureDefinition-oncology-BreastCancerPresenceStatement.html"
     },
     "StructureDefinition/oncology-BreastCancerTNMStage": {
       "base": "StructureDefinition-oncology-BreastCancerTNMStage.html"
@@ -61,8 +61,8 @@
     "StructureDefinition/oncology-BreastSpecimen": {
       "base": "StructureDefinition-oncology-BreastSpecimen.html"
     },
-    "StructureDefinition/condition-Condition": {
-      "base": "StructureDefinition-condition-Condition.html"
+    "StructureDefinition/condition-ConditionPresenceStatement": {
+      "base": "StructureDefinition-condition-ConditionPresenceStatement.html"
     },
     "StructureDefinition/oncology-EstrogenReceptorStatus": {
       "base": "StructureDefinition-oncology-EstrogenReceptorStatus.html"
@@ -73,11 +73,11 @@
     "StructureDefinition/oncology-HER2ReceptorStatus": {
       "base": "StructureDefinition-oncology-HER2ReceptorStatus.html"
     },
-    "StructureDefinition/oncology-HER2ReceptorStatusIHC": {
-      "base": "StructureDefinition-oncology-HER2ReceptorStatusIHC.html"
+    "StructureDefinition/oncology-HER2byIHC": {
+      "base": "StructureDefinition-oncology-HER2byIHC.html"
     },
-    "StructureDefinition/oncology-HER2ReceptorStatusISH": {
-      "base": "StructureDefinition-oncology-HER2ReceptorStatusISH.html"
+    "StructureDefinition/oncology-HER2byISH": {
+      "base": "StructureDefinition-oncology-HER2byISH.html"
     },
     "StructureDefinition/oncology-HistologicGrade": {
       "base": "StructureDefinition-oncology-HistologicGrade.html"
@@ -139,8 +139,8 @@
     "StructureDefinition/shr-core-CodeableConcept-extension": {
       "base": "StructureDefinition-shr-core-CodeableConcept-extension.html"
     },
-    "StructureDefinition/oncology-ColdIschemicTime-extension": {
-      "base": "StructureDefinition-oncology-ColdIschemicTime-extension.html"
+    "StructureDefinition/oncology-ColdIschemiaTime-extension": {
+      "base": "StructureDefinition-oncology-ColdIschemiaTime-extension.html"
     },
     "StructureDefinition/entity-CollectionSite-extension": {
       "base": "StructureDefinition-entity-CollectionSite-extension.html"
@@ -229,17 +229,20 @@
     "ValueSet/entity-AnatomicalLocationVS": {
       "base": "ValueSet-entity-AnatomicalLocationVS.html"
     },
-    "ValueSet/oncology-BreastCancerMStageVS": {
-      "base": "ValueSet-oncology-BreastCancerMStageVS.html"
+    "ValueSet/oncology-BreastCancerDetectionVS": {
+      "base": "ValueSet-oncology-BreastCancerDetectionVS.html"
     },
-    "ValueSet/oncology-BreastCancerNStageVS": {
-      "base": "ValueSet-oncology-BreastCancerNStageVS.html"
+    "ValueSet/oncology-BreastCancerMCategoryVS": {
+      "base": "ValueSet-oncology-BreastCancerMCategoryVS.html"
+    },
+    "ValueSet/oncology-BreastCancerNCategoryVS": {
+      "base": "ValueSet-oncology-BreastCancerNCategoryVS.html"
     },
     "ValueSet/oncology-BreastCancerStageVS": {
       "base": "ValueSet-oncology-BreastCancerStageVS.html"
     },
-    "ValueSet/oncology-BreastCancerTStageVS": {
-      "base": "ValueSet-oncology-BreastCancerTStageVS.html"
+    "ValueSet/oncology-BreastCancerTCategoryVS": {
+      "base": "ValueSet-oncology-BreastCancerTCategoryVS.html"
     },
     "ValueSet/oncology-BreastCancerTypeVS": {
       "base": "ValueSet-oncology-BreastCancerTypeVS.html"
@@ -286,6 +289,9 @@
     "ValueSet/oncology-HER2StatusVS": {
       "base": "ValueSet-oncology-HER2StatusVS.html"
     },
+    "ValueSet/oncology-HER2byIHCScoreVS": {
+      "base": "ValueSet-oncology-HER2byIHCScoreVS.html"
+    },
     "ValueSet/entity-LateralityVS": {
       "base": "ValueSet-entity-LateralityVS.html"
     },
@@ -319,6 +325,9 @@
     "ValueSet/entity-PortionTotalityVS": {
       "base": "ValueSet-entity-PortionTotalityVS.html"
     },
+    "ValueSet/oncology-PositiveNegativeEquivocalVS": {
+      "base": "ValueSet-oncology-PositiveNegativeEquivocalVS.html"
+    },
     "ValueSet/oncology-PositiveNegativeVS": {
       "base": "ValueSet-oncology-PositiveNegativeVS.html"
     },
@@ -349,17 +358,17 @@
     "ValueSet/shr-core-YesNoVS": {
       "base": "ValueSet-shr-core-YesNoVS.html"
     },
-    "CodeSystem/oncology-BreastCancerMStageCS": {
-      "base": "CodeSystem-oncology-BreastCancerMStageCS.html"
+    "CodeSystem/oncology-BreastCancerMCategoryCS": {
+      "base": "CodeSystem-oncology-BreastCancerMCategoryCS.html"
     },
-    "CodeSystem/oncology-BreastCancerNStageCS": {
-      "base": "CodeSystem-oncology-BreastCancerNStageCS.html"
+    "CodeSystem/oncology-BreastCancerNCategoryCS": {
+      "base": "CodeSystem-oncology-BreastCancerNCategoryCS.html"
     },
     "CodeSystem/oncology-BreastCancerStageCS": {
       "base": "CodeSystem-oncology-BreastCancerStageCS.html"
     },
-    "CodeSystem/oncology-BreastCancerTStageCS": {
-      "base": "CodeSystem-oncology-BreastCancerTStageCS.html"
+    "CodeSystem/oncology-BreastCancerTCategoryCS": {
+      "base": "CodeSystem-oncology-BreastCancerTCategoryCS.html"
     },
     "CodeSystem/oncology-BreastCancerTypeCS": {
       "base": "CodeSystem-oncology-BreastCancerTypeCS.html"
@@ -420,6 +429,9 @@
     },
     "CodeSystem/entity-PortionTotalityCS": {
       "base": "CodeSystem-entity-PortionTotalityCS.html"
+    },
+    "CodeSystem/oncology-PositiveNegativeEquivocalCS": {
+      "base": "CodeSystem-oncology-PositiveNegativeEquivocalCS.html"
     },
     "CodeSystem/oncology-RecurrenceRiskScoreInterpretationCS": {
       "base": "CodeSystem-oncology-RecurrenceRiskScoreInterpretationCS.html"
@@ -544,22 +556,29 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancer-model": {
-      "base": "StructureDefinition-oncology-BreastCancer-model.html",
+    "StructureDefinition/oncology-BreastCancerMCategory-model": {
+      "base": "StructureDefinition-oncology-BreastCancerMCategory-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerMStage-model": {
-      "base": "StructureDefinition-oncology-BreastCancerMStage-model.html",
+    "StructureDefinition/oncology-BreastCancerNCategory-model": {
+      "base": "StructureDefinition-oncology-BreastCancerNCategory-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerNStage-model": {
-      "base": "StructureDefinition-oncology-BreastCancerNStage-model.html",
+    "StructureDefinition/oncology-BreastCancerPresenceStatement-model": {
+      "base": "StructureDefinition-oncology-BreastCancerPresenceStatement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancerTCategory-model": {
+      "base": "StructureDefinition-oncology-BreastCancerTCategory-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -567,13 +586,6 @@
     },
     "StructureDefinition/oncology-BreastCancerTNMStage-model": {
       "base": "StructureDefinition-oncology-BreastCancerTNMStage-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/oncology-BreastCancerTStage-model": {
-      "base": "StructureDefinition-oncology-BreastCancerTStage-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -656,8 +668,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-ColdIschemicTime-model": {
-      "base": "StructureDefinition-oncology-ColdIschemicTime-model.html",
+    "StructureDefinition/oncology-ColdIschemiaTime-model": {
+      "base": "StructureDefinition-oncology-ColdIschemiaTime-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -698,15 +710,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/condition-Condition-model": {
-      "base": "StructureDefinition-condition-Condition-model.html",
+    "StructureDefinition/condition-ConditionPresenceContext-model": {
+      "base": "StructureDefinition-condition-ConditionPresenceContext-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/condition-ConditionPresenceContext-model": {
-      "base": "StructureDefinition-condition-ConditionPresenceContext-model.html",
+    "StructureDefinition/condition-ConditionPresenceStatement-model": {
+      "base": "StructureDefinition-condition-ConditionPresenceStatement-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -880,15 +892,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-HER2ReceptorStatusIHC-model": {
-      "base": "StructureDefinition-oncology-HER2ReceptorStatusIHC-model.html",
+    "StructureDefinition/oncology-HER2byIHC-model": {
+      "base": "StructureDefinition-oncology-HER2byIHC-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-HER2ReceptorStatusISH-model": {
-      "base": "StructureDefinition-oncology-HER2ReceptorStatusISH-model.html",
+    "StructureDefinition/oncology-HER2byISH-model": {
+      "base": "StructureDefinition-oncology-HER2byISH-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

@@ -3,7 +3,7 @@
   "id": "finding-AssertionTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AssertionTopic Logical Model</b></p>\n  <p>The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AssertionTopic Logical Model</b></p>\n  <p>The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-AssertionTopic-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "AssertionTopic",
   "title": "BC AssertionTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
+  "description": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
   "kind": "logical",
   "abstract": false,
   "type": "finding-AssertionTopic-model",
@@ -38,7 +38,7 @@
       {
         "id": "finding-AssertionTopic-model",
         "path": "finding-AssertionTopic-model",
-        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
+        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -48,8 +48,8 @@
       {
         "id": "finding-AssertionTopic-model.value",
         "path": "finding-AssertionTopic-model.value",
-        "short": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.",
-        "definition": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
+        "short": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.",
+        "definition": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
         "alias": [
           "codeableConcept"
         ],
@@ -57,7 +57,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -103,7 +103,7 @@
       {
         "id": "finding-AssertionTopic-model",
         "path": "finding-AssertionTopic-model",
-        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
+        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -113,8 +113,8 @@
       {
         "id": "finding-AssertionTopic-model.value",
         "path": "finding-AssertionTopic-model.value",
-        "short": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.",
-        "definition": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
+        "short": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.",
+        "definition": "Code representing the base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.\n\nIn CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.",
         "alias": [
           "codeableConcept"
         ],
@@ -122,7 +122,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

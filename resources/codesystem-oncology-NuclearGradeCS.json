@@ -3,7 +3,7 @@
   "id": "oncology-NuclearGradeCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC NuclearGradeCS CodeSystem</b></p>\n<p></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC NuclearGradeCS CodeSystem</b></p>\n<p>The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. The nuclear grade is a part of overall tumor grade.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-NuclearGradeCS",
   "identifier": {
@@ -24,7 +24,8 @@
       ]
     }
   ],
-  "date": "2018-03-19",
+  "date": "2018-03-21",
+  "description": "The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. The nuclear grade is a part of overall tumor grade.",
   "caseSensitive": true,
   "content": "complete",
   "count": 3,

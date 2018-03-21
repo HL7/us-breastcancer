@@ -1,0 +1,100 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-BreastCancerTCategoryVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerTCategoryVS ValueSet</b></p>\n<p>Codes that designate concepts describing stages for Tumor category according to AJCC breast cancer staging recommendations.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategoryVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.BreastCancerTCategoryVS"
+    }
+  ],
+  "name": "BreastCancerTCategoryVS",
+  "title": "BC BreastCancerTCategoryVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-21",
+  "description": "Codes that designate concepts describing stages for Tumor category according to AJCC breast cancer staging recommendations.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTCategoryCS",
+        "concept": [
+          {
+            "code": "TX",
+            "display": "The concept designated by the symbol TX in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "Tis_DCIS",
+            "display": "The concept designated by the symbol Tis_DCIS in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "Tis_Paget",
+            "display": "The concept designated by the symbol Tis_Paget in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T1",
+            "display": "The concept designated by the symbol T1 in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T1mi",
+            "display": "The concept designated by the symbol T1mi in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T1a",
+            "display": "The concept designated by the symbol T1a in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T1b",
+            "display": "The concept designated by the symbol T1b in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T1c",
+            "display": "The concept designated by the symbol T1c in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T2",
+            "display": "The concept designated by the symbol T2 in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T3",
+            "display": "The concept designated by the symbol T3 in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T4",
+            "display": "The concept designated by the symbol T4 in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T4a",
+            "display": "The concept designated by the symbol T4a in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T4b",
+            "display": "The concept designated by the symbol T4b in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T4c",
+            "display": "The concept designated by the symbol T4c in Version 8 of AJCC's breast cancer staging guide."
+          },
+          {
+            "code": "T4d",
+            "display": "The concept designated by the symbol T4d in Version 8 of AJCC's breast cancer staging guide."
+          }
+        ]
+      }
+    ]
+  }
+}

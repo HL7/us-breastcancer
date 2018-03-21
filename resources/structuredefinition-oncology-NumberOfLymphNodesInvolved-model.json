@@ -15,7 +15,7 @@
   "name": "NumberOfLymphNodesInvolved",
   "title": "BC NumberOfLymphNodesInvolved Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -411,7 +411,7 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
@@ -801,7 +801,7 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"

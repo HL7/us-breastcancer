@@ -3,7 +3,7 @@
   "id": "finding-FindingTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingTopic Logical Model</b></p>\n  <p>Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation only applies to EvaluationResult (not Condition), and has been introduced in that class.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingTopic Logical Model</b></p>\n  <p>Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation applies to EvaluationResult and has been introduced in that class.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingTopic-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "FindingTopic",
   "title": "BC FindingTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation only applies to EvaluationResult (not Condition), and has been introduced in that class.",
+  "description": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation applies to EvaluationResult and has been introduced in that class.",
   "kind": "logical",
   "abstract": false,
   "type": "finding-FindingTopic-model",
@@ -38,7 +38,7 @@
       {
         "id": "finding-FindingTopic-model",
         "path": "finding-FindingTopic-model",
-        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation only applies to EvaluationResult (not Condition), and has been introduced in that class.",
+        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation applies to EvaluationResult and has been introduced in that class.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -84,7 +84,7 @@
       {
         "id": "finding-FindingTopic-model",
         "path": "finding-FindingTopic-model",
-        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation only applies to EvaluationResult (not Condition), and has been introduced in that class.",
+        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation applies to EvaluationResult and has been introduced in that class.",
         "min": "0",
         "max": "*",
         "mustSupport": false,

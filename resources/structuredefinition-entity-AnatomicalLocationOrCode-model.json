@@ -15,7 +15,7 @@
   "name": "AnatomicalLocationOrCode",
   "title": "BC AnatomicalLocationOrCode Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -68,7 +68,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           },
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
@@ -79,8 +79,8 @@
         "isSummary": false
       },
       {
-        "id": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept:CodeableConcept",
-        "path": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept",
+        "id": "entity-AnatomicalLocationOrCode-model.valueCoding:CodeableConcept",
+        "path": "entity-AnatomicalLocationOrCode-model.valueCoding",
         "sliceName": "CodeableConcept",
         "min": 1,
         "max": "1",
@@ -91,7 +91,7 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -141,7 +141,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           },
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
@@ -152,8 +152,8 @@
         "isSummary": false
       },
       {
-        "id": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept:CodeableConcept",
-        "path": "entity-AnatomicalLocationOrCode-model.valueCodeableConcept",
+        "id": "entity-AnatomicalLocationOrCode-model.valueCoding:CodeableConcept",
+        "path": "entity-AnatomicalLocationOrCode-model.valueCoding",
         "sliceName": "CodeableConcept",
         "min": 1,
         "max": "1",
@@ -164,7 +164,7 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

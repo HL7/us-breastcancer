@@ -28,18 +28,11 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-oncology-BreastCancer.html">BreastCancer</a></td>
+      <td><a href="StructureDefinition-oncology-BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.
 
-The following steps are required to create this class in CIMI:
-
-1) Update the CIMI Reference Model, adding the property MorphologyBehavior to create BreastCancerConditionTopic class.
-2) Create an archetype of ClinicalStatement that combines the new topic BreastCancerConditionTopic with the ConditionPresenceContext, and introduces constraints on Value, Category, Stage, and MorphologyBehavior.
-
-In this model, the path of least work was to subclass Condition, add the new attribute, and introduce the required constraints, all at once.
-
-The attributes of ClinicalStatement are not included in this class because of the mapping difficulties discussed in Entry.</td>
+The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-BreastCancerTNMStage.html">BreastCancerTNMStage</a></td>
@@ -64,20 +57,24 @@ The attributes of ClinicalStatement are not included in this class because of th
     <tr>
       <td><a href="StructureDefinition-oncology-EstrogenReceptorStatus.html">EstrogenReceptorStatus</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.</td>
+      <td>Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
+
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-HER2ReceptorStatus.html">HER2ReceptorStatus</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.</td>
+      <td>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
+
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-oncology-HER2ReceptorStatusIHC.html">HER2ReceptorStatusIHC</a></td>
+      <td><a href="StructureDefinition-oncology-HER2byIHC.html">HER2byIHC</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>HER2 receptor status as determined by Immunohistochemistry (IHC).</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-oncology-HER2ReceptorStatusISH.html">HER2ReceptorStatusISH</a></td>
+      <td><a href="StructureDefinition-oncology-HER2byISH.html">HER2byISH</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>HER2 receptor status as determined by In Situ Hybridization (ISH).</td>
     </tr>
@@ -124,7 +121,9 @@ No LOINC code currently exists for this test.</td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
 
-Based on discussion with Cancer Interoperability Group subject matter experts, there was no rationale to collect the following components: StainingControl, PrimaryAntibody, Allred Score (total and component scores).</td>
+Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
+
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-ProsignaRecurrenceScore.html">ProsignaRecurrenceScore</a></td>
@@ -173,13 +172,13 @@ The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Ri
 Note: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-condition-Condition.html">Condition</a></td>
+      <td><a href="StructureDefinition-condition-ConditionPresenceStatement.html">ConditionPresenceStatement</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>A condition that is or may be present in a subject. &#039;Condition&#039; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.
 
 In CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.
 
-In CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent. The name of the CIMI archetype has not been determined as of V0.0.4;. Here, the class is called Condition because it corresponds to FHIR Condition.</td>
+In CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-finding-EvaluationResultRecorded.html">EvaluationResultRecorded</a></td>

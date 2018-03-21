@@ -16,8 +16,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-BreastCancer" />
-                <display value="BC BreastCancer Profile" />
+                <reference value="StructureDefinition/oncology-BreastCancerPresenceStatement" />
+                <display value="BC BreastCancerPresenceStatement Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -51,8 +51,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/condition-Condition" />
-                <display value="BC Condition Profile" />
+                <reference value="StructureDefinition/condition-ConditionPresenceStatement" />
+                <display value="BC ConditionPresenceStatement Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -79,15 +79,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-HER2ReceptorStatusIHC" />
-                <display value="BC HER2ReceptorStatusIHC Profile" />
+                <reference value="StructureDefinition/oncology-HER2byIHC" />
+                <display value="BC HER2byIHC Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-HER2ReceptorStatusISH" />
-                <display value="BC HER2ReceptorStatusISH Profile" />
+                <reference value="StructureDefinition/oncology-HER2byISH" />
+                <display value="BC HER2byISH Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -233,8 +233,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-ColdIschemicTime-extension" />
-                <display value="BC ColdIschemicTime Extension" />
+                <reference value="StructureDefinition/oncology-ColdIschemiaTime-extension" />
+                <display value="BC ColdIschemiaTime Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -443,15 +443,22 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerMStageVS" />
-                <display value="BC BreastCancerMStageVS ValueSet" />
+                <reference value="ValueSet/oncology-BreastCancerDetectionVS" />
+                <display value="BC BreastCancerDetectionVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerNStageVS" />
-                <display value="BC BreastCancerNStageVS ValueSet" />
+                <reference value="ValueSet/oncology-BreastCancerMCategoryVS" />
+                <display value="BC BreastCancerMCategoryVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerNCategoryVS" />
+                <display value="BC BreastCancerNCategoryVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -464,8 +471,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerTStageVS" />
-                <display value="BC BreastCancerTStageVS ValueSet" />
+                <reference value="ValueSet/oncology-BreastCancerTCategoryVS" />
+                <display value="BC BreastCancerTCategoryVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -576,6 +583,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/oncology-HER2byIHCScoreVS" />
+                <display value="BC HER2byIHCScoreVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/entity-LateralityVS" />
                 <display value="BC LateralityVS ValueSet" />
             </sourceReference>
@@ -653,6 +667,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/oncology-PositiveNegativeEquivocalVS" />
+                <display value="BC PositiveNegativeEquivocalVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/oncology-PositiveNegativeVS" />
                 <display value="BC PositiveNegativeVS ValueSet" />
             </sourceReference>
@@ -723,15 +744,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerMStageCS" />
-                <display value="BC BreastCancerMStageCS CodeSystem" />
+                <reference value="CodeSystem/oncology-BreastCancerMCategoryCS" />
+                <display value="BC BreastCancerMCategoryCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerNStageCS" />
-                <display value="BC BreastCancerNStageCS CodeSystem" />
+                <reference value="CodeSystem/oncology-BreastCancerNCategoryCS" />
+                <display value="BC BreastCancerNCategoryCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -744,8 +765,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerTStageCS" />
-                <display value="BC BreastCancerTStageCS CodeSystem" />
+                <reference value="CodeSystem/oncology-BreastCancerTCategoryCS" />
+                <display value="BC BreastCancerTCategoryCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -886,6 +907,13 @@
             <sourceReference>
                 <reference value="CodeSystem/entity-PortionTotalityCS" />
                 <display value="BC PortionTotalityCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-PositiveNegativeEquivocalCS" />
+                <display value="BC PositiveNegativeEquivocalCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -1038,22 +1066,29 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancer-model" />
-                  <display value="BreastCancer" />
+                  <reference value="StructureDefinition/oncology-BreastCancerMCategory-model" />
+                  <display value="BreastCancerMCategory" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerMStage-model" />
-                  <display value="BreastCancerMStage" />
+                  <reference value="StructureDefinition/oncology-BreastCancerNCategory-model" />
+                  <display value="BreastCancerNCategory" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerNStage-model" />
-                  <display value="BreastCancerNStage" />
+                  <reference value="StructureDefinition/oncology-BreastCancerPresenceStatement-model" />
+                  <display value="BreastCancerPresenceStatement" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/oncology-BreastCancerTCategory-model" />
+                  <display value="BreastCancerTCategory" />
               </sourceReference>
           </resource>
           <resource>
@@ -1061,13 +1096,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerTNMStage-model" />
                   <display value="BreastCancerTNMStage" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerTStage-model" />
-                  <display value="BreastCancerTStage" />
               </sourceReference>
           </resource>
           <resource>
@@ -1150,8 +1178,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-ColdIschemicTime-model" />
-                  <display value="ColdIschemicTime" />
+                  <reference value="StructureDefinition/oncology-ColdIschemiaTime-model" />
+                  <display value="ColdIschemiaTime" />
               </sourceReference>
           </resource>
           <resource>
@@ -1192,15 +1220,15 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-Condition-model" />
-                  <display value="Condition" />
+                  <reference value="StructureDefinition/condition-ConditionPresenceContext-model" />
+                  <display value="ConditionPresenceContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-ConditionPresenceContext-model" />
-                  <display value="ConditionPresenceContext" />
+                  <reference value="StructureDefinition/condition-ConditionPresenceStatement-model" />
+                  <display value="ConditionPresenceStatement" />
               </sourceReference>
           </resource>
           <resource>
@@ -1374,15 +1402,15 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-HER2ReceptorStatusIHC-model" />
-                  <display value="HER2ReceptorStatusIHC" />
+                  <reference value="StructureDefinition/oncology-HER2byIHC-model" />
+                  <display value="HER2byIHC" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-HER2ReceptorStatusISH-model" />
-                  <display value="HER2ReceptorStatusISH" />
+                  <reference value="StructureDefinition/oncology-HER2byISH-model" />
+                  <display value="HER2byISH" />
               </sourceReference>
           </resource>
           <resource>

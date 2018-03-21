@@ -15,7 +15,7 @@
   "name": "CompleteMembraneStainingPercent",
   "title": "BC CompleteMembraneStainingPercent Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -30,8 +30,9 @@
   "description": "Percentage of cells with uniform intense complete membrane staining.",
   "keyword": [
     {
-      "system": "https://sdt.cap.org",
-      "code": "25884"
+      "system": "http://loinc.org",
+      "code": "16112-5",
+      "display": "Cells.HER2 uniform intense membrane staining/100 cells"
     }
   ],
   "kind": "logical",
@@ -417,7 +418,7 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
@@ -807,7 +808,7 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"

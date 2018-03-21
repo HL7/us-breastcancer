@@ -15,7 +15,7 @@
   "name": "BreastRegionalLymphNodeSpecimen",
   "title": "BC BreastRegionalLymphNodeSpecimen Logical Model",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -79,7 +79,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -174,7 +174,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -204,15 +204,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemicTime",
-        "path": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemicTime",
+        "id": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemiaTime",
+        "path": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemiaTime",
         "short": "The time between the chilling of a tissue or tissue sample and the time it is warmed. ",
         "definition": "The time between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\tNOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemicTime-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemiaTime-model"
           }
         ],
         "mustSupport": false,
@@ -267,7 +267,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -362,7 +362,7 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -392,15 +392,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemicTime",
-        "path": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemicTime",
+        "id": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemiaTime",
+        "path": "oncology-BreastRegionalLymphNodeSpecimen-model.coldIschemiaTime",
         "short": "The time between the chilling of a tissue or tissue sample and the time it is warmed. ",
         "definition": "The time between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\tNOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemicTime-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemiaTime-model"
           }
         ],
         "mustSupport": false,

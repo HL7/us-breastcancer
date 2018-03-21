@@ -3,12 +3,12 @@
   "id": "oncology-HER2ReceptorStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatus Profile</b></p>\n  <p>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2ReceptorStatus maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatus Profile</b></p>\n  <p>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2ReceptorStatus maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  Quantity maps to value[x]\n  CodeableConcept maps to value[x]\n  string maps to value[x]\n  boolean maps to value[x]\n  Range maps to value[x]\n  Ratio maps to value[x]\n  time maps to value[x]\n  dateTime maps to value[x]\n  TimePeriod maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2ReceptorStatus",
   "name": "HER2ReceptorStatus",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -80,7 +80,7 @@
         "id": "Observation:oncology-HER2ReceptorStatus",
         "path": "Observation",
         "short": "HER2ReceptorStatus",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -2206,29 +2206,103 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation:oncology-HER2ReceptorStatus.value[x]",
+        "path": "Observation.value[x]",
         "short": "Result Value",
-        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
-        "min": 1,
-        "max": "1",
+        "definition": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
+        "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Observation.value[x]",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
+            "code": "Quantity"
+          },
+          {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
-        "isSummary": true,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2StatusVS"
+        "condition": [
+          "obs-7"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "valueBoolean": true
+              }
+            ],
+            "key": "us-core-4",
+            "severity": "warning",
+            "human": "SHOULD use Snomed CT for coded Results",
+            "expression": "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
+            "xpath": "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
+          },
+          {
+            "key": "us-core-3",
+            "severity": "error",
+            "human": "SHALL use UCUM for coded quantity units.",
+            "expression": "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
+            "xpath": "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
           }
-        }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Event.notDone, Event.notDoneReason  (maps to valeu[x] or dataAbsentReason)"
+          },
+          {
+            "identity": "sct-concept",
+            "map": "< 441742003 |Evaluation finding|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX.2, OBX.5, OBX.6"
+          },
+          {
+            "identity": "rim",
+            "map": "value"
+          },
+          {
+            "identity": "sct-attr",
+            "map": "363714003 |Interprets|"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Observation.value[x]"
+          }
+        ]
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatus.dataAbsentReason",
@@ -2300,16 +2374,9 @@
           }
         ],
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         },
         "mapping": [
@@ -2415,7 +2482,7 @@
         "comment": "Only used if not implicit in code for Observation.code.",
         "requirements": "In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.method",
           "min": 0,
@@ -2427,9 +2494,9 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2MethodVS"
+            "reference": "http://loinc.org"
           }
         },
         "mapping": [
@@ -2878,7 +2945,7 @@
         "comment": "For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4).",
         "requirements": "Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes a QuestionnaireResponse from which the measure is derived.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Observation.related",
           "min": 0,
@@ -2909,10 +2976,61 @@
             "identity": "rim",
             "map": "outBoundRelationship"
           }
-        ]
+        ],
+        "slicing": {
+          "id": "3",
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "target.reference.resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.id",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC",
+        "path": "Observation.related",
+        "short": "HER2byIHC",
+        "definition": "HER2 receptor status as determined by Immunohistochemistry (IHC).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Observation.related",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "Element"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "Relationships established by OBX-4 usage"
+          },
+          {
+            "identity": "rim",
+            "map": "outBoundRelationship"
+          }
+        ],
+        "sliceName": "oncology-HER2byIHC"
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.id",
         "path": "Observation.related.id",
         "representation": [
           "xmlAttr"
@@ -2939,7 +3057,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.extension",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.extension",
         "path": "Observation.related.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2968,7 +3086,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.modifierExtension",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.modifierExtension",
         "path": "Observation.related.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3000,7 +3118,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.type",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.type",
         "path": "Observation.related.type",
         "short": "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by",
         "definition": "A code specifying the kind of relationship that exists with the target resource.",
@@ -3044,7 +3162,7 @@
         "fixedCode": "has-member"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.target",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.target",
         "path": "Observation.related.target",
         "short": "Resource that is related to this one",
         "definition": "A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation.",
@@ -3058,7 +3176,204 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultRecorded"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byIHC"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".targetObservation"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH",
+        "path": "Observation.related",
+        "short": "HER2byISH",
+        "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Observation.related",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "Element"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "Relationships established by OBX-4 usage"
+          },
+          {
+            "identity": "rim",
+            "map": "outBoundRelationship"
+          }
+        ],
+        "sliceName": "oncology-HER2byISH"
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.id",
+        "path": "Observation.related.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.extension",
+        "path": "Observation.related.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.modifierExtension",
+        "path": "Observation.related.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BackboneElement.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.type",
+        "path": "Observation.related.type",
+        "short": "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by",
+        "definition": "A code specifying the kind of relationship that exists with the target resource.",
+        "comment": "The \"derived-from\" type is the only logical choice when referencing the QuestionnaireAnswer resource.",
+        "requirements": "A relationship type SHOULD be provided.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.related.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRelationshipType"
+            }
+          ],
+          "strength": "required",
+          "description": "Codes specifying how two observations are related.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-relationshiptypes"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": ".typeCode"
+          }
+        ],
+        "fixedCode": "has-member"
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.target",
+        "path": "Observation.related.target",
+        "short": "Resource that is related to this one",
+        "definition": "A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Observation.related.target",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byISH"
           }
         ],
         "mapping": [
@@ -3710,7 +4025,7 @@
         "id": "Observation:oncology-HER2ReceptorStatus",
         "path": "Observation",
         "short": "HER2ReceptorStatus",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "mustSupport": false
       },
       {
@@ -3871,19 +4186,42 @@
         "fixedCode": "48676-1"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation:oncology-HER2ReceptorStatus.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "0",
+        "definition": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "type": [
           {
+            "code": "Quantity"
+          },
+          {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2StatusVS"
-          }
-        }
+        ]
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatus.dataAbsentReason",
@@ -3899,16 +4237,9 @@
         "id": "Observation:oncology-HER2ReceptorStatus.interpretation",
         "path": "Observation.interpretation",
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
           "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         }
       },
@@ -3927,10 +4258,12 @@
       {
         "id": "Observation:oncology-HER2ReceptorStatus.method",
         "path": "Observation.method",
+        "min": 0,
+        "max": "0",
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-HER2MethodVS"
+            "reference": "http://loinc.org"
           }
         }
       },
@@ -4000,21 +4333,59 @@
       {
         "id": "Observation:oncology-HER2ReceptorStatus.related",
         "path": "Observation.related",
-        "min": 0,
-        "max": "0"
+        "slicing": {
+          "id": "3",
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "target.reference.resolve()"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.type",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC",
+        "path": "Observation.related",
+        "sliceName": "oncology-HER2byIHC",
+        "short": "HER2byIHC",
+        "definition": "HER2 receptor status as determined by Immunohistochemistry (IHC)."
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.type",
         "path": "Observation.related.type",
         "fixedCode": "has-member"
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.related.target",
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byIHC.target",
         "path": "Observation.related.target",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultRecorded"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byIHC"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH",
+        "path": "Observation.related",
+        "sliceName": "oncology-HER2byISH",
+        "short": "HER2byISH",
+        "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH)."
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.type",
+        "path": "Observation.related.type",
+        "fixedCode": "has-member"
+      },
+      {
+        "id": "Observation:oncology-HER2ReceptorStatus.related:oncology-HER2byISH.target",
+        "path": "Observation.related.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byISH"
           }
         ]
       },
@@ -4090,5 +4461,5 @@
     }
   ],
   "title": "BC HER2ReceptorStatus Profile",
-  "description": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options."
+  "description": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2)."
 }

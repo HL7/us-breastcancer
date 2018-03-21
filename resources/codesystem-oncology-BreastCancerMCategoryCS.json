@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-BreastCancerMCategoryCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerMCategoryCS CodeSystem</b></p>\n<p>Codes that designate concepts describing Metastases category according to AJCC breast cancer staging recommendations.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerMCategoryCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.BreastCancerMCategoryCS"
+  },
+  "name": "BreastCancerMCategoryCS",
+  "title": "BC BreastCancerMCategoryCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-21",
+  "description": "Codes that designate concepts describing Metastases category according to AJCC breast cancer staging recommendations.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "MX",
+      "definition": "The concept designated by the symbol MX in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol MX in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "M0",
+      "definition": "The concept designated by the symbol M0 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol M0 in Version 8 of AJCC's breast cancer staging guide."
+    },
+    {
+      "code": "M1",
+      "definition": "The concept designated by the symbol M1 in Version 8 of AJCC's breast cancer staging guide.",
+      "display": "The concept designated by the symbol M1 in Version 8 of AJCC's breast cancer staging guide."
+    }
+  ]
+}
