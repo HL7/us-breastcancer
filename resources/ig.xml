@@ -23,8 +23,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-BreastCancerTNMStage" />
-                <display value="BC BreastCancerTNMStage Profile" />
+                <reference value="StructureDefinition/oncology-BreastCancerPrognosticStage" />
+                <display value="BC BreastCancerPrognosticStage Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -226,13 +226,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-CodeableConcept-extension" />
-                <display value="BC CodeableConcept Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/oncology-ColdIschemiaTime-extension" />
                 <display value="BC ColdIschemiaTime Extension" />
             </sourceReference>
@@ -275,13 +268,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-Focus-extension" />
-                <display value="BC Focus Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/oncology-MorphologyBehavior-extension" />
                 <display value="BC MorphologyBehavior Extension" />
             </sourceReference>
@@ -303,14 +289,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-base-StatementTopic-extension" />
-                <display value="BC StatementTopic Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-base-TopicCode-extension" />
+                <reference value="StructureDefinition/cimi-TopicCode-extension" />
                 <display value="BC TopicCode Extension" />
             </sourceReference>
         </resource>
@@ -562,15 +541,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-HER2ISHMethodVS" />
-                <display value="BC HER2ISHMethodVS ValueSet" />
+                <reference value="ValueSet/oncology-HER2IHCMethodVS" />
+                <display value="BC HER2IHCMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-HER2MethodVS" />
-                <display value="BC HER2MethodVS ValueSet" />
+                <reference value="ValueSet/oncology-HER2ISHMethodVS" />
+                <display value="BC HER2ISHMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -835,15 +814,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/oncology-HER2ISHMethodCS" />
-                <display value="BC HER2ISHMethodCS CodeSystem" />
+                <reference value="CodeSystem/oncology-HER2IHCMethodCS" />
+                <display value="BC HER2IHCMethodCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/oncology-HER2MethodCS" />
-                <display value="BC HER2MethodCS CodeSystem" />
+                <reference value="CodeSystem/oncology-HER2ISHMethodCS" />
+                <display value="BC HER2ISHMethodCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -1087,15 +1066,15 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerTCategory-model" />
-                  <display value="BreastCancerTCategory" />
+                  <reference value="StructureDefinition/oncology-BreastCancerPrognosticStage-model" />
+                  <display value="BreastCancerPrognosticStage" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerTNMStage-model" />
-                  <display value="BreastCancerTNMStage" />
+                  <reference value="StructureDefinition/oncology-BreastCancerTCategory-model" />
+                  <display value="BreastCancerTCategory" />
               </sourceReference>
           </resource>
           <resource>
@@ -1143,7 +1122,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-ClinicalStatement-model" />
+                  <reference value="StructureDefinition/cimi-ClinicalStatement-model" />
                   <display value="ClinicalStatement" />
               </sourceReference>
           </resource>
@@ -1241,7 +1220,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-ContextCode-model" />
+                  <reference value="StructureDefinition/cimi-ContextCode-model" />
                   <display value="ContextCode" />
               </sourceReference>
           </resource>
@@ -1388,13 +1367,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-Focus-model" />
-                  <display value="Focus" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/oncology-HER2ReceptorStatus-model" />
                   <display value="HER2ReceptorStatus" />
               </sourceReference>
@@ -1437,7 +1409,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-InformationEntry-model" />
+                  <reference value="StructureDefinition/cimi-InformationEntry-model" />
                   <display value="InformationEntry" />
               </sourceReference>
           </resource>
@@ -1479,7 +1451,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-Locatable-model" />
+                  <reference value="StructureDefinition/cimi-Locatable-model" />
                   <display value="Locatable" />
               </sourceReference>
           </resource>
@@ -1544,13 +1516,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/oncology-NuclearPleomorphismScore-model" />
                   <display value="NuclearPleomorphismScore" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-NuclearPositivity-model" />
-                  <display value="NuclearPositivity" />
               </sourceReference>
           </resource>
           <resource>
@@ -1773,13 +1738,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-StageSuffix-model" />
-                  <display value="StageSuffix" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/oncology-StageTimingPrefix-model" />
                   <display value="StageTimingPrefix" />
               </sourceReference>
@@ -1787,14 +1745,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-StatementContext-model" />
+                  <reference value="StructureDefinition/cimi-StatementContext-model" />
                   <display value="StatementContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-StatementTopic-model" />
+                  <reference value="StructureDefinition/cimi-StatementTopic-model" />
                   <display value="StatementTopic" />
               </sourceReference>
           </resource>
@@ -1822,7 +1780,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-base-TopicCode-model" />
+                  <reference value="StructureDefinition/cimi-TopicCode-model" />
                   <display value="TopicCode" />
               </sourceReference>
           </resource>

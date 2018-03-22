@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byISH",
   "name": "HER2byISH",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-03-22",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -390,20 +390,6 @@
           "ordered": false,
           "rules": "open"
         }
-      },
-      {
-        "id": "Observation:oncology-HER2byISH.extension:focus",
-        "path": "Observation.extension",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Focus-extension"
-          }
-        ],
-        "sliceName": "focus"
       },
       {
         "id": "Observation:oncology-HER2byISH.extension:deltaflag",
@@ -8334,20 +8320,6 @@
         "short": "HER2byISH",
         "definition": "HER2 receptor status as determined by In Situ Hybridization (ISH).",
         "mustSupport": false
-      },
-      {
-        "id": "Observation:oncology-HER2byISH.extension:focus",
-        "path": "Observation.extension",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Focus-extension"
-          }
-        ],
-        "sliceName": "focus"
       },
       {
         "id": "Observation:oncology-HER2byISH.extension:deltaflag",

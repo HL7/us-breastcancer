@@ -35,14 +35,9 @@
 The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-oncology-BreastCancerTNMStage.html">BreastCancerTNMStage</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>The stage of a cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). TNM Stage Grouping categorizes the progression of cancer using a modified Roman Numeral system.</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-oncology-BreastRegionalLymphNodeSpecimen.html">BreastRegionalLymphNodeSpecimen</a></td>
       <td><a href="http://hl7.org/fhir/STU3/specimen.html">Specimen</a></td>
-      <td>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event.</td>
+      <td>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-BreastSite.html">BreastSite</a></td>
@@ -119,7 +114,7 @@ No LOINC code currently exists for this test.</td>
     <tr>
       <td><a href="StructureDefinition-oncology-ProgesteroneReceptorStatus.html">ProgesteroneReceptorStatus</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
+      <td>Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. 
 
 Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
 
@@ -170,6 +165,11 @@ The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Ri
       <td>A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.
 
 Note: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-oncology-BreastCancerPrognosticStage.html">BreastCancerPrognosticStage</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-condition-ConditionPresenceStatement.html">ConditionPresenceStatement</a></td>

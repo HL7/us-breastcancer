@@ -3,12 +3,12 @@
   "id": "oncology-BreastRegionalLymphNodeSpecimen",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastRegionalLymphNodeSpecimen Profile</b></p>\n  <p>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastRegionalLymphNodeSpecimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastRegionalLymphNodeSpecimen Profile</b></p>\n  <p>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastRegionalLymphNodeSpecimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastRegionalLymphNodeSpecimen",
   "name": "BreastRegionalLymphNodeSpecimen",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-03-22",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event.",
+  "description": "The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined.",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -50,7 +50,7 @@
         "id": "Specimen:oncology-BreastRegionalLymphNodeSpecimen",
         "path": "Specimen",
         "short": "BreastRegionalLymphNodeSpecimen",
-        "definition": "The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event.",
+        "definition": "The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined.",
         "min": 0,
         "max": "*",
         "constraint": [
@@ -1516,7 +1516,7 @@
         "id": "Specimen:oncology-BreastRegionalLymphNodeSpecimen",
         "path": "Specimen",
         "short": "BreastRegionalLymphNodeSpecimen",
-        "definition": "The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event."
+        "definition": "The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined."
       },
       {
         "id": "Specimen:oncology-BreastRegionalLymphNodeSpecimen.extension:collectionsite",

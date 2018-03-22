@@ -31,12 +31,8 @@
 The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-BreastCancerTNMStage-model.html">BreastCancerTNMStage</a></td>
-        <td>The stage of a cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). TNM Stage Grouping categorizes the progression of cancer using a modified Roman Numeral system.</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-oncology-BreastRegionalLymphNodeSpecimen-model.html">BreastRegionalLymphNodeSpecimen</a></td>
-        <td>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event.</td>
+        <td>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-BreastSite-model.html">BreastSite</a></td>
@@ -100,7 +96,7 @@ No LOINC code currently exists for this test.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-ProgesteroneReceptorStatus-model.html">ProgesteroneReceptorStatus</a></td>
-        <td>Progesterone receptor is expressed in 65% of breast carcinomas. PR status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
+        <td>Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. 
 
 Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
 
@@ -214,6 +210,10 @@ Examples include tissue types, tumors, and wounds. Body structures are continuan
         <td>The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.</td>
       </tr>
       <tr>
+        <td><a href="StructureDefinition-oncology-BreastCancerPrognosticStage-model.html">BreastCancerPrognosticStage</a></td>
+        <td>The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.</td>
+      </tr>
+      <tr>
         <td><a href="StructureDefinition-oncology-BreastCancerTCategory-model.html">BreastCancerTCategory</a></td>
         <td>The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.</td>
       </tr>
@@ -230,7 +230,7 @@ Examples include tissue types, tumors, and wounds. Body structures are continuan
         <td>The degree of confidence in a conclusion or assertion.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-ClinicalStatement-model.html">ClinicalStatement</a></td>
+        <td><a href="StructureDefinition-cimi-ClinicalStatement-model.html">ClinicalStatement</a></td>
         <td>A special type of information entry consisting of a topic and a context. 
 
 The ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.</td>
@@ -303,7 +303,7 @@ In CIMI Version 0.0.4, the corresponding reference model class was called Condit
 The presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-ContextCode-model.html">ContextCode</a></td>
+        <td><a href="StructureDefinition-cimi-ContextCode-model.html">ContextCode</a></td>
         <td>A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. 
 		
 		Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: &#039;Finding context (attribute)&#039; (SCTID: 408729009) and &#039;Procedure context (attribute)&#039; (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.
@@ -408,14 +408,6 @@ The subject of a finding can be the entire patient, or an entity such as a locat
 In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation applies to EvaluationResult and has been introduced in that class.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-Focus-model.html">Focus</a></td>
-        <td>The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. 
-		
-		Focus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.
-		
-		CIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-oncology-HER2toCEP17Ratio-model.html">HER2toCEP17Ratio</a></td>
         <td>HER2 to CEP17 Ratio (dual probe only)</td>
       </tr>
@@ -424,7 +416,7 @@ In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedi
         <td>Whether In Situ Hybridization signals were heterogeneous.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-InformationEntry-model.html">InformationEntry</a></td>
+        <td><a href="StructureDefinition-cimi-InformationEntry-model.html">InformationEntry</a></td>
         <td>An InformationEntry is the minimal unit independent of logical information or knowledge, such as a clinical statement in a patient record, a knowledge entry in a knowledge artifact, a product in a product catalog, etc. 
 
 TThe CIMI-defined attributes from InformationEntry (and those inherited from Entry) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry (identifier, subjectOfInformation, attribution, additionalText, recordStatus). Reconciling these differences is outside the scope of the current ballot on breast cancer.</td>
@@ -450,7 +442,7 @@ TThe CIMI-defined attributes from InformationEntry (and those inherited from Ent
         <td>Anatomical location or specimen further detailing the side(s) of interest.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-Locatable-model.html">Locatable</a></td>
+        <td><a href="StructureDefinition-cimi-Locatable-model.html">Locatable</a></td>
         <td>Abstract top level class in the hierarchy. Locatable defines the idea of &#039;locatability in an archetyped structure&#039;.
 
 Having this class at the top of the class hierarchy reflects CIMI&#039;s use of Archetype Description Language (ADL). In CIMI, Locatable brings with it three attributes that occur in every CIMI child class: archetype_node_id, name (not a healthcare-relevant name, but a name created at runtime), and archetype_details. These attributes reflect a CIMI model implementation detail, and are irrelevant to cancer detailed clinical models, and should by rights remain hidden. So as to not complicate all profiles with extra extensions, these three attributes have been omitted.</td>
@@ -482,10 +474,6 @@ Having this class at the top of the class hierarchy reflects CIMI&#039;s use of 
       <tr>
         <td><a href="StructureDefinition-oncology-NuclearPleomorphismScore-model.html">NuclearPleomorphismScore</a></td>
         <td>How large and varied the nuclei of the tumor cells are. Scored 1 to 3, with 3 being the most pleomorphism.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-NuclearPositivity-model.html">NuclearPositivity</a></td>
-        <td>The percentage of cells that test (stain) positive for the presence of a receptor.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-NumberOfLymphNodesInvolved-model.html">NumberOfLymphNodesInvolved</a></td>
@@ -619,21 +607,17 @@ NOTE: This class has been cut down to separate it from other parts of the refere
         <td>The full staging information</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-StageSuffix-model.html">StageSuffix</a></td>
-        <td>Modifies the stage by indicating the size or extent of the cancer or tumor.</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-oncology-StageTimingPrefix-model.html">StageTimingPrefix</a></td>
-        <td>Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#039;yc&#039; (e.g. ycNX)</td>
+        <td>Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#039;yc&#039; (e.g. ycNX)</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-StatementContext-model.html">StatementContext</a></td>
+        <td><a href="StructureDefinition-cimi-StatementContext-model.html">StatementContext</a></td>
         <td>Compositional and reusable grouping of attributes that provides the context for the topic of a clinical statement.
 
 StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-StatementTopic-model.html">StatementTopic</a></td>
+        <td><a href="StructureDefinition-cimi-StatementTopic-model.html">StatementTopic</a></td>
         <td>Compositional and reusable grouping of attributes that make up the clinical focus of an entry. 
 
 A topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).</td>
@@ -653,7 +637,7 @@ If the start element is missing, the start of the period is not known. If the en
         <td>The time at which something is to take effect, start, or did start. Boundary is considered inclusive.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-base-TopicCode-model.html">TopicCode</a></td>
+        <td><a href="StructureDefinition-cimi-TopicCode-model.html">TopicCode</a></td>
         <td>The concept representing the finding or action that is the topic of the statement. 
 		
 		For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the &#039;question&#039; or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.

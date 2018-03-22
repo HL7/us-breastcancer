@@ -15,7 +15,7 @@
   "name": "EstrogenReceptorStatus",
   "title": "BC EstrogenReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-03-22",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -53,50 +53,19 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.value[x]",
-        "path": "oncology-EstrogenReceptorStatus-model.value[x]",
-        "short": "Choice of types representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Choice of types representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "id": "oncology-EstrogenReceptorStatus-model.value",
+        "path": "oncology-EstrogenReceptorStatus-model.value",
+        "short": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
           "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
+          "percentageRange"
         ],
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PercentageRange-model"
           }
         ],
         "mustSupport": false,
@@ -112,7 +81,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-TopicCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-model"
           }
         ],
         "mustSupport": false,
@@ -632,22 +601,6 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.focus",
-        "path": "oncology-EstrogenReceptorStatus-model.focus",
-        "short": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. ",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Focus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
         "path": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
         "code": [
@@ -802,22 +755,6 @@
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
-        "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearPositivity-model"
-          }
-        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -1158,22 +1095,6 @@
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
           }
         ]
-      },
-      {
-        "id": "oncology-EstrogenReceptorStatus-model.exceptionValue",
-        "path": "oncology-EstrogenReceptorStatus-model.exceptionValue",
-        "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   },
@@ -1190,50 +1111,19 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.value[x]",
-        "path": "oncology-EstrogenReceptorStatus-model.value[x]",
-        "short": "Choice of types representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Choice of types representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "id": "oncology-EstrogenReceptorStatus-model.value",
+        "path": "oncology-EstrogenReceptorStatus-model.value",
+        "short": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
         "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
           "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
+          "percentageRange"
         ],
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PercentageRange-model"
           }
         ],
         "mustSupport": false,
@@ -1249,7 +1139,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-TopicCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-model"
           }
         ],
         "mustSupport": false,
@@ -1769,22 +1659,6 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.focus",
-        "path": "oncology-EstrogenReceptorStatus-model.focus",
-        "short": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. ",
-        "definition": "The specific aspect, person, or thing related to the Subject under observation, potentially a specific condition, fetus, drug regimen, environmental location, activity, body structure, or environmental factor. \n\t\t\n\t\tFocus is used when the observation is not the Subject as a whole. An example would be an observation related to a particular tumor, or an observation about a change in a particular behavior, or an observation about a systemic condition.\n\t\t\n\t\tCIMI Version 0.0.4 does not have this attribute, nor does FHIR 3.0.1. However, a FHIR tracker issue has been approved for adding an attribute (tentatively named focalSubject) to FHIR. That change is anticipated here.",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Focus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
         "path": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
         "code": [
@@ -1939,22 +1813,6 @@
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
-        "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearPositivity-model"
-          }
-        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -2295,22 +2153,6 @@
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
           }
         ]
-      },
-      {
-        "id": "oncology-EstrogenReceptorStatus-model.exceptionValue",
-        "path": "oncology-EstrogenReceptorStatus-model.exceptionValue",
-        "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   }

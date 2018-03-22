@@ -49,8 +49,8 @@
     "StructureDefinition/oncology-BreastCancerPresenceStatement": {
       "base": "StructureDefinition-oncology-BreastCancerPresenceStatement.html"
     },
-    "StructureDefinition/oncology-BreastCancerTNMStage": {
-      "base": "StructureDefinition-oncology-BreastCancerTNMStage.html"
+    "StructureDefinition/oncology-BreastCancerPrognosticStage": {
+      "base": "StructureDefinition-oncology-BreastCancerPrognosticStage.html"
     },
     "StructureDefinition/oncology-BreastRegionalLymphNodeSpecimen": {
       "base": "StructureDefinition-oncology-BreastRegionalLymphNodeSpecimen.html"
@@ -136,9 +136,6 @@
     "StructureDefinition/shr-core-ClockDirection-extension": {
       "base": "StructureDefinition-shr-core-ClockDirection-extension.html"
     },
-    "StructureDefinition/shr-core-CodeableConcept-extension": {
-      "base": "StructureDefinition-shr-core-CodeableConcept-extension.html"
-    },
     "StructureDefinition/oncology-ColdIschemiaTime-extension": {
       "base": "StructureDefinition-oncology-ColdIschemiaTime-extension.html"
     },
@@ -157,9 +154,6 @@
     "StructureDefinition/finding-FindingMethod-extension": {
       "base": "StructureDefinition-finding-FindingMethod-extension.html"
     },
-    "StructureDefinition/finding-Focus-extension": {
-      "base": "StructureDefinition-finding-Focus-extension.html"
-    },
     "StructureDefinition/oncology-MorphologyBehavior-extension": {
       "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html"
     },
@@ -169,11 +163,8 @@
     "StructureDefinition/oncology-StageTimingPrefix-extension": {
       "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html"
     },
-    "StructureDefinition/shr-base-StatementTopic-extension": {
-      "base": "StructureDefinition-shr-base-StatementTopic-extension.html"
-    },
-    "StructureDefinition/shr-base-TopicCode-extension": {
-      "base": "StructureDefinition-shr-base-TopicCode-extension.html"
+    "StructureDefinition/cimi-TopicCode-extension": {
+      "base": "StructureDefinition-cimi-TopicCode-extension.html"
     },
     "StructureDefinition/primitive-base64Binary-extension": {
       "base": "StructureDefinition-primitive-base64Binary-extension.html"
@@ -280,11 +271,11 @@
     "ValueSet/finding-ExceptionValueVS": {
       "base": "ValueSet-finding-ExceptionValueVS.html"
     },
+    "ValueSet/oncology-HER2IHCMethodVS": {
+      "base": "ValueSet-oncology-HER2IHCMethodVS.html"
+    },
     "ValueSet/oncology-HER2ISHMethodVS": {
       "base": "ValueSet-oncology-HER2ISHMethodVS.html"
-    },
-    "ValueSet/oncology-HER2MethodVS": {
-      "base": "ValueSet-oncology-HER2MethodVS.html"
     },
     "ValueSet/oncology-HER2StatusVS": {
       "base": "ValueSet-oncology-HER2StatusVS.html"
@@ -397,11 +388,11 @@
     "CodeSystem/finding-ExceptionValueCS": {
       "base": "CodeSystem-finding-ExceptionValueCS.html"
     },
+    "CodeSystem/oncology-HER2IHCMethodCS": {
+      "base": "CodeSystem-oncology-HER2IHCMethodCS.html"
+    },
     "CodeSystem/oncology-HER2ISHMethodCS": {
       "base": "CodeSystem-oncology-HER2ISHMethodCS.html"
-    },
-    "CodeSystem/oncology-HER2MethodCS": {
-      "base": "CodeSystem-oncology-HER2MethodCS.html"
     },
     "CodeSystem/oncology-HER2StatusCS": {
       "base": "CodeSystem-oncology-HER2StatusCS.html"
@@ -577,15 +568,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerTCategory-model": {
-      "base": "StructureDefinition-oncology-BreastCancerTCategory-model.html",
+    "StructureDefinition/oncology-BreastCancerPrognosticStage-model": {
+      "base": "StructureDefinition-oncology-BreastCancerPrognosticStage-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerTNMStage-model": {
-      "base": "StructureDefinition-oncology-BreastCancerTNMStage-model.html",
+    "StructureDefinition/oncology-BreastCancerTCategory-model": {
+      "base": "StructureDefinition-oncology-BreastCancerTCategory-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -633,8 +624,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-ClinicalStatement-model": {
-      "base": "StructureDefinition-shr-base-ClinicalStatement-model.html",
+    "StructureDefinition/cimi-ClinicalStatement-model": {
+      "base": "StructureDefinition-cimi-ClinicalStatement-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -731,8 +722,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-ContextCode-model": {
-      "base": "StructureDefinition-shr-base-ContextCode-model.html",
+    "StructureDefinition/cimi-ContextCode-model": {
+      "base": "StructureDefinition-cimi-ContextCode-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -878,13 +869,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/finding-Focus-model": {
-      "base": "StructureDefinition-finding-Focus-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/oncology-HER2ReceptorStatus-model": {
       "base": "StructureDefinition-oncology-HER2ReceptorStatus-model.html",
       "template-base": "sd-logical.html",
@@ -927,8 +911,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-InformationEntry-model": {
-      "base": "StructureDefinition-shr-base-InformationEntry-model.html",
+    "StructureDefinition/cimi-InformationEntry-model": {
+      "base": "StructureDefinition-cimi-InformationEntry-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -969,8 +953,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-Locatable-model": {
-      "base": "StructureDefinition-shr-base-Locatable-model.html",
+    "StructureDefinition/cimi-Locatable-model": {
+      "base": "StructureDefinition-cimi-Locatable-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1034,13 +1018,6 @@
     },
     "StructureDefinition/oncology-NuclearPleomorphismScore-model": {
       "base": "StructureDefinition-oncology-NuclearPleomorphismScore-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/oncology-NuclearPositivity-model": {
-      "base": "StructureDefinition-oncology-NuclearPositivity-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1263,13 +1240,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-StageSuffix-model": {
-      "base": "StructureDefinition-oncology-StageSuffix-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/oncology-StageTimingPrefix-model": {
       "base": "StructureDefinition-oncology-StageTimingPrefix-model.html",
       "template-base": "sd-logical.html",
@@ -1277,15 +1247,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-StatementContext-model": {
-      "base": "StructureDefinition-shr-base-StatementContext-model.html",
+    "StructureDefinition/cimi-StatementContext-model": {
+      "base": "StructureDefinition-cimi-StatementContext-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-StatementTopic-model": {
-      "base": "StructureDefinition-shr-base-StatementTopic-model.html",
+    "StructureDefinition/cimi-StatementTopic-model": {
+      "base": "StructureDefinition-cimi-StatementTopic-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1312,8 +1282,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-base-TopicCode-model": {
-      "base": "StructureDefinition-shr-base-TopicCode-model.html",
+    "StructureDefinition/cimi-TopicCode-model": {
+      "base": "StructureDefinition-cimi-TopicCode-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

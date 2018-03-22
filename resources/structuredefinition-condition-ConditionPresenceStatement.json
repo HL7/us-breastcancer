@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/condition-ConditionPresenceStatement",
   "name": "ConditionPresenceStatement",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-03-22",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -403,7 +403,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-TopicCode-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-extension"
           }
         ],
         "sliceName": "topiccode"
@@ -1528,7 +1528,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-TopicCode-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-extension"
           }
         ],
         "sliceName": "topiccode"

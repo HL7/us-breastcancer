@@ -15,7 +15,7 @@
   "name": "FindingContext",
   "title": "BC FindingContext Logical Model",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-03-22",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -60,7 +60,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-ContextCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ContextCode-model"
           }
         ],
         "mustSupport": false,
@@ -90,7 +90,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-base-ContextCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ContextCode-model"
           }
         ],
         "mustSupport": false,
