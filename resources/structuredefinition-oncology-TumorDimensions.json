@@ -4576,9 +4576,8 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity",
         "path": "Observation.component.valueQuantity",
-        "sliceName": "Quantity",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "min": 0,
@@ -4596,7 +4595,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.id",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.id",
         "path": "Observation.component.valueQuantity.id",
         "representation": [
           "xmlAttr"
@@ -4623,7 +4622,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.extension",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.extension",
         "path": "Observation.component.valueQuantity.extension",
         "slicing": {
           "discriminator": [
@@ -4662,7 +4661,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.value",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.value",
         "path": "Observation.component.valueQuantity.value",
         "short": "Numerical value (with implicit precision)",
         "definition": "The value of the measured amount. The value includes an implicit precision in the presentation of the value.",
@@ -4688,7 +4687,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.comparator",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.comparator",
         "path": "Observation.component.valueQuantity.comparator",
         "short": "< | <= | >= | > - how to understand the value",
         "definition": "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value.",
@@ -4729,7 +4728,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.unit",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.unit",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4760,7 +4759,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.system",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.system",
         "path": "Observation.component.valueQuantity.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
@@ -4789,7 +4788,7 @@
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.code",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.code",
         "path": "Observation.component.valueQuantity.code",
         "short": "Coded form of the unit",
         "definition": "A computer processable form of the unit in some unit representation system.",
@@ -5387,9 +5386,8 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity",
         "path": "Observation.component.valueQuantity",
-        "sliceName": "Quantity",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "min": 0,
@@ -5407,7 +5405,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.id",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.id",
         "path": "Observation.component.valueQuantity.id",
         "representation": [
           "xmlAttr"
@@ -5434,7 +5432,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.extension",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.extension",
         "path": "Observation.component.valueQuantity.extension",
         "slicing": {
           "discriminator": [
@@ -5473,7 +5471,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.value",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.value",
         "path": "Observation.component.valueQuantity.value",
         "short": "Numerical value (with implicit precision)",
         "definition": "The value of the measured amount. The value includes an implicit precision in the presentation of the value.",
@@ -5499,7 +5497,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.comparator",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.comparator",
         "path": "Observation.component.valueQuantity.comparator",
         "short": "< | <= | >= | > - how to understand the value",
         "definition": "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value.",
@@ -5540,7 +5538,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.unit",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.unit",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -5571,7 +5569,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.system",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.system",
         "path": "Observation.component.valueQuantity.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
@@ -5600,7 +5598,7 @@
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.code",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.code",
         "path": "Observation.component.valueQuantity.code",
         "short": "Coded form of the unit",
         "definition": "A computer processable form of the unit in some unit representation system.",
@@ -6510,7 +6508,7 @@
         "fixedCode": "33729-5"
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity",
         "path": "Observation.component.valueQuantity",
         "type": [
           {
@@ -6519,12 +6517,12 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.system",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.system",
         "path": "Observation.component.valueQuantity.system",
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity:Quantity.code",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-TumorSecondaryDimensionSize.valueQuantity.code",
         "path": "Observation.component.valueQuantity.code",
         "fixedCode": "mm"
       },
@@ -6571,7 +6569,7 @@
         "max": "1"
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity",
         "path": "Observation.component.valueQuantity",
         "type": [
           {
@@ -6580,12 +6578,12 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.system",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.system",
         "path": "Observation.component.valueQuantity.system",
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity:Quantity.code",
+        "id": "Observation:oncology-TumorDimensions.component:oncology-SizeOfGrossTumorBed.valueQuantity.code",
         "path": "Observation.component.valueQuantity.code",
         "fixedCode": "mm"
       },

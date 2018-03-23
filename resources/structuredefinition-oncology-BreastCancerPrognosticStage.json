@@ -4572,9 +4572,8 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerNCategory.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerNCategory.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
-        "sliceName": "CodeableConcept",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "min": 0,
@@ -5547,9 +5546,8 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerMCategory.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerMCategory.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
-        "sliceName": "CodeableConcept",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "min": 0,
@@ -6502,7 +6500,7 @@
         "fixedCode": "59525-6"
       },
       {
-        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerNCategory.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerNCategory.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6602,7 +6600,7 @@
         "fixedCode": "59522-3"
       },
       {
-        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerMCategory.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerPrognosticStage.component:oncology-BreastCancerMCategory.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {

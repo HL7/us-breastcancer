@@ -5084,9 +5084,8 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity",
         "path": "Observation.component.valueQuantity",
-        "sliceName": "Quantity",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "min": 0,
@@ -5104,7 +5103,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.id",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.id",
         "path": "Observation.component.valueQuantity.id",
         "representation": [
           "xmlAttr"
@@ -5131,7 +5130,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.extension",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.extension",
         "path": "Observation.component.valueQuantity.extension",
         "slicing": {
           "discriminator": [
@@ -5170,7 +5169,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.value",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.value",
         "path": "Observation.component.valueQuantity.value",
         "short": "Numerical value (with implicit precision)",
         "definition": "The value of the measured amount. The value includes an implicit precision in the presentation of the value.",
@@ -5196,7 +5195,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.comparator",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.comparator",
         "path": "Observation.component.valueQuantity.comparator",
         "short": "< | <= | >= | > - how to understand the value",
         "definition": "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value.",
@@ -5237,7 +5236,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.unit",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.unit",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -5268,7 +5267,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.system",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.system",
         "path": "Observation.component.valueQuantity.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
@@ -5297,7 +5296,7 @@
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.code",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.code",
         "path": "Observation.component.valueQuantity.code",
         "short": "Coded form of the unit",
         "definition": "A computer processable form of the unit in some unit representation system.",
@@ -6217,7 +6216,7 @@
         "max": "1"
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity",
         "path": "Observation.component.valueQuantity",
         "type": [
           {
@@ -6226,12 +6225,12 @@
         ]
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.system",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.system",
         "path": "Observation.component.valueQuantity.system",
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity:Quantity.code",
+        "id": "Observation:oncology-TumorMargins.component:oncology-PercentageInSituCarcinoma.valueQuantity.code",
         "path": "Observation.component.valueQuantity.code",
         "fixedCode": "%"
       },
