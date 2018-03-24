@@ -1,19 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "primitive-boolean-extension",
+  "id": "finding-Interpretation-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC boolean Extension</b></p>\n  <p></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Interpretation Extension</b></p>\n  <p>A clinical interpretation of a finding.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/primitive-boolean-extension",
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-extension",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
-      "value": "boolean"
+      "value": "finding.Interpretation"
     }
   ],
-  "name": "booleanExtension",
-  "title": "BC boolean Extension",
+  "name": "InterpretationExtension",
+  "title": "BC Interpretation Extension",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -27,7 +27,7 @@
     }
   ],
   "date": "2018-03-24",
-  "description": "The boolean that represents the value of the BC element to which it is applied.",
+  "description": "A clinical interpretation of a finding.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -41,10 +41,10 @@
   "snapshot": {
     "element": [
       {
-        "id": "Extension:boolean",
+        "id": "Extension:interpretation",
         "path": "Extension",
-        "short": "boolean",
-        "definition": "The boolean that represents the value of the BC element to which it is applied.",
+        "short": "BC Interpretation Extension",
+        "definition": "A clinical interpretation of a finding.",
         "min": 0,
         "max": "*",
         "base": {
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "id": "Extension:boolean.id",
+        "id": "Extension:interpretation.id",
         "path": "Extension.id",
         "representation": [
           "xmlAttr"
@@ -102,7 +102,7 @@
         ]
       },
       {
-        "id": "Extension:boolean.extension:extension",
+        "id": "Extension:interpretation.extension:extension",
         "path": "Extension.extension",
         "sliceName": "extension",
         "short": "Extension",
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "id": "Extension:boolean.url",
+        "id": "Extension:interpretation.url",
         "path": "Extension.url",
         "representation": [
           "xmlAttr"
@@ -141,7 +141,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/primitive-boolean-extension",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-extension",
         "mapping": [
           {
             "identity": "rim",
@@ -150,8 +150,8 @@
         ]
       },
       {
-        "id": "Extension:boolean.valueBoolean",
-        "path": "Extension.valueBoolean",
+        "id": "Extension:interpretation.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
         "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
         "min": 1,
@@ -163,7 +163,7 @@
         },
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
@@ -171,45 +171,57 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       }
     ]
   },
   "differential": {
     "element": [
       {
-        "id": "Extension:boolean",
+        "id": "Extension:interpretation",
         "path": "Extension",
-        "short": "boolean",
-        "definition": "The boolean that represents the value of the BC element to which it is applied.",
+        "short": "BC Interpretation Extension",
+        "definition": "A clinical interpretation of a finding.",
         "min": 0,
         "max": "*"
       },
       {
-        "id": "Extension:boolean.extension:extension",
+        "id": "Extension:interpretation.extension:extension",
         "path": "Extension.extension",
         "sliceName": "extension",
         "max": "0"
       },
       {
-        "id": "Extension:boolean.url",
+        "id": "Extension:interpretation.url",
         "path": "Extension.url",
         "type": [
           {
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/primitive-boolean-extension"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-extension"
       },
       {
-        "id": "Extension:boolean.valueBoolean",
-        "path": "Extension.valueBoolean",
+        "id": "Extension:interpretation.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
         "min": 1,
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       }
     ]
   }

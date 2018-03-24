@@ -62,7 +62,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
 
-In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. In this model, the result is captured as the Value in AssertionTopic and EvaluationResultTopic. Description has been omitted for brevity. Multimedia has not yet come up in modeling discussions, and has been omitted, for now. Interpretation applies to EvaluationResult and has been introduced in that class.</div>
+In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity. </div>
         </dd>
       </dl>
       <dl>
@@ -148,6 +148,30 @@ In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedi
                   <div class="block">
           
                       <a href="../finding/FindingMethod.html">FindingMethod</a>
+                    
+        </div>
+                        <div class="block">0..1</div>
+            </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../finding/Interpretation.html">Interpretation</a></strong></code>
+    
+    </div>
+    <div class="block">A clinical interpretation of a finding.</div>
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../finding/Interpretation.html">Interpretation</a>
                     
         </div>
                         <div class="block">0..1</div>

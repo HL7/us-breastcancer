@@ -268,6 +268,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="StructureDefinition/finding-Interpretation-extension" />
+                <display value="BC Interpretation Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="StructureDefinition/oncology-MorphologyBehavior-extension" />
                 <display value="BC MorphologyBehavior Extension" />
             </sourceReference>

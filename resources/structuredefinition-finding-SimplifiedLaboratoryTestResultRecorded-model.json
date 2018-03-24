@@ -15,7 +15,7 @@
   "name": "SimplifiedLaboratoryTestResultRecorded",
   "title": "BC SimplifiedLaboratoryTestResultRecorded Logical Model",
   "status": "draft",
-  "date": "2018-03-22",
+  "date": "2018-03-24",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -122,6 +122,28 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+        "path": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -438,28 +460,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
-        "path": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0420833"
-          }
-        ],
-        "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -692,6 +692,28 @@
         "isSummary": false
       },
       {
+        "id": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+        "path": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "finding-SimplifiedLaboratoryTestResultRecorded-model.category",
         "path": "finding-SimplifiedLaboratoryTestResultRecorded-model.category",
         "short": "A class or division of people or things having particular shared characteristics",
@@ -1001,28 +1023,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
-        "path": "finding-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0420833"
-          }
-        ],
-        "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
           }
         ],
         "mustSupport": false,

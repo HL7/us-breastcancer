@@ -62,9 +62,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
 
-In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.
-
-In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related (&#39;has-member&#39;) observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.</div>
+CIMI Differences:
+1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.
+2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related (&#39;has-member&#39;) observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.
+3) In CIMI Version 0.0.4, allowable datatype for result include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to the allowable FHIR datatypes.</div>
         </dd>
       </dl>
       <dl>
@@ -361,7 +362,7 @@ In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestRe
                         <div class="block">0..*</div>
             </td>
 </tr>    
-                                          
+                                                    
   <tr class="altColor">
 
   <td class="colFirst">
@@ -473,30 +474,6 @@ NOTE: This class has been cut down to separate it from other parts of the refere
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../finding/Interpretation.html">Interpretation</a></strong></code>
-    
-    </div>
-    <div class="block">A clinical interpretation of a finding.</div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
-          
-                      <a href="../finding/Interpretation.html">Interpretation</a>
-                    
-        </div>
-                        <div class="block">0..1</div>
-            </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
       <code><strong><a href="../finding/Precondition.html">Precondition</a></strong></code>
     
     </div>
@@ -518,7 +495,7 @@ NOTE: This class has been cut down to separate it from other parts of the refere
                         <div class="block">0..*</div>
             </td>
 </tr>                        
-  <tr class="altColor">
+  <tr class="rowColor">
 
   <td class="colFirst">
     <div class="block">
@@ -542,7 +519,7 @@ NOTE: This class has been cut down to separate it from other parts of the refere
                         <div class="block">0..*</div>
             </td>
 </tr>                        
-  <tr class="rowColor">
+  <tr class="altColor">
 
   <td class="colFirst">
     <div class="block">
@@ -568,7 +545,7 @@ NOTE: This class has been cut down to separate it from other parts of the refere
                         <div class="block">0..*</div>
             </td>
 </tr>                        
-  <tr class="altColor">
+  <tr class="rowColor">
 
   <td class="colFirst">
     <div class="block">
@@ -601,7 +578,8 @@ NOTE: This class has been cut down to separate it from other parts of the refere
                       <h3>Properties inherited from&nbsp;
                         <a href="../finding/FindingTopic.html">FindingTopic</a>
                       </h3>
-                                                                        <code><a href="../finding/FindingMethod.html">FindingMethod</a></code>
+                                                                        <code><a href="../finding/FindingMethod.html">FindingMethod</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../finding/Interpretation.html">Interpretation</a></code>
                         
                                           </li>
                                       <li class="blockList">

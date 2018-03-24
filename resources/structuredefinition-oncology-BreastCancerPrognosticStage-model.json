@@ -15,7 +15,7 @@
   "name": "BreastCancerPrognosticStage",
   "title": "BC BreastCancerPrognosticStage Logical Model",
   "status": "draft",
-  "date": "2018-03-22",
+  "date": "2018-03-24",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -134,6 +134,28 @@
         }
       },
       {
+        "id": "oncology-BreastCancerPrognosticStage-model.interpretation",
+        "path": "oncology-BreastCancerPrognosticStage-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerPrognosticStage-model.category",
         "path": "oncology-BreastCancerPrognosticStage-model.category",
         "short": "A class or division of people or things having particular shared characteristics",
@@ -228,28 +250,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerPrognosticStage-model.interpretation",
-        "path": "oncology-BreastCancerPrognosticStage-model.interpretation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0420833"
-          }
-        ],
-        "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -678,6 +678,28 @@
         }
       },
       {
+        "id": "oncology-BreastCancerPrognosticStage-model.interpretation",
+        "path": "oncology-BreastCancerPrognosticStage-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerPrognosticStage-model.category",
         "path": "oncology-BreastCancerPrognosticStage-model.category",
         "short": "A class or division of people or things having particular shared characteristics",
@@ -772,28 +794,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerPrognosticStage-model.interpretation",
-        "path": "oncology-BreastCancerPrognosticStage-model.interpretation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0420833"
-          }
-        ],
-        "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
           }
         ],
         "mustSupport": false,
