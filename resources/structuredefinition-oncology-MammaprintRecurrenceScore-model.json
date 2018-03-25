@@ -335,7 +335,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -357,7 +357,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -388,6 +388,22 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MammaprintRiskScoreInterpretationVS"
           }
         }
+      },
+      {
+        "id": "oncology-MammaprintRecurrenceScore-model.exceptionValue",
+        "path": "oncology-MammaprintRecurrenceScore-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "oncology-MammaprintRecurrenceScore-model.category",
@@ -660,7 +676,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -701,7 +717,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -717,7 +733,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -739,7 +755,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -755,49 +771,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationComponent-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-MammaprintRecurrenceScore-model.members",
-        "path": "oncology-MammaprintRecurrenceScore-model.members",
-        "short": "Members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-MammaprintRecurrenceScore-model.members.value",
-        "path": "oncology-MammaprintRecurrenceScore-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
-        "alias": [
-          "evaluationResultTopic"
-        ],
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultTopic-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationComponent-model"
           }
         ],
         "mustSupport": false,
@@ -813,7 +787,43 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MammaprintRecurrenceScore-model.members",
+        "path": "oncology-MammaprintRecurrenceScore-model.members",
+        "short": "Members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MammaprintRecurrenceScore-model.members.value",
+        "path": "oncology-MammaprintRecurrenceScore-model.members.value",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "alias": [
+          "evaluationResultRecorded"
+        ],
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded-model"
           }
         ],
         "mustSupport": false,
@@ -829,7 +839,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-DiagnosticService-model"
           }
         ],
         "mustSupport": false,
@@ -935,7 +945,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS",
         "isSummary": true,
         "mapping": [
           {
@@ -1374,7 +1384,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -1396,7 +1406,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -1427,6 +1437,22 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MammaprintRiskScoreInterpretationVS"
           }
         }
+      },
+      {
+        "id": "oncology-MammaprintRecurrenceScore-model.exceptionValue",
+        "path": "oncology-MammaprintRecurrenceScore-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "oncology-MammaprintRecurrenceScore-model.category",
@@ -1699,7 +1725,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -1740,7 +1766,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -1756,7 +1782,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -1778,7 +1804,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -1794,49 +1820,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationComponent-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-MammaprintRecurrenceScore-model.members",
-        "path": "oncology-MammaprintRecurrenceScore-model.members",
-        "short": "Members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-MammaprintRecurrenceScore-model.members.value",
-        "path": "oncology-MammaprintRecurrenceScore-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
-        "alias": [
-          "evaluationResultTopic"
-        ],
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultTopic-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationComponent-model"
           }
         ],
         "mustSupport": false,
@@ -1852,7 +1836,43 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MammaprintRecurrenceScore-model.members",
+        "path": "oncology-MammaprintRecurrenceScore-model.members",
+        "short": "Members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MammaprintRecurrenceScore-model.members.value",
+        "path": "oncology-MammaprintRecurrenceScore-model.members.value",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "alias": [
+          "evaluationResultRecorded"
+        ],
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded-model"
           }
         ],
         "mustSupport": false,
@@ -1868,7 +1888,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-DiagnosticService-model"
           }
         ],
         "mustSupport": false,
@@ -1974,7 +1994,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS",
         "isSummary": true,
         "mapping": [
           {

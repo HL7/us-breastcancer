@@ -34,16 +34,16 @@
         "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerMCategoryCS",
         "concept": [
           {
-            "code": "MX",
-            "display": "The concept designated by the symbol MX in Version 8 of AJCC's breast cancer staging guide."
-          },
-          {
             "code": "M0",
-            "display": "The concept designated by the symbol M0 in Version 8 of AJCC's breast cancer staging guide."
+            "display": "The concept designated by the symbol M0 in Version 8 of AJCC's cancer staging manual, breast chapter."
           },
           {
-            "code": "M1",
-            "display": "The concept designated by the symbol M1 in Version 8 of AJCC's breast cancer staging guide."
+            "code": "cM1",
+            "display": "The concept designated by the symbol cM1 in Version 8 of AJCC's cancer staging manual, breast chapter."
+          },
+          {
+            "code": "pM1",
+            "display": "The concept designated by the symbol pM1 in Version 8 of AJCC's cancer staging manual, breast chapter."
           }
         ]
       }

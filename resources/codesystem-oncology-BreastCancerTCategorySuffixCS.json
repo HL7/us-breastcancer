@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-BreastCancerTCategorySuffixCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerTCategorySuffixCS CodeSystem</b></p>\n<p>Codes that designate concepts describing T-category suffixes according to AJCC breast cancer staging recommendations.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTCategorySuffixCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.BreastCancerTCategorySuffixCS"
+  },
+  "name": "BreastCancerTCategorySuffixCS",
+  "title": "BC BreastCancerTCategorySuffixCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-24",
+  "description": "Codes that designate concepts describing T-category suffixes according to AJCC breast cancer staging recommendations.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "m",
+      "definition": "The concept designated by the symbol m in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol m in Version 8 of AJCC's cancer staging manual, breast chapter."
+    }
+  ]
+}

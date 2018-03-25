@@ -30,8 +30,9 @@
   "description": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
   "keyword": [
     {
-      "system": "http://loinc.org",
-      "code": "59528-0"
+      "system": "http://snomed.info/sct",
+      "code": "78873005",
+      "display": "T category"
     }
   ],
   "kind": "logical",
@@ -85,7 +86,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
@@ -107,7 +108,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -129,12 +130,53 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerTCategory-model.stageSuffix",
+        "path": "oncology-BreastCancerTCategory-model.stageSuffix",
+        "short": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageSuffix-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerTCategory-model.stageSuffix.value",
+        "path": "oncology-BreastCancerTCategory-model.stageSuffix.value",
+        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategorySuffixVS"
+          }
+        }
       }
     ]
   },
@@ -184,7 +226,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
@@ -206,7 +248,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -228,12 +270,53 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerTCategory-model.stageSuffix",
+        "path": "oncology-BreastCancerTCategory-model.stageSuffix",
+        "short": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageSuffix-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerTCategory-model.stageSuffix.value",
+        "path": "oncology-BreastCancerTCategory-model.stageSuffix.value",
+        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategorySuffixVS"
+          }
+        }
       }
     ]
   }

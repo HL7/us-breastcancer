@@ -6,15 +6,7 @@
 oncology.HER2ReceptorStatus maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:
   Category maps to category
   FindingMethod maps to method
-  Quantity maps to value[x]
   CodeableConcept maps to value[x]
-  string maps to value[x]
-  boolean maps to value[x]
-  Range maps to value[x]
-  Ratio maps to value[x]
-  time maps to value[x]
-  dateTime maps to value[x]
-  TimePeriod maps to value[x]
   TopicCode maps to code
   AnatomicalLocation maps to bodySite
   BreastSpecimen maps to specimen
@@ -42,6 +34,6 @@ oncology.HER2ReceptorStatus maps to http://hl7.org/fhir/us/core/StructureDefinit
   EvaluationComponent.ExceptionValue maps to component.dataAbsentReason
   EvaluationComponent.Interpretation maps to component.interpretation
   EvaluationComponent.ReferenceRange maps to component.referenceRange
-  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)
+  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)
 
 </pre>

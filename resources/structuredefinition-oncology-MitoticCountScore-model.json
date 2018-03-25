@@ -54,21 +54,27 @@
       {
         "id": "oncology-MitoticCountScore-model.value",
         "path": "oncology-MitoticCountScore-model.value",
-        "short": "Quantity representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
-        "definition": "Quantity representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "short": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "definition": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
         "alias": [
-          "quantity"
+          "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MitoticCountScoreVS"
+          }
+        }
       },
       {
         "id": "oncology-MitoticCountScore-model.exceptionValue",
@@ -79,7 +85,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
@@ -101,7 +107,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -123,7 +129,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -147,21 +153,27 @@
       {
         "id": "oncology-MitoticCountScore-model.value",
         "path": "oncology-MitoticCountScore-model.value",
-        "short": "Quantity representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
-        "definition": "Quantity representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "short": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "definition": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
         "alias": [
-          "quantity"
+          "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MitoticCountScoreVS"
+          }
+        }
       },
       {
         "id": "oncology-MitoticCountScore-model.exceptionValue",
@@ -172,7 +184,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
@@ -194,7 +206,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -216,7 +228,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,

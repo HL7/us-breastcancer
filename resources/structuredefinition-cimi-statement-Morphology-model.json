@@ -1,0 +1,102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-statement-Morphology-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Morphology Logical Model</b></p>\n  <p>The kind of structure being represented. This can define both normal and abnormal morphologies.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Morphology-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.statement.Morphology"
+    }
+  ],
+  "name": "Morphology",
+  "title": "BC Morphology Logical Model",
+  "status": "draft",
+  "date": "2018-03-24",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "The kind of structure being represented. This can define both normal and abnormal morphologies.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-statement-Morphology-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-statement-Morphology-model",
+        "path": "cimi-statement-Morphology-model",
+        "definition": "The kind of structure being represented. This can define both normal and abnormal morphologies.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-Morphology-model.value",
+        "path": "cimi-statement-Morphology-model.value",
+        "short": "Code representing the kind of structure being represented. This can define both normal and abnormal morphologies.",
+        "definition": "Code representing the kind of structure being represented. This can define both normal and abnormal morphologies.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-statement-Morphology-model",
+        "path": "cimi-statement-Morphology-model",
+        "definition": "The kind of structure being represented. This can define both normal and abnormal morphologies.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-Morphology-model.value",
+        "path": "cimi-statement-Morphology-model.value",
+        "short": "Code representing the kind of structure being represented. This can define both normal and abnormal morphologies.",
+        "definition": "Code representing the kind of structure being represented. This can define both normal and abnormal morphologies.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

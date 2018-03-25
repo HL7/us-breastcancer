@@ -60,7 +60,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Type-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Type-model"
           }
         ],
         "mustSupport": false,
@@ -101,7 +101,28 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-SourceSpecimen-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSpecimen-model.sourceSpecimen.value",
+        "path": "oncology-BreastSpecimen-model.sourceSpecimen.value",
+        "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
+        "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
+        "alias": [
+          "specimen",
+          "breastSpecimen"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSpecimen-model"
           }
         ],
         "mustSupport": false,
@@ -139,7 +160,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionTime-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionTime-model"
           }
         ],
         "mustSupport": false,
@@ -155,7 +176,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionMethod-model"
           }
         ],
         "mustSupport": false,
@@ -196,7 +217,27 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionSite-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSpecimen-model.collectionSite.value",
+        "path": "oncology-BreastSpecimen-model.collectionSite.value",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
+        "alias": [
+          "anatomicalLocation",
+          "breastSite"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
           }
         ],
         "mustSupport": false,
@@ -248,7 +289,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Type-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Type-model"
           }
         ],
         "mustSupport": false,
@@ -289,7 +330,28 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-SourceSpecimen-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSpecimen-model.sourceSpecimen.value",
+        "path": "oncology-BreastSpecimen-model.sourceSpecimen.value",
+        "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
+        "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
+        "alias": [
+          "specimen",
+          "breastSpecimen"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSpecimen-model"
           }
         ],
         "mustSupport": false,
@@ -327,7 +389,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionTime-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionTime-model"
           }
         ],
         "mustSupport": false,
@@ -343,7 +405,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionMethod-model"
           }
         ],
         "mustSupport": false,
@@ -384,7 +446,27 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionSite-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastSpecimen-model.collectionSite.value",
+        "path": "oncology-BreastSpecimen-model.collectionSite.value",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
+        "alias": [
+          "anatomicalLocation",
+          "breastSite"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
           }
         ],
         "mustSupport": false,

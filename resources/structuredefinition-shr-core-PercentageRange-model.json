@@ -54,7 +54,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-LowerBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-PercentageRange-model.lowerBound.value",
+        "path": "shr-core-PercentageRange-model.lowerBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0439165"
+          }
+        ],
+        "short": "A percentage value where 100.0 represents 100%.",
+        "definition": "A percentage value where 100.0 represents 100%.",
+        "alias": [
+          "quantity",
+          "percentage"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Percentage-model"
           }
         ],
         "mustSupport": false,
@@ -70,7 +96,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-UpperBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-PercentageRange-model.upperBound.value",
+        "path": "shr-core-PercentageRange-model.upperBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0439165"
+          }
+        ],
+        "short": "A percentage value where 100.0 represents 100%.",
+        "definition": "A percentage value where 100.0 represents 100%.",
+        "alias": [
+          "quantity",
+          "percentage"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Percentage-model"
           }
         ],
         "mustSupport": false,
@@ -100,7 +152,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-LowerBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-PercentageRange-model.lowerBound.value",
+        "path": "shr-core-PercentageRange-model.lowerBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0439165"
+          }
+        ],
+        "short": "A percentage value where 100.0 represents 100%.",
+        "definition": "A percentage value where 100.0 represents 100%.",
+        "alias": [
+          "quantity",
+          "percentage"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Percentage-model"
           }
         ],
         "mustSupport": false,
@@ -116,7 +194,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-UpperBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-PercentageRange-model.upperBound.value",
+        "path": "shr-core-PercentageRange-model.upperBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0439165"
+          }
+        ],
+        "short": "A percentage value where 100.0 represents 100%.",
+        "definition": "A percentage value where 100.0 represents 100%.",
+        "alias": [
+          "quantity",
+          "percentage"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Percentage-model"
           }
         ],
         "mustSupport": false,

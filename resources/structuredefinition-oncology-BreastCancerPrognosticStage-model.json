@@ -101,7 +101,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -148,7 +148,23 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPrognosticStage-model.exceptionValue",
+        "path": "oncology-BreastCancerPrognosticStage-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
@@ -211,7 +227,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -227,7 +243,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen-model"
           }
         ],
         "mustSupport": false,
@@ -249,7 +265,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -265,7 +281,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -287,7 +303,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -299,7 +315,7 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": false,
         "isModifier": false,
@@ -310,13 +326,14 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent.breastCancerTCategory",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "59528-0"
+            "system": "http://snomed.info/sct",
+            "code": "78873005",
+            "display": "T category"
           }
         ],
         "short": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -332,13 +349,14 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent.breastCancerNCategory",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "59525-6"
+            "system": "http://snomed.info/sct",
+            "code": "277206009",
+            "display": "N category"
           }
         ],
         "short": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
         "definition": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -354,17 +372,34 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent.breastCancerMCategory",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "59522-3"
+            "system": "http://snomed.info/sct",
+            "code": "126926005",
+            "display": "M category"
           }
         ],
         "short": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
         "definition": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerMCategory-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPrognosticStage-model.recordedContext",
+        "path": "oncology-BreastCancerPrognosticStage-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -390,18 +425,12 @@
       {
         "id": "oncology-BreastCancerPrognosticStage-model.members.value",
         "path": "oncology-BreastCancerPrognosticStage-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
-          "evaluationResultTopic"
+          "evaluationResultRecorded"
         ],
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": false,
         "isModifier": false,
@@ -418,7 +447,7 @@
           }
         ],
         "short": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
         "min": 1,
         "max": "1",
         "type": [
@@ -442,7 +471,7 @@
           }
         ],
         "short": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": 1,
         "max": "1",
         "type": [
@@ -465,7 +494,7 @@
           }
         ],
         "short": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. ",
-        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. \n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. \n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": 1,
         "max": "1",
         "type": [
@@ -525,24 +554,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPrognosticStage-model.recordedContext",
-        "path": "oncology-BreastCancerPrognosticStage-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix",
         "path": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "260869008",
+            "display": "Timing of stage"
+          }
+        ],
         "short": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "definition": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "min": 1,
@@ -555,31 +575,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix.value",
-        "path": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix.value",
-        "short": "Code representing mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "definition": "Code representing mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StageTimingPrefixVS"
-          }
-        }
       }
     ]
   },
@@ -645,7 +640,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -692,7 +687,23 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPrognosticStage-model.exceptionValue",
+        "path": "oncology-BreastCancerPrognosticStage-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
@@ -755,7 +766,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -771,7 +782,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen-model"
           }
         ],
         "mustSupport": false,
@@ -793,7 +804,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -809,7 +820,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -831,7 +842,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -843,7 +854,7 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": false,
         "isModifier": false,
@@ -854,13 +865,14 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent.breastCancerTCategory",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "59528-0"
+            "system": "http://snomed.info/sct",
+            "code": "78873005",
+            "display": "T category"
           }
         ],
         "short": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -876,13 +888,14 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent.breastCancerNCategory",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "59525-6"
+            "system": "http://snomed.info/sct",
+            "code": "277206009",
+            "display": "N category"
           }
         ],
         "short": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
         "definition": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -898,17 +911,34 @@
         "path": "oncology-BreastCancerPrognosticStage-model.evaluationComponent.breastCancerMCategory",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "59522-3"
+            "system": "http://snomed.info/sct",
+            "code": "126926005",
+            "display": "M category"
           }
         ],
         "short": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
         "definition": "Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerMCategory-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPrognosticStage-model.recordedContext",
+        "path": "oncology-BreastCancerPrognosticStage-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -934,18 +964,12 @@
       {
         "id": "oncology-BreastCancerPrognosticStage-model.members.value",
         "path": "oncology-BreastCancerPrognosticStage-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
-          "evaluationResultTopic"
+          "evaluationResultRecorded"
         ],
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": false,
         "isModifier": false,
@@ -962,7 +986,7 @@
           }
         ],
         "short": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
         "min": 1,
         "max": "1",
         "type": [
@@ -986,7 +1010,7 @@
           }
         ],
         "short": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": 1,
         "max": "1",
         "type": [
@@ -1009,7 +1033,7 @@
           }
         ],
         "short": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. ",
-        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. \n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. \n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": 1,
         "max": "1",
         "type": [
@@ -1069,24 +1093,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPrognosticStage-model.recordedContext",
-        "path": "oncology-BreastCancerPrognosticStage-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix",
         "path": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "260869008",
+            "display": "Timing of stage"
+          }
+        ],
         "short": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "definition": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "min": 1,
@@ -1099,31 +1114,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix.value",
-        "path": "oncology-BreastCancerPrognosticStage-model.stageTimingPrefix.value",
-        "short": "Code representing mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "definition": "Code representing mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StageTimingPrefixVS"
-          }
-        }
       }
     ]
   }

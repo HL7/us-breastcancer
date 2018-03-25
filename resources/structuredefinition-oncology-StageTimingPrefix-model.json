@@ -28,6 +28,13 @@
     }
   ],
   "description": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "260869008",
+      "display": "Timing of stage"
+    }
+  ],
   "kind": "logical",
   "abstract": false,
   "type": "oncology-StageTimingPrefix-model",
@@ -62,7 +69,13 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StageTimingPrefixVS"
+          }
+        }
       }
     ]
   },
@@ -95,7 +108,13 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StageTimingPrefixVS"
+          }
+        }
       }
     ]
   }

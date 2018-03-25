@@ -3,7 +3,7 @@
   "id": "oncology-MorphologyBehavior-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MorphologyBehavior Logical Model</b></p>\n  <p>A description of the morphology characteristics of the cancer.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MorphologyBehavior Logical Model</b></p>\n  <p>A description of the morphology and behavioral characteristics of the cancer.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MorphologyBehavior-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "A description of the morphology characteristics of the cancer.",
+  "description": "A description of the morphology and behavioral characteristics of the cancer.",
   "kind": "logical",
   "abstract": false,
   "type": "oncology-MorphologyBehavior-model",
@@ -38,7 +38,7 @@
       {
         "id": "oncology-MorphologyBehavior-model",
         "path": "oncology-MorphologyBehavior-model",
-        "definition": "A description of the morphology characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -48,8 +48,8 @@
       {
         "id": "oncology-MorphologyBehavior-model.value",
         "path": "oncology-MorphologyBehavior-model.value",
-        "short": "Code representing a description of the morphology characteristics of the cancer.",
-        "definition": "Code representing a description of the morphology characteristics of the cancer.",
+        "short": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
+        "definition": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
         "alias": [
           "codeableConcept"
         ],
@@ -71,7 +71,7 @@
       {
         "id": "oncology-MorphologyBehavior-model",
         "path": "oncology-MorphologyBehavior-model",
-        "definition": "A description of the morphology characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -81,8 +81,8 @@
       {
         "id": "oncology-MorphologyBehavior-model.value",
         "path": "oncology-MorphologyBehavior-model.value",
-        "short": "Code representing a description of the morphology characteristics of the cancer.",
-        "definition": "Code representing a description of the morphology characteristics of the cancer.",
+        "short": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
+        "definition": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
         "alias": [
           "codeableConcept"
         ],

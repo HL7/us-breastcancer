@@ -54,7 +54,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-UpperBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-AgeRange-model.upperBound.value",
+        "path": "shr-core-AgeRange-model.upperBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0001779"
+          }
+        ],
+        "short": "How long something has existed in time.",
+        "definition": "How long something has existed in time.",
+        "alias": [
+          "quantity",
+          "age"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
           }
         ],
         "mustSupport": false,
@@ -70,7 +96,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-LowerBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-AgeRange-model.lowerBound.value",
+        "path": "shr-core-AgeRange-model.lowerBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0001779"
+          }
+        ],
+        "short": "How long something has existed in time.",
+        "definition": "How long something has existed in time.",
+        "alias": [
+          "quantity",
+          "age"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
           }
         ],
         "mustSupport": false,
@@ -100,7 +152,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-UpperBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-AgeRange-model.upperBound.value",
+        "path": "shr-core-AgeRange-model.upperBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0001779"
+          }
+        ],
+        "short": "How long something has existed in time.",
+        "definition": "How long something has existed in time.",
+        "alias": [
+          "quantity",
+          "age"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
           }
         ],
         "mustSupport": false,
@@ -116,7 +194,33 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-LowerBound-model"
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-AgeRange-model.lowerBound.value",
+        "path": "shr-core-AgeRange-model.lowerBound.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0001779"
+          }
+        ],
+        "short": "How long something has existed in time.",
+        "definition": "How long something has existed in time.",
+        "alias": [
+          "quantity",
+          "age"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
           }
         ],
         "mustSupport": false,

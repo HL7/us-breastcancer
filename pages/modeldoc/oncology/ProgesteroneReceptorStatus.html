@@ -62,7 +62,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 
 Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
 
-We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</div>
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).</div>
         </dd>
       </dl>
       <dl>
@@ -84,7 +84,7 @@ We are seeking feedback if it is better to put the positive/negative status in V
         <li>
     <ul>
           <li class="last">
-    <a href="../finding/FindingTopic.html">FindingTopic</a>
+    <a href="../cimi/FindingTopic.html">FindingTopic</a>
   </li>
       </ul>
   </li>
@@ -97,28 +97,9 @@ We are seeking feedback if it is better to put the positive/negative status in V
         <li>
     <ul>
           <li class="last">
-    <a href="../finding/EvaluationResultTopic.html">EvaluationResultTopic</a>
+    <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a>
   </li>
       </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                            <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-          <li class="last">
-    <a href="../finding/EvaluationResultRecorded.html">EvaluationResultRecorded</a>
-  </li>
-      </ul>
-  </li>
-    </ul>
   </li>
     </ul>
   </li>
@@ -132,14 +113,10 @@ We are seeking feedback if it is better to put the positive/negative status in V
     <ul>
         <li>
     <ul>
-        <li>
-    <ul>
           <li class="last">
-    <a href="../finding/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a>
+    <a href="../cimi-statement/EvaluationResultRecorded.html">EvaluationResultRecorded</a>
   </li>
       </ul>
-  </li>
-    </ul>
   </li>
     </ul>
   </li>
@@ -157,10 +134,33 @@ We are seeking feedback if it is better to put the positive/negative status in V
     <ul>
         <li>
     <ul>
+          <li class="last">
+    <a href="../cimi-statement/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a>
+  </li>
+      </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                            <li>
+    <ul>
+        <li>
+    <ul>
+        <li>
+    <ul>
+        <li>
+    <ul>
+        <li>
+    <ul>
         <li>
     <ul>
           <li class="last">
-    <a href="../finding/SimplifiedLaboratoryTestResultRecorded.html">SimplifiedLaboratoryTestResultRecorded</a>
+    <a href="../cimi-statement/SimplifiedLaboratoryTestResultRecorded.html">SimplifiedLaboratoryTestResultRecorded</a>
   </li>
       </ul>
   </li>
@@ -248,18 +248,24 @@ We are seeking feedback if it is better to put the positive/negative status in V
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
           <div class="block"><code><strong>Cardinality</strong></code></div>
+          <div class="block"><code><strong>Value Set</strong></code></div>
     
   </td>
   <td class="colLast">
                   <div class="block">
           
-                      <a href="../shr-core/PercentageRange.html">PercentageRange</a>
+                      <a href="../shr-core/CodeableConcept.html">CodeableConcept</a>
                     
         </div>
                         <div class="block">1..1</div>
+                        <div class="block">
+          
+                      <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS</a>
+                    (REQUIRED)
+        </div>
             </td>
 </tr>    
-                                                                                                                                            </table>                              <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
+                                                                                                                                                      </table>                              <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
     <th class="colFirst" scope="col">Properties Constrained</th>
     <th class="colMiddle">Constraint</th>
@@ -292,35 +298,9 @@ We are seeking feedback if it is better to put the positive/negative status in V
       <tr class="altColor">
     
       <td class="colFirst">
-        <code><strong>Interpretation.CodeableConcept</strong></code>
-        
-          <div class="block">Defined in <a href="../finding/FindingTopic.html">FindingTopic</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Value Set</strong></code>
-        
-          <div class="block">Constrained in <a href="../oncology/ProgesteroneReceptorStatus.html">ProgesteroneReceptorStatus</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">
-            
-                          <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS</a>
-                        (REQUIRED)
-          </div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">ProgesteroneReceptorStatus</div>
-      </td> -->
-    </tr>
-      
-      <tr class="rowColor">
-    
-      <td class="colFirst">
         <code><strong>Specimen</strong></code>
         
-          <div class="block">Defined in <a href="../finding/EvaluationResultTopic.html">EvaluationResultTopic</a></div>
+          <div class="block">Defined in <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a></div>
         
       </td>
       <td class="colMiddle">
@@ -341,12 +321,38 @@ We are seeking feedback if it is better to put the positive/negative status in V
       </td> -->
     </tr>
       
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>EvaluationComponent</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Includes Type</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/ProgesteroneReceptorStatus.html">ProgesteroneReceptorStatus</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">
+            0..1
+                          <a href="../oncology/NuclearPositivity.html">NuclearPositivity</a>
+                        
+          </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">ProgesteroneReceptorStatus</div>
+      </td> -->
+    </tr>
+      
       <tr class="altColor">
     
       <td class="colFirst">
         <code><strong>EvaluationComponent</strong></code>
         
-          <div class="block">Defined in <a href="../finding/EvaluationResultTopic.html">EvaluationResultTopic</a></div>
+          <div class="block">Defined in <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a></div>
         
       </td>
       <td class="colMiddle">
@@ -372,7 +378,7 @@ We are seeking feedback if it is better to put the positive/negative status in V
       <td class="colFirst">
         <code><strong>DiagnosticService.CodeableConcept</strong></code>
         
-          <div class="block">Defined in <a href="../finding/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a></div>
+          <div class="block">Defined in <a href="../cimi-statement/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a></div>
         
       </td>
       <td class="colMiddle">
@@ -382,7 +388,7 @@ We are seeking feedback if it is better to put the positive/negative status in V
         
       </td>
       <td class="colLast">
-                  <div class="block">http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS (code: pathology)</div>
+                  <div class="block">http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS (code: pathology)</div>
               </td>
       <!-- <td class="colLast">
         <div class="block">ProgesteroneReceptorStatus</div>
@@ -392,47 +398,48 @@ We are seeking feedback if it is better to put the positive/negative status in V
                                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../finding/SimplifiedLaboratoryTestResultRecorded.html">SimplifiedLaboratoryTestResultRecorded</a>
+                        <a href="../cimi-statement/SimplifiedLaboratoryTestResultRecorded.html">SimplifiedLaboratoryTestResultRecorded</a>
                       </h3>
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../finding/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a>
+                        <a href="../cimi-statement/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a>
                       </h3>
-                                                                        <code><a href="../finding/DiagnosticService.html">DiagnosticService</a></code>
+                                                                        <code><a href="../cimi-statement/DiagnosticService.html">DiagnosticService</a></code>
                         
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../finding/EvaluationResultRecorded.html">EvaluationResultRecorded</a>
+                        <a href="../cimi-statement/EvaluationResultRecorded.html">EvaluationResultRecorded</a>
                       </h3>
-                                                                        <code><a href="../finding/RecordedContext.html">RecordedContext</a></code>
+                                                                        <code><a href="../cimi/RecordedContext.html">RecordedContext</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi-statement/Members.html">Members</a></code>
                         
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../finding/EvaluationResultTopic.html">EvaluationResultTopic</a>
+                        <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a>
                       </h3>
-                                                                        <code><a href="../shr-core/Category.html">Category</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../entity/AnatomicalLocation.html">AnatomicalLocation</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../entity/Specimen.html">Specimen</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../finding/DeltaFlag.html">DeltaFlag</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../finding/Precondition.html">Precondition</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../finding/ReferenceRange.html">ReferenceRange</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../finding/EvaluationComponent.html">EvaluationComponent</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../finding/Members.html">Members</a></code>
+                                                                        <code><a href="../cimi/ExceptionValue.html">ExceptionValue</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../shr-core/Category.html">Category</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/AnatomicalLocation.html">AnatomicalLocation</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/Specimen.html">Specimen</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/DeltaFlag.html">DeltaFlag</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/Precondition.html">Precondition</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/ReferenceRange.html">ReferenceRange</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/EvaluationComponent.html">EvaluationComponent</a></code>
                         
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../finding/FindingTopic.html">FindingTopic</a>
+                        <a href="../cimi/FindingTopic.html">FindingTopic</a>
                       </h3>
-                                                                        <code><a href="../finding/FindingMethod.html">FindingMethod</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../finding/Interpretation.html">Interpretation</a></code>
+                                                                        <code><a href="../cimi/FindingMethod.html">FindingMethod</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/Interpretation.html">Interpretation</a></code>
                         
                                           </li>
                                       <li class="blockList">

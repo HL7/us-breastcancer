@@ -35,10 +35,6 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
         <td>The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-BreastRegionalLymphNodeSpecimen-model.html">BreastRegionalLymphNodeSpecimen</a></td>
-        <td>The removal of regional lymph node(s) at the time of surgery of the primary site or during a separate surgical event. This model is yet to be determined.</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-oncology-BreastSite-model.html">BreastSite</a></td>
         <td>A body site specific to the breast structure.</td>
       </tr>
@@ -50,13 +46,13 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
         <td><a href="StructureDefinition-oncology-EstrogenReceptorStatus-model.html">EstrogenReceptorStatus</a></td>
         <td>Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
 
-We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</td>
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-HER2ReceptorStatus-model.html">HER2ReceptorStatus</a></td>
         <td>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.
 
-We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</td>
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-HER2byIHC-model.html">HER2byIHC</a></td>
@@ -69,10 +65,6 @@ We are seeking feedback if it is better to put the positive/negative status in V
       <tr>
         <td><a href="StructureDefinition-oncology-HistologicGrade-model.html">HistologicGrade</a></td>
         <td>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-LymphaticInvolvement-model.html">LymphaticInvolvement</a></td>
-        <td>Description of lymph nodes contain cancer cells.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-MammaprintRecurrenceScore-model.html">MammaprintRecurrenceScore</a></td>
@@ -104,21 +96,13 @@ No LOINC code currently exists for this test.</td>
 
 Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
 
-We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</td>
+We are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-ProsignaRecurrenceScore-model.html">ProsignaRecurrenceScore</a></td>
         <td>Breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.
 
 The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Risk of Recurrence Score in the literature), which is correlated with the probability of distant recurrence at ten years for post-menopausal women with hormone receptorpositive, early stage breast cancer.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-TumorDimensions-model.html">TumorDimensions</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-TumorMargins-model.html">TumorMargins</a></td>
-        <td>The edge or border of the tissue removed in cancer surgery. The margin is described as negative or clean when the pathologist finds no cancer cells at the edge of the tissue, suggesting that all of the cancer has been removed. The margin is described as positive or involved when the pathologist finds cancer cells at the edge of the tissue, suggesting that all of the cancer has not been removed.</td>
       </tr>
       
   </tbody>
@@ -140,7 +124,7 @@ The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Ri
   </thead>
   <tbody>
     <tr>
-        <td><a href="StructureDefinition-condition-Abatement-model.html">Abatement</a></td>
+        <td><a href="StructureDefinition-cimi-Abatement-model.html">Abatement</a></td>
         <td>The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR</td>
       </tr>
       <tr>
@@ -152,33 +136,29 @@ The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Ri
         <td>A quantitative range of ages. One of the two ages must be specified.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-AnatomicalLocation-model.html">AnatomicalLocation</a></td>
+        <td><a href="StructureDefinition-cimi-AnatomicalLocation-model.html">AnatomicalLocation</a></td>
         <td>A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.
 
 Note: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-AnatomicalLocationOrCode-model.html">AnatomicalLocationOrCode</a></td>
+        <td><a href="StructureDefinition-cimi-AnatomicalLocationOrCode-model.html">AnatomicalLocationOrCode</a></td>
         <td>A body site entity or a body site code.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-Aneusomy-model.html">Aneusomy</a></td>
-        <td>Aneusomy (as defined by vendor kit used)</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-finding-ApplicableAgeRange-model.html">ApplicableAgeRange</a></td>
+        <td><a href="StructureDefinition-cimi-ApplicableAgeRange-model.html">ApplicableAgeRange</a></td>
         <td>The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-ApplicableSubpopulation-model.html">ApplicableSubpopulation</a></td>
+        <td><a href="StructureDefinition-cimi-ApplicableSubpopulation-model.html">ApplicableSubpopulation</a></td>
         <td>Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-AssertionContext-model.html">AssertionContext</a></td>
+        <td><a href="StructureDefinition-cimi-AssertionContext-model.html">AssertionContext</a></td>
         <td>The parent class of contexts that can associate with AssertionTopic and its subclasses.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-AssertionTopic-model.html">AssertionTopic</a></td>
+        <td><a href="StructureDefinition-cimi-AssertionTopic-model.html">AssertionTopic</a></td>
         <td>The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a ConditionPresenceStatement, the Value represents the type of condition found.
 
 In CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to change the name to AssertionTopic, as anticipated here. In CIMI V0.0.4, Assertion defines three attributes: dateAsserted, verificationStatus, and findingMethod. VerificationStatus properly only applies in the PresenceContext context, and can be found there. FindingMethod more properly belongs in FindingTopic, and can be found there.</td>
@@ -196,13 +176,13 @@ In CIMI V0.0.4, this class was called Assertion, but CIMI recently decided to ch
         <td>The degree or magnitude of staining (nuclear positivity) across cells in the specimen.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-BodyStructurePresent-model.html">BodyStructurePresent</a></td>
+        <td><a href="StructureDefinition-cimi-statement-BodyStructurePresent-model.html">BodyStructurePresent</a></td>
         <td>Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate.
 
 Examples include tissue types, tumors, and wounds. Body structures are continuants (objects that exist over a period of time) that allow observations of the same body structure to be related to be tracked over time.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-BodyStructureTopic-model.html">BodyStructureTopic</a></td>
+        <td><a href="StructureDefinition-cimi-statement-BodyStructureTopic-model.html">BodyStructureTopic</a></td>
         <td>Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.</td>
       </tr>
       <tr>
@@ -222,11 +202,7 @@ Examples include tissue types, tumors, and wounds. Body structures are continuan
         <td>A class or division of people or things having particular shared characteristics</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-Cellularity-model.html">Cellularity</a></td>
-        <td>Percentage of cells in a sample that are cancerous</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-finding-Certainty-model.html">Certainty</a></td>
+        <td><a href="StructureDefinition-cimi-Certainty-model.html">Certainty</a></td>
         <td>The degree of confidence in a conclusion or assertion.</td>
       </tr>
       <tr>
@@ -236,7 +212,7 @@ Examples include tissue types, tumors, and wounds. Body structures are continuan
 The ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-ClinicalStatus-model.html">ClinicalStatus</a></td>
+        <td><a href="StructureDefinition-cimi-ClinicalStatus-model.html">ClinicalStatus</a></td>
         <td>A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).</td>
       </tr>
       <tr>
@@ -257,15 +233,15 @@ The ClinicalStatement class provides the core pattern for more specific clinical
 		NOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-CollectionMethod-model.html">CollectionMethod</a></td>
+        <td><a href="StructureDefinition-cimi-CollectionMethod-model.html">CollectionMethod</a></td>
         <td>How the specimen was obtained.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-CollectionSite-model.html">CollectionSite</a></td>
+        <td><a href="StructureDefinition-cimi-CollectionSite-model.html">CollectionSite</a></td>
         <td>The body site where specimen was collected</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-CollectionTime-model.html">CollectionTime</a></td>
+        <td><a href="StructureDefinition-cimi-CollectionTime-model.html">CollectionTime</a></td>
         <td>When the sample was obtained, as a specific time or time period.
 		
 		Specimen collection time seems to be missing in CIMI V0.0.4. Given that is not in Specimen, the next place to look is in the associated CollectionProcedure, specifically in the Performance context of the clinical statement representing that procedure. But there is no time found there, either, only a temporalContext (type Concept) and duration (not a point in time). If the specimen collection time is supposed to be recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</td>
@@ -279,7 +255,7 @@ The ClinicalStatement class provides the core pattern for more specific clinical
         <td>Percentage of cells with uniform intense complete membrane staining.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-ConditionPresenceContext-model.html">ConditionPresenceContext</a></td>
+        <td><a href="StructureDefinition-cimi-ConditionPresenceContext-model.html">ConditionPresenceContext</a></td>
         <td>The context for a condition that is known, suspected, or possibly present.
 
 In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word &#039;StatementContext&#039; and remove the word &#039;Assertion&#039;.
@@ -287,7 +263,7 @@ In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. T
 The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-ConditionPresenceStatement-model.html">ConditionPresenceStatement</a></td>
+        <td><a href="StructureDefinition-cimi-statement-ConditionPresenceStatement-model.html">ConditionPresenceStatement</a></td>
         <td>A condition that is or may be present in a subject. &#039;Condition&#039; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.
 
 In CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.
@@ -295,10 +271,10 @@ In CIMI terms, it is an archetype of ClinicalStatement that combines a Condition
 In CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-ConditionTopic-model.html">ConditionTopic</a></td>
+        <td><a href="StructureDefinition-cimi-ConditionTopic-model.html">ConditionTopic</a></td>
         <td>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. 
 
-In CIMI Version 0.0.4, the corresponding reference model class was called ConditionAssertion. The CIMI name is being changed to ConditionTopic (perhaps ConditionAssertionTopic), as anticipated here. In CIMI Version 0.0.4, the ConditionAssertion has properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, the properties associated with the occurrence of a condition have been placed (more appropriately) with ConditionPresenceContext.
+In CIMI Version 0.0.4, the corresponding class is ConditionAssertion, but this name has been changed to ConditionTopic, as anticipated here. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, any properties associated with condition occurrence have been placed with ConditionPresenceContext.
 
 The presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</td>
       </tr>
@@ -311,15 +287,11 @@ The presence of terminology bindings (necessary to align with FHIR Condition.cat
 		This attribute was named &#039;type&#039; in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-Criticality-model.html">Criticality</a></td>
+        <td><a href="StructureDefinition-cimi-Criticality-model.html">Criticality</a></td>
         <td>The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-DegreeOfLymphaticInvolvement-model.html">DegreeOfLymphaticInvolvement</a></td>
-        <td>Assessment of how much cancer is in a lymph node.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-finding-DeltaFlag-model.html">DeltaFlag</a></td>
+        <td><a href="StructureDefinition-cimi-DeltaFlag-model.html">DeltaFlag</a></td>
         <td>Indicator of significant change (delta) from the last or previous measurement.</td>
       </tr>
       <tr>
@@ -327,11 +299,11 @@ The presence of terminology bindings (necessary to align with FHIR Condition.cat
         <td>The divisor of a fraction.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-DiagnosticService-model.html">DiagnosticService</a></td>
+        <td><a href="StructureDefinition-cimi-statement-DiagnosticService-model.html">DiagnosticService</a></td>
         <td>A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-Directionality-model.html">Directionality</a></td>
+        <td><a href="StructureDefinition-cimi-Directionality-model.html">Directionality</a></td>
         <td>Anatomical location or specimen further detailing directionality.
 	Note: In CIMI Version 0.0.4, this is called anatomicalDirection.</td>
       </tr>
@@ -344,7 +316,11 @@ The presence of terminology bindings (necessary to align with FHIR Condition.cat
         <td>The body site location in relation to the nipple.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-Entity-model.html">Entity</a></td>
+        <td><a href="StructureDefinition-cimi-Encounter-model.html">Encounter</a></td>
+        <td>An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-cimi-Entity-model.html">Entity</a></td>
         <td>Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.
 
 In CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.
@@ -356,23 +332,23 @@ Further, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI&#
         <td>Entry contains attributes that apply to all such items. An Entry may represent an item in a single person&#039;s health record, or could represent an entity that surfaces in multiple patient records, such as organizations or practitioners.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-EvaluationComponent-model.html">EvaluationComponent</a></td>
+        <td><a href="StructureDefinition-cimi-EvaluationComponent-model.html">EvaluationComponent</a></td>
         <td>A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. 
 		
 		The subject of the evaluation component is the same as in the parent evaluation.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-EvaluationResultContext-model.html">EvaluationResultContext</a></td>
+        <td><a href="StructureDefinition-cimi-EvaluationResultContext-model.html">EvaluationResultContext</a></td>
         <td>The parent class of contexts that can associate with EvaluationResultTopic and its subclasses.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-EvaluationResultRecorded-model.html">EvaluationResultRecorded</a></td>
+        <td><a href="StructureDefinition-cimi-statement-EvaluationResultRecorded-model.html">EvaluationResultRecorded</a></td>
         <td>Represents the result of evaluations (measurements, tests, or questions) that have been performed.
 
 EvaluationResultRecorded has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-EvaluationResultTopic-model.html">EvaluationResultTopic</a></td>
+        <td><a href="StructureDefinition-cimi-EvaluationResultTopic-model.html">EvaluationResultTopic</a></td>
         <td>The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). 
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
@@ -383,25 +359,25 @@ CIMI Differences:
 3) In CIMI Version 0.0.4, allowable datatype for result include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to the allowable FHIR datatypes.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-ExceptionValue-model.html">ExceptionValue</a></td>
+        <td><a href="StructureDefinition-cimi-ExceptionValue-model.html">ExceptionValue</a></td>
         <td>Reason that a value associated with a test or other finding is missing.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-FindingContext-model.html">FindingContext</a></td>
+        <td><a href="StructureDefinition-cimi-FindingContext-model.html">FindingContext</a></td>
         <td>The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc.
 
 In CIMI Version 0.0.4, FindingContext includes the attribute &#039;status&#039;. However, there are two problems with including FindingContext.status: (1) to align with FHIR, the datatype of status has to be Concept, but in CIMI, the datatype of status is Attribution, which can&#039;t be mapped. (2) Status might not have the same interpretation in all child classes. For example, in GoalContext, the status might be relative to the progress toward the goal, not the same meaning as the status of a finding.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-FindingMethod-model.html">FindingMethod</a></td>
+        <td><a href="StructureDefinition-cimi-FindingMethod-model.html">FindingMethod</a></td>
         <td>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#039;method&#039;.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-FindingStatus-model.html">FindingStatus</a></td>
+        <td><a href="StructureDefinition-cimi-FindingStatus-model.html">FindingStatus</a></td>
         <td>Indicates whether the finding is preliminary, amended, final, etc..</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-FindingTopic-model.html">FindingTopic</a></td>
+        <td><a href="StructureDefinition-cimi-FindingTopic-model.html">FindingTopic</a></td>
         <td>Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. 
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
@@ -413,33 +389,21 @@ In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedi
         <td>HER2 to CEP17 Ratio (dual probe only)</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-HeterogeneousSignals-model.html">HeterogeneousSignals</a></td>
-        <td>Whether In Situ Hybridization signals were heterogeneous.</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-InformationEntry-model.html">InformationEntry</a></td>
         <td>An InformationEntry is the minimal unit independent of logical information or knowledge, such as a clinical statement in a patient record, a knowledge entry in a knowledge artifact, a product in a product catalog, etc. 
 
 TThe CIMI-defined attributes from InformationEntry (and those inherited from Entry) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry (identifier, subjectOfInformation, attribution, additionalText, recordStatus). Reconciling these differences is outside the scope of the current ballot on breast cancer.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-Interpretation-model.html">Interpretation</a></td>
+        <td><a href="StructureDefinition-cimi-Interpretation-model.html">Interpretation</a></td>
         <td>A clinical interpretation of a finding.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-Ki-67LabelingIndex-model.html">Ki-67LabelingIndex</a></td>
-        <td>Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence. The more positive cells there are, the more quickly they are dividing and forming new cells.	ReferenceRange: Low &lt;10, Intermediate 10-20, &gt;20 High</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-finding-LaboratoryTestResultRecorded-model.html">LaboratoryTestResultRecorded</a></td>
+        <td><a href="StructureDefinition-cimi-statement-LaboratoryTestResultRecorded-model.html">LaboratoryTestResultRecorded</a></td>
         <td>Measurement resulting from a laboratory analysis.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-LargestLymphNodeSize-model.html">LargestLymphNodeSize</a></td>
-        <td>The largest dimension of the largest lymph node invaded by cancer cells.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-entity-Laterality-model.html">Laterality</a></td>
+        <td><a href="StructureDefinition-cimi-Laterality-model.html">Laterality</a></td>
         <td>Anatomical location or specimen further detailing the side(s) of interest.</td>
       </tr>
       <tr>
@@ -453,7 +417,7 @@ Having this class at the top of the class hierarchy reflects CIMI&#039;s use of 
         <td>The lower limit on a range</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-Members-model.html">Members</a></td>
+        <td><a href="StructureDefinition-cimi-statement-Members-model.html">Members</a></td>
         <td>Members represent the elements of a group of a related but independent evaluations. 
 		
 		Examples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.
@@ -465,27 +429,27 @@ Having this class at the top of the class hierarchy reflects CIMI&#039;s use of 
         <td>How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-Morphology-model.html">Morphology</a></td>
+        <td><a href="StructureDefinition-cimi-statement-Morphology-model.html">Morphology</a></td>
         <td>The kind of structure being represented. This can define both normal and abnormal morphologies.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-MorphologyBehavior-model.html">MorphologyBehavior</a></td>
-        <td>A description of the morphology characteristics of the cancer.</td>
+        <td>A description of the morphology and behavioral characteristics of the cancer.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-NuclearPleomorphismScore-model.html">NuclearPleomorphismScore</a></td>
         <td>How large and varied the nuclei of the tumor cells are. Scored 1 to 3, with 3 being the most pleomorphism.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-NumberOfLymphNodesInvolved-model.html">NumberOfLymphNodesInvolved</a></td>
-        <td>A count of lymph nodes invaded by cancer cells of those examined.</td>
+        <td><a href="StructureDefinition-oncology-NuclearPositivity-model.html">NuclearPositivity</a></td>
+        <td>The percentage of cells that test (stain) positive for the presence of a receptor.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-Numerator-model.html">Numerator</a></td>
         <td>The dividend of a fraction.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-Onset-model.html">Onset</a></td>
+        <td><a href="StructureDefinition-cimi-Onset-model.html">Onset</a></td>
         <td>The beginning or first appearance of a mental or physical disorder.
 			This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR</td>
       </tr>
@@ -494,29 +458,21 @@ Having this class at the top of the class hierarchy reflects CIMI&#039;s use of 
         <td>A percentage value where 100.0 represents 100%.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-PercentageAmplified-model.html">PercentageAmplified</a></td>
-        <td>Percentage of cells with amplified HER2 signals</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-PercentageInSituCarcinoma-model.html">PercentageInSituCarcinoma</a></td>
-        <td>The percentage of the cancer that is in situ, as opposed to invading other tissues.</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-shr-core-PercentageRange-model.html">PercentageRange</a></td>
         <td>A range of percentage values.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-PortionTotality-model.html">PortionTotality</a></td>
+        <td><a href="StructureDefinition-cimi-PortionTotality-model.html">PortionTotality</a></td>
         <td>Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-Precondition-model.html">Precondition</a></td>
+        <td><a href="StructureDefinition-cimi-Precondition-model.html">Precondition</a></td>
         <td>A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. 
 		
 		Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-PresenceContext-model.html">PresenceContext</a></td>
+        <td><a href="StructureDefinition-cimi-PresenceContext-model.html">PresenceContext</a></td>
         <td>PresenceContext indicates the finding in question exists or is present to some level of certainty. 
 	
 	For example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.
@@ -524,7 +480,7 @@ Having this class at the top of the class hierarchy reflects CIMI&#039;s use of 
 	In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has decided to combine these classes and rename them to PresenceContext, as represented here.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-PresentOnAdmission-model.html">PresentOnAdmission</a></td>
+        <td><a href="StructureDefinition-cimi-PresentOnAdmission-model.html">PresentOnAdmission</a></td>
         <td>If the problem or condition existed before the current episode of care.</td>
       </tr>
       <tr>
@@ -546,7 +502,7 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
         <td>Time received by accepting facility or unit.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-RecordedContext-model.html">RecordedContext</a></td>
+        <td><a href="StructureDefinition-cimi-RecordedContext-model.html">RecordedContext</a></td>
         <td>Context for an evaluation result, used to indicate an evaluation has been made. 
 	
 	For example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.
@@ -554,21 +510,17 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
 	The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-ReferenceRange-model.html">ReferenceRange</a></td>
+        <td><a href="StructureDefinition-cimi-ReferenceRange-model.html">ReferenceRange</a></td>
         <td>The usual or acceptable range for a test result.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-RelevantTime-model.html">RelevantTime</a></td>
+        <td><a href="StructureDefinition-cimi-RelevantTime-model.html">RelevantTime</a></td>
         <td>The time or time period that the finding addresses.
 		
 		The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-S-PhaseFraction-model.html">S-PhaseFraction</a></td>
-        <td>An expression of the number of mitoses found in a stated number of cells. The S-phase fraction number tells you what percentage of cells in the tissue sample are in the process of copying their genetic information (DNA). This S-phase, short for synthesis phase, happens just before a cell divides into two new cells. ReferenceRange: Low &lt;6, Intermediate 6-10, &gt;10 High.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-condition-Severity-model.html">Severity</a></td>
+        <td><a href="StructureDefinition-cimi-Severity-model.html">Severity</a></td>
         <td>Degree of harshness or extent of a symptom, disorder, or condition.</td>
       </tr>
       <tr>
@@ -578,34 +530,34 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
 This class is not defined in CIMI V0.0.4 reference model. It could potentially be an archetype of Quantity. Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-SimplifiedLaboratoryTestResultRecorded-model.html">SimplifiedLaboratoryTestResultRecorded</a></td>
+        <td><a href="StructureDefinition-cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.html">SimplifiedLaboratoryTestResultRecorded</a></td>
         <td>The usual case for a test result from a pathology lab, based on a specimen taken from a patient. Note that the body site is not explicit here; it is part of the specimen resource associated with the lab result.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-SizeOfGrossTumorBed-model.html">SizeOfGrossTumorBed</a></td>
-        <td>The largest dimension of the gross tumor bed/fibrotic area.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-entity-SourceSpecimen-model.html">SourceSpecimen</a></td>
+        <td><a href="StructureDefinition-cimi-SourceSpecimen-model.html">SourceSpecimen</a></td>
         <td>Identifier for the source specimen from which this specimen was derived.
 		
 		In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-entity-Specimen-model.html">Specimen</a></td>
+        <td><a href="StructureDefinition-cimi-Specimen-model.html">Specimen</a></td>
         <td>Sample for analysis. 
 
 NOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-Stage-model.html">Stage</a></td>
+        <td><a href="StructureDefinition-cimi-statement-Stage-model.html">Stage</a></td>
         <td>The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.
 			
-			This attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.</td>
+		This attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn&#039;t exist in core CIMI.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-condition-StageDetail-model.html">StageDetail</a></td>
-        <td>The full staging information</td>
+        <td><a href="StructureDefinition-cimi-statement-StageDetail-model.html">StageDetail</a></td>
+        <td>The full staging information.</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-oncology-StageSuffix-model.html">StageSuffix</a></td>
+        <td>A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-StageTimingPrefix-model.html">StageTimingPrefix</a></td>
@@ -650,19 +602,7 @@ If the start element is missing, the start of the period is not known. If the en
         <td>A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-oncology-TumorMarginDescription-model.html">TumorMarginDescription</a></td>
-        <td>Description of the edge or border of tumor in situ by radiologist or of removed tumor by pathologist.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-TumorPrimaryDimensionSize-model.html">TumorPrimaryDimensionSize</a></td>
-        <td>The longest diameter of the primary tumor.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-oncology-TumorSecondaryDimensionSize-model.html">TumorSecondaryDimensionSize</a></td>
-        <td>The longest perpendicular diameter of the primary tumor.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-finding-Type-model.html">Type</a></td>
+        <td><a href="StructureDefinition-cimi-Type-model.html">Type</a></td>
         <td>The most specific code (lowest level term) describing the kind or sort of thing being represented.</td>
       </tr>
       <tr>
@@ -674,7 +614,7 @@ If the start element is missing, the start of the period is not known. If the en
         <td>The upper limit on a quantitative value.</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-finding-VerificationStatus-model.html">VerificationStatus</a></td>
+        <td><a href="StructureDefinition-cimi-VerificationStatus-model.html">VerificationStatus</a></td>
         <td>Whether an assessment has been confirmed by testing or observation.</td>
       </tr>
       

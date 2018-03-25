@@ -3,7 +3,7 @@
   "id": "oncology-HER2ReceptorStatus-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatus Logical Model</b></p>\n  <p>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2ReceptorStatus Logical Model</b></p>\n  <p>HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2ReceptorStatus-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+  "description": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -45,7 +45,7 @@
       {
         "id": "oncology-HER2ReceptorStatus-model",
         "path": "oncology-HER2ReceptorStatus-model",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -53,55 +53,29 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.value[x]",
-        "path": "oncology-HER2ReceptorStatus-model.value[x]",
-        "short": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "id": "oncology-HER2ReceptorStatus-model.value",
+        "path": "oncology-HER2ReceptorStatus-model.value",
+        "short": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
         "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
-          "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
+          "codeableConcept"
         ],
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          },
-          {
             "code": "Coding"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
+          }
+        }
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.topicCode",
@@ -368,7 +342,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -390,7 +364,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -398,29 +372,20 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.interpretation.value",
-        "path": "oncology-HER2ReceptorStatus-model.interpretation.value",
-        "short": "Code representing a clinical interpretation of a finding.",
-        "definition": "Code representing a clinical interpretation of a finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
+        "id": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "path": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "Coding"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.category",
@@ -693,7 +658,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -734,7 +699,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -750,7 +715,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -772,7 +737,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -788,7 +753,23 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationComponent-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationComponent-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2ReceptorStatus-model.recordedContext",
+        "path": "oncology-HER2ReceptorStatus-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -814,16 +795,10 @@
       {
         "id": "oncology-HER2ReceptorStatus-model.members.value",
         "path": "oncology-HER2ReceptorStatus-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
-          "evaluationResultTopic"
+          "evaluationResultRecorded"
         ],
         "min": 0,
         "max": "1",
@@ -878,22 +853,6 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.recordedContext",
-        "path": "oncology-HER2ReceptorStatus-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "oncology-HER2ReceptorStatus-model.diagnosticService",
         "path": "oncology-HER2ReceptorStatus-model.diagnosticService",
         "short": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
@@ -902,7 +861,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-DiagnosticService-model"
           }
         ],
         "mustSupport": false,
@@ -1008,7 +967,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS",
         "isSummary": true,
         "mapping": [
           {
@@ -1148,22 +1107,6 @@
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
           }
         ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.exceptionValue",
-        "path": "oncology-HER2ReceptorStatus-model.exceptionValue",
-        "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   },
@@ -1172,7 +1115,7 @@
       {
         "id": "oncology-HER2ReceptorStatus-model",
         "path": "oncology-HER2ReceptorStatus-model",
-        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "HER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -1180,55 +1123,29 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.value[x]",
-        "path": "oncology-HER2ReceptorStatus-model.value[x]",
-        "short": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Choice of types representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation of HER2 by IHC and HER2 by ISH tests, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "id": "oncology-HER2ReceptorStatus-model.value",
+        "path": "oncology-HER2ReceptorStatus-model.value",
+        "short": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Code representing hER2 receptor status. HER2 is a member of the human epidermal growth factor receptor family of proteins and is encoded by the ERBB2 oncogene. HER2 is overexpressed in 20-30% of breast tumors,10 and is associated with an aggressive clinical course and poor prognosis. HER2 status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence from HER2 by IHC and/or HER2 by ISH tests, not a direct observation.",
         "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
-          "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
+          "codeableConcept"
         ],
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          },
-          {
             "code": "Coding"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
+          }
+        }
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.topicCode",
@@ -1495,7 +1412,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -1517,7 +1434,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -1525,29 +1442,20 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.interpretation.value",
-        "path": "oncology-HER2ReceptorStatus-model.interpretation.value",
-        "short": "Code representing a clinical interpretation of a finding.",
-        "definition": "Code representing a clinical interpretation of a finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
+        "id": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "path": "oncology-HER2ReceptorStatus-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "Coding"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-HER2ReceptorStatus-model.category",
@@ -1820,7 +1728,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -1861,7 +1769,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -1877,7 +1785,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -1899,7 +1807,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -1915,7 +1823,23 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationComponent-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationComponent-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-HER2ReceptorStatus-model.recordedContext",
+        "path": "oncology-HER2ReceptorStatus-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -1941,16 +1865,10 @@
       {
         "id": "oncology-HER2ReceptorStatus-model.members.value",
         "path": "oncology-HER2ReceptorStatus-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
-          "evaluationResultTopic"
+          "evaluationResultRecorded"
         ],
         "min": 0,
         "max": "1",
@@ -2005,22 +1923,6 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2ReceptorStatus-model.recordedContext",
-        "path": "oncology-HER2ReceptorStatus-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "oncology-HER2ReceptorStatus-model.diagnosticService",
         "path": "oncology-HER2ReceptorStatus-model.diagnosticService",
         "short": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
@@ -2029,7 +1931,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-DiagnosticService-model"
           }
         ],
         "mustSupport": false,
@@ -2135,7 +2037,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS",
         "isSummary": true,
         "mapping": [
           {
@@ -2275,22 +2177,6 @@
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
           }
         ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.exceptionValue",
-        "path": "oncology-HER2ReceptorStatus-model.exceptionValue",
-        "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   }

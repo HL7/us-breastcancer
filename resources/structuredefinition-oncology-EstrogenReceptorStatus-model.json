@@ -3,7 +3,7 @@
   "id": "oncology-EstrogenReceptorStatus-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC EstrogenReceptorStatus Logical Model</b></p>\n  <p>Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC EstrogenReceptorStatus Logical Model</b></p>\n  <p>Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-EstrogenReceptorStatus-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+  "description": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -45,7 +45,7 @@
       {
         "id": "oncology-EstrogenReceptorStatus-model",
         "path": "oncology-EstrogenReceptorStatus-model",
-        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -55,22 +55,27 @@
       {
         "id": "oncology-EstrogenReceptorStatus-model.value",
         "path": "oncology-EstrogenReceptorStatus-model.value",
-        "short": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "short": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "alias": [
-          "range",
-          "percentageRange"
+          "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PercentageRange-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
+          }
+        }
       },
       {
         "id": "oncology-EstrogenReceptorStatus-model.topicCode",
@@ -337,7 +342,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -359,7 +364,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -367,29 +372,20 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.interpretation.value",
-        "path": "oncology-EstrogenReceptorStatus-model.interpretation.value",
-        "short": "Code representing a clinical interpretation of a finding.",
-        "definition": "Code representing a clinical interpretation of a finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
+        "id": "oncology-EstrogenReceptorStatus-model.exceptionValue",
+        "path": "oncology-EstrogenReceptorStatus-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "Coding"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-EstrogenReceptorStatus-model.category",
@@ -662,7 +658,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -703,7 +699,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -719,7 +715,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -741,7 +737,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -755,6 +751,22 @@
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+        "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
+        "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearPositivity-model"
+          }
+        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -783,6 +795,22 @@
         "isSummary": false
       },
       {
+        "id": "oncology-EstrogenReceptorStatus-model.recordedContext",
+        "path": "oncology-EstrogenReceptorStatus-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-EstrogenReceptorStatus-model.members",
         "path": "oncology-EstrogenReceptorStatus-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations. ",
@@ -791,7 +819,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
           }
         ],
         "mustSupport": false,
@@ -801,39 +829,17 @@
       {
         "id": "oncology-EstrogenReceptorStatus-model.members.value",
         "path": "oncology-EstrogenReceptorStatus-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
-          "evaluationResultTopic"
+          "evaluationResultRecorded"
         ],
         "min": 0,
         "max": "0",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultTopic-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-EstrogenReceptorStatus-model.recordedContext",
-        "path": "oncology-EstrogenReceptorStatus-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded-model"
           }
         ],
         "mustSupport": false,
@@ -849,7 +855,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-DiagnosticService-model"
           }
         ],
         "mustSupport": false,
@@ -955,7 +961,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS",
         "isSummary": true,
         "mapping": [
           {
@@ -1103,7 +1109,7 @@
       {
         "id": "oncology-EstrogenReceptorStatus-model",
         "path": "oncology-EstrogenReceptorStatus-model",
-        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "definition": "Estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": "0",
         "max": "*",
         "mustSupport": false,
@@ -1113,22 +1119,27 @@
       {
         "id": "oncology-EstrogenReceptorStatus-model.value",
         "path": "oncology-EstrogenReceptorStatus-model.value",
-        "short": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Range representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The point of view expressed in this model is that positive/negative designation is an interpretation, based on evidence such as NuclearPositivity and AverageStainingIntensity, not a direct result. This also appears to be the most consistent approach across all receptor statuses (ER, PR, and HER2).",
+        "short": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
+        "definition": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "alias": [
-          "range",
-          "percentageRange"
+          "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PercentageRange-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
+          }
+        }
       },
       {
         "id": "oncology-EstrogenReceptorStatus-model.topicCode",
@@ -1395,7 +1406,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -1417,7 +1428,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -1425,29 +1436,20 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.interpretation.value",
-        "path": "oncology-EstrogenReceptorStatus-model.interpretation.value",
-        "short": "Code representing a clinical interpretation of a finding.",
-        "definition": "Code representing a clinical interpretation of a finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
+        "id": "oncology-EstrogenReceptorStatus-model.exceptionValue",
+        "path": "oncology-EstrogenReceptorStatus-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "Coding"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-EstrogenReceptorStatus-model.category",
@@ -1720,7 +1722,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -1761,7 +1763,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -1777,7 +1779,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -1799,7 +1801,7 @@
         "max": "0",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -1813,6 +1815,22 @@
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+        "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
+        "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearPositivity-model"
+          }
+        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -1841,6 +1859,22 @@
         "isSummary": false
       },
       {
+        "id": "oncology-EstrogenReceptorStatus-model.recordedContext",
+        "path": "oncology-EstrogenReceptorStatus-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-EstrogenReceptorStatus-model.members",
         "path": "oncology-EstrogenReceptorStatus-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations. ",
@@ -1849,7 +1883,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
           }
         ],
         "mustSupport": false,
@@ -1859,39 +1893,17 @@
       {
         "id": "oncology-EstrogenReceptorStatus-model.members.value",
         "path": "oncology-EstrogenReceptorStatus-model.members.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1554188"
-          }
-        ],
-        "short": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. ",
-        "definition": "EvaluationResultTopic representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. ",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
-          "evaluationResultTopic"
+          "evaluationResultRecorded"
         ],
         "min": 0,
         "max": "0",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultTopic-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-EstrogenReceptorStatus-model.recordedContext",
-        "path": "oncology-EstrogenReceptorStatus-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded-model"
           }
         ],
         "mustSupport": false,
@@ -1907,7 +1919,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DiagnosticService-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-DiagnosticService-model"
           }
         ],
         "mustSupport": false,
@@ -2013,7 +2025,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/finding-DiagnosticServiceCS",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS",
         "isSummary": true,
         "mapping": [
           {

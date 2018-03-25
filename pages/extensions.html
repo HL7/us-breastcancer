@@ -34,15 +34,15 @@
 		NOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-entity-CollectionSite-extension.html">CollectionSite</a></td>
+      <td><a href="StructureDefinition-cimi-CollectionSite-extension.html">CollectionSite</a></td>
       <td>The body site where specimen was collected</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-finding-DeltaFlag-extension.html">DeltaFlag</a></td>
+      <td><a href="StructureDefinition-cimi-DeltaFlag-extension.html">DeltaFlag</a></td>
       <td>Indicator of significant change (delta) from the last or previous measurement.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-finding-DiagnosticService-extension.html">DiagnosticService</a></td>
+      <td><a href="StructureDefinition-cimi-statement-DiagnosticService-extension.html">DiagnosticService</a></td>
       <td>A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.</td>
     </tr>
     <tr>
@@ -50,19 +50,23 @@
       <td>The body site location in relation to the nipple.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-finding-FindingMethod-extension.html">FindingMethod</a></td>
+      <td><a href="StructureDefinition-cimi-ExceptionValue-extension.html">ExceptionValue</a></td>
+      <td>Reason that a value associated with a test or other finding is missing.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-FindingMethod-extension.html">FindingMethod</a></td>
       <td>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#039;method&#039;.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-finding-Interpretation-extension.html">Interpretation</a></td>
+      <td><a href="StructureDefinition-cimi-Interpretation-extension.html">Interpretation</a></td>
       <td>A clinical interpretation of a finding.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-MorphologyBehavior-extension.html">MorphologyBehavior</a></td>
-      <td>A description of the morphology characteristics of the cancer.</td>
+      <td>A description of the morphology and behavioral characteristics of the cancer.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-finding-Precondition-extension.html">Precondition</a></td>
+      <td><a href="StructureDefinition-cimi-Precondition-extension.html">Precondition</a></td>
       <td>A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. 
 		
 		Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</td>

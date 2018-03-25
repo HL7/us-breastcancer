@@ -1,0 +1,120 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-Directionality-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Directionality Logical Model</b></p>\n  <p>Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Directionality-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.Directionality"
+    }
+  ],
+  "name": "Directionality",
+  "title": "BC Directionality Logical Model",
+  "status": "draft",
+  "date": "2018-03-24",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+  "keyword": [
+    {
+      "system": "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/",
+      "code": "C99074"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-Directionality-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-Directionality-model",
+        "path": "cimi-Directionality-model",
+        "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-Directionality-model.value",
+        "path": "cimi-Directionality-model.value",
+        "short": "Code representing anatomical location or specimen further detailing directionality.",
+        "definition": "Code representing anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-DirectionalityVS"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-Directionality-model",
+        "path": "cimi-Directionality-model",
+        "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "min": "0",
+        "max": "*",
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-Directionality-model.value",
+        "path": "cimi-Directionality-model.value",
+        "short": "Code representing anatomical location or specimen further detailing directionality.",
+        "definition": "Code representing anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-DirectionalityVS"
+          }
+        }
+      }
+    ]
+  }
+}

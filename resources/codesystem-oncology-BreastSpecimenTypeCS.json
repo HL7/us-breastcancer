@@ -28,7 +28,7 @@
   "description": "The type of specimen obtained from the breast.",
   "caseSensitive": true,
   "content": "complete",
-  "count": 7,
+  "count": 6,
   "concept": [
     {
       "code": "aspirate",
@@ -59,11 +59,6 @@
       "code": "mastectomy",
       "definition": "Total mastectomy",
       "display": "Total mastectomy"
-    },
-    {
-      "code": "lymph",
-      "definition": "Sentinel lymph node biopsy",
-      "display": "Sentinel lymph node biopsy"
     }
   ]
 }

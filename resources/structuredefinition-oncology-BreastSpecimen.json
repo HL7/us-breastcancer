@@ -389,7 +389,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-CollectionSite-extension",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionSite-extension",
         "mapping": [
           {
             "identity": "rim",
@@ -412,7 +412,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation"
           }
         ],
         "mapping": [

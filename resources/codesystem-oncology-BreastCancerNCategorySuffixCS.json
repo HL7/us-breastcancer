@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "oncology-BreastCancerNCategorySuffixCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerNCategorySuffixCS CodeSystem</b></p>\n<p>Codes that designate concepts describing N-category suffixes according to AJCC breast cancer staging recommendations.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerNCategorySuffixCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "oncology.BreastCancerNCategorySuffixCS"
+  },
+  "name": "BreastCancerNCategorySuffixCS",
+  "title": "BC BreastCancerNCategorySuffixCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-03-24",
+  "description": "Codes that designate concepts describing N-category suffixes according to AJCC breast cancer staging recommendations.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "sn",
+      "definition": "The concept designated by the symbol sn in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol sn in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "f",
+      "definition": "The concept designated by the symbol f in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol f in Version 8 of AJCC's cancer staging manual, breast chapter."
+    }
+  ]
+}

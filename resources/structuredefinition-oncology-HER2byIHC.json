@@ -3,7 +3,7 @@
   "id": "oncology-HER2byIHC",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2byIHC Profile</b></p>\n  <p>HER2 receptor status as determined by Immunohistochemistry (IHC).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2byIHC maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  Specimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultTopic maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2byIHC Profile</b></p>\n  <p>HER2 receptor status as determined by Immunohistochemistry (IHC).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2byIHC maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  Specimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byIHC",
   "name": "HER2byIHC",
@@ -392,6 +392,20 @@
         }
       },
       {
+        "id": "Observation:oncology-HER2byIHC.extension:exceptionvalue",
+        "path": "Observation.extension",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
+          }
+        ],
+        "sliceName": "exceptionvalue"
+      },
+      {
         "id": "Observation:oncology-HER2byIHC.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
@@ -400,7 +414,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
           }
         ],
         "sliceName": "deltaflag"
@@ -414,7 +428,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-extension"
           }
         ],
         "sliceName": "precondition"
@@ -1395,7 +1409,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -1517,7 +1531,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-AnatomicalLocationVS"
           }
         },
         "mapping": [
@@ -1591,7 +1605,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen"
           }
         ],
         "mapping": [
@@ -2190,7 +2204,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultRecorded"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded"
           }
         ],
         "mapping": [
@@ -3073,7 +3087,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
           }
         },
         "mapping": [
@@ -3452,6 +3466,20 @@
         "mustSupport": false
       },
       {
+        "id": "Observation:oncology-HER2byIHC.extension:exceptionvalue",
+        "path": "Observation.extension",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
+          }
+        ],
+        "sliceName": "exceptionvalue"
+      },
+      {
         "id": "Observation:oncology-HER2byIHC.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
@@ -3460,7 +3488,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
           }
         ],
         "sliceName": "deltaflag"
@@ -3474,7 +3502,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-extension"
           }
         ],
         "sliceName": "precondition"
@@ -3560,7 +3588,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
           }
         }
       },
@@ -3580,7 +3608,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-AnatomicalLocationVS"
           }
         }
       },
@@ -3600,7 +3628,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen"
           }
         ]
       },
@@ -3670,7 +3698,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-EvaluationResultRecorded"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded"
           }
         ]
       },
@@ -3766,7 +3794,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/finding-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
           }
         }
       },

@@ -3,7 +3,7 @@
   "id": "oncology-MorphologyBehavior-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MorphologyBehavior Extension</b></p>\n  <p>A description of the morphology characteristics of the cancer.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MorphologyBehavior Extension</b></p>\n  <p>A description of the morphology and behavioral characteristics of the cancer.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MorphologyBehavior-extension",
   "identifier": [
@@ -27,7 +27,7 @@
     }
   ],
   "date": "2018-03-24",
-  "description": "A description of the morphology characteristics of the cancer.",
+  "description": "A description of the morphology and behavioral characteristics of the cancer.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:morphologybehavior",
         "path": "Extension",
         "short": "BC MorphologyBehavior Extension",
-        "definition": "A description of the morphology characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": 0,
         "max": "*",
         "base": {
@@ -181,7 +181,7 @@
         "id": "Extension:morphologybehavior",
         "path": "Extension",
         "short": "BC MorphologyBehavior Extension",
-        "definition": "A description of the morphology characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": 0,
         "max": "*"
       },

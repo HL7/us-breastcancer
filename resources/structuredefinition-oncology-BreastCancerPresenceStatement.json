@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerPresenceStatement",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Profile</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  CodeableConcept maps to code\n  Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   \n  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Profile</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  CodeableConcept maps to code\n  Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   \n  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ConditionPresenceContext.Severity maps to severity\n  Stage maps to stage\n  Stage.CodeableConcept maps to stage.summary\n  Stage.StageDetail maps to stage.assessment\t\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPresenceStatement",
   "name": "BreastCancerPresenceStatement",
@@ -894,7 +894,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-extension"
           }
         ],
         "sliceName": "findingmethod"
@@ -966,7 +966,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-extension",
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-extension",
         "mapping": [
           {
             "identity": "rim",
@@ -998,7 +998,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS"
           }
@@ -1013,15 +1013,29 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-extension"
           }
         ],
         "sliceName": "interpretation"
       },
       {
+        "id": "Condition:oncology-BreastCancerPresenceStatement.extension:exceptionvalue",
+        "path": "Condition.extension",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
+          }
+        ],
+        "sliceName": "exceptionvalue"
+      },
+      {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:morphologybehavior",
         "path": "Condition.extension",
-        "definition": "A description of the morphology characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1331,7 +1345,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS"
           }
         },
         "mapping": [
@@ -1597,7 +1611,7 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/condition-ConditionCategoryCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS"
       },
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.category:Includes_disease.coding:Fixed_disease.version",
@@ -1891,7 +1905,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-AnatomicalLocationVS"
           }
         },
         "mapping": [
@@ -2694,7 +2708,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-extension"
           }
         ],
         "sliceName": "findingmethod"
@@ -2703,7 +2717,7 @@
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:findingmethod.valueCodeableConcept",
         "path": "Condition.extension.valueCodeableConcept",
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS"
           }
@@ -2718,15 +2732,29 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-extension"
           }
         ],
         "sliceName": "interpretation"
       },
       {
+        "id": "Condition:oncology-BreastCancerPresenceStatement.extension:exceptionvalue",
+        "path": "Condition.extension",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
+          }
+        ],
+        "sliceName": "exceptionvalue"
+      },
+      {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:morphologybehavior",
         "path": "Condition.extension",
-        "definition": "A description of the morphology characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": 0,
         "max": "1",
         "type": [
@@ -2759,7 +2787,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/condition-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS"
           }
         },
         "slicing": {
@@ -2819,7 +2847,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.category:Includes_disease.coding:Fixed_disease.system",
         "path": "Condition.category.coding.system",
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/condition-ConditionCategoryCS"
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS"
       },
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.category:Includes_disease.coding:Fixed_disease.code",
@@ -2860,7 +2888,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/entity-AnatomicalLocationVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-AnatomicalLocationVS"
           }
         }
       },

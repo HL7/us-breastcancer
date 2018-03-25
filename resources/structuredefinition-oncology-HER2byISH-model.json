@@ -68,7 +68,7 @@
           "timePeriod"
         ],
         "min": 0,
-        "max": "1",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
@@ -367,7 +367,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -414,7 +414,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -445,6 +445,22 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         }
+      },
+      {
+        "id": "oncology-HER2byISH-model.exceptionValue",
+        "path": "oncology-HER2byISH-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "oncology-HER2byISH-model.category",
@@ -502,7 +518,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -518,7 +534,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen-model"
           }
         ],
         "mustSupport": false,
@@ -540,7 +556,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -556,7 +572,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -578,7 +594,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -663,65 +679,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2byISH-model.evaluationComponent.aneusomy",
-        "path": "oncology-HER2byISH-model.evaluationComponent.aneusomy",
-        "code": [
-          {
-            "system": "https://sdt.cap.org",
-            "code": "30478"
-          }
-        ],
-        "short": "Aneusomy (as defined by vendor kit used)",
-        "definition": "Aneusomy (as defined by vendor kit used)",
-        "min": 0,
+        "id": "oncology-HER2byISH-model.recordedContext",
+        "path": "oncology-HER2byISH-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-Aneusomy-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-HER2byISH-model.evaluationComponent.heterogeneousSignals",
-        "path": "oncology-HER2byISH-model.evaluationComponent.heterogeneousSignals",
-        "code": [
-          {
-            "system": "https://sdt.cap.org",
-            "code": "30482"
-          }
-        ],
-        "short": "Whether In Situ Hybridization signals were heterogeneous.",
-        "definition": "Whether In Situ Hybridization signals were heterogeneous.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HeterogeneousSignals-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-HER2byISH-model.evaluationComponent.percentageAmplified",
-        "path": "oncology-HER2byISH-model.evaluationComponent.percentageAmplified",
-        "code": [
-          {
-            "system": "https://sdt.cap.org",
-            "code": "31073"
-          }
-        ],
-        "short": "Percentage of cells with amplified HER2 signals",
-        "definition": "Percentage of cells with amplified HER2 signals",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-PercentageAmplified-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -737,23 +703,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-HER2byISH-model.recordedContext",
-        "path": "oncology-HER2byISH-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
           }
         ],
         "mustSupport": false,
@@ -791,7 +741,7 @@
           "timePeriod"
         ],
         "min": 0,
-        "max": "1",
+        "max": "0",
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
@@ -1090,7 +1040,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-FindingMethod-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model"
           }
         ],
         "mustSupport": false,
@@ -1137,7 +1087,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Interpretation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
           }
         ],
         "mustSupport": false,
@@ -1168,6 +1118,22 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         }
+      },
+      {
+        "id": "oncology-HER2byISH-model.exceptionValue",
+        "path": "oncology-HER2byISH-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "oncology-HER2byISH-model.category",
@@ -1225,7 +1191,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -1241,7 +1207,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/entity-Specimen-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen-model"
           }
         ],
         "mustSupport": false,
@@ -1263,7 +1229,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-DeltaFlag-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-model"
           }
         ],
         "mustSupport": false,
@@ -1279,7 +1245,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Precondition-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-model"
           }
         ],
         "mustSupport": false,
@@ -1301,7 +1267,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-ReferenceRange-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
           }
         ],
         "mustSupport": false,
@@ -1386,65 +1352,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-HER2byISH-model.evaluationComponent.aneusomy",
-        "path": "oncology-HER2byISH-model.evaluationComponent.aneusomy",
-        "code": [
-          {
-            "system": "https://sdt.cap.org",
-            "code": "30478"
-          }
-        ],
-        "short": "Aneusomy (as defined by vendor kit used)",
-        "definition": "Aneusomy (as defined by vendor kit used)",
-        "min": 0,
+        "id": "oncology-HER2byISH-model.recordedContext",
+        "path": "oncology-HER2byISH-model.recordedContext",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-Aneusomy-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-HER2byISH-model.evaluationComponent.heterogeneousSignals",
-        "path": "oncology-HER2byISH-model.evaluationComponent.heterogeneousSignals",
-        "code": [
-          {
-            "system": "https://sdt.cap.org",
-            "code": "30482"
-          }
-        ],
-        "short": "Whether In Situ Hybridization signals were heterogeneous.",
-        "definition": "Whether In Situ Hybridization signals were heterogeneous.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HeterogeneousSignals-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-HER2byISH-model.evaluationComponent.percentageAmplified",
-        "path": "oncology-HER2byISH-model.evaluationComponent.percentageAmplified",
-        "code": [
-          {
-            "system": "https://sdt.cap.org",
-            "code": "31073"
-          }
-        ],
-        "short": "Percentage of cells with amplified HER2 signals",
-        "definition": "Percentage of cells with amplified HER2 signals",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-PercentageAmplified-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -1460,23 +1376,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-Members-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-HER2byISH-model.recordedContext",
-        "path": "oncology-HER2byISH-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/finding-RecordedContext-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
           }
         ],
         "mustSupport": false,

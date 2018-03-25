@@ -9,7 +9,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/entity-AnatomicalLocation" />
+                <reference value="StructureDefinition/cimi-AnatomicalLocation" />
                 <display value="BC AnatomicalLocation Profile" />
             </sourceReference>
         </resource>
@@ -30,13 +30,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-BreastRegionalLymphNodeSpecimen" />
-                <display value="BC BreastRegionalLymphNodeSpecimen Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/oncology-BreastSite" />
                 <display value="BC BreastSite Profile" />
             </sourceReference>
@@ -51,7 +44,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/condition-ConditionPresenceStatement" />
+                <reference value="StructureDefinition/cimi-statement-ConditionPresenceStatement" />
                 <display value="BC ConditionPresenceStatement Profile" />
             </sourceReference>
         </resource>
@@ -65,7 +58,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-EvaluationResultRecorded" />
+                <reference value="StructureDefinition/cimi-statement-EvaluationResultRecorded" />
                 <display value="BC EvaluationResultRecorded Profile" />
             </sourceReference>
         </resource>
@@ -100,22 +93,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-Ki-67LabelingIndex" />
-                <display value="BC Ki-67LabelingIndex Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/finding-LaboratoryTestResultRecorded" />
+                <reference value="StructureDefinition/cimi-statement-LaboratoryTestResultRecorded" />
                 <display value="BC LaboratoryTestResultRecorded Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/oncology-LymphaticInvolvement" />
-                <display value="BC LymphaticInvolvement Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -184,36 +163,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-S-PhaseFraction" />
-                <display value="BC S-PhaseFraction Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/finding-SimplifiedLaboratoryTestResultRecorded" />
+                <reference value="StructureDefinition/cimi-statement-SimplifiedLaboratoryTestResultRecorded" />
                 <display value="BC SimplifiedLaboratoryTestResultRecorded Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/entity-Specimen" />
+                <reference value="StructureDefinition/cimi-Specimen" />
                 <display value="BC Specimen Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/oncology-TumorDimensions" />
-                <display value="BC TumorDimensions Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/oncology-TumorMargins" />
-                <display value="BC TumorMargins Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -233,21 +191,21 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/entity-CollectionSite-extension" />
+                <reference value="StructureDefinition/cimi-CollectionSite-extension" />
                 <display value="BC CollectionSite Extension" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-DeltaFlag-extension" />
+                <reference value="StructureDefinition/cimi-DeltaFlag-extension" />
                 <display value="BC DeltaFlag Extension" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-DiagnosticService-extension" />
+                <reference value="StructureDefinition/cimi-statement-DiagnosticService-extension" />
                 <display value="BC DiagnosticService Extension" />
             </sourceReference>
         </resource>
@@ -261,14 +219,21 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-FindingMethod-extension" />
+                <reference value="StructureDefinition/cimi-ExceptionValue-extension" />
+                <display value="BC ExceptionValue Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-FindingMethod-extension" />
                 <display value="BC FindingMethod Extension" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-Interpretation-extension" />
+                <reference value="StructureDefinition/cimi-Interpretation-extension" />
                 <display value="BC Interpretation Extension" />
             </sourceReference>
         </resource>
@@ -282,7 +247,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/finding-Precondition-extension" />
+                <reference value="StructureDefinition/cimi-Precondition-extension" />
                 <display value="BC Precondition Extension" />
             </sourceReference>
         </resource>
@@ -422,7 +387,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/entity-AnatomicalLocationVS" />
+                <reference value="ValueSet/cimi-AnatomicalLocationVS" />
                 <display value="BC AnatomicalLocationVS ValueSet" />
             </sourceReference>
         </resource>
@@ -443,6 +408,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerNCategorySuffixVS" />
+                <display value="BC BreastCancerNCategorySuffixVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/oncology-BreastCancerNCategoryVS" />
                 <display value="BC BreastCancerNCategoryVS ValueSet" />
             </sourceReference>
@@ -452,6 +424,13 @@
             <sourceReference>
                 <reference value="ValueSet/oncology-BreastCancerStageVS" />
                 <display value="BC BreastCancerStageVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerTCategorySuffixVS" />
+                <display value="BC BreastCancerTCategorySuffixVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -499,14 +478,14 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/condition-ConditionCategoryVS" />
+                <reference value="ValueSet/cimi-ConditionCategoryVS" />
                 <display value="BC ConditionCategoryVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/condition-ConditionVS" />
+                <reference value="ValueSet/cimi-ConditionVS" />
                 <display value="BC ConditionVS ValueSet" />
             </sourceReference>
         </resource>
@@ -520,28 +499,28 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/finding-DeltaFlagVS" />
+                <reference value="ValueSet/cimi-DeltaFlagVS" />
                 <display value="BC DeltaFlagVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/finding-DiagnosticServiceVS" />
+                <reference value="ValueSet/cimi-statement-DiagnosticServiceVS" />
                 <display value="BC DiagnosticServiceVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/entity-DirectionalityVS" />
+                <reference value="ValueSet/cimi-DirectionalityVS" />
                 <display value="BC DirectionalityVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/finding-ExceptionValueVS" />
+                <reference value="ValueSet/cimi-ExceptionValueVS" />
                 <display value="BC ExceptionValueVS ValueSet" />
             </sourceReference>
         </resource>
@@ -576,7 +555,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/entity-LateralityVS" />
+                <reference value="ValueSet/cimi-LateralityVS" />
                 <display value="BC LateralityVS ValueSet" />
             </sourceReference>
         </resource>
@@ -599,6 +578,13 @@
             <sourceReference>
                 <reference value="ValueSet/oncology-MammaprintRiskScoreInterpretationVS" />
                 <display value="BC MammaprintRiskScoreInterpretationVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/oncology-MitoticCountScoreVS" />
+                <display value="BC MitoticCountScoreVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -646,7 +632,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/entity-PortionTotalityVS" />
+                <reference value="ValueSet/cimi-PortionTotalityVS" />
                 <display value="BC PortionTotalityVS ValueSet" />
             </sourceReference>
         </resource>
@@ -667,7 +653,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/finding-PresenceContextVS" />
+                <reference value="ValueSet/cimi-PresenceContextVS" />
                 <display value="BC PresenceContextVS ValueSet" />
             </sourceReference>
         </resource>
@@ -744,6 +730,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerNCategorySuffixCS" />
+                <display value="BC BreastCancerNCategorySuffixCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="CodeSystem/oncology-BreastCancerStageCS" />
                 <display value="BC BreastCancerStageCS CodeSystem" />
             </sourceReference>
@@ -753,6 +746,13 @@
             <sourceReference>
                 <reference value="CodeSystem/oncology-BreastCancerTCategoryCS" />
                 <display value="BC BreastCancerTCategoryCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerTCategorySuffixCS" />
+                <display value="BC BreastCancerTCategorySuffixCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -786,7 +786,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/condition-ConditionCategoryCS" />
+                <reference value="CodeSystem/cimi-ConditionCategoryCS" />
                 <display value="BC ConditionCategoryCS CodeSystem" />
             </sourceReference>
         </resource>
@@ -800,21 +800,21 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/finding-DiagnosticServiceCS" />
+                <reference value="CodeSystem/cimi-statement-DiagnosticServiceCS" />
                 <display value="BC DiagnosticServiceCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/entity-DirectionalityCS" />
+                <reference value="CodeSystem/cimi-DirectionalityCS" />
                 <display value="BC DirectionalityCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/finding-ExceptionValueCS" />
+                <reference value="CodeSystem/cimi-ExceptionValueCS" />
                 <display value="BC ExceptionValueCS CodeSystem" />
             </sourceReference>
         </resource>
@@ -842,7 +842,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/entity-LateralityCS" />
+                <reference value="CodeSystem/cimi-LateralityCS" />
                 <display value="BC LateralityCS CodeSystem" />
             </sourceReference>
         </resource>
@@ -858,6 +858,13 @@
             <sourceReference>
                 <reference value="CodeSystem/oncology-MammaprintRiskScoreInterpretationCS" />
                 <display value="BC MammaprintRiskScoreInterpretationCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-MitoticCountScoreCS" />
+                <display value="BC MitoticCountScoreCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -891,7 +898,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/entity-PortionTotalityCS" />
+                <reference value="CodeSystem/cimi-PortionTotalityCS" />
                 <display value="BC PortionTotalityCS CodeSystem" />
             </sourceReference>
         </resource>
@@ -947,7 +954,7 @@
         <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-Abatement-model" />
+                  <reference value="StructureDefinition/cimi-Abatement-model" />
                   <display value="Abatement" />
               </sourceReference>
           </resource>
@@ -968,49 +975,42 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-AnatomicalLocation-model" />
+                  <reference value="StructureDefinition/cimi-AnatomicalLocation-model" />
                   <display value="AnatomicalLocation" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-AnatomicalLocationOrCode-model" />
+                  <reference value="StructureDefinition/cimi-AnatomicalLocationOrCode-model" />
                   <display value="AnatomicalLocationOrCode" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-Aneusomy-model" />
-                  <display value="Aneusomy" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/finding-ApplicableAgeRange-model" />
+                  <reference value="StructureDefinition/cimi-ApplicableAgeRange-model" />
                   <display value="ApplicableAgeRange" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-ApplicableSubpopulation-model" />
+                  <reference value="StructureDefinition/cimi-ApplicableSubpopulation-model" />
                   <display value="ApplicableSubpopulation" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-AssertionContext-model" />
+                  <reference value="StructureDefinition/cimi-AssertionContext-model" />
                   <display value="AssertionContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-AssertionTopic-model" />
+                  <reference value="StructureDefinition/cimi-AssertionTopic-model" />
                   <display value="AssertionTopic" />
               </sourceReference>
           </resource>
@@ -1038,14 +1038,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-BodyStructurePresent-model" />
+                  <reference value="StructureDefinition/cimi-statement-BodyStructurePresent-model" />
                   <display value="BodyStructurePresent" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-BodyStructureTopic-model" />
+                  <reference value="StructureDefinition/cimi-statement-BodyStructureTopic-model" />
                   <display value="BodyStructureTopic" />
               </sourceReference>
           </resource>
@@ -1087,13 +1087,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastRegionalLymphNodeSpecimen-model" />
-                  <display value="BreastRegionalLymphNodeSpecimen" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastSite-model" />
                   <display value="BreastSite" />
               </sourceReference>
@@ -1115,14 +1108,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-Cellularity-model" />
-                  <display value="Cellularity" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/finding-Certainty-model" />
+                  <reference value="StructureDefinition/cimi-Certainty-model" />
                   <display value="Certainty" />
               </sourceReference>
           </resource>
@@ -1136,7 +1122,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-ClinicalStatus-model" />
+                  <reference value="StructureDefinition/cimi-ClinicalStatus-model" />
                   <display value="ClinicalStatus" />
               </sourceReference>
           </resource>
@@ -1171,21 +1157,21 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-CollectionMethod-model" />
+                  <reference value="StructureDefinition/cimi-CollectionMethod-model" />
                   <display value="CollectionMethod" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-CollectionSite-model" />
+                  <reference value="StructureDefinition/cimi-CollectionSite-model" />
                   <display value="CollectionSite" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-CollectionTime-model" />
+                  <reference value="StructureDefinition/cimi-CollectionTime-model" />
                   <display value="CollectionTime" />
               </sourceReference>
           </resource>
@@ -1206,21 +1192,21 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-ConditionPresenceContext-model" />
+                  <reference value="StructureDefinition/cimi-ConditionPresenceContext-model" />
                   <display value="ConditionPresenceContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-ConditionPresenceStatement-model" />
+                  <reference value="StructureDefinition/cimi-statement-ConditionPresenceStatement-model" />
                   <display value="ConditionPresenceStatement" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-ConditionTopic-model" />
+                  <reference value="StructureDefinition/cimi-ConditionTopic-model" />
                   <display value="ConditionTopic" />
               </sourceReference>
           </resource>
@@ -1234,21 +1220,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-Criticality-model" />
+                  <reference value="StructureDefinition/cimi-Criticality-model" />
                   <display value="Criticality" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-DegreeOfLymphaticInvolvement-model" />
-                  <display value="DegreeOfLymphaticInvolvement" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/finding-DeltaFlag-model" />
+                  <reference value="StructureDefinition/cimi-DeltaFlag-model" />
                   <display value="DeltaFlag" />
               </sourceReference>
           </resource>
@@ -1262,14 +1241,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-DiagnosticService-model" />
+                  <reference value="StructureDefinition/cimi-statement-DiagnosticService-model" />
                   <display value="DiagnosticService" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-Directionality-model" />
+                  <reference value="StructureDefinition/cimi-Directionality-model" />
                   <display value="Directionality" />
               </sourceReference>
           </resource>
@@ -1290,7 +1269,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-Entity-model" />
+                  <reference value="StructureDefinition/cimi-Encounter-model" />
+                  <display value="Encounter" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-Entity-model" />
                   <display value="Entity" />
               </sourceReference>
           </resource>
@@ -1311,63 +1297,63 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-EvaluationComponent-model" />
+                  <reference value="StructureDefinition/cimi-EvaluationComponent-model" />
                   <display value="EvaluationComponent" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-EvaluationResultContext-model" />
+                  <reference value="StructureDefinition/cimi-EvaluationResultContext-model" />
                   <display value="EvaluationResultContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-EvaluationResultRecorded-model" />
+                  <reference value="StructureDefinition/cimi-statement-EvaluationResultRecorded-model" />
                   <display value="EvaluationResultRecorded" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-EvaluationResultTopic-model" />
+                  <reference value="StructureDefinition/cimi-EvaluationResultTopic-model" />
                   <display value="EvaluationResultTopic" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-ExceptionValue-model" />
+                  <reference value="StructureDefinition/cimi-ExceptionValue-model" />
                   <display value="ExceptionValue" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-FindingContext-model" />
+                  <reference value="StructureDefinition/cimi-FindingContext-model" />
                   <display value="FindingContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-FindingMethod-model" />
+                  <reference value="StructureDefinition/cimi-FindingMethod-model" />
                   <display value="FindingMethod" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-FindingStatus-model" />
+                  <reference value="StructureDefinition/cimi-FindingStatus-model" />
                   <display value="FindingStatus" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-FindingTopic-model" />
+                  <reference value="StructureDefinition/cimi-FindingTopic-model" />
                   <display value="FindingTopic" />
               </sourceReference>
           </resource>
@@ -1402,13 +1388,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-HeterogeneousSignals-model" />
-                  <display value="HeterogeneousSignals" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/oncology-HistologicGrade-model" />
                   <display value="HistologicGrade" />
               </sourceReference>
@@ -1423,35 +1402,21 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-Interpretation-model" />
+                  <reference value="StructureDefinition/cimi-Interpretation-model" />
                   <display value="Interpretation" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-Ki-67LabelingIndex-model" />
-                  <display value="Ki-67LabelingIndex" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/finding-LaboratoryTestResultRecorded-model" />
+                  <reference value="StructureDefinition/cimi-statement-LaboratoryTestResultRecorded-model" />
                   <display value="LaboratoryTestResultRecorded" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-LargestLymphNodeSize-model" />
-                  <display value="LargestLymphNodeSize" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/entity-Laterality-model" />
+                  <reference value="StructureDefinition/cimi-Laterality-model" />
                   <display value="Laterality" />
               </sourceReference>
           </resource>
@@ -1472,13 +1437,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-LymphaticInvolvement-model" />
-                  <display value="LymphaticInvolvement" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/oncology-MammaprintRecurrenceScore-model" />
                   <display value="MammaprintRecurrenceScore" />
               </sourceReference>
@@ -1486,7 +1444,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-Members-model" />
+                  <reference value="StructureDefinition/cimi-statement-Members-model" />
                   <display value="Members" />
               </sourceReference>
           </resource>
@@ -1500,7 +1458,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-Morphology-model" />
+                  <reference value="StructureDefinition/cimi-statement-Morphology-model" />
                   <display value="Morphology" />
               </sourceReference>
           </resource>
@@ -1528,8 +1486,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-NumberOfLymphNodesInvolved-model" />
-                  <display value="NumberOfLymphNodesInvolved" />
+                  <reference value="StructureDefinition/oncology-NuclearPositivity-model" />
+                  <display value="NuclearPositivity" />
               </sourceReference>
           </resource>
           <resource>
@@ -1556,7 +1514,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-Onset-model" />
+                  <reference value="StructureDefinition/cimi-Onset-model" />
                   <display value="Onset" />
               </sourceReference>
           </resource>
@@ -1570,20 +1528,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-PercentageAmplified-model" />
-                  <display value="PercentageAmplified" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-PercentageInSituCarcinoma-model" />
-                  <display value="PercentageInSituCarcinoma" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-core-PercentageRange-model" />
                   <display value="PercentageRange" />
               </sourceReference>
@@ -1591,28 +1535,28 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-PortionTotality-model" />
+                  <reference value="StructureDefinition/cimi-PortionTotality-model" />
                   <display value="PortionTotality" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-Precondition-model" />
+                  <reference value="StructureDefinition/cimi-Precondition-model" />
                   <display value="Precondition" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-PresenceContext-model" />
+                  <reference value="StructureDefinition/cimi-PresenceContext-model" />
                   <display value="PresenceContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-PresentOnAdmission-model" />
+                  <reference value="StructureDefinition/cimi-PresentOnAdmission-model" />
                   <display value="PresentOnAdmission" />
               </sourceReference>
           </resource>
@@ -1661,35 +1605,28 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-RecordedContext-model" />
+                  <reference value="StructureDefinition/cimi-RecordedContext-model" />
                   <display value="RecordedContext" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-ReferenceRange-model" />
+                  <reference value="StructureDefinition/cimi-ReferenceRange-model" />
                   <display value="ReferenceRange" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-RelevantTime-model" />
+                  <reference value="StructureDefinition/cimi-RelevantTime-model" />
                   <display value="RelevantTime" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-S-PhaseFraction-model" />
-                  <display value="S-PhaseFraction" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/condition-Severity-model" />
+                  <reference value="StructureDefinition/cimi-Severity-model" />
                   <display value="Severity" />
               </sourceReference>
           </resource>
@@ -1703,43 +1640,43 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-SimplifiedLaboratoryTestResultRecorded-model" />
+                  <reference value="StructureDefinition/cimi-statement-SimplifiedLaboratoryTestResultRecorded-model" />
                   <display value="SimplifiedLaboratoryTestResultRecorded" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-SizeOfGrossTumorBed-model" />
-                  <display value="SizeOfGrossTumorBed" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/entity-SourceSpecimen-model" />
+                  <reference value="StructureDefinition/cimi-SourceSpecimen-model" />
                   <display value="SourceSpecimen" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/entity-Specimen-model" />
+                  <reference value="StructureDefinition/cimi-Specimen-model" />
                   <display value="Specimen" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-Stage-model" />
+                  <reference value="StructureDefinition/cimi-statement-Stage-model" />
                   <display value="Stage" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/condition-StageDetail-model" />
+                  <reference value="StructureDefinition/cimi-statement-StageDetail-model" />
                   <display value="StageDetail" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/oncology-StageSuffix-model" />
+                  <display value="StageSuffix" />
               </sourceReference>
           </resource>
           <resource>
@@ -1801,42 +1738,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-TumorDimensions-model" />
-                  <display value="TumorDimensions" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-TumorMarginDescription-model" />
-                  <display value="TumorMarginDescription" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-TumorMargins-model" />
-                  <display value="TumorMargins" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-TumorPrimaryDimensionSize-model" />
-                  <display value="TumorPrimaryDimensionSize" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-TumorSecondaryDimensionSize-model" />
-                  <display value="TumorSecondaryDimensionSize" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/finding-Type-model" />
+                  <reference value="StructureDefinition/cimi-Type-model" />
                   <display value="Type" />
               </sourceReference>
           </resource>
@@ -1857,7 +1759,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/finding-VerificationStatus-model" />
+                  <reference value="StructureDefinition/cimi-VerificationStatus-model" />
                   <display value="VerificationStatus" />
               </sourceReference>
           </resource>

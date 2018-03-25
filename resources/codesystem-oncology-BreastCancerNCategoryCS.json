@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerNCategoryCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerNCategoryCS CodeSystem</b></p>\n<p>Codes that designate concepts describing Node category according to AJCC breast cancer staging recommendations.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerNCategoryCS CodeSystem</b></p>\n<p>Codes that designate concepts describing breast clinical lymph node categories according to AJCC Cancer Staging Manual 8th Edition.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerNCategoryCS",
   "identifier": {
@@ -25,80 +25,145 @@
     }
   ],
   "date": "2018-03-24",
-  "description": "Codes that designate concepts describing Node category according to AJCC breast cancer staging recommendations.",
+  "description": "Codes that designate concepts describing breast clinical lymph node categories according to AJCC Cancer Staging Manual 8th Edition.",
   "caseSensitive": true,
   "content": "complete",
-  "count": 14,
+  "count": 27,
   "concept": [
     {
-      "code": "NX",
-      "definition": "The concept designated by the symbol NX in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol NX in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cNX",
+      "definition": "The concept designated by the symbol cNX in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cNX in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N0",
-      "definition": "The concept designated by the symbol N0 in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N0 in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN0",
+      "definition": "The concept designated by the symbol cN0 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN0 in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N1",
-      "definition": "The concept designated by the symbol N1 in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N1 in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN1",
+      "definition": "The concept designated by the symbol cN1 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN1 in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N1mi",
-      "definition": "The concept designated by the symbol N1mi in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N1mi in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN1mi",
+      "definition": "The concept designated by the symbol cN1mi in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN1mi in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N1a",
-      "definition": "The concept designated by the symbol N1a in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N1a in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN2",
+      "definition": "The concept designated by the symbol cN2 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN2 in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N1b",
-      "definition": "The concept designated by the symbol N1b in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N1b in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN2a",
+      "definition": "The concept designated by the symbol cN2a in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN2a in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N1c",
-      "definition": "The concept designated by the symbol N1c in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N1c in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN2b",
+      "definition": "The concept designated by the symbol cN2b in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN2b in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N2",
-      "definition": "The concept designated by the symbol N2 in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N2 in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN3",
+      "definition": "The concept designated by the symbol cN3 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN3 in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N2a",
-      "definition": "The concept designated by the symbol N2a in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N2a in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN3a",
+      "definition": "The concept designated by the symbol cN3a in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN3a in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N2b",
-      "definition": "The concept designated by the symbol N2b in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N2b in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN3b",
+      "definition": "The concept designated by the symbol cN3b in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN3b in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N3",
-      "definition": "The concept designated by the symbol N3 in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N3 in Version 8 of AJCC's breast cancer staging guide."
+      "code": "cN3c",
+      "definition": "The concept designated by the symbol cN3c in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol cN3c in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N3a",
-      "definition": "The concept designated by the symbol N3a in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N3a in Version 8 of AJCC's breast cancer staging guide."
+      "code": "pNX",
+      "definition": "The concept designated by the symbol pNX in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pNX in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N3b",
-      "definition": "The concept designated by the symbol N3b in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N3b in Version 8 of AJCC's breast cancer staging guide."
+      "code": "pN0",
+      "definition": "The concept designated by the symbol pN0 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN0 in Version 8 of AJCC's cancer staging manual, breast chapter."
     },
     {
-      "code": "N3c",
-      "definition": "The concept designated by the symbol N3c in Version 8 of AJCC's breast cancer staging guide.",
-      "display": "The concept designated by the symbol N3c in Version 8 of AJCC's breast cancer staging guide."
+      "code": "pN0_i+",
+      "definition": "The concept designated by the symbol pN0_i+ in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN0_i+ in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN0_mol+",
+      "definition": "The concept designated by the symbol pN0_mol+ in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN0_mol+ in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN1",
+      "definition": "The concept designated by the symbol pN1 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN1 in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN1mi",
+      "definition": "The concept designated by the symbol pN1mi in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN1mi in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN1a",
+      "definition": "The concept designated by the symbol pN1a in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN1a in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN1b",
+      "definition": "The concept designated by the symbol pNb in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pNb in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN1c",
+      "definition": "The concept designated by the symbol pNc in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pNc in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN2",
+      "definition": "The concept designated by the symbol pN2 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN2 in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN2a",
+      "definition": "The concept designated by the symbol pN2a in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN2a in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN2b",
+      "definition": "The concept designated by the symbol pN2b in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN2b in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN3",
+      "definition": "The concept designated by the symbol pN3 in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN3 in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN3a",
+      "definition": "The concept designated by the symbol pN3a in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN3a in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN3b",
+      "definition": "The concept designated by the symbol pN3b in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN3b in Version 8 of AJCC's cancer staging manual, breast chapter."
+    },
+    {
+      "code": "pN3c",
+      "definition": "The concept designated by the symbol pN3c in Version 8 of AJCC's cancer staging manual, breast chapter.",
+      "display": "The concept designated by the symbol pN3c in Version 8 of AJCC's cancer staging manual, breast chapter."
     }
   ]
 }
