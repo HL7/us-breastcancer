@@ -15,7 +15,7 @@
   "name": "ClinicalStatement",
   "title": "BC ClinicalStatement Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-ClinicalStatement-model",
         "path": "cimi-ClinicalStatement-model",
         "definition": "A special type of information entry consisting of a topic and a context. \n\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -48,7 +48,7 @@
       {
         "id": "cimi-ClinicalStatement-model.statementTopic",
         "path": "cimi-ClinicalStatement-model.statementTopic",
-        "short": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. ",
+        "short": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry.",
         "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. \n\nA topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 1,
         "max": "1",
@@ -101,7 +101,7 @@
         "id": "cimi-ClinicalStatement-model",
         "path": "cimi-ClinicalStatement-model",
         "definition": "A special type of information entry consisting of a topic and a context. \n\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -110,7 +110,7 @@
       {
         "id": "cimi-ClinicalStatement-model.statementTopic",
         "path": "cimi-ClinicalStatement-model.statementTopic",
-        "short": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. ",
+        "short": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry.",
         "definition": "Compositional and reusable grouping of attributes that make up the clinical focus of an entry. \n\nA topic does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc.), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 1,
         "max": "1",

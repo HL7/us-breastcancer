@@ -15,7 +15,7 @@
   "name": "NuclearPositivity",
   "title": "BC NuclearPositivity Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "oncology-NuclearPositivity-model",
         "path": "oncology-NuclearPositivity-model",
         "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -133,7 +133,7 @@
         "id": "oncology-NuclearPositivity-model",
         "path": "oncology-NuclearPositivity-model",
         "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

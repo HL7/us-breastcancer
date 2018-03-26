@@ -15,7 +15,7 @@
   "name": "AgeRange",
   "title": "BC AgeRange Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-AgeRange-model",
         "path": "shr-core-AgeRange-model",
         "definition": "A quantitative range of ages. One of the two ages must be specified.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -137,7 +137,7 @@
         "id": "shr-core-AgeRange-model",
         "path": "shr-core-AgeRange-model",
         "definition": "A quantitative range of ages. One of the two ages must be specified.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

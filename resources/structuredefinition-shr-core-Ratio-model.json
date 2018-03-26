@@ -15,7 +15,7 @@
   "name": "Ratio",
   "title": "BC Ratio Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "shr-core-Ratio-model",
         "path": "shr-core-Ratio-model",
         "definition": "A unit of measurement for the quotient of the amount of one entity to another.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -103,7 +103,7 @@
         "id": "shr-core-Ratio-model",
         "path": "shr-core-Ratio-model",
         "definition": "A unit of measurement for the quotient of the amount of one entity to another.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

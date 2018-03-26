@@ -15,7 +15,7 @@
   "name": "Entry",
   "title": "BC Entry Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-base-Entry-model",
         "path": "shr-base-Entry-model",
         "definition": "Entry contains attributes that apply to all such items. An Entry may represent an item in a single person's health record, or could represent an entity that surfaces in multiple patient records, such as organizations or practitioners.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -64,7 +64,7 @@
         "id": "shr-base-Entry-model",
         "path": "shr-base-Entry-model",
         "definition": "Entry contains attributes that apply to all such items. An Entry may represent an item in a single person's health record, or could represent an entity that surfaces in multiple patient records, such as organizations or practitioners.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "Locatable",
   "title": "BC Locatable Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-Locatable-model",
         "path": "cimi-Locatable-model",
         "definition": "Abstract top level class in the hierarchy. Locatable defines the idea of 'locatability in an archetyped structure'.\n\nHaving this class at the top of the class hierarchy reflects CIMI's use of Archetype Description Language (ADL). In CIMI, Locatable brings with it three attributes that occur in every CIMI child class: archetype_node_id, name (not a healthcare-relevant name, but a name created at runtime), and archetype_details. These attributes reflect a CIMI model implementation detail, and are irrelevant to cancer detailed clinical models, and should by rights remain hidden. So as to not complicate all profiles with extra extensions, these three attributes have been omitted.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -64,7 +64,7 @@
         "id": "cimi-Locatable-model",
         "path": "cimi-Locatable-model",
         "definition": "Abstract top level class in the hierarchy. Locatable defines the idea of 'locatability in an archetyped structure'.\n\nHaving this class at the top of the class hierarchy reflects CIMI's use of Archetype Description Language (ADL). In CIMI, Locatable brings with it three attributes that occur in every CIMI child class: archetype_node_id, name (not a healthcare-relevant name, but a name created at runtime), and archetype_details. These attributes reflect a CIMI model implementation detail, and are irrelevant to cancer detailed clinical models, and should by rights remain hidden. So as to not complicate all profiles with extra extensions, these three attributes have been omitted.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

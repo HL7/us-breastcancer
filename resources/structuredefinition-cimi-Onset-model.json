@@ -15,7 +15,7 @@
   "name": "Onset",
   "title": "BC Onset Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-Onset-model",
         "path": "cimi-Onset-model",
         "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\tThis attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -94,7 +94,7 @@
         "id": "cimi-Onset-model",
         "path": "cimi-Onset-model",
         "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\tThis attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "UpperBound",
   "title": "BC UpperBound Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-UpperBound-model",
         "path": "shr-core-UpperBound-model",
         "definition": "The upper limit on a quantitative value.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -72,7 +72,7 @@
         "id": "shr-core-UpperBound-model",
         "path": "shr-core-UpperBound-model",
         "definition": "The upper limit on a quantitative value.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

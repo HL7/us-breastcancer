@@ -15,7 +15,7 @@
   "name": "ContextCode",
   "title": "BC ContextCode Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-ContextCode-model",
         "path": "cimi-ContextCode-model",
         "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -48,7 +48,7 @@
       {
         "id": "cimi-ContextCode-model.value",
         "path": "cimi-ContextCode-model.value",
-        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. ",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
         "alias": [
           "codeableConcept"
@@ -72,7 +72,7 @@
         "id": "cimi-ContextCode-model",
         "path": "cimi-ContextCode-model",
         "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -81,7 +81,7 @@
       {
         "id": "cimi-ContextCode-model.value",
         "path": "cimi-ContextCode-model.value",
-        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. ",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
         "alias": [
           "codeableConcept"

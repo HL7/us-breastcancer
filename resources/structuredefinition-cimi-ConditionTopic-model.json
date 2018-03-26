@@ -15,7 +15,7 @@
   "name": "ConditionTopic",
   "title": "BC ConditionTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-ConditionTopic-model",
         "path": "cimi-ConditionTopic-model",
         "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding class is ConditionAssertion, but this name has been changed to ConditionTopic, as anticipated here. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, any properties associated with condition occurrence have been placed with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -54,7 +54,7 @@
       {
         "id": "cimi-ConditionTopic-model.value",
         "path": "cimi-ConditionTopic-model.value",
-        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. ",
+        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
         "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding class is ConditionAssertion, but this name has been changed to ConditionTopic, as anticipated here. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, any properties associated with condition occurrence have been placed with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
         "alias": [
           "codeableConcept"
@@ -79,7 +79,7 @@
       {
         "id": "cimi-ConditionTopic-model.topicCode",
         "path": "cimi-ConditionTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -95,7 +95,7 @@
       {
         "id": "cimi-ConditionTopic-model.topicCode.value",
         "path": "cimi-ConditionTopic-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement. ",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "alias": [
           "codeableConcept"
@@ -451,7 +451,7 @@
         "id": "cimi-ConditionTopic-model",
         "path": "cimi-ConditionTopic-model",
         "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding class is ConditionAssertion, but this name has been changed to ConditionTopic, as anticipated here. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, any properties associated with condition occurrence have been placed with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -460,7 +460,7 @@
       {
         "id": "cimi-ConditionTopic-model.value",
         "path": "cimi-ConditionTopic-model.value",
-        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. ",
+        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
         "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nIn CIMI Version 0.0.4, the corresponding class is ConditionAssertion, but this name has been changed to ConditionTopic, as anticipated here. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, any properties associated with condition occurrence have been placed with ConditionPresenceContext.\n\nThe presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
         "alias": [
           "codeableConcept"
@@ -485,7 +485,7 @@
       {
         "id": "cimi-ConditionTopic-model.topicCode",
         "path": "cimi-ConditionTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -501,7 +501,7 @@
       {
         "id": "cimi-ConditionTopic-model.topicCode.value",
         "path": "cimi-ConditionTopic-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement. ",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "alias": [
           "codeableConcept"

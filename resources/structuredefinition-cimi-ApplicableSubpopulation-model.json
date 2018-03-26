@@ -15,7 +15,7 @@
   "name": "ApplicableSubpopulation",
   "title": "BC ApplicableSubpopulation Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -46,7 +46,7 @@
         "id": "cimi-ApplicableSubpopulation-model",
         "path": "cimi-ApplicableSubpopulation-model",
         "definition": "Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -85,7 +85,7 @@
         "id": "cimi-ApplicableSubpopulation-model",
         "path": "cimi-ApplicableSubpopulation-model",
         "definition": "Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "CodeSystemVersion",
   "title": "BC CodeSystemVersion Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-CodeSystemVersion-model",
         "path": "shr-core-CodeSystemVersion-model",
         "definition": "The version of the vocabulary being used, if applicable.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -72,7 +72,7 @@
         "id": "shr-core-CodeSystemVersion-model",
         "path": "shr-core-CodeSystemVersion-model",
         "definition": "The version of the vocabulary being used, if applicable.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

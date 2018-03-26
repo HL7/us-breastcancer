@@ -15,7 +15,7 @@
   "name": "Range",
   "title": "BC Range Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-Range-model",
         "path": "shr-core-Range-model",
         "definition": "An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -125,7 +125,7 @@
         "id": "shr-core-Range-model",
         "path": "shr-core-Range-model",
         "definition": "An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

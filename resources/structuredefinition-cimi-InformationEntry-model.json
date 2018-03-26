@@ -15,7 +15,7 @@
   "name": "InformationEntry",
   "title": "BC InformationEntry Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-InformationEntry-model",
         "path": "cimi-InformationEntry-model",
         "definition": "An InformationEntry is the minimal unit independent of logical information or knowledge, such as a clinical statement in a patient record, a knowledge entry in a knowledge artifact, a product in a product catalog, etc. \n\nTThe CIMI-defined attributes from InformationEntry (and those inherited from Entry) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry (identifier, subjectOfInformation, attribution, additionalText, recordStatus). Reconciling these differences is outside the scope of the current ballot on breast cancer.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -70,7 +70,7 @@
         "id": "cimi-InformationEntry-model",
         "path": "cimi-InformationEntry-model",
         "definition": "An InformationEntry is the minimal unit independent of logical information or knowledge, such as a clinical statement in a patient record, a knowledge entry in a knowledge artifact, a product in a product catalog, etc. \n\nTThe CIMI-defined attributes from InformationEntry (and those inherited from Entry) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry (identifier, subjectOfInformation, attribution, additionalText, recordStatus). Reconciling these differences is outside the scope of the current ballot on breast cancer.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "EvaluationComponent",
   "title": "BC EvaluationComponent Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-EvaluationComponent-model",
         "path": "cimi-EvaluationComponent-model",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -48,7 +48,7 @@
       {
         "id": "cimi-EvaluationComponent-model.value[x]",
         "path": "cimi-EvaluationComponent-model.value[x]",
-        "short": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "alias": [
           "quantity",
@@ -160,7 +160,7 @@
         "id": "cimi-EvaluationComponent-model",
         "path": "cimi-EvaluationComponent-model",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -169,7 +169,7 @@
       {
         "id": "cimi-EvaluationComponent-model.value[x]",
         "path": "cimi-EvaluationComponent-model.value[x]",
-        "short": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "alias": [
           "quantity",

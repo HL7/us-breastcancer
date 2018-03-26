@@ -15,7 +15,7 @@
   "name": "BodyStructureTopic",
   "title": "BC BodyStructureTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-statement-BodyStructureTopic-model",
         "path": "cimi-statement-BodyStructureTopic-model",
         "definition": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -79,7 +79,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.topicCode",
         "path": "cimi-statement-BodyStructureTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -95,7 +95,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.topicCode.value",
         "path": "cimi-statement-BodyStructureTopic-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement. ",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "alias": [
           "codeableConcept"
@@ -452,7 +452,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.specimen",
         "path": "cimi-statement-BodyStructureTopic-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -490,7 +490,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.precondition",
         "path": "cimi-statement-BodyStructureTopic-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -528,7 +528,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.evaluationComponent",
         "path": "cimi-statement-BodyStructureTopic-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
@@ -565,7 +565,7 @@
         "id": "cimi-statement-BodyStructureTopic-model",
         "path": "cimi-statement-BodyStructureTopic-model",
         "definition": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -599,7 +599,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.topicCode",
         "path": "cimi-statement-BodyStructureTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -615,7 +615,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.topicCode.value",
         "path": "cimi-statement-BodyStructureTopic-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement. ",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "alias": [
           "codeableConcept"
@@ -972,7 +972,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.specimen",
         "path": "cimi-statement-BodyStructureTopic-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -1010,7 +1010,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.precondition",
         "path": "cimi-statement-BodyStructureTopic-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -1048,7 +1048,7 @@
       {
         "id": "cimi-statement-BodyStructureTopic-model.evaluationComponent",
         "path": "cimi-statement-BodyStructureTopic-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",

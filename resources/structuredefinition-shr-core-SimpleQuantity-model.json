@@ -15,7 +15,7 @@
   "name": "SimpleQuantity",
   "title": "BC SimpleQuantity Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-SimpleQuantity-model",
         "path": "shr-core-SimpleQuantity-model",
         "definition": "A quantity where the comparator is not used, as defined in FHIR.\n\nThis class is not defined in CIMI V0.0.4 reference model. It could potentially be an archetype of Quantity. Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -104,7 +104,7 @@
         "id": "shr-core-SimpleQuantity-model",
         "path": "shr-core-SimpleQuantity-model",
         "definition": "A quantity where the comparator is not used, as defined in FHIR.\n\nThis class is not defined in CIMI V0.0.4 reference model. It could potentially be an archetype of Quantity. Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

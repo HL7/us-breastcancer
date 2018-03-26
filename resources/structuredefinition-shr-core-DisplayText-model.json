@@ -15,7 +15,7 @@
   "name": "DisplayText",
   "title": "BC DisplayText Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "shr-core-DisplayText-model",
         "path": "shr-core-DisplayText-model",
         "definition": "A string meant for reading by a person, for example, accompanying a code.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -78,7 +78,7 @@
         "id": "shr-core-DisplayText-model",
         "path": "shr-core-DisplayText-model",
         "definition": "A string meant for reading by a person, for example, accompanying a code.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

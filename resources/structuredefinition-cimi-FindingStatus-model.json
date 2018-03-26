@@ -15,7 +15,7 @@
   "name": "FindingStatus",
   "title": "BC FindingStatus Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-FindingStatus-model",
         "path": "cimi-FindingStatus-model",
         "definition": "Indicates whether the finding is preliminary, amended, final, etc..",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -78,7 +78,7 @@
         "id": "cimi-FindingStatus-model",
         "path": "cimi-FindingStatus-model",
         "definition": "Indicates whether the finding is preliminary, amended, final, etc..",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "NuclearPleomorphismScore",
   "title": "BC NuclearPleomorphismScore Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "oncology-NuclearPleomorphismScore-model",
         "path": "oncology-NuclearPleomorphismScore-model",
         "definition": "How large and varied the nuclei of the tumor cells are. Scored 1 to 3, with 3 being the most pleomorphism.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -144,7 +144,7 @@
         "id": "oncology-NuclearPleomorphismScore-model",
         "path": "oncology-NuclearPleomorphismScore-model",
         "definition": "How large and varied the nuclei of the tumor cells are. Scored 1 to 3, with 3 being the most pleomorphism.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

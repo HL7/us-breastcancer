@@ -15,7 +15,7 @@
   "name": "StageDetail",
   "title": "BC StageDetail Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-statement-StageDetail-model",
         "path": "cimi-statement-StageDetail-model",
         "definition": "The full staging information.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -73,7 +73,7 @@
         "id": "cimi-statement-StageDetail-model",
         "path": "cimi-statement-StageDetail-model",
         "definition": "The full staging information.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

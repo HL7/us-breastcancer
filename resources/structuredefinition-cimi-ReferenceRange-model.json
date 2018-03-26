@@ -15,7 +15,7 @@
   "name": "ReferenceRange",
   "title": "BC ReferenceRange Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-ReferenceRange-model",
         "path": "cimi-ReferenceRange-model",
         "definition": "The usual or acceptable range for a test result.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -164,7 +164,7 @@
         "id": "cimi-ReferenceRange-model",
         "path": "cimi-ReferenceRange-model",
         "definition": "The usual or acceptable range for a test result.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

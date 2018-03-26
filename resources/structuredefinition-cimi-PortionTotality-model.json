@@ -15,7 +15,7 @@
   "name": "PortionTotality",
   "title": "BC PortionTotality Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-PortionTotality-model",
         "path": "cimi-PortionTotality-model",
         "definition": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -84,7 +84,7 @@
         "id": "cimi-PortionTotality-model",
         "path": "cimi-PortionTotality-model",
         "definition": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

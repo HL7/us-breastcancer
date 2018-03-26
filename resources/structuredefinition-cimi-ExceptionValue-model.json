@@ -15,7 +15,7 @@
   "name": "ExceptionValue",
   "title": "BC ExceptionValue Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-ExceptionValue-model",
         "path": "cimi-ExceptionValue-model",
         "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -78,7 +78,7 @@
         "id": "cimi-ExceptionValue-model",
         "path": "cimi-ExceptionValue-model",
         "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

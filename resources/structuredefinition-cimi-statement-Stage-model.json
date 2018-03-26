@@ -15,7 +15,7 @@
   "name": "Stage",
   "title": "BC Stage Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-statement-Stage-model",
         "path": "cimi-statement-Stage-model",
         "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\tThis attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn't exist in core CIMI.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -94,7 +94,7 @@
         "id": "cimi-statement-Stage-model",
         "path": "cimi-statement-Stage-model",
         "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\tThis attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn't exist in core CIMI.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

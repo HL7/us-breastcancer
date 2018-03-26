@@ -15,7 +15,7 @@
   "name": "FindingTopic",
   "title": "BC FindingTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-FindingTopic-model",
         "path": "cimi-FindingTopic-model",
         "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -48,7 +48,7 @@
       {
         "id": "cimi-FindingTopic-model.topicCode",
         "path": "cimi-FindingTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -107,7 +107,7 @@
         "id": "cimi-FindingTopic-model",
         "path": "cimi-FindingTopic-model",
         "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nIn CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -116,7 +116,7 @@
       {
         "id": "cimi-FindingTopic-model.topicCode",
         "path": "cimi-FindingTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",

@@ -15,7 +15,7 @@
   "name": "HER2toCEP17Ratio",
   "title": "BC HER2toCEP17Ratio Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "oncology-HER2toCEP17Ratio-model",
         "path": "oncology-HER2toCEP17Ratio-model",
         "definition": "HER2 to CEP17 Ratio (dual probe only)",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -138,7 +138,7 @@
         "id": "oncology-HER2toCEP17Ratio-model",
         "path": "oncology-HER2toCEP17Ratio-model",
         "definition": "HER2 to CEP17 Ratio (dual probe only)",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

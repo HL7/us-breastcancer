@@ -15,7 +15,7 @@
   "name": "AverageHER2SignalsPerCell",
   "title": "BC AverageHER2SignalsPerCell Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "oncology-AverageHER2SignalsPerCell-model",
         "path": "oncology-AverageHER2SignalsPerCell-model",
         "definition": "Average number of HER2 signals per cell",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -138,7 +138,7 @@
         "id": "oncology-AverageHER2SignalsPerCell-model",
         "path": "oncology-AverageHER2SignalsPerCell-model",
         "definition": "Average number of HER2 signals per cell",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "AnatomicalLocation",
   "title": "BC AnatomicalLocation Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-AnatomicalLocation-model",
         "path": "cimi-AnatomicalLocation-model",
         "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -151,7 +151,7 @@
         "id": "cimi-AnatomicalLocation-model",
         "path": "cimi-AnatomicalLocation-model",
         "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

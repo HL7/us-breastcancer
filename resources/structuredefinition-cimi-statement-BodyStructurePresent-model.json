@@ -15,7 +15,7 @@
   "name": "BodyStructurePresent",
   "title": "BC BodyStructurePresent Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-statement-BodyStructurePresent-model",
         "path": "cimi-statement-BodyStructurePresent-model",
         "definition": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate.\n\nExamples include tissue types, tumors, and wounds. Body structures are continuants (objects that exist over a period of time) that allow observations of the same body structure to be related to be tracked over time.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -73,7 +73,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.topicCode",
         "path": "cimi-statement-BodyStructurePresent-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -89,7 +89,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.topicCode.value",
         "path": "cimi-statement-BodyStructurePresent-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement. ",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "alias": [
           "codeableConcept"
@@ -446,7 +446,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.specimen",
         "path": "cimi-statement-BodyStructurePresent-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -484,7 +484,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.precondition",
         "path": "cimi-statement-BodyStructurePresent-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -522,7 +522,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.evaluationComponent",
         "path": "cimi-statement-BodyStructurePresent-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
@@ -560,7 +560,7 @@
             "code": "410515003"
           }
         ],
-        "short": "PresenceContext indicates the finding in question exists or is present to some level of certainty. ",
+        "short": "PresenceContext indicates the finding in question exists or is present to some level of certainty.",
         "definition": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tIn CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has decided to combine these classes and rename them to PresenceContext, as represented here.",
         "min": 1,
         "max": "1",
@@ -581,7 +581,7 @@
         "id": "cimi-statement-BodyStructurePresent-model",
         "path": "cimi-statement-BodyStructurePresent-model",
         "definition": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate.\n\nExamples include tissue types, tumors, and wounds. Body structures are continuants (objects that exist over a period of time) that allow observations of the same body structure to be related to be tracked over time.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -615,7 +615,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.topicCode",
         "path": "cimi-statement-BodyStructurePresent-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -631,7 +631,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.topicCode.value",
         "path": "cimi-statement-BodyStructurePresent-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement. ",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "alias": [
           "codeableConcept"
@@ -988,7 +988,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.specimen",
         "path": "cimi-statement-BodyStructurePresent-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -1026,7 +1026,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.precondition",
         "path": "cimi-statement-BodyStructurePresent-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -1064,7 +1064,7 @@
       {
         "id": "cimi-statement-BodyStructurePresent-model.evaluationComponent",
         "path": "cimi-statement-BodyStructurePresent-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
@@ -1102,7 +1102,7 @@
             "code": "410515003"
           }
         ],
-        "short": "PresenceContext indicates the finding in question exists or is present to some level of certainty. ",
+        "short": "PresenceContext indicates the finding in question exists or is present to some level of certainty.",
         "definition": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tIn CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has decided to combine these classes and rename them to PresenceContext, as represented here.",
         "min": 1,
         "max": "1",

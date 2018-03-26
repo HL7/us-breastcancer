@@ -15,7 +15,7 @@
   "name": "PresenceContext",
   "title": "BC PresenceContext Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-PresenceContext-model",
         "path": "cimi-PresenceContext-model",
         "definition": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tIn CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has decided to combine these classes and rename them to PresenceContext, as represented here.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -54,7 +54,7 @@
       {
         "id": "cimi-PresenceContext-model.contextCode",
         "path": "cimi-PresenceContext-model.contextCode",
-        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. ",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
         "min": 1,
         "max": "1",
@@ -70,7 +70,7 @@
       {
         "id": "cimi-PresenceContext-model.contextCode.value",
         "path": "cimi-PresenceContext-model.contextCode.value",
-        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. ",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
         "alias": [
           "codeableConcept"
@@ -176,7 +176,7 @@
         "id": "cimi-PresenceContext-model",
         "path": "cimi-PresenceContext-model",
         "definition": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tIn CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has decided to combine these classes and rename them to PresenceContext, as represented here.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -185,7 +185,7 @@
       {
         "id": "cimi-PresenceContext-model.contextCode",
         "path": "cimi-PresenceContext-model.contextCode",
-        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. ",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
         "min": 1,
         "max": "1",
@@ -201,7 +201,7 @@
       {
         "id": "cimi-PresenceContext-model.contextCode.value",
         "path": "cimi-PresenceContext-model.contextCode.value",
-        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. ",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tThis attribute was named 'type' in CIMI V0.0.4. However, CIMI has recently moved to rename this element ContextCode, as anticipated here, to make it more clear that this is an identifier for the context, not the topic.",
         "alias": [
           "codeableConcept"

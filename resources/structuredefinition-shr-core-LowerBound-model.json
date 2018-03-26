@@ -15,7 +15,7 @@
   "name": "LowerBound",
   "title": "BC LowerBound Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-LowerBound-model",
         "path": "shr-core-LowerBound-model",
         "definition": "The lower limit on a range",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -72,7 +72,7 @@
         "id": "shr-core-LowerBound-model",
         "path": "shr-core-LowerBound-model",
         "definition": "The lower limit on a range",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

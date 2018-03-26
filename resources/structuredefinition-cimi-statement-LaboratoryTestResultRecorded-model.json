@@ -15,7 +15,7 @@
   "name": "LaboratoryTestResultRecorded",
   "title": "BC LaboratoryTestResultRecorded Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-statement-LaboratoryTestResultRecorded-model",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model",
         "definition": "Measurement resulting from a laboratory analysis.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -99,7 +99,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.topicCode",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -232,7 +232,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.specimen",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -270,7 +270,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.precondition",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -308,7 +308,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.evaluationComponent",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
@@ -324,7 +324,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.recordedContext",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
         "min": 1,
         "max": "1",
@@ -340,7 +340,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.members",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.members",
-        "short": "Members represent the elements of a group of a related but independent evaluations. ",
+        "short": "Members represent the elements of a group of a related but independent evaluations.",
         "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "min": 1,
         "max": "1",
@@ -377,7 +377,7 @@
         "id": "cimi-statement-LaboratoryTestResultRecorded-model",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model",
         "definition": "Measurement resulting from a laboratory analysis.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -437,7 +437,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.topicCode",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -570,7 +570,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.specimen",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -608,7 +608,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.precondition",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -646,7 +646,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.evaluationComponent",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
@@ -662,7 +662,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.recordedContext",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.recordedContext",
-        "short": "Context for an evaluation result, used to indicate an evaluation has been made. ",
+        "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tThe RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.",
         "min": 1,
         "max": "1",
@@ -678,7 +678,7 @@
       {
         "id": "cimi-statement-LaboratoryTestResultRecorded-model.members",
         "path": "cimi-statement-LaboratoryTestResultRecorded-model.members",
-        "short": "Members represent the elements of a group of a related but independent evaluations. ",
+        "short": "Members represent the elements of a group of a related but independent evaluations.",
         "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "min": 1,
         "max": "1",

@@ -15,7 +15,7 @@
   "name": "FindingMethod",
   "title": "BC FindingMethod Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-FindingMethod-model",
         "path": "cimi-FindingMethod-model",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -78,7 +78,7 @@
         "id": "cimi-FindingMethod-model",
         "path": "cimi-FindingMethod-model",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

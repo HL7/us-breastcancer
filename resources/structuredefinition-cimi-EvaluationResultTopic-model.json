@@ -15,7 +15,7 @@
   "name": "EvaluationResultTopic",
   "title": "BC EvaluationResultTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-EvaluationResultTopic-model",
         "path": "cimi-EvaluationResultTopic-model",
         "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Differences:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.\n3) In CIMI Version 0.0.4, allowable datatype for result include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to the allowable FHIR datatypes.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -54,7 +54,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.value[x]",
         "path": "cimi-EvaluationResultTopic-model.value[x]",
-        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). ",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
         "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Differences:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.\n3) In CIMI Version 0.0.4, allowable datatype for result include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to the allowable FHIR datatypes.",
         "alias": [
           "quantity",
@@ -105,7 +105,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.topicCode",
         "path": "cimi-EvaluationResultTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -238,7 +238,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.specimen",
         "path": "cimi-EvaluationResultTopic-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -276,7 +276,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.precondition",
         "path": "cimi-EvaluationResultTopic-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -314,7 +314,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.evaluationComponent",
         "path": "cimi-EvaluationResultTopic-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
@@ -335,7 +335,7 @@
         "id": "cimi-EvaluationResultTopic-model",
         "path": "cimi-EvaluationResultTopic-model",
         "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Differences:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.\n3) In CIMI Version 0.0.4, allowable datatype for result include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to the allowable FHIR datatypes.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -344,7 +344,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.value[x]",
         "path": "cimi-EvaluationResultTopic-model.value[x]",
-        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). ",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
         "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Differences:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, because Observation.specimen is 0..1. Therefore, the cardinality of Specimen is changed to 0..1 to be consistent with FHIR.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and so they are included here. This represents a significant departure from the CIMI model.\n3) In CIMI Version 0.0.4, allowable datatype for result include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to the allowable FHIR datatypes.",
         "alias": [
           "quantity",
@@ -395,7 +395,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.topicCode",
         "path": "cimi-EvaluationResultTopic-model.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement. ",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
         "min": 1,
         "max": "1",
@@ -528,7 +528,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.specimen",
         "path": "cimi-EvaluationResultTopic-model.specimen",
-        "short": "Sample for analysis. ",
+        "short": "Sample for analysis.",
         "definition": "Sample for analysis. \n\nNOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.",
         "min": 0,
         "max": "1",
@@ -566,7 +566,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.precondition",
         "path": "cimi-EvaluationResultTopic-model.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. ",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
@@ -604,7 +604,7 @@
       {
         "id": "cimi-EvaluationResultTopic-model.evaluationComponent",
         "path": "cimi-EvaluationResultTopic-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. ",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",

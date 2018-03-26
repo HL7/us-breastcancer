@@ -15,7 +15,7 @@
   "name": "Directionality",
   "title": "BC Directionality Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -45,7 +45,7 @@
         "id": "cimi-Directionality-model",
         "path": "cimi-Directionality-model",
         "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -84,7 +84,7 @@
         "id": "cimi-Directionality-model",
         "path": "cimi-Directionality-model",
         "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

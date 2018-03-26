@@ -15,7 +15,7 @@
   "name": "Entity",
   "title": "BC Entity Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-Entity-model",
         "path": "cimi-Entity-model",
         "definition": "Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.\n\nIn CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.\n\nFurther, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI's participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -64,7 +64,7 @@
         "id": "cimi-Entity-model",
         "path": "cimi-Entity-model",
         "definition": "Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.\n\nIn CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.\n\nFurther, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI's participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

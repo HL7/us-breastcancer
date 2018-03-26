@@ -15,7 +15,7 @@
   "name": "CollectionTime",
   "title": "BC CollectionTime Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-CollectionTime-model",
         "path": "cimi-CollectionTime-model",
         "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tSpecimen collection time seems to be missing in CIMI V0.0.4. Given that is not in Specimen, the next place to look is in the associated CollectionProcedure, specifically in the Performance context of the clinical statement representing that procedure. But there is no time found there, either, only a temporalContext (type Concept) and duration (not a point in time). If the specimen collection time is supposed to be recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -76,7 +76,7 @@
         "id": "cimi-CollectionTime-model",
         "path": "cimi-CollectionTime-model",
         "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tSpecimen collection time seems to be missing in CIMI V0.0.4. Given that is not in Specimen, the next place to look is in the associated CollectionProcedure, specifically in the Performance context of the clinical statement representing that procedure. But there is no time found there, either, only a temporalContext (type Concept) and duration (not a point in time). If the specimen collection time is supposed to be recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

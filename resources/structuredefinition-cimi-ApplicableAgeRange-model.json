@@ -15,7 +15,7 @@
   "name": "ApplicableAgeRange",
   "title": "BC ApplicableAgeRange Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-ApplicableAgeRange-model",
         "path": "cimi-ApplicableAgeRange-model",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -72,7 +72,7 @@
         "id": "cimi-ApplicableAgeRange-model",
         "path": "cimi-ApplicableAgeRange-model",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

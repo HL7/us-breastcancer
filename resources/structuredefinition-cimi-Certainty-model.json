@@ -15,7 +15,7 @@
   "name": "Certainty",
   "title": "BC Certainty Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-Certainty-model",
         "path": "cimi-Certainty-model",
         "definition": "The degree of confidence in a conclusion or assertion.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -72,7 +72,7 @@
         "id": "cimi-Certainty-model",
         "path": "cimi-Certainty-model",
         "definition": "The degree of confidence in a conclusion or assertion.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

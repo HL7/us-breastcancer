@@ -15,7 +15,7 @@
   "name": "RelevantTime",
   "title": "BC RelevantTime Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "cimi-RelevantTime-model",
         "path": "cimi-RelevantTime-model",
         "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -76,7 +76,7 @@
         "id": "cimi-RelevantTime-model",
         "path": "cimi-RelevantTime-model",
         "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

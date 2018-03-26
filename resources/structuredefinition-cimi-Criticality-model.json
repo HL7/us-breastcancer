@@ -15,7 +15,7 @@
   "name": "Criticality",
   "title": "BC Criticality Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -46,7 +46,7 @@
         "id": "cimi-Criticality-model",
         "path": "cimi-Criticality-model",
         "definition": "The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -79,7 +79,7 @@
         "id": "cimi-Criticality-model",
         "path": "cimi-Criticality-model",
         "definition": "The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

@@ -15,7 +15,7 @@
   "name": "BreastCancerTCategory",
   "title": "BC BreastCancerTCategory Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -46,7 +46,7 @@
         "id": "oncology-BreastCancerTCategory-model",
         "path": "oncology-BreastCancerTCategory-model",
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -186,7 +186,7 @@
         "id": "oncology-BreastCancerTCategory-model",
         "path": "oncology-BreastCancerTCategory-model",
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,

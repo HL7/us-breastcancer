@@ -15,7 +15,7 @@
   "name": "Quantity",
   "title": "BC Quantity Logical Model",
   "status": "draft",
-  "date": "2018-03-24",
+  "date": "2018-03-25",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -39,7 +39,7 @@
         "id": "shr-core-Quantity-model",
         "path": "shr-core-Quantity-model",
         "definition": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
@@ -104,7 +104,7 @@
         "id": "shr-core-Quantity-model",
         "path": "shr-core-Quantity-model",
         "definition": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
-        "min": "0",
+        "min": 0,
         "max": "*",
         "mustSupport": false,
         "isModifier": false,
