@@ -15,7 +15,7 @@
   "name": "Abatement",
   "title": "BC Abatement Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -47,6 +47,11 @@
         "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "cimi-Abatement-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -66,6 +71,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-Abatement-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "dateTime"
@@ -100,6 +110,11 @@
         "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "cimi-Abatement-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -119,6 +134,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-Abatement-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "dateTime"

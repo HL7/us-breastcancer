@@ -62,7 +62,7 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <div class="block">When the sample was obtained, as a specific time or time period.
 		
-		Specimen collection time seems to be missing in CIMI V0.0.4. Given that is not in Specimen, the next place to look is in the associated CollectionProcedure, specifically in the Performance context of the clinical statement representing that procedure. But there is no time found there, either, only a temporalContext (type Concept) and duration (not a point in time). If the specimen collection time is supposed to be recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</div>
+		CIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</div>
         </dd>
       </dl>
       <dl>

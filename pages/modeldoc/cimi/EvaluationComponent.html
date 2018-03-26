@@ -368,7 +368,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../cimi/ExceptionValue.html">ExceptionValue</a></strong></code>
     
     </div>
-    <div class="block">Reason that a value associated with a test or other finding is missing.</div>
+    <div class="block">Reason that a value associated with a test or other finding is missing.
+		
+		CIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR&#39;s required data absent values, and with additional concepts from CIMI.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -392,7 +394,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../cimi/Interpretation.html">Interpretation</a></strong></code>
     
     </div>
-    <div class="block">A clinical interpretation of a finding.</div>
+    <div class="block">A clinical interpretation of a finding.
+		
+		CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

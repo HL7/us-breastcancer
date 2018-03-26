@@ -3,12 +3,12 @@
   "id": "oncology-BreastSite",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSite Profile</b></p>\n  <p>A body site specific to the breast structure.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSite maps to BodySite:\n  CodeableConcept maps to code\n  Laterality maps to qualifier (slice on = coding.code)\n  Directionality maps to qualifier\n  PortionTotality maps to qualifier\t\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSite Profile</b></p>\n  <p>A body site specific to the breast structure.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSite maps to BodySite:\n  CodeableConcept maps to code\n  Laterality maps to qualifier (slice on = coding.code)\n  AnatomicalDirection maps to qualifier\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite",
   "name": "BreastSite",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -566,10 +566,10 @@
         "sliceName": "cimi-Laterality"
       },
       {
-        "id": "BodySite:oncology-BreastSite.qualifier:cimi-Directionality",
+        "id": "BodySite:oncology-BreastSite.qualifier:cimi-AnatomicalDirection",
         "path": "BodySite.qualifier",
-        "short": "Directionality",
-        "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "short": "AnatomicalDirection",
+        "definition": "Anatomical location or specimen further detailing directionality.",
         "min": 0,
         "max": "0",
         "type": [
@@ -580,7 +580,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-DirectionalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-AnatomicalDirectionVS"
           }
         },
         "mapping": [
@@ -601,45 +601,7 @@
             "map": "what"
           }
         ],
-        "sliceName": "cimi-Directionality"
-      },
-      {
-        "id": "BodySite:oncology-BreastSite.qualifier:cimi-PortionTotality",
-        "path": "BodySite.qualifier",
-        "short": "PortionTotality",
-        "definition": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-PortionTotalityVS"
-          }
-        },
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "No distinct element defined in V2.x. The IHE Radiology Technical Framework directs the use of OBR-15-specimen source to contain laterality for imaging studies."
-          },
-          {
-            "identity": "rim",
-            "map": ".targetSiteCode"
-          },
-          {
-            "identity": "openehr",
-            "map": "Combines Side, Numerical identifier, Anatomical plane,and Aspect"
-          },
-          {
-            "identity": "w5",
-            "map": "what"
-          }
-        ],
-        "sliceName": "cimi-PortionTotality"
+        "sliceName": "cimi-AnatomicalDirection"
       },
       {
         "id": "BodySite:oncology-BreastSite.description",
@@ -804,32 +766,17 @@
         }
       },
       {
-        "id": "BodySite:oncology-BreastSite.qualifier:cimi-Directionality",
+        "id": "BodySite:oncology-BreastSite.qualifier:cimi-AnatomicalDirection",
         "path": "BodySite.qualifier",
-        "sliceName": "cimi-Directionality",
-        "short": "Directionality",
-        "definition": "Anatomical location or specimen further detailing directionality.\n\tNote: In CIMI Version 0.0.4, this is called anatomicalDirection.",
+        "sliceName": "cimi-AnatomicalDirection",
+        "short": "AnatomicalDirection",
+        "definition": "Anatomical location or specimen further detailing directionality.",
         "min": 0,
         "max": "0",
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-DirectionalityVS"
-          }
-        }
-      },
-      {
-        "id": "BodySite:oncology-BreastSite.qualifier:cimi-PortionTotality",
-        "path": "BodySite.qualifier",
-        "sliceName": "cimi-PortionTotality",
-        "short": "PortionTotality",
-        "definition": "Further detail of the anatomical location or specimen detailing whether it includes the entire entity or only a part or portion. NOTE: This attribute is not part of CIMI. It was included because it further details an anatomical location or specimen, in Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).",
-        "min": 0,
-        "max": "0",
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-PortionTotalityVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-AnatomicalDirectionVS"
           }
         }
       }

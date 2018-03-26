@@ -15,7 +15,7 @@
   "name": "BreastSpecimen",
   "title": "BC BreastSpecimen Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -41,6 +41,11 @@
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "oncology-BreastSpecimen-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -58,6 +63,11 @@
         "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.type",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Type-model"
@@ -77,6 +87,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-Type-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -96,9 +111,14 @@
         "id": "oncology-BreastSpecimen-model.sourceSpecimen",
         "path": "oncology-BreastSpecimen-model.sourceSpecimen",
         "short": "Identifier for the source specimen from which this specimen was derived.",
-        "definition": "Identifier for the source specimen from which this specimen was derived.\n\t\t\n\t\tIn CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
+        "definition": "Identifier for the source specimen from which this specimen was derived.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.sourceSpecimen",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -119,6 +139,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.sourceSpecimen.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Reference",
@@ -142,6 +167,11 @@
         "definition": "Time received by accepting facility or unit.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.receivedTime",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ReceivedTime-model"
@@ -155,9 +185,14 @@
         "id": "oncology-BreastSpecimen-model.collectionTime",
         "path": "oncology-BreastSpecimen-model.collectionTime",
         "short": "When the sample was obtained, as a specific time or time period.",
-        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tSpecimen collection time seems to be missing in CIMI V0.0.4. Given that is not in Specimen, the next place to look is in the associated CollectionProcedure, specifically in the Performance context of the clinical statement representing that procedure. But there is no time found there, either, only a temporalContext (type Concept) and duration (not a point in time). If the specimen collection time is supposed to be recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionTime",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionTime-model"
@@ -174,6 +209,11 @@
         "definition": "How the specimen was obtained.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionMethod",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionMethod-model"
@@ -193,6 +233,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-CollectionMethod-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -215,6 +260,11 @@
         "definition": "The body site where specimen was collected",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionSite",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -235,6 +285,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionSite.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
@@ -251,6 +306,11 @@
         "definition": "The time between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\tNOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.coldIschemiaTime",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemiaTime-model"
@@ -270,6 +330,11 @@
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "oncology-BreastSpecimen-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -287,6 +352,11 @@
         "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.type",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Type-model"
@@ -306,6 +376,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-Type-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -325,9 +400,14 @@
         "id": "oncology-BreastSpecimen-model.sourceSpecimen",
         "path": "oncology-BreastSpecimen-model.sourceSpecimen",
         "short": "Identifier for the source specimen from which this specimen was derived.",
-        "definition": "Identifier for the source specimen from which this specimen was derived.\n\t\t\n\t\tIn CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
+        "definition": "Identifier for the source specimen from which this specimen was derived.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.sourceSpecimen",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -348,6 +428,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.sourceSpecimen.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Reference",
@@ -371,6 +456,11 @@
         "definition": "Time received by accepting facility or unit.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.receivedTime",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ReceivedTime-model"
@@ -384,9 +474,14 @@
         "id": "oncology-BreastSpecimen-model.collectionTime",
         "path": "oncology-BreastSpecimen-model.collectionTime",
         "short": "When the sample was obtained, as a specific time or time period.",
-        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tSpecimen collection time seems to be missing in CIMI V0.0.4. Given that is not in Specimen, the next place to look is in the associated CollectionProcedure, specifically in the Performance context of the clinical statement representing that procedure. But there is no time found there, either, only a temporalContext (type Concept) and duration (not a point in time). If the specimen collection time is supposed to be recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionTime",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionTime-model"
@@ -403,6 +498,11 @@
         "definition": "How the specimen was obtained.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionMethod",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionMethod-model"
@@ -422,6 +522,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-CollectionMethod-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -444,6 +549,11 @@
         "definition": "The body site where specimen was collected",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionSite",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -464,6 +574,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.collectionSite.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
@@ -480,6 +595,11 @@
         "definition": "The time between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\tNOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastSpecimen-model.coldIschemiaTime",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemiaTime-model"

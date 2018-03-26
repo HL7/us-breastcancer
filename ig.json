@@ -135,9 +135,6 @@
     "StructureDefinition/oncology-DistanceToNipple-extension": {
       "base": "StructureDefinition-oncology-DistanceToNipple-extension.html"
     },
-    "StructureDefinition/cimi-ExceptionValue-extension": {
-      "base": "StructureDefinition-cimi-ExceptionValue-extension.html"
-    },
     "StructureDefinition/cimi-FindingMethod-extension": {
       "base": "StructureDefinition-cimi-FindingMethod-extension.html"
     },
@@ -207,6 +204,9 @@
     "StructureDefinition/primitive-xhtml-extension": {
       "base": "StructureDefinition-primitive-xhtml-extension.html"
     },
+    "ValueSet/cimi-AnatomicalDirectionVS": {
+      "base": "ValueSet-cimi-AnatomicalDirectionVS.html"
+    },
     "ValueSet/cimi-AnatomicalLocationVS": {
       "base": "ValueSet-cimi-AnatomicalLocationVS.html"
     },
@@ -261,9 +261,6 @@
     "ValueSet/cimi-statement-DiagnosticServiceVS": {
       "base": "ValueSet-cimi-statement-DiagnosticServiceVS.html"
     },
-    "ValueSet/cimi-DirectionalityVS": {
-      "base": "ValueSet-cimi-DirectionalityVS.html"
-    },
     "ValueSet/cimi-ExceptionValueVS": {
       "base": "ValueSet-cimi-ExceptionValueVS.html"
     },
@@ -312,9 +309,6 @@
     "ValueSet/oncology-OncotypeDxInvasiveRiskScoreInterpretationVS": {
       "base": "ValueSet-oncology-OncotypeDxInvasiveRiskScoreInterpretationVS.html"
     },
-    "ValueSet/cimi-PortionTotalityVS": {
-      "base": "ValueSet-cimi-PortionTotalityVS.html"
-    },
     "ValueSet/oncology-PositiveNegativeEquivocalVS": {
       "base": "ValueSet-oncology-PositiveNegativeEquivocalVS.html"
     },
@@ -347,6 +341,9 @@
     },
     "ValueSet/shr-core-YesNoVS": {
       "base": "ValueSet-shr-core-YesNoVS.html"
+    },
+    "CodeSystem/cimi-AnatomicalDirectionCS": {
+      "base": "CodeSystem-cimi-AnatomicalDirectionCS.html"
     },
     "CodeSystem/oncology-BreastCancerMCategoryCS": {
       "base": "CodeSystem-oncology-BreastCancerMCategoryCS.html"
@@ -387,9 +384,6 @@
     "CodeSystem/cimi-statement-DiagnosticServiceCS": {
       "base": "CodeSystem-cimi-statement-DiagnosticServiceCS.html"
     },
-    "CodeSystem/cimi-DirectionalityCS": {
-      "base": "CodeSystem-cimi-DirectionalityCS.html"
-    },
     "CodeSystem/cimi-ExceptionValueCS": {
       "base": "CodeSystem-cimi-ExceptionValueCS.html"
     },
@@ -425,9 +419,6 @@
     },
     "CodeSystem/oncology-OncotypeDxInvasiveRiskScoreInterpretationCS": {
       "base": "CodeSystem-oncology-OncotypeDxInvasiveRiskScoreInterpretationCS.html"
-    },
-    "CodeSystem/cimi-PortionTotalityCS": {
-      "base": "CodeSystem-cimi-PortionTotalityCS.html"
     },
     "CodeSystem/oncology-PositiveNegativeEquivocalCS": {
       "base": "CodeSystem-oncology-PositiveNegativeEquivocalCS.html"
@@ -466,6 +457,13 @@
     },
     "StructureDefinition/shr-core-AgeRange-model": {
       "base": "StructureDefinition-shr-core-AgeRange-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/cimi-AnatomicalDirection-model": {
+      "base": "StructureDefinition-cimi-AnatomicalDirection-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -688,6 +686,13 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/cimi-CompoundClinicalStatement-model": {
+      "base": "StructureDefinition-cimi-CompoundClinicalStatement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-ConditionPresenceContext-model": {
       "base": "StructureDefinition-cimi-ConditionPresenceContext-model.html",
       "template-base": "sd-logical.html",
@@ -704,6 +709,13 @@
     },
     "StructureDefinition/cimi-ConditionTopic-model": {
       "base": "StructureDefinition-cimi-ConditionTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/cimi-Content-model": {
+      "base": "StructureDefinition-cimi-Content-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -739,13 +751,6 @@
     },
     "StructureDefinition/cimi-statement-DiagnosticService-model": {
       "base": "StructureDefinition-cimi-statement-DiagnosticService-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-Directionality-model": {
-      "base": "StructureDefinition-cimi-Directionality-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -891,6 +896,13 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/cimi-IndivisibleClinicalStatement-model": {
+      "base": "StructureDefinition-cimi-IndivisibleClinicalStatement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-InformationEntry-model": {
       "base": "StructureDefinition-cimi-InformationEntry-model.html",
       "template-base": "sd-logical.html",
@@ -1026,13 +1038,6 @@
     },
     "StructureDefinition/shr-core-PercentageRange-model": {
       "base": "StructureDefinition-shr-core-PercentageRange-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-PortionTotality-model": {
-      "base": "StructureDefinition-cimi-PortionTotality-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

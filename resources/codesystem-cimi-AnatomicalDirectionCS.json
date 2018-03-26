@@ -1,17 +1,17 @@
 {
   "resourceType": "CodeSystem",
-  "id": "cimi-DirectionalityCS",
+  "id": "cimi-AnatomicalDirectionCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC DirectionalityCS CodeSystem</b></p>\n<p>Anatomical location or specimen further detailing directionality. Codes are from NCI</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC AnatomicalDirectionCS CodeSystem</b></p>\n<p>Anatomical location or specimen further detailing directionality. Codes are from NCI</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-DirectionalityCS",
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-AnatomicalDirectionCS",
   "identifier": {
     "system": "http://hl7.org/fhir/us/breastcancer",
-    "value": "cimi.DirectionalityCS"
+    "value": "cimi.AnatomicalDirectionCS"
   },
-  "name": "DirectionalityCS",
-  "title": "BC DirectionalityCS CodeSystem",
+  "name": "AnatomicalDirectionCS",
+  "title": "BC AnatomicalDirectionCS CodeSystem",
   "status": "draft",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "description": "Anatomical location or specimen further detailing directionality. Codes are from NCI",
   "caseSensitive": true,
   "content": "complete",

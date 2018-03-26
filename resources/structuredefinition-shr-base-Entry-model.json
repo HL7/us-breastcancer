@@ -15,7 +15,7 @@
   "name": "Entry",
   "title": "BC Entry Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -41,6 +41,11 @@
         "definition": "Entry contains attributes that apply to all such items. An Entry may represent an item in a single person's health record, or could represent an entity that surfaces in multiple patient records, such as organizations or practitioners.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-base-Entry-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -52,6 +57,11 @@
         "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
         "min": 0,
         "max": "0",
+        "base": {
+          "path": "shr-base-Entry-model.intentionallyBlank",
+          "min": 0,
+          "max": "0"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -66,6 +76,11 @@
         "definition": "Entry contains attributes that apply to all such items. An Entry may represent an item in a single person's health record, or could represent an entity that surfaces in multiple patient records, such as organizations or practitioners.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-base-Entry-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -77,6 +92,11 @@
         "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
         "min": 0,
         "max": "0",
+        "base": {
+          "path": "shr-base-Entry-model.intentionallyBlank",
+          "min": 0,
+          "max": "0"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false

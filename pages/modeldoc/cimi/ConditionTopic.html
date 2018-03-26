@@ -62,9 +62,7 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <div class="block">Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#39;Condition&#39; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. 
 
-In CIMI Version 0.0.4, the corresponding class is ConditionAssertion, but this name has been changed to ConditionTopic, as anticipated here. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, any properties associated with condition occurrence have been placed with ConditionPresenceContext.
-
-The presence of terminology bindings (necessary to align with FHIR Condition.category and enforce the extensible binding in US Core of Condition.code) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</div>
+CIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.</div>
         </dd>
       </dl>
       <dl>
@@ -191,7 +189,7 @@ The presence of terminology bindings (necessary to align with FHIR Condition.cat
         </div>
             </td>
 </tr>    
-                                                              
+                                                    
   <tr class="altColor">
 
   <td class="colFirst">
@@ -280,8 +278,6 @@ The presence of terminology bindings (necessary to align with FHIR Condition.cat
                       <h3>Properties inherited from&nbsp;
                         <a href="../cimi/AssertionTopic.html">AssertionTopic</a>
                       </h3>
-                                                                        <code><a href="../cimi/ExceptionValue.html">ExceptionValue</a></code>
-                        
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>

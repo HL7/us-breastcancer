@@ -219,13 +219,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-ExceptionValue-extension" />
-                <display value="BC ExceptionValue Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-FindingMethod-extension" />
                 <display value="BC FindingMethod Extension" />
             </sourceReference>
@@ -387,6 +380,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/cimi-AnatomicalDirectionVS" />
+                <display value="BC AnatomicalDirectionVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/cimi-AnatomicalLocationVS" />
                 <display value="BC AnatomicalLocationVS ValueSet" />
             </sourceReference>
@@ -513,13 +513,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/cimi-DirectionalityVS" />
-                <display value="BC DirectionalityVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/cimi-ExceptionValueVS" />
                 <display value="BC ExceptionValueVS ValueSet" />
             </sourceReference>
@@ -632,13 +625,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/cimi-PortionTotalityVS" />
-                <display value="BC PortionTotalityVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/oncology-PositiveNegativeEquivocalVS" />
                 <display value="BC PositiveNegativeEquivocalVS ValueSet" />
             </sourceReference>
@@ -711,6 +697,13 @@
             <sourceReference>
                 <reference value="ValueSet/shr-core-YesNoVS" />
                 <display value="BC YesNoVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/cimi-AnatomicalDirectionCS" />
+                <display value="BC AnatomicalDirectionCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -807,13 +800,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/cimi-DirectionalityCS" />
-                <display value="BC DirectionalityCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/cimi-ExceptionValueCS" />
                 <display value="BC ExceptionValueCS CodeSystem" />
             </sourceReference>
@@ -898,13 +884,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/cimi-PortionTotalityCS" />
-                <display value="BC PortionTotalityCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/oncology-PositiveNegativeEquivocalCS" />
                 <display value="BC PositiveNegativeEquivocalCS CodeSystem" />
             </sourceReference>
@@ -970,6 +949,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-AgeRange-model" />
                   <display value="AgeRange" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-AnatomicalDirection-model" />
+                  <display value="AnatomicalDirection" />
               </sourceReference>
           </resource>
           <resource>
@@ -1192,6 +1178,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/cimi-CompoundClinicalStatement-model" />
+                  <display value="CompoundClinicalStatement" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-ConditionPresenceContext-model" />
                   <display value="ConditionPresenceContext" />
               </sourceReference>
@@ -1208,6 +1201,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ConditionTopic-model" />
                   <display value="ConditionTopic" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-Content-model" />
+                  <display value="Content" />
               </sourceReference>
           </resource>
           <resource>
@@ -1243,13 +1243,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-DiagnosticService-model" />
                   <display value="DiagnosticService" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-Directionality-model" />
-                  <display value="Directionality" />
               </sourceReference>
           </resource>
           <resource>
@@ -1395,6 +1388,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/cimi-IndivisibleClinicalStatement-model" />
+                  <display value="IndivisibleClinicalStatement" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-InformationEntry-model" />
                   <display value="InformationEntry" />
               </sourceReference>
@@ -1530,13 +1530,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-PercentageRange-model" />
                   <display value="PercentageRange" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-PortionTotality-model" />
-                  <display value="PortionTotality" />
               </sourceReference>
           </resource>
           <resource>

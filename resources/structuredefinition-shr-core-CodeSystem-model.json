@@ -15,7 +15,7 @@
   "name": "CodeSystem",
   "title": "BC CodeSystem Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -41,6 +41,11 @@
         "definition": "A formal terminology system.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-core-CodeSystem-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -55,6 +60,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-CodeSystem-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "uri"
@@ -74,6 +84,11 @@
         "definition": "A formal terminology system.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-core-CodeSystem-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -88,6 +103,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-CodeSystem-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "uri"

@@ -15,7 +15,7 @@
   "name": "ClockDirection",
   "title": "BC ClockDirection Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -47,6 +47,11 @@
         "definition": "A direction indicated by an angle relative to 12 o'clock.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-core-ClockDirection-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -61,6 +66,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-ClockDirection-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -86,6 +96,11 @@
         "definition": "A direction indicated by an angle relative to 12 o'clock.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-core-ClockDirection-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -100,6 +115,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-ClockDirection-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"

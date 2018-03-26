@@ -15,7 +15,7 @@
   "name": "CompleteMembraneStainingPercent",
   "title": "BC CompleteMembraneStainingPercent Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -48,6 +48,11 @@
         "definition": "Percentage of cells with uniform intense complete membrane staining.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -62,6 +67,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
@@ -81,6 +91,11 @@
         ],
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.value",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "decimal"
@@ -97,6 +112,11 @@
         "definition": "Comparator",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.comparator",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Comparator-model"
@@ -113,6 +133,11 @@
         "definition": "Code for the unit of measure of the quantity.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.units",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Units-model"
@@ -138,6 +163,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-Units-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -222,6 +252,11 @@
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "uri"
@@ -252,6 +287,11 @@
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "string"
@@ -281,6 +321,11 @@
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "code"
@@ -317,6 +362,11 @@
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "string"
@@ -347,6 +397,11 @@
         "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "boolean"
@@ -372,9 +427,14 @@
         "id": "oncology-CompleteMembraneStainingPercent-model.exceptionValue",
         "path": "oncology-CompleteMembraneStainingPercent-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, and with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
@@ -394,9 +454,14 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
@@ -419,6 +484,11 @@
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
         "max": "0",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.referenceRange",
+          "min": 0,
+          "max": "0"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
@@ -438,6 +508,11 @@
         "definition": "Percentage of cells with uniform intense complete membrane staining.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -452,6 +527,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
@@ -471,6 +551,11 @@
         ],
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.value",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "decimal"
@@ -487,6 +572,11 @@
         "definition": "Comparator",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.comparator",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Comparator-model"
@@ -503,6 +593,11 @@
         "definition": "Code for the unit of measure of the quantity.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.units",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Units-model"
@@ -528,6 +623,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-Units-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -612,6 +712,11 @@
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "uri"
@@ -642,6 +747,11 @@
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "string"
@@ -671,6 +781,11 @@
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "code"
@@ -707,6 +822,11 @@
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "string"
@@ -737,6 +857,11 @@
         "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "boolean"
@@ -762,9 +887,14 @@
         "id": "oncology-CompleteMembraneStainingPercent-model.exceptionValue",
         "path": "oncology-CompleteMembraneStainingPercent-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, and with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
@@ -784,9 +914,14 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
@@ -809,6 +944,11 @@
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
         "max": "0",
+        "base": {
+          "path": "oncology-CompleteMembraneStainingPercent-model.referenceRange",
+          "min": 0,
+          "max": "0"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"

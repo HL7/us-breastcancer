@@ -15,7 +15,7 @@
   "name": "Range",
   "title": "BC Range Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -41,6 +41,11 @@
         "definition": "An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-core-Range-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -52,6 +57,11 @@
         "definition": "The lower limit on a range",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.lowerBound",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -72,6 +82,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.lowerBound.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-SimpleQuantity-model"
@@ -88,6 +103,11 @@
         "definition": "The upper limit on a quantitative value.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.upperBound",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -108,6 +128,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.upperBound.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-SimpleQuantity-model"
@@ -127,6 +152,11 @@
         "definition": "An interval defined by a quantitative upper and/or lower bound. One of the two bounds must be specified, and the lower bound must be less than the upper bound. When Quantities are specified, the units of measure must be the same.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "shr-core-Range-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -138,6 +168,11 @@
         "definition": "The lower limit on a range",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.lowerBound",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -158,6 +193,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.lowerBound.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-SimpleQuantity-model"
@@ -174,6 +214,11 @@
         "definition": "The upper limit on a quantitative value.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.upperBound",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "BackboneElement"
@@ -194,6 +239,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "shr-core-Range-model.upperBound.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-SimpleQuantity-model"

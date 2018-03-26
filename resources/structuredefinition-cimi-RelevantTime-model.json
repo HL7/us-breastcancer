@@ -3,7 +3,7 @@
   "id": "cimi-RelevantTime-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC RelevantTime Logical Model</b></p>\n  <p>The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC RelevantTime Logical Model</b></p>\n  <p>The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RelevantTime-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "RelevantTime",
   "title": "BC RelevantTime Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+  "description": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-RelevantTime-model",
@@ -38,9 +38,14 @@
       {
         "id": "cimi-RelevantTime-model",
         "path": "cimi-RelevantTime-model",
-        "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "cimi-RelevantTime-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -49,13 +54,18 @@
         "id": "cimi-RelevantTime-model.value[x]",
         "path": "cimi-RelevantTime-model.value[x]",
         "short": "DateTime or TimePeriod representing the time or time period that the finding addresses.",
-        "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
         "alias": [
           "dateTime",
           "timePeriod"
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-RelevantTime-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "dateTime"
@@ -75,9 +85,14 @@
       {
         "id": "cimi-RelevantTime-model",
         "path": "cimi-RelevantTime-model",
-        "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "cimi-RelevantTime-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -86,13 +101,18 @@
         "id": "cimi-RelevantTime-model.value[x]",
         "path": "cimi-RelevantTime-model.value[x]",
         "short": "DateTime or TimePeriod representing the time or time period that the finding addresses.",
-        "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
         "alias": [
           "dateTime",
           "timePeriod"
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "cimi-RelevantTime-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "dateTime"

@@ -64,7 +64,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 	
 	For example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.
 	
-	The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI is the process of adding it. That change is anticipated here.</div>
+	CIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.</div>
         </dd>
       </dl>
       <dl>
@@ -197,7 +197,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../cimi/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block">Indicates whether the finding is preliminary, amended, final, etc..</div>
+    <div class="block">Indicates whether the finding is preliminary, amended, final, etc..
+		
+		CIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -221,7 +223,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../cimi/ExceptionValue.html">ExceptionValue</a></strong></code>
     
     </div>
-    <div class="block">Reason that a value associated with a test or other finding is missing.</div>
+    <div class="block">Reason that a value associated with a test or other finding is missing.
+		
+		CIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR&#39;s required data absent values, and with additional concepts from CIMI.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -247,7 +251,9 @@ if (location.href.indexOf('is-external=true') == -1) {
     </div>
     <div class="block">The time or time period that the finding addresses.
 		
-		The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).</div>
+		The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).
+		
+		CIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

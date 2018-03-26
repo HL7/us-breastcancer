@@ -149,7 +149,7 @@ The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Ri
       <td><a href="http://hl7.org/fhir/STU3/bodysite.html">BodySite</a></td>
       <td>A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.
 
-Note: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.</td>
+CIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-statement-ConditionPresenceStatement.html">ConditionPresenceStatement</a></td>
@@ -195,9 +195,9 @@ EvaluationResultRecorded has a value representing the result (answer), or an Exc
     <tr>
       <td><a href="StructureDefinition-cimi-Specimen.html">Specimen</a></td>
       <td><a href="http://hl7.org/fhir/STU3/specimen.html">Specimen</a></td>
-      <td>Sample for analysis. 
+      <td>A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. 
 
-NOTE: This class has been cut down to separate it from other parts of the reference model that are not relevant to the current oncology ballot.</td>
+CIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.</td>
     </tr>
     
   </tbody>

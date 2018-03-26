@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MammaprintRecurrenceScore",
   "name": "MammaprintRecurrenceScore",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -390,20 +390,6 @@
           "ordered": false,
           "rules": "open"
         }
-      },
-      {
-        "id": "Observation:oncology-MammaprintRecurrenceScore.extension:exceptionvalue",
-        "path": "Observation.extension",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
-          }
-        ],
-        "sliceName": "exceptionvalue"
       },
       {
         "id": "Observation:oncology-MammaprintRecurrenceScore.extension:deltaflag",
@@ -3433,7 +3419,7 @@
               "valueString": "ObservationInterpretation"
             }
           ],
-          "strength": "required",
+          "strength": "extensible",
           "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
@@ -3767,20 +3753,6 @@
         "short": "MammaprintRecurrenceScore",
         "definition": "Breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Mammaprint.\n\nIn the United States, MammaPrint can only be used on cancers that are stage I or stage II, invasive, smaller than 5 centimeters, and estrogen-receptor-positive or -negative. Scores range from -1.0 to +1.0, with scores less than 0 indicating high risk, and scores greater than 0 indicating low risk.\n\nThe is currently no LOINC code for Mammaprint test.",
         "mustSupport": false
-      },
-      {
-        "id": "Observation:oncology-MammaprintRecurrenceScore.extension:exceptionvalue",
-        "path": "Observation.extension",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
-          }
-        ],
-        "sliceName": "exceptionvalue"
       },
       {
         "id": "Observation:oncology-MammaprintRecurrenceScore.extension:deltaflag",
@@ -4122,23 +4094,6 @@
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
-          }
-        }
-      },
-      {
-        "id": "Observation:oncology-MammaprintRecurrenceScore.component.interpretation",
-        "path": "Observation.component.interpretation",
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
       }

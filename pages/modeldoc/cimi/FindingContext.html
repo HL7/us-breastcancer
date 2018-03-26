@@ -60,9 +60,11 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc.
+          <div class="block">The FindingContext class provides the context for the EvaluationResultTopic and AssertionTopic in a clinical statement. 
 
-In CIMI Version 0.0.4, FindingContext includes the attribute &#39;status&#39;. However, there are two problems with including FindingContext.status: (1) to align with FHIR, the datatype of status has to be Concept, but in CIMI, the datatype of status is Attribution, which can&#39;t be mapped. (2) Status might not have the same interpretation in all child classes. For example, in GoalContext, the status might be relative to the progress toward the goal, not the same meaning as the status of a finding.</div>
+For instance, a statement about findings may state that the finding was observed present or absent. This class aligns with the SNOMED Situation with Explicit Context.The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc.
+
+CIMI Alignment: In CIMI Version 0.0.4, FindingContext included a &#39;status&#39; attribute. However, there are several problems with this. (1) To align with FHIR, the datatype of status should be Concept, not Attribution. (2) In FHIR, different types of status with different shades of meaning are found in different subclasses, for example, clinicalStatus and verificationStatus in Condition, and status in Observation. (3) Status will not be uniform in meaning across all CIMI finding contexts. For example, in GoalContext, the relevant status might be the progress toward the goal, not the same meaning as the status of an EvaluationResult.</div>
         </dd>
       </dl>
       <dl>

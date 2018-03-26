@@ -60,11 +60,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">Base class for human, material, and informational things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device.
+          <div class="block">Root class for entities such as people, organizations, and devices that have a separately identifiable existence.
 
-In CIMI V0.0.4, Entities were not stand-alone classes. However, this is currently being changed in CIMI, so in the future, CIMI entities will more closely correspond to the FHIR entity-like resources such as Organization, Location, Device, Substance, and the like. In order to map to FHIR and produce profiles for this ballot, this change has been anticipated.
-
-Further, in CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI&#39;s participation model that is currently undergoing review and revision. Rather than introducing the complexity the CIMI participation model, which has little relevance to the current ballot of cancer profiles and is undergoing revision anyway, the superclass Party has been omitted.</div>
+CIMI Alignment: In CIMI V0.0.4, Entity was a subclass of Party. Party is part of CIMI&#39;s participation model, which is undergoing review and revision. Rather than introducing the complexity of the CIMI participation model, which has little relevance to breast cancer profiles and is undergoing revision anyway, the Party class has been omitted.</div>
         </dd>
       </dl>
       <dl>

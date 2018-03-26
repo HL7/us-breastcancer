@@ -15,7 +15,7 @@
   "name": "BreastCancerTCategory",
   "title": "BC BreastCancerTCategory Logical Model",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -48,6 +48,11 @@
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -62,6 +67,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -81,9 +91,14 @@
         "id": "oncology-BreastCancerTCategory-model.exceptionValue",
         "path": "oncology-BreastCancerTCategory-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, and with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
@@ -103,9 +118,14 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
@@ -128,6 +148,11 @@
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
         "max": "0",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.referenceRange",
+          "min": 0,
+          "max": "0"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
@@ -144,6 +169,11 @@
         "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.stageSuffix",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageSuffix-model"
@@ -163,6 +193,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-StageSuffix-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -188,6 +223,11 @@
         "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model",
+          "min": 0,
+          "max": "*"
+        },
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -202,6 +242,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"
@@ -221,9 +266,14 @@
         "id": "oncology-BreastCancerTCategory-model.exceptionValue",
         "path": "oncology-BreastCancerTCategory-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, and with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-model"
@@ -243,9 +293,14 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Interpretation-model"
@@ -268,6 +323,11 @@
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
         "max": "0",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.referenceRange",
+          "min": 0,
+          "max": "0"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ReferenceRange-model"
@@ -284,6 +344,11 @@
         "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerTCategory-model.stageSuffix",
+          "min": 0,
+          "max": "1"
+        },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageSuffix-model"
@@ -303,6 +368,11 @@
         ],
         "min": 1,
         "max": "1",
+        "base": {
+          "path": "oncology-StageSuffix-model.value",
+          "min": 1,
+          "max": "1"
+        },
         "type": [
           {
             "code": "Coding"

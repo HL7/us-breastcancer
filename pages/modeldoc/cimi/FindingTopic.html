@@ -64,7 +64,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
 
-In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity. </div>
+CIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.</div>
         </dd>
       </dl>
       <dl>
@@ -137,7 +137,9 @@ In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedi
       <code><strong><a href="../cimi/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block">The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#39;method&#39;.</div>
+    <div class="block">The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.
+		
+		CIMI Alignment: In CIMI Version 0.0.4, this attribute was called &#39;method&#39;. The value set binding reflects CIMI&#39;s preference for LOINC codes.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -161,7 +163,9 @@ In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedi
       <code><strong><a href="../cimi/Interpretation.html">Interpretation</a></strong></code>
     
     </div>
-    <div class="block">A clinical interpretation of a finding.</div>
+    <div class="block">A clinical interpretation of a finding.
+		
+		CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

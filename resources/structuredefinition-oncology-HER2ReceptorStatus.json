@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2ReceptorStatus",
   "name": "HER2ReceptorStatus",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -390,20 +390,6 @@
           "ordered": false,
           "rules": "open"
         }
-      },
-      {
-        "id": "Observation:oncology-HER2ReceptorStatus.extension:exceptionvalue",
-        "path": "Observation.extension",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
-          }
-        ],
-        "sliceName": "exceptionvalue"
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatus.extension:deltaflag",
@@ -2320,7 +2306,7 @@
               "valueString": "ObservationInterpretation"
             }
           ],
-          "strength": "required",
+          "strength": "extensible",
           "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
@@ -3640,7 +3626,7 @@
               "valueString": "ObservationInterpretation"
             }
           ],
-          "strength": "required",
+          "strength": "extensible",
           "description": "Codes identifying interpretations of observations.",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
@@ -3976,20 +3962,6 @@
         "mustSupport": false
       },
       {
-        "id": "Observation:oncology-HER2ReceptorStatus.extension:exceptionvalue",
-        "path": "Observation.extension",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
-          }
-        ],
-        "sliceName": "exceptionvalue"
-      },
-      {
         "id": "Observation:oncology-HER2ReceptorStatus.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
@@ -4168,23 +4140,6 @@
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
-          }
-        }
-      },
-      {
-        "id": "Observation:oncology-HER2ReceptorStatus.interpretation",
-        "path": "Observation.interpretation",
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
       },
@@ -4377,23 +4332,6 @@
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
-          }
-        }
-      },
-      {
-        "id": "Observation:oncology-HER2ReceptorStatus.component.interpretation",
-        "path": "Observation.component.interpretation",
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "required",
-          "description": "Codes identifying interpretations of observations.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
           }
         }
       }

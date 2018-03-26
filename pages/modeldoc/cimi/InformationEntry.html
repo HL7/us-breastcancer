@@ -60,9 +60,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">An InformationEntry is the minimal unit independent of logical information or knowledge, such as a clinical statement in a patient record, a knowledge entry in a knowledge artifact, a product in a product catalog, etc. 
+          <div class="block">An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified. 
 
-TThe CIMI-defined attributes from InformationEntry (and those inherited from Entry) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry (identifier, subjectOfInformation, attribution, additionalText, recordStatus). Reconciling these differences is outside the scope of the current ballot on breast cancer. </div>
+CIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.</div>
         </dd>
       </dl>
       <dl>
@@ -75,9 +75,20 @@ TThe CIMI-defined attributes from InformationEntry (and those inherited from Ent
                               <li>
     <ul>
           <li class="last">
+    <a href="../cimi/Content.html">Content</a>
+  </li>
+      </ul>
+  </li>
+                            <li>
+    <ul>
+        <li>
+    <ul>
+          <li class="last">
     <a href="../cimi/InformationEntry.html">InformationEntry</a>
   </li>
       </ul>
+  </li>
+    </ul>
   </li>
                       </ul>
         </dd>
@@ -116,6 +127,12 @@ TThe CIMI-defined attributes from InformationEntry (and those inherited from Ent
   
       
     </table>                                            <ul class="blockList">
+                                      <li class="blockList">
+                      <a name="properties_inherited_from_class_java.lang.Object"></a>
+                      <h3>Properties inherited from&nbsp;
+                        <a href="../cimi/Content.html">Content</a>
+                      </h3>
+                                          </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;

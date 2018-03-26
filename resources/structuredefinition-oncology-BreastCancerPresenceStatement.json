@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPresenceStatement",
   "name": "BreastCancerPresenceStatement",
   "status": "draft",
-  "date": "2018-03-25",
+  "date": "2018-03-26",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -383,7 +383,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:anatomicallocation",
         "path": "Condition.extension",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "1",
         "type": [
@@ -397,7 +397,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:topiccode",
         "path": "Condition.extension",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "type": [
@@ -888,7 +888,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:findingmethod",
         "path": "Condition.extension",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1007,7 +1007,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:interpretation",
         "path": "Condition.extension",
-        "definition": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "type": [
@@ -1017,20 +1017,6 @@
           }
         ],
         "sliceName": "interpretation"
-      },
-      {
-        "id": "Condition:oncology-BreastCancerPresenceStatement.extension:exceptionvalue",
-        "path": "Condition.extension",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
-          }
-        ],
-        "sliceName": "exceptionvalue"
       },
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:morphologybehavior",
@@ -2631,7 +2617,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:anatomicallocation",
         "path": "Condition.extension",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nNote: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here. This class corresponds to that CIMI reference model class, but it would be defined in a CIMI archetype, because it involves value set bindings on each of the attributes.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "1",
         "type": [
@@ -2645,7 +2631,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:topiccode",
         "path": "Condition.extension",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tThis attribute was named 'key' in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2702,7 +2688,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:findingmethod",
         "path": "Condition.extension",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called 'method'.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "type": [
@@ -2726,7 +2712,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:interpretation",
         "path": "Condition.extension",
-        "definition": "A clinical interpretation of a finding.",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "type": [
@@ -2736,20 +2722,6 @@
           }
         ],
         "sliceName": "interpretation"
-      },
-      {
-        "id": "Condition:oncology-BreastCancerPresenceStatement.extension:exceptionvalue",
-        "path": "Condition.extension",
-        "definition": "Reason that a value associated with a test or other finding is missing.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ExceptionValue-extension"
-          }
-        ],
-        "sliceName": "exceptionvalue"
       },
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement.extension:morphologybehavior",

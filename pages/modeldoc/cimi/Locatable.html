@@ -62,7 +62,7 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <div class="block">Abstract top level class in the hierarchy. Locatable defines the idea of &#39;locatability in an archetyped structure&#39;.
 
-Having this class at the top of the class hierarchy reflects CIMI&#39;s use of Archetype Description Language (ADL). In CIMI, Locatable brings with it three attributes that occur in every CIMI child class: archetype_node_id, name (not a healthcare-relevant name, but a name created at runtime), and archetype_details. These attributes reflect a CIMI model implementation detail, and are irrelevant to cancer detailed clinical models, and should by rights remain hidden. So as to not complicate all profiles with extra extensions, these three attributes have been omitted.</div>
+CIMI Alignment: The Locatable class reflects CIMI&#39;s current implementation using Archetype Description Language (ADL). It&#39;s attributes (archetype_node_id, name, and archetype_details) are necessary to serialize CIMI definitions in ADL. By all rights, these attributes should be invisible in clinical models. To avoid complicating the breast cancer profiles with extensions irrelevant to the clinical content, the attributes of Locatable have been omitted.</div>
         </dd>
       </dl>
       <dl>
@@ -80,9 +80,9 @@ Having this class at the top of the class hierarchy reflects CIMI&#39;s use of A
         <dd>
           <ul class="class_list">
                           <li>
-                <a href="../cimi/Entity.html">Entity</a>,&nbsp;              </li>
+                <a href="../cimi/Content.html">Content</a>,&nbsp;              </li>
                           <li>
-                <a href="../cimi/InformationEntry.html">InformationEntry</a>,&nbsp;              </li>
+                <a href="../cimi/Entity.html">Entity</a>,&nbsp;              </li>
                           <li>
                 <a href="../cimi/StatementContext.html">StatementContext</a>,&nbsp;              </li>
                           <li>

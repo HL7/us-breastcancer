@@ -50,16 +50,16 @@
       <td>The body site location in relation to the nipple.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-ExceptionValue-extension.html">ExceptionValue</a></td>
-      <td>Reason that a value associated with a test or other finding is missing.</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-FindingMethod-extension.html">FindingMethod</a></td>
-      <td>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle. In CIMI Version 0.0.4, this attribute is called &#039;method&#039;.</td>
+      <td>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.
+		
+		CIMI Alignment: In CIMI Version 0.0.4, this attribute was called &#039;method&#039;. The value set binding reflects CIMI&#039;s preference for LOINC codes.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-Interpretation-extension.html">Interpretation</a></td>
-      <td>A clinical interpretation of a finding.</td>
+      <td>A clinical interpretation of a finding.
+		
+		CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-MorphologyBehavior-extension.html">MorphologyBehavior</a></td>
@@ -81,7 +81,7 @@
 		
 		For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the &#039;question&#039; or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.
 		
-		This attribute was named &#039;key&#039; in CIMI V0.0.4. Recently, CIMI has recently moved to rename this element TopicCode, as anticipated here, to make it more clear that this is an identifier for the topic, not the context.</td>
+		CIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called &#039;key&#039; in CIMI V0.0.4.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-primitive-base64Binary-extension.html">base64Binary</a></td>

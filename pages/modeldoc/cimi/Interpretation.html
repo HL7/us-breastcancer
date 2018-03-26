@@ -60,7 +60,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">A clinical interpretation of a finding.</div>
+          <div class="block">A clinical interpretation of a finding.
+		
+		CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</div>
         </dd>
       </dl>
       <dl>
@@ -201,7 +203,7 @@ if (location.href.indexOf('is-external=true') == -1) {
                         <div class="block">
           
                       <a href="http://hl7.org/fhir/ValueSet/observation-interpretation" target="_top">http://hl7.org/fhir/ValueSet/observation-interpretation</a>
-                    (REQUIRED)
+                    (EXTENSIBLE)
         </div>
             </td>
 </tr>    

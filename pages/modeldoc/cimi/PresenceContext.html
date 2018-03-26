@@ -64,7 +64,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 	
 	For example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.
 	
-	In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has decided to combine these classes and rename them to PresenceContext, as represented here.</div>
+	CIMI Alignment: In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.</div>
         </dd>
       </dl>
       <dl>
@@ -178,7 +178,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../cimi/VerificationStatus.html">VerificationStatus</a></strong></code>
     
     </div>
-    <div class="block">Whether an assessment has been confirmed by testing or observation.</div>
+    <div class="block">Whether an assessment has been confirmed by testing or observation.
+			
+			CIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -203,7 +205,8 @@ if (location.href.indexOf('is-external=true') == -1) {
     
     </div>
     <div class="block">The beginning or first appearance of a mental or physical disorder.
-			This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR</div>
+			
+			CIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -251,7 +254,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../cimi/Certainty.html">Certainty</a></strong></code>
     
     </div>
-    <div class="block">The degree of confidence in a conclusion or assertion.</div>
+    <div class="block">The degree of confidence in a conclusion or assertion.
+			
+			CIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
