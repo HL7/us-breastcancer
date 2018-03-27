@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "oncology-NuclearGrade",
+  "id": "oncology-DCISNuclearGrade",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC NuclearGrade Profile</b></p>\n  <p>An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.NuclearGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DCISNuclearGrade Profile</b></p>\n  <p>An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.DCISNuclearGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearGrade",
-  "name": "NuclearGrade",
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-DCISNuclearGrade",
+  "name": "DCISNuclearGrade",
   "status": "draft",
   "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -77,9 +77,9 @@
   "snapshot": {
     "element": [
       {
-        "id": "Observation:oncology-NuclearGrade",
+        "id": "Observation:oncology-DCISNuclearGrade",
         "path": "Observation",
-        "short": "NuclearGrade",
+        "short": "DCISNuclearGrade",
         "definition": "An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
@@ -186,7 +186,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.id",
+        "id": "Observation:oncology-DCISNuclearGrade.id",
         "path": "Observation.id",
         "short": "Logical id of this artifact",
         "definition": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -206,7 +206,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.meta",
+        "id": "Observation:oncology-DCISNuclearGrade.meta",
         "path": "Observation.meta",
         "short": "Metadata about the resource",
         "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
@@ -225,7 +225,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.implicitRules",
+        "id": "Observation:oncology-DCISNuclearGrade.implicitRules",
         "path": "Observation.implicitRules",
         "short": "A set of rules under which this content was created",
         "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
@@ -246,7 +246,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.language",
+        "id": "Observation:oncology-DCISNuclearGrade.language",
         "path": "Observation.language",
         "short": "Language of the resource content",
         "definition": "The base language in which the resource is written.",
@@ -288,7 +288,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.text",
+        "id": "Observation:oncology-DCISNuclearGrade.text",
         "path": "Observation.text",
         "short": "Text summary of the resource, for human interpretation",
         "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
@@ -322,7 +322,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.contained",
+        "id": "Observation:oncology-DCISNuclearGrade.contained",
         "path": "Observation.contained",
         "short": "Contained, inline Resources",
         "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
@@ -352,7 +352,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.extension",
         "path": "Observation.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -392,7 +392,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.extension:deltaflag",
+        "id": "Observation:oncology-DCISNuclearGrade.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
         "min": 0,
@@ -406,7 +406,7 @@
         "sliceName": "deltaflag"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.extension:diagnosticservice",
+        "id": "Observation:oncology-DCISNuclearGrade.extension:diagnosticservice",
         "path": "Observation.extension",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
@@ -420,7 +420,7 @@
         "sliceName": "diagnosticservice"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.modifierExtension",
+        "id": "Observation:oncology-DCISNuclearGrade.modifierExtension",
         "path": "Observation.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -450,7 +450,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.identifier",
+        "id": "Observation:oncology-DCISNuclearGrade.identifier",
         "path": "Observation.identifier",
         "short": "Business Identifier for observation",
         "definition": "A unique identifier assigned to this observation.",
@@ -488,7 +488,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.basedOn",
+        "id": "Observation:oncology-DCISNuclearGrade.basedOn",
         "path": "Observation.basedOn",
         "short": "Fulfills plan, proposal or order",
         "definition": "A plan, proposal or order that is fulfilled in whole or in part by this event.",
@@ -550,7 +550,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.status",
+        "id": "Observation:oncology-DCISNuclearGrade.status",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
@@ -611,7 +611,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category",
+        "id": "Observation:oncology-DCISNuclearGrade.category",
         "path": "Observation.category",
         "short": "Classification of  type of observation",
         "definition": "A code that classifies the general type of observation being made.",
@@ -668,7 +668,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.id",
+        "id": "Observation:oncology-DCISNuclearGrade.category.id",
         "path": "Observation.category.id",
         "representation": [
           "xmlAttr"
@@ -695,7 +695,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.category.extension",
         "path": "Observation.category.extension",
         "slicing": {
           "discriminator": [
@@ -734,7 +734,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding",
         "path": "Observation.category.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -775,7 +775,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory",
         "path": "Observation.category.coding",
         "sliceName": "Fixed_laboratory",
         "definition": "A reference to a code defined by a terminology system.",
@@ -789,7 +789,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.id",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.id",
         "path": "Observation.category.coding.id",
         "representation": [
           "xmlAttr"
@@ -816,7 +816,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.extension",
         "path": "Observation.category.coding.extension",
         "slicing": {
           "discriminator": [
@@ -855,7 +855,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.system",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.system",
         "path": "Observation.category.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -886,7 +886,7 @@
         "fixedUri": "http://hl7.org/fhir/observation-category"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.version",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.version",
         "path": "Observation.category.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -915,7 +915,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.code",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.code",
         "path": "Observation.category.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -945,7 +945,7 @@
         "fixedCode": "laboratory"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.display",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -980,7 +980,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.userSelected",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.userSelected",
         "path": "Observation.category.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -1010,7 +1010,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.text",
+        "id": "Observation:oncology-DCISNuclearGrade.category.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1046,7 +1046,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code",
+        "id": "Observation:oncology-DCISNuclearGrade.code",
         "path": "Observation.code",
         "short": "Laboratory Test Name",
         "definition": "The test that was performed.  A LOINC **SHALL** be used if the concept is present in LOINC.",
@@ -1110,7 +1110,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.id",
+        "id": "Observation:oncology-DCISNuclearGrade.code.id",
         "path": "Observation.code.id",
         "representation": [
           "xmlAttr"
@@ -1137,7 +1137,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.code.extension",
         "path": "Observation.code.extension",
         "slicing": {
           "discriminator": [
@@ -1176,7 +1176,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding",
         "path": "Observation.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -1217,7 +1217,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_C18513",
         "definition": "A reference to a code defined by a terminology system.",
@@ -1231,7 +1231,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.id",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.id",
         "path": "Observation.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -1258,7 +1258,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.extension",
         "path": "Observation.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -1297,7 +1297,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.system",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.system",
         "path": "Observation.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -1328,7 +1328,7 @@
         "fixedUri": "http://ncimeta.nci.nih.gov"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.version",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.version",
         "path": "Observation.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -1357,7 +1357,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.code",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.code",
         "path": "Observation.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -1387,7 +1387,7 @@
         "fixedCode": "C18513"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.display",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1422,7 +1422,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.userSelected",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.userSelected",
         "path": "Observation.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -1452,7 +1452,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.text",
+        "id": "Observation:oncology-DCISNuclearGrade.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1488,7 +1488,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.subject",
+        "id": "Observation:oncology-DCISNuclearGrade.subject",
         "path": "Observation.subject",
         "short": "Who and/or what this is about",
         "definition": "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.",
@@ -1533,7 +1533,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.context",
+        "id": "Observation:oncology-DCISNuclearGrade.context",
         "path": "Observation.context",
         "short": "Healthcare event during which this observation is made",
         "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.",
@@ -1579,7 +1579,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.effective[x]",
+        "id": "Observation:oncology-DCISNuclearGrade.effective[x]",
         "path": "Observation.effective[x]",
         "short": "Clinically relevant time/time-period for observation",
         "definition": "For lab tests this is the specimen collection date.  For Ask at Order Entry Questions (AOE)'s this is the date the question was asked.",
@@ -1638,7 +1638,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.issued",
+        "id": "Observation:oncology-DCISNuclearGrade.issued",
         "path": "Observation.issued",
         "short": "Date/Time this was made available",
         "definition": "The date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
@@ -1672,7 +1672,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.performer",
+        "id": "Observation:oncology-DCISNuclearGrade.performer",
         "path": "Observation.performer",
         "short": "Who is responsible for the observation",
         "definition": "Who was responsible for asserting the observed value as \"true\".",
@@ -1723,7 +1723,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.valueCodeableConcept",
+        "id": "Observation:oncology-DCISNuclearGrade.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "short": "Result Value",
         "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
@@ -1748,7 +1748,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.dataAbsentReason",
+        "id": "Observation:oncology-DCISNuclearGrade.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "short": "Why the result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -1796,7 +1796,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.interpretation",
+        "id": "Observation:oncology-DCISNuclearGrade.interpretation",
         "path": "Observation.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -1849,7 +1849,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.comment",
+        "id": "Observation:oncology-DCISNuclearGrade.comment",
         "path": "Observation.comment",
         "short": "Comments about result",
         "definition": "May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result.",
@@ -1882,7 +1882,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.bodySite",
+        "id": "Observation:oncology-DCISNuclearGrade.bodySite",
         "path": "Observation.bodySite",
         "short": "Observed body part",
         "definition": "Indicates the site on the subject's body where the observation was made (i.e. the target site).",
@@ -1925,7 +1925,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.method",
+        "id": "Observation:oncology-DCISNuclearGrade.method",
         "path": "Observation.method",
         "short": "How it was done",
         "definition": "Indicates the mechanism used to perform the observation.",
@@ -1961,7 +1961,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.specimen",
+        "id": "Observation:oncology-DCISNuclearGrade.specimen",
         "path": "Observation.specimen",
         "short": "Specimen used for this observation",
         "definition": "The specimen that was used when this observation was made.",
@@ -1999,7 +1999,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.device",
+        "id": "Observation:oncology-DCISNuclearGrade.device",
         "path": "Observation.device",
         "short": "(Measurement) Device",
         "definition": "The device used to generate the observation data.",
@@ -2041,7 +2041,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange",
         "path": "Observation.referenceRange",
         "short": "Provides guide for interpretation",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -2088,7 +2088,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.id",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.id",
         "path": "Observation.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -2115,7 +2115,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.extension",
         "path": "Observation.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2144,7 +2144,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.modifierExtension",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.modifierExtension",
         "path": "Observation.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -2176,7 +2176,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.low",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.low",
         "path": "Observation.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -2208,7 +2208,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.high",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.high",
         "path": "Observation.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -2240,7 +2240,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.type",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.type",
         "path": "Observation.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -2287,7 +2287,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.appliesTo",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.appliesTo",
         "path": "Observation.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -2334,7 +2334,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.age",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.age",
         "path": "Observation.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -2360,7 +2360,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.text",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.text",
         "path": "Observation.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -2388,7 +2388,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related",
+        "id": "Observation:oncology-DCISNuclearGrade.related",
         "path": "Observation.related",
         "short": "Resource related to this observation",
         "definition": "A  reference to another resource (usually another Observation) whose relationship is defined by the relationship type code.",
@@ -2429,7 +2429,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.id",
+        "id": "Observation:oncology-DCISNuclearGrade.related.id",
         "path": "Observation.related.id",
         "representation": [
           "xmlAttr"
@@ -2456,7 +2456,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.related.extension",
         "path": "Observation.related.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2485,7 +2485,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.modifierExtension",
+        "id": "Observation:oncology-DCISNuclearGrade.related.modifierExtension",
         "path": "Observation.related.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -2517,7 +2517,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.type",
+        "id": "Observation:oncology-DCISNuclearGrade.related.type",
         "path": "Observation.related.type",
         "short": "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by",
         "definition": "A code specifying the kind of relationship that exists with the target resource.",
@@ -2561,7 +2561,7 @@
         "fixedCode": "has-member"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.target",
+        "id": "Observation:oncology-DCISNuclearGrade.related.target",
         "path": "Observation.related.target",
         "short": "Resource that is related to this one",
         "definition": "A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation.",
@@ -2586,7 +2586,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component",
+        "id": "Observation:oncology-DCISNuclearGrade.component",
         "path": "Observation.component",
         "short": "Component results",
         "definition": "Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations.",
@@ -2627,7 +2627,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.id",
+        "id": "Observation:oncology-DCISNuclearGrade.component.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -2654,7 +2654,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.component.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2683,7 +2683,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.modifierExtension",
+        "id": "Observation:oncology-DCISNuclearGrade.component.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -2715,7 +2715,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.code",
+        "id": "Observation:oncology-DCISNuclearGrade.component.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -2766,7 +2766,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.value[x]",
+        "id": "Observation:oncology-DCISNuclearGrade.component.value[x]",
         "path": "Observation.component.value[x]",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -2828,7 +2828,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.dataAbsentReason",
+        "id": "Observation:oncology-DCISNuclearGrade.component.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -2867,7 +2867,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.interpretation",
+        "id": "Observation:oncology-DCISNuclearGrade.component.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -2921,7 +2921,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -2951,7 +2951,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.id",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -2978,7 +2978,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.extension",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -3007,7 +3007,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.modifierExtension",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3039,7 +3039,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.low",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -3066,7 +3066,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.high",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -3093,7 +3093,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.type",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -3135,7 +3135,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.appliesTo",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -3177,7 +3177,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.age",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -3197,7 +3197,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.referenceRange.text",
+        "id": "Observation:oncology-DCISNuclearGrade.component.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -3224,14 +3224,14 @@
   "differential": {
     "element": [
       {
-        "id": "Observation:oncology-NuclearGrade",
+        "id": "Observation:oncology-DCISNuclearGrade",
         "path": "Observation",
-        "short": "NuclearGrade",
+        "short": "DCISNuclearGrade",
         "definition": "An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "mustSupport": false
       },
       {
-        "id": "Observation:oncology-NuclearGrade.extension:deltaflag",
+        "id": "Observation:oncology-DCISNuclearGrade.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
         "min": 0,
@@ -3245,7 +3245,7 @@
         "sliceName": "deltaflag"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.extension:diagnosticservice",
+        "id": "Observation:oncology-DCISNuclearGrade.extension:diagnosticservice",
         "path": "Observation.extension",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
@@ -3259,11 +3259,11 @@
         "sliceName": "diagnosticservice"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category",
+        "id": "Observation:oncology-DCISNuclearGrade.category",
         "path": "Observation.category"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding",
         "path": "Observation.category.coding",
         "slicing": {
           "id": "1",
@@ -3278,7 +3278,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory",
         "path": "Observation.category.coding",
         "sliceName": "Fixed_laboratory",
         "definition": "A reference to a code defined by a terminology system.",
@@ -3292,21 +3292,21 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.system",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.system",
         "path": "Observation.category.coding.system",
         "fixedUri": "http://hl7.org/fhir/observation-category"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.category.coding:Fixed_laboratory.code",
+        "id": "Observation:oncology-DCISNuclearGrade.category.coding:Fixed_laboratory.code",
         "path": "Observation.category.coding.code",
         "fixedCode": "laboratory"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code",
+        "id": "Observation:oncology-DCISNuclearGrade.code",
         "path": "Observation.code"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
           "id": "2",
@@ -3321,7 +3321,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_C18513",
         "definition": "A reference to a code defined by a terminology system.",
@@ -3335,17 +3335,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.system",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://ncimeta.nci.nih.gov"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.code.coding:Fixed_C18513.code",
+        "id": "Observation:oncology-DCISNuclearGrade.code.coding:Fixed_C18513.code",
         "path": "Observation.code.coding.code",
         "fixedCode": "C18513"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.valueCodeableConcept",
+        "id": "Observation:oncology-DCISNuclearGrade.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "type": [
           {
@@ -3360,7 +3360,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.dataAbsentReason",
+        "id": "Observation:oncology-DCISNuclearGrade.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -3370,7 +3370,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.bodySite",
+        "id": "Observation:oncology-DCISNuclearGrade.bodySite",
         "path": "Observation.bodySite",
         "min": 0,
         "max": "0",
@@ -3382,7 +3382,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.method",
+        "id": "Observation:oncology-DCISNuclearGrade.method",
         "path": "Observation.method",
         "binding": {
           "strength": "preferred",
@@ -3392,7 +3392,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.specimen",
+        "id": "Observation:oncology-DCISNuclearGrade.specimen",
         "path": "Observation.specimen",
         "type": [
           {
@@ -3402,13 +3402,13 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange",
         "path": "Observation.referenceRange",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.low",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.low",
         "path": "Observation.referenceRange.low",
         "type": [
           {
@@ -3418,7 +3418,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.high",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.high",
         "path": "Observation.referenceRange.high",
         "type": [
           {
@@ -3428,7 +3428,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.appliesTo",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.appliesTo",
         "path": "Observation.referenceRange.appliesTo",
         "binding": {
           "extension": [
@@ -3445,7 +3445,7 @@
         }
       },
       {
-        "id": "Observation:oncology-NuclearGrade.referenceRange.age",
+        "id": "Observation:oncology-DCISNuclearGrade.referenceRange.age",
         "path": "Observation.referenceRange.age",
         "type": [
           {
@@ -3455,18 +3455,18 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related",
+        "id": "Observation:oncology-DCISNuclearGrade.related",
         "path": "Observation.related",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.type",
+        "id": "Observation:oncology-DCISNuclearGrade.related.type",
         "path": "Observation.related.type",
         "fixedCode": "has-member"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.related.target",
+        "id": "Observation:oncology-DCISNuclearGrade.related.target",
         "path": "Observation.related.target",
         "type": [
           {
@@ -3476,13 +3476,13 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component",
+        "id": "Observation:oncology-DCISNuclearGrade.component",
         "path": "Observation.component",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.value[x]",
+        "id": "Observation:oncology-DCISNuclearGrade.component.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
@@ -3514,7 +3514,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-NuclearGrade.component.dataAbsentReason",
+        "id": "Observation:oncology-DCISNuclearGrade.component.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -3528,9 +3528,9 @@
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
-      "value": "oncology.NuclearGrade"
+      "value": "oncology.DCISNuclearGrade"
     }
   ],
-  "title": "BC NuclearGrade Profile",
+  "title": "BC DCISNuclearGrade Profile",
   "description": "An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade."
 }

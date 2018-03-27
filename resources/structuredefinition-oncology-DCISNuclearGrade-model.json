@@ -1,19 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "oncology-NuclearGrade-model",
+  "id": "oncology-DCISNuclearGrade-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC NuclearGrade Logical Model</b></p>\n  <p>An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DCISNuclearGrade Logical Model</b></p>\n  <p>An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearGrade-model",
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-DCISNuclearGrade-model",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
-      "value": "oncology.NuclearGrade"
+      "value": "oncology.DCISNuclearGrade"
     }
   ],
-  "name": "NuclearGrade",
-  "title": "BC NuclearGrade Logical Model",
+  "name": "DCISNuclearGrade",
+  "title": "BC DCISNuclearGrade Logical Model",
   "status": "draft",
   "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -36,19 +36,19 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "oncology-NuclearGrade-model",
+  "type": "oncology-DCISNuclearGrade-model",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
     "element": [
       {
-        "id": "oncology-NuclearGrade-model",
-        "path": "oncology-NuclearGrade-model",
+        "id": "oncology-DCISNuclearGrade-model",
+        "path": "oncology-DCISNuclearGrade-model",
         "definition": "An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-NuclearGrade-model",
+          "path": "oncology-DCISNuclearGrade-model",
           "min": 0,
           "max": "*"
         },
@@ -57,8 +57,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.value",
-        "path": "oncology-NuclearGrade-model.value",
+        "id": "oncology-DCISNuclearGrade-model.value",
+        "path": "oncology-DCISNuclearGrade-model.value",
         "short": "Code representing an evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "definition": "Code representing an evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "alias": [
@@ -67,7 +67,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.value",
+          "path": "oncology-DCISNuclearGrade-model.value",
           "min": 1,
           "max": "1"
         },
@@ -87,14 +87,14 @@
         }
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode",
-        "path": "oncology-NuclearGrade-model.topicCode",
+        "id": "oncology-DCISNuclearGrade-model.topicCode",
+        "path": "oncology-DCISNuclearGrade-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.topicCode",
+          "path": "oncology-DCISNuclearGrade-model.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -108,8 +108,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value",
-        "path": "oncology-NuclearGrade-model.topicCode.value",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -132,8 +132,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.id",
-        "path": "oncology-NuclearGrade-model.topicCode.value.id",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.id",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -159,8 +159,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.extension",
-        "path": "oncology-NuclearGrade-model.topicCode.value.extension",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.extension",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -198,8 +198,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.system",
-        "path": "oncology-NuclearGrade-model.topicCode.value.system",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.system",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -234,8 +234,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.version",
-        "path": "oncology-NuclearGrade-model.topicCode.value.version",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.version",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -268,8 +268,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.code",
-        "path": "oncology-NuclearGrade-model.topicCode.value.code",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.code",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -303,14 +303,14 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.display",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-NuclearGrade-model.topicCode.value.display",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -343,8 +343,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.userSelected",
-        "path": "oncology-NuclearGrade-model.topicCode.value.userSelected",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.userSelected",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -378,14 +378,14 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.findingMethod",
-        "path": "oncology-NuclearGrade-model.findingMethod",
+        "id": "oncology-DCISNuclearGrade-model.findingMethod",
+        "path": "oncology-DCISNuclearGrade-model.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.findingMethod",
+          "path": "oncology-DCISNuclearGrade-model.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -399,8 +399,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.interpretation",
-        "path": "oncology-NuclearGrade-model.interpretation",
+        "id": "oncology-DCISNuclearGrade-model.interpretation",
+        "path": "oncology-DCISNuclearGrade-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -412,7 +412,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.interpretation",
+          "path": "oncology-DCISNuclearGrade-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -426,14 +426,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.category",
-        "path": "oncology-NuclearGrade-model.category",
+        "id": "oncology-DCISNuclearGrade-model.category",
+        "path": "oncology-DCISNuclearGrade-model.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-NuclearGrade-model.category",
+          "path": "oncology-DCISNuclearGrade-model.category",
           "min": 1,
           "max": "*"
         },
@@ -447,8 +447,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value",
-        "path": "oncology-NuclearGrade-model.category.value",
+        "id": "oncology-DCISNuclearGrade-model.category.value",
+        "path": "oncology-DCISNuclearGrade-model.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -471,8 +471,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.id",
-        "path": "oncology-NuclearGrade-model.category.value.id",
+        "id": "oncology-DCISNuclearGrade-model.category.value.id",
+        "path": "oncology-DCISNuclearGrade-model.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -498,8 +498,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.extension",
-        "path": "oncology-NuclearGrade-model.category.value.extension",
+        "id": "oncology-DCISNuclearGrade-model.category.value.extension",
+        "path": "oncology-DCISNuclearGrade-model.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -537,8 +537,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.system",
-        "path": "oncology-NuclearGrade-model.category.value.system",
+        "id": "oncology-DCISNuclearGrade-model.category.value.system",
+        "path": "oncology-DCISNuclearGrade-model.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -573,8 +573,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.version",
-        "path": "oncology-NuclearGrade-model.category.value.version",
+        "id": "oncology-DCISNuclearGrade-model.category.value.version",
+        "path": "oncology-DCISNuclearGrade-model.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -607,8 +607,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.code",
-        "path": "oncology-NuclearGrade-model.category.value.code",
+        "id": "oncology-DCISNuclearGrade-model.category.value.code",
+        "path": "oncology-DCISNuclearGrade-model.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -642,14 +642,14 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.display",
+        "id": "oncology-DCISNuclearGrade-model.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-NuclearGrade-model.category.value.display",
+        "path": "oncology-DCISNuclearGrade-model.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -682,8 +682,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.userSelected",
-        "path": "oncology-NuclearGrade-model.category.value.userSelected",
+        "id": "oncology-DCISNuclearGrade-model.category.value.userSelected",
+        "path": "oncology-DCISNuclearGrade-model.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -717,8 +717,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.anatomicalLocation",
-        "path": "oncology-NuclearGrade-model.anatomicalLocation",
+        "id": "oncology-DCISNuclearGrade-model.anatomicalLocation",
+        "path": "oncology-DCISNuclearGrade-model.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -730,7 +730,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.anatomicalLocation",
+          "path": "oncology-DCISNuclearGrade-model.anatomicalLocation",
           "min": 0,
           "max": "0"
         },
@@ -744,8 +744,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.breastSpecimen",
-        "path": "oncology-NuclearGrade-model.breastSpecimen",
+        "id": "oncology-DCISNuclearGrade-model.breastSpecimen",
+        "path": "oncology-DCISNuclearGrade-model.breastSpecimen",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "alias": [
@@ -754,7 +754,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.breastSpecimen",
+          "path": "oncology-DCISNuclearGrade-model.breastSpecimen",
           "min": 0,
           "max": "1"
         },
@@ -768,8 +768,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.deltaFlag",
-        "path": "oncology-NuclearGrade-model.deltaFlag",
+        "id": "oncology-DCISNuclearGrade-model.deltaFlag",
+        "path": "oncology-DCISNuclearGrade-model.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -781,7 +781,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.deltaFlag",
+          "path": "oncology-DCISNuclearGrade-model.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -795,14 +795,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.precondition",
-        "path": "oncology-NuclearGrade-model.precondition",
+        "id": "oncology-DCISNuclearGrade-model.precondition",
+        "path": "oncology-DCISNuclearGrade-model.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.precondition",
+          "path": "oncology-DCISNuclearGrade-model.precondition",
           "min": 0,
           "max": "0"
         },
@@ -816,8 +816,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.referenceRange",
-        "path": "oncology-NuclearGrade-model.referenceRange",
+        "id": "oncology-DCISNuclearGrade-model.referenceRange",
+        "path": "oncology-DCISNuclearGrade-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -829,7 +829,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.referenceRange",
+          "path": "oncology-DCISNuclearGrade-model.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -843,14 +843,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.evaluationComponent",
-        "path": "oncology-NuclearGrade-model.evaluationComponent",
+        "id": "oncology-DCISNuclearGrade-model.evaluationComponent",
+        "path": "oncology-DCISNuclearGrade-model.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.evaluationComponent",
+          "path": "oncology-DCISNuclearGrade-model.evaluationComponent",
           "min": 0,
           "max": "0"
         },
@@ -864,14 +864,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.recordedContext",
-        "path": "oncology-NuclearGrade-model.recordedContext",
+        "id": "oncology-DCISNuclearGrade-model.recordedContext",
+        "path": "oncology-DCISNuclearGrade-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.recordedContext",
+          "path": "oncology-DCISNuclearGrade-model.recordedContext",
           "min": 1,
           "max": "1"
         },
@@ -885,14 +885,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.members",
-        "path": "oncology-NuclearGrade-model.members",
+        "id": "oncology-DCISNuclearGrade-model.members",
+        "path": "oncology-DCISNuclearGrade-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
         "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.members",
+          "path": "oncology-DCISNuclearGrade-model.members",
           "min": 1,
           "max": "1"
         },
@@ -906,8 +906,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.members.value",
-        "path": "oncology-NuclearGrade-model.members.value",
+        "id": "oncology-DCISNuclearGrade-model.members.value",
+        "path": "oncology-DCISNuclearGrade-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
         "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
@@ -931,14 +931,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.diagnosticService",
-        "path": "oncology-NuclearGrade-model.diagnosticService",
+        "id": "oncology-DCISNuclearGrade-model.diagnosticService",
+        "path": "oncology-DCISNuclearGrade-model.diagnosticService",
         "short": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-NuclearGrade-model.diagnosticService",
+          "path": "oncology-DCISNuclearGrade-model.diagnosticService",
           "min": 0,
           "max": "*"
         },
@@ -956,13 +956,13 @@
   "differential": {
     "element": [
       {
-        "id": "oncology-NuclearGrade-model",
-        "path": "oncology-NuclearGrade-model",
+        "id": "oncology-DCISNuclearGrade-model",
+        "path": "oncology-DCISNuclearGrade-model",
         "definition": "An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-NuclearGrade-model",
+          "path": "oncology-DCISNuclearGrade-model",
           "min": 0,
           "max": "*"
         },
@@ -971,8 +971,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.value",
-        "path": "oncology-NuclearGrade-model.value",
+        "id": "oncology-DCISNuclearGrade-model.value",
+        "path": "oncology-DCISNuclearGrade-model.value",
         "short": "Code representing an evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "definition": "Code representing an evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.",
         "alias": [
@@ -981,7 +981,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.value",
+          "path": "oncology-DCISNuclearGrade-model.value",
           "min": 1,
           "max": "1"
         },
@@ -1001,14 +1001,14 @@
         }
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode",
-        "path": "oncology-NuclearGrade-model.topicCode",
+        "id": "oncology-DCISNuclearGrade-model.topicCode",
+        "path": "oncology-DCISNuclearGrade-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.topicCode",
+          "path": "oncology-DCISNuclearGrade-model.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -1022,8 +1022,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value",
-        "path": "oncology-NuclearGrade-model.topicCode.value",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -1046,8 +1046,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.id",
-        "path": "oncology-NuclearGrade-model.topicCode.value.id",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.id",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1073,8 +1073,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.extension",
-        "path": "oncology-NuclearGrade-model.topicCode.value.extension",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.extension",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1112,8 +1112,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.system",
-        "path": "oncology-NuclearGrade-model.topicCode.value.system",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.system",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1148,8 +1148,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.version",
-        "path": "oncology-NuclearGrade-model.topicCode.value.version",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.version",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1182,8 +1182,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.code",
-        "path": "oncology-NuclearGrade-model.topicCode.value.code",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.code",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1217,14 +1217,14 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.display",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-NuclearGrade-model.topicCode.value.display",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1257,8 +1257,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.topicCode.value.userSelected",
-        "path": "oncology-NuclearGrade-model.topicCode.value.userSelected",
+        "id": "oncology-DCISNuclearGrade-model.topicCode.value.userSelected",
+        "path": "oncology-DCISNuclearGrade-model.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1292,14 +1292,14 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.findingMethod",
-        "path": "oncology-NuclearGrade-model.findingMethod",
+        "id": "oncology-DCISNuclearGrade-model.findingMethod",
+        "path": "oncology-DCISNuclearGrade-model.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.findingMethod",
+          "path": "oncology-DCISNuclearGrade-model.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -1313,8 +1313,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.interpretation",
-        "path": "oncology-NuclearGrade-model.interpretation",
+        "id": "oncology-DCISNuclearGrade-model.interpretation",
+        "path": "oncology-DCISNuclearGrade-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1326,7 +1326,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.interpretation",
+          "path": "oncology-DCISNuclearGrade-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -1340,14 +1340,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.category",
-        "path": "oncology-NuclearGrade-model.category",
+        "id": "oncology-DCISNuclearGrade-model.category",
+        "path": "oncology-DCISNuclearGrade-model.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-NuclearGrade-model.category",
+          "path": "oncology-DCISNuclearGrade-model.category",
           "min": 1,
           "max": "*"
         },
@@ -1361,8 +1361,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value",
-        "path": "oncology-NuclearGrade-model.category.value",
+        "id": "oncology-DCISNuclearGrade-model.category.value",
+        "path": "oncology-DCISNuclearGrade-model.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -1385,8 +1385,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.id",
-        "path": "oncology-NuclearGrade-model.category.value.id",
+        "id": "oncology-DCISNuclearGrade-model.category.value.id",
+        "path": "oncology-DCISNuclearGrade-model.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1412,8 +1412,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.extension",
-        "path": "oncology-NuclearGrade-model.category.value.extension",
+        "id": "oncology-DCISNuclearGrade-model.category.value.extension",
+        "path": "oncology-DCISNuclearGrade-model.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1451,8 +1451,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.system",
-        "path": "oncology-NuclearGrade-model.category.value.system",
+        "id": "oncology-DCISNuclearGrade-model.category.value.system",
+        "path": "oncology-DCISNuclearGrade-model.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1487,8 +1487,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.version",
-        "path": "oncology-NuclearGrade-model.category.value.version",
+        "id": "oncology-DCISNuclearGrade-model.category.value.version",
+        "path": "oncology-DCISNuclearGrade-model.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1521,8 +1521,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.code",
-        "path": "oncology-NuclearGrade-model.category.value.code",
+        "id": "oncology-DCISNuclearGrade-model.category.value.code",
+        "path": "oncology-DCISNuclearGrade-model.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1556,14 +1556,14 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.display",
+        "id": "oncology-DCISNuclearGrade-model.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-NuclearGrade-model.category.value.display",
+        "path": "oncology-DCISNuclearGrade-model.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1596,8 +1596,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.category.value.userSelected",
-        "path": "oncology-NuclearGrade-model.category.value.userSelected",
+        "id": "oncology-DCISNuclearGrade-model.category.value.userSelected",
+        "path": "oncology-DCISNuclearGrade-model.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1631,8 +1631,8 @@
         ]
       },
       {
-        "id": "oncology-NuclearGrade-model.anatomicalLocation",
-        "path": "oncology-NuclearGrade-model.anatomicalLocation",
+        "id": "oncology-DCISNuclearGrade-model.anatomicalLocation",
+        "path": "oncology-DCISNuclearGrade-model.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1644,7 +1644,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.anatomicalLocation",
+          "path": "oncology-DCISNuclearGrade-model.anatomicalLocation",
           "min": 0,
           "max": "0"
         },
@@ -1658,8 +1658,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.breastSpecimen",
-        "path": "oncology-NuclearGrade-model.breastSpecimen",
+        "id": "oncology-DCISNuclearGrade-model.breastSpecimen",
+        "path": "oncology-DCISNuclearGrade-model.breastSpecimen",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "alias": [
@@ -1668,7 +1668,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.breastSpecimen",
+          "path": "oncology-DCISNuclearGrade-model.breastSpecimen",
           "min": 0,
           "max": "1"
         },
@@ -1682,8 +1682,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.deltaFlag",
-        "path": "oncology-NuclearGrade-model.deltaFlag",
+        "id": "oncology-DCISNuclearGrade-model.deltaFlag",
+        "path": "oncology-DCISNuclearGrade-model.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1695,7 +1695,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.deltaFlag",
+          "path": "oncology-DCISNuclearGrade-model.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -1709,14 +1709,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.precondition",
-        "path": "oncology-NuclearGrade-model.precondition",
+        "id": "oncology-DCISNuclearGrade-model.precondition",
+        "path": "oncology-DCISNuclearGrade-model.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.precondition",
+          "path": "oncology-DCISNuclearGrade-model.precondition",
           "min": 0,
           "max": "0"
         },
@@ -1730,8 +1730,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.referenceRange",
-        "path": "oncology-NuclearGrade-model.referenceRange",
+        "id": "oncology-DCISNuclearGrade-model.referenceRange",
+        "path": "oncology-DCISNuclearGrade-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1743,7 +1743,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.referenceRange",
+          "path": "oncology-DCISNuclearGrade-model.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -1757,14 +1757,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.evaluationComponent",
-        "path": "oncology-NuclearGrade-model.evaluationComponent",
+        "id": "oncology-DCISNuclearGrade-model.evaluationComponent",
+        "path": "oncology-DCISNuclearGrade-model.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-NuclearGrade-model.evaluationComponent",
+          "path": "oncology-DCISNuclearGrade-model.evaluationComponent",
           "min": 0,
           "max": "0"
         },
@@ -1778,14 +1778,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.recordedContext",
-        "path": "oncology-NuclearGrade-model.recordedContext",
+        "id": "oncology-DCISNuclearGrade-model.recordedContext",
+        "path": "oncology-DCISNuclearGrade-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.recordedContext",
+          "path": "oncology-DCISNuclearGrade-model.recordedContext",
           "min": 1,
           "max": "1"
         },
@@ -1799,14 +1799,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.members",
-        "path": "oncology-NuclearGrade-model.members",
+        "id": "oncology-DCISNuclearGrade-model.members",
+        "path": "oncology-DCISNuclearGrade-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
         "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-NuclearGrade-model.members",
+          "path": "oncology-DCISNuclearGrade-model.members",
           "min": 1,
           "max": "1"
         },
@@ -1820,8 +1820,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.members.value",
-        "path": "oncology-NuclearGrade-model.members.value",
+        "id": "oncology-DCISNuclearGrade-model.members.value",
+        "path": "oncology-DCISNuclearGrade-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
         "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
         "alias": [
@@ -1845,14 +1845,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-NuclearGrade-model.diagnosticService",
-        "path": "oncology-NuclearGrade-model.diagnosticService",
+        "id": "oncology-DCISNuclearGrade-model.diagnosticService",
+        "path": "oncology-DCISNuclearGrade-model.diagnosticService",
         "short": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-NuclearGrade-model.diagnosticService",
+          "path": "oncology-DCISNuclearGrade-model.diagnosticService",
           "min": 0,
           "max": "*"
         },

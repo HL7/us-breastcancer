@@ -16,6 +16,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="StructureDefinition/oncology-BreastCancerHistologicGrade" />
+                <display value="BC BreastCancerHistologicGrade Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="StructureDefinition/oncology-BreastCancerPresenceStatement" />
                 <display value="BC BreastCancerPresenceStatement Profile" />
             </sourceReference>
@@ -23,8 +30,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-BreastCancerPrognosticStage" />
-                <display value="BC BreastCancerPrognosticStage Profile" />
+                <reference value="StructureDefinition/oncology-BreastCancerStage" />
+                <display value="BC BreastCancerStage Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -46,6 +53,13 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-ConditionPresenceStatement" />
                 <display value="BC ConditionPresenceStatement Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/oncology-DCISNuclearGrade" />
+                <display value="BC DCISNuclearGrade Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -86,13 +100,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/oncology-HistologicGrade" />
-                <display value="BC HistologicGrade Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-LaboratoryTestResultRecorded" />
                 <display value="BC LaboratoryTestResultRecorded Profile" />
             </sourceReference>
@@ -102,13 +109,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/oncology-MammaprintRecurrenceScore" />
                 <display value="BC MammaprintRecurrenceScore Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/oncology-NuclearGrade" />
-                <display value="BC NuclearGrade Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -394,48 +394,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerMCategoryVS" />
-                <display value="BC BreastCancerMCategoryVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerNCategorySuffixVS" />
-                <display value="BC BreastCancerNCategorySuffixVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerNCategoryVS" />
-                <display value="BC BreastCancerNCategoryVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerStageVS" />
-                <display value="BC BreastCancerStageVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerTCategorySuffixVS" />
-                <display value="BC BreastCancerTCategorySuffixVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-BreastCancerTCategoryVS" />
-                <display value="BC BreastCancerTCategoryVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/oncology-BreastCancerTypeVS" />
                 <display value="BC BreastCancerTypeVS ValueSet" />
             </sourceReference>
@@ -480,13 +438,6 @@
             <sourceReference>
                 <reference value="ValueSet/cimi-ConditionVS" />
                 <display value="BC ConditionVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-DegreeOfLymphaticInvolvementVS" />
-                <display value="BC DegreeOfLymphaticInvolvementVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -550,13 +501,6 @@
             <sourceReference>
                 <reference value="ValueSet/oncology-LeftRightLateralityVS" />
                 <display value="BC LeftRightLateralityVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-LymphSystemSubdivisionVS" />
-                <display value="BC LymphSystemSubdivisionVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -674,13 +618,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/oncology-TumorMarginDescriptionVS" />
-                <display value="BC TumorMarginDescriptionVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/shr-core-YesNoUnknownVS" />
                 <display value="BC YesNoUnknownVS ValueSet" />
             </sourceReference>
@@ -697,48 +634,6 @@
             <sourceReference>
                 <reference value="CodeSystem/cimi-AnatomicalDirectionCS" />
                 <display value="BC AnatomicalDirectionCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerMCategoryCS" />
-                <display value="BC BreastCancerMCategoryCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerNCategoryCS" />
-                <display value="BC BreastCancerNCategoryCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerNCategorySuffixCS" />
-                <display value="BC BreastCancerNCategorySuffixCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerStageCS" />
-                <display value="BC BreastCancerStageCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerTCategoryCS" />
-                <display value="BC BreastCancerTCategoryCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-BreastCancerTCategorySuffixCS" />
-                <display value="BC BreastCancerTCategorySuffixCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -774,13 +669,6 @@
             <sourceReference>
                 <reference value="CodeSystem/cimi-ConditionCategoryCS" />
                 <display value="BC ConditionCategoryCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-DegreeOfLymphaticInvolvementCS" />
-                <display value="BC DegreeOfLymphaticInvolvementCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -823,13 +711,6 @@
             <sourceReference>
                 <reference value="CodeSystem/cimi-LateralityCS" />
                 <display value="BC LateralityCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/oncology-LeftRightLateralityCS" />
-                <display value="BC LeftRightLateralityCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -1031,15 +912,15 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerMCategory-model" />
-                  <display value="BreastCancerMCategory" />
+                  <reference value="StructureDefinition/oncology-BreastCancerDistantMetastasesClassification-model" />
+                  <display value="BreastCancerDistantMetastasesClassification" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerNCategory-model" />
-                  <display value="BreastCancerNCategory" />
+                  <reference value="StructureDefinition/oncology-BreastCancerHistologicGrade-model" />
+                  <display value="BreastCancerHistologicGrade" />
               </sourceReference>
           </resource>
           <resource>
@@ -1052,15 +933,22 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerPrognosticStage-model" />
-                  <display value="BreastCancerPrognosticStage" />
+                  <reference value="StructureDefinition/oncology-BreastCancerPrimaryTumorClassification-model" />
+                  <display value="BreastCancerPrimaryTumorClassification" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-BreastCancerTCategory-model" />
-                  <display value="BreastCancerTCategory" />
+                  <reference value="StructureDefinition/oncology-BreastCancerRegionalNodesClassification-model" />
+                  <display value="BreastCancerRegionalNodesClassification" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/oncology-BreastCancerStage-model" />
+                  <display value="BreastCancerStage" />
               </sourceReference>
           </resource>
           <resource>
@@ -1220,6 +1108,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/oncology-DCISNuclearGrade-model" />
+                  <display value="DCISNuclearGrade" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-DeltaFlag-model" />
                   <display value="DeltaFlag" />
               </sourceReference>
@@ -1374,13 +1269,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/oncology-HistologicGrade-model" />
-                  <display value="HistologicGrade" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-IndivisibleClinicalStatement-model" />
                   <display value="IndivisibleClinicalStatement" />
               </sourceReference>
@@ -1460,13 +1348,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/oncology-MorphologyBehavior-model" />
                   <display value="MorphologyBehavior" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/oncology-NuclearGrade-model" />
-                  <display value="NuclearGrade" />
               </sourceReference>
           </resource>
           <resource>

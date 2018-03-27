@@ -3,7 +3,7 @@
   "id": "oncology-LeftRightLateralityVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LeftRightLateralityVS ValueSet</b></p>\n<p>Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LeftRightLateralityVS ValueSet</b></p>\n<p>Simplified set of laterality codes indicating detailing the side(s) of interest. This is a subset of the FHIR body site laterality value set (http://hl7.org/implement/standards/fhir/2015Jan/valueset-bodysite-laterality.html)</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS",
   "identifier": [
@@ -27,19 +27,19 @@
     }
   ],
   "date": "2018-03-27",
-  "description": "Simplified set of laterality codes indicating detailing the side(s) of interest. Codes are from NCI",
+  "description": "Simplified set of laterality codes indicating detailing the side(s) of interest. This is a subset of the FHIR body site laterality value set (http://hl7.org/implement/standards/fhir/2015Jan/valueset-bodysite-laterality.html)",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-LeftRightLateralityCS",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "C25229",
-            "display": "LEFT Being or located on or directed toward the side of the body to the west when facing north."
+            "code": "419161000",
+            "display": "Unilateral left"
           },
           {
-            "code": "C25228",
-            "display": "RIGHT Being or located on or directed toward the side of the body to the east when facing north."
+            "code": "419465000",
+            "display": "Unilateral right"
           }
         ]
       }

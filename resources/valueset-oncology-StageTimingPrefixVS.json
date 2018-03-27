@@ -34,28 +34,20 @@
         "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StageTimingPrefixCS",
         "concept": [
           {
-            "code": "c",
-            "display": "The concept designated by the symbol c in Version 8 of AJCC's cancer staging manual, breast chapter."
+            "code": "cli",
+            "display": "Staging performed prior to surgery, based on evidence such as physical examination, imaging, and/or biopsy."
           },
           {
-            "code": "p",
-            "display": "The concept designated by the symbol p in Version 8 of AJCC's cancer staging manual, breast chapter."
+            "code": "path",
+            "display": "Staging performed based on examination of tissue samples removed during surgery, in addition to physical examination and imaging."
           },
           {
-            "code": "yc",
-            "display": "The concept designated by the symbol yc in Version 8 of AJCC's cancer staging manual, breast chapter."
+            "code": "postther_cli",
+            "display": "Post-therapeutic (post-neoadjuvant) clinical staging based on clinical examination after the first treatment with systemic drugs or radiation, when no surgery has been performed."
           },
           {
-            "code": "yp",
-            "display": "The concept designated by the symbol yp in Version 8 of AJCC's cancer staging manual, breast chapter."
-          },
-          {
-            "code": "r",
-            "display": "The concept designated by the symbol r in Version 8 of AJCC's cancer staging manual, breast chapter."
-          },
-          {
-            "code": "a",
-            "display": "The concept designated by the symbol r in Version 8 of AJCC's cancer staging manual, breast chapter."
+            "code": "postther_path",
+            "display": "Post-therapeutic (post-neoadjuvant) pathologic staging, based  on tissue samples removed during surgery after the first treatment with systemic drugs or radiation."
           }
         ]
       }

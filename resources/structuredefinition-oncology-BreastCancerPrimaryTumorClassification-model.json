@@ -1,19 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "oncology-BreastCancerTCategory-model",
+  "id": "oncology-BreastCancerPrimaryTumorClassification-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerTCategory Logical Model</b></p>\n  <p>The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPrimaryTumorClassification Logical Model</b></p>\n  <p>The size and extent of the primary tumor, based on criteria defined by the staging system being used.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerTCategory-model",
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPrimaryTumorClassification-model",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
-      "value": "oncology.BreastCancerTCategory"
+      "value": "oncology.BreastCancerPrimaryTumorClassification"
     }
   ],
-  "name": "BreastCancerTCategory",
-  "title": "BC BreastCancerTCategory Logical Model",
+  "name": "BreastCancerPrimaryTumorClassification",
+  "title": "BC BreastCancerPrimaryTumorClassification Logical Model",
   "status": "draft",
   "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
+  "description": "The size and extent of the primary tumor, based on criteria defined by the staging system being used.",
   "keyword": [
     {
       "system": "http://snomed.info/sct",
@@ -37,19 +37,19 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "oncology-BreastCancerTCategory-model",
+  "type": "oncology-BreastCancerPrimaryTumorClassification-model",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
     "element": [
       {
-        "id": "oncology-BreastCancerTCategory-model",
-        "path": "oncology-BreastCancerTCategory-model",
-        "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model",
+        "definition": "The size and extent of the primary tumor, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model",
           "min": 0,
           "max": "*"
         },
@@ -58,17 +58,17 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.value",
-        "path": "oncology-BreastCancerTCategory-model.value",
-        "short": "Code representing the size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
-        "definition": "Code representing the size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.value",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.value",
+        "short": "Code representing the size and extent of the primary tumor, based on criteria defined by the staging system being used.",
+        "definition": "Code representing the size and extent of the primary tumor, based on criteria defined by the staging system being used.",
         "alias": [
           "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.value",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.value",
           "min": 1,
           "max": "1"
         },
@@ -79,23 +79,17 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategoryVS"
-          }
-        }
+        "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.exceptionValue",
-        "path": "oncology-BreastCancerTCategory-model.exceptionValue",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.exceptionValue",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
         "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, and with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.exceptionValue",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.exceptionValue",
           "min": 0,
           "max": "1"
         },
@@ -109,8 +103,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.interpretation",
-        "path": "oncology-BreastCancerTCategory-model.interpretation",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.interpretation",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -122,7 +116,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.interpretation",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -136,8 +130,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.referenceRange",
-        "path": "oncology-BreastCancerTCategory-model.referenceRange",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.referenceRange",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -149,7 +143,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.referenceRange",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -163,14 +157,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.stageSuffix",
-        "path": "oncology-BreastCancerTCategory-model.stageSuffix",
-        "short": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.stageSuffix",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.stageSuffix",
+        "short": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
+        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.stageSuffix",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.stageSuffix",
           "min": 0,
           "max": "1"
         },
@@ -182,49 +176,19 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerTCategory-model.stageSuffix.value",
-        "path": "oncology-BreastCancerTCategory-model.stageSuffix.value",
-        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "oncology-StageSuffix-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategorySuffixVS"
-          }
-        }
       }
     ]
   },
   "differential": {
     "element": [
       {
-        "id": "oncology-BreastCancerTCategory-model",
-        "path": "oncology-BreastCancerTCategory-model",
-        "definition": "The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model",
+        "definition": "The size and extent of the primary tumor, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model",
           "min": 0,
           "max": "*"
         },
@@ -233,17 +197,17 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.value",
-        "path": "oncology-BreastCancerTCategory-model.value",
-        "short": "Code representing the size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
-        "definition": "Code representing the size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.value",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.value",
+        "short": "Code representing the size and extent of the primary tumor, based on criteria defined by the staging system being used.",
+        "definition": "Code representing the size and extent of the primary tumor, based on criteria defined by the staging system being used.",
         "alias": [
           "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.value",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.value",
           "min": 1,
           "max": "1"
         },
@@ -254,23 +218,17 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategoryVS"
-          }
-        }
+        "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.exceptionValue",
-        "path": "oncology-BreastCancerTCategory-model.exceptionValue",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.exceptionValue",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
         "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, and with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.exceptionValue",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.exceptionValue",
           "min": 0,
           "max": "1"
         },
@@ -284,8 +242,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.interpretation",
-        "path": "oncology-BreastCancerTCategory-model.interpretation",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.interpretation",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -297,7 +255,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.interpretation",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -311,8 +269,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.referenceRange",
-        "path": "oncology-BreastCancerTCategory-model.referenceRange",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.referenceRange",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -324,7 +282,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.referenceRange",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -338,14 +296,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerTCategory-model.stageSuffix",
-        "path": "oncology-BreastCancerTCategory-model.stageSuffix",
-        "short": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "id": "oncology-BreastCancerPrimaryTumorClassification-model.stageSuffix",
+        "path": "oncology-BreastCancerPrimaryTumorClassification-model.stageSuffix",
+        "short": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
+        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerTCategory-model.stageSuffix",
+          "path": "oncology-BreastCancerPrimaryTumorClassification-model.stageSuffix",
           "min": 0,
           "max": "1"
         },
@@ -357,36 +315,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerTCategory-model.stageSuffix.value",
-        "path": "oncology-BreastCancerTCategory-model.stageSuffix.value",
-        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "oncology-StageSuffix-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTCategorySuffixVS"
-          }
-        }
       }
     ]
   }

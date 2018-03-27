@@ -3,13 +3,13 @@
 <p><b>BC Mapping Source</b></p>
 <p>This structure represents the following BC mapping definition:</p>
 <pre>
-oncology.HistologicGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:
+oncology.BreastCancerStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:
   Category maps to category
   FindingMethod maps to method
   CodeableConcept maps to value[x]
   TopicCode maps to code
   AnatomicalLocation maps to bodySite
-  BreastSpecimen maps to specimen
+  Specimen maps to specimen
   Interpretation maps to interpretation
   RecordedContext.RelevantTime maps to effective[x]
   RecordedContext.FindingStatus maps to status
@@ -35,6 +35,5 @@ oncology.HistologicGrade maps to http://hl7.org/fhir/us/core/StructureDefinition
   EvaluationComponent.Interpretation maps to component.interpretation
   EvaluationComponent.ReferenceRange maps to component.referenceRange
   Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)
-  constrain related to 0..0
 
 </pre>

@@ -26,7 +26,7 @@
   <a name="navbar_top_firstrow"></a>
   <ul class="navList" title="Navigation">
     <li class="navBarCell1Rev">Overview</li>
-    <li class="navBarCell1Rev"><a href="/../" target="_top">Back to BC Website</a></li>
+    <!-- <li class="navBarCell1Rev"><a href="/../" target="_top">Back to BC Website</a></li> -->
   </ul>
   <div class="aboutLanguage">
     <em><strong>BC&nbsp;Reference&nbsp;Model</strong></em>
@@ -34,12 +34,12 @@
 </div>
 <div class="subNav">
   <ul class="navList">
-    <li><a href="index.html?overview-summary.html" target="_top">Frames</a></li>
+    <li><a href="index.html" target="_top">Frames</a></li>
     <li><a href="overview-summary.html" target="_top">No Frames</a></li>
   </ul>
-  <ul class="navList" id="allclasses_navbar_top">
+  <!-- <ul class="navList" id="allclasses_navbar_top">
     <li><a href="allclasses-noframe.html">All Classes</a></li>
-  </ul>
+  </ul> --> <!-- This is doesn't link to anything -->
   <div>
     <script type="text/javascript">
       //<![CDATA[
@@ -54,7 +54,7 @@
     //]]>
     </script>
   </div>
-  <a name="skip-navbar_top">
+  <a name="skip-navbar_top"></a>
   </a>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
@@ -237,20 +237,20 @@ Examples include tissue types, tumors, and wounds. Body structures are continuan
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="oncology/BreastCancerMCategory.html">BreastCancerMCategory</a>
+          <a href="oncology/BreastCancerDistantMetastasesClassification.html">BreastCancerDistantMetastasesClassification</a>
         </td>
         <td class="colLast">
-          <div class="block">Part of the TNM classification system representing metastases.  The system is used to describe the spread of cancer to other parts of the body.</div>
+          <div class="block">The presence of distant metastases, based on criteria defined by the staging system being used.</div>
         </td>
       </tr>
       
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="oncology/BreastCancerNCategory.html">BreastCancerNCategory</a>
+          <a href="oncology/BreastCancerHistologicGrade.html">BreastCancerHistologicGrade</a>
         </td>
         <td class="colLast">
-          <div class="block">The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.</div>
+          <div class="block">The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</div>
         </td>
       </tr>
       
@@ -269,20 +269,30 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="oncology/BreastCancerPrognosticStage.html">BreastCancerPrognosticStage</a>
+          <a href="oncology/BreastCancerPrimaryTumorClassification.html">BreastCancerPrimaryTumorClassification</a>
         </td>
         <td class="colLast">
-          <div class="block">The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.</div>
+          <div class="block">The size and extent of the primary tumor, based on criteria defined by the staging system being used.</div>
         </td>
       </tr>
       
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="oncology/BreastCancerTCategory.html">BreastCancerTCategory</a>
+          <a href="oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a>
         </td>
         <td class="colLast">
-          <div class="block">The size and extent of the primary tumor (greatest dimension), based on criteria from the American Joint Committee on Cancer.</div>
+          <div class="block">The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.</div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
+          <a href="oncology/BreastCancerStage.html">BreastCancerStage</a>
+        </td>
+        <td class="colLast">
+          <div class="block">The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.</div>
         </td>
       </tr>
       
@@ -555,6 +565,16 @@ CIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion,
         <tr class="altColor">
       
         <td class="colFirst">
+          <a href="oncology/DCISNuclearGrade.html">DCISNuclearGrade</a>
+        </td>
+        <td class="colLast">
+          <div class="block">An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
           <a href="cimi/DeltaFlag.html">DeltaFlag</a>
         </td>
         <td class="colLast">
@@ -814,16 +834,6 @@ We are seeking feedback if it is better to put the positive/negative status in V
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="oncology/HistologicGrade.html">HistologicGrade</a>
-        </td>
-        <td class="colLast">
-          <div class="block">The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
           <a href="cimi/IndivisibleClinicalStatement.html">IndivisibleClinicalStatement</a>
         </td>
         <td class="colLast">
@@ -954,16 +964,6 @@ The is currently no LOINC code for Mammaprint test.</div>
         </td>
         <td class="colLast">
           <div class="block">A description of the morphology and behavioral characteristics of the cancer.</div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
-          <a href="oncology/NuclearGrade.html">NuclearGrade</a>
-        </td>
-        <td class="colLast">
-          <div class="block">An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</div>
         </td>
       </tr>
       
@@ -1279,7 +1279,7 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
           <a href="oncology/StageSuffix.html">StageSuffix</a>
         </td>
         <td class="colLast">
-          <div class="block">A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.</div>
+          <div class="block">A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.</div>
         </td>
       </tr>
       
@@ -1289,7 +1289,7 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
           <a href="oncology/StageTimingPrefix.html">StageTimingPrefix</a>
         </td>
         <td class="colLast">
-          <div class="block">Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#39;yc&#39; (e.g. ycNX)</div>
+          <div class="block">Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#39;yc&#39; (e.g. ycNX)</div>
         </td>
       </tr>
       
@@ -1443,12 +1443,12 @@ If the start element is missing, the start of the period is not known. If the en
     <li></li>
   </ul>
   <ul class="navList">
-    <li><a href="index.html?overview-summary.html" target="_top">Frames</a></li>
+    <li><a href="index.html" target="_top">Frames</a></li>
     <li><a href="overview-summary.html" target="_top">No Frames</a></li>
   </ul>
-  <ul class="navList" id="allclasses_navbar_bottom">
+  <!-- <ul class="navList" id="allclasses_navbar_bottom">
     <li><a href="allclasses-noframe.html">All Classes</a></li>
-  </ul>
+  </ul> --> <!-- This is doesn't link to anything -->
   <div>
     <script type="text/javascript">
     //<![CDATA[

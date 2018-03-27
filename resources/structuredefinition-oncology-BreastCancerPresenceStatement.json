@@ -2315,9 +2315,16 @@
           "con-1"
         ],
         "binding": {
-          "strength": "required",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ConditionStage"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes describing condition stages (e.g. Cancer stages).",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
+            "reference": "http://hl7.org/fhir/ValueSet/condition-stage"
           }
         },
         "mapping": [
@@ -2350,7 +2357,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPrognosticStage"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStage"
           }
         ],
         "condition": [
@@ -2916,16 +2923,6 @@
         "path": "Condition.stage"
       },
       {
-        "id": "Condition:oncology-BreastCancerPresenceStatement.stage.summary",
-        "path": "Condition.stage.summary",
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
-          }
-        }
-      },
-      {
         "id": "Condition:oncology-BreastCancerPresenceStatement.stage.assessment",
         "path": "Condition.stage.assessment",
         "min": 0,
@@ -2933,7 +2930,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPrognosticStage"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStage"
           }
         ]
       }

@@ -3,7 +3,7 @@
   "id": "oncology-StageSuffix-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StageSuffix Logical Model</b></p>\n  <p>A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StageSuffix Logical Model</b></p>\n  <p>A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageSuffix-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+  "description": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
   "kind": "logical",
   "abstract": false,
   "type": "oncology-StageSuffix-model",
@@ -38,7 +38,7 @@
       {
         "id": "oncology-StageSuffix-model",
         "path": "oncology-StageSuffix-model",
-        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "*",
         "base": {
@@ -53,8 +53,8 @@
       {
         "id": "oncology-StageSuffix-model.value",
         "path": "oncology-StageSuffix-model.value",
-        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
+        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
         "alias": [
           "codeableConcept"
         ],
@@ -81,7 +81,7 @@
       {
         "id": "oncology-StageSuffix-model",
         "path": "oncology-StageSuffix-model",
-        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "definition": "A suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "*",
         "base": {
@@ -96,8 +96,8 @@
       {
         "id": "oncology-StageSuffix-model.value",
         "path": "oncology-StageSuffix-model.value",
-        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
-        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria from the American Joint Committee on Cancer.",
+        "short": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
+        "definition": "Code representing a suffix used in conjuction with certain breast cancer stages, based on criteria defined by the staging system being used.",
         "alias": [
           "codeableConcept"
         ],

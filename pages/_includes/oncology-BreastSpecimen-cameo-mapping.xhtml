@@ -10,6 +10,9 @@ oncology.BreastSpecimen maps to Specimen:
   CollectionTime maps to collection.collected[x]
   CollectionMethod maps to collection.method
   CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance
-  ColdIschemiaTime maps to processing (slice on = coding.code)
+  ColdIschemiaTime maps to processing (slice on = procedure)
+  ColdIschemiaTime.TimePeriod maps to processing.time[x]
+  ColdIschemiaTime._Concept maps to processing.procedure
+  constrain processing.additive to 0..0
 
 </pre>

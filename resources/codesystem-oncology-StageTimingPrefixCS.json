@@ -28,37 +28,27 @@
   "description": "When staging was done, relative to treatment events.",
   "caseSensitive": true,
   "content": "complete",
-  "count": 6,
+  "count": 4,
   "concept": [
     {
-      "code": "c",
-      "definition": "The concept designated by the symbol c in Version 8 of AJCC's cancer staging manual, breast chapter.",
-      "display": "The concept designated by the symbol c in Version 8 of AJCC's cancer staging manual, breast chapter."
+      "code": "cli",
+      "definition": "Staging performed prior to surgery, based on evidence such as physical examination, imaging, and/or biopsy.",
+      "display": "Staging performed prior to surgery, based on evidence such as physical examination, imaging, and/or biopsy."
     },
     {
-      "code": "p",
-      "definition": "The concept designated by the symbol p in Version 8 of AJCC's cancer staging manual, breast chapter.",
-      "display": "The concept designated by the symbol p in Version 8 of AJCC's cancer staging manual, breast chapter."
+      "code": "path",
+      "definition": "Staging performed based on examination of tissue samples removed during surgery, in addition to physical examination and imaging.",
+      "display": "Staging performed based on examination of tissue samples removed during surgery, in addition to physical examination and imaging."
     },
     {
-      "code": "yc",
-      "definition": "The concept designated by the symbol yc in Version 8 of AJCC's cancer staging manual, breast chapter.",
-      "display": "The concept designated by the symbol yc in Version 8 of AJCC's cancer staging manual, breast chapter."
+      "code": "postther_cli",
+      "definition": "Post-therapeutic (post-neoadjuvant) clinical staging based on clinical examination after the first treatment with systemic drugs or radiation, when no surgery has been performed.",
+      "display": "Post-therapeutic (post-neoadjuvant) clinical staging based on clinical examination after the first treatment with systemic drugs or radiation, when no surgery has been performed."
     },
     {
-      "code": "yp",
-      "definition": "The concept designated by the symbol yp in Version 8 of AJCC's cancer staging manual, breast chapter.",
-      "display": "The concept designated by the symbol yp in Version 8 of AJCC's cancer staging manual, breast chapter."
-    },
-    {
-      "code": "r",
-      "definition": "The concept designated by the symbol r in Version 8 of AJCC's cancer staging manual, breast chapter.",
-      "display": "The concept designated by the symbol r in Version 8 of AJCC's cancer staging manual, breast chapter."
-    },
-    {
-      "code": "a",
-      "definition": "The concept designated by the symbol r in Version 8 of AJCC's cancer staging manual, breast chapter.",
-      "display": "The concept designated by the symbol r in Version 8 of AJCC's cancer staging manual, breast chapter."
+      "code": "postther_path",
+      "definition": "Post-therapeutic (post-neoadjuvant) pathologic staging, based  on tissue samples removed during surgery after the first treatment with systemic drugs or radiation.",
+      "display": "Post-therapeutic (post-neoadjuvant) pathologic staging, based  on tissue samples removed during surgery after the first treatment with systemic drugs or radiation."
     }
   ]
 }

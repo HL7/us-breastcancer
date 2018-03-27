@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "oncology-HistologicGrade",
+  "id": "oncology-BreastCancerHistologicGrade",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HistologicGrade Profile</b></p>\n  <p>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HistologicGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerHistologicGrade Profile</b></p>\n  <p>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerHistologicGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HistologicGrade",
-  "name": "HistologicGrade",
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerHistologicGrade",
+  "name": "BreastCancerHistologicGrade",
   "status": "draft",
   "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
@@ -77,9 +77,9 @@
   "snapshot": {
     "element": [
       {
-        "id": "Observation:oncology-HistologicGrade",
+        "id": "Observation:oncology-BreastCancerHistologicGrade",
         "path": "Observation",
-        "short": "HistologicGrade",
+        "short": "BreastCancerHistologicGrade",
         "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
@@ -186,7 +186,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.id",
         "path": "Observation.id",
         "short": "Logical id of this artifact",
         "definition": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -206,7 +206,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.meta",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.meta",
         "path": "Observation.meta",
         "short": "Metadata about the resource",
         "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
@@ -225,7 +225,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.implicitRules",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.implicitRules",
         "path": "Observation.implicitRules",
         "short": "A set of rules under which this content was created",
         "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
@@ -246,7 +246,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.language",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.language",
         "path": "Observation.language",
         "short": "Language of the resource content",
         "definition": "The base language in which the resource is written.",
@@ -288,7 +288,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.text",
         "path": "Observation.text",
         "short": "Text summary of the resource, for human interpretation",
         "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
@@ -322,7 +322,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.contained",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.contained",
         "path": "Observation.contained",
         "short": "Contained, inline Resources",
         "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
@@ -352,7 +352,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension",
         "path": "Observation.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -392,7 +392,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:deltaflag",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
         "min": 0,
@@ -406,7 +406,7 @@
         "sliceName": "deltaflag"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice",
         "path": "Observation.extension",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
@@ -420,7 +420,7 @@
         "sliceName": "diagnosticservice"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.id",
         "path": "Observation.extension.id",
         "representation": [
           "xmlAttr"
@@ -447,7 +447,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.extension:extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.extension:extension",
         "path": "Observation.extension.extension",
         "sliceName": "extension",
         "short": "Extension",
@@ -466,7 +466,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.url",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.url",
         "path": "Observation.extension.url",
         "representation": [
           "xmlAttr"
@@ -495,7 +495,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept",
         "path": "Observation.extension.valueCodeableConcept",
         "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
@@ -525,7 +525,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.id",
         "path": "Observation.extension.valueCodeableConcept.id",
         "representation": [
           "xmlAttr"
@@ -552,7 +552,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.extension",
         "path": "Observation.extension.valueCodeableConcept.extension",
         "slicing": {
           "discriminator": [
@@ -591,7 +591,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding",
         "path": "Observation.extension.valueCodeableConcept.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -632,7 +632,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology",
         "path": "Observation.extension.valueCodeableConcept.coding",
         "sliceName": "Fixed_pathology",
         "definition": "A reference to a code defined by a terminology system.",
@@ -646,7 +646,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.id",
         "path": "Observation.extension.valueCodeableConcept.coding.id",
         "representation": [
           "xmlAttr"
@@ -673,7 +673,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.extension",
         "path": "Observation.extension.valueCodeableConcept.coding.extension",
         "slicing": {
           "discriminator": [
@@ -712,7 +712,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.system",
         "path": "Observation.extension.valueCodeableConcept.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -743,7 +743,7 @@
         "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.version",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.version",
         "path": "Observation.extension.valueCodeableConcept.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -772,7 +772,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.code",
         "path": "Observation.extension.valueCodeableConcept.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -802,7 +802,7 @@
         "fixedCode": "pathology"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.display",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -837,7 +837,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.userSelected",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.userSelected",
         "path": "Observation.extension.valueCodeableConcept.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -867,7 +867,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -903,7 +903,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.modifierExtension",
         "path": "Observation.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -933,7 +933,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.identifier",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.identifier",
         "path": "Observation.identifier",
         "short": "Business Identifier for observation",
         "definition": "A unique identifier assigned to this observation.",
@@ -971,7 +971,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.basedOn",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.basedOn",
         "path": "Observation.basedOn",
         "short": "Fulfills plan, proposal or order",
         "definition": "A plan, proposal or order that is fulfilled in whole or in part by this event.",
@@ -1033,7 +1033,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.status",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.status",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
@@ -1094,7 +1094,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category",
         "path": "Observation.category",
         "short": "Classification of  type of observation",
         "definition": "A code that classifies the general type of observation being made.",
@@ -1151,7 +1151,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.id",
         "path": "Observation.category.id",
         "representation": [
           "xmlAttr"
@@ -1178,7 +1178,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.extension",
         "path": "Observation.category.extension",
         "slicing": {
           "discriminator": [
@@ -1217,7 +1217,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding",
         "path": "Observation.category.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -1258,7 +1258,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory",
         "path": "Observation.category.coding",
         "sliceName": "Fixed_laboratory",
         "definition": "A reference to a code defined by a terminology system.",
@@ -1272,7 +1272,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.id",
         "path": "Observation.category.coding.id",
         "representation": [
           "xmlAttr"
@@ -1299,7 +1299,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.extension",
         "path": "Observation.category.coding.extension",
         "slicing": {
           "discriminator": [
@@ -1338,7 +1338,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.system",
         "path": "Observation.category.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -1369,7 +1369,7 @@
         "fixedUri": "http://hl7.org/fhir/observation-category"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.version",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.version",
         "path": "Observation.category.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -1398,7 +1398,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.code",
         "path": "Observation.category.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -1428,7 +1428,7 @@
         "fixedCode": "laboratory"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.display",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1463,7 +1463,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.userSelected",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.userSelected",
         "path": "Observation.category.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -1493,7 +1493,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1529,7 +1529,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code",
         "path": "Observation.code",
         "short": "Laboratory Test Name",
         "definition": "The test that was performed.  A LOINC **SHALL** be used if the concept is present in LOINC.",
@@ -1593,7 +1593,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.id",
         "path": "Observation.code.id",
         "representation": [
           "xmlAttr"
@@ -1620,7 +1620,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.extension",
         "path": "Observation.code.extension",
         "slicing": {
           "discriminator": [
@@ -1659,7 +1659,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding",
         "path": "Observation.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -1700,7 +1700,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_44648-4",
         "definition": "A reference to a code defined by a terminology system.",
@@ -1714,7 +1714,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.id",
         "path": "Observation.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -1741,7 +1741,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.extension",
         "path": "Observation.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -1780,7 +1780,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.system",
         "path": "Observation.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -1811,7 +1811,7 @@
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.version",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.version",
         "path": "Observation.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -1840,7 +1840,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.code",
         "path": "Observation.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -1870,7 +1870,7 @@
         "fixedCode": "44648-4"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.display",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1905,7 +1905,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.userSelected",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.userSelected",
         "path": "Observation.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -1935,7 +1935,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1971,7 +1971,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.subject",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.subject",
         "path": "Observation.subject",
         "short": "Who and/or what this is about",
         "definition": "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.",
@@ -2016,7 +2016,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.context",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.context",
         "path": "Observation.context",
         "short": "Healthcare event during which this observation is made",
         "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.",
@@ -2062,7 +2062,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.effective[x]",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.effective[x]",
         "path": "Observation.effective[x]",
         "short": "Clinically relevant time/time-period for observation",
         "definition": "For lab tests this is the specimen collection date.  For Ask at Order Entry Questions (AOE)'s this is the date the question was asked.",
@@ -2121,7 +2121,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.issued",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.issued",
         "path": "Observation.issued",
         "short": "Date/Time this was made available",
         "definition": "The date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
@@ -2155,7 +2155,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.performer",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.performer",
         "path": "Observation.performer",
         "short": "Who is responsible for the observation",
         "definition": "Who was responsible for asserting the observed value as \"true\".",
@@ -2206,7 +2206,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "short": "Result Value",
         "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
@@ -2231,7 +2231,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "short": "Why the result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -2279,7 +2279,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.interpretation",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.interpretation",
         "path": "Observation.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -2332,7 +2332,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.comment",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.comment",
         "path": "Observation.comment",
         "short": "Comments about result",
         "definition": "May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result.",
@@ -2365,7 +2365,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.bodySite",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.bodySite",
         "path": "Observation.bodySite",
         "short": "Observed body part",
         "definition": "Indicates the site on the subject's body where the observation was made (i.e. the target site).",
@@ -2408,7 +2408,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.method",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.method",
         "path": "Observation.method",
         "short": "How it was done",
         "definition": "Indicates the mechanism used to perform the observation.",
@@ -2444,7 +2444,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.specimen",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.specimen",
         "path": "Observation.specimen",
         "short": "Specimen used for this observation",
         "definition": "The specimen that was used when this observation was made.",
@@ -2482,7 +2482,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.device",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.device",
         "path": "Observation.device",
         "short": "(Measurement) Device",
         "definition": "The device used to generate the observation data.",
@@ -2524,7 +2524,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange",
         "path": "Observation.referenceRange",
         "short": "Provides guide for interpretation",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -2571,7 +2571,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.id",
         "path": "Observation.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -2598,7 +2598,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.extension",
         "path": "Observation.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2627,7 +2627,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.modifierExtension",
         "path": "Observation.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -2659,7 +2659,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.low",
         "path": "Observation.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -2691,7 +2691,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.high",
         "path": "Observation.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -2723,7 +2723,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.type",
         "path": "Observation.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -2770,7 +2770,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.appliesTo",
         "path": "Observation.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -2817,7 +2817,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.age",
         "path": "Observation.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -2843,7 +2843,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.text",
         "path": "Observation.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -2871,7 +2871,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related",
         "path": "Observation.related",
         "short": "Resource related to this observation",
         "definition": "A  reference to another resource (usually another Observation) whose relationship is defined by the relationship type code.",
@@ -2912,7 +2912,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.id",
         "path": "Observation.related.id",
         "representation": [
           "xmlAttr"
@@ -2939,7 +2939,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.extension",
         "path": "Observation.related.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -2968,7 +2968,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.modifierExtension",
         "path": "Observation.related.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3000,7 +3000,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.type",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.type",
         "path": "Observation.related.type",
         "short": "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by",
         "definition": "A code specifying the kind of relationship that exists with the target resource.",
@@ -3044,7 +3044,7 @@
         "fixedCode": "has-member"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.target",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.target",
         "path": "Observation.related.target",
         "short": "Resource that is related to this one",
         "definition": "A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation.",
@@ -3069,7 +3069,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component",
         "path": "Observation.component",
         "short": "Component results",
         "definition": "Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations.",
@@ -3121,7 +3121,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore",
         "path": "Observation.component",
         "short": "TubuleFormationScore",
         "definition": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
@@ -3161,7 +3161,7 @@
         "sliceName": "oncology-TubuleFormationScore"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -3188,7 +3188,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -3217,7 +3217,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3249,7 +3249,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -3300,7 +3300,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.id",
         "path": "Observation.component.code.id",
         "representation": [
           "xmlAttr"
@@ -3327,7 +3327,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.extension",
         "path": "Observation.component.code.extension",
         "slicing": {
           "discriminator": [
@@ -3366,7 +3366,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding",
         "path": "Observation.component.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -3407,7 +3407,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371470008",
         "definition": "A reference to a code defined by a terminology system.",
@@ -3421,7 +3421,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -3448,7 +3448,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -3487,7 +3487,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -3518,7 +3518,7 @@
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.version",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -3547,7 +3547,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -3577,7 +3577,7 @@
         "fixedCode": "371470008"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.display",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -3612,7 +3612,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.userSelected",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -3642,7 +3642,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -3678,7 +3678,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -3703,7 +3703,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -3742,7 +3742,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.interpretation",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -3796,7 +3796,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -3826,7 +3826,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -3853,7 +3853,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -3882,7 +3882,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -3914,7 +3914,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -3941,7 +3941,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -3968,7 +3968,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -4010,7 +4010,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -4052,7 +4052,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -4072,7 +4072,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -4095,7 +4095,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore",
         "path": "Observation.component",
         "short": "NuclearPleomorphismScore",
         "definition": "How large and varied the nuclei of the tumor cells are. Scored 1 to 3, with 3 being the most pleomorphism.",
@@ -4135,7 +4135,7 @@
         "sliceName": "oncology-NuclearPleomorphismScore"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -4162,7 +4162,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -4191,7 +4191,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -4223,7 +4223,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -4274,7 +4274,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.id",
         "path": "Observation.component.code.id",
         "representation": [
           "xmlAttr"
@@ -4301,7 +4301,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.extension",
         "path": "Observation.component.code.extension",
         "slicing": {
           "discriminator": [
@@ -4340,7 +4340,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding",
         "path": "Observation.component.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -4381,7 +4381,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371471007",
         "definition": "A reference to a code defined by a terminology system.",
@@ -4395,7 +4395,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -4422,7 +4422,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -4461,7 +4461,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -4492,7 +4492,7 @@
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.version",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -4521,7 +4521,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -4551,7 +4551,7 @@
         "fixedCode": "371471007"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.display",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4586,7 +4586,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.userSelected",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -4616,7 +4616,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4652,7 +4652,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -4677,7 +4677,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -4716,7 +4716,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.interpretation",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -4770,7 +4770,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -4800,7 +4800,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -4827,7 +4827,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -4856,7 +4856,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -4888,7 +4888,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -4915,7 +4915,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -4942,7 +4942,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -4984,7 +4984,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -5026,7 +5026,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -5046,7 +5046,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -5069,7 +5069,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore",
         "path": "Observation.component",
         "short": "MitoticCountScore",
         "definition": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
@@ -5109,7 +5109,7 @@
         "sliceName": "oncology-MitoticCountScore"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.id",
         "path": "Observation.component.id",
         "representation": [
           "xmlAttr"
@@ -5136,7 +5136,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.extension",
         "path": "Observation.component.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -5165,7 +5165,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.modifierExtension",
         "path": "Observation.component.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -5197,7 +5197,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code",
         "path": "Observation.component.code",
         "short": "Type of component observation (code / type)",
         "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
@@ -5248,7 +5248,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.id",
         "path": "Observation.component.code.id",
         "representation": [
           "xmlAttr"
@@ -5275,7 +5275,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.extension",
         "path": "Observation.component.code.extension",
         "slicing": {
           "discriminator": [
@@ -5314,7 +5314,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding",
         "path": "Observation.component.code.coding",
         "short": "Code defined by a terminology system",
         "definition": "A reference to a code defined by a terminology system.",
@@ -5355,7 +5355,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371472000",
         "definition": "A reference to a code defined by a terminology system.",
@@ -5369,7 +5369,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.id",
         "path": "Observation.component.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -5396,7 +5396,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.extension",
         "path": "Observation.component.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -5435,7 +5435,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.system",
         "path": "Observation.component.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -5466,7 +5466,7 @@
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.version",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.version",
         "path": "Observation.component.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -5495,7 +5495,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.code",
         "path": "Observation.component.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -5525,7 +5525,7 @@
         "fixedCode": "371472000"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.display",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -5560,7 +5560,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.userSelected",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.userSelected",
         "path": "Observation.component.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -5590,7 +5590,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.text",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -5626,7 +5626,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "short": "Actual component result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
@@ -5651,7 +5651,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "short": "Why the component result is missing",
         "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
@@ -5690,7 +5690,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.interpretation",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.interpretation",
         "path": "Observation.component.interpretation",
         "short": "High, low, normal, etc.",
         "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
@@ -5744,7 +5744,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange",
         "path": "Observation.component.referenceRange",
         "short": "Provides guide for interpretation of component result",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -5774,7 +5774,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.id",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.id",
         "path": "Observation.component.referenceRange.id",
         "representation": [
           "xmlAttr"
@@ -5801,7 +5801,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.extension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.extension",
         "path": "Observation.component.referenceRange.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -5830,7 +5830,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.modifierExtension",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.modifierExtension",
         "path": "Observation.component.referenceRange.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -5862,7 +5862,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.low",
         "path": "Observation.component.referenceRange.low",
         "short": "Low Range, if relevant",
         "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
@@ -5889,7 +5889,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.high",
         "path": "Observation.component.referenceRange.high",
         "short": "High Range, if relevant",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
@@ -5916,7 +5916,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.type",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.type",
         "path": "Observation.component.referenceRange.type",
         "short": "Reference range qualifier",
         "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
@@ -5958,7 +5958,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.appliesTo",
         "path": "Observation.component.referenceRange.appliesTo",
         "short": "Reference range population",
         "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
@@ -6000,7 +6000,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.age",
         "path": "Observation.component.referenceRange.age",
         "short": "Applicable age range, if relevant",
         "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
@@ -6020,7 +6020,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange.text",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange.text",
         "path": "Observation.component.referenceRange.text",
         "short": "Text based reference range in an observation",
         "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
@@ -6047,14 +6047,14 @@
   "differential": {
     "element": [
       {
-        "id": "Observation:oncology-HistologicGrade",
+        "id": "Observation:oncology-BreastCancerHistologicGrade",
         "path": "Observation",
-        "short": "HistologicGrade",
+        "short": "BreastCancerHistologicGrade",
         "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "mustSupport": false
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:deltaflag",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:deltaflag",
         "path": "Observation.extension",
         "definition": "Indicator of significant change (delta) from the last or previous measurement.",
         "min": 0,
@@ -6068,7 +6068,7 @@
         "sliceName": "deltaflag"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice",
         "path": "Observation.extension",
         "definition": "A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.",
         "min": 0,
@@ -6082,11 +6082,11 @@
         "sliceName": "diagnosticservice"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept",
         "path": "Observation.extension.valueCodeableConcept"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding",
         "path": "Observation.extension.valueCodeableConcept.coding",
         "slicing": {
           "id": "11",
@@ -6101,7 +6101,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology",
         "path": "Observation.extension.valueCodeableConcept.coding",
         "sliceName": "Fixed_pathology",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6115,21 +6115,21 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.system",
         "path": "Observation.extension.valueCodeableConcept.coding.system",
         "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.extension:diagnosticservice.valueCodeableConcept.coding:Fixed_pathology.code",
         "path": "Observation.extension.valueCodeableConcept.coding.code",
         "fixedCode": "pathology"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category",
         "path": "Observation.category"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding",
         "path": "Observation.category.coding",
         "slicing": {
           "id": "1",
@@ -6144,7 +6144,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory",
         "path": "Observation.category.coding",
         "sliceName": "Fixed_laboratory",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6158,21 +6158,21 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.system",
         "path": "Observation.category.coding.system",
         "fixedUri": "http://hl7.org/fhir/observation-category"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.category.coding:Fixed_laboratory.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory.code",
         "path": "Observation.category.coding.code",
         "fixedCode": "laboratory"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code",
         "path": "Observation.code"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
           "id": "2",
@@ -6187,7 +6187,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_44648-4",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6201,17 +6201,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.code.coding:Fixed_44648-4.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4.code",
         "path": "Observation.code.coding.code",
         "fixedCode": "44648-4"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "type": [
           {
@@ -6226,7 +6226,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6236,7 +6236,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.bodySite",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.bodySite",
         "path": "Observation.bodySite",
         "min": 0,
         "max": "0",
@@ -6248,7 +6248,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.method",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.method",
         "path": "Observation.method",
         "binding": {
           "strength": "preferred",
@@ -6258,7 +6258,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.specimen",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.specimen",
         "path": "Observation.specimen",
         "type": [
           {
@@ -6268,13 +6268,13 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange",
         "path": "Observation.referenceRange",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.low",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.low",
         "path": "Observation.referenceRange.low",
         "type": [
           {
@@ -6284,7 +6284,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.high",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.high",
         "path": "Observation.referenceRange.high",
         "type": [
           {
@@ -6294,7 +6294,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.appliesTo",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.appliesTo",
         "path": "Observation.referenceRange.appliesTo",
         "binding": {
           "extension": [
@@ -6311,7 +6311,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.referenceRange.age",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.referenceRange.age",
         "path": "Observation.referenceRange.age",
         "type": [
           {
@@ -6321,18 +6321,18 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related",
         "path": "Observation.related",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.type",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.type",
         "path": "Observation.related.type",
         "fixedCode": "has-member"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.related.target",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.related.target",
         "path": "Observation.related.target",
         "type": [
           {
@@ -6342,7 +6342,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component",
         "path": "Observation.component",
         "slicing": {
           "id": "3",
@@ -6357,7 +6357,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore",
         "path": "Observation.component",
         "sliceName": "oncology-TubuleFormationScore",
         "short": "TubuleFormationScore",
@@ -6366,11 +6366,11 @@
         "max": "1"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code",
         "path": "Observation.component.code"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "id": "4",
@@ -6385,7 +6385,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371470008",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6399,17 +6399,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.code.coding:Fixed_371470008.code",
         "path": "Observation.component.code.coding.code",
         "fixedCode": "371470008"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6424,7 +6424,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6434,13 +6434,13 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-TubuleFormationScore.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore.referenceRange",
         "path": "Observation.component.referenceRange",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore",
         "path": "Observation.component",
         "sliceName": "oncology-NuclearPleomorphismScore",
         "short": "NuclearPleomorphismScore",
@@ -6449,11 +6449,11 @@
         "max": "1"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code",
         "path": "Observation.component.code"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "id": "5",
@@ -6468,7 +6468,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371471007",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6482,17 +6482,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.code.coding:Fixed_371471007.code",
         "path": "Observation.component.code.coding.code",
         "fixedCode": "371471007"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6507,7 +6507,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6517,13 +6517,13 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-NuclearPleomorphismScore.referenceRange",
         "path": "Observation.component.referenceRange",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore",
         "path": "Observation.component",
         "sliceName": "oncology-MitoticCountScore",
         "short": "MitoticCountScore",
@@ -6532,11 +6532,11 @@
         "max": "1"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code",
         "path": "Observation.component.code"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "id": "6",
@@ -6551,7 +6551,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371472000",
         "definition": "A reference to a code defined by a terminology system.",
@@ -6565,17 +6565,17 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.system",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.code",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.code.coding:Fixed_371472000.code",
         "path": "Observation.component.code.coding.code",
         "fixedCode": "371472000"
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.valueCodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "type": [
           {
@@ -6590,7 +6590,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.dataAbsentReason",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
@@ -6600,7 +6600,7 @@
         }
       },
       {
-        "id": "Observation:oncology-HistologicGrade.component:oncology-MitoticCountScore.referenceRange",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-MitoticCountScore.referenceRange",
         "path": "Observation.component.referenceRange",
         "min": 0,
         "max": "0"
@@ -6610,9 +6610,9 @@
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
-      "value": "oncology.HistologicGrade"
+      "value": "oncology.BreastCancerHistologicGrade"
     }
   ],
-  "title": "BC HistologicGrade Profile",
+  "title": "BC BreastCancerHistologicGrade Profile",
   "description": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing."
 }

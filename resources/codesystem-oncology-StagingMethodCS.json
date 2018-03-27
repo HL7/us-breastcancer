@@ -3,7 +3,7 @@
   "id": "oncology-StagingMethodCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC StagingMethodCS CodeSystem</b></p>\n<p>The methodology or standard used to do the staging.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC StagingMethodCS CodeSystem</b></p>\n<p>The methodology or standard used to assign the cancer&#039;s overall stage.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-StagingMethodCS",
   "identifier": {
@@ -25,15 +25,40 @@
     }
   ],
   "date": "2018-03-27",
-  "description": "The methodology or standard used to do the staging.",
+  "description": "The methodology or standard used to assign the cancer's overall stage.",
   "caseSensitive": true,
   "content": "complete",
-  "count": 1,
+  "count": 6,
   "concept": [
     {
+      "code": "ajcc_v7",
+      "definition": "AJCC Cancer Staging Manual 7th Edition",
+      "display": "AJCC Cancer Staging Manual 7th Edition"
+    },
+    {
       "code": "ajcc_v8",
-      "definition": "AJCC Breast Carcinoma Version 8",
-      "display": "AJCC Breast Carcinoma Version 8"
+      "definition": "AJCC Cancer Staging Manual 8th Edition",
+      "display": "AJCC Cancer Staging Manual 8th Edition"
+    },
+    {
+      "code": "seer_eod",
+      "definition": "SEER Extent of Disease 2018",
+      "display": "SEER Extent of Disease 2018"
+    },
+    {
+      "code": "seer_ss77",
+      "definition": "SEER Summary Stage 1977",
+      "display": "SEER Summary Stage 1977"
+    },
+    {
+      "code": "seer_ss00",
+      "definition": "SEER Summary Stage 2000",
+      "display": "SEER Summary Stage 2000"
+    },
+    {
+      "code": "seer_ss18",
+      "definition": "SEER Summary Stage 2018",
+      "display": "SEER Summary Stage 2018"
     }
   ]
 }

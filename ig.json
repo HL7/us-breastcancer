@@ -48,11 +48,14 @@
     "StructureDefinition/cimi-AnatomicalLocation": {
       "base": "StructureDefinition-cimi-AnatomicalLocation.html"
     },
+    "StructureDefinition/oncology-BreastCancerHistologicGrade": {
+      "base": "StructureDefinition-oncology-BreastCancerHistologicGrade.html"
+    },
     "StructureDefinition/oncology-BreastCancerPresenceStatement": {
       "base": "StructureDefinition-oncology-BreastCancerPresenceStatement.html"
     },
-    "StructureDefinition/oncology-BreastCancerPrognosticStage": {
-      "base": "StructureDefinition-oncology-BreastCancerPrognosticStage.html"
+    "StructureDefinition/oncology-BreastCancerStage": {
+      "base": "StructureDefinition-oncology-BreastCancerStage.html"
     },
     "StructureDefinition/oncology-BreastSite": {
       "base": "StructureDefinition-oncology-BreastSite.html"
@@ -62,6 +65,9 @@
     },
     "StructureDefinition/cimi-statement-ConditionPresenceStatement": {
       "base": "StructureDefinition-cimi-statement-ConditionPresenceStatement.html"
+    },
+    "StructureDefinition/oncology-DCISNuclearGrade": {
+      "base": "StructureDefinition-oncology-DCISNuclearGrade.html"
     },
     "StructureDefinition/oncology-EstrogenReceptorStatus": {
       "base": "StructureDefinition-oncology-EstrogenReceptorStatus.html"
@@ -78,17 +84,11 @@
     "StructureDefinition/oncology-HER2byISH": {
       "base": "StructureDefinition-oncology-HER2byISH.html"
     },
-    "StructureDefinition/oncology-HistologicGrade": {
-      "base": "StructureDefinition-oncology-HistologicGrade.html"
-    },
     "StructureDefinition/cimi-statement-LaboratoryTestResultRecorded": {
       "base": "StructureDefinition-cimi-statement-LaboratoryTestResultRecorded.html"
     },
     "StructureDefinition/oncology-MammaprintRecurrenceScore": {
       "base": "StructureDefinition-oncology-MammaprintRecurrenceScore.html"
-    },
-    "StructureDefinition/oncology-NuclearGrade": {
-      "base": "StructureDefinition-oncology-NuclearGrade.html"
     },
     "StructureDefinition/oncology-OncotypeDxDCISRecurrenceScore": {
       "base": "StructureDefinition-oncology-OncotypeDxDCISRecurrenceScore.html"
@@ -238,24 +238,6 @@
     "ValueSet/oncology-BreastCancerDetectionVS": {
       "base": "ValueSet-oncology-BreastCancerDetectionVS.html"
     },
-    "ValueSet/oncology-BreastCancerMCategoryVS": {
-      "base": "ValueSet-oncology-BreastCancerMCategoryVS.html"
-    },
-    "ValueSet/oncology-BreastCancerNCategorySuffixVS": {
-      "base": "ValueSet-oncology-BreastCancerNCategorySuffixVS.html"
-    },
-    "ValueSet/oncology-BreastCancerNCategoryVS": {
-      "base": "ValueSet-oncology-BreastCancerNCategoryVS.html"
-    },
-    "ValueSet/oncology-BreastCancerStageVS": {
-      "base": "ValueSet-oncology-BreastCancerStageVS.html"
-    },
-    "ValueSet/oncology-BreastCancerTCategorySuffixVS": {
-      "base": "ValueSet-oncology-BreastCancerTCategorySuffixVS.html"
-    },
-    "ValueSet/oncology-BreastCancerTCategoryVS": {
-      "base": "ValueSet-oncology-BreastCancerTCategoryVS.html"
-    },
     "ValueSet/oncology-BreastCancerTypeVS": {
       "base": "ValueSet-oncology-BreastCancerTypeVS.html"
     },
@@ -276,9 +258,6 @@
     },
     "ValueSet/cimi-ConditionVS": {
       "base": "ValueSet-cimi-ConditionVS.html"
-    },
-    "ValueSet/oncology-DegreeOfLymphaticInvolvementVS": {
-      "base": "ValueSet-oncology-DegreeOfLymphaticInvolvementVS.html"
     },
     "ValueSet/cimi-DeltaFlagVS": {
       "base": "ValueSet-cimi-DeltaFlagVS.html"
@@ -306,9 +285,6 @@
     },
     "ValueSet/oncology-LeftRightLateralityVS": {
       "base": "ValueSet-oncology-LeftRightLateralityVS.html"
-    },
-    "ValueSet/oncology-LymphSystemSubdivisionVS": {
-      "base": "ValueSet-oncology-LymphSystemSubdivisionVS.html"
     },
     "ValueSet/oncology-MammaprintRiskScoreInterpretationVS": {
       "base": "ValueSet-oncology-MammaprintRiskScoreInterpretationVS.html"
@@ -358,9 +334,6 @@
     "ValueSet/oncology-TubuleFormationScoreVS": {
       "base": "ValueSet-oncology-TubuleFormationScoreVS.html"
     },
-    "ValueSet/oncology-TumorMarginDescriptionVS": {
-      "base": "ValueSet-oncology-TumorMarginDescriptionVS.html"
-    },
     "ValueSet/shr-core-YesNoUnknownVS": {
       "base": "ValueSet-shr-core-YesNoUnknownVS.html"
     },
@@ -369,24 +342,6 @@
     },
     "CodeSystem/cimi-AnatomicalDirectionCS": {
       "base": "CodeSystem-cimi-AnatomicalDirectionCS.html"
-    },
-    "CodeSystem/oncology-BreastCancerMCategoryCS": {
-      "base": "CodeSystem-oncology-BreastCancerMCategoryCS.html"
-    },
-    "CodeSystem/oncology-BreastCancerNCategoryCS": {
-      "base": "CodeSystem-oncology-BreastCancerNCategoryCS.html"
-    },
-    "CodeSystem/oncology-BreastCancerNCategorySuffixCS": {
-      "base": "CodeSystem-oncology-BreastCancerNCategorySuffixCS.html"
-    },
-    "CodeSystem/oncology-BreastCancerStageCS": {
-      "base": "CodeSystem-oncology-BreastCancerStageCS.html"
-    },
-    "CodeSystem/oncology-BreastCancerTCategoryCS": {
-      "base": "CodeSystem-oncology-BreastCancerTCategoryCS.html"
-    },
-    "CodeSystem/oncology-BreastCancerTCategorySuffixCS": {
-      "base": "CodeSystem-oncology-BreastCancerTCategorySuffixCS.html"
     },
     "CodeSystem/oncology-BreastCancerTypeCS": {
       "base": "CodeSystem-oncology-BreastCancerTypeCS.html"
@@ -402,9 +357,6 @@
     },
     "CodeSystem/cimi-ConditionCategoryCS": {
       "base": "CodeSystem-cimi-ConditionCategoryCS.html"
-    },
-    "CodeSystem/oncology-DegreeOfLymphaticInvolvementCS": {
-      "base": "CodeSystem-oncology-DegreeOfLymphaticInvolvementCS.html"
     },
     "CodeSystem/cimi-statement-DiagnosticServiceCS": {
       "base": "CodeSystem-cimi-statement-DiagnosticServiceCS.html"
@@ -423,9 +375,6 @@
     },
     "CodeSystem/cimi-LateralityCS": {
       "base": "CodeSystem-cimi-LateralityCS.html"
-    },
-    "CodeSystem/oncology-LeftRightLateralityCS": {
-      "base": "CodeSystem-oncology-LeftRightLateralityCS.html"
     },
     "CodeSystem/oncology-MammaprintRiskScoreInterpretationCS": {
       "base": "CodeSystem-oncology-MammaprintRiskScoreInterpretationCS.html"
@@ -571,15 +520,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerMCategory-model": {
-      "base": "StructureDefinition-oncology-BreastCancerMCategory-model.html",
+    "StructureDefinition/oncology-BreastCancerDistantMetastasesClassification-model": {
+      "base": "StructureDefinition-oncology-BreastCancerDistantMetastasesClassification-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerNCategory-model": {
-      "base": "StructureDefinition-oncology-BreastCancerNCategory-model.html",
+    "StructureDefinition/oncology-BreastCancerHistologicGrade-model": {
+      "base": "StructureDefinition-oncology-BreastCancerHistologicGrade-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -592,15 +541,22 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerPrognosticStage-model": {
-      "base": "StructureDefinition-oncology-BreastCancerPrognosticStage-model.html",
+    "StructureDefinition/oncology-BreastCancerPrimaryTumorClassification-model": {
+      "base": "StructureDefinition-oncology-BreastCancerPrimaryTumorClassification-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-BreastCancerTCategory-model": {
-      "base": "StructureDefinition-oncology-BreastCancerTCategory-model.html",
+    "StructureDefinition/oncology-BreastCancerRegionalNodesClassification-model": {
+      "base": "StructureDefinition-oncology-BreastCancerRegionalNodesClassification-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/oncology-BreastCancerStage-model": {
+      "base": "StructureDefinition-oncology-BreastCancerStage-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -760,6 +716,13 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/oncology-DCISNuclearGrade-model": {
+      "base": "StructureDefinition-oncology-DCISNuclearGrade-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-DeltaFlag-model": {
       "base": "StructureDefinition-cimi-DeltaFlag-model.html",
       "template-base": "sd-logical.html",
@@ -914,13 +877,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/oncology-HistologicGrade-model": {
-      "base": "StructureDefinition-oncology-HistologicGrade-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-IndivisibleClinicalStatement-model": {
       "base": "StructureDefinition-cimi-IndivisibleClinicalStatement-model.html",
       "template-base": "sd-logical.html",
@@ -1000,13 +956,6 @@
     },
     "StructureDefinition/oncology-MorphologyBehavior-model": {
       "base": "StructureDefinition-oncology-MorphologyBehavior-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/oncology-NuclearGrade-model": {
-      "base": "StructureDefinition-oncology-NuclearGrade-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

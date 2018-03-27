@@ -3,7 +3,7 @@
   "id": "oncology-StageTimingPrefix-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StageTimingPrefix Extension</b></p>\n  <p>Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#039;yc&#039; (e.g. ycNX)</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StageTimingPrefix Extension</b></p>\n  <p>Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#039;yc&#039; (e.g. ycNX)</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageTimingPrefix-extension",
   "identifier": [
@@ -27,7 +27,7 @@
     }
   ],
   "date": "2018-03-27",
-  "description": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+  "description": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:stagetimingprefix",
         "path": "Extension",
         "short": "BC StageTimingPrefix Extension",
-        "definition": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "min": 0,
         "max": "*",
         "base": {
@@ -187,7 +187,7 @@
         "id": "Extension:stagetimingprefix",
         "path": "Extension",
         "short": "BC StageTimingPrefix Extension",
-        "definition": "Mandatory element indicating when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "min": 0,
         "max": "*"
       },

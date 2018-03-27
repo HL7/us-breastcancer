@@ -874,13 +874,7 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail",
@@ -912,11 +906,11 @@
             "code": "21908-9"
           }
         ],
-        "short": "The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.",
-        "definition": "The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.",
+        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
         "alias": [
           "evaluationResultRecorded",
-          "breastCancerPrognosticStage"
+          "breastCancerStage"
         ],
         "min": 1,
         "max": "1",
@@ -928,7 +922,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPrognosticStage-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStage-model"
           }
         ],
         "mustSupport": false,
@@ -1822,13 +1816,7 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
-          }
-        }
+        "isSummary": false
       },
       {
         "id": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail",
@@ -1860,11 +1848,11 @@
             "code": "21908-9"
           }
         ],
-        "short": "The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.",
-        "definition": "The prognostic stage of a breast cancer, assessed according to the standard established by American Joint Committee on Cancer (AJCC). Only the prognostic stage is used in US and Canada.",
+        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
         "alias": [
           "evaluationResultRecorded",
-          "breastCancerPrognosticStage"
+          "breastCancerStage"
         ],
         "min": 1,
         "max": "1",
@@ -1876,7 +1864,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPrognosticStage-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStage-model"
           }
         ],
         "mustSupport": false,
