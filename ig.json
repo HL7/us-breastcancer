@@ -118,91 +118,120 @@
       "base": "StructureDefinition-cimi-Specimen.html"
     },
     "StructureDefinition/shr-core-ClockDirection-extension": {
-      "base": "StructureDefinition-shr-core-ClockDirection-extension.html"
+      "base": "StructureDefinition-shr-core-ClockDirection-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/oncology-ColdIschemiaTime-extension": {
-      "base": "StructureDefinition-oncology-ColdIschemiaTime-extension.html"
+      "base": "StructureDefinition-oncology-ColdIschemiaTime-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-CollectionSite-extension": {
-      "base": "StructureDefinition-cimi-CollectionSite-extension.html"
+      "base": "StructureDefinition-cimi-CollectionSite-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-DeltaFlag-extension": {
-      "base": "StructureDefinition-cimi-DeltaFlag-extension.html"
+      "base": "StructureDefinition-cimi-DeltaFlag-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-statement-DiagnosticService-extension": {
-      "base": "StructureDefinition-cimi-statement-DiagnosticService-extension.html"
+      "base": "StructureDefinition-cimi-statement-DiagnosticService-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/oncology-DistanceToNipple-extension": {
-      "base": "StructureDefinition-oncology-DistanceToNipple-extension.html"
+      "base": "StructureDefinition-oncology-DistanceToNipple-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-FindingMethod-extension": {
-      "base": "StructureDefinition-cimi-FindingMethod-extension.html"
+      "base": "StructureDefinition-cimi-FindingMethod-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-Interpretation-extension": {
-      "base": "StructureDefinition-cimi-Interpretation-extension.html"
+      "base": "StructureDefinition-cimi-Interpretation-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/oncology-MorphologyBehavior-extension": {
-      "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html"
+      "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-Precondition-extension": {
-      "base": "StructureDefinition-cimi-Precondition-extension.html"
+      "base": "StructureDefinition-cimi-Precondition-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/oncology-StageTimingPrefix-extension": {
-      "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html"
+      "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-TopicCode-extension": {
-      "base": "StructureDefinition-cimi-TopicCode-extension.html"
+      "base": "StructureDefinition-cimi-TopicCode-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-base64Binary-extension": {
-      "base": "StructureDefinition-primitive-base64Binary-extension.html"
+      "base": "StructureDefinition-primitive-base64Binary-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-boolean-extension": {
-      "base": "StructureDefinition-primitive-boolean-extension.html"
+      "base": "StructureDefinition-primitive-boolean-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-code-extension": {
-      "base": "StructureDefinition-primitive-code-extension.html"
+      "base": "StructureDefinition-primitive-code-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-date-extension": {
-      "base": "StructureDefinition-primitive-date-extension.html"
+      "base": "StructureDefinition-primitive-date-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-dateTime-extension": {
-      "base": "StructureDefinition-primitive-dateTime-extension.html"
+      "base": "StructureDefinition-primitive-dateTime-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-decimal-extension": {
-      "base": "StructureDefinition-primitive-decimal-extension.html"
+      "base": "StructureDefinition-primitive-decimal-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-id-extension": {
-      "base": "StructureDefinition-primitive-id-extension.html"
+      "base": "StructureDefinition-primitive-id-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-instant-extension": {
-      "base": "StructureDefinition-primitive-instant-extension.html"
+      "base": "StructureDefinition-primitive-instant-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-integer-extension": {
-      "base": "StructureDefinition-primitive-integer-extension.html"
+      "base": "StructureDefinition-primitive-integer-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-markdown-extension": {
-      "base": "StructureDefinition-primitive-markdown-extension.html"
+      "base": "StructureDefinition-primitive-markdown-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-oid-extension": {
-      "base": "StructureDefinition-primitive-oid-extension.html"
+      "base": "StructureDefinition-primitive-oid-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-positiveInt-extension": {
-      "base": "StructureDefinition-primitive-positiveInt-extension.html"
+      "base": "StructureDefinition-primitive-positiveInt-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-string-extension": {
-      "base": "StructureDefinition-primitive-string-extension.html"
+      "base": "StructureDefinition-primitive-string-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-time-extension": {
-      "base": "StructureDefinition-primitive-time-extension.html"
+      "base": "StructureDefinition-primitive-time-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-unsignedInt-extension": {
-      "base": "StructureDefinition-primitive-unsignedInt-extension.html"
+      "base": "StructureDefinition-primitive-unsignedInt-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-uri-extension": {
-      "base": "StructureDefinition-primitive-uri-extension.html"
+      "base": "StructureDefinition-primitive-uri-extension.html",
+      "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-xhtml-extension": {
-      "base": "StructureDefinition-primitive-xhtml-extension.html"
+      "base": "StructureDefinition-primitive-xhtml-extension.html",
+      "template-base": "sd-extension.html"
     },
     "ValueSet/cimi-AnatomicalDirectionVS": {
       "base": "ValueSet-cimi-AnatomicalDirectionVS.html"
