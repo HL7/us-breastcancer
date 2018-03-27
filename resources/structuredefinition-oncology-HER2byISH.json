@@ -3,7 +3,7 @@
   "id": "oncology-HER2byISH",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2byISH Profile</b></p>\n  <p>HER2 receptor status as determined by In Situ Hybridization (ISH).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2byISH maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  Quantity maps to value[x]\n  CodeableConcept maps to value[x]\n  string maps to value[x]\n  boolean maps to value[x]\n  Range maps to value[x]\n  Ratio maps to value[x]\n  time maps to value[x]\n  dateTime maps to value[x]\n  TimePeriod maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  Specimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC HER2byISH Profile</b></p>\n  <p>HER2 receptor status as determined by In Situ Hybridization (ISH).</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.HER2byISH maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byISH",
   "name": "HER2byISH",
@@ -392,32 +392,18 @@
         }
       },
       {
-        "id": "Observation:oncology-HER2byISH.extension:deltaflag",
+        "id": "Observation:oncology-HER2byISH.extension:encounter",
         "path": "Observation.extension",
-        "definition": "Indicator of significant change (delta) from the last or previous measurement.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
           }
         ],
-        "sliceName": "deltaflag"
-      },
-      {
-        "id": "Observation:oncology-HER2byISH.extension:precondition",
-        "path": "Observation.extension",
-        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-extension"
-          }
-        ],
-        "sliceName": "precondition"
+        "sliceName": "encounter"
       },
       {
         "id": "Observation:oncology-HER2byISH.modifierExtension",
@@ -1348,11 +1334,11 @@
         "id": "Observation:oncology-HER2byISH.value[x]",
         "path": "Observation.value[x]",
         "short": "Result Value",
-        "definition": "Choice of types representing hER2 receptor status as determined by In Situ Hybridization (ISH).",
+        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
         "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
         "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Observation.value[x]",
           "min": 0,
@@ -2984,16 +2970,9 @@
           }
         ],
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "extensible",
-          "description": "Codes identifying interpretations of observations.",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         },
         "mapping": [
@@ -3972,16 +3951,9 @@
           }
         ],
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "extensible",
-          "description": "Codes identifying interpretations of observations.",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         },
         "mapping": [
@@ -4960,16 +4932,9 @@
           }
         ],
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "extensible",
-          "description": "Codes identifying interpretations of observations.",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         },
         "mapping": [
@@ -5302,32 +5267,18 @@
         "mustSupport": false
       },
       {
-        "id": "Observation:oncology-HER2byISH.extension:deltaflag",
+        "id": "Observation:oncology-HER2byISH.extension:encounter",
         "path": "Observation.extension",
-        "definition": "Indicator of significant change (delta) from the last or previous measurement.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
           }
         ],
-        "sliceName": "deltaflag"
-      },
-      {
-        "id": "Observation:oncology-HER2byISH.extension:precondition",
-        "path": "Observation.extension",
-        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Precondition-extension"
-          }
-        ],
-        "sliceName": "precondition"
+        "sliceName": "encounter"
       },
       {
         "id": "Observation:oncology-HER2byISH.category",
@@ -5392,9 +5343,6 @@
       {
         "id": "Observation:oncology-HER2byISH.value[x]",
         "path": "Observation.value[x]",
-        "min": 0,
-        "max": "0",
-        "definition": "Choice of types representing hER2 receptor status as determined by In Situ Hybridization (ISH).",
         "type": [
           {
             "code": "Quantity"
@@ -5634,6 +5582,16 @@
         }
       },
       {
+        "id": "Observation:oncology-HER2byISH.component:oncology-AverageHER2SignalsPerCell.interpretation",
+        "path": "Observation.component.interpretation",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
+          }
+        }
+      },
+      {
         "id": "Observation:oncology-HER2byISH.component:oncology-AverageHER2SignalsPerCell.referenceRange",
         "path": "Observation.component.referenceRange",
         "min": 0,
@@ -5711,6 +5669,16 @@
         }
       },
       {
+        "id": "Observation:oncology-HER2byISH.component:oncology-AverageCEP17SignalsPerCell.interpretation",
+        "path": "Observation.component.interpretation",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
+          }
+        }
+      },
+      {
         "id": "Observation:oncology-HER2byISH.component:oncology-AverageCEP17SignalsPerCell.referenceRange",
         "path": "Observation.component.referenceRange",
         "min": 0,
@@ -5784,6 +5752,16 @@
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
+          }
+        }
+      },
+      {
+        "id": "Observation:oncology-HER2byISH.component:oncology-HER2toCEP17Ratio.interpretation",
+        "path": "Observation.component.interpretation",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeEquivocalVS"
           }
         }
       },

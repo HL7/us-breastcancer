@@ -58,44 +58,100 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.value",
-        "path": "oncology-EstrogenReceptorStatus-model.value",
-        "short": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
-          "codeableConcept"
+          "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.value",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
-          }
-        }
+        "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.value[x]",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.value[x]",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.topicCode",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -109,8 +165,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -133,8 +189,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.id",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.id",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.id",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -160,8 +216,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.extension",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.extension",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.extension",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -199,8 +255,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.system",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.system",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.system",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -235,8 +291,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.version",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.version",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.version",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -269,8 +325,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.code",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.code",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.code",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -304,14 +360,14 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.display",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.display",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -344,8 +400,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.userSelected",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.userSelected",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.userSelected",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -379,14 +435,14 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.findingMethod",
-        "path": "oncology-EstrogenReceptorStatus-model.findingMethod",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.findingMethod",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.findingMethod",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -400,8 +456,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.interpretation",
-        "path": "oncology-EstrogenReceptorStatus-model.interpretation",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.interpretation",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -413,7 +469,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.interpretation",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -427,14 +483,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category",
-        "path": "oncology-EstrogenReceptorStatus-model.category",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.category",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -448,8 +504,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -458,7 +514,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -472,8 +528,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.id",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.id",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.id",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -499,8 +555,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.extension",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.extension",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.extension",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -538,8 +594,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.system",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.system",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.system",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -574,8 +630,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.version",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.version",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.version",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -608,8 +664,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.code",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.code",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.code",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -643,14 +699,14 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.display",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.display",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -683,8 +739,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.userSelected",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.userSelected",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.userSelected",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -718,8 +774,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
-        "path": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.anatomicalLocation",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -731,7 +787,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.anatomicalLocation",
           "min": 0,
           "max": "0"
         },
@@ -745,17 +801,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.breastSpecimen",
-        "path": "oncology-EstrogenReceptorStatus-model.breastSpecimen",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.breastSpecimen",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.breastSpecimen",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "alias": [
-          "specimen"
-        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.breastSpecimen",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.breastSpecimen",
           "min": 0,
           "max": "1"
         },
@@ -769,8 +822,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.deltaFlag",
-        "path": "oncology-EstrogenReceptorStatus-model.deltaFlag",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.deltaFlag",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -782,7 +835,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.deltaFlag",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -796,14 +849,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.precondition",
-        "path": "oncology-EstrogenReceptorStatus-model.precondition",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.precondition",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.precondition",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.precondition",
           "min": 0,
           "max": "0"
         },
@@ -817,8 +870,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.referenceRange",
-        "path": "oncology-EstrogenReceptorStatus-model.referenceRange",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.referenceRange",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -830,7 +883,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.referenceRange",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -844,14 +897,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -860,14 +913,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.nuclearPositivity",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.nuclearPositivity",
         "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
         "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.nuclearPositivity",
           "min": 0,
           "max": "1"
         },
@@ -881,8 +934,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.averageStainingIntensity",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.averageStainingIntensity",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.averageStainingIntensity",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.averageStainingIntensity",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -895,7 +948,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.averageStainingIntensity",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.averageStainingIntensity",
           "min": 0,
           "max": "1"
         },
@@ -913,6 +966,9 @@
         "path": "oncology-EstrogenReceptorStatus-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -930,10 +986,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-EstrogenReceptorStatus-model.encounter",
+        "path": "oncology-EstrogenReceptorStatus-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-EstrogenReceptorStatus-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-EstrogenReceptorStatus-model.members",
         "path": "oncology-EstrogenReceptorStatus-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -954,7 +1031,7 @@
         "id": "oncology-EstrogenReceptorStatus-model.members.value",
         "path": "oncology-EstrogenReceptorStatus-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],
@@ -1286,44 +1363,100 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.value",
-        "path": "oncology-EstrogenReceptorStatus-model.value",
-        "short": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.",
-        "definition": "Code representing estrogen receptor alpha is the predominant estrogen receptor expressed in breast tissue and is overexpressed in around 50% of breast carcinomas. ER status (positive=present or overexpressed; negative=absent) is a factor in determining prognosis and treatment options.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
-          "codeableConcept"
+          "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.value",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-PositiveNegativeVS"
-          }
-        }
+        "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.value[x]",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.value[x]",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.topicCode",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -1337,8 +1470,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -1361,8 +1494,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.id",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.id",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.id",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1388,8 +1521,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.extension",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.extension",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.extension",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1427,8 +1560,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.system",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.system",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.system",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1463,8 +1596,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.version",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.version",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.version",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1497,8 +1630,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.code",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.code",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.code",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1532,14 +1665,14 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.display",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.display",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1572,8 +1705,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.topicCode.value.userSelected",
-        "path": "oncology-EstrogenReceptorStatus-model.topicCode.value.userSelected",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.userSelected",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1607,14 +1740,14 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.findingMethod",
-        "path": "oncology-EstrogenReceptorStatus-model.findingMethod",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.findingMethod",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.findingMethod",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -1628,8 +1761,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.interpretation",
-        "path": "oncology-EstrogenReceptorStatus-model.interpretation",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.interpretation",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1641,7 +1774,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.interpretation",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -1655,14 +1788,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category",
-        "path": "oncology-EstrogenReceptorStatus-model.category",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.category",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -1676,8 +1809,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -1686,7 +1819,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -1700,8 +1833,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.id",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.id",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.id",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1727,8 +1860,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.extension",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.extension",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.extension",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1766,8 +1899,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.system",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.system",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.system",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1802,8 +1935,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.version",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.version",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.version",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1836,8 +1969,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.code",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.code",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.code",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1871,14 +2004,14 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.display",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.display",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1911,8 +2044,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.category.value.userSelected",
-        "path": "oncology-EstrogenReceptorStatus-model.category.value.userSelected",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.userSelected",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1946,8 +2079,8 @@
         ]
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
-        "path": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.anatomicalLocation",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1959,7 +2092,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.anatomicalLocation",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.anatomicalLocation",
           "min": 0,
           "max": "0"
         },
@@ -1973,17 +2106,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.breastSpecimen",
-        "path": "oncology-EstrogenReceptorStatus-model.breastSpecimen",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.breastSpecimen",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.breastSpecimen",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "alias": [
-          "specimen"
-        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.breastSpecimen",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.breastSpecimen",
           "min": 0,
           "max": "1"
         },
@@ -1997,8 +2127,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.deltaFlag",
-        "path": "oncology-EstrogenReceptorStatus-model.deltaFlag",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.deltaFlag",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2010,7 +2140,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.deltaFlag",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -2024,14 +2154,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.precondition",
-        "path": "oncology-EstrogenReceptorStatus-model.precondition",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.precondition",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.precondition",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.precondition",
           "min": 0,
           "max": "0"
         },
@@ -2045,8 +2175,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.referenceRange",
-        "path": "oncology-EstrogenReceptorStatus-model.referenceRange",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.referenceRange",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2058,7 +2188,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.referenceRange",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -2072,14 +2202,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -2088,14 +2218,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.nuclearPositivity",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.nuclearPositivity",
         "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
         "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.nuclearPositivity",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.nuclearPositivity",
           "min": 0,
           "max": "1"
         },
@@ -2109,8 +2239,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-EstrogenReceptorStatus-model.evaluationComponent.averageStainingIntensity",
-        "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.averageStainingIntensity",
+        "id": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.averageStainingIntensity",
+        "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.averageStainingIntensity",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -2123,7 +2253,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-EstrogenReceptorStatus-model.evaluationComponent.averageStainingIntensity",
+          "path": "oncology-EstrogenReceptorStatus-model.evaluationResultTopic.evaluationComponent.averageStainingIntensity",
           "min": 0,
           "max": "1"
         },
@@ -2141,6 +2271,9 @@
         "path": "oncology-EstrogenReceptorStatus-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -2158,10 +2291,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-EstrogenReceptorStatus-model.encounter",
+        "path": "oncology-EstrogenReceptorStatus-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-EstrogenReceptorStatus-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-EstrogenReceptorStatus-model.members",
         "path": "oncology-EstrogenReceptorStatus-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -2182,7 +2336,7 @@
         "id": "oncology-EstrogenReceptorStatus-model.members.value",
         "path": "oncology-EstrogenReceptorStatus-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],

@@ -57,119 +57,95 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.value",
-        "short": "Quantity representing breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.",
-        "definition": "Quantity representing breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.\n\nThe Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Risk of Recurrence Score in the literature), which is correlated with the probability of distant recurrence at ten years for post-menopausal women with hormone receptorpositive, early stage breast cancer.",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
-          "quantity"
+          "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.value",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic",
           "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.value",
-        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.",
-        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
-        "alias": [
-          "decimal"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Quantity-model.value",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "decimal"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.comparator",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.comparator",
-        "short": "Comparator",
-        "definition": "Comparator",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Quantity-model.comparator",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Comparator-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units",
-        "short": "Code for the unit of measure of the quantity.",
-        "definition": "Code for the unit of measure of the quantity.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Quantity-model.units",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Units-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing code for the unit of measure of the quantity.",
-        "definition": "Code representing code for the unit of measure of the quantity.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Units-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
+          },
           {
             "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -177,260 +153,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.id",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.extension",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.system",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.system",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://unitsofmeasure.org",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.version",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.code",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.code",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "1",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.userSelected",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.topicCode",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -444,8 +174,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -468,8 +198,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.id",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.id",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.id",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -495,8 +225,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.extension",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.extension",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.extension",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -534,8 +264,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.system",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.system",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.system",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -570,8 +300,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.version",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.version",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.version",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -604,8 +334,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.code",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.code",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.code",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -639,14 +369,14 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.display",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.display",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -679,8 +409,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.userSelected",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.userSelected",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.userSelected",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -714,14 +444,14 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.findingMethod",
-        "path": "oncology-ProsignaRecurrenceScore-model.findingMethod",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.findingMethod",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.findingMethod",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -735,8 +465,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.interpretation",
-        "path": "oncology-ProsignaRecurrenceScore-model.interpretation",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -748,7 +478,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.interpretation",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -762,8 +492,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.interpretation.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.interpretation.value",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation.value",
         "short": "Code representing a clinical interpretation of a finding.",
         "definition": "Code representing a clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "alias": [
@@ -792,14 +522,14 @@
         }
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category",
-        "path": "oncology-ProsignaRecurrenceScore-model.category",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.category",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -813,8 +543,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -823,7 +553,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -837,8 +567,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.id",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.id",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.id",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -864,8 +594,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.extension",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.extension",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.extension",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -903,8 +633,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.system",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.system",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.system",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -939,8 +669,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.version",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.version",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.version",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -973,8 +703,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.code",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.code",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.code",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1008,14 +738,14 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.display",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.display",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1048,8 +778,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.userSelected",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.userSelected",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.userSelected",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1083,8 +813,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.anatomicalLocation",
-        "path": "oncology-ProsignaRecurrenceScore-model.anatomicalLocation",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.anatomicalLocation",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1096,7 +826,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.anatomicalLocation",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.anatomicalLocation",
           "min": 0,
           "max": "0"
         },
@@ -1110,17 +840,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.breastSpecimen",
-        "path": "oncology-ProsignaRecurrenceScore-model.breastSpecimen",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.breastSpecimen",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.breastSpecimen",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "alias": [
-          "specimen"
-        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.breastSpecimen",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.breastSpecimen",
           "min": 0,
           "max": "1"
         },
@@ -1134,8 +861,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.deltaFlag",
-        "path": "oncology-ProsignaRecurrenceScore-model.deltaFlag",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.deltaFlag",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1147,7 +874,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.deltaFlag",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -1161,14 +888,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.precondition",
-        "path": "oncology-ProsignaRecurrenceScore-model.precondition",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.precondition",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.precondition",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.precondition",
           "min": 0,
           "max": "0"
         },
@@ -1182,8 +909,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.referenceRange",
-        "path": "oncology-ProsignaRecurrenceScore-model.referenceRange",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.referenceRange",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1195,7 +922,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.referenceRange",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -1209,14 +936,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.evaluationComponent",
-        "path": "oncology-ProsignaRecurrenceScore-model.evaluationComponent",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.evaluationComponent",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.evaluationComponent",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
           "max": "0"
         },
@@ -1230,10 +957,101 @@
         "isSummary": false
       },
       {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model",
+        "sliceName": "quantity",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model.value",
+        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.",
+        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+        "alias": [
+          "decimal"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity.comparator",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model.comparator",
+        "short": "Comparator",
+        "definition": "Comparator",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.comparator",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Comparator-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity.units",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model.units",
+        "short": "Code for the unit of measure of the quantity.",
+        "definition": "Code for the unit of measure of the quantity.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.units",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Units-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-ProsignaRecurrenceScore-model.recordedContext",
         "path": "oncology-ProsignaRecurrenceScore-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1251,10 +1069,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-ProsignaRecurrenceScore-model.encounter",
+        "path": "oncology-ProsignaRecurrenceScore-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-ProsignaRecurrenceScore-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-ProsignaRecurrenceScore-model.members",
         "path": "oncology-ProsignaRecurrenceScore-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -1275,7 +1114,7 @@
         "id": "oncology-ProsignaRecurrenceScore-model.members.value",
         "path": "oncology-ProsignaRecurrenceScore-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],
@@ -1607,119 +1446,95 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.value",
-        "short": "Quantity representing breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.",
-        "definition": "Quantity representing breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.\n\nThe Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Risk of Recurrence Score in the literature), which is correlated with the probability of distant recurrence at ten years for post-menopausal women with hormone receptorpositive, early stage breast cancer.",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
-          "quantity"
+          "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.value",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic",
           "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.value",
-        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.",
-        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
-        "alias": [
-          "decimal"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Quantity-model.value",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "decimal"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.comparator",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.comparator",
-        "short": "Comparator",
-        "definition": "Comparator",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Quantity-model.comparator",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Comparator-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units",
-        "short": "Code for the unit of measure of the quantity.",
-        "definition": "Code for the unit of measure of the quantity.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Quantity-model.units",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Units-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing code for the unit of measure of the quantity.",
-        "definition": "Code representing code for the unit of measure of the quantity.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Units-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
+          },
           {
             "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -1727,260 +1542,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.id",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.extension",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.system",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.system",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://unitsofmeasure.org",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.version",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.code",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.code",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "1",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.value.units.value.userSelected",
-        "path": "oncology-ProsignaRecurrenceScore-model.value.units.value.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
-      },
-      {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.topicCode",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -1994,8 +1563,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -2018,8 +1587,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.id",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.id",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.id",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2045,8 +1614,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.extension",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.extension",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.extension",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2084,8 +1653,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.system",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.system",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.system",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2120,8 +1689,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.version",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.version",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.version",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2154,8 +1723,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.code",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.code",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.code",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2189,14 +1758,14 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.display",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.display",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2229,8 +1798,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.topicCode.value.userSelected",
-        "path": "oncology-ProsignaRecurrenceScore-model.topicCode.value.userSelected",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.userSelected",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2264,14 +1833,14 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.findingMethod",
-        "path": "oncology-ProsignaRecurrenceScore-model.findingMethod",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.findingMethod",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.findingMethod",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -2285,8 +1854,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.interpretation",
-        "path": "oncology-ProsignaRecurrenceScore-model.interpretation",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2298,7 +1867,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.interpretation",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -2312,8 +1881,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.interpretation.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.interpretation.value",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.interpretation.value",
         "short": "Code representing a clinical interpretation of a finding.",
         "definition": "Code representing a clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "alias": [
@@ -2342,14 +1911,14 @@
         }
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category",
-        "path": "oncology-ProsignaRecurrenceScore-model.category",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.category",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -2363,8 +1932,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -2373,7 +1942,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -2387,8 +1956,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.id",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.id",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.id",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2414,8 +1983,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.extension",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.extension",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.extension",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2453,8 +2022,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.system",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.system",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.system",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2489,8 +2058,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.version",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.version",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.version",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2523,8 +2092,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.code",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.code",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.code",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2558,14 +2127,14 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.display",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.display",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2598,8 +2167,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.category.value.userSelected",
-        "path": "oncology-ProsignaRecurrenceScore-model.category.value.userSelected",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.userSelected",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2633,8 +2202,8 @@
         ]
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.anatomicalLocation",
-        "path": "oncology-ProsignaRecurrenceScore-model.anatomicalLocation",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.anatomicalLocation",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2646,7 +2215,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.anatomicalLocation",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.anatomicalLocation",
           "min": 0,
           "max": "0"
         },
@@ -2660,17 +2229,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.breastSpecimen",
-        "path": "oncology-ProsignaRecurrenceScore-model.breastSpecimen",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.breastSpecimen",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.breastSpecimen",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "alias": [
-          "specimen"
-        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.breastSpecimen",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.breastSpecimen",
           "min": 0,
           "max": "1"
         },
@@ -2684,8 +2250,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.deltaFlag",
-        "path": "oncology-ProsignaRecurrenceScore-model.deltaFlag",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.deltaFlag",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2697,7 +2263,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.deltaFlag",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -2711,14 +2277,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.precondition",
-        "path": "oncology-ProsignaRecurrenceScore-model.precondition",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.precondition",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.precondition",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.precondition",
           "min": 0,
           "max": "0"
         },
@@ -2732,8 +2298,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.referenceRange",
-        "path": "oncology-ProsignaRecurrenceScore-model.referenceRange",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.referenceRange",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2745,7 +2311,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.referenceRange",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -2759,14 +2325,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-ProsignaRecurrenceScore-model.evaluationComponent",
-        "path": "oncology-ProsignaRecurrenceScore-model.evaluationComponent",
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.evaluationComponent",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "oncology-ProsignaRecurrenceScore-model.evaluationComponent",
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
           "max": "0"
         },
@@ -2780,10 +2346,101 @@
         "isSummary": false
       },
       {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model",
+        "sliceName": "quantity",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity.value",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model.value",
+        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.",
+        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+        "alias": [
+          "decimal"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity.comparator",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model.comparator",
+        "short": "Comparator",
+        "definition": "Comparator",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.comparator",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Comparator-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model:quantity.units",
+        "path": "oncology-ProsignaRecurrenceScore-model.evaluationResultTopic.valueShr-core-Quantity-model.units",
+        "short": "Code for the unit of measure of the quantity.",
+        "definition": "Code for the unit of measure of the quantity.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Quantity-model.units",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Units-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-ProsignaRecurrenceScore-model.recordedContext",
         "path": "oncology-ProsignaRecurrenceScore-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -2801,10 +2458,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-ProsignaRecurrenceScore-model.encounter",
+        "path": "oncology-ProsignaRecurrenceScore-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-ProsignaRecurrenceScore-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-ProsignaRecurrenceScore-model.members",
         "path": "oncology-ProsignaRecurrenceScore-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -2825,7 +2503,7 @@
         "id": "oncology-ProsignaRecurrenceScore-model.members.value",
         "path": "oncology-ProsignaRecurrenceScore-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],

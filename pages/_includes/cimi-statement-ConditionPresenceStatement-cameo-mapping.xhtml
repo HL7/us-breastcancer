@@ -4,17 +4,16 @@
 <p>This structure represents the following BC mapping definition:</p>
 <pre>
 cimi.statement.ConditionPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:
-  CodeableConcept maps to code
-  Category maps to category
+  ConditionTopic.TopicCode maps to code
+  ConditionTopic.Category maps to category
   ConditionPresenceContext.ClinicalStatus maps to clinicalStatus
   ConditionPresenceContext.VerificationStatus maps to verificationStatus
   ConditionPresenceContext.Onset maps to onset[x]
   ConditionPresenceContext.Abatement maps to abatement[x]
-  AnatomicalLocationOrCode.CodeableConcept maps to bodySite   
-  AnatomicalLocationOrCode.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/body-site-instance
+  ConditionTopic.AnatomicalLocationOrCode maps to bodySite 
   ConditionPresenceContext.Severity maps to severity
   Stage maps to stage
   Stage.CodeableConcept maps to stage.summary
-  Stage.StageDetail maps to stage.assessment	
+  Stage.StageDetail maps to stage.assessment
 
 </pre>

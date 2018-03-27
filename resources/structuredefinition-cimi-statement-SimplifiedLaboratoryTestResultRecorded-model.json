@@ -51,10 +51,40 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.value[x]",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.value[x]",
-        "short": "Choice of types representing the usual case for a test result from a pathology lab, based on a specimen taken from a patient. Note that the body site is not explicit here; it is part of the specimen resource associated with the lab result.",
-        "definition": "Choice of types representing the usual case for a test result from a pathology lab, based on a specimen taken from a patient. Note that the body site is not explicit here; it is part of the specimen resource associated with the lab result.",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationResultTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.value[x]",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.value[x]",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
           "quantity",
           "codeableConcept",
@@ -69,7 +99,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.value[x]",
+          "path": "cimi-EvaluationResultTopic-model.value[x]",
           "min": 0,
           "max": "1"
         },
@@ -107,14 +137,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.topicCode",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.topicCode",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.topicCode",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.topicCode",
+          "path": "cimi-EvaluationResultTopic-model.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -128,14 +158,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.findingMethod",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.findingMethod",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.findingMethod",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.findingMethod",
+          "path": "cimi-EvaluationResultTopic-model.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -149,8 +179,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.interpretation",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -162,7 +192,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+          "path": "cimi-EvaluationResultTopic-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -176,14 +206,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category",
+          "path": "cimi-EvaluationResultTopic-model.category",
           "min": 1,
           "max": "*"
         },
@@ -197,8 +227,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -221,8 +251,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.id",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.id",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.id",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -248,8 +278,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.extension",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.extension",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.extension",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -287,8 +317,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.system",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.system",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.system",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -323,8 +353,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.version",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.version",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.version",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -357,8 +387,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.code",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.code",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.code",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -392,14 +422,14 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.display",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.display",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -432,8 +462,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.userSelected",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.userSelected",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.userSelected",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -467,8 +497,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.anatomicalLocation",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.anatomicalLocation",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.anatomicalLocation",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -480,9 +510,9 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.anatomicalLocation",
+          "path": "cimi-EvaluationResultTopic-model.anatomicalLocation",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
@@ -494,14 +524,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.specimen",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.specimen",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.specimen",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.specimen",
+          "path": "cimi-EvaluationResultTopic-model.specimen",
           "min": 0,
           "max": "1"
         },
@@ -515,8 +545,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.deltaFlag",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.deltaFlag",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.deltaFlag",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -528,7 +558,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.deltaFlag",
+          "path": "cimi-EvaluationResultTopic-model.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -542,16 +572,16 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.precondition",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.precondition",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.precondition",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.precondition",
+          "path": "cimi-EvaluationResultTopic-model.precondition",
           "min": 0,
-          "max": "0"
+          "max": "*"
         },
         "type": [
           {
@@ -563,8 +593,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.referenceRange",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.referenceRange",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.referenceRange",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -576,9 +606,9 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.referenceRange",
+          "path": "cimi-EvaluationResultTopic-model.referenceRange",
           "min": 0,
-          "max": "0"
+          "max": "*"
         },
         "type": [
           {
@@ -590,14 +620,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationComponent",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationComponent",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.evaluationComponent",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationComponent",
+          "path": "cimi-EvaluationResultTopic-model.evaluationComponent",
           "min": 0,
           "max": "*"
         },
@@ -615,6 +645,9 @@
         "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -632,10 +665,31 @@
         "isSummary": false
       },
       {
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.encounter",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members",
         "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -656,7 +710,7 @@
         "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members.value",
         "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],
@@ -718,10 +772,40 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.value[x]",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.value[x]",
-        "short": "Choice of types representing the usual case for a test result from a pathology lab, based on a specimen taken from a patient. Note that the body site is not explicit here; it is part of the specimen resource associated with the lab result.",
-        "definition": "Choice of types representing the usual case for a test result from a pathology lab, based on a specimen taken from a patient. Note that the body site is not explicit here; it is part of the specimen resource associated with the lab result.",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationResultTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.value[x]",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.value[x]",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
           "quantity",
           "codeableConcept",
@@ -736,7 +820,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.value[x]",
+          "path": "cimi-EvaluationResultTopic-model.value[x]",
           "min": 0,
           "max": "1"
         },
@@ -774,14 +858,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.topicCode",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.topicCode",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.topicCode",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.topicCode",
+          "path": "cimi-EvaluationResultTopic-model.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -795,14 +879,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.findingMethod",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.findingMethod",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.findingMethod",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.findingMethod",
+          "path": "cimi-EvaluationResultTopic-model.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -816,8 +900,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.interpretation",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -829,7 +913,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.interpretation",
+          "path": "cimi-EvaluationResultTopic-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -843,14 +927,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category",
+          "path": "cimi-EvaluationResultTopic-model.category",
           "min": 1,
           "max": "*"
         },
@@ -864,8 +948,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -888,8 +972,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.id",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.id",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.id",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -915,8 +999,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.extension",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.extension",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.extension",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -954,8 +1038,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.system",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.system",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.system",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -990,8 +1074,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.version",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.version",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.version",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1024,8 +1108,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.code",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.code",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.code",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1059,14 +1143,14 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.display",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.display",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1099,8 +1183,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.userSelected",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.category.value.userSelected",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.userSelected",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1134,8 +1218,8 @@
         ]
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.anatomicalLocation",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.anatomicalLocation",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.anatomicalLocation",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1147,9 +1231,9 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.anatomicalLocation",
+          "path": "cimi-EvaluationResultTopic-model.anatomicalLocation",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
@@ -1161,14 +1245,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.specimen",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.specimen",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.specimen",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.specimen",
+          "path": "cimi-EvaluationResultTopic-model.specimen",
           "min": 0,
           "max": "1"
         },
@@ -1182,8 +1266,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.deltaFlag",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.deltaFlag",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.deltaFlag",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1195,7 +1279,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.deltaFlag",
+          "path": "cimi-EvaluationResultTopic-model.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -1209,16 +1293,16 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.precondition",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.precondition",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.precondition",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.precondition",
+          "path": "cimi-EvaluationResultTopic-model.precondition",
           "min": 0,
-          "max": "0"
+          "max": "*"
         },
         "type": [
           {
@@ -1230,8 +1314,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.referenceRange",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.referenceRange",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.referenceRange",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1243,9 +1327,9 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.referenceRange",
+          "path": "cimi-EvaluationResultTopic-model.referenceRange",
           "min": 0,
-          "max": "0"
+          "max": "*"
         },
         "type": [
           {
@@ -1257,14 +1341,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationComponent",
-        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationComponent",
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.evaluationComponent",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.evaluationComponent",
+          "path": "cimi-EvaluationResultTopic-model.evaluationComponent",
           "min": 0,
           "max": "*"
         },
@@ -1282,6 +1366,9 @@
         "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1299,10 +1386,31 @@
         "isSummary": false
       },
       {
+        "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.encounter",
+        "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members",
         "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -1323,7 +1431,7 @@
         "id": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members.value",
         "path": "cimi-statement-SimplifiedLaboratoryTestResultRecorded-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],

@@ -58,17 +58,47 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.value",
-        "short": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
-        "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0348080"
+          }
+        ],
+        "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
+        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
         "alias": [
           "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.value",
+          "path": "cimi-ConditionTopic-model.value",
           "min": 1,
           "max": "1"
         },
@@ -81,21 +111,21 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
           }
         }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.topicCode",
+          "path": "cimi-ConditionTopic-model.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -109,8 +139,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -130,11 +160,17 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
+          }
+        }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.id",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.id",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -160,8 +196,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.extension",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.extension",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.extension",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -199,8 +235,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.system",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.system",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.system",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -235,8 +271,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.version",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.version",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.version",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -269,8 +305,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.code",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.code",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.code",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -304,14 +340,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.display",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.display",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -344,8 +380,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.userSelected",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.userSelected",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.userSelected",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -379,14 +415,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.findingMethod",
-        "path": "oncology-BreastCancerPresenceStatement-model.findingMethod",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.findingMethod",
+          "path": "cimi-ConditionTopic-model.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -400,8 +436,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.findingMethod.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.findingMethod.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
@@ -430,8 +466,8 @@
         }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.interpretation",
-        "path": "oncology-BreastCancerPresenceStatement-model.interpretation",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.interpretation",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -443,7 +479,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.interpretation",
+          "path": "cimi-ConditionTopic-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -457,14 +493,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category",
-        "path": "oncology-BreastCancerPresenceStatement-model.category",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.category",
+          "path": "cimi-ConditionTopic-model.category",
           "min": 1,
           "max": "*"
         },
@@ -478,14 +514,10 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
         "slicing": {
           "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
             {
               "type": "value",
               "path": "code"
@@ -516,11 +548,11 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
         "sliceName": "Includes_disease",
-        "short": "Code: disease from http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS",
-        "definition": "Code: disease from http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS",
+        "short": "Code: disease",
+        "definition": "Code: disease",
         "min": 1,
         "max": "1",
         "base": {
@@ -538,8 +570,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.id",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.id",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.id",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -565,8 +597,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.extension",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.extension",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.extension",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -604,14 +636,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.system",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.system",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.system",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": 0,
         "base": {
           "path": "Coding.system",
           "min": 0,
@@ -622,7 +654,6 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS",
         "isSummary": true,
         "mapping": [
           {
@@ -640,13 +671,13 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.version",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.version",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.version",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "1",
+        "max": 0,
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -674,8 +705,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.code",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.code",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.code",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -709,14 +740,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.display",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.display",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -749,8 +780,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.userSelected",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.userSelected",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.userSelected",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -784,14 +815,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.anatomicalLocationOrCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.anatomicalLocationOrCode",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
         "short": "A body site entity or a body site code.",
         "definition": "A body site entity or a body site code.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.anatomicalLocationOrCode",
+          "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
           "min": 0,
           "max": "*"
         },
@@ -809,6 +840,9 @@
         "path": "oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
         "short": "The context for a condition that is known, suspected, or possibly present.",
         "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -826,6 +860,27 @@
         "isSummary": false
       },
       {
+        "id": "oncology-BreastCancerPresenceStatement-model.encounter",
+        "path": "oncology-BreastCancerPresenceStatement-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerPresenceStatement-model.stage",
         "path": "oncology-BreastCancerPresenceStatement-model.stage",
         "code": [
@@ -835,7 +890,7 @@
           }
         ],
         "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\tThis attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn't exist in core CIMI.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "min": 0,
         "max": "1",
         "base": {
@@ -856,7 +911,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "path": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\tThis attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn't exist in core CIMI.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "alias": [
           "codeableConcept"
         ],
@@ -879,8 +934,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail",
         "path": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail",
-        "short": "The full staging information.",
-        "definition": "The full staging information.",
+        "short": "The full staging information",
+        "definition": "The full staging information",
         "min": 0,
         "max": "1",
         "base": {
@@ -1000,17 +1055,47 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.value",
-        "short": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
-        "definition": "Code representing findingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0348080"
+          }
+        ],
+        "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
+        "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
         "alias": [
           "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.value",
+          "path": "cimi-ConditionTopic-model.value",
           "min": 1,
           "max": "1"
         },
@@ -1023,21 +1108,21 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
           }
         }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.topicCode",
+          "path": "cimi-ConditionTopic-model.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -1051,8 +1136,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
@@ -1072,11 +1157,17 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS"
+          }
+        }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.id",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.id",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1102,8 +1193,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.extension",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.extension",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.extension",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1141,8 +1232,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.system",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.system",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.system",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1177,8 +1268,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.version",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.version",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.version",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1211,8 +1302,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.code",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.code",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.code",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1246,14 +1337,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.display",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.display",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1286,8 +1377,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.topicCode.value.userSelected",
-        "path": "oncology-BreastCancerPresenceStatement-model.topicCode.value.userSelected",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.userSelected",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1321,14 +1412,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.findingMethod",
-        "path": "oncology-BreastCancerPresenceStatement-model.findingMethod",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.findingMethod",
+          "path": "cimi-ConditionTopic-model.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -1342,8 +1433,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.findingMethod.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.findingMethod.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
@@ -1372,8 +1463,8 @@
         }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.interpretation",
-        "path": "oncology-BreastCancerPresenceStatement-model.interpretation",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.interpretation",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1385,7 +1476,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.interpretation",
+          "path": "cimi-ConditionTopic-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -1399,14 +1490,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category",
-        "path": "oncology-BreastCancerPresenceStatement-model.category",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.category",
+          "path": "cimi-ConditionTopic-model.category",
           "min": 1,
           "max": "*"
         },
@@ -1420,14 +1511,10 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
         "slicing": {
           "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
             {
               "type": "value",
               "path": "code"
@@ -1458,11 +1545,11 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
         "sliceName": "Includes_disease",
-        "short": "Code: disease from http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS",
-        "definition": "Code: disease from http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS",
+        "short": "Code: disease",
+        "definition": "Code: disease",
         "min": 1,
         "max": "1",
         "base": {
@@ -1480,8 +1567,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.id",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.id",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.id",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1507,8 +1594,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.extension",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.extension",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.extension",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1546,14 +1633,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.system",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.system",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.system",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": 0,
         "base": {
           "path": "Coding.system",
           "min": 0,
@@ -1564,7 +1651,6 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS",
         "isSummary": true,
         "mapping": [
           {
@@ -1582,13 +1668,13 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.version",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.version",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.version",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "1",
+        "max": 0,
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -1616,8 +1702,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.code",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.code",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.code",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1651,14 +1737,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.display",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.display",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1691,8 +1777,8 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.category.value:Includes_disease.userSelected",
-        "path": "oncology-BreastCancerPresenceStatement-model.category.value.userSelected",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value:Includes_disease.userSelected",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1726,14 +1812,14 @@
         ]
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.anatomicalLocationOrCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.anatomicalLocationOrCode",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
         "short": "A body site entity or a body site code.",
         "definition": "A body site entity or a body site code.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerPresenceStatement-model.anatomicalLocationOrCode",
+          "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
           "min": 0,
           "max": "*"
         },
@@ -1751,6 +1837,9 @@
         "path": "oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
         "short": "The context for a condition that is known, suspected, or possibly present.",
         "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1768,6 +1857,27 @@
         "isSummary": false
       },
       {
+        "id": "oncology-BreastCancerPresenceStatement-model.encounter",
+        "path": "oncology-BreastCancerPresenceStatement-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerPresenceStatement-model.stage",
         "path": "oncology-BreastCancerPresenceStatement-model.stage",
         "code": [
@@ -1777,7 +1887,7 @@
           }
         ],
         "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\tThis attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn't exist in core CIMI.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1798,7 +1908,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "path": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\tThis attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn't exist in core CIMI.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "alias": [
           "codeableConcept"
         ],
@@ -1821,8 +1931,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail",
         "path": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail",
-        "short": "The full staging information.",
-        "definition": "The full staging information.",
+        "short": "The full staging information",
+        "definition": "The full staging information",
         "min": 0,
         "max": "1",
         "base": {

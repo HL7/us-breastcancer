@@ -3,7 +3,7 @@
   "id": "oncology-DCISNuclearGrade",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DCISNuclearGrade Profile</b></p>\n  <p>An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.DCISNuclearGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  CodeableConcept maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DCISNuclearGrade Profile</b></p>\n  <p>An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.DCISNuclearGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-DCISNuclearGrade",
   "name": "DCISNuclearGrade",
@@ -380,7 +380,7 @@
           }
         ],
         "slicing": {
-          "id": "4",
+          "id": "5",
           "discriminator": [
             {
               "type": "value",
@@ -392,18 +392,18 @@
         }
       },
       {
-        "id": "Observation:oncology-DCISNuclearGrade.extension:deltaflag",
+        "id": "Observation:oncology-DCISNuclearGrade.extension:encounter",
         "path": "Observation.extension",
-        "definition": "Indicator of significant change (delta) from the last or previous measurement.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
           }
         ],
-        "sliceName": "deltaflag"
+        "sliceName": "encounter"
       },
       {
         "id": "Observation:oncology-DCISNuclearGrade.extension:diagnosticservice",
@@ -646,7 +646,7 @@
               "valueString": "ObservationCategory"
             }
           ],
-          "strength": "preferred",
+          "strength": "extensible",
           "description": "Codes for high level observation categories.",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/ValueSet/observation-category"
@@ -1723,15 +1723,126 @@
         ]
       },
       {
-        "id": "Observation:oncology-DCISNuclearGrade.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation:oncology-DCISNuclearGrade.value[x]",
+        "path": "Observation.value[x]",
         "short": "Result Value",
         "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
-        "min": 1,
+        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
+        "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Observation.value[x]",
-          "min": 1,
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "condition": [
+          "obs-7"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "valueBoolean": true
+              }
+            ],
+            "key": "us-core-4",
+            "severity": "warning",
+            "human": "SHOULD use Snomed CT for coded Results",
+            "expression": "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
+            "xpath": "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
+          },
+          {
+            "key": "us-core-3",
+            "severity": "error",
+            "human": "SHALL use UCUM for coded quantity units.",
+            "expression": "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
+            "xpath": "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Event.notDone, Event.notDoneReason  (maps to valeu[x] or dataAbsentReason)"
+          },
+          {
+            "identity": "sct-concept",
+            "map": "< 441742003 |Evaluation finding|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX.2, OBX.5, OBX.6"
+          },
+          {
+            "identity": "rim",
+            "map": "value"
+          },
+          {
+            "identity": "sct-attr",
+            "map": "363714003 |Interprets|"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Observation.value[x]"
+          }
+        ],
+        "slicing": {
+          "id": "4",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation:oncology-DCISNuclearGrade.valueCodeableConcept:CodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "sliceName": "CodeableConcept",
+        "short": "Result Value",
+        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.value[x]",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -2734,16 +2845,9 @@
         ],
         "isSummary": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
-          "strength": "example",
-          "description": "Codes identifying names of simple observations.",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-codes"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearGradeVS"
           }
         },
         "mapping": [
@@ -2825,7 +2929,44 @@
             "identity": "sct-attr",
             "map": "363714003 |Interprets|"
           }
-        ]
+        ],
+        "slicing": {
+          "id": "3",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation:oncology-DCISNuclearGrade.component.valueCodeableConcept:CodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "sliceName": "CodeableConcept",
+        "short": "Actual component result",
+        "definition": "The information determined as a result of making the observation, if the information has a simple value.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.component.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearGradeVS"
+          }
+        }
       },
       {
         "id": "Observation:oncology-DCISNuclearGrade.component.dataAbsentReason",
@@ -3231,18 +3372,18 @@
         "mustSupport": false
       },
       {
-        "id": "Observation:oncology-DCISNuclearGrade.extension:deltaflag",
+        "id": "Observation:oncology-DCISNuclearGrade.extension:encounter",
         "path": "Observation.extension",
-        "definition": "Indicator of significant change (delta) from the last or previous measurement.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
           }
         ],
-        "sliceName": "deltaflag"
+        "sliceName": "encounter"
       },
       {
         "id": "Observation:oncology-DCISNuclearGrade.extension:diagnosticservice",
@@ -3260,7 +3401,20 @@
       },
       {
         "id": "Observation:oncology-DCISNuclearGrade.category",
-        "path": "Observation.category"
+        "path": "Observation.category",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCategory"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes for high level observation categories.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-category"
+          }
+        }
       },
       {
         "id": "Observation:oncology-DCISNuclearGrade.category.coding",
@@ -3345,7 +3499,53 @@
         "fixedCode": "C18513"
       },
       {
-        "id": "Observation:oncology-DCISNuclearGrade.valueCodeableConcept",
+        "id": "Observation:oncology-DCISNuclearGrade.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "id": "4",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-DCISNuclearGrade.valueCodeableConcept:CodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "type": [
           {
@@ -3482,8 +3682,29 @@
         "max": "0"
       },
       {
+        "id": "Observation:oncology-DCISNuclearGrade.component.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearGradeVS"
+          }
+        }
+      },
+      {
         "id": "Observation:oncology-DCISNuclearGrade.component.value[x]",
         "path": "Observation.component.value[x]",
+        "slicing": {
+          "id": "3",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -3512,6 +3733,21 @@
             "code": "Period"
           }
         ]
+      },
+      {
+        "id": "Observation:oncology-DCISNuclearGrade.component.valueCodeableConcept:CodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NuclearGradeVS"
+          }
+        }
       },
       {
         "id": "Observation:oncology-DCISNuclearGrade.component.dataAbsentReason",

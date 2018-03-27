@@ -57,23 +57,29 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.value",
-        "path": "oncology-BreastCancerStage-model.value",
-        "short": "Code representing the stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
-        "definition": "Code representing the stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
-          "codeableConcept"
+          "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.value",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -81,14 +87,70 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.topicCode",
-        "path": "oncology-BreastCancerStage-model.topicCode",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.value[x]",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.value[x]",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.topicCode",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -102,15 +164,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.findingMethod",
-        "path": "oncology-BreastCancerStage-model.findingMethod",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.findingMethod",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.findingMethod",
-          "min": 1,
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.findingMethod",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -123,38 +185,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.findingMethod.value",
-        "path": "oncology-BreastCancerStage-model.findingMethod.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-FindingMethod-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StagingMethodVS"
-          }
-        }
-      },
-      {
-        "id": "oncology-BreastCancerStage-model.interpretation",
-        "path": "oncology-BreastCancerStage-model.interpretation",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.interpretation",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -166,7 +198,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.interpretation",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -180,14 +212,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.category",
-        "path": "oncology-BreastCancerStage-model.category",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.category",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerStage-model.category",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -201,8 +233,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.category.value",
-        "path": "oncology-BreastCancerStage-model.category.value",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.category.value",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -211,7 +243,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -231,8 +263,8 @@
         }
       },
       {
-        "id": "oncology-BreastCancerStage-model.anatomicalLocation",
-        "path": "oncology-BreastCancerStage-model.anatomicalLocation",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.anatomicalLocation",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -244,7 +276,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.anatomicalLocation",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.anatomicalLocation",
           "min": 0,
           "max": "1"
         },
@@ -258,14 +290,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.specimen",
-        "path": "oncology-BreastCancerStage-model.specimen",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.specimen",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.specimen",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.specimen",
           "min": 0,
           "max": "1"
         },
@@ -279,8 +311,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.deltaFlag",
-        "path": "oncology-BreastCancerStage-model.deltaFlag",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.deltaFlag",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -292,7 +324,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.deltaFlag",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -306,14 +338,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.precondition",
-        "path": "oncology-BreastCancerStage-model.precondition",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.precondition",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerStage-model.precondition",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.precondition",
           "min": 0,
           "max": "*"
         },
@@ -327,8 +359,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.referenceRange",
-        "path": "oncology-BreastCancerStage-model.referenceRange",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.referenceRange",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -340,7 +372,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerStage-model.referenceRange",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.referenceRange",
           "min": 0,
           "max": "*"
         },
@@ -354,14 +386,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -370,8 +402,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerPrimaryTumorClassification",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerPrimaryTumorClassification",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerPrimaryTumorClassification",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerPrimaryTumorClassification",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -384,7 +416,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerPrimaryTumorClassification",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerPrimaryTumorClassification",
           "min": 0,
           "max": "1"
         },
@@ -398,8 +430,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerRegionalNodesClassification",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerRegionalNodesClassification",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerRegionalNodesClassification",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerRegionalNodesClassification",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -412,7 +444,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerRegionalNodesClassification",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerRegionalNodesClassification",
           "min": 0,
           "max": "1"
         },
@@ -426,8 +458,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerDistantMetastasesClassification",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerDistantMetastasesClassification",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerDistantMetastasesClassification",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerDistantMetastasesClassification",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -440,7 +472,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerDistantMetastasesClassification",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerDistantMetastasesClassification",
           "min": 0,
           "max": "1"
         },
@@ -458,6 +490,9 @@
         "path": "oncology-BreastCancerStage-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -475,10 +510,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-BreastCancerStage-model.encounter",
+        "path": "oncology-BreastCancerStage-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerStage-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerStage-model.members",
         "path": "oncology-BreastCancerStage-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -499,7 +555,7 @@
         "id": "oncology-BreastCancerStage-model.members.value",
         "path": "oncology-BreastCancerStage-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],
@@ -704,23 +760,29 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.value",
-        "path": "oncology-BreastCancerStage-model.value",
-        "short": "Code representing the stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
-        "definition": "Code representing the stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
-          "codeableConcept"
+          "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.value",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -728,14 +790,70 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.topicCode",
-        "path": "oncology-BreastCancerStage-model.topicCode",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.value[x]",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.value[x]",
+        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "alias": [
+          "quantity",
+          "codeableConcept",
+          "string",
+          "boolean",
+          "range",
+          "ratio",
+          "time",
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.topicCode",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -749,15 +867,15 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.findingMethod",
-        "path": "oncology-BreastCancerStage-model.findingMethod",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.findingMethod",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.findingMethod",
-          "min": 1,
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.findingMethod",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -770,38 +888,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.findingMethod.value",
-        "path": "oncology-BreastCancerStage-model.findingMethod.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-FindingMethod-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StagingMethodVS"
-          }
-        }
-      },
-      {
-        "id": "oncology-BreastCancerStage-model.interpretation",
-        "path": "oncology-BreastCancerStage-model.interpretation",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.interpretation",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -813,7 +901,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.interpretation",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -827,14 +915,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.category",
-        "path": "oncology-BreastCancerStage-model.category",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.category",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerStage-model.category",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -848,8 +936,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.category.value",
-        "path": "oncology-BreastCancerStage-model.category.value",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.category.value",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -858,7 +946,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -878,8 +966,8 @@
         }
       },
       {
-        "id": "oncology-BreastCancerStage-model.anatomicalLocation",
-        "path": "oncology-BreastCancerStage-model.anatomicalLocation",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.anatomicalLocation",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.anatomicalLocation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -891,7 +979,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.anatomicalLocation",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.anatomicalLocation",
           "min": 0,
           "max": "1"
         },
@@ -905,14 +993,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.specimen",
-        "path": "oncology-BreastCancerStage-model.specimen",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.specimen",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.specimen",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.specimen",
           "min": 0,
           "max": "1"
         },
@@ -926,8 +1014,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.deltaFlag",
-        "path": "oncology-BreastCancerStage-model.deltaFlag",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.deltaFlag",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.deltaFlag",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -939,7 +1027,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.deltaFlag",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.deltaFlag",
           "min": 0,
           "max": "1"
         },
@@ -953,14 +1041,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.precondition",
-        "path": "oncology-BreastCancerStage-model.precondition",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.precondition",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerStage-model.precondition",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.precondition",
           "min": 0,
           "max": "*"
         },
@@ -974,8 +1062,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.referenceRange",
-        "path": "oncology-BreastCancerStage-model.referenceRange",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.referenceRange",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -987,7 +1075,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "oncology-BreastCancerStage-model.referenceRange",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.referenceRange",
           "min": 0,
           "max": "*"
         },
@@ -1001,14 +1089,14 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. \n\t\t\n\t\tThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -1017,8 +1105,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerPrimaryTumorClassification",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerPrimaryTumorClassification",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerPrimaryTumorClassification",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerPrimaryTumorClassification",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -1031,7 +1119,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerPrimaryTumorClassification",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerPrimaryTumorClassification",
           "min": 0,
           "max": "1"
         },
@@ -1045,8 +1133,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerRegionalNodesClassification",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerRegionalNodesClassification",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerRegionalNodesClassification",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerRegionalNodesClassification",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -1059,7 +1147,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerRegionalNodesClassification",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerRegionalNodesClassification",
           "min": 0,
           "max": "1"
         },
@@ -1073,8 +1161,8 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerDistantMetastasesClassification",
-        "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerDistantMetastasesClassification",
+        "id": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerDistantMetastasesClassification",
+        "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerDistantMetastasesClassification",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -1087,7 +1175,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerStage-model.evaluationComponent.breastCancerDistantMetastasesClassification",
+          "path": "oncology-BreastCancerStage-model.evaluationResultTopic.evaluationComponent.breastCancerDistantMetastasesClassification",
           "min": 0,
           "max": "1"
         },
@@ -1105,6 +1193,9 @@
         "path": "oncology-BreastCancerStage-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "alias": [
+          "statementContext"
+        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1122,10 +1213,31 @@
         "isSummary": false
       },
       {
+        "id": "oncology-BreastCancerStage-model.encounter",
+        "path": "oncology-BreastCancerStage-model.encounter",
+        "short": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerStage-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerStage-model.members",
         "path": "oncology-BreastCancerStage-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "min": 1,
         "max": "1",
         "base": {
@@ -1146,7 +1258,7 @@
         "id": "oncology-BreastCancerStage-model.members.value",
         "path": "oncology-BreastCancerStage-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
         "alias": [
           "evaluationResultRecorded"
         ],

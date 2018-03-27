@@ -215,28 +215,6 @@ CIMI Alignment: In CIMI V0.0.4, this class was called Assertion, but CIMI recent
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="cimi-statement/BodyStructurePresent.html">BodyStructurePresent</a>
-        </td>
-        <td class="colLast">
-          <div class="block">Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate.
-
-Examples include tissue types, tumors, and wounds. Body structures are continuants (objects that exist over a period of time) that allow observations of the same body structure to be related to be tracked over time.</div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
-          <a href="cimi-statement/BodyStructureTopic.html">BodyStructureTopic</a>
-        </td>
-        <td class="colLast">
-          <div class="block">Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.</div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
           <a href="oncology/BreastCancerDistantMetastasesClassification.html">BreastCancerDistantMetastasesClassification</a>
         </td>
         <td class="colLast">
@@ -510,9 +488,7 @@ CIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSus
         <td class="colLast">
           <div class="block">A condition that is or may be present in a subject. &#39;Condition&#39; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.
 
-In CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.
-
-In CIMI V0.0.4, this class would be represented as an archetype, specifically, a ClinicalStatement whose topic is ConditionAssertion and whose context is AssertionKnownOrSuspectedPresent.</div>
+In CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.</div>
         </td>
       </tr>
       
@@ -933,7 +909,7 @@ The is currently no LOINC code for Mammaprint test.</div>
 		
 		Examples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.
 		
-		CIMI V0.0.4 does not have this attribute.</div>
+		CIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.</div>
         </td>
       </tr>
       
@@ -944,16 +920,6 @@ The is currently no LOINC code for Mammaprint test.</div>
         </td>
         <td class="colLast">
           <div class="block">How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.</div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
-          <a href="cimi-statement/Morphology.html">Morphology</a>
-        </td>
-        <td class="colLast">
-          <div class="block">The kind of structure being represented. This can define both normal and abnormal morphologies.</div>
         </td>
       </tr>
       
@@ -1259,7 +1225,7 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
         <td class="colLast">
           <div class="block">The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.
 			
-		This attribute does not occur in CIMI V0.0.4 (the closest match being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general. It cannot be included in ConditionPresenceContext because the Value is an EvaluationResultRecorded, which doesn&#39;t exist in core CIMI.</div>
+			This attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.</div>
         </td>
       </tr>
       
@@ -1269,7 +1235,7 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
           <a href="cimi-statement/StageDetail.html">StageDetail</a>
         </td>
         <td class="colLast">
-          <div class="block">The full staging information.</div>
+          <div class="block">The full staging information</div>
         </td>
       </tr>
       

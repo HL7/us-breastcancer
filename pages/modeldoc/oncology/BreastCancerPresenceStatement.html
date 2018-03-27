@@ -76,7 +76,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
                               <li>
     <ul>
           <li class="last">
-    <a href="../cimi/StatementTopic.html">StatementTopic</a>
+    <a href="../cimi/Content.html">Content</a>
   </li>
       </ul>
   </li>
@@ -85,7 +85,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
         <li>
     <ul>
           <li class="last">
-    <a href="../cimi/FindingTopic.html">FindingTopic</a>
+    <a href="../cimi/InformationEntry.html">InformationEntry</a>
   </li>
       </ul>
   </li>
@@ -98,7 +98,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
         <li>
     <ul>
           <li class="last">
-    <a href="../cimi/AssertionTopic.html">AssertionTopic</a>
+    <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a>
   </li>
       </ul>
   </li>
@@ -107,27 +107,6 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
     </ul>
   </li>
                             <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-          <li class="last">
-    <a href="../cimi/ConditionTopic.html">ConditionTopic</a>
-  </li>
-      </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                            <li>
-    <ul>
-        <li>
     <ul>
         <li>
     <ul>
@@ -146,11 +125,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
   </li>
     </ul>
   </li>
-    </ul>
-  </li>
                             <li>
-    <ul>
-        <li>
     <ul>
         <li>
     <ul>
@@ -164,8 +139,6 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
     <a href="../oncology/BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a>
   </li>
       </ul>
-  </li>
-    </ul>
   </li>
     </ul>
   </li>
@@ -200,39 +173,8 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
   </tr>
   
       
-      
+                                                              
   <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong>Value</strong></code>
-    
-    </div>
-    <div class="block"></div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-          <div class="block"><code><strong>Value Set</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
-          
-                      <a href="../shr-core/CodeableConcept.html">CodeableConcept</a>
-                    
-        </div>
-                        <div class="block">1..1</div>
-                        <div class="block">
-          
-                      <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS</a>
-                    (REQUIRED)
-        </div>
-            </td>
-</tr>    
-                                                                                            
-  <tr class="altColor">
 
   <td class="colFirst">
     <div class="block">
@@ -272,9 +214,83 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
       <tr class="rowColor">
     
       <td class="colFirst">
-        <code><strong>FindingMethod.CodeableConcept</strong></code>
+        <code><strong>StatementTopic</strong></code>
         
-          <div class="block">Defined in <a href="../cimi/FindingTopic.html">FindingTopic</a></div>
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>DataType</strong></code>
+        
+          <div class="block">Constrained in <a href="../cimi-statement/ConditionPresenceStatement.html">ConditionPresenceStatement</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">
+            
+                          <a href="../cimi/ConditionTopic.html">ConditionTopic</a>
+                        
+          </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">ConditionPresenceStatement</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.TopicCode.CodeableConcept</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Value Set</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">
+            
+                          <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS</a>
+                        (REQUIRED)
+          </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerPresenceStatement</div>
+      </td> -->
+    </tr>
+      
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Category.CodeableConcept</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Includes Code</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block"> (code: disease)</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerPresenceStatement</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.FindingMethod.CodeableConcept</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
         
       </td>
       <td class="colMiddle">
@@ -295,55 +311,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
       </td> -->
     </tr>
       
-      <tr class="altColor">
-    
-      <td class="colFirst">
-        <code><strong>Category.CodeableConcept</strong></code>
-        
-          <div class="block">Defined in <a href="../cimi/ConditionTopic.html">ConditionTopic</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Value Set</strong></code>
-        
-          <div class="block">Constrained in <a href="../cimi/ConditionTopic.html">ConditionTopic</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">
-            
-                          <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS</a>
-                        (REQUIRED)
-          </div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">ConditionTopic</div>
-      </td> -->
-    </tr>
-      
       <tr class="rowColor">
-    
-      <td class="colFirst">
-        <code><strong>Category.CodeableConcept</strong></code>
-        
-          <div class="block">Defined in <a href="../cimi/ConditionTopic.html">ConditionTopic</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Includes Code</strong></code>
-        
-          <div class="block">Constrained in <a href="../oncology/BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-ConditionCategoryCS (code: disease)</div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">BreastCancerPresenceStatement</div>
-      </td> -->
-    </tr>
-      
-      <tr class="altColor">
     
       <td class="colFirst">
         <code><strong>Stage.StageDetail.EvaluationResultRecorded</strong></code>
@@ -374,41 +342,30 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
                       <h3>Properties inherited from&nbsp;
                         <a href="../cimi-statement/ConditionPresenceStatement.html">ConditionPresenceStatement</a>
                       </h3>
-                                                                        <code><a href="../cimi/ConditionPresenceContext.html">ConditionPresenceContext</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../cimi-statement/Stage.html">Stage</a></code>
+                                                                        <code><a href="../cimi-statement/Stage.html">Stage</a></code>
                         
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../cimi/ConditionTopic.html">ConditionTopic</a>
+                        <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a>
                       </h3>
-                                                                        <code><a href="../shr-core/Category.html">Category</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../cimi/AnatomicalLocationOrCode.html">AnatomicalLocationOrCode</a></code>
+                                                                        <code><a href="../cimi/StatementTopic.html">StatementTopic</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/StatementContext.html">StatementContext</a></code>,&nbsp;&nbsp;&nbsp;
+                                                  <code><a href="../cimi/Encounter.html">Encounter</a></code>
                         
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../cimi/AssertionTopic.html">AssertionTopic</a>
+                        <a href="../cimi/InformationEntry.html">InformationEntry</a>
                       </h3>
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;
-                        <a href="../cimi/FindingTopic.html">FindingTopic</a>
+                        <a href="../cimi/Content.html">Content</a>
                       </h3>
-                                                                        <code><a href="../cimi/FindingMethod.html">FindingMethod</a></code>,&nbsp;&nbsp;&nbsp;
-                                                  <code><a href="../cimi/Interpretation.html">Interpretation</a></code>
-                        
-                                          </li>
-                                      <li class="blockList">
-                      <a name="properties_inherited_from_class_java.lang.Object"></a>
-                      <h3>Properties inherited from&nbsp;
-                        <a href="../cimi/StatementTopic.html">StatementTopic</a>
-                      </h3>
-                                                                        <code><a href="../cimi/TopicCode.html">TopicCode</a></code>
-                        
                                           </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>

@@ -3,7 +3,7 @@
   "id": "oncology-ProsignaRecurrenceScore",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ProsignaRecurrenceScore Profile</b></p>\n  <p>Breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.\n\nThe Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Risk of Recurrence Score in the literature), which is correlated with the probability of distant recurrence at ten years for post-menopausal women with hormone receptorpositive, early stage breast cancer.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.ProsignaRecurrenceScore maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  Category maps to category\n  FindingMethod maps to method\n  Quantity maps to value[x]\n  TopicCode maps to code\n  AnatomicalLocation maps to bodySite\n  BreastSpecimen maps to specimen\n  Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ProsignaRecurrenceScore Profile</b></p>\n  <p>Breast cancer genomic signature assay for 10-year risk of distant recurrence score calculated by Prosigna.\n\nThe Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Risk of Recurrence Score in the literature), which is correlated with the probability of distant recurrence at ten years for post-menopausal women with hormone receptorpositive, early stage breast cancer.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.ProsignaRecurrenceScore maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ProsignaRecurrenceScore",
   "name": "ProsignaRecurrenceScore",
@@ -380,7 +380,7 @@
           }
         ],
         "slicing": {
-          "id": "5",
+          "id": "6",
           "discriminator": [
             {
               "type": "value",
@@ -392,18 +392,18 @@
         }
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.extension:deltaflag",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.extension:encounter",
         "path": "Observation.extension",
-        "definition": "Indicator of significant change (delta) from the last or previous measurement.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
           }
         ],
-        "sliceName": "deltaflag"
+        "sliceName": "encounter"
       },
       {
         "id": "Observation:oncology-ProsignaRecurrenceScore.extension:diagnosticservice",
@@ -620,7 +620,7 @@
           }
         ],
         "slicing": {
-          "id": "4",
+          "id": "5",
           "discriminator": [
             {
               "type": "value",
@@ -1129,7 +1129,7 @@
               "valueString": "ObservationCategory"
             }
           ],
-          "strength": "preferred",
+          "strength": "extensible",
           "description": "Codes for high level observation categories.",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/ValueSet/observation-category"
@@ -2206,15 +2206,126 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity",
-        "path": "Observation.valueQuantity",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.value[x]",
+        "path": "Observation.value[x]",
         "short": "Result Value",
         "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
-        "min": 1,
+        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
+        "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Observation.value[x]",
-          "min": 1,
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "condition": [
+          "obs-7"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "valueBoolean": true
+              }
+            ],
+            "key": "us-core-4",
+            "severity": "warning",
+            "human": "SHOULD use Snomed CT for coded Results",
+            "expression": "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
+            "xpath": "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
+          },
+          {
+            "key": "us-core-3",
+            "severity": "error",
+            "human": "SHALL use UCUM for coded quantity units.",
+            "expression": "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
+            "xpath": "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
+          }
+        ],
+        "mustSupport": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Event.notDone, Event.notDoneReason  (maps to valeu[x] or dataAbsentReason)"
+          },
+          {
+            "identity": "sct-concept",
+            "map": "< 441742003 |Evaluation finding|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX.2, OBX.5, OBX.6"
+          },
+          {
+            "identity": "rim",
+            "map": "value"
+          },
+          {
+            "identity": "sct-attr",
+            "map": "363714003 |Interprets|"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Observation.value[x]"
+          }
+        ],
+        "slicing": {
+          "id": "4",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity",
+        "path": "Observation.valueQuantity",
+        "sliceName": "Quantity",
+        "short": "Result Value",
+        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.value[x]",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -2225,7 +2336,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.id",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.id",
         "path": "Observation.valueQuantity.id",
         "representation": [
           "xmlAttr"
@@ -2252,7 +2363,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.extension",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.extension",
         "path": "Observation.valueQuantity.extension",
         "slicing": {
           "discriminator": [
@@ -2291,7 +2402,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.value",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.value",
         "path": "Observation.valueQuantity.value",
         "short": "Numerical value (with implicit precision)",
         "definition": "The value of the measured amount. The value includes an implicit precision in the presentation of the value.",
@@ -2317,7 +2428,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.comparator",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.comparator",
         "path": "Observation.valueQuantity.comparator",
         "short": "< | <= | >= | > - how to understand the value",
         "definition": "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value.",
@@ -2358,7 +2469,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.unit",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.unit",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -2389,7 +2500,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.system",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.system",
         "path": "Observation.valueQuantity.system",
         "short": "System that defines coded unit form",
         "definition": "The identification of the system that provides the coded form of the unit.",
@@ -2418,7 +2529,7 @@
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.code",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.code",
         "path": "Observation.valueQuantity.code",
         "short": "Coded form of the unit",
         "definition": "A computer processable form of the unit in some unit representation system.",
@@ -3515,7 +3626,258 @@
             "identity": "sct-attr",
             "map": "363714003 |Interprets|"
           }
+        ],
+        "slicing": {
+          "id": "3",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity",
+        "path": "Observation.component.valueQuantity",
+        "sliceName": "Quantity",
+        "short": "Actual component result",
+        "definition": "The information determined as a result of making the observation, if the information has a simple value.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.component.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.id",
+        "path": "Observation.component.valueQuantity.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
         ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.extension",
+        "path": "Observation.component.valueQuantity.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.value",
+        "path": "Observation.component.valueQuantity.value",
+        "short": "Numerical value (with implicit precision)",
+        "definition": "The value of the measured amount. The value includes an implicit precision in the presentation of the value.",
+        "comment": "The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).",
+        "requirements": "Precision is handled implicitly in almost all cases of measurement.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SN.2  / CQ - N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.comparator",
+        "path": "Observation.component.valueQuantity.comparator",
+        "short": "< | <= | >= | > - how to understand the value",
+        "definition": "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value.",
+        "comment": "This is labeled as \"Is Modifier\" because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value.",
+        "requirements": "Need a framework for handling measures where the value is <5ug/L or >400mg/L due to the limitations of measuring methodology.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "meaningWhenMissing": "If there is no comparator, then there is no modification of the value",
+        "isModifier": true,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "QuantityComparator"
+            }
+          ],
+          "strength": "required",
+          "description": "How the Quantity should be understood and represented.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/quantity-comparator"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SN.1  / CQ.1"
+          },
+          {
+            "identity": "rim",
+            "map": "IVL properties"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.unit",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Observation.component.valueQuantity.unit",
+        "short": "Unit representation",
+        "definition": "A human-readable form of the unit.",
+        "requirements": "There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "(see OBX.6 etc.) / CQ.2"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ.unit"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "short": "System that defines coded unit form",
+        "definition": "The identification of the system that provides the coded form of the unit.",
+        "requirements": "Need to know the system that defines the coded form of the unit.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "condition": [
+          "qty-3"
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "(see OBX.6 etc.) / CQ.2"
+          },
+          {
+            "identity": "rim",
+            "map": "CO.codeSystem, PQ.translation.codeSystem"
+          }
+        ],
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "short": "Coded form of the unit",
+        "definition": "A computer processable form of the unit in some unit representation system.",
+        "comment": "The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.",
+        "requirements": "Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "(see OBX.6 etc.) / CQ.2"
+          },
+          {
+            "identity": "rim",
+            "map": "PQ.code, MO.currency, PQ.translation.code"
+          }
+        ],
+        "fixedCode": "1"
       },
       {
         "id": "Observation:oncology-ProsignaRecurrenceScore.component.dataAbsentReason",
@@ -3579,16 +3941,9 @@
           }
         ],
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationInterpretation"
-            }
-          ],
-          "strength": "extensible",
-          "description": "Codes identifying interpretations of observations.",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-RecurrenceRiskScoreInterpretationVS"
           }
         },
         "mapping": [
@@ -3921,18 +4276,18 @@
         "mustSupport": false
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.extension:deltaflag",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.extension:encounter",
         "path": "Observation.extension",
-        "definition": "Indicator of significant change (delta) from the last or previous measurement.",
+        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-DeltaFlag-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
           }
         ],
-        "sliceName": "deltaflag"
+        "sliceName": "encounter"
       },
       {
         "id": "Observation:oncology-ProsignaRecurrenceScore.extension:diagnosticservice",
@@ -3956,7 +4311,7 @@
         "id": "Observation:oncology-ProsignaRecurrenceScore.extension:diagnosticservice.valueCodeableConcept.coding",
         "path": "Observation.extension.valueCodeableConcept.coding",
         "slicing": {
-          "id": "4",
+          "id": "5",
           "discriminator": [
             {
               "type": "value",
@@ -3993,7 +4348,20 @@
       },
       {
         "id": "Observation:oncology-ProsignaRecurrenceScore.category",
-        "path": "Observation.category"
+        "path": "Observation.category",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCategory"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes for high level observation categories.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-category"
+          }
+        }
       },
       {
         "id": "Observation:oncology-ProsignaRecurrenceScore.category.coding",
@@ -4078,7 +4446,53 @@
         "fixedCode": "76544-6"
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "id": "4",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Range",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+          },
+          {
+            "code": "Ratio",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity",
         "path": "Observation.valueQuantity",
         "type": [
           {
@@ -4087,12 +4501,12 @@
         ]
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.system",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.system",
         "path": "Observation.valueQuantity.system",
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity.code",
+        "id": "Observation:oncology-ProsignaRecurrenceScore.valueQuantity:Quantity.code",
         "path": "Observation.valueQuantity.code",
         "fixedCode": "1"
       },
@@ -4231,6 +4645,17 @@
       {
         "id": "Observation:oncology-ProsignaRecurrenceScore.component.value[x]",
         "path": "Observation.component.value[x]",
+        "slicing": {
+          "id": "3",
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -4261,12 +4686,41 @@
         ]
       },
       {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity",
+        "path": "Observation.component.valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.valueQuantity:Quantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "fixedCode": "1"
+      },
+      {
         "id": "Observation:oncology-ProsignaRecurrenceScore.component.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
           "valueSetReference": {
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
+          }
+        }
+      },
+      {
+        "id": "Observation:oncology-ProsignaRecurrenceScore.component.interpretation",
+        "path": "Observation.component.interpretation",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-RecurrenceRiskScoreInterpretationVS"
           }
         }
       }

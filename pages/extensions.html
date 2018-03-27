@@ -45,10 +45,6 @@
       <td>The body site where specimen was collected</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-DeltaFlag-extension.html">DeltaFlag</a></td>
-      <td>Indicator of significant change (delta) from the last or previous measurement.</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-statement-DiagnosticService-extension.html">DiagnosticService</a></td>
       <td>A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.</td>
     </tr>
@@ -57,38 +53,16 @@
       <td>The body site location in relation to the nipple.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-FindingMethod-extension.html">FindingMethod</a></td>
-      <td>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.
-		
-		CIMI Alignment: In CIMI Version 0.0.4, this attribute was called &#039;method&#039;. The value set binding reflects CIMI&#039;s preference for LOINC codes.</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-cimi-Interpretation-extension.html">Interpretation</a></td>
-      <td>A clinical interpretation of a finding.
-		
-		CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</td>
+      <td><a href="StructureDefinition-cimi-Encounter-extension.html">Encounter</a></td>
+      <td>An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-MorphologyBehavior-extension.html">MorphologyBehavior</a></td>
       <td>A description of the morphology and behavioral characteristics of the cancer.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-Precondition-extension.html">Precondition</a></td>
-      <td>A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. 
-		
-		Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-oncology-StageTimingPrefix-extension.html">StageTimingPrefix</a></td>
       <td>Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by &#039;yc&#039; (e.g. ycNX)</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-cimi-TopicCode-extension.html">TopicCode</a></td>
-      <td>The concept representing the finding or action that is the topic of the statement. 
-		
-		For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the &#039;question&#039; or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.
-		
-		CIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called &#039;key&#039; in CIMI V0.0.4.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-primitive-base64Binary-extension.html">base64Binary</a></td>

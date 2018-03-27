@@ -191,13 +191,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-DeltaFlag-extension" />
-                <display value="BC DeltaFlag Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-DiagnosticService-extension" />
                 <display value="BC DiagnosticService Extension" />
             </sourceReference>
@@ -212,15 +205,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-FindingMethod-extension" />
-                <display value="BC FindingMethod Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-Interpretation-extension" />
-                <display value="BC Interpretation Extension" />
+                <reference value="StructureDefinition/cimi-Encounter-extension" />
+                <display value="BC Encounter Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -233,22 +219,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-Precondition-extension" />
-                <display value="BC Precondition Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/oncology-StageTimingPrefix-extension" />
                 <display value="BC StageTimingPrefix Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-TopicCode-extension" />
-                <display value="BC TopicCode Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -898,20 +870,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-statement-BodyStructurePresent-model" />
-                  <display value="BodyStructurePresent" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-statement-BodyStructureTopic-model" />
-                  <display value="BodyStructureTopic" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerDistantMetastasesClassification-model" />
                   <display value="BreastCancerDistantMetastasesClassification" />
               </sourceReference>
@@ -1334,13 +1292,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/oncology-MitoticCountScore-model" />
                   <display value="MitoticCountScore" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-statement-Morphology-model" />
-                  <display value="Morphology" />
               </sourceReference>
           </resource>
           <resource>

@@ -125,10 +125,6 @@
       "base": "StructureDefinition-cimi-CollectionSite-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-DeltaFlag-extension": {
-      "base": "StructureDefinition-cimi-DeltaFlag-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-statement-DiagnosticService-extension": {
       "base": "StructureDefinition-cimi-statement-DiagnosticService-extension.html",
       "template-base": "sd-extension.html"
@@ -137,28 +133,16 @@
       "base": "StructureDefinition-oncology-DistanceToNipple-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-FindingMethod-extension": {
-      "base": "StructureDefinition-cimi-FindingMethod-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-Interpretation-extension": {
-      "base": "StructureDefinition-cimi-Interpretation-extension.html",
+    "StructureDefinition/cimi-Encounter-extension": {
+      "base": "StructureDefinition-cimi-Encounter-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/oncology-MorphologyBehavior-extension": {
       "base": "StructureDefinition-oncology-MorphologyBehavior-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-Precondition-extension": {
-      "base": "StructureDefinition-cimi-Precondition-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/oncology-StageTimingPrefix-extension": {
       "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-TopicCode-extension": {
-      "base": "StructureDefinition-cimi-TopicCode-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/primitive-base64Binary-extension": {
@@ -501,20 +485,6 @@
     },
     "StructureDefinition/oncology-AverageStainingIntensity-model": {
       "base": "StructureDefinition-oncology-AverageStainingIntensity-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-statement-BodyStructurePresent-model": {
-      "base": "StructureDefinition-cimi-statement-BodyStructurePresent-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-statement-BodyStructureTopic-model": {
-      "base": "StructureDefinition-cimi-statement-BodyStructureTopic-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -942,13 +912,6 @@
     },
     "StructureDefinition/oncology-MitoticCountScore-model": {
       "base": "StructureDefinition-oncology-MitoticCountScore-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-statement-Morphology-model": {
-      "base": "StructureDefinition-cimi-statement-Morphology-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
