@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2byIHC",
   "name": "HER2byIHC",
   "status": "draft",
-  "date": "2018-03-26",
+  "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -843,8 +843,8 @@
         "path": "Observation.code.coding",
         "sliceName": "Fixed_72383-3",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2543,8 +2543,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_16112-5",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -3520,8 +3520,8 @@
         "path": "Observation.code.coding",
         "sliceName": "Fixed_72383-3",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -3722,8 +3722,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_16112-5",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"

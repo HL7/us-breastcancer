@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HistologicGrade",
   "name": "HistologicGrade",
   "status": "draft",
-  "date": "2018-03-26",
+  "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -636,8 +636,8 @@
         "path": "Observation.extension.valueCodeableConcept.coding",
         "sliceName": "Fixed_pathology",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -1262,8 +1262,8 @@
         "path": "Observation.category.coding",
         "sliceName": "Fixed_laboratory",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -1704,8 +1704,8 @@
         "path": "Observation.code.coding",
         "sliceName": "Fixed_44648-4",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2429,7 +2429,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/ValueSet/observation-codes"
           }
         },
         "mapping": [
@@ -3411,8 +3411,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371470008",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -4385,8 +4385,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371471007",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -5359,8 +5359,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371472000",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6105,8 +6105,8 @@
         "path": "Observation.extension.valueCodeableConcept.coding",
         "sliceName": "Fixed_pathology",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6148,8 +6148,8 @@
         "path": "Observation.category.coding",
         "sliceName": "Fixed_laboratory",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6191,8 +6191,8 @@
         "path": "Observation.code.coding",
         "sliceName": "Fixed_44648-4",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6253,7 +6253,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/ValueSet/observation-codes"
           }
         }
       },
@@ -6389,8 +6389,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371470008",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6472,8 +6472,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371471007",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6555,8 +6555,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_371472000",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"

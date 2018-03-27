@@ -3,12 +3,12 @@
   "id": "oncology-BreastSpecimen",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSpecimen Profile</b></p>\n  <p>Specimen resulting from biopsy or excision of breast and surrounding tissue.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSpecimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSpecimen Profile</b></p>\n  <p>Specimen resulting from biopsy or excision of breast and surrounding tissue.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSpecimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ColdIschemiaTime maps to processing (slice on = coding.code)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSpecimen",
   "name": "BreastSpecimen",
   "status": "draft",
-  "date": "2018-03-26",
+  "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -297,7 +297,7 @@
           }
         ],
         "slicing": {
-          "id": "1",
+          "id": "2",
           "discriminator": [
             {
               "type": "value",
@@ -421,20 +421,6 @@
             "map": "N/A"
           }
         ]
-      },
-      {
-        "id": "Specimen:oncology-BreastSpecimen.extension:coldischemiatime",
-        "path": "Specimen.extension",
-        "definition": "The time between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\tNOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemiaTime-extension"
-          }
-        ],
-        "sliceName": "coldischemiatime"
       },
       {
         "id": "Specimen:oncology-BreastSpecimen.modifierExtension",
@@ -1014,10 +1000,51 @@
             "identity": "rim",
             "map": ".participation[typeCode=SBJ].act[code=SPCTRT, moodCode=EVN]"
           }
-        ]
+        ],
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.id",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime",
+        "path": "Specimen.processing",
+        "short": "ColdIschemiaTime",
+        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. That clinical statement would have to be mapped to FHIR as a Procedure, but that would be incorrect, since speciment processing should map to Specimen.processing, an array inside the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by first finding the corresponding Specimen entity, and then mapping the several CIMI instances (the Specimen and the possibly multiple SpecimenProcessingPerformed clinical statements), into one FHIR Specimen resource. To avoid this complexity, for the sake of this IG, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".participation[typeCode=SBJ].act[code=SPCTRT, moodCode=EVN]"
+          }
+        ],
+        "sliceName": "oncology-ColdIschemiaTime"
+      },
+      {
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.id",
         "path": "Specimen.processing.id",
         "representation": [
           "xmlAttr"
@@ -1044,7 +1071,7 @@
         ]
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.extension",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.extension",
         "path": "Specimen.processing.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1073,7 +1100,7 @@
         ]
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.modifierExtension",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.modifierExtension",
         "path": "Specimen.processing.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1105,7 +1132,7 @@
         ]
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.description",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.description",
         "path": "Specimen.processing.description",
         "short": "Textual description of procedure",
         "definition": "Textual description of procedure.",
@@ -1124,7 +1151,7 @@
         ]
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.procedure",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.procedure",
         "path": "Specimen.processing.procedure",
         "short": "Indicates the treatment step  applied to the specimen",
         "definition": "A coded value specifying the procedure used to process the specimen.",
@@ -1156,7 +1183,7 @@
         ]
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.additive",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.additive",
         "path": "Specimen.processing.additive",
         "short": "Material used in the processing step",
         "definition": "Material used in the processing step.",
@@ -1180,7 +1207,7 @@
         ]
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.processing.time[x]",
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime.time[x]",
         "path": "Specimen.processing.time[x]",
         "short": "Date and time of specimen processing",
         "definition": "A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin.",
@@ -1533,20 +1560,6 @@
         "sliceName": "collectionsite"
       },
       {
-        "id": "Specimen:oncology-BreastSpecimen.extension:coldischemiatime",
-        "path": "Specimen.extension",
-        "definition": "The time between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\tNOTE: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. The CIMI clinical statement would be mapped to FHIR as a Procedure. In this case, the procedure involves chilling the specimen (the key or code) and the duration of that procedure (corresponding to PerformanceContext.duration) would be interpreted as the cold ischemic time. The drawback of this would be that the information on cold ischemic time (necessary for interpreting results) would not travel with the specimen. To provide a cutpoint between this IG and the rest of CIMI, and to avoid unnecessary complexity, an extension was introduced.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ColdIschemiaTime-extension"
-          }
-        ],
-        "sliceName": "coldischemiatime"
-      },
-      {
         "id": "Specimen:oncology-BreastSpecimen.type",
         "path": "Specimen.type",
         "min": 1,
@@ -1583,6 +1596,30 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastSpecimenCollectionMethodVS"
           }
         }
+      },
+      {
+        "id": "Specimen:oncology-BreastSpecimen.processing",
+        "path": "Specimen.processing",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime",
+        "path": "Specimen.processing",
+        "sliceName": "oncology-ColdIschemiaTime",
+        "short": "ColdIschemiaTime",
+        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. That clinical statement would have to be mapped to FHIR as a Procedure, but that would be incorrect, since speciment processing should map to Specimen.processing, an array inside the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by first finding the corresponding Specimen entity, and then mapping the several CIMI instances (the Specimen and the possibly multiple SpecimenProcessingPerformed clinical statements), into one FHIR Specimen resource. To avoid this complexity, for the sake of this IG, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
+        "min": 0,
+        "max": "1"
       }
     ]
   },

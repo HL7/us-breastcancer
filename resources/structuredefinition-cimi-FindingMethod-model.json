@@ -15,7 +15,7 @@
   "name": "FindingMethod",
   "title": "BC FindingMethod Logical Model",
   "status": "draft",
-  "date": "2018-03-26",
+  "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -76,7 +76,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/ValueSet/observation-codes"
           }
         }
       }
@@ -125,7 +125,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/ValueSet/observation-codes"
           }
         }
       }

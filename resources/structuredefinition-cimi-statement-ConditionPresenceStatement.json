@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ConditionPresenceStatement",
   "name": "ConditionPresenceStatement",
   "status": "draft",
-  "date": "2018-03-26",
+  "date": "2018-03-27",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
   "contact": [
     {
@@ -619,8 +619,8 @@
         "path": "Condition.extension.valueCodeableConcept.coding",
         "sliceName": "Fixed_C0348080",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2048,8 +2048,8 @@
         "path": "Condition.extension.valueCodeableConcept.coding",
         "sliceName": "Fixed_C0348080",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
