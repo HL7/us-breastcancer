@@ -3,7 +3,7 @@
   "id": "cimi-Certainty-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Certainty Logical Model</b></p>\n  <p>The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Certainty Logical Model</b></p>\n  <p>The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Certainty-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.Certainty"
     }
   ],
-  "name": "Certainty",
+  "name": "CertaintyModel",
   "title": "BC Certainty Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+  "description": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-Certainty-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-Certainty-model",
         "path": "cimi-Certainty-model",
-        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "min": 0,
         "max": "*",
         "base": {
@@ -54,7 +54,7 @@
         "id": "cimi-Certainty-model.value",
         "path": "cimi-Certainty-model.value",
         "short": "Code representing the degree of confidence in a conclusion or assertion.",
-        "definition": "Code representing the degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "Code representing the degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -81,7 +81,7 @@
       {
         "id": "cimi-Certainty-model",
         "path": "cimi-Certainty-model",
-        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "min": 0,
         "max": "*",
         "base": {
@@ -97,7 +97,7 @@
         "id": "cimi-Certainty-model.value",
         "path": "cimi-Certainty-model.value",
         "short": "Code representing the degree of confidence in a conclusion or assertion.",
-        "definition": "Code representing the degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "Code representing the degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "alias": [
           "codeableConcept"
         ],

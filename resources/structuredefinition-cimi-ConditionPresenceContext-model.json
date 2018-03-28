@@ -3,7 +3,7 @@
   "id": "cimi-ConditionPresenceContext-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionPresenceContext Logical Model</b></p>\n  <p>The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word &#039;StatementContext&#039; and remove the word &#039;Assertion&#039;. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionPresenceContext Logical Model</b></p>\n  <p>The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word &#039;StatementContext&#039; and remove the word &#039;Assertion&#039;. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionPresenceContext-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.ConditionPresenceContext"
     }
   ],
-  "name": "ConditionPresenceContext",
+  "name": "ConditionPresenceContextModel",
   "title": "BC ConditionPresenceContext Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+  "description": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-ConditionPresenceContext-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-ConditionPresenceContext-model",
         "path": "cimi-ConditionPresenceContext-model",
-        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
         "min": 0,
         "max": "*",
         "base": {
@@ -162,7 +162,7 @@
           }
         ],
         "short": "The beginning or first appearance of a mental or physical disorder.",
-        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -188,8 +188,8 @@
             "code": "C1880019"
           }
         ],
-        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
-        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
+        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
+        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -210,7 +210,7 @@
         "id": "cimi-ConditionPresenceContext-model.certainty",
         "path": "cimi-ConditionPresenceContext-model.certainty",
         "short": "The degree of confidence in a conclusion or assertion.",
-        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "min": 0,
         "max": "1",
         "base": {
@@ -421,7 +421,7 @@
       {
         "id": "cimi-ConditionPresenceContext-model",
         "path": "cimi-ConditionPresenceContext-model",
-        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
         "min": 0,
         "max": "*",
         "base": {
@@ -545,7 +545,7 @@
           }
         ],
         "short": "The beginning or first appearance of a mental or physical disorder.",
-        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -571,8 +571,8 @@
             "code": "C1880019"
           }
         ],
-        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
-        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
+        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
+        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -593,7 +593,7 @@
         "id": "cimi-ConditionPresenceContext-model.certainty",
         "path": "cimi-ConditionPresenceContext-model.certainty",
         "short": "The degree of confidence in a conclusion or assertion.",
-        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "min": 0,
         "max": "1",
         "base": {

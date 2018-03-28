@@ -3,7 +3,7 @@
   "id": "cimi-Onset-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Onset Logical Model</b></p>\n  <p>The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Onset Logical Model</b></p>\n  <p>The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Onset-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.Onset"
     }
   ],
-  "name": "Onset",
+  "name": "OnsetModel",
   "title": "BC Onset Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+  "description": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-Onset-model",
         "path": "cimi-Onset-model",
-        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,7 +60,7 @@
         "id": "cimi-Onset-model.value[x]",
         "path": "cimi-Onset-model.value[x]",
         "short": "Choice of types representing the beginning or first appearance of a mental or physical disorder.",
-        "definition": "Choice of types representing the beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "Choice of types representing the beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "alias": [
           "dateTime",
           "age",
@@ -103,7 +103,7 @@
       {
         "id": "cimi-Onset-model",
         "path": "cimi-Onset-model",
-        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "*",
         "base": {
@@ -119,7 +119,7 @@
         "id": "cimi-Onset-model.value[x]",
         "path": "cimi-Onset-model.value[x]",
         "short": "Choice of types representing the beginning or first appearance of a mental or physical disorder.",
-        "definition": "Choice of types representing the beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "Choice of types representing the beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "alias": [
           "dateTime",
           "age",

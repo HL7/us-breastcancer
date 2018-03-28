@@ -12,11 +12,11 @@
       "value": "cimi.FindingTopic"
     }
   ],
-  "name": "FindingTopic",
+  "name": "FindingTopicModel",
   "title": "BC FindingTopic Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -74,8 +74,8 @@
       {
         "id": "cimi-FindingTopic-model.findingMethod",
         "path": "cimi-FindingTopic-model.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -102,7 +102,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -162,8 +162,8 @@
       {
         "id": "cimi-FindingTopic-model.findingMethod",
         "path": "cimi-FindingTopic-model.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -190,7 +190,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {

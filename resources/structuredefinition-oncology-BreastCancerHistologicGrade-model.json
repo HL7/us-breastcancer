@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerHistologicGrade-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerHistologicGrade Logical Model</b></p>\n  <p>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerHistologicGrade Logical Model</b></p>\n  <p>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerHistologicGrade-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "oncology.BreastCancerHistologicGrade"
     }
   ],
-  "name": "BreastCancerHistologicGrade",
+  "name": "BreastCancerHistologicGradeModel",
   "title": "BC BreastCancerHistologicGrade Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+  "description": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "oncology-BreastCancerHistologicGrade-model",
         "path": "oncology-BreastCancerHistologicGrade-model",
-        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "min": 0,
         "max": "*",
         "base": {
@@ -65,8 +65,8 @@
             "code": "C1554188"
           }
         ],
-        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
-        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "short": "The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI  V0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI V0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI V0.0.4, allowable datatypes for result (aka Value) include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it is only relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device and evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
           "statementTopic"
         ],
@@ -87,60 +87,34 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.value[x]",
-        "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.value[x]",
-        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
-        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.valueCodeableConcept",
+        "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.valueCodeableConcept",
+        "short": "A set of codes drawn from different coding systems, representing the same concept.",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
         "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
-          "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
+          "codeableConcept"
         ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.value[x]",
+          "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.valueCodeableConcept",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          },
-          {
             "code": "Coding"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NottinghamCombinedGradeVS"
+          }
+        }
       },
       {
         "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.topicCode",
@@ -436,8 +410,8 @@
       {
         "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.findingMethod",
         "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -464,7 +438,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -781,8 +755,8 @@
             "code": "C1545955"
           }
         ],
-        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "0",
         "base": {
@@ -850,8 +824,8 @@
       {
         "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.precondition",
         "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
-        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "short": "A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise.",
+        "definition": "A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
@@ -920,8 +894,8 @@
             "code": "371470008"
           }
         ],
-        "short": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
-        "definition": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
+        "short": "A comparison between structures formed by the tumor cells and those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
+        "definition": "A comparison between structures formed by the tumor cells and those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
         "min": 0,
         "max": "1",
         "base": {
@@ -996,7 +970,7 @@
         "id": "oncology-BreastCancerHistologicGrade-model.recordedContext",
         "path": "oncology-BreastCancerHistologicGrade-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
         "alias": [
           "statementContext"
         ],
@@ -1041,7 +1015,7 @@
         "id": "oncology-BreastCancerHistologicGrade-model.members",
         "path": "oncology-BreastCancerHistologicGrade-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
         "min": 1,
         "max": "1",
         "base": {
@@ -1062,7 +1036,7 @@
         "id": "oncology-BreastCancerHistologicGrade-model.members.value",
         "path": "oncology-BreastCancerHistologicGrade-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
         "alias": [
           "evaluationResultRecorded"
         ],
@@ -1381,7 +1355,7 @@
       {
         "id": "oncology-BreastCancerHistologicGrade-model",
         "path": "oncology-BreastCancerHistologicGrade-model",
-        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "min": 0,
         "max": "*",
         "base": {
@@ -1402,8 +1376,8 @@
             "code": "C1554188"
           }
         ],
-        "short": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
-        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "short": "The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
+        "definition": "The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI  V0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI V0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI V0.0.4, allowable datatypes for result (aka Value) include EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it is only relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device and evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
         "alias": [
           "statementTopic"
         ],
@@ -1424,60 +1398,34 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.value[x]",
-        "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.value[x]",
-        "short": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer).",
-        "definition": "Choice of types representing the base class, independent of context for evaluations (measurements, tests, or questions) and a value containing the result (answer). \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment:\n1) In CIMI Version 0.0.4, LaboratoryTestResult.specimen is 0..* but that cardinality makes it impossible to map to FHIR Observation, where specimen is 0..1. The cardinality of Specimen has been changed to 0..1 to enable FHIR mapping.\n2) In CIMI Version 0.0.4, Findings (including EvaluationResult and LaboratoryTestResult) do not have related ('has-member') observations, nor components (sub-observations). These features of FHIR Observations were found to be very useful in modeling breast cancer pathology, and are included here. This represents a significant departure from the CIMI model. CompoundClinicalStatement has not been used to represent panel-like findings, because of the complexity of mapping this class to FHIR.\n3) In CIMI Version 0.0.4, allowable datatype for result (aka Value) includes EmbeddedContent,  GpsLocation,  Multimedia,  ParsableContent, and other types not allowed in a FHIR Observation. To make mapping feasible, the types of Value were restricted to only the allowable FHIR datatypes.\n4) ExceptionValue has been moved to the RecordedContext, because it only is relevant when a value is supposed to be recorded, but is not.\n5) The cardinality of FindingMethod has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.method is 0..1.\n6) The class PhysicalEvaluationResult has been united with this class, and the body location (AnatomicalLocation) has been added to this class. This is because bodySite is part of Observation, and it cannot be profiled out of EvaluationResult and then re-included in PhysicalEvaluationResult.\n7) The cardinality of AnatomicalLocation has been changed from 0..* to 0..1 to make it possible to map to FHIR, where Observation.bodySite is 0..1.\n8) The attribute evaluationDate has been moved to RecordedContext, because it only applies to evaluations that have been done.\n9) The attributes device, evaluationProcedure have been removed for brevity, since they are not used in the current IG.",
+        "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.valueCodeableConcept",
+        "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.valueCodeableConcept",
+        "short": "A set of codes drawn from different coding systems, representing the same concept.",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
         "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
-          "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
+          "codeableConcept"
         ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.value[x]",
+          "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.valueCodeableConcept",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
-          },
-          {
             "code": "Coding"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-NottinghamCombinedGradeVS"
+          }
+        }
       },
       {
         "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.topicCode",
@@ -1773,8 +1721,8 @@
       {
         "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.findingMethod",
         "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1801,7 +1749,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -2118,8 +2066,8 @@
             "code": "C1545955"
           }
         ],
-        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "0",
         "base": {
@@ -2187,8 +2135,8 @@
       {
         "id": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.precondition",
         "path": "oncology-BreastCancerHistologicGrade-model.evaluationResultTopic.precondition",
-        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise.",
-        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "short": "A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise.",
+        "definition": "A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise. \n\t\t\n\t\tBody position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
@@ -2257,8 +2205,8 @@
             "code": "371470008"
           }
         ],
-        "short": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
-        "definition": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
+        "short": "A comparison between structures formed by the tumor cells and those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
+        "definition": "A comparison between structures formed by the tumor cells and those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
         "min": 0,
         "max": "1",
         "base": {
@@ -2333,7 +2281,7 @@
         "id": "oncology-BreastCancerHistologicGrade-model.recordedContext",
         "path": "oncology-BreastCancerHistologicGrade-model.recordedContext",
         "short": "Context for an evaluation result, used to indicate an evaluation has been made.",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to a clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI Version 0.0.4, but CIMI has recently added it.",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
         "alias": [
           "statementContext"
         ],
@@ -2378,7 +2326,7 @@
         "id": "oncology-BreastCancerHistologicGrade-model.members",
         "path": "oncology-BreastCancerHistologicGrade-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
-        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
+        "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
         "min": 1,
         "max": "1",
         "base": {
@@ -2399,7 +2347,7 @@
         "id": "oncology-BreastCancerHistologicGrade-model.members.value",
         "path": "oncology-BreastCancerHistologicGrade-model.members.value",
         "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.\n\t\t\n\t\tCIMI V0.0.4 does not have this attribute. Although the proper place to define this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is not part of core CIMI.",
+        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
         "alias": [
           "evaluationResultRecorded"
         ],

@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Specimen Profile</b></p>\n  <p>A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.Specimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Specimen",
-  "name": "Specimen",
+  "name": "SpecimenProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -49,7 +49,7 @@
       {
         "id": "Specimen:cimi-Specimen",
         "path": "Specimen",
-        "short": "Specimen",
+        "short": "BC Specimen Profile",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.",
         "min": 0,
         "max": "*",
@@ -1415,7 +1415,7 @@
       {
         "id": "Specimen:cimi-Specimen",
         "path": "Specimen",
-        "short": "Specimen",
+        "short": "BC Specimen Profile",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. \n\nCIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR."
       },
       {

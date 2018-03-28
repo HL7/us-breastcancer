@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="1" />
     <url value="http://hl7.org/fhir/us/breastcancer/ImplementationGuide/1" />
-    <name value="Breast Cancer Interoperability FHIR Profiles" />
+    <name value="HL7 FHIR® Implementation Guide: Breast Cancer Data, Release 1 - US Realm FHIR Profiles" />
     <status value="draft" />
     <fhirVersion value="3.0.1"/>
     <package>
@@ -408,13 +408,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/cimi-ConditionVS" />
-                <display value="BC ConditionVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/cimi-DeltaFlagVS" />
                 <display value="BC DeltaFlagVS ValueSet" />
             </sourceReference>
@@ -597,13 +590,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-core-YesNoVS" />
-                <display value="BC YesNoVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/cimi-AnatomicalDirectionCS" />
                 <display value="BC AnatomicalDirectionCS CodeSystem" />
             </sourceReference>
@@ -765,13 +751,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-core-YesNoCS" />
-                <display value="BC YesNoCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/shr-core-YesNoUnknownCS" />
                 <display value="BC YesNoUnknownCS CodeSystem" />
             </sourceReference>
@@ -780,812 +759,812 @@
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Abatement-model" />
-                  <display value="Abatement" />
+                  <display value="AbatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Age-model" />
-                  <display value="Age" />
+                  <display value="AgeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-AgeRange-model" />
-                  <display value="AgeRange" />
+                  <display value="AgeRangeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-AnatomicalDirection-model" />
-                  <display value="AnatomicalDirection" />
+                  <display value="AnatomicalDirectionModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-AnatomicalLocation-model" />
-                  <display value="AnatomicalLocation" />
+                  <display value="AnatomicalLocationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-AnatomicalLocationOrCode-model" />
-                  <display value="AnatomicalLocationOrCode" />
+                  <display value="AnatomicalLocationOrCodeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ApplicableAgeRange-model" />
-                  <display value="ApplicableAgeRange" />
+                  <display value="ApplicableAgeRangeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ApplicableSubpopulation-model" />
-                  <display value="ApplicableSubpopulation" />
+                  <display value="ApplicableSubpopulationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-AssertionContext-model" />
-                  <display value="AssertionContext" />
+                  <display value="AssertionContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-AssertionTopic-model" />
-                  <display value="AssertionTopic" />
+                  <display value="AssertionTopicModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-AverageCEP17SignalsPerCell-model" />
-                  <display value="AverageCEP17SignalsPerCell" />
+                  <display value="AverageCEP17SignalsPerCellModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-AverageHER2SignalsPerCell-model" />
-                  <display value="AverageHER2SignalsPerCell" />
+                  <display value="AverageHER2SignalsPerCellModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-AverageStainingIntensity-model" />
-                  <display value="AverageStainingIntensity" />
+                  <display value="AverageStainingIntensityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerDistantMetastasesClassification-model" />
-                  <display value="BreastCancerDistantMetastasesClassification" />
+                  <display value="BreastCancerDistantMetastasesClassificationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerHistologicGrade-model" />
-                  <display value="BreastCancerHistologicGrade" />
+                  <display value="BreastCancerHistologicGradeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerPresenceStatement-model" />
-                  <display value="BreastCancerPresenceStatement" />
+                  <display value="BreastCancerPresenceStatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerPrimaryTumorClassification-model" />
-                  <display value="BreastCancerPrimaryTumorClassification" />
+                  <display value="BreastCancerPrimaryTumorClassificationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerRegionalNodesClassification-model" />
-                  <display value="BreastCancerRegionalNodesClassification" />
+                  <display value="BreastCancerRegionalNodesClassificationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastCancerStage-model" />
-                  <display value="BreastCancerStage" />
+                  <display value="BreastCancerStageModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastSite-model" />
-                  <display value="BreastSite" />
+                  <display value="BreastSiteModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-BreastSpecimen-model" />
-                  <display value="BreastSpecimen" />
+                  <display value="BreastSpecimenModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Category-model" />
-                  <display value="Category" />
+                  <display value="CategoryModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Certainty-model" />
-                  <display value="Certainty" />
+                  <display value="CertaintyModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ClinicalStatement-model" />
-                  <display value="ClinicalStatement" />
+                  <display value="ClinicalStatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ClinicalStatus-model" />
-                  <display value="ClinicalStatus" />
+                  <display value="ClinicalStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-ClockDirection-model" />
-                  <display value="ClockDirection" />
+                  <display value="ClockDirectionModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-CodeSystem-model" />
-                  <display value="CodeSystem" />
+                  <display value="CodeSystemModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-CodeSystemVersion-model" />
-                  <display value="CodeSystemVersion" />
+                  <display value="CodeSystemVersionModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-ColdIschemiaTime-model" />
-                  <display value="ColdIschemiaTime" />
+                  <display value="ColdIschemiaTimeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-CollectionMethod-model" />
-                  <display value="CollectionMethod" />
+                  <display value="CollectionMethodModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-CollectionSite-model" />
-                  <display value="CollectionSite" />
+                  <display value="CollectionSiteModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-CollectionTime-model" />
-                  <display value="CollectionTime" />
+                  <display value="CollectionTimeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Comparator-model" />
-                  <display value="Comparator" />
+                  <display value="ComparatorModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-CompleteMembraneStainingPercent-model" />
-                  <display value="CompleteMembraneStainingPercent" />
+                  <display value="CompleteMembraneStainingPercentModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-CompoundClinicalStatement-model" />
-                  <display value="CompoundClinicalStatement" />
+                  <display value="CompoundClinicalStatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ConditionPresenceContext-model" />
-                  <display value="ConditionPresenceContext" />
+                  <display value="ConditionPresenceContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-ConditionPresenceStatement-model" />
-                  <display value="ConditionPresenceStatement" />
+                  <display value="ConditionPresenceStatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ConditionTopic-model" />
-                  <display value="ConditionTopic" />
+                  <display value="ConditionTopicModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Content-model" />
-                  <display value="Content" />
+                  <display value="ContentModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ContextCode-model" />
-                  <display value="ContextCode" />
+                  <display value="ContextCodeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Criticality-model" />
-                  <display value="Criticality" />
+                  <display value="CriticalityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-DCISNuclearGrade-model" />
-                  <display value="DCISNuclearGrade" />
+                  <display value="DCISNuclearGradeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-DeltaFlag-model" />
-                  <display value="DeltaFlag" />
+                  <display value="DeltaFlagModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Denominator-model" />
-                  <display value="Denominator" />
+                  <display value="DenominatorModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-DiagnosticService-model" />
-                  <display value="DiagnosticService" />
+                  <display value="DiagnosticServiceModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-DisplayText-model" />
-                  <display value="DisplayText" />
+                  <display value="DisplayTextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-DistanceToNipple-model" />
-                  <display value="DistanceToNipple" />
+                  <display value="DistanceToNippleModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Encounter-model" />
-                  <display value="Encounter" />
+                  <display value="EncounterModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Entity-model" />
-                  <display value="Entity" />
+                  <display value="EntityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-base-Entry-model" />
-                  <display value="Entry" />
+                  <display value="EntryModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-EstrogenReceptorStatus-model" />
-                  <display value="EstrogenReceptorStatus" />
+                  <display value="EstrogenReceptorStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-EvaluationComponent-model" />
-                  <display value="EvaluationComponent" />
+                  <display value="EvaluationComponentModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-EvaluationResultContext-model" />
-                  <display value="EvaluationResultContext" />
+                  <display value="EvaluationResultContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-EvaluationResultRecorded-model" />
-                  <display value="EvaluationResultRecorded" />
+                  <display value="EvaluationResultRecordedModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-EvaluationResultTopic-model" />
-                  <display value="EvaluationResultTopic" />
+                  <display value="EvaluationResultTopicModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ExceptionValue-model" />
-                  <display value="ExceptionValue" />
+                  <display value="ExceptionValueModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-FindingContext-model" />
-                  <display value="FindingContext" />
+                  <display value="FindingContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-FindingMethod-model" />
-                  <display value="FindingMethod" />
+                  <display value="FindingMethodModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-FindingStatus-model" />
-                  <display value="FindingStatus" />
+                  <display value="FindingStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-FindingTopic-model" />
-                  <display value="FindingTopic" />
+                  <display value="FindingTopicModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-HER2ReceptorStatus-model" />
-                  <display value="HER2ReceptorStatus" />
+                  <display value="HER2ReceptorStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-HER2byIHC-model" />
-                  <display value="HER2byIHC" />
+                  <display value="HER2byIHCModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-HER2byISH-model" />
-                  <display value="HER2byISH" />
+                  <display value="HER2byISHModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-HER2toCEP17Ratio-model" />
-                  <display value="HER2toCEP17Ratio" />
+                  <display value="HER2toCEP17RatioModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-IndivisibleClinicalStatement-model" />
-                  <display value="IndivisibleClinicalStatement" />
+                  <display value="IndivisibleClinicalStatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-InformationEntry-model" />
-                  <display value="InformationEntry" />
+                  <display value="InformationEntryModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Interpretation-model" />
-                  <display value="Interpretation" />
+                  <display value="InterpretationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-LaboratoryTestResultRecorded-model" />
-                  <display value="LaboratoryTestResultRecorded" />
+                  <display value="LaboratoryTestResultRecordedModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Laterality-model" />
-                  <display value="Laterality" />
+                  <display value="LateralityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Locatable-model" />
-                  <display value="Locatable" />
+                  <display value="LocatableModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-LowerBound-model" />
-                  <display value="LowerBound" />
+                  <display value="LowerBoundModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-MammaprintRecurrenceScore-model" />
-                  <display value="MammaprintRecurrenceScore" />
+                  <display value="MammaprintRecurrenceScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-Members-model" />
-                  <display value="Members" />
+                  <display value="MembersModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-MitoticCountScore-model" />
-                  <display value="MitoticCountScore" />
+                  <display value="MitoticCountScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-MorphologyBehavior-model" />
-                  <display value="MorphologyBehavior" />
+                  <display value="MorphologyBehaviorModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-NuclearPleomorphismScore-model" />
-                  <display value="NuclearPleomorphismScore" />
+                  <display value="NuclearPleomorphismScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-NuclearPositivity-model" />
-                  <display value="NuclearPositivity" />
+                  <display value="NuclearPositivityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Numerator-model" />
-                  <display value="Numerator" />
+                  <display value="NumeratorModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-OncotypeDxDCISRecurrenceScore-model" />
-                  <display value="OncotypeDxDCISRecurrenceScore" />
+                  <display value="OncotypeDxDCISRecurrenceScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-OncotypeDxInvasiveRecurrenceScore-model" />
-                  <display value="OncotypeDxInvasiveRecurrenceScore" />
+                  <display value="OncotypeDxInvasiveRecurrenceScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Onset-model" />
-                  <display value="Onset" />
+                  <display value="OnsetModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Percentage-model" />
-                  <display value="Percentage" />
+                  <display value="PercentageModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-PercentageRange-model" />
-                  <display value="PercentageRange" />
+                  <display value="PercentageRangeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Precondition-model" />
-                  <display value="Precondition" />
+                  <display value="PreconditionModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-PresenceContext-model" />
-                  <display value="PresenceContext" />
+                  <display value="PresenceContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-PresentOnAdmission-model" />
-                  <display value="PresentOnAdmission" />
+                  <display value="PresentOnAdmissionModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-ProgesteroneReceptorStatus-model" />
-                  <display value="ProgesteroneReceptorStatus" />
+                  <display value="ProgesteroneReceptorStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-ProsignaRecurrenceScore-model" />
-                  <display value="ProsignaRecurrenceScore" />
+                  <display value="ProsignaRecurrenceScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Quantity-model" />
-                  <display value="Quantity" />
+                  <display value="QuantityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Range-model" />
-                  <display value="Range" />
+                  <display value="RangeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Ratio-model" />
-                  <display value="Ratio" />
+                  <display value="RatioModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-ReceivedTime-model" />
-                  <display value="ReceivedTime" />
+                  <display value="ReceivedTimeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-RecordedContext-model" />
-                  <display value="RecordedContext" />
+                  <display value="RecordedContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-ReferenceRange-model" />
-                  <display value="ReferenceRange" />
+                  <display value="ReferenceRangeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-RelevantTime-model" />
-                  <display value="RelevantTime" />
+                  <display value="RelevantTimeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Severity-model" />
-                  <display value="Severity" />
+                  <display value="SeverityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-SimpleQuantity-model" />
-                  <display value="SimpleQuantity" />
+                  <display value="SimpleQuantityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-SimplifiedLaboratoryTestResultRecorded-model" />
-                  <display value="SimplifiedLaboratoryTestResultRecorded" />
+                  <display value="SimplifiedLaboratoryTestResultRecordedModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-SourceSpecimen-model" />
-                  <display value="SourceSpecimen" />
+                  <display value="SourceSpecimenModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Specimen-model" />
-                  <display value="Specimen" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-statement-Stage-model" />
-                  <display value="Stage" />
+                  <display value="SpecimenModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-StageDetail-model" />
-                  <display value="StageDetail" />
+                  <display value="StageDetailModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Stage-model" />
+                  <display value="StageModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-StageSuffix-model" />
-                  <display value="StageSuffix" />
+                  <display value="StageSuffixModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-StageTimingPrefix-model" />
-                  <display value="StageTimingPrefix" />
+                  <display value="StageTimingPrefixModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-StatementContext-model" />
-                  <display value="StatementContext" />
+                  <display value="StatementContextModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-StatementTopic-model" />
-                  <display value="StatementTopic" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-core-TimePeriod-model" />
-                  <display value="TimePeriod" />
+                  <display value="StatementTopicModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-TimePeriodEnd-model" />
-                  <display value="TimePeriodEnd" />
+                  <display value="TimePeriodEndModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-TimePeriod-model" />
+                  <display value="TimePeriodModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-TimePeriodStart-model" />
-                  <display value="TimePeriodStart" />
+                  <display value="TimePeriodStartModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-TopicCode-model" />
-                  <display value="TopicCode" />
+                  <display value="TopicCodeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/oncology-TubuleFormationScore-model" />
-                  <display value="TubuleFormationScore" />
+                  <display value="TubuleFormationScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-Type-model" />
-                  <display value="Type" />
+                  <display value="TypeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Units-model" />
-                  <display value="Units" />
+                  <display value="UnitsModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-UpperBound-model" />
-                  <display value="UpperBound" />
+                  <display value="UpperBoundModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-VerificationStatus-model" />
-                  <display value="VerificationStatus" />
+                  <display value="VerificationStatusModel" />
               </sourceReference>
           </resource>
           
     </package>
     <page>
         <source value="index.html" />
-        <title value="Breast Cancer Interoperability" />
+        <title value="HL7 FHIR® Implementation Guide: Breast Cancer Data, Release 1 - US Realm" />
         <kind value="page" />
     </page>
 </ImplementationGuide>

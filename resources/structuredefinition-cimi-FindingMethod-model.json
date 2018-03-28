@@ -3,7 +3,7 @@
   "id": "cimi-FindingMethod-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingMethod Logical Model</b></p>\n  <p>The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called &#039;method&#039;. The value set binding reflects CIMI&#039;s preference for LOINC codes.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingMethod Logical Model</b></p>\n  <p>The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called &#039;method&#039;. The value set binding reflects CIMI&#039;s preference for LOINC codes.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingMethod-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.FindingMethod"
     }
   ],
-  "name": "FindingMethod",
+  "name": "FindingMethodModel",
   "title": "BC FindingMethod Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+  "description": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-FindingMethod-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-FindingMethod-model",
         "path": "cimi-FindingMethod-model",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "*",
         "base": {
@@ -53,8 +53,8 @@
       {
         "id": "cimi-FindingMethod-model.value",
         "path": "cimi-FindingMethod-model.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
           "codeableConcept"
         ],
@@ -87,7 +87,7 @@
       {
         "id": "cimi-FindingMethod-model",
         "path": "cimi-FindingMethod-model",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "*",
         "base": {
@@ -102,8 +102,8 @@
       {
         "id": "cimi-FindingMethod-model.value",
         "path": "cimi-FindingMethod-model.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
           "codeableConcept"
         ],

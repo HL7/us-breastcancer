@@ -3,13 +3,13 @@
   "id": "oncology-BreastCancerHistologicGrade",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerHistologicGrade Profile</b></p>\n  <p>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerHistologicGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerHistologicGrade Profile</b></p>\n  <p>The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerHistologicGrade maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  constrain related to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerHistologicGrade",
-  "name": "BreastCancerHistologicGrade",
+  "name": "BreastCancerHistologicGradeProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -79,8 +79,8 @@
       {
         "id": "Observation:oncology-BreastCancerHistologicGrade",
         "path": "Observation",
-        "short": "BreastCancerHistologicGrade",
-        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+        "short": "BC BreastCancerHistologicGrade Profile",
+        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -2206,119 +2206,8 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerHistologicGrade.value[x]",
-        "path": "Observation.value[x]",
-        "short": "Result Value",
-        "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
-        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
-        "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Observation.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
-          },
-          {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
-          }
-        ],
-        "condition": [
-          "obs-7"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
-                "valueBoolean": true
-              }
-            ],
-            "key": "us-core-4",
-            "severity": "warning",
-            "human": "SHOULD use Snomed CT for coded Results",
-            "expression": "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
-            "xpath": "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
-          },
-          {
-            "key": "us-core-3",
-            "severity": "error",
-            "human": "SHALL use UCUM for coded quantity units.",
-            "expression": "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
-            "xpath": "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
-          }
-        ],
-        "mustSupport": true,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.notDone, Event.notDoneReason  (maps to valeu[x] or dataAbsentReason)"
-          },
-          {
-            "identity": "sct-concept",
-            "map": "< 441742003 |Evaluation finding|"
-          },
-          {
-            "identity": "v2",
-            "map": "OBX.2, OBX.5, OBX.6"
-          },
-          {
-            "identity": "rim",
-            "map": "value"
-          },
-          {
-            "identity": "sct-attr",
-            "map": "363714003 |Interprets|"
-          },
-          {
-            "identity": "argonaut-dq-dstu2",
-            "map": "Observation.value[x]"
-          }
-        ],
-        "slicing": {
-          "id": "11",
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation:oncology-BreastCancerHistologicGrade.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
-        "sliceName": "CodeableConcept",
         "short": "Result Value",
         "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
         "min": 0,
@@ -3334,7 +3223,7 @@
         "id": "Observation:oncology-BreastCancerHistologicGrade.component:oncology-TubuleFormationScore",
         "path": "Observation.component",
         "short": "TubuleFormationScore",
-        "definition": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
+        "definition": "A comparison between structures formed by the tumor cells and those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
         "min": 0,
         "max": "1",
         "base": {
@@ -6238,8 +6127,8 @@
       {
         "id": "Observation:oncology-BreastCancerHistologicGrade",
         "path": "Observation",
-        "short": "BreastCancerHistologicGrade",
-        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+        "short": "BC BreastCancerHistologicGrade Profile",
+        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "mustSupport": false
       },
       {
@@ -6413,53 +6302,7 @@
         "fixedCode": "44648-4"
       },
       {
-        "id": "Observation:oncology-BreastCancerHistologicGrade.value[x]",
-        "path": "Observation.value[x]",
-        "slicing": {
-          "id": "11",
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "type": [
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
-          },
-          {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "id": "Observation:oncology-BreastCancerHistologicGrade.valueCodeableConcept:CodeableConcept",
+        "id": "Observation:oncology-BreastCancerHistologicGrade.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "type": [
           {
@@ -6667,7 +6510,7 @@
         "path": "Observation.component",
         "sliceName": "oncology-TubuleFormationScore",
         "short": "TubuleFormationScore",
-        "definition": "A comparison between structures formed by the tumor cells as opposed to those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
+        "definition": "A comparison between structures formed by the tumor cells and those formed by normal cells. Scored 1 to 3 with 3 being the most abnormal.",
         "min": 0,
         "max": "1"
       },
@@ -6938,5 +6781,5 @@
     }
   ],
   "title": "BC BreastCancerHistologicGrade Profile",
-  "description": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing."
+  "description": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing."
 }

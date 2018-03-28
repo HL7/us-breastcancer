@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSite Profile</b></p>\n  <p>A body site specific to the breast structure.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSite maps to BodySite:\n  CodeableConcept maps to code\n  Laterality maps to qualifier (slice on = coding.code)\n  AnatomicalDirection maps to qualifier\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite",
-  "name": "BreastSite",
+  "name": "BreastSiteProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -54,7 +54,7 @@
       {
         "id": "BodySite:oncology-BreastSite",
         "path": "BodySite",
-        "short": "BreastSite",
+        "short": "BC BreastSite Profile",
         "definition": "A body site specific to the breast structure.",
         "alias": [
           "anatomical location"
@@ -691,7 +691,7 @@
       {
         "id": "BodySite:oncology-BreastSite",
         "path": "BodySite",
-        "short": "BreastSite",
+        "short": "BC BreastSite Profile",
         "definition": "A body site specific to the breast structure."
       },
       {

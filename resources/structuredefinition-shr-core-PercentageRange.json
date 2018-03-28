@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC PercentageRange Profile</b></p>\n  <p>A range of percentage values.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.core.PercentageRange maps to Range:\n  LowerBound maps to low\n  UpperBound maps to high\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PercentageRange",
-  "name": "PercentageRange",
+  "name": "PercentageRangeProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -45,7 +45,7 @@
       {
         "id": "Range:shr-core-PercentageRange",
         "path": "Range",
-        "short": "PercentageRange",
+        "short": "BC PercentageRange Profile",
         "definition": "A range of percentage values.",
         "comment": "The stated low and high value are assumed to have arbitrarily high precision when it comes to determining which values are in the range. I.e. 1.99 is not in the range 2 -> 3.",
         "min": 0,
@@ -216,7 +216,7 @@
       {
         "id": "Range:shr-core-PercentageRange",
         "path": "Range",
-        "short": "PercentageRange",
+        "short": "BC PercentageRange Profile",
         "definition": "A range of percentage values."
       },
       {

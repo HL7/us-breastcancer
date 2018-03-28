@@ -12,11 +12,11 @@
       "value": "oncology.BreastCancerPresenceStatement"
     }
   ],
-  "name": "BreastCancerPresenceStatement",
+  "name": "BreastCancerPresenceStatementModel",
   "title": "BC BreastCancerPresenceStatement Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -67,7 +67,7 @@
           }
         ],
         "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
         "alias": [
           "statementTopic"
         ],
@@ -91,7 +91,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
         "alias": [
           "codeableConcept"
         ],
@@ -417,8 +417,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -438,8 +438,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
           "codeableConcept"
         ],
@@ -475,7 +475,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -509,6 +509,14 @@
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
           }
         ],
+        "constraint": [
+          {
+            "key": "category-1",
+            "severity": "error",
+            "human": "There must exist a value.code 'disease'.",
+            "expression": "value.where(code = 'disease').exists()"
+          }
+        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -531,14 +539,6 @@
         "type": [
           {
             "code": "Coding"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "value-1",
-            "severity": "error",
-            "human": "There must exist a code 'disease'.",
-            "expression": "where(code = 'disease').exists()"
           }
         ],
         "mustSupport": false,
@@ -576,7 +576,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
         "short": "The context for a condition that is known, suspected, or possibly present.",
-        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
         "alias": [
           "statementContext"
         ],
@@ -801,7 +801,7 @@
           }
         ],
         "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
         "alias": [
           "statementTopic"
         ],
@@ -825,7 +825,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
         "alias": [
           "codeableConcept"
         ],
@@ -1151,8 +1151,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1172,8 +1172,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
-        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "short": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
+        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
           "codeableConcept"
         ],
@@ -1209,7 +1209,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: It is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -1243,6 +1243,14 @@
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
           }
         ],
+        "constraint": [
+          {
+            "key": "category-1",
+            "severity": "error",
+            "human": "There must exist a value.code 'disease'.",
+            "expression": "value.where(code = 'disease').exists()"
+          }
+        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -1265,14 +1273,6 @@
         "type": [
           {
             "code": "Coding"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "value-1",
-            "severity": "error",
-            "human": "There must exist a code 'disease'.",
-            "expression": "where(code = 'disease').exists()"
           }
         ],
         "mustSupport": false,
@@ -1310,7 +1310,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
         "short": "The context for a condition that is known, suspected, or possibly present.",
-        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI Version 0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called AssertionKnownOrSuspectedPresent. The corresponding CIMI class is ungoing a name change to include the word 'StatementContext' and remove the word 'Assertion'. The presence of terminology bindings (necessary to align with FHIR clinicalStatus, severity, and criticality) means that this class cannot be defined entirely within the CIMI reference model. The constraints could only exist in an archetype derived from the reference model class. The logical model here represents both the class structure and the terminology bindings.",
         "alias": [
           "statementContext"
         ],

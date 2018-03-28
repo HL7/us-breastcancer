@@ -3,7 +3,7 @@
   "id": "cimi-DeltaFlagVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC DeltaFlagVS ValueSet</b></p>\n<p></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC DeltaFlagVS ValueSet</b></p>\n<p>Indicators for degree of change (delta) from the last or previous measurement.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-DeltaFlagVS",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "DeltaFlagVS",
   "title": "BC DeltaFlagVS ValueSet",
   "status": "draft",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,30 +27,16 @@
     }
   ],
   "date": "2018-03-28",
+  "description": "Indicators for degree of change (delta) from the last or previous measurement.",
   "compose": {
     "include": [
       {
-        "system": "http://ncimeta.nci.nih.gov",
-        "concept": [
+        "system": "http://snomed.info/sct",
+        "filter": [
           {
-            "code": "C2346711",
-            "display": "About the same"
-          },
-          {
-            "code": "C0332272",
-            "display": "Better"
-          },
-          {
-            "code": "C1457868",
-            "display": "Worse"
-          },
-          {
-            "code": "C3854148",
-            "display": "Significant change up"
-          },
-          {
-            "code": "C3854147",
-            "display": "Significant change down"
+            "property": "concept",
+            "op": "is-a",
+            "value": "263703002"
           }
         ]
       }

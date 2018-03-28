@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastSpecimen Profile</b></p>\n  <p>Specimen resulting from biopsy or excision of breast and surrounding tissue.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastSpecimen maps to Specimen:\n  Type maps to type\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  CollectionTime maps to collection.collected[x]\n  CollectionMethod maps to collection.method\n  CollectionSite maps to http://hl7.org/fhir/StructureDefinition/body-site-instance\n  ColdIschemiaTime maps to processing (slice on = procedure)\n  ColdIschemiaTime.TimePeriod maps to processing.time[x]\n  ColdIschemiaTime._Concept maps to processing.procedure\n  constrain processing.additive to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSpecimen",
-  "name": "BreastSpecimen",
+  "name": "BreastSpecimenProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -49,7 +49,7 @@
       {
         "id": "Specimen:oncology-BreastSpecimen",
         "path": "Specimen",
-        "short": "BreastSpecimen",
+        "short": "BC BreastSpecimen Profile",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "min": 0,
         "max": "*",
@@ -1017,7 +1017,7 @@
         "id": "Specimen:oncology-BreastSpecimen.processing:oncology-ColdIschemiaTime",
         "path": "Specimen.processing",
         "short": "ColdIschemiaTime",
-        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. That clinical statement would have to be mapped to FHIR as a Procedure, but that would be incorrect, since speciment processing should map to Specimen.processing, an array inside the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by first finding the corresponding Specimen entity, and then mapping the several CIMI instances (the Specimen and the possibly multiple SpecimenProcessingPerformed clinical statements), into one FHIR Specimen resource. To avoid this complexity, for the sake of this IG, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
+        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1917,7 +1917,7 @@
       {
         "id": "Specimen:oncology-BreastSpecimen",
         "path": "Specimen",
-        "short": "BreastSpecimen",
+        "short": "BC BreastSpecimen Profile",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue."
       },
       {
@@ -1992,7 +1992,7 @@
         "path": "Specimen.processing",
         "sliceName": "oncology-ColdIschemiaTime",
         "short": "ColdIschemiaTime",
-        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, processing of a specimen is represented as an independent clinical statement involving a SpecimenProcessingTopic and PerformanceContext. That clinical statement would have to be mapped to FHIR as a Procedure, but that would be incorrect, since speciment processing should map to Specimen.processing, an array inside the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by first finding the corresponding Specimen entity, and then mapping the several CIMI instances (the Specimen and the possibly multiple SpecimenProcessingPerformed clinical statements), into one FHIR Specimen resource. To avoid this complexity, for the sake of this IG, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
+        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
         "min": 0,
         "max": "1"
       },

@@ -3,7 +3,7 @@
   "id": "cimi-StatementTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StatementTopic Logical Model</b></p>\n  <p>Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nCStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called &#039;key&#039; in CIMI V0.0.4, but CIMI is renaming it &#039;TopicCode&#039;, as represented here.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StatementTopic Logical Model</b></p>\n  <p>Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called &#039;key&#039; in CIMI V0.0.4, but CIMI is renaming it &#039;TopicCode&#039;, as represented here.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-StatementTopic-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.StatementTopic"
     }
   ],
-  "name": "StatementTopic",
+  "name": "StatementTopicModel",
   "title": "BC StatementTopic Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nCStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called 'key' in CIMI V0.0.4, but CIMI is renaming it 'TopicCode', as represented here.",
+  "description": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called 'key' in CIMI V0.0.4, but CIMI is renaming it 'TopicCode', as represented here.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-StatementTopic-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-StatementTopic-model",
         "path": "cimi-StatementTopic-model",
-        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nCStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called 'key' in CIMI V0.0.4, but CIMI is renaming it 'TopicCode', as represented here.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called 'key' in CIMI V0.0.4, but CIMI is renaming it 'TopicCode', as represented here.",
         "min": 0,
         "max": "*",
         "base": {
@@ -78,7 +78,7 @@
       {
         "id": "cimi-StatementTopic-model",
         "path": "cimi-StatementTopic-model",
-        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nCStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called 'key' in CIMI V0.0.4, but CIMI is renaming it 'TopicCode', as represented here.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. \n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).\n\nCIMI Alignment: StatementTopic had an attribute called 'key' in CIMI V0.0.4, but CIMI is renaming it 'TopicCode', as represented here.",
         "min": 0,
         "max": "*",
         "base": {

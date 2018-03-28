@@ -240,9 +240,6 @@
     "ValueSet/cimi-ConditionCategoryVS": {
       "base": "ValueSet-cimi-ConditionCategoryVS.html"
     },
-    "ValueSet/cimi-ConditionVS": {
-      "base": "ValueSet-cimi-ConditionVS.html"
-    },
     "ValueSet/cimi-DeltaFlagVS": {
       "base": "ValueSet-cimi-DeltaFlagVS.html"
     },
@@ -321,9 +318,6 @@
     "ValueSet/shr-core-YesNoUnknownVS": {
       "base": "ValueSet-shr-core-YesNoUnknownVS.html"
     },
-    "ValueSet/shr-core-YesNoVS": {
-      "base": "ValueSet-shr-core-YesNoVS.html"
-    },
     "CodeSystem/cimi-AnatomicalDirectionCS": {
       "base": "CodeSystem-cimi-AnatomicalDirectionCS.html"
     },
@@ -392,9 +386,6 @@
     },
     "CodeSystem/oncology-StainingIntensityCS": {
       "base": "CodeSystem-oncology-StainingIntensityCS.html"
-    },
-    "CodeSystem/shr-core-YesNoCS": {
-      "base": "CodeSystem-shr-core-YesNoCS.html"
     },
     "CodeSystem/shr-core-YesNoUnknownCS": {
       "base": "CodeSystem-shr-core-YesNoUnknownCS.html"
@@ -1099,15 +1090,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-statement-Stage-model": {
-      "base": "StructureDefinition-cimi-statement-Stage-model.html",
+    "StructureDefinition/cimi-statement-StageDetail-model": {
+      "base": "StructureDefinition-cimi-statement-StageDetail-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-statement-StageDetail-model": {
-      "base": "StructureDefinition-cimi-statement-StageDetail-model.html",
+    "StructureDefinition/cimi-statement-Stage-model": {
+      "base": "StructureDefinition-cimi-statement-Stage-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1141,15 +1132,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-TimePeriod-model": {
-      "base": "StructureDefinition-shr-core-TimePeriod-model.html",
+    "StructureDefinition/shr-core-TimePeriodEnd-model": {
+      "base": "StructureDefinition-shr-core-TimePeriodEnd-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-TimePeriodEnd-model": {
-      "base": "StructureDefinition-shr-core-TimePeriodEnd-model.html",
+    "StructureDefinition/shr-core-TimePeriod-model": {
+      "base": "StructureDefinition-shr-core-TimePeriod-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

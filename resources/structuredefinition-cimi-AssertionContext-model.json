@@ -3,7 +3,7 @@
   "id": "cimi-AssertionContext-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AssertionContext Logical Model</b></p>\n  <p>The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after Version 0.0.4).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AssertionContext Logical Model</b></p>\n  <p>The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after V0.0.4).</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AssertionContext-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.AssertionContext"
     }
   ],
-  "name": "AssertionContext",
+  "name": "AssertionContextModel",
   "title": "BC AssertionContext Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after Version 0.0.4).",
+  "description": "The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after V0.0.4).",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-AssertionContext-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-AssertionContext-model",
         "path": "cimi-AssertionContext-model",
-        "definition": "The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after Version 0.0.4).",
+        "definition": "The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after V0.0.4).",
         "min": 0,
         "max": "*",
         "base": {
@@ -78,7 +78,7 @@
       {
         "id": "cimi-AssertionContext-model",
         "path": "cimi-AssertionContext-model",
-        "definition": "The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after Version 0.0.4).",
+        "definition": "The parent class of contexts that can associate with AssertionTopic and its subclasses.\n\nCIMI Alignment: This class was recently added to CIMI (after V0.0.4).",
         "min": 0,
         "max": "*",
         "base": {

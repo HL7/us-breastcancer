@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Ratio Profile</b></p>\n  <p>A unit of measurement for the quotient of the amount of one entity to another.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.core.Ratio maps to Ratio:\n  Numerator maps to numerator\n  Denominator maps to denominator\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio",
-  "name": "Ratio",
+  "name": "RatioProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -45,7 +45,7 @@
       {
         "id": "Ratio:shr-core-Ratio",
         "path": "Ratio",
-        "short": "Ratio",
+        "short": "BC Ratio Profile",
         "definition": "A unit of measurement for the quotient of the amount of one entity to another.",
         "min": 0,
         "max": "*",
@@ -197,7 +197,7 @@
       {
         "id": "Ratio:shr-core-Ratio",
         "path": "Ratio",
-        "short": "Ratio",
+        "short": "BC Ratio Profile",
         "definition": "A unit of measurement for the quotient of the amount of one entity to another."
       },
       {

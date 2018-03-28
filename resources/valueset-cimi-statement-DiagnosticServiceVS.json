@@ -15,7 +15,7 @@
   "name": "DiagnosticServiceVS",
   "title": "BC DiagnosticServiceVS ValueSet",
   "status": "draft",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -39,7 +39,7 @@
           },
           {
             "code": "parasitology",
-            "display": "Laboratory responsible for examining parasites, feces samples may be examined for evidence of intestinal parasites such as tapeworms or hookworms and others."
+            "display": "Laboratory responsible for examining samples and specimens for evidence of intestinal parasites such as tapeworms, hookworms, and others."
           },
           {
             "code": "virology",
@@ -55,14 +55,14 @@
           },
           {
             "code": "toxicology",
-            "display": "Laboratory that mainly tests for pharmaceutical and recreational drugs. Urine and blood samples are submitted to this lab."
+            "display": "Laboratory that tests for toxins, pharmaceutical and recreational drugs in the blood. Urine and blood samples are submitted to this lab."
           },
           {
             "code": "immunology",
             "display": "Immunology/Serology laboratory uses the concept of antigen-antibody interaction as a diagnostic tool. Compatibility of transplanted organs is also determined."
           },
           {
-            "code": "Immunohaematology",
+            "code": "immunohematology",
             "display": "Laboratory or blood bank that determines blood groups, and performs compatibility testing on donor blood and recipients. It also prepares blood components, derivatives, and products for transfusion."
           },
           {

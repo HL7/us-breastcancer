@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Profile</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  ConditionTopic.TopicCode maps to code\n  ConditionTopic.Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  ConditionTopic.AnatomicalLocationOrCode maps to bodySite \n  ConditionPresenceContext.Severity maps to severity\n  Stage maps to stage\n  Stage.CodeableConcept maps to stage.summary\n  Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPresenceStatement",
-  "name": "BreastCancerPresenceStatement",
+  "name": "BreastCancerPresenceStatementProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -74,7 +74,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement",
         "path": "Condition",
-        "short": "BreastCancerPresenceStatement",
+        "short": "BC BreastCancerPresenceStatement Profile",
         "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
         "min": 0,
         "max": "*",
@@ -2370,7 +2370,7 @@
       {
         "id": "Condition:oncology-BreastCancerPresenceStatement",
         "path": "Condition",
-        "short": "BreastCancerPresenceStatement",
+        "short": "BC BreastCancerPresenceStatement Profile",
         "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
         "mustSupport": false
       },

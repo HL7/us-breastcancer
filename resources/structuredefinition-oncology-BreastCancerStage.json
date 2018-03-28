@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerStage Profile</b></p>\n  <p>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStage",
-  "name": "BreastCancerStage",
+  "name": "BreastCancerStageProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -79,7 +79,7 @@
       {
         "id": "Observation:oncology-BreastCancerStage",
         "path": "Observation",
-        "short": "BreastCancerStage",
+        "short": "BC BreastCancerStage Profile",
         "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
@@ -380,7 +380,7 @@
           }
         ],
         "slicing": {
-          "id": "6",
+          "id": "7",
           "discriminator": [
             {
               "type": "value",
@@ -408,7 +408,7 @@
       {
         "id": "Observation:oncology-BreastCancerStage.extension:stagetimingprefix",
         "path": "Observation.extension",
-        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "min": 0,
         "max": "1",
         "type": [
@@ -967,12 +967,10 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation:oncology-BreastCancerStage.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "short": "Result Value",
         "definition": "The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification.",
-        "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
-        "requirements": "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.",
         "min": 0,
         "max": "1",
         "base": {
@@ -982,88 +980,10 @@
         },
         "type": [
           {
-            "code": "Quantity"
-          },
-          {
             "code": "CodeableConcept"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
-          },
-          {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
           }
         ],
-        "condition": [
-          "obs-7"
-        ],
-        "constraint": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
-                "valueBoolean": true
-              }
-            ],
-            "key": "us-core-4",
-            "severity": "warning",
-            "human": "SHOULD use Snomed CT for coded Results",
-            "expression": "valueCodeableConcept.coding.system.empty() or valueCodeableConcept.coding.system = 'http://snomed.info/sct'",
-            "xpath": "not(exists(f:valueCodeableConcept/f:coding/f:system) ) or  f:valueCodeableConcept/f:coding/f:system[@value='http://snomed.info/sct']"
-          },
-          {
-            "key": "us-core-3",
-            "severity": "error",
-            "human": "SHALL use UCUM for coded quantity units.",
-            "expression": "valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'",
-            "xpath": "not(exists(f:valueQuantity/f:system) ) or  f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"
-          }
-        ],
-        "mustSupport": true,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.notDone, Event.notDoneReason  (maps to valeu[x] or dataAbsentReason)"
-          },
-          {
-            "identity": "sct-concept",
-            "map": "< 441742003 |Evaluation finding|"
-          },
-          {
-            "identity": "v2",
-            "map": "OBX.2, OBX.5, OBX.6"
-          },
-          {
-            "identity": "rim",
-            "map": "value"
-          },
-          {
-            "identity": "sct-attr",
-            "map": "363714003 |Interprets|"
-          },
-          {
-            "identity": "argonaut-dq-dstu2",
-            "map": "Observation.value[x]"
-          }
-        ]
+        "isSummary": true
       },
       {
         "id": "Observation:oncology-BreastCancerStage.dataAbsentReason",
@@ -2549,7 +2469,7 @@
         "id": "Observation:oncology-BreastCancerStage.related:oncology-BreastCancerHistologicGrade",
         "path": "Observation.related",
         "short": "BreastCancerHistologicGrade",
-        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3084,7 +3004,8 @@
         "id": "Observation:oncology-BreastCancerStage.component:oncology-BreastCancerPrimaryTumorClassification.code.coding:Fixed_78873005",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_78873005",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "T category",
+        "definition": "T category",
         "min": 1,
         "max": "1",
         "type": [
@@ -4072,7 +3993,8 @@
         "id": "Observation:oncology-BreastCancerStage.component:oncology-BreastCancerRegionalNodesClassification.code.coding:Fixed_277206009",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_277206009",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "N category",
+        "definition": "N category",
         "min": 1,
         "max": "1",
         "type": [
@@ -5060,7 +4982,8 @@
         "id": "Observation:oncology-BreastCancerStage.component:oncology-BreastCancerDistantMetastasesClassification.code.coding:Fixed_126926005",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_126926005",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "M category",
+        "definition": "M category",
         "min": 1,
         "max": "1",
         "type": [
@@ -5765,7 +5688,7 @@
       {
         "id": "Observation:oncology-BreastCancerStage",
         "path": "Observation",
-        "short": "BreastCancerStage",
+        "short": "BC BreastCancerStage Profile",
         "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
         "mustSupport": false
       },
@@ -5786,7 +5709,7 @@
       {
         "id": "Observation:oncology-BreastCancerStage.extension:stagetimingprefix",
         "path": "Observation.extension",
-        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefix on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
         "min": 0,
         "max": "1",
         "type": [
@@ -5815,37 +5738,11 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation:oncology-BreastCancerStage.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "type": [
           {
-            "code": "Quantity"
-          },
-          {
             "code": "CodeableConcept"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
-          },
-          {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
           }
         ]
       },
@@ -6056,7 +5953,7 @@
         "path": "Observation.related",
         "sliceName": "oncology-BreastCancerHistologicGrade",
         "short": "BreastCancerHistologicGrade",
-        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
+        "definition": "The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.",
         "min": 0,
         "max": "1"
       },
@@ -6122,7 +6019,8 @@
         "id": "Observation:oncology-BreastCancerStage.component:oncology-BreastCancerPrimaryTumorClassification.code.coding:Fixed_78873005",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_78873005",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "T category",
+        "definition": "T category",
         "min": 1,
         "max": "1",
         "type": [
@@ -6199,7 +6097,8 @@
         "id": "Observation:oncology-BreastCancerStage.component:oncology-BreastCancerRegionalNodesClassification.code.coding:Fixed_277206009",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_277206009",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "N category",
+        "definition": "N category",
         "min": 1,
         "max": "1",
         "type": [
@@ -6276,7 +6175,8 @@
         "id": "Observation:oncology-BreastCancerStage.component:oncology-BreastCancerDistantMetastasesClassification.code.coding:Fixed_126926005",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_126926005",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "M category",
+        "definition": "M category",
         "min": 1,
         "max": "1",
         "type": [

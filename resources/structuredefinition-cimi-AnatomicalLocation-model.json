@@ -3,7 +3,7 @@
   "id": "cimi-AnatomicalLocation-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AnatomicalLocation Logical Model</b></p>\n  <p>A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AnatomicalLocation Logical Model</b></p>\n  <p>A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.AnatomicalLocation"
     }
   ],
-  "name": "AnatomicalLocation",
+  "name": "AnatomicalLocationModel",
   "title": "BC AnatomicalLocation Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+  "description": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-AnatomicalLocation-model",
         "path": "cimi-AnatomicalLocation-model",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +59,8 @@
       {
         "id": "cimi-AnatomicalLocation-model.value",
         "path": "cimi-AnatomicalLocation-model.value",
-        "short": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.",
-        "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+        "short": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "alias": [
           "codeableConcept"
         ],
@@ -148,7 +148,7 @@
       {
         "id": "cimi-AnatomicalLocation-model",
         "path": "cimi-AnatomicalLocation-model",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "*",
         "base": {
@@ -163,8 +163,8 @@
       {
         "id": "cimi-AnatomicalLocation-model.value",
         "path": "cimi-AnatomicalLocation-model.value",
-        "short": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.",
-        "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces, for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI Version 0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
+        "short": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "alias": [
           "codeableConcept"
         ],

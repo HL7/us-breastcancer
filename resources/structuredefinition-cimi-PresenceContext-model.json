@@ -3,7 +3,7 @@
   "id": "cimi-PresenceContext-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC PresenceContext Logical Model</b></p>\n  <p>PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC PresenceContext Logical Model</b></p>\n  <p>PresenceContext indicates that the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI V0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-PresenceContext-model",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "cimi.PresenceContext"
     }
   ],
-  "name": "PresenceContext",
+  "name": "PresenceContextModel",
   "title": "BC PresenceContext Logical Model",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.",
+  "description": "PresenceContext indicates that the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI V0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.",
   "keyword": [
     {
       "system": "http://snomed.info/sct",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-PresenceContext-model",
         "path": "cimi-PresenceContext-model",
-        "definition": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.",
+        "definition": "PresenceContext indicates that the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI V0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.",
         "min": 0,
         "max": "*",
         "base": {
@@ -138,7 +138,7 @@
           }
         ],
         "short": "The beginning or first appearance of a mental or physical disorder.",
-        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -164,8 +164,8 @@
             "code": "C1880019"
           }
         ],
-        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
-        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
+        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
+        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -186,7 +186,7 @@
         "id": "cimi-PresenceContext-model.certainty",
         "path": "cimi-PresenceContext-model.certainty",
         "short": "The degree of confidence in a conclusion or assertion.",
-        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "min": 0,
         "max": "1",
         "base": {
@@ -210,7 +210,7 @@
       {
         "id": "cimi-PresenceContext-model",
         "path": "cimi-PresenceContext-model",
-        "definition": "PresenceContext indicates the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI Version 0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.",
+        "definition": "PresenceContext indicates that the finding in question exists or is present to some level of certainty. \n\t\n\tFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.\n\t\n\tCIMI Alignment: In CIMI V0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.",
         "min": 0,
         "max": "*",
         "base": {
@@ -304,7 +304,7 @@
           }
         ],
         "short": "The beginning or first appearance of a mental or physical disorder.",
-        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset, and with dateOfOnset and ageAtOnset in CIMI Version 0.0.4 but includes additional datatypes corresponding to FHIR",
+        "definition": "The beginning or first appearance of a mental or physical disorder.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -330,8 +330,8 @@
             "code": "C1880019"
           }
         ],
-        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
-        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI Version 0.0.4, but includes additional datatypes corresponding to FHIR",
+        "short": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
+        "definition": "The end of the condition, either remission or resolution. This attribute corresponds to dateAbated and hasAbated in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR",
         "min": 0,
         "max": "1",
         "base": {
@@ -352,7 +352,7 @@
         "id": "cimi-PresenceContext-model.certainty",
         "path": "cimi-PresenceContext-model.certainty",
         "short": "The degree of confidence in a conclusion or assertion.",
-        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty, in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
+        "definition": "The degree of confidence in a conclusion or assertion.\n\t\t\t\n\t\t\tCIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.",
         "min": 0,
         "max": "1",
         "base": {

@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionPresenceStatement Profile</b></p>\n  <p>A condition that is or may be present in a subject. &#039;Condition&#039; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.statement.ConditionPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  ConditionTopic.TopicCode maps to code\n  ConditionTopic.Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  ConditionTopic.AnatomicalLocationOrCode maps to bodySite \n  ConditionPresenceContext.Severity maps to severity\n  Stage maps to stage\n  Stage.CodeableConcept maps to stage.summary\n  Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ConditionPresenceStatement",
-  "name": "ConditionPresenceStatement",
+  "name": "ConditionPresenceStatementProfile",
   "status": "draft",
   "date": "2018-03-28",
-  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC).",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
@@ -74,7 +74,7 @@
       {
         "id": "Condition:cimi-statement-ConditionPresenceStatement",
         "path": "Condition",
-        "short": "ConditionPresenceStatement",
+        "short": "BC ConditionPresenceStatement Profile",
         "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.",
         "min": 0,
         "max": "*",
@@ -1851,7 +1851,7 @@
       {
         "id": "Condition:cimi-statement-ConditionPresenceStatement",
         "path": "Condition",
-        "short": "ConditionPresenceStatement",
+        "short": "BC ConditionPresenceStatement Profile",
         "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.",
         "mustSupport": false
       },
