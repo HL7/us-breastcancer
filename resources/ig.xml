@@ -401,13 +401,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/cimi-ConditionCategoryVS" />
-                <display value="BC ConditionCategoryVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/cimi-DeltaFlagVS" />
                 <display value="BC DeltaFlagVS ValueSet" />
             </sourceReference>
@@ -625,13 +618,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/cimi-ConditionCategoryCS" />
-                <display value="BC ConditionCategoryCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/cimi-statement-DiagnosticServiceCS" />
                 <display value="BC DiagnosticServiceCS CodeSystem" />
             </sourceReference>
@@ -788,13 +774,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-AnatomicalLocation-model" />
                   <display value="AnatomicalLocationModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-AnatomicalLocationOrCode-model" />
-                  <display value="AnatomicalLocationOrCodeModel" />
               </sourceReference>
           </resource>
           <resource>

@@ -3,7 +3,7 @@
   "id": "oncology-MorphologyBehaviorVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC MorphologyBehaviorVS ValueSet</b></p>\n<p>The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC MorphologyBehaviorVS ValueSet</b></p>\n<p>The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS",
   "identifier": [
@@ -27,7 +27,7 @@
     }
   ],
   "date": "2018-03-28",
-  "description": "The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes",
+  "description": "The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.",
   "compose": {
     "include": [
       {

@@ -109,36 +109,6 @@
         "isSummary": false
       },
       {
-        "id": "oncology-BreastSite-model.laterality.value",
-        "path": "oncology-BreastSite-model.laterality.value",
-        "short": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
-        "definition": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-Laterality-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS"
-          }
-        }
-      },
-      {
         "id": "oncology-BreastSite-model.anatomicalDirection",
         "path": "oncology-BreastSite-model.anatomicalDirection",
         "code": [
@@ -289,36 +259,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "oncology-BreastSite-model.laterality.value",
-        "path": "oncology-BreastSite-model.laterality.value",
-        "short": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
-        "definition": "Code representing anatomical location or specimen further detailing the side(s) of interest.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-Laterality-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-LeftRightLateralityVS"
-          }
-        }
       },
       {
         "id": "oncology-BreastSite-model.anatomicalDirection",

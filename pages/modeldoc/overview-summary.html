@@ -131,16 +131,6 @@ CIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This app
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="cimi/AnatomicalLocationOrCode.html">AnatomicalLocationOrCode</a>
-        </td>
-        <td class="colLast">
-          <div class="block">A body site entity or a body site code.</div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
           <a href="cimi/ApplicableAgeRange.html">ApplicableAgeRange</a>
         </td>
         <td class="colLast">
@@ -240,7 +230,9 @@ CIMI Alignment: In CIMI V0.0.4, this class was called Assertion, but CIMI recent
         <td class="colLast">
           <div class="block">FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.
 
-The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</div>
+The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.
+
+CIMI Alignment (and question for reviewers): The Topic of this statement is &#39;Neoplasm of the breast&#39;, not &#39;Assertion&#39;, with the logic that the topic of the statement is more specific than &#39;Assertion&#39;.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?</div>
         </td>
       </tr>
       
@@ -500,7 +492,9 @@ In CIMI terms, it is an archetype of ClinicalStatement that combines a Condition
         <td class="colLast">
           <div class="block">Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#39;Condition&#39; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. 
 
-CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.</div>
+The value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.
+
+CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. </div>
         </td>
       </tr>
       
@@ -849,7 +843,7 @@ CIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, s
           <a href="cimi-statement/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a>
         </td>
         <td class="colLast">
-          <div class="block">Measurement resulting from a laboratory analysis.</div>
+          <div class="block">Measurement resulting from a laboratory analysis. The category is fixed to &#39;laboratory&#39; to align with US-Core.</div>
         </td>
       </tr>
       

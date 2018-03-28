@@ -20,7 +20,7 @@
   <script type="text/javascript">
   //<![CDATA[
 if (location.href.indexOf('is-external=true') == -1) {
-      parent.document.title = "BreastCancerPresenceStatement (Java Platform SE 7 )";
+      parent.document.title = "BreastCancerPresenceStatement";
     }
 //]]>
 </script>
@@ -63,7 +63,9 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <div class="block">FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.
 
-The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</div>
+The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.
+
+CIMI Alignment (and question for reviewers): The Topic of this statement is &#39;Neoplasm of the breast&#39;, not &#39;Assertion&#39;, with the logic that the topic of the statement is more specific than &#39;Assertion&#39;.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?</div>
         </dd>
       </dl>
       <dl>
@@ -199,7 +201,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
                         <div class="block">0..1</div>
                         <div class="block">
           
-                      <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS</a>
+                      <a href="../../ValueSet-oncology-MorphologyBehaviorVS.html" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-MorphologyBehaviorVS</a>
                     (REQUIRED)
         </div>
             </td>
@@ -240,7 +242,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
       <tr class="altColor">
     
       <td class="colFirst">
-        <code><strong>StatementTopic.TopicCode.CodeableConcept</strong></code>
+        <code><strong>StatementTopic.CodeableConcept</strong></code>
         
           <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
         
@@ -254,7 +256,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
       <td class="colLast">
                   <div class="block">
             
-                          <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS</a>
+                          <a href="../../ValueSet-oncology-BreastCancerTypeVS.html" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerTypeVS</a>
                         (REQUIRED)
           </div>
               </td>
@@ -266,19 +268,19 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
       <tr class="rowColor">
     
       <td class="colFirst">
-        <code><strong>StatementTopic.Category.CodeableConcept</strong></code>
+        <code><strong>StatementTopic.TopicCode.CodeableConcept</strong></code>
         
           <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
         
       </td>
       <td class="colMiddle">
-        <code><strong>Includes Code</strong></code>
+        <code><strong>Fixed Value</strong></code>
         
           <div class="block">Constrained in <a href="../oncology/BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a></div>
         
       </td>
       <td class="colLast">
-                  <div class="block"> (code: disease)</div>
+                  <div class="block">http://snomed.info/sct (code: 126926005)</div>
               </td>
       <!-- <td class="colLast">
         <div class="block">BreastCancerPresenceStatement</div>
@@ -302,7 +304,7 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
       <td class="colLast">
                   <div class="block">
             
-                          <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS</a>
+                          <a href="../../ValueSet-oncology-BreastCancerDetectionVS.html" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS</a>
                         (PREFERRED)
           </div>
               </td>
@@ -312,6 +314,32 @@ The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, w
     </tr>
       
       <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.AnatomicalLocation</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>DataType</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/BreastCancerPresenceStatement.html">BreastCancerPresenceStatement</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">
+            
+                          <a href="../oncology/BreastSite.html">BreastSite</a>
+                        
+          </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerPresenceStatement</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
     
       <td class="colFirst">
         <code><strong>Stage.StageDetail.EvaluationResultRecorded</strong></code>

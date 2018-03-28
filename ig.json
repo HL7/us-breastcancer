@@ -237,9 +237,6 @@
     "ValueSet/shr-core-ClockDirectionVS": {
       "base": "ValueSet-shr-core-ClockDirectionVS.html"
     },
-    "ValueSet/cimi-ConditionCategoryVS": {
-      "base": "ValueSet-cimi-ConditionCategoryVS.html"
-    },
     "ValueSet/cimi-DeltaFlagVS": {
       "base": "ValueSet-cimi-DeltaFlagVS.html"
     },
@@ -333,9 +330,6 @@
     "CodeSystem/oncology-BreastSpecimenTypeCS": {
       "base": "CodeSystem-oncology-BreastSpecimenTypeCS.html"
     },
-    "CodeSystem/cimi-ConditionCategoryCS": {
-      "base": "CodeSystem-cimi-ConditionCategoryCS.html"
-    },
     "CodeSystem/cimi-statement-DiagnosticServiceCS": {
       "base": "CodeSystem-cimi-statement-DiagnosticServiceCS.html"
     },
@@ -420,13 +414,6 @@
     },
     "StructureDefinition/cimi-AnatomicalLocation-model": {
       "base": "StructureDefinition-cimi-AnatomicalLocation-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-AnatomicalLocationOrCode-model": {
-      "base": "StructureDefinition-cimi-AnatomicalLocationOrCode-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

@@ -20,7 +20,7 @@
   <script type="text/javascript">
   //<![CDATA[
 if (location.href.indexOf('is-external=true') == -1) {
-      parent.document.title = "ConditionTopic (Java Platform SE 7 )";
+      parent.document.title = "ConditionTopic";
     }
 //]]>
 </script>
@@ -63,7 +63,9 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <div class="block">Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#39;Condition&#39; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. 
 
-CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.</div>
+The value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.
+
+CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. </div>
         </dd>
       </dl>
       <dl>
@@ -207,8 +209,8 @@ CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CI
                         <div class="block">1..*</div>
                         <div class="block">
           
-                      <a href="http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS</a>
-                    (REQUIRED)
+                      <a href="http://hl7.org/fhir/us/core/CodeSystem/condition-category" target="_top">http://hl7.org/fhir/us/core/CodeSystem/condition-category</a>
+                    (PREFERRED)
         </div>
             </td>
 </tr>                        
@@ -217,10 +219,12 @@ CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CI
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../cimi/AnatomicalLocationOrCode.html">AnatomicalLocationOrCode</a></strong></code>
+      <code><strong><a href="../cimi/AnatomicalLocation.html">AnatomicalLocation</a></strong></code>
     
     </div>
-    <div class="block">A body site entity or a body site code.</div>
+    <div class="block">A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.
+
+CIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -230,7 +234,7 @@ CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CI
   <td class="colLast">
                   <div class="block">
           
-                      <a href="../cimi/AnatomicalLocationOrCode.html">AnatomicalLocationOrCode</a>
+                      <a href="../cimi/AnatomicalLocation.html">AnatomicalLocation</a>
                     
         </div>
                         <div class="block">0..*</div>

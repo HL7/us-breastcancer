@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerPresenceStatement-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Logical Model</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Logical Model</b></p>\n  <p>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.\n\nCIMI Alignment (and question for reviewers): The Topic of this statement is &#039;Neoplasm of the breast&#039;, not &#039;Assertion&#039;, with the logic that the topic of the statement is more specific than &#039;Assertion&#039;.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerPresenceStatement-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
+  "description": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.\n\nCIMI Alignment (and question for reviewers): The Topic of this statement is 'Neoplasm of the breast', not 'Assertion', with the logic that the topic of the statement is more specific than 'Assertion'.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?",
   "keyword": [
     {
       "system": "http://snomed.info/sct",
@@ -45,7 +45,7 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model",
         "path": "oncology-BreastCancerPresenceStatement-model",
-        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
+        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.\n\nCIMI Alignment (and question for reviewers): The Topic of this statement is 'Neoplasm of the breast', not 'Assertion', with the logic that the topic of the statement is more specific than 'Assertion'.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?",
         "min": 0,
         "max": "*",
         "base": {
@@ -67,7 +67,7 @@
           }
         ],
         "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "statementTopic"
         ],
@@ -80,7 +80,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionTopic-model"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -91,65 +91,14 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-ConditionTopic-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "extensible",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
-          }
-        }
-      },
-      {
-        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-ConditionTopic-model.topicCode",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-TopicCode-model.value",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
           "min": 1,
           "max": "1"
         },
@@ -169,6 +118,51 @@
         }
       },
       {
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "short": "Neoplasm of the breast",
+        "definition": "Neoplasm of the breast",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
         "representation": [
@@ -179,7 +173,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Element.id",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
           "min": 0,
           "max": "1"
         },
@@ -218,7 +212,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Element.extension",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.extension",
           "min": 0,
           "max": "*"
         },
@@ -244,8 +238,8 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Coding.system",
-          "min": 0,
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.system",
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -253,7 +247,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://ncimeta.nci.nih.gov",
+        "fixedUri": "http://snomed.info/sct",
         "isSummary": true,
         "mapping": [
           {
@@ -279,7 +273,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Coding.version",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.version",
           "min": 0,
           "max": "1"
         },
@@ -313,8 +307,8 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Coding.code",
-          "min": 0,
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.code",
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -322,7 +316,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "C0348080",
+        "fixedCode": "126926005",
         "isSummary": true,
         "mapping": [
           {
@@ -354,7 +348,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Coding.display",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.display",
           "min": 0,
           "max": "1"
         },
@@ -389,7 +383,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Coding.userSelected",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -422,7 +416,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-ConditionTopic-model.findingMethod",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -479,7 +473,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-ConditionTopic-model.interpretation",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -500,21 +494,13 @@
         "min": 1,
         "max": "*",
         "base": {
-          "path": "cimi-ConditionTopic-model.category",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
           "min": 1,
           "max": "*"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "category-1",
-            "severity": "error",
-            "human": "There must exist a value.code 'disease'.",
-            "expression": "value.where(code = 'disease').exists()"
           }
         ],
         "mustSupport": false,
@@ -532,7 +518,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -545,27 +531,27 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
           }
         }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
-        "short": "A body site entity or a body site code.",
-        "definition": "A body site entity or a body site code.",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocationOrCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
           }
         ],
         "mustSupport": false,
@@ -779,7 +765,7 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model",
         "path": "oncology-BreastCancerPresenceStatement-model",
-        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.",
+        "definition": "FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.\n\nThe BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.\n\nCIMI Alignment (and question for reviewers): The Topic of this statement is 'Neoplasm of the breast', not 'Assertion', with the logic that the topic of the statement is more specific than 'Assertion'.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?",
         "min": 0,
         "max": "*",
         "base": {
@@ -801,7 +787,7 @@
           }
         ],
         "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "statementTopic"
         ],
@@ -814,7 +800,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionTopic-model"
+            "code": "BackboneElement"
           }
         ],
         "mustSupport": false,
@@ -825,65 +811,14 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-ConditionTopic-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "extensible",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
-          }
-        }
-      },
-      {
-        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
-        "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-ConditionTopic-model.topicCode",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-TopicCode-model.value",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
           "min": 1,
           "max": "1"
         },
@@ -903,6 +838,51 @@
         }
       },
       {
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "short": "Neoplasm of the breast",
+        "definition": "Neoplasm of the breast",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
         "representation": [
@@ -913,7 +893,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Element.id",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.id",
           "min": 0,
           "max": "1"
         },
@@ -952,7 +932,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Element.extension",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.extension",
           "min": 0,
           "max": "*"
         },
@@ -978,8 +958,8 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Coding.system",
-          "min": 0,
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.system",
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -987,7 +967,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://ncimeta.nci.nih.gov",
+        "fixedUri": "http://snomed.info/sct",
         "isSummary": true,
         "mapping": [
           {
@@ -1013,7 +993,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Coding.version",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.version",
           "min": 0,
           "max": "1"
         },
@@ -1047,8 +1027,8 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Coding.code",
-          "min": 0,
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.code",
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1056,7 +1036,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "C0348080",
+        "fixedCode": "126926005",
         "isSummary": true,
         "mapping": [
           {
@@ -1088,7 +1068,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Coding.display",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.display",
           "min": 0,
           "max": "1"
         },
@@ -1123,7 +1103,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Coding.userSelected",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -1156,7 +1136,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-ConditionTopic-model.findingMethod",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -1213,7 +1193,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-ConditionTopic-model.interpretation",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -1234,21 +1214,13 @@
         "min": 1,
         "max": "*",
         "base": {
-          "path": "cimi-ConditionTopic-model.category",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
           "min": 1,
           "max": "*"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "category-1",
-            "severity": "error",
-            "human": "There must exist a value.code 'disease'.",
-            "expression": "value.where(code = 'disease').exists()"
           }
         ],
         "mustSupport": false,
@@ -1266,7 +1238,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -1279,27 +1251,27 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
           }
         }
       },
       {
-        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
-        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.anatomicalLocationOrCode",
-        "short": "A body site entity or a body site code.",
-        "definition": "A body site entity or a body site code.",
+        "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
+          "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocationOrCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
           }
         ],
         "mustSupport": false,

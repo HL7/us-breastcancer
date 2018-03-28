@@ -44,7 +44,9 @@
         <td><a href="StructureDefinition-oncology-BreastCancerPresenceStatement-model.html">BreastCancerPresenceStatement</a></td>
         <td>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.
 
-The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</td>
+The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.
+
+CIMI Alignment (and question for reviewers): The Topic of this statement is &#039;Neoplasm of the breast&#039;, not &#039;Assertion&#039;, with the logic that the topic of the statement is more specific than &#039;Assertion&#039;.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-oncology-BreastCancerStage-model.html">BreastCancerStage</a></td>
@@ -156,10 +158,6 @@ The Prosigna Score is reported on a 0 -100 scale (referred to as ROR Score or Ri
         <td>A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.
 
 CIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-AnatomicalLocationOrCode-model.html">AnatomicalLocationOrCode</a></td>
-        <td>A body site entity or a body site code.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-ApplicableAgeRange-model.html">ApplicableAgeRange</a></td>
@@ -289,7 +287,9 @@ In CIMI terms, it is an archetype of ClinicalStatement that combines a Condition
         <td><a href="StructureDefinition-cimi-ConditionTopic-model.html">ConditionTopic</a></td>
         <td>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. 
 
-CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.</td>
+The value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.
+
+CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-Content-model.html">Content</a></td>
@@ -434,7 +434,7 @@ CIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, s
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-statement-LaboratoryTestResultRecorded-model.html">LaboratoryTestResultRecorded</a></td>
-        <td>Measurement resulting from a laboratory analysis.</td>
+        <td>Measurement resulting from a laboratory analysis. The category is fixed to &#039;laboratory&#039; to align with US-Core.</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-Laterality-model.html">Laterality</a></td>

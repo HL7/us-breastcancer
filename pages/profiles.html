@@ -49,7 +49,9 @@
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>FindingTopic or diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.
 
-The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.</td>
+The BreastCancerPresenceStatement is a subclass of ConditionPresenceStatement, which is a departure from CIMI. In CIMI, this would be a archetype of ClinicalStatement combining a BreastCancerConditionTopic with the ConditionPresenceContext. This would require definition of BreastCancerConditionTopic in the reference model, follwed by introduction of constraints on Value, Category, Stage, and MorphologyBehavior in the corresponding archetype.
+
+CIMI Alignment (and question for reviewers): The Topic of this statement is &#039;Neoplasm of the breast&#039;, not &#039;Assertion&#039;, with the logic that the topic of the statement is more specific than &#039;Assertion&#039;.  The result (the value) gives the particular type (histologic type) of the condition. Does this make sense?</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-BreastCancerStage.html">BreastCancerStage</a></td>
@@ -180,7 +182,7 @@ EvaluationResultRecorded has a value representing the result (answer), or an Exc
     <tr>
       <td><a href="StructureDefinition-cimi-statement-LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>Measurement resulting from a laboratory analysis.</td>
+      <td>Measurement resulting from a laboratory analysis. The category is fixed to &#039;laboratory&#039; to align with US-Core.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-shr-core-PercentageRange.html">PercentageRange</a></td>

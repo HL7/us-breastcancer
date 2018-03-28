@@ -20,7 +20,7 @@
   <script type="text/javascript">
   //<![CDATA[
 if (location.href.indexOf('is-external=true') == -1) {
-      parent.document.title = "LaboratoryTestResultRecorded (Java Platform SE 7 )";
+      parent.document.title = "LaboratoryTestResultRecorded";
     }
 //]]>
 </script>
@@ -61,7 +61,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">Measurement resulting from a laboratory analysis.</div>
+          <div class="block">Measurement resulting from a laboratory analysis. The category is fixed to &#39;laboratory&#39; to align with US-Core.</div>
         </dd>
       </dl>
       <dl>
@@ -154,6 +154,10 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <ul class="class_list">
                           <li>
+                <a href="../oncology/HER2byIHC.html">HER2byIHC</a>,&nbsp;              </li>
+                          <li>
+                <a href="../oncology/HER2byISH.html">HER2byISH</a>,&nbsp;              </li>
+                          <li>
                 <a href="../oncology/HER2ReceptorStatus.html">HER2ReceptorStatus</a>,&nbsp;              </li>
                           <li>
                 <a href="../cimi-statement/SimplifiedLaboratoryTestResultRecorded.html">SimplifiedLaboratoryTestResultRecorded</a>              </li>
@@ -206,7 +210,62 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..*</div>
             </td>
-</tr>            </table>                                            <ul class="blockList">
+</tr>            </table>                              <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
+  <tr>
+    <th class="colFirst" scope="col">Properties Constrained</th>
+    <th class="colMiddle">Constraint</th>
+    <th class="colLast">Value</th>
+    <!-- <th class="colLast" scope="col">Override Class</th> -->
+  </tr>
+      
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>DataType</strong></code>
+        
+          <div class="block">Constrained in <a href="../cimi-statement/EvaluationResultRecorded.html">EvaluationResultRecorded</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">
+            
+                          <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a>
+                        
+          </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">EvaluationResultRecorded</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Category.CodeableConcept</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Fixed Value</strong></code>
+        
+          <div class="block">Constrained in <a href="../cimi-statement/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">http://hl7.org/fhir/observation-category (code: laboratory)</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">LaboratoryTestResultRecorded</div>
+      </td> -->
+    </tr>
+  </table>                                            <ul class="blockList">
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;

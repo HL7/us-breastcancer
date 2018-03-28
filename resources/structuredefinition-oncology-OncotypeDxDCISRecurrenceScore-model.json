@@ -1030,41 +1030,16 @@
         "path": "oncology-OncotypeDxDCISRecurrenceScore-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
         "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "oncology-OncotypeDxDCISRecurrenceScore-model.members",
-          "min": 1,
-          "max": "1"
+          "min": 0,
+          "max": "0"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-OncotypeDxDCISRecurrenceScore-model.members.value",
-        "path": "oncology-OncotypeDxDCISRecurrenceScore-model.members.value",
-        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
-        "alias": [
-          "evaluationResultRecorded"
-        ],
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "cimi-statement-Members-model.value",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded-model"
           }
         ],
         "mustSupport": false,
@@ -2355,41 +2330,16 @@
         "path": "oncology-OncotypeDxDCISRecurrenceScore-model.members",
         "short": "Members represent the elements of a group of a related but independent evaluations.",
         "definition": "Members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "oncology-OncotypeDxDCISRecurrenceScore-model.members",
-          "min": 1,
-          "max": "1"
+          "min": 0,
+          "max": "0"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Members-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "oncology-OncotypeDxDCISRecurrenceScore-model.members.value",
-        "path": "oncology-OncotypeDxDCISRecurrenceScore-model.members.value",
-        "short": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations.",
-        "definition": "EvaluationResultRecorded representing members represent the elements of a group of a related but independent evaluations. \n\t\t\n\t\tExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.\n\t\t\n\t\tCIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).",
-        "alias": [
-          "evaluationResultRecorded"
-        ],
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "cimi-statement-Members-model.value",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded-model"
           }
         ],
         "mustSupport": false,

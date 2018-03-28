@@ -3,7 +3,7 @@
   "id": "oncology-BreastCancerTypeCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerTypeCS CodeSystem</b></p>\n<p>Histologic types of breast cancer. Codes are drawn from ICD-O-3.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerTypeCS CodeSystem</b></p>\n<p>Histologic types of breast cancer. Codes are drawn from ICD-O-3. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/oncology-BreastCancerTypeCS",
   "identifier": {
@@ -25,7 +25,7 @@
     }
   ],
   "date": "2018-03-28",
-  "description": "Histologic types of breast cancer. Codes are drawn from ICD-O-3.",
+  "description": "Histologic types of breast cancer. Codes are drawn from ICD-O-3. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.",
   "caseSensitive": true,
   "content": "complete",
   "count": 45,

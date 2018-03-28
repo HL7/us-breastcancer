@@ -83,7 +83,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-LateralityVS"
+            "reference": "http://hl7.org/fhir/ValueSet/bodysite-laterality"
           }
         }
       }
@@ -132,7 +132,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-LateralityVS"
+            "reference": "http://hl7.org/fhir/ValueSet/bodysite-laterality"
           }
         }
       }

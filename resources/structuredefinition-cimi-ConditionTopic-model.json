@@ -3,7 +3,7 @@
   "id": "cimi-ConditionTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionTopic Logical Model</b></p>\n  <p>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionTopic Logical Model</b></p>\n  <p>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionTopic-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+  "description": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-ConditionTopic-model",
         "path": "cimi-ConditionTopic-model",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,7 +60,7 @@
         "id": "cimi-ConditionTopic-model.value",
         "path": "cimi-ConditionTopic-model.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -470,27 +470,33 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
           }
         }
       },
       {
-        "id": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
-        "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
-        "short": "A body site entity or a body site code.",
-        "definition": "A body site entity or a body site code.",
+        "id": "cimi-ConditionTopic-model.anatomicalLocation",
+        "path": "cimi-ConditionTopic-model.anatomicalLocation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1545955"
+          }
+        ],
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
+          "path": "cimi-ConditionTopic-model.anatomicalLocation",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocationOrCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -504,7 +510,7 @@
       {
         "id": "cimi-ConditionTopic-model",
         "path": "cimi-ConditionTopic-model",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "min": 0,
         "max": "*",
         "base": {
@@ -520,7 +526,7 @@
         "id": "cimi-ConditionTopic-model.value",
         "path": "cimi-ConditionTopic-model.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. The value set binding of Value is required to map to US-Core.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -930,27 +936,33 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
           }
         }
       },
       {
-        "id": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
-        "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
-        "short": "A body site entity or a body site code.",
-        "definition": "A body site entity or a body site code.",
+        "id": "cimi-ConditionTopic-model.anatomicalLocation",
+        "path": "cimi-ConditionTopic-model.anatomicalLocation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1545955"
+          }
+        ],
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.\n\nCIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This appears to have been an oversight, and the parent should have been Entity, as modeled here.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-ConditionTopic-model.anatomicalLocationOrCode",
+          "path": "cimi-ConditionTopic-model.anatomicalLocation",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocationOrCode-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,

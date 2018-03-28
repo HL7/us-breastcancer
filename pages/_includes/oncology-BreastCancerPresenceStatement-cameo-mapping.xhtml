@@ -10,7 +10,7 @@ oncology.BreastCancerPresenceStatement maps to http://hl7.org/fhir/us/core/Struc
   ConditionPresenceContext.VerificationStatus maps to verificationStatus
   ConditionPresenceContext.Onset maps to onset[x]
   ConditionPresenceContext.Abatement maps to abatement[x]
-  ConditionTopic.AnatomicalLocationOrCode maps to bodySite 
+  constrain bodySite to 0..0
   ConditionPresenceContext.Severity maps to severity
   Stage maps to stage
   Stage.CodeableConcept maps to stage.summary
