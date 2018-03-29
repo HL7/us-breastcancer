@@ -30,8 +30,9 @@
   "description": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
   "keyword": [
     {
-      "system": "http://loinc.org",
-      "code": "21908-9"
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C2216702",
+      "display": "Malignant Neoplasm of Breast Staging"
     }
   ],
   "kind": "logical",
@@ -134,8 +135,8 @@
       {
         "id": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode.value",
         "path": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "short": "Malignant Neoplasm of Breast Staging",
+        "definition": "Malignant Neoplasm of Breast Staging",
         "alias": [
           "codeableConcept"
         ],
@@ -240,7 +241,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://loinc.org",
+        "fixedUri": "http://ncimeta.nci.nih.gov",
         "isSummary": true,
         "mapping": [
           {
@@ -309,7 +310,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "21908-9",
+        "fixedCode": "C2216702",
         "isSummary": true,
         "mapping": [
           {
@@ -960,8 +961,8 @@
             "display": "Timing of stage"
           }
         ],
-        "short": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "short": "Indicates when the staging was done, in terms of treatment landmarks.",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1075,8 +1076,8 @@
       {
         "id": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode.value",
         "path": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "short": "Malignant Neoplasm of Breast Staging",
+        "definition": "Malignant Neoplasm of Breast Staging",
         "alias": [
           "codeableConcept"
         ],
@@ -1181,7 +1182,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://loinc.org",
+        "fixedUri": "http://ncimeta.nci.nih.gov",
         "isSummary": true,
         "mapping": [
           {
@@ -1250,7 +1251,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "21908-9",
+        "fixedCode": "C2216702",
         "isSummary": true,
         "mapping": [
           {
@@ -1901,8 +1902,8 @@
             "display": "Timing of stage"
           }
         ],
-        "short": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
-        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "short": "Indicates when the staging was done, in terms of treatment landmarks.",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks.",
         "min": 0,
         "max": "1",
         "base": {

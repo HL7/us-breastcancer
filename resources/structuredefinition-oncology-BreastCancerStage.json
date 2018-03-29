@@ -408,7 +408,7 @@
       {
         "id": "Observation:oncology-BreastCancerStage.extension:stagetimingprefix",
         "path": "Observation.extension",
-        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks.",
         "min": 0,
         "max": "1",
         "type": [
@@ -839,10 +839,11 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702",
         "path": "Observation.code.coding",
-        "sliceName": "Fixed_21908-9",
-        "definition": "A reference to a code defined by a terminology system.",
+        "sliceName": "Fixed_C2216702",
+        "short": "Malignant Neoplasm of Breast Staging",
+        "definition": "Malignant Neoplasm of Breast Staging",
         "min": 1,
         "max": "1",
         "type": [
@@ -853,7 +854,7 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.id",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.id",
         "path": "Observation.code.coding.id",
         "representation": [
           "xmlAttr"
@@ -880,7 +881,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.extension",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.extension",
         "path": "Observation.code.coding.extension",
         "slicing": {
           "discriminator": [
@@ -919,7 +920,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.system",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.system",
         "path": "Observation.code.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -947,10 +948,10 @@
             "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
           }
         ],
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://ncimeta.nci.nih.gov"
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.version",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.version",
         "path": "Observation.code.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -979,7 +980,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.code",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.code",
         "path": "Observation.code.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -1006,10 +1007,10 @@
             "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
           }
         ],
-        "fixedCode": "21908-9"
+        "fixedCode": "C2216702"
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.display",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1044,7 +1045,7 @@
         ]
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.userSelected",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.userSelected",
         "path": "Observation.code.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -6087,7 +6088,7 @@
       {
         "id": "Observation:oncology-BreastCancerStage.extension:stagetimingprefix",
         "path": "Observation.extension",
-        "definition": "Indicates when the staging was done, in terms of treatment landmarks, either clinical (at diagnosis prior to treatment) (c), pathologic (post-surgical) (p), post-neoadjuvant clinical (yc), or post-neoadjuvant pathologic(yp). The stage timing code is prefixed on the N stage. For example, for post-neoadjuvant clinical staging, the N categories are preceded by 'yc' (e.g. ycNX)",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks.",
         "min": 0,
         "max": "1",
         "type": [
@@ -6135,10 +6136,11 @@
         }
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702",
         "path": "Observation.code.coding",
-        "sliceName": "Fixed_21908-9",
-        "definition": "A reference to a code defined by a terminology system.",
+        "sliceName": "Fixed_C2216702",
+        "short": "Malignant Neoplasm of Breast Staging",
+        "definition": "Malignant Neoplasm of Breast Staging",
         "min": 1,
         "max": "1",
         "type": [
@@ -6149,14 +6151,14 @@
         "isSummary": true
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.system",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.system",
         "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://ncimeta.nci.nih.gov"
       },
       {
-        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_21908-9.code",
+        "id": "Observation:oncology-BreastCancerStage.code.coding:Fixed_C2216702.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "21908-9"
+        "fixedCode": "C2216702"
       },
       {
         "id": "Observation:oncology-BreastCancerStage.valueCodeableConcept",

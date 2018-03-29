@@ -680,8 +680,9 @@
         "path": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail.value",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "21908-9"
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C2216702",
+            "display": "Malignant Neoplasm of Breast Staging"
           }
         ],
         "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
@@ -1400,8 +1401,9 @@
         "path": "oncology-BreastCancerPresenceStatement-model.stage.stageDetail.value",
         "code": [
           {
-            "system": "http://loinc.org",
-            "code": "21908-9"
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C2216702",
+            "display": "Malignant Neoplasm of Breast Staging"
           }
         ],
         "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
