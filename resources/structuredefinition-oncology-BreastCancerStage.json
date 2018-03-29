@@ -3,12 +3,12 @@
   "id": "oncology-BreastCancerStage",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerStage Profile</b></p>\n  <p>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerStage Profile</b></p>\n  <p>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>oncology.BreastCancerStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  EvaluationResultTopic.Category maps to category\n  EvaluationResultTopic.FindingMethod maps to method\n  EvaluationResultTopic.Quantity maps to value[x]\n  EvaluationResultTopic.CodeableConcept maps to value[x]\n  EvaluationResultTopic.string maps to value[x]\n  EvaluationResultTopic.boolean maps to value[x]\n  EvaluationResultTopic.Range maps to value[x]\n  EvaluationResultTopic.Ratio maps to value[x]\n  EvaluationResultTopic.time maps to value[x]\n  EvaluationResultTopic.dateTime maps to value[x]\n  EvaluationResultTopic.TimePeriod maps to value[x]\n  EvaluationResultTopic.TopicCode maps to code\n  EvaluationResultTopic.AnatomicalLocation maps to bodySite\n  EvaluationResultTopic.Specimen maps to specimen\n  EvaluationResultTopic.Interpretation maps to interpretation\n  RecordedContext.RelevantTime maps to effective[x]\n  RecordedContext.FindingStatus maps to status\n  RecordedContext.ExceptionValue maps to dataAbsentReason\n  EvaluationResultTopic.ReferenceRange maps to referenceRange\n  EvaluationResultTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  EvaluationResultTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  EvaluationResultTopic.ReferenceRange.Type maps to referenceRange.type\n  EvaluationResultTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  EvaluationResultTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  fix related.type to #has-member\n  EvaluationResultTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationResultTopic.EvaluationComponent._Concept maps to component.code\n  EvaluationResultTopic.EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.string maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Range maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.time maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationResultTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationResultTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationResultTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  Members.EvaluationResultRecorded maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStage",
   "name": "BreastCancerStageProfile",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -80,7 +80,7 @@
         "id": "Observation:oncology-BreastCancerStage",
         "path": "Observation",
         "short": "BC BreastCancerStage Profile",
-        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -1504,7 +1504,7 @@
         "definition": "Indicates the site on the subject's body where the observation was made (i.e. the target site).",
         "comment": "Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.   If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension[ body-site-instance](extension-body-site-instance.html).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.bodySite",
           "min": 0,
@@ -1583,7 +1583,7 @@
         "definition": "The specimen that was used when this observation was made.",
         "comment": "Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.specimen",
           "min": 0,
@@ -1664,7 +1664,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.referenceRange",
           "min": 0,
@@ -2453,7 +2453,7 @@
         "id": "Observation:oncology-BreastCancerStage.related:oncology-ProgesteroneReceptorStatus",
         "path": "Observation.related",
         "short": "ProgesteroneReceptorStatus",
-        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. \n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
+        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": 0,
         "max": "1",
         "base": {
@@ -6067,7 +6067,7 @@
         "id": "Observation:oncology-BreastCancerStage",
         "path": "Observation",
         "short": "BC BreastCancerStage Profile",
-        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
         "mustSupport": false
       },
       {
@@ -6180,6 +6180,8 @@
       {
         "id": "Observation:oncology-BreastCancerStage.bodySite",
         "path": "Observation.bodySite",
+        "min": 0,
+        "max": "0",
         "binding": {
           "strength": "required",
           "valueSetReference": {
@@ -6200,6 +6202,8 @@
       {
         "id": "Observation:oncology-BreastCancerStage.specimen",
         "path": "Observation.specimen",
+        "min": 0,
+        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -6209,7 +6213,9 @@
       },
       {
         "id": "Observation:oncology-BreastCancerStage.referenceRange",
-        "path": "Observation.referenceRange"
+        "path": "Observation.referenceRange",
+        "min": 0,
+        "max": "0"
       },
       {
         "id": "Observation:oncology-BreastCancerStage.referenceRange.low",
@@ -6326,7 +6332,7 @@
         "path": "Observation.related",
         "sliceName": "oncology-ProgesteroneReceptorStatus",
         "short": "ProgesteroneReceptorStatus",
-        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. \n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
+        "definition": "Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity.\n\nBased on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.\n\nWe are seeking feedback if it is better to put the positive/negative status in Value or Interpretation. The current approach is that positive/negative designation is a value, even though that value is (in fact) an interpretation of evidence (NuclearPositivity and AverageStainingIntensity).",
         "min": 0,
         "max": "1"
       },
@@ -6651,5 +6657,5 @@
     }
   ],
   "title": "BC BreastCancerStage Profile",
-  "description": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set."
+  "description": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class."
 }

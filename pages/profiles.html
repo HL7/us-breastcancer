@@ -56,7 +56,7 @@ CIMI Alignment (and question for reviewers): The Topic of this statement is &#03
     <tr>
       <td><a href="StructureDefinition-oncology-BreastCancerStage.html">BreastCancerStage</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.</td>
+      <td>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-BreastSite.html">BreastSite</a></td>
@@ -111,19 +111,19 @@ The is currently no LOINC code for Mammaprint test.</td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>The Oncotype DX test for DCIS (Ductal Carcinoma in Situ) breast cancer. Risk scores range from 0 to 100 with the following interpretations: 0-38: Low-Risk, 39-54: Intermediate-Risk, 55+: High-Risk.
 
-No LOINC code currently exists for this test.</td>
+No LOINC code currently exists for this test. We are seeking feedback on the value of separating OncotypeDx scores for DCIS and invasive breast carcinomas. Does it make more sense to report the OncotypeDx as a single score, regardless of the type of cancer?</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-OncotypeDxInvasiveRecurrenceScore.html">OncotypeDxInvasiveRecurrenceScore</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>The Oncotype DX test for invasive breast cancer examines the activity of 21 genes in a patient’s breast tumor tissue to provide personalized information for tailoring treatment based on the biology of their individual disease. The value from 0 to 100 indicates the estimated risk of recurrence, with the highest risk indicated by a score greater than 31.
 
-No LOINC code currently exists for this test.</td>
+No LOINC code currently exists for this test. We are seeking feedback on the value of separating OncotypeDx scores for DCIS and invasive breast carcinomas. Does it make more sense to report the OncotypeDx as a single score, regardless of the type of cancer?</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-oncology-ProgesteroneReceptorStatus.html">ProgesteroneReceptorStatus</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. 
+      <td>Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity.
 
 Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
 
@@ -207,7 +207,7 @@ EvaluationResultRecorded has a value representing the result (answer), or an Exc
     <tr>
       <td><a href="StructureDefinition-cimi-Specimen.html">Specimen</a></td>
       <td><a href="http://hl7.org/fhir/STU3/specimen.html">Specimen</a></td>
-      <td>A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. 
+      <td>A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.
 
 CIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.</td>
     </tr>

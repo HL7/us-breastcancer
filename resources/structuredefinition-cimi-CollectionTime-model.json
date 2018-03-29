@@ -3,7 +3,7 @@
   "id": "cimi-CollectionTime-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC CollectionTime Logical Model</b></p>\n  <p>When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC CollectionTime Logical Model</b></p>\n  <p>When the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-CollectionTime-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "CollectionTimeModel",
   "title": "BC CollectionTime Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+  "description": "When the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-CollectionTime-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-CollectionTime-model",
         "path": "cimi-CollectionTime-model",
-        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "When the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "min": 0,
         "max": "*",
         "base": {
@@ -54,7 +54,7 @@
         "id": "cimi-CollectionTime-model.value[x]",
         "path": "cimi-CollectionTime-model.value[x]",
         "short": "DateTime or TimePeriod representing when the sample was obtained, as a specific time or time period.",
-        "definition": "DateTime or TimePeriod representing when the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "DateTime or TimePeriod representing when the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "alias": [
           "dateTime",
           "timePeriod"
@@ -85,7 +85,7 @@
       {
         "id": "cimi-CollectionTime-model",
         "path": "cimi-CollectionTime-model",
-        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "When the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "min": 0,
         "max": "*",
         "base": {
@@ -101,7 +101,7 @@
         "id": "cimi-CollectionTime-model.value[x]",
         "path": "cimi-CollectionTime-model.value[x]",
         "short": "DateTime or TimePeriod representing when the sample was obtained, as a specific time or time period.",
-        "definition": "DateTime or TimePeriod representing when the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "DateTime or TimePeriod representing when the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "alias": [
           "dateTime",
           "timePeriod"

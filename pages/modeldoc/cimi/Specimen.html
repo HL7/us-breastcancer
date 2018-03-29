@@ -61,7 +61,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. 
+          <div class="block">A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.
 
 CIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.</div>
         </dd>
@@ -170,8 +170,8 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
     
     </div>
     <div class="block">Identifier for the source specimen from which this specimen was derived.
-		
-		CIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.</div>
+
+CIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -220,8 +220,8 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
     
     </div>
     <div class="block">When the sample was obtained, as a specific time or time period.
-		
-		CIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</div>
+
+CIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

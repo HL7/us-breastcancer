@@ -61,7 +61,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer). 
+          <div class="block">The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer).
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
 
@@ -416,7 +416,7 @@ CIMI Alignment: In CIMI V0.0.4, AnatomicalLocation has no parent class. This app
       <code><strong><a href="../cimi/Specimen.html">Specimen</a></strong></code>
     
     </div>
-    <div class="block">A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. 
+    <div class="block">A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.
 
 CIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.</div>
   </td>
@@ -466,9 +466,9 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
       <code><strong><a href="../cimi/Precondition.html">Precondition</a></strong></code>
     
     </div>
-    <div class="block">A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise. 
-		
-		Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</div>
+    <div class="block">A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise.
+
+Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -516,9 +516,9 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
       <code><strong><a href="../cimi/EvaluationComponent.html">EvaluationComponent</a></strong></code>
     
     </div>
-    <div class="block">A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. 
-		
-		The subject of the evaluation component is the same as in the parent evaluation.</div>
+    <div class="block">A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.
+
+The subject of the evaluation component is the same as in the parent evaluation.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

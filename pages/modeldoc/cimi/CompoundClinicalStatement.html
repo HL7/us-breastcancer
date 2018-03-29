@@ -61,7 +61,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">A CompoundClinicalStatement is a clinical statement representing a collection of independent clinical statements. 
+          <div class="block">A CompoundClinicalStatement is a clinical statement representing a collection of independent clinical statements.
 
 Each statement within a compound clinical statement may exist outside of the context of the compound clinical statement without any alteration to its meaning. An example is a Panel. Note that complex medications are indivisible clinical statements even though their structure may be a composite data structure. They are generally treated as an independent entry in a record and their parts do not constitute independent entries in a record.</div>
         </dd>
@@ -159,7 +159,7 @@ Each statement within a compound clinical statement may exist outside of the con
       <code><strong><a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></strong></code>
     
     </div>
-    <div class="block">A special type of information entry consisting of a topic and a context. 
+    <div class="block">A special type of information entry consisting of a topic and a context.
 
 The ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.</div>
   </td>

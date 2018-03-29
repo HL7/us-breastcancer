@@ -3,7 +3,7 @@
   "id": "cimi-ConditionTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionTopic Logical Model</b></p>\n  <p>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionTopic Logical Model</b></p>\n  <p>Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-ConditionTopic-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "ConditionTopicModel",
   "title": "BC ConditionTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+  "description": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-ConditionTopic-model",
         "path": "cimi-ConditionTopic-model",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,7 +60,7 @@
         "id": "cimi-ConditionTopic-model.value",
         "path": "cimi-ConditionTopic-model.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -90,7 +90,7 @@
         "id": "cimi-ConditionTopic-model.topicCode",
         "path": "cimi-ConditionTopic-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -111,7 +111,7 @@
         "id": "cimi-ConditionTopic-model.topicCode.value",
         "path": "cimi-ConditionTopic-model.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
           "codeableConcept"
         ],
@@ -381,7 +381,7 @@
         "id": "cimi-ConditionTopic-model.findingMethod",
         "path": "cimi-ConditionTopic-model.findingMethod",
         "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -408,7 +408,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -472,7 +472,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
           }
         }
       },
@@ -510,7 +510,7 @@
       {
         "id": "cimi-ConditionTopic-model",
         "path": "cimi-ConditionTopic-model",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "min": 0,
         "max": "*",
         "base": {
@@ -526,7 +526,7 @@
         "id": "cimi-ConditionTopic-model.value",
         "path": "cimi-ConditionTopic-model.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -556,7 +556,7 @@
         "id": "cimi-ConditionTopic-model.topicCode",
         "path": "cimi-ConditionTopic-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -577,7 +577,7 @@
         "id": "cimi-ConditionTopic-model.topicCode.value",
         "path": "cimi-ConditionTopic-model.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "alias": [
           "codeableConcept"
         ],
@@ -847,7 +847,7 @@
         "id": "cimi-ConditionTopic-model.findingMethod",
         "path": "cimi-ConditionTopic-model.findingMethod",
         "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -874,7 +874,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -938,7 +938,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
           }
         }
       },

@@ -145,74 +145,6 @@
       "base": "StructureDefinition-oncology-StageTimingPrefix-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/primitive-base64Binary-extension": {
-      "base": "StructureDefinition-primitive-base64Binary-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-boolean-extension": {
-      "base": "StructureDefinition-primitive-boolean-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-code-extension": {
-      "base": "StructureDefinition-primitive-code-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-date-extension": {
-      "base": "StructureDefinition-primitive-date-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-dateTime-extension": {
-      "base": "StructureDefinition-primitive-dateTime-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-decimal-extension": {
-      "base": "StructureDefinition-primitive-decimal-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-id-extension": {
-      "base": "StructureDefinition-primitive-id-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-instant-extension": {
-      "base": "StructureDefinition-primitive-instant-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-integer-extension": {
-      "base": "StructureDefinition-primitive-integer-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-markdown-extension": {
-      "base": "StructureDefinition-primitive-markdown-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-oid-extension": {
-      "base": "StructureDefinition-primitive-oid-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-positiveInt-extension": {
-      "base": "StructureDefinition-primitive-positiveInt-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-string-extension": {
-      "base": "StructureDefinition-primitive-string-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-time-extension": {
-      "base": "StructureDefinition-primitive-time-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-unsignedInt-extension": {
-      "base": "StructureDefinition-primitive-unsignedInt-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-uri-extension": {
-      "base": "StructureDefinition-primitive-uri-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-xhtml-extension": {
-      "base": "StructureDefinition-primitive-xhtml-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "ValueSet/cimi-AnatomicalDirectionVS": {
       "base": "ValueSet-cimi-AnatomicalDirectionVS.html"
     },
@@ -257,12 +189,6 @@
     },
     "ValueSet/oncology-HER2byIHCScoreVS": {
       "base": "ValueSet-oncology-HER2byIHCScoreVS.html"
-    },
-    "ValueSet/cimi-LateralityVS": {
-      "base": "ValueSet-cimi-LateralityVS.html"
-    },
-    "ValueSet/oncology-LeftRightLateralityVS": {
-      "base": "ValueSet-oncology-LeftRightLateralityVS.html"
     },
     "ValueSet/oncology-MammaprintRiskScoreInterpretationVS": {
       "base": "ValueSet-oncology-MammaprintRiskScoreInterpretationVS.html"
@@ -344,9 +270,6 @@
     },
     "CodeSystem/oncology-HER2StatusCS": {
       "base": "CodeSystem-oncology-HER2StatusCS.html"
-    },
-    "CodeSystem/cimi-LateralityCS": {
-      "base": "CodeSystem-cimi-LateralityCS.html"
     },
     "CodeSystem/oncology-MammaprintRiskScoreInterpretationCS": {
       "base": "CodeSystem-oncology-MammaprintRiskScoreInterpretationCS.html"

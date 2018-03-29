@@ -3,7 +3,7 @@
   "id": "cimi-FindingStatus-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingStatus Logical Model</b></p>\n  <p>Indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingStatus Logical Model</b></p>\n  <p>Indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingStatus-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "FindingStatusModel",
   "title": "BC FindingStatus Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+  "description": "Indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-FindingStatus-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-FindingStatus-model",
         "path": "cimi-FindingStatus-model",
-        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
         "min": 0,
         "max": "*",
         "base": {
@@ -54,7 +54,7 @@
         "id": "cimi-FindingStatus-model.value",
         "path": "cimi-FindingStatus-model.value",
         "short": "Code representing indicates whether the finding is preliminary, amended, final, etc..",
-        "definition": "Code representing indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+        "definition": "Code representing indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
         "alias": [
           "code"
         ],
@@ -87,7 +87,7 @@
       {
         "id": "cimi-FindingStatus-model",
         "path": "cimi-FindingStatus-model",
-        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
         "min": 0,
         "max": "*",
         "base": {
@@ -103,7 +103,7 @@
         "id": "cimi-FindingStatus-model.value",
         "path": "cimi-FindingStatus-model.value",
         "short": "Code representing indicates whether the finding is preliminary, amended, final, etc..",
-        "definition": "Code representing indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+        "definition": "Code representing indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
         "alias": [
           "code"
         ],

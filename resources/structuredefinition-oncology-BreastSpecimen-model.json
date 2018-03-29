@@ -15,7 +15,7 @@
   "name": "BreastSpecimenModel",
   "title": "BC BreastSpecimen Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -111,7 +111,7 @@
         "id": "oncology-BreastSpecimen-model.sourceSpecimen",
         "path": "oncology-BreastSpecimen-model.sourceSpecimen",
         "short": "Identifier for the source specimen from which this specimen was derived.",
-        "definition": "Identifier for the source specimen from which this specimen was derived.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
+        "definition": "Identifier for the source specimen from which this specimen was derived.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
         "min": 0,
         "max": "1",
         "base": {
@@ -185,7 +185,7 @@
         "id": "oncology-BreastSpecimen-model.collectionTime",
         "path": "oncology-BreastSpecimen-model.collectionTime",
         "short": "When the sample was obtained, as a specific time or time period.",
-        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "When the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "min": 0,
         "max": "1",
         "base": {
@@ -309,7 +309,7 @@
           }
         ],
         "short": "The time period between the chilling of a tissue or tissue sample and the time it is warmed.",
-        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
+        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed.\n\nCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
         "min": 0,
         "max": "1",
         "base": {
@@ -406,7 +406,7 @@
         "id": "oncology-BreastSpecimen-model.sourceSpecimen",
         "path": "oncology-BreastSpecimen-model.sourceSpecimen",
         "short": "Identifier for the source specimen from which this specimen was derived.",
-        "definition": "Identifier for the source specimen from which this specimen was derived.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
+        "definition": "Identifier for the source specimen from which this specimen was derived.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.",
         "min": 0,
         "max": "1",
         "base": {
@@ -480,7 +480,7 @@
         "id": "oncology-BreastSpecimen-model.collectionTime",
         "path": "oncology-BreastSpecimen-model.collectionTime",
         "short": "When the sample was obtained, as a specific time or time period.",
-        "definition": "When the sample was obtained, as a specific time or time period.\n\t\t\n\t\tCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
+        "definition": "When the sample was obtained, as a specific time or time period.\n\nCIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.",
         "min": 0,
         "max": "1",
         "base": {
@@ -604,7 +604,7 @@
           }
         ],
         "short": "The time period between the chilling of a tissue or tissue sample and the time it is warmed.",
-        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed. \n\t\t\n\t\tCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
+        "definition": "The time period between the chilling of a tissue or tissue sample and the time it is warmed.\n\nCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
         "min": 0,
         "max": "1",
         "base": {

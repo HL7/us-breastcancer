@@ -3,7 +3,7 @@
   "id": "cimi-FindingTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingTopic Logical Model</b></p>\n  <p>Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingTopic Logical Model</b></p>\n  <p>Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-FindingTopic-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "FindingTopicModel",
   "title": "BC FindingTopic Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
+  "description": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-FindingTopic-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-FindingTopic-model",
         "path": "cimi-FindingTopic-model",
-        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
+        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
         "min": 0,
         "max": "*",
         "base": {
@@ -54,7 +54,7 @@
         "id": "cimi-FindingTopic-model.topicCode",
         "path": "cimi-FindingTopic-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -75,7 +75,7 @@
         "id": "cimi-FindingTopic-model.findingMethod",
         "path": "cimi-FindingTopic-model.findingMethod",
         "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -102,7 +102,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -126,7 +126,7 @@
       {
         "id": "cimi-FindingTopic-model",
         "path": "cimi-FindingTopic-model",
-        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. \n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
+        "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\n\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.\n\nCIMI Alignment: In CIMI V0.0.4, FindingTopic has four attributes: result, description, multimedia, and intepretation. Here, result is represented by EvaluationResultTopic.Value and AssertionTopic.Value. Description and Multimedia have been omitted for brevity.",
         "min": 0,
         "max": "*",
         "base": {
@@ -142,7 +142,7 @@
         "id": "cimi-FindingTopic-model.topicCode",
         "path": "cimi-FindingTopic-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -163,7 +163,7 @@
         "id": "cimi-FindingTopic-model.findingMethod",
         "path": "cimi-FindingTopic-model.findingMethod",
         "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -190,7 +190,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {

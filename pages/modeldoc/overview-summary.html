@@ -262,7 +262,7 @@ CIMI Alignment (and question for reviewers): The Topic of this statement is &#39
           <a href="oncology/BreastCancerStage.html">BreastCancerStage</a>
         </td>
         <td class="colLast">
-          <div class="block">The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.</div>
+          <div class="block">The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.</div>
         </td>
       </tr>
       
@@ -303,8 +303,8 @@ CIMI Alignment (and question for reviewers): The Topic of this statement is &#39
         </td>
         <td class="colLast">
           <div class="block">The degree of confidence in a conclusion or assertion.
-			
-			CIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.</div>
+
+CIMI Alignment: This attribute aligns with KnownOrSuspectedPresent.certainty in CIMI V0.0.4, but with the recent realignment of CIMI classes, this attribute is attached to the correct class, PresenceContext.</div>
         </td>
       </tr>
       
@@ -314,7 +314,7 @@ CIMI Alignment (and question for reviewers): The Topic of this statement is &#39
           <a href="cimi/ClinicalStatement.html">ClinicalStatement</a>
         </td>
         <td class="colLast">
-          <div class="block">A special type of information entry consisting of a topic and a context. 
+          <div class="block">A special type of information entry consisting of a topic and a context.
 
 The ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.</div>
         </td>
@@ -327,8 +327,8 @@ The ClinicalStatement class provides the core pattern for more specific clinical
         </td>
         <td class="colLast">
           <div class="block">A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).
-			
-			CIMI Alignment: This attribute corresponds to FindingContext.status, but has been changed to better align with FHIR.</div>
+
+CIMI Alignment: This attribute corresponds to FindingContext.status, but has been changed to better align with FHIR.</div>
         </td>
       </tr>
       
@@ -390,9 +390,9 @@ A corresponding type does not exist in CIMI V0.0.4. Complex data types that appe
           <a href="oncology/ColdIschemiaTime.html">ColdIschemiaTime</a>
         </td>
         <td class="colLast">
-          <div class="block">The time period between the chilling of a tissue or tissue sample and the time it is warmed. 
-		
-		CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a &#39;SpecimenProcessingPerformed&#39; clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.</div>
+          <div class="block">The time period between the chilling of a tissue or tissue sample and the time it is warmed.
+
+CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a &#39;SpecimenProcessingPerformed&#39; clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.</div>
         </td>
       </tr>
       
@@ -423,8 +423,8 @@ A corresponding type does not exist in CIMI V0.0.4. Complex data types that appe
         </td>
         <td class="colLast">
           <div class="block">When the sample was obtained, as a specific time or time period.
-		
-		CIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</div>
+
+CIMI Alignment: Specimen collection time seems to be missing in CIMI V0.0.4. The time may be in the CollectionProcedure, but if the specimen collection time is recorded in Performance.Attribution (a list of actions), it would be nearly impossible to create a mapping.</div>
         </td>
       </tr>
       
@@ -454,7 +454,7 @@ A corresponding type does not exist in CIMI V0.0.4. Complex data types that appe
           <a href="cimi/CompoundClinicalStatement.html">CompoundClinicalStatement</a>
         </td>
         <td class="colLast">
-          <div class="block">A CompoundClinicalStatement is a clinical statement representing a collection of independent clinical statements. 
+          <div class="block">A CompoundClinicalStatement is a clinical statement representing a collection of independent clinical statements.
 
 Each statement within a compound clinical statement may exist outside of the context of the compound clinical statement without any alteration to its meaning. An example is a Panel. Note that complex medications are indivisible clinical statements even though their structure may be a composite data structure. They are generally treated as an independent entry in a record and their parts do not constitute independent entries in a record.</div>
         </td>
@@ -490,11 +490,11 @@ In CIMI terms, it is an archetype of ClinicalStatement that combines a Condition
           <a href="cimi/ConditionTopic.html">ConditionTopic</a>
         </td>
         <td class="colLast">
-          <div class="block">Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#39;Condition&#39; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. 
+          <div class="block">Representation of a condition, independent of context of being present, absent, risk, expectation etc. &#39;Condition&#39; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.
 
 The value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.
 
-CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext. </div>
+CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.</div>
         </td>
       </tr>
       
@@ -514,11 +514,11 @@ CIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CI
           <a href="cimi/ContextCode.html">ContextCode</a>
         </td>
         <td class="colLast">
-          <div class="block">A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. 
-		
-		Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: &#39;Finding context (attribute)&#39; (SCTID: 408729009) and &#39;Procedure context (attribute)&#39; (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.
-		
-		CIMI Alignment: ContextCode is the new CIMI name for the attribute formerly called &#39;type&#39; in CIMI V0.0.4.</div>
+          <div class="block">A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.
+
+Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: &#39;Finding context (attribute)&#39; (SCTID: 408729009) and &#39;Procedure context (attribute)&#39; (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.
+
+CIMI Alignment: ContextCode is the new CIMI name for the attribute formerly called &#39;type&#39; in CIMI V0.0.4.</div>
         </td>
       </tr>
       
@@ -642,9 +642,9 @@ We are seeking feedback if it is better to put the positive/negative status in V
           <a href="cimi/EvaluationComponent.html">EvaluationComponent</a>
         </td>
         <td class="colLast">
-          <div class="block">A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. 
-		
-		The subject of the evaluation component is the same as in the parent evaluation.</div>
+          <div class="block">A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.
+
+The subject of the evaluation component is the same as in the parent evaluation.</div>
         </td>
       </tr>
       
@@ -678,7 +678,7 @@ EvaluationResultRecorded has a value representing the result (answer), or an Exc
           <a href="cimi/EvaluationResultTopic.html">EvaluationResultTopic</a>
         </td>
         <td class="colLast">
-          <div class="block">The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer). 
+          <div class="block">The base class, independent of context, for evaluations (measurements, tests, or questions) and a value containing the result (answer).
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
 
@@ -702,8 +702,8 @@ CIMI Alignment:
         </td>
         <td class="colLast">
           <div class="block">Reason that a value associated with a test or other finding is missing.
-		
-		CIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR&#39;s required data absent values, with additional concepts from CIMI.</div>
+
+CIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR&#39;s required data absent values, with additional concepts from CIMI.</div>
         </td>
       </tr>
       
@@ -713,7 +713,7 @@ CIMI Alignment:
           <a href="cimi/FindingContext.html">FindingContext</a>
         </td>
         <td class="colLast">
-          <div class="block">The FindingContext class provides the context for the EvaluationResultTopic and AssertionTopic in a clinical statement. 
+          <div class="block">The FindingContext class provides the context for the EvaluationResultTopic and AssertionTopic in a clinical statement.
 
 For instance, a statement about findings may state that the finding was observed to be present or absent. This class aligns with the SNOMED Situation with Explicit Context.The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc.
 
@@ -728,8 +728,8 @@ CIMI Alignment: In CIMI V0.0.4, FindingContext included a &#39;status&#39; attri
         </td>
         <td class="colLast">
           <div class="block">The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.
-		
-		CIMI Alignment: In CIMI V0.0.4, this attribute was called &#39;method&#39;. The value set binding reflects CIMI&#39;s preference for LOINC codes.</div>
+
+CIMI Alignment: In CIMI V0.0.4, this attribute was called &#39;method&#39;. The value set binding reflects CIMI&#39;s preference for LOINC codes.</div>
         </td>
       </tr>
       
@@ -740,8 +740,8 @@ CIMI Alignment: In CIMI V0.0.4, FindingContext included a &#39;status&#39; attri
         </td>
         <td class="colLast">
           <div class="block">Indicates whether the finding is preliminary, amended, final, etc..
-		
-		CIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.</div>
+
+CIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.</div>
         </td>
       </tr>
       
@@ -751,7 +751,7 @@ CIMI Alignment: In CIMI V0.0.4, FindingContext included a &#39;status&#39; attri
           <a href="cimi/FindingTopic.html">FindingTopic</a>
         </td>
         <td class="colLast">
-          <div class="block">Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings. 
+          <div class="block">Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.
 
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.
 
@@ -807,7 +807,7 @@ We are seeking feedback if it is better to put the positive/negative status in V
           <a href="cimi/IndivisibleClinicalStatement.html">IndivisibleClinicalStatement</a>
         </td>
         <td class="colLast">
-          <div class="block">Represents clinical statements that cannot be further decomposed into multiple independent clinical statements, i.e., all clinical statements that are not CompoundClinicalStatements. 
+          <div class="block">Represents clinical statements that cannot be further decomposed into multiple independent clinical statements, i.e., all clinical statements that are not CompoundClinicalStatements.
 
 An indivisible clinical statement must be able to stand alone, such as a systolic blood pressure measurement, which can be interpreted both inside a blood pressure panel or on its own. If the statement cannot stand alone, e.g., the size of a wound, which cannot exist outside the context of the wound itself, then the Component class should be used instead.</div>
         </td>
@@ -819,7 +819,7 @@ An indivisible clinical statement must be able to stand alone, such as a systoli
           <a href="cimi/InformationEntry.html">InformationEntry</a>
         </td>
         <td class="colLast">
-          <div class="block">An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified. 
+          <div class="block">An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified.
 
 CIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.</div>
         </td>
@@ -832,8 +832,8 @@ CIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, s
         </td>
         <td class="colLast">
           <div class="block">A clinical interpretation of a finding.
-		
-		CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</div>
+
+CIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)</div>
         </td>
       </tr>
       
@@ -899,11 +899,11 @@ The is currently no LOINC code for Mammaprint test.</div>
           <a href="cimi-statement/Members.html">Members</a>
         </td>
         <td class="colLast">
-          <div class="block">Members represent the elements of a group of a related but independent evaluations. 
-		
-		Examples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.
-		
-		CIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).</div>
+          <div class="block">Members represent the elements of a group of a related but independent evaluations.
+
+Examples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself. Although the proper place to define Members this might be in EvaluationResultTopic, it cannot be defined there because the value references EvaluationResultRecorded, which is a clinical statement class.
+
+CIMI Alignment: CIMI V0.0.4 does not have this attribute and uses CompoundClinicalStatement to create panels. Compared to having a separate class, the current representation closer alignment with FHIR and greater flexibility (related observations can be added to any observation).</div>
         </td>
       </tr>
       
@@ -913,7 +913,9 @@ The is currently no LOINC code for Mammaprint test.</div>
           <a href="oncology/MitoticCountScore.html">MitoticCountScore</a>
         </td>
         <td class="colLast">
-          <div class="block">How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.</div>
+          <div class="block">How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.
+
+We are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.</div>
         </td>
       </tr>
       
@@ -943,7 +945,9 @@ The is currently no LOINC code for Mammaprint test.</div>
           <a href="oncology/NuclearPositivity.html">NuclearPositivity</a>
         </td>
         <td class="colLast">
-          <div class="block">The percentage of cells that test (stain) positive for the presence of a receptor.</div>
+          <div class="block">The percentage of cells that test (stain) positive for the presence of a receptor.
+
+We are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.</div>
         </td>
       </tr>
       
@@ -965,7 +969,7 @@ The is currently no LOINC code for Mammaprint test.</div>
         <td class="colLast">
           <div class="block">The Oncotype DX test for DCIS (Ductal Carcinoma in Situ) breast cancer. Risk scores range from 0 to 100 with the following interpretations: 0-38: Low-Risk, 39-54: Intermediate-Risk, 55+: High-Risk.
 
-No LOINC code currently exists for this test.</div>
+No LOINC code currently exists for this test. We are seeking feedback on the value of separating OncotypeDx scores for DCIS and invasive breast carcinomas. Does it make more sense to report the OncotypeDx as a single score, regardless of the type of cancer?</div>
         </td>
       </tr>
       
@@ -977,7 +981,7 @@ No LOINC code currently exists for this test.</div>
         <td class="colLast">
           <div class="block">The Oncotype DX test for invasive breast cancer examines the activity of 21 genes in a patient’s breast tumor tissue to provide personalized information for tailoring treatment based on the biology of their individual disease. The value from 0 to 100 indicates the estimated risk of recurrence, with the highest risk indicated by a score greater than 31.
 
-No LOINC code currently exists for this test.</div>
+No LOINC code currently exists for this test. We are seeking feedback on the value of separating OncotypeDx scores for DCIS and invasive breast carcinomas. Does it make more sense to report the OncotypeDx as a single score, regardless of the type of cancer?</div>
         </td>
       </tr>
       
@@ -988,8 +992,8 @@ No LOINC code currently exists for this test.</div>
         </td>
         <td class="colLast">
           <div class="block">The beginning or first appearance of a mental or physical disorder.
-			
-			CIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR</div>
+
+CIMI Alignment: This attribute aligns with FHIR Condition.onset and with dateOfOnset and ageAtOnset in CIMI V0.0.4, but includes additional datatypes corresponding to FHIR</div>
         </td>
       </tr>
       
@@ -1019,9 +1023,9 @@ No LOINC code currently exists for this test.</div>
           <a href="cimi/Precondition.html">Precondition</a>
         </td>
         <td class="colLast">
-          <div class="block">A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise. 
-		
-		Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</div>
+          <div class="block">A description of the conditions or context of an observation; for example, under sedation, fasting or post-exercise.
+
+Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.</div>
         </td>
       </tr>
       
@@ -1031,11 +1035,11 @@ No LOINC code currently exists for this test.</div>
           <a href="cimi/PresenceContext.html">PresenceContext</a>
         </td>
         <td class="colLast">
-          <div class="block">PresenceContext indicates that the finding in question exists or is present to some level of certainty. 
-	
-	For example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.
-	
-	CIMI Alignment: In CIMI V0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.</div>
+          <div class="block">PresenceContext indicates that the finding in question exists or is present to some level of certainty.
+
+For example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.
+
+CIMI Alignment: In CIMI V0.0.4, there were two classes, KnownOrSuspectedPresent and AssertionKnownOrSuspectedPresent. CIMI has recently decided to combine these classes and rename it PresenceContext, as represented here.</div>
         </td>
       </tr>
       
@@ -1055,7 +1059,7 @@ No LOINC code currently exists for this test.</div>
           <a href="oncology/ProgesteroneReceptorStatus.html">ProgesteroneReceptorStatus</a>
         </td>
         <td class="colLast">
-          <div class="block">Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity. 
+          <div class="block">Progesterone receptor status is a factor in determining prognosis and treatment options. The value is the percentage of cells that test (stain) positive for the presence of a receptor. The interpretation of positive or negative (found in the interpretation property) is based on the staining percentage, and may take into account the staining intensity.
 
 Based on discussion with Cancer Interoperability Group subject matter experts, there was insufficient rationale to include the following components in the data model: StainingControl, PrimaryAntibody, Allred Score (both total and component scores). We are seeking feedback on whether or not those components should be included in this model.
 
@@ -1123,11 +1127,11 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
           <a href="cimi/RecordedContext.html">RecordedContext</a>
         </td>
         <td class="colLast">
-          <div class="block">Context for an evaluation result, used to indicate an evaluation has been made. 
-	
-	For example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.
-	
-	CIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.</div>
+          <div class="block">Context for an evaluation result, used to indicate an evaluation has been made.
+
+For example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.
+
+CIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.</div>
         </td>
       </tr>
       
@@ -1148,10 +1152,10 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
         </td>
         <td class="colLast">
           <div class="block">The time or time period that the finding addresses.
-		
-		The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).
-		
-		CIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.</div>
+
+The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).
+
+CIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.</div>
         </td>
       </tr>
       
@@ -1194,8 +1198,8 @@ This class is not defined in CIMI V0.0.4 reference model. It could potentially b
         </td>
         <td class="colLast">
           <div class="block">Identifier for the source specimen from which this specimen was derived.
-		
-		CIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.</div>
+
+CIMI Alignment: In CIMI V0.0.4, this attribute is called parentSpecimenIdentifier (datatype Identifier). The corresponding element in FHIR (Specimen.parent) is type ref(Specimen). It is impossible to map Idenfier to Specimen, so the datatype of this element has been changed to make the mapping feasible.</div>
         </td>
       </tr>
       
@@ -1205,7 +1209,7 @@ This class is not defined in CIMI V0.0.4 reference model. It could potentially b
           <a href="cimi/Specimen.html">Specimen</a>
         </td>
         <td class="colLast">
-          <div class="block">A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities. 
+          <div class="block">A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.
 
 CIMI Alignment: This class has been cut down to parts relevant to the current oncology ballot. The attribute parentSpecimenIdentifier has been changed from an Identifier to a reference to a Specimen, to make it possible to map to FHIR.</div>
         </td>
@@ -1218,8 +1222,8 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
         </td>
         <td class="colLast">
           <div class="block">The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.
-			
-			This attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.</div>
+
+This attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.</div>
         </td>
       </tr>
       
@@ -1259,7 +1263,7 @@ CIMI Alignment: This class has been cut down to parts relevant to the current on
           <a href="cimi/StatementContext.html">StatementContext</a>
         </td>
         <td class="colLast">
-          <div class="block">Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement. 
+          <div class="block">Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.
 
 The StatementContext class aligns with the SNOMED CT Situations with Explicit Context (SWEC) Concept Model. The StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information. It also often holds provenance information relevant to the context of the clinical statement. It is important to note that by default the context applies to the conjunction of the attribute specified in the statement. For instance, if a clinical statement has a topic describing a rash on left arm and a context of &#39;absent&#39;, then the statement states that the subject of interest did not have a rash on the left arm but might have had one on the right arm.
 
@@ -1273,7 +1277,7 @@ CIMI Alignment: ContextCode is the new CIMI name for the attribute formerly call
           <a href="cimi/StatementTopic.html">StatementTopic</a>
         </td>
         <td class="colLast">
-          <div class="block">Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement. 
+          <div class="block">Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.
 
 StatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).
 
@@ -1287,7 +1291,7 @@ CIMI Alignment: StatementTopic had an attribute called &#39;key&#39; in CIMI V0.
           <a href="shr-core/TimePeriod.html">TimePeriod</a>
         </td>
         <td class="colLast">
-          <div class="block">A period of time defined by a start and end time, date, or year. 
+          <div class="block">A period of time defined by a start and end time, date, or year.
 
 If the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.</div>
         </td>
@@ -1319,11 +1323,11 @@ If the start element is missing, the start of the period is not known. If the en
           <a href="cimi/TopicCode.html">TopicCode</a>
         </td>
         <td class="colLast">
-          <div class="block">The concept representing the finding or action that is the topic of the statement. 
-		
-		For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the &#39;question&#39; or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.
-		
-		CIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called &#39;key&#39; in CIMI V0.0.4.</div>
+          <div class="block">The concept representing the finding or action that is the topic of the statement.
+
+For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the &#39;question&#39; or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.
+
+CIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called &#39;key&#39; in CIMI V0.0.4.</div>
         </td>
       </tr>
       
@@ -1374,8 +1378,8 @@ If the start element is missing, the start of the period is not known. If the en
         </td>
         <td class="colLast">
           <div class="block">Whether an assessment has been confirmed by testing or observation.
-			
-			CIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR.</div>
+
+CIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR.</div>
         </td>
       </tr>
     </tbody>

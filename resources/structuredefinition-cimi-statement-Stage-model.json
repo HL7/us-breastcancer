@@ -3,7 +3,7 @@
   "id": "cimi-statement-Stage-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Stage Logical Model</b></p>\n  <p>The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Stage Logical Model</b></p>\n  <p>The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Stage-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "StageModel",
   "title": "BC Stage Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+  "description": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-statement-Stage-model",
         "path": "cimi-statement-Stage-model",
-        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,7 +60,7 @@
         "id": "cimi-statement-Stage-model.value",
         "path": "cimi-statement-Stage-model.value",
         "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "alias": [
           "codeableConcept"
         ],
@@ -108,7 +108,7 @@
       {
         "id": "cimi-statement-Stage-model",
         "path": "cimi-statement-Stage-model",
-        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "min": 0,
         "max": "*",
         "base": {
@@ -124,7 +124,7 @@
         "id": "cimi-statement-Stage-model.value",
         "path": "cimi-statement-Stage-model.value",
         "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "alias": [
           "codeableConcept"
         ],

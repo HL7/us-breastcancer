@@ -138,9 +138,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../oncology/ColdIschemiaTime.html">ColdIschemiaTime</a></strong></code>
     
     </div>
-    <div class="block">The time period between the chilling of a tissue or tissue sample and the time it is warmed. 
-		
-		CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a &#39;SpecimenProcessingPerformed&#39; clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.</div>
+    <div class="block">The time period between the chilling of a tissue or tissue sample and the time it is warmed.
+
+CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a &#39;SpecimenProcessingPerformed&#39; clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.</div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

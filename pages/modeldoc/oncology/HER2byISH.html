@@ -353,21 +353,65 @@ if (location.href.indexOf('is-external=true') == -1) {
       <tr class="rowColor">
     
       <td class="colFirst">
-        <code><strong>StatementTopic.EvaluationComponent</strong></code>
+        <code><strong>StatementTopic.AnatomicalLocation</strong></code>
         
           <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
         
       </td>
       <td class="colMiddle">
-        <code><strong>Includes Type</strong></code>
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/HER2byISH.html">HER2byISH</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">HER2byISH</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Precondition</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/HER2byISH.html">HER2byISH</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">HER2byISH</div>
+      </td> -->
+    </tr>
+      
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Specimen</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>DataType</strong></code>
         
           <div class="block">Constrained in <a href="../oncology/HER2byISH.html">HER2byISH</a></div>
         
       </td>
       <td class="colLast">
                   <div class="block">
-            0..1
-                          <a href="../oncology/AverageHER2SignalsPerCell.html">AverageHER2SignalsPerCell</a>
+            
+                          <a href="../oncology/BreastSpecimen.html">BreastSpecimen</a>
                         
           </div>
               </td>
@@ -393,7 +437,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <td class="colLast">
                   <div class="block">
             0..1
-                          <a href="../oncology/AverageCEP17SignalsPerCell.html">AverageCEP17SignalsPerCell</a>
+                          <a href="../oncology/AverageHER2SignalsPerCell.html">AverageHER2SignalsPerCell</a>
                         
           </div>
               </td>
@@ -419,9 +463,57 @@ if (location.href.indexOf('is-external=true') == -1) {
       <td class="colLast">
                   <div class="block">
             0..1
+                          <a href="../oncology/AverageCEP17SignalsPerCell.html">AverageCEP17SignalsPerCell</a>
+                        
+          </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">HER2byISH</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.EvaluationComponent</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Includes Type</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/HER2byISH.html">HER2byISH</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">
+            0..1
                           <a href="../oncology/HER2toCEP17Ratio.html">HER2toCEP17Ratio</a>
                         
           </div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">HER2byISH</div>
+      </td> -->
+    </tr>
+      
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>DiagnosticService.CodeableConcept</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/LaboratoryTestResultRecorded.html">LaboratoryTestResultRecorded</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Fixed Value</strong></code>
+        
+          <div class="block">Constrained in <a href="../oncology/HER2byISH.html">HER2byISH</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">http://hl7.org/fhir/us/breastcancer/CodeSystem/cimi-statement-DiagnosticServiceCS (code: pathology)</div>
               </td>
       <!-- <td class="colLast">
         <div class="block">HER2byISH</div>

@@ -3,7 +3,7 @@
   "id": "cimi-RecordedContext-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC RecordedContext Logical Model</b></p>\n  <p>Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC RecordedContext Logical Model</b></p>\n  <p>Context for an evaluation result, used to indicate an evaluation has been made.\n\nFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\nCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-RecordedContext-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "RecordedContextModel",
   "title": "BC RecordedContext Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
+  "description": "Context for an evaluation result, used to indicate an evaluation has been made.\n\nFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\nCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-RecordedContext-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-RecordedContext-model",
         "path": "cimi-RecordedContext-model",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made.\n\nFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\nCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
         "min": 0,
         "max": "*",
         "base": {
@@ -54,7 +54,7 @@
         "id": "cimi-RecordedContext-model.contextCode",
         "path": "cimi-RecordedContext-model.contextCode",
         "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
-        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tCIMI Alignment: ContextCode is the new CIMI name for the attribute formerly called 'type' in CIMI V0.0.4.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\n\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\nCIMI Alignment: ContextCode is the new CIMI name for the attribute formerly called 'type' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -345,7 +345,7 @@
         "id": "cimi-RecordedContext-model.findingStatus",
         "path": "cimi-RecordedContext-model.findingStatus",
         "short": "Indicates whether the finding is preliminary, amended, final, etc..",
-        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
         "min": 1,
         "max": "1",
         "base": {
@@ -366,7 +366,7 @@
         "id": "cimi-RecordedContext-model.exceptionValue",
         "path": "cimi-RecordedContext-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\nCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
         "base": {
@@ -387,7 +387,7 @@
         "id": "cimi-RecordedContext-model.relevantTime",
         "path": "cimi-RecordedContext-model.relevantTime",
         "short": "The time or time period that the finding addresses.",
-        "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
+        "definition": "The time or time period that the finding addresses.\n\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\nCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
         "min": 0,
         "max": "1",
         "base": {
@@ -411,7 +411,7 @@
       {
         "id": "cimi-RecordedContext-model",
         "path": "cimi-RecordedContext-model",
-        "definition": "Context for an evaluation result, used to indicate an evaluation has been made. \n\t\n\tFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\t\n\tCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
+        "definition": "Context for an evaluation result, used to indicate an evaluation has been made.\n\nFor example, measurement of blood pressure that has been made simply exists (although the value can be present or absent, accurate or inaccurate). The RecordedContext indicates the information presented stands on its own as presented. It can also apply to clinical notes.\n\nCIMI Alignment: The RecordedContext class did not exist in CIMI V0.0.4, but CIMI has recently added it.",
         "min": 0,
         "max": "*",
         "base": {
@@ -427,7 +427,7 @@
         "id": "cimi-RecordedContext-model.contextCode",
         "path": "cimi-RecordedContext-model.contextCode",
         "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
-        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. \n\t\t\n\t\tAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\t\t\n\t\tCIMI Alignment: ContextCode is the new CIMI name for the attribute formerly called 'type' in CIMI V0.0.4.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\n\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.\n\nCIMI Alignment: ContextCode is the new CIMI name for the attribute formerly called 'type' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -718,7 +718,7 @@
         "id": "cimi-RecordedContext-model.findingStatus",
         "path": "cimi-RecordedContext-model.findingStatus",
         "short": "Indicates whether the finding is preliminary, amended, final, etc..",
-        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\t\t\n\t\tCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
+        "definition": "Indicates whether the finding is preliminary, amended, final, etc..\n\nCIMI Alignment: This class corresponds to FindingContext.status, but has been aligned to FHIR. The value set binding is required by FHIR.",
         "min": 1,
         "max": "1",
         "base": {
@@ -739,7 +739,7 @@
         "id": "cimi-RecordedContext-model.exceptionValue",
         "path": "cimi-RecordedContext-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\nCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
         "base": {
@@ -760,7 +760,7 @@
         "id": "cimi-RecordedContext-model.relevantTime",
         "path": "cimi-RecordedContext-model.relevantTime",
         "short": "The time or time period that the finding addresses.",
-        "definition": "The time or time period that the finding addresses.\n\t\t\n\t\tThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\t\t\n\t\tCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
+        "definition": "The time or time period that the finding addresses.\n\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).\n\nCIMI Alignment: This attribute has been added, since recorded values must have an associated time. The datatype has been chosen to align with FHIR.",
         "min": 0,
         "max": "1",
         "base": {

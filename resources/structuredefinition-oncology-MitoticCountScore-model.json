@@ -3,7 +3,7 @@
   "id": "oncology-MitoticCountScore-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MitoticCountScore Logical Model</b></p>\n  <p>How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MitoticCountScore Logical Model</b></p>\n  <p>How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.\n\nWe are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MitoticCountScore-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "MitoticCountScoreModel",
   "title": "BC MitoticCountScore Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+  "description": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.\n\nWe are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.",
   "keyword": [
     {
       "system": "http://snomed.info/sct",
@@ -44,7 +44,7 @@
       {
         "id": "oncology-MitoticCountScore-model",
         "path": "oncology-MitoticCountScore-model",
-        "definition": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "definition": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.\n\nWe are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,7 +60,7 @@
         "id": "oncology-MitoticCountScore-model.value",
         "path": "oncology-MitoticCountScore-model.value",
         "short": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
-        "definition": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "definition": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.\n\nWe are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.",
         "alias": [
           "codeableConcept"
         ],
@@ -90,7 +90,7 @@
         "id": "oncology-MitoticCountScore-model.exceptionValue",
         "path": "oncology-MitoticCountScore-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\nCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
         "base": {
@@ -117,7 +117,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -168,7 +168,7 @@
       {
         "id": "oncology-MitoticCountScore-model",
         "path": "oncology-MitoticCountScore-model",
-        "definition": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "definition": "How fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.\n\nWe are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.",
         "min": 0,
         "max": "*",
         "base": {
@@ -184,7 +184,7 @@
         "id": "oncology-MitoticCountScore-model.value",
         "path": "oncology-MitoticCountScore-model.value",
         "short": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
-        "definition": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.",
+        "definition": "Code representing how fast the tumor cells are growing and dividing, determined from the number of mitotic cells present. Scored 1 to 3, with 3 being the most mitotic cells.\n\nWe are seeking feedback on the value of representing the mitotic rate as a value rather than coded ranges.",
         "alias": [
           "codeableConcept"
         ],
@@ -214,7 +214,7 @@
         "id": "oncology-MitoticCountScore-model.exceptionValue",
         "path": "oncology-MitoticCountScore-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
-        "definition": "Reason that a value associated with a test or other finding is missing.\n\t\t\n\t\tCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
+        "definition": "Reason that a value associated with a test or other finding is missing.\n\nCIMI Alignment: This attribute corresponds to EvaluationResultTopic.exceptionValue, but has been moved from topic to context because missing values are only relevant when they should be recorded, but are not. The value set binding extends the set of FHIR's required data absent values, with additional concepts from CIMI.",
         "min": 0,
         "max": "1",
         "base": {
@@ -241,7 +241,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {

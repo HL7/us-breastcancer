@@ -226,125 +226,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/primitive-base64Binary-extension" />
-                <display value="BC base64Binary Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-boolean-extension" />
-                <display value="BC boolean Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-code-extension" />
-                <display value="BC code Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-date-extension" />
-                <display value="BC date Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-dateTime-extension" />
-                <display value="BC dateTime Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-decimal-extension" />
-                <display value="BC decimal Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-id-extension" />
-                <display value="BC id Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-instant-extension" />
-                <display value="BC instant Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-integer-extension" />
-                <display value="BC integer Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-markdown-extension" />
-                <display value="BC markdown Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-oid-extension" />
-                <display value="BC oid Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-positiveInt-extension" />
-                <display value="BC positiveInt Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-string-extension" />
-                <display value="BC string Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-time-extension" />
-                <display value="BC time Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-unsignedInt-extension" />
-                <display value="BC unsignedInt Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-uri-extension" />
-                <display value="BC uri Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-xhtml-extension" />
-                <display value="BC xhtml Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/cimi-AnatomicalDirectionVS" />
                 <display value="BC AnatomicalDirectionVS ValueSet" />
             </sourceReference>
@@ -445,20 +326,6 @@
             <sourceReference>
                 <reference value="ValueSet/oncology-HER2byIHCScoreVS" />
                 <display value="BC HER2byIHCScoreVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/cimi-LateralityVS" />
-                <display value="BC LateralityVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/oncology-LeftRightLateralityVS" />
-                <display value="BC LeftRightLateralityVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -648,13 +515,6 @@
             <sourceReference>
                 <reference value="CodeSystem/oncology-HER2StatusCS" />
                 <display value="BC HER2StatusCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/cimi-LateralityCS" />
-                <display value="BC LateralityCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>

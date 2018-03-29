@@ -15,7 +15,7 @@
   "name": "BreastCancerPresenceStatementModel",
   "title": "BC BreastCancerPresenceStatement Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -32,7 +32,7 @@
     {
       "system": "http://snomed.info/sct",
       "code": "126926005",
-      "display": "Neoplasm of the breast"
+      "display": "Neoplasm of breast (disorder)"
     }
   ],
   "kind": "logical",
@@ -67,7 +67,7 @@
           }
         ],
         "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "statementTopic"
         ],
@@ -91,7 +91,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -121,7 +121,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -141,8 +141,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "short": "Neoplasm of the breast",
-        "definition": "Neoplasm of the breast",
+        "short": "Neoplasm of breast (disorder)",
+        "definition": "Neoplasm of breast (disorder)",
         "alias": [
           "codeableConcept"
         ],
@@ -412,7 +412,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -433,7 +433,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "short": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
           "codeableConcept"
         ],
@@ -469,7 +469,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -533,7 +533,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
           }
         }
       },
@@ -613,7 +613,7 @@
           }
         ],
         "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "min": 0,
         "max": "1",
         "base": {
@@ -634,7 +634,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "path": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "alias": [
           "codeableConcept"
         ],
@@ -684,8 +684,8 @@
             "code": "21908-9"
           }
         ],
-        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
-        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
         "alias": [
           "evaluationResultRecorded",
           "breastCancerStage"
@@ -787,7 +787,7 @@
           }
         ],
         "short": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "statementTopic"
         ],
@@ -811,7 +811,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.value",
         "short": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.",
-        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc. \n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
+        "definition": "Code representing representation of a condition, independent of context of being present, absent, risk, expectation etc. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, etc.\n\nThe value set binding of Value is required to map to US-Core. The value set binding of Category is preferred in US-Core.\n\nCIMI Alignment: In CIMI V0.0.4, this class was called ConditionAssertion, but CIMI has recently changed it to ConditionTopic. ConditionAssertion had properties associated with the presence of the condition, including severity, dueTo, diseasePhase, and more. In the current logical model, properties associated with condition occurrence have been moved to ConditionPresenceContext.",
         "alias": [
           "codeableConcept"
         ],
@@ -841,7 +841,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
-        "definition": "The concept representing the finding or action that is the topic of the statement. \n\t\t\n\t\tFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\t\t\n\t\tCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.\n\nCIMI Alignment: TopicCode is the new CIMI name for the attribute formerly called 'key' in CIMI V0.0.4.",
         "min": 1,
         "max": "1",
         "base": {
@@ -861,8 +861,8 @@
       {
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "short": "Neoplasm of the breast",
-        "definition": "Neoplasm of the breast",
+        "short": "Neoplasm of breast (disorder)",
+        "definition": "Neoplasm of breast (disorder)",
         "alias": [
           "codeableConcept"
         ],
@@ -1132,7 +1132,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
         "short": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "The technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1153,7 +1153,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "path": "oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
         "short": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.",
-        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\t\t\n\t\tCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
+        "definition": "Code representing the technique used to create the finding; for example, the specific imaging technique, lab test code, or assessment vehicle.\n\nCIMI Alignment: In CIMI V0.0.4, this attribute was called 'method'. The value set binding reflects CIMI's preference for LOINC codes.",
         "alias": [
           "codeableConcept"
         ],
@@ -1189,7 +1189,7 @@
           }
         ],
         "short": "A clinical interpretation of a finding.",
-        "definition": "A clinical interpretation of a finding.\n\t\t\n\t\tCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
+        "definition": "A clinical interpretation of a finding.\n\nCIMI Alignment: The value set binding has been chosen to align with FHIR. (Note: it is not clear if Interpretation belongs in FindingTopic, rather than a context class, but that is how CIMI has modeled it.)",
         "min": 0,
         "max": "1",
         "base": {
@@ -1253,7 +1253,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/CodeSystem/condition-category"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
           }
         }
       },
@@ -1333,7 +1333,7 @@
           }
         ],
         "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1354,7 +1354,7 @@
         "id": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "path": "oncology-BreastCancerPresenceStatement-model.stage.value",
         "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
-        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\t\t\t\n\t\t\tThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.\n\nThis attribute does not have a direct analogy in CIMI V0.0.4 (the closest being ConditionAssertion.diseasePhase), but is included here for consistency with FHIR and because staging is important in the context of breast cancer and cancer in general.",
         "alias": [
           "codeableConcept"
         ],
@@ -1404,8 +1404,8 @@
             "code": "21908-9"
           }
         ],
-        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
-        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this value set.",
+        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
         "alias": [
           "evaluationResultRecorded",
           "breastCancerStage"

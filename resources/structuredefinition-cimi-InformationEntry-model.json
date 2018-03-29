@@ -3,7 +3,7 @@
   "id": "cimi-InformationEntry-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC InformationEntry Logical Model</b></p>\n  <p>An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified. \n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC InformationEntry Logical Model</b></p>\n  <p>An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified.\n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-InformationEntry-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "InformationEntryModel",
   "title": "BC InformationEntry Logical Model",
   "status": "draft",
-  "date": "2018-03-28",
+  "date": "2018-03-29",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified. \n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.",
+  "description": "An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified.\n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-InformationEntry-model",
         "path": "cimi-InformationEntry-model",
-        "definition": "An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified. \n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.",
+        "definition": "An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified.\n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.",
         "min": 0,
         "max": "*",
         "base": {
@@ -79,7 +79,7 @@
       {
         "id": "cimi-InformationEntry-model",
         "path": "cimi-InformationEntry-model",
-        "definition": "An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified. \n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.",
+        "definition": "An entry in a patient record or in a report, generally used for the documentation of clinical information about a subject of information such as a patient or a relative of the patient, asserted by a particular source, recorded, and potentially verified.\n\nCIMI Alignment: The CIMI-defined attributes from InformationEntry (identifier, subjectOfInformation, attribution, additionalText, and recordStatus) have been omitted from the current model because of problems mapping between InformationEntry and FHIR DomainResource. Attributes in DomainResource (id, versionId, lastUpdated, profile, security, tag, implicitRules, language, text, contained, extension, modifierExtension) are quite different than those in InformationEntry. Reconciling these differences is outside the scope of the current ballot on breast cancer.",
         "min": 0,
         "max": "*",
         "base": {
