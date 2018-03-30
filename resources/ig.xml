@@ -247,6 +247,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/oncology-BreastCancerStageVS" />
+                <display value="BC BreastCancerStageVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/oncology-BreastCancerTypeVS" />
                 <display value="BC BreastCancerTypeVS ValueSet" />
             </sourceReference>
@@ -452,6 +459,13 @@
             <sourceReference>
                 <reference value="CodeSystem/cimi-AnatomicalDirectionCS" />
                 <display value="BC AnatomicalDirectionCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/oncology-BreastCancerStageCS" />
+                <display value="BC BreastCancerStageCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>

@@ -154,6 +154,9 @@
     "ValueSet/oncology-BreastCancerDetectionVS": {
       "base": "ValueSet-oncology-BreastCancerDetectionVS.html"
     },
+    "ValueSet/oncology-BreastCancerStageVS": {
+      "base": "ValueSet-oncology-BreastCancerStageVS.html"
+    },
     "ValueSet/oncology-BreastCancerTypeVS": {
       "base": "ValueSet-oncology-BreastCancerTypeVS.html"
     },
@@ -243,6 +246,9 @@
     },
     "CodeSystem/cimi-AnatomicalDirectionCS": {
       "base": "CodeSystem-cimi-AnatomicalDirectionCS.html"
+    },
+    "CodeSystem/oncology-BreastCancerStageCS": {
+      "base": "CodeSystem-oncology-BreastCancerStageCS.html"
     },
     "CodeSystem/oncology-BreastCancerTypeCS": {
       "base": "CodeSystem-oncology-BreastCancerTypeCS.html"

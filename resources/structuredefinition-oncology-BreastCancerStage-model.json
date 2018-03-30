@@ -15,7 +15,7 @@
   "name": "BreastCancerStageModel",
   "title": "BC BreastCancerStage Logical Model",
   "status": "draft",
-  "date": "2018-03-29",
+  "date": "2018-03-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -109,7 +109,13 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "example",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
+          }
+        }
       },
       {
         "id": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
@@ -678,8 +684,8 @@
             "display": "N category"
           }
         ],
-        "short": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
-        "definition": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
+        "short": "The presence of metastases in regional lymph nodes, based on criteria defined by the staging system being used.",
+        "definition": "The presence of metastases in regional lymph nodes, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1050,7 +1056,13 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "example",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerStageVS"
+          }
+        }
       },
       {
         "id": "oncology-BreastCancerStage-model.evaluationResultTopic.topicCode",
@@ -1619,8 +1631,8 @@
             "display": "N category"
           }
         ],
-        "short": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
-        "definition": "The presence of metastases in regional lymph nodes. The node category for staging is based on criteria from the American Joint Committee on Cancer.",
+        "short": "The presence of metastases in regional lymph nodes, based on criteria defined by the staging system being used.",
+        "definition": "The presence of metastases in regional lymph nodes, based on criteria defined by the staging system being used.",
         "min": 0,
         "max": "1",
         "base": {
