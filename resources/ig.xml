@@ -576,6 +576,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="CodeSystem/oncology-PositiveNegativeCS" />
+                <display value="BC PositiveNegativeCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="CodeSystem/oncology-PositiveNegativeEquivocalCS" />
                 <display value="BC PositiveNegativeEquivocalCS CodeSystem" />
             </sourceReference>

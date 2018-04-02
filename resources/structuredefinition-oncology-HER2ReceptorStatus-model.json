@@ -15,7 +15,7 @@
   "name": "HER2ReceptorStatusModel",
   "title": "BC HER2ReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-03-30",
+  "date": "2018-04-01",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -876,11 +876,11 @@
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.\n\nThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "oncology-HER2ReceptorStatus-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -1322,27 +1322,6 @@
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
           }
         ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.evaluationComponent",
-        "path": "oncology-HER2ReceptorStatus-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
-        "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.\n\nThe subject of the evaluation component is the same as in the parent evaluation.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.evaluationComponent",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationComponent-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   },
@@ -2182,11 +2161,11 @@
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.\n\nThe subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "oncology-HER2ReceptorStatus-model.evaluationResultTopic.evaluationComponent",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -2628,27 +2607,6 @@
             "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
           }
         ]
-      },
-      {
-        "id": "oncology-HER2ReceptorStatus-model.evaluationComponent",
-        "path": "oncology-HER2ReceptorStatus-model.evaluationComponent",
-        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.",
-        "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation.\n\nThe subject of the evaluation component is the same as in the parent evaluation.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "oncology-HER2ReceptorStatus-model.evaluationComponent",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-EvaluationComponent-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   }

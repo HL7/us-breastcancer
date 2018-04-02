@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2ReceptorStatus",
   "name": "HER2ReceptorStatusProfile",
   "status": "draft",
-  "date": "2018-03-30",
+  "date": "2018-04-01",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -3325,7 +3325,7 @@
         "comment": "For a discussion on the ways Observations can be assembled in groups together see [Notes](observation.html#notes) below.",
         "requirements": "Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component",
           "min": 0,
@@ -3690,7 +3690,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "base": {
           "path": "Observation.component.referenceRange",
           "min": 0,
@@ -4336,7 +4336,9 @@
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatus.component",
-        "path": "Observation.component"
+        "path": "Observation.component",
+        "min": 0,
+        "max": "0"
       },
       {
         "id": "Observation:oncology-HER2ReceptorStatus.component.code",
@@ -4415,12 +4417,6 @@
             "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-ExceptionValueVS"
           }
         }
-      },
-      {
-        "id": "Observation:oncology-HER2ReceptorStatus.component.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "min": 0,
-        "max": "0"
       }
     ]
   },
