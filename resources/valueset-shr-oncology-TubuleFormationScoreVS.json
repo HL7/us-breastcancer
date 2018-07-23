@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-TubuleFormationScoreVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC TubuleFormationScoreVS ValueSet</b></p>\n<p>The degree of glandular differentiation or tubule formation in breast carcinoma. Aligns with normative LOINC answer list LL4380-3. Less aggressive cancers have more tubule formation, with scores assigned as follows:\n1 = greater than 75% of the tumor area contains tubular or glandular structures\n2 = 10 to 75% of the tumor area contains tubular structures\n3 = less than 10% of the tumor area contains tubular structures</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-TubuleFormationScoreVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.TubuleFormationScoreVS"
+    }
+  ],
+  "name": "TubuleFormationScoreVS",
+  "title": "BC TubuleFormationScoreVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "The degree of glandular differentiation or tubule formation in breast carcinoma. Aligns with normative LOINC answer list LL4380-3. Less aggressive cancers have more tubule formation, with scores assigned as follows:\n1 = greater than 75% of the tumor area contains tubular or glandular structures\n2 = 10 to 75% of the tumor area contains tubular structures\n3 = less than 10% of the tumor area contains tubular structures",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA27216-3",
+            "display": "Score 1: >75% of tumor area forming glandular/tubular structures"
+          },
+          {
+            "code": "LA27217-1",
+            "display": "Score 2: 10% to 75% of tumor area forming glandular/tubular structures"
+          },
+          {
+            "code": "LA27218-9",
+            "display": "Score 3: <10% of tumor area forming glandular/tubular structures"
+          }
+        ]
+      }
+    ]
+  }
+}

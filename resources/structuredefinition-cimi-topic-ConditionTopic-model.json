@@ -1,0 +1,512 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-topic-ConditionTopic-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionTopic Logical Model</b></p>\n  <p>A condition, independent of context. &#039;Condition&#039; is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionTopic-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.topic.ConditionTopic"
+    }
+  ],
+  "name": "ConditionTopicModel",
+  "title": "BC ConditionTopic Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-topic-ConditionTopic-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-topic-ConditionTopic-model",
+        "path": "cimi-topic-ConditionTopic-model",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.topicCode",
+        "path": "cimi-topic-ConditionTopic-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.topicCode.value",
+        "path": "cimi-topic-ConditionTopic-model.topicCode.value",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
+        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-TopicCode-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
+          }
+        }
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.findingMethod",
+        "path": "cimi-topic-ConditionTopic-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.details",
+        "path": "cimi-topic-ConditionTopic-model.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.media",
+        "path": "cimi-topic-ConditionTopic-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.category",
+        "path": "cimi-topic-ConditionTopic-model.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.category.value",
+        "path": "cimi-topic-ConditionTopic-model.category.value",
+        "short": "Code representing a class or division of people or things having particular shared characteristics",
+        "definition": "Code representing a class or division of people or things having particular shared characteristics",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Category-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.anatomicalLocation",
+        "path": "cimi-topic-ConditionTopic-model.anatomicalLocation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72369-2"
+          }
+        ],
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.anatomicalLocation",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.conditionCause",
+        "path": "cimi-topic-ConditionTopic-model.conditionCause",
+        "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.conditionCause",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-topic-ConditionTopic-model",
+        "path": "cimi-topic-ConditionTopic-model",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.topicCode",
+        "path": "cimi-topic-ConditionTopic-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.topicCode.value",
+        "path": "cimi-topic-ConditionTopic-model.topicCode.value",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
+        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-TopicCode-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
+          }
+        }
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.findingMethod",
+        "path": "cimi-topic-ConditionTopic-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.details",
+        "path": "cimi-topic-ConditionTopic-model.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.media",
+        "path": "cimi-topic-ConditionTopic-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.category",
+        "path": "cimi-topic-ConditionTopic-model.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.category.value",
+        "path": "cimi-topic-ConditionTopic-model.category.value",
+        "short": "Code representing a class or division of people or things having particular shared characteristics",
+        "definition": "Code representing a class or division of people or things having particular shared characteristics",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Category-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.anatomicalLocation",
+        "path": "cimi-topic-ConditionTopic-model.anatomicalLocation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72369-2"
+          }
+        ],
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.anatomicalLocation",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-topic-ConditionTopic-model.conditionCause",
+        "path": "cimi-topic-ConditionTopic-model.conditionCause",
+        "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-topic-ConditionTopic-model.conditionCause",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

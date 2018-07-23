@@ -61,9 +61,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
         <dt>Documentation:</dt>
         <dd>
-          <div class="block">A quantity with units, whose value may be bounded from above or below, as defined in FHIR.
-
-This definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.</div>
+          <div class="block"><p>A quantity with units, whose value may be bounded from above or below, as defined in FHIR</p></div>
         </dd>
       </dl>
       <dl>
@@ -83,6 +81,8 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
                           <li>
                 <a href="../shr-core/Age.html">Age</a>,&nbsp;              </li>
                           <li>
+                <a href="../shr-core/IntegerQuantity.html">IntegerQuantity</a>,&nbsp;              </li>
+                          <li>
                 <a href="../shr-core/SimpleQuantity.html">SimpleQuantity</a>              </li>
                       </ul>
         </dd>
@@ -93,27 +93,39 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
         <dd>
           <ul class="class_list">
                           <li>
-                <a href="../oncology/AverageCEP17SignalsPerCell.html">AverageCEP17SignalsPerCell</a>,&nbsp;              </li>
+                <a href="../shr-oncology/AverageCEP17SignalsPerCell.html">AverageCEP17SignalsPerCell</a>,&nbsp;              </li>
                           <li>
-                <a href="../oncology/AverageHER2SignalsPerCell.html">AverageHER2SignalsPerCell</a>,&nbsp;              </li>
+                <a href="../shr-oncology/AverageHER2SignalsPerCell.html">AverageHER2SignalsPerCell</a>,&nbsp;              </li>
                           <li>
-                <a href="../oncology/CompleteMembraneStainingPercent.html">CompleteMembraneStainingPercent</a>,&nbsp;              </li>
+                <a href="../shr-oncology/CompleteMembraneStainingPercent.html">CompleteMembraneStainingPercent</a>,&nbsp;              </li>
                           <li>
                 <a href="../shr-core/Denominator.html">Denominator</a>,&nbsp;              </li>
                           <li>
-                <a href="../oncology/DistanceToNipple.html">DistanceToNipple</a>,&nbsp;              </li>
+                <a href="../shr-oncology/DistanceFromBreastSiteToNipple.html">DistanceFromBreastSiteToNipple</a>,&nbsp;              </li>
                           <li>
-                <a href="../cimi/EvaluationComponent.html">EvaluationComponent</a>,&nbsp;              </li>
+                <a href="../cimi-topic/EvaluationComponent.html">EvaluationComponent</a>,&nbsp;              </li>
                           <li>
-                <a href="../cimi/EvaluationResultTopic.html">EvaluationResultTopic</a>,&nbsp;              </li>
+                <a href="../cimi-entity/GroupCharacteristic.html">GroupCharacteristic</a>,&nbsp;              </li>
                           <li>
-                <a href="../oncology/HER2toCEP17Ratio.html">HER2toCEP17Ratio</a>,&nbsp;              </li>
+                <a href="../shr-oncology/HER2toCEP17Ratio.html">HER2toCEP17Ratio</a>,&nbsp;              </li>
                           <li>
-                <a href="../shr-core/LowerBound.html">LowerBound</a>,&nbsp;              </li>
+                <a href="../shr-oncology/LymphNodeSize.html">LymphNodeSize</a>,&nbsp;              </li>
+                          <li>
+                <a href="../shr-oncology/NumberOfLymphNodesWithIsolatedTumorCells.html">NumberOfLymphNodesWithIsolatedTumorCells</a>,&nbsp;              </li>
+                          <li>
+                <a href="../shr-oncology/NumberOfLymphNodesWithMacrometastases.html">NumberOfLymphNodesWithMacrometastases</a>,&nbsp;              </li>
+                          <li>
+                <a href="../shr-oncology/NumberOfLymphNodesWithMicrometastases.html">NumberOfLymphNodesWithMicrometastases</a>,&nbsp;              </li>
+                          <li>
+                <a href="../shr-oncology/NumberOfRegionalLymphNodes.html">NumberOfRegionalLymphNodes</a>,&nbsp;              </li>
+                          <li>
+                <a href="../shr-oncology/NumberOfSentinelLymphNodes.html">NumberOfSentinelLymphNodes</a>,&nbsp;              </li>
                           <li>
                 <a href="../shr-core/Numerator.html">Numerator</a>,&nbsp;              </li>
                           <li>
-                <a href="../shr-core/UpperBound.html">UpperBound</a>              </li>
+                <a href="../cimi-context/ResultValue.html">ResultValue</a>,&nbsp;              </li>
+                          <li>
+                <a href="../shr-oncology/TotalNumberOfLymphNodesExamined.html">TotalNumberOfLymphNodesExamined</a>              </li>
                       </ul>
         </dd>
       </dl>
@@ -192,7 +204,7 @@ This definition is not fully consistent with CIMI V0.0.4 (whose definition of Qu
       <code><strong><a href="../shr-core/Units.html">Units</a></strong></code>
     
     </div>
-    <div class="block">Code for the unit of measure of the quantity.</div>
+    <div class="block"><p>Code for the unit of measure of the quantity.</p></div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>

@@ -15,14 +15,14 @@
   "name": "UpperBoundModel",
   "title": "BC UpperBound Logical Model",
   "status": "draft",
-  "date": "2018-04-01",
+  "date": "2018-07-23",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
@@ -53,10 +53,10 @@
       {
         "id": "shr-core-UpperBound-model.value",
         "path": "shr-core-UpperBound-model.value",
-        "short": "Quantity representing the upper limit on a quantitative value.",
-        "definition": "Quantity representing the upper limit on a quantitative value.",
+        "short": "SimpleQuantity representing the upper limit on a quantitative value.",
+        "definition": "SimpleQuantity representing the upper limit on a quantitative value.",
         "alias": [
-          "quantity"
+          "simpleQuantity"
         ],
         "min": 1,
         "max": "1",
@@ -67,7 +67,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -96,10 +96,10 @@
       {
         "id": "shr-core-UpperBound-model.value",
         "path": "shr-core-UpperBound-model.value",
-        "short": "Quantity representing the upper limit on a quantitative value.",
-        "definition": "Quantity representing the upper limit on a quantitative value.",
+        "short": "SimpleQuantity representing the upper limit on a quantitative value.",
+        "definition": "SimpleQuantity representing the upper limit on a quantitative value.",
         "alias": [
-          "quantity"
+          "simpleQuantity"
         ],
         "min": 1,
         "max": "1",
@@ -110,7 +110,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,

@@ -3,7 +3,7 @@
   "id": "shr-core-ReceivedTime-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ReceivedTime Logical Model</b></p>\n  <p>Time received by accepting facility or unit.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ReceivedTime Logical Model</b></p>\n  <p>Time the item was delivered to, or accepted by, the receiving facility or unit.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ReceivedTime-model",
   "identifier": [
@@ -15,19 +15,19 @@
   "name": "ReceivedTimeModel",
   "title": "BC ReceivedTime Logical Model",
   "status": "draft",
-  "date": "2018-04-01",
+  "date": "2018-07-23",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
   ],
-  "description": "Time received by accepting facility or unit.",
+  "description": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "shr-core-ReceivedTime-model",
         "path": "shr-core-ReceivedTime-model",
-        "definition": "Time received by accepting facility or unit.",
+        "definition": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +59,8 @@
       {
         "id": "shr-core-ReceivedTime-model.value",
         "path": "shr-core-ReceivedTime-model.value",
-        "short": "DateTime representing time received by accepting facility or unit.",
-        "definition": "DateTime representing time received by accepting facility or unit.",
+        "short": "DateTime representing time the item was delivered to, or accepted by, the receiving facility or unit.",
+        "definition": "DateTime representing time the item was delivered to, or accepted by, the receiving facility or unit.",
         "alias": [
           "dateTime"
         ],
@@ -87,7 +87,7 @@
       {
         "id": "shr-core-ReceivedTime-model",
         "path": "shr-core-ReceivedTime-model",
-        "definition": "Time received by accepting facility or unit.",
+        "definition": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
         "min": 0,
         "max": "*",
         "base": {
@@ -102,8 +102,8 @@
       {
         "id": "shr-core-ReceivedTime-model.value",
         "path": "shr-core-ReceivedTime-model.value",
-        "short": "DateTime representing time received by accepting facility or unit.",
-        "definition": "DateTime representing time received by accepting facility or unit.",
+        "short": "DateTime representing time the item was delivered to, or accepted by, the receiving facility or unit.",
+        "definition": "DateTime representing time the item was delivered to, or accepted by, the receiving facility or unit.",
         "alias": [
           "dateTime"
         ],

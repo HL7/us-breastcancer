@@ -3,19 +3,19 @@
   "id": "cimi-statement-ConditionPresenceStatement",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionPresenceStatement Profile</b></p>\n  <p>A condition that is or may be present in a subject. &#039;Condition&#039; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.statement.ConditionPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  ConditionTopic.CodeableConcept maps to code\n  ConditionTopic.Category maps to category\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  constrain bodySite to 0..0\n  ConditionPresenceContext.Severity maps to severity\n  Stage maps to stage\n  Stage.CodeableConcept maps to stage.summary\n  Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ConditionPresenceStatement Profile</b></p>\n  <p>A condition that is or may be present in a subject. &#039;Condition&#039; is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.statement.ConditionPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  PersonOfRecord maps to subject\n  ConditionTopic.Category maps to category\n  ConditionTopic.TopicCode maps to code\n  constrain bodySite to 0..0\n  ConditionTopic.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/condition-targetBodySite \n  ConditionPresenceContext.Encounter maps to context\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ConditionPresenceStatement",
   "name": "ConditionPresenceStatementProfile",
   "status": "draft",
-  "date": "2018-04-01",
+  "date": "2018-07-23",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
@@ -75,7 +75,7 @@
         "id": "Condition:cimi-statement-ConditionPresenceStatement",
         "path": "Condition",
         "short": "BC ConditionPresenceStatement Profile",
-        "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.",
+        "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.",
         "min": 0,
         "max": "*",
         "base": {
@@ -381,18 +381,1163 @@
         }
       },
       {
-        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:encounter",
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:anatomicallocation",
         "path": "Condition.extension",
-        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/StructureDefinition/condition-targetBodySite"
+          }
+        ],
+        "sliceName": "anatomicallocation"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord",
+        "path": "Condition.extension",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
           }
         ],
-        "sliceName": "encounter"
+        "sliceName": "subjectifnotpersonofrecord"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.id",
+        "path": "Condition.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension",
+        "path": "Condition.extension.extension",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:entityorrole",
+        "path": "Condition.extension.extension",
+        "sliceName": "entityorrole",
+        "definition": "Parent class entity and role.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:entityorrole.id",
+        "path": "Condition.extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:entityorrole.extension",
+        "path": "Condition.extension.extension.extension",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:entityorrole.url",
+        "path": "Condition.extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:entityorrole.value[x]",
+        "path": "Condition.extension.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:relationshiptopersonofrecord",
+        "path": "Condition.extension.extension",
+        "sliceName": "relationshiptopersonofrecord",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:relationshiptopersonofrecord.id",
+        "path": "Condition.extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:relationshiptopersonofrecord.extension:extension",
+        "path": "Condition.extension.extension.extension",
+        "sliceName": "extension",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:relationshiptopersonofrecord.url",
+        "path": "Condition.extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.extension:relationshiptopersonofrecord.valueCodeableConcept",
+        "path": "Condition.extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          }
+        }
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.url",
+        "path": "Condition.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord.value[x]",
+        "path": "Condition.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation",
+        "path": "Condition.extension",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-extension"
+          }
+        ],
+        "sliceName": "sourceofinformation"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.id",
+        "path": "Condition.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension",
+        "path": "Condition.extension.extension",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension:entityorrole",
+        "path": "Condition.extension.extension",
+        "sliceName": "entityorrole",
+        "definition": "Parent class entity and role.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension:entityorrole.id",
+        "path": "Condition.extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension:entityorrole.extension",
+        "path": "Condition.extension.extension.extension",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension:entityorrole.url",
+        "path": "Condition.extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension:entityorrole.value[x]",
+        "path": "Condition.extension.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.extension:relationshiptopersonofrecord",
+        "path": "Condition.extension.extension",
+        "sliceName": "relationshiptopersonofrecord",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.url",
+        "path": "Condition.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation.value[x]",
+        "path": "Condition.extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:recorded",
+        "path": "Condition.extension",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-extension"
+          }
+        ],
+        "sliceName": "recorded"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:signed",
+        "path": "Condition.extension",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-extension"
+          }
+        ],
+        "sliceName": "signed"
       },
       {
         "id": "Condition:cimi-statement-ConditionPresenceStatement.modifierExtension",
@@ -586,9 +1731,9 @@
         ],
         "mustSupport": true,
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
           }
         },
         "mapping": [
@@ -791,7 +1936,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient"
           }
         ],
         "mustSupport": true,
@@ -834,11 +1979,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Encounter"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter"
           }
         ],
         "isSummary": true,
@@ -881,8 +2022,7 @@
             "code": "Period"
           },
           {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+            "code": "Range"
           },
           {
             "code": "string"
@@ -931,8 +2071,7 @@
             "code": "Period"
           },
           {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
+            "code": "Range"
           },
           {
             "code": "string"
@@ -1220,7 +2359,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation"
           }
         ],
         "condition": [
@@ -1481,28 +2620,94 @@
         "id": "Condition:cimi-statement-ConditionPresenceStatement",
         "path": "Condition",
         "short": "BC ConditionPresenceStatement Profile",
-        "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource.",
+        "definition": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.",
         "mustSupport": false
       },
       {
-        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:encounter",
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:anatomicallocation",
         "path": "Condition.extension",
-        "definition": "An abstract class that represents an encounter class. This class has been stubbed out to limit the scope of this implementation guide to classes relevant to this ballot concerning breast cancer.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/StructureDefinition/condition-targetBodySite"
+          }
+        ],
+        "sliceName": "anatomicallocation"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:subjectifnotpersonofrecord",
+        "path": "Condition.extension",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-Encounter-extension"
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
           }
         ],
-        "sliceName": "encounter"
+        "sliceName": "subjectifnotpersonofrecord"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:sourceofinformation",
+        "path": "Condition.extension",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-extension"
+          }
+        ],
+        "sliceName": "sourceofinformation"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:recorded",
+        "path": "Condition.extension",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-extension"
+          }
+        ],
+        "sliceName": "recorded"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.extension:signed",
+        "path": "Condition.extension",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-extension"
+          }
+        ],
+        "sliceName": "signed"
       },
       {
         "id": "Condition:cimi-statement-ConditionPresenceStatement.clinicalStatus",
         "path": "Condition.clinicalStatus",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.category",
+        "path": "Condition.category",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
+          }
+        }
       },
       {
         "id": "Condition:cimi-statement-ConditionPresenceStatement.severity",
@@ -1528,49 +2733,22 @@
         "max": "0"
       },
       {
-        "id": "Condition:cimi-statement-ConditionPresenceStatement.onset[x]",
-        "path": "Condition.onset[x]",
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.subject",
+        "path": "Condition.subject",
         "type": [
           {
-            "code": "dateTime"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
-          },
-          {
-            "code": "string"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient"
           }
         ]
       },
       {
-        "id": "Condition:cimi-statement-ConditionPresenceStatement.abatement[x]",
-        "path": "Condition.abatement[x]",
+        "id": "Condition:cimi-statement-ConditionPresenceStatement.context",
+        "path": "Condition.context",
         "type": [
           {
-            "code": "dateTime"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Range",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range"
-          },
-          {
-            "code": "string"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter"
           }
         ]
       },
@@ -1586,7 +2764,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-EvaluationResultRecorded"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation"
           }
         ]
       }
@@ -1599,5 +2777,5 @@
     }
   ],
   "title": "BC ConditionPresenceStatement Profile",
-  "description": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.\n\nIn CIMI terms, it is an archetype of ClinicalStatement that combines a ConditionTopic with the ConditionPresenceContext context. The core attributes of ClinicalStatement are not included here because of mapping difficulties to FHIR DomainResource."
+  "description": "A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble."
 }

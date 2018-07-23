@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-ClinicalStatus-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ClinicalStatus Logical Model</b></p>\n  <p>A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ClinicalStatus-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.ClinicalStatus"
+    }
+  ],
+  "name": "ClinicalStatusModel",
+  "title": "BC ClinicalStatus Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-ClinicalStatus-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-ClinicalStatus-model",
+        "path": "cimi-context-ClinicalStatus-model",
+        "definition": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-ClinicalStatus-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-ClinicalStatus-model.value",
+        "path": "cimi-context-ClinicalStatus-model.value",
+        "short": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-ClinicalStatus-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-ClinicalStatus-model",
+        "path": "cimi-context-ClinicalStatus-model",
+        "definition": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-ClinicalStatus-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-ClinicalStatus-model.value",
+        "path": "cimi-context-ClinicalStatus-model.value",
+        "short": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-ClinicalStatus-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

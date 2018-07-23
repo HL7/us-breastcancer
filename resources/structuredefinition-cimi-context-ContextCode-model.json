@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-ContextCode-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ContextCode Logical Model</b></p>\n  <p>A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: &#039;Finding context (attribute)&#039; (SCTID: 408729009) and &#039;Procedure context (attribute)&#039; (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.ContextCode"
+    }
+  ],
+  "name": "ContextCodeModel",
+  "title": "BC ContextCode Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-ContextCode-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-ContextCode-model",
+        "path": "cimi-context-ContextCode-model",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-ContextCode-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-ContextCode-model.value",
+        "path": "cimi-context-ContextCode-model.value",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-ContextCode-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-ContextCode-model",
+        "path": "cimi-context-ContextCode-model",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-ContextCode-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-ContextCode-model.value",
+        "path": "cimi-context-ContextCode-model.value",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-ContextCode-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

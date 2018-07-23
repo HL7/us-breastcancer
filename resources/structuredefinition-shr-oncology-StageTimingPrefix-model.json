@@ -1,0 +1,141 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-oncology-StageTimingPrefix-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StageTimingPrefix Logical Model</b></p>\n  <p>Indicates when the staging was done, in terms of treatment landmarks.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-StageTimingPrefix-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.StageTimingPrefix"
+    }
+  ],
+  "name": "StageTimingPrefixModel",
+  "title": "BC StageTimingPrefix Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates when the staging was done, in terms of treatment landmarks.",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "260869008",
+      "display": "Timing of stage"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-oncology-StageTimingPrefix-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-oncology-StageTimingPrefix-model",
+        "path": "shr-oncology-StageTimingPrefix-model",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-StageTimingPrefix-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-StageTimingPrefix-model.value",
+        "path": "shr-oncology-StageTimingPrefix-model.value",
+        "short": "Code representing indicates when the staging was done, in terms of treatment landmarks.",
+        "definition": "Code representing indicates when the staging was done, in terms of treatment landmarks.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-StageTimingPrefix-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-StageTimingPrefixVS"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-oncology-StageTimingPrefix-model",
+        "path": "shr-oncology-StageTimingPrefix-model",
+        "definition": "Indicates when the staging was done, in terms of treatment landmarks.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-StageTimingPrefix-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-StageTimingPrefix-model.value",
+        "path": "shr-oncology-StageTimingPrefix-model.value",
+        "short": "Code representing indicates when the staging was done, in terms of treatment landmarks.",
+        "definition": "Code representing indicates when the staging was done, in terms of treatment landmarks.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-StageTimingPrefix-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-StageTimingPrefixVS"
+          }
+        }
+      }
+    ]
+  }
+}

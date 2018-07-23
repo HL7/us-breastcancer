@@ -1,0 +1,392 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-statement-ClinicalStatement-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC ClinicalStatement Logical Model</b></p>\n  <p>A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalStatement-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.statement.ClinicalStatement"
+    }
+  ],
+  "name": "ClinicalStatementModel",
+  "title": "BC ClinicalStatement Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-statement-ClinicalStatement-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-statement-ClinicalStatement-model",
+        "path": "cimi-statement-ClinicalStatement-model",
+        "definition": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.personOfRecord",
+        "path": "cimi-statement-ClinicalStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.personOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.subjectIfNotPersonOfRecord",
+        "path": "cimi-statement-ClinicalStatement-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.sourceOfInformation",
+        "path": "cimi-statement-ClinicalStatement-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.recorded",
+        "path": "cimi-statement-ClinicalStatement-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.signed",
+        "path": "cimi-statement-ClinicalStatement-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.statementTopic",
+        "path": "cimi-statement-ClinicalStatement-model.statementTopic",
+        "short": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.statementTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-StatementTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.statementContext",
+        "path": "cimi-statement-ClinicalStatement-model.statementContext",
+        "short": "Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.\nThe StatementContext class aligns with the SNOMED CT Situations with Explicit Context (SWEC) Concept Model. The StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information. It also often holds provenance information relevant to the context of the clinical statement. It is important to note that by default the context applies to the conjunction of the attribute specified in the statement. For instance, if a clinical statement has a topic describing a rash on left arm and a context of 'absent', then the statement states that the subject of interest did not have a rash on the left arm but might have had one on the right arm.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.statementContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-StatementContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-statement-ClinicalStatement-model",
+        "path": "cimi-statement-ClinicalStatement-model",
+        "definition": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.personOfRecord",
+        "path": "cimi-statement-ClinicalStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.personOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.subjectIfNotPersonOfRecord",
+        "path": "cimi-statement-ClinicalStatement-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.sourceOfInformation",
+        "path": "cimi-statement-ClinicalStatement-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.recorded",
+        "path": "cimi-statement-ClinicalStatement-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.signed",
+        "path": "cimi-statement-ClinicalStatement-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.statementTopic",
+        "path": "cimi-statement-ClinicalStatement-model.statementTopic",
+        "short": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.statementTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-StatementTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalStatement-model.statementContext",
+        "path": "cimi-statement-ClinicalStatement-model.statementContext",
+        "short": "Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.\nThe StatementContext class aligns with the SNOMED CT Situations with Explicit Context (SWEC) Concept Model. The StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information. It also often holds provenance information relevant to the context of the clinical statement. It is important to note that by default the context applies to the conjunction of the attribute specified in the statement. For instance, if a clinical statement has a topic describing a rash on left arm and a context of 'absent', then the statement states that the subject of interest did not have a rash on the left arm but might have had one on the right arm.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalStatement-model.statementContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-StatementContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

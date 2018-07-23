@@ -21,12 +21,12 @@
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
   ],
-  "date": "2018-04-01",
+  "date": "2018-07-23",
   "description": "A direction indicated by an angle relative to 12 o'clock.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -102,8 +102,90 @@
         ]
       },
       {
-        "id": "Extension:clockdirection.extension:extension",
+        "id": "Extension:clockdirection.extension",
         "path": "Extension.extension",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:codeableconcept",
+        "path": "Extension.extension",
+        "sliceName": "codeableconcept",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-CodeableConcept-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:codeableconcept.id",
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:codeableconcept.extension:extension",
+        "path": "Extension.extension.extension",
         "sliceName": "extension",
         "short": "Extension",
         "definition": "An Extension",
@@ -117,6 +199,248 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:codeableconcept.url",
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-CodeableConcept-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:codeableconcept.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ClockDirectionVS"
+          }
+        }
+      },
+      {
+        "id": "Extension:clockdirection.extension:topiccode",
+        "path": "Extension.extension",
+        "sliceName": "topiccode",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue",
+        "path": "Extension.extension",
+        "sliceName": "exceptionvalue",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue.id",
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue.extension:extension",
+        "path": "Extension.extension.extension",
+        "sliceName": "extension",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue.url",
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+          }
+        }
+      },
+      {
+        "id": "Extension:clockdirection.extension:interpretation",
+        "path": "Extension.extension",
+        "sliceName": "interpretation",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -150,12 +474,12 @@
         ]
       },
       {
-        "id": "Extension:clockdirection.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
+        "id": "Extension:clockdirection.value[x]",
+        "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -163,7 +487,118 @@
         },
         "type": [
           {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
           }
         ],
         "mapping": [
@@ -171,13 +606,7 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ClockDirectionVS"
-          }
-        }
+        ]
       }
     ]
   },
@@ -192,10 +621,80 @@
         "max": "*"
       },
       {
-        "id": "Extension:clockdirection.extension:extension",
+        "id": "Extension:clockdirection.extension:codeableconcept",
         "path": "Extension.extension",
-        "sliceName": "extension",
-        "max": "0"
+        "sliceName": "codeableconcept",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-CodeableConcept-extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:codeableconcept.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ClockDirectionVS"
+          }
+        }
+      },
+      {
+        "id": "Extension:clockdirection.extension:topiccode",
+        "path": "Extension.extension",
+        "sliceName": "topiccode",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue",
+        "path": "Extension.extension",
+        "sliceName": "exceptionvalue",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:clockdirection.extension:exceptionvalue.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+          }
+        }
+      },
+      {
+        "id": "Extension:clockdirection.extension:interpretation",
+        "path": "Extension.extension",
+        "sliceName": "interpretation",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-extension"
+          }
+        ]
       },
       {
         "id": "Extension:clockdirection.url",
@@ -208,20 +707,10 @@
         "fixedUri": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ClockDirection-extension"
       },
       {
-        "id": "Extension:clockdirection.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ClockDirectionVS"
-          }
-        }
+        "id": "Extension:clockdirection.value[x]",
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
       }
     ]
   }

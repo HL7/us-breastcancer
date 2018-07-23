@@ -38,100 +38,56 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="CodeSystem-cimi-AnatomicalDirectionCS.html">AnatomicalDirectionCS</a></td>
-      <td>Anatomical location or specimen further detailing directionality. Codes are from NCI</td>
+      <td><a href="CodeSystem-cimi-element-AnatomicalDirectionCS.html">AnatomicalDirectionCS</a></td>
+      <td>{% capture md_text %}Anatomical location or specimen further detailing directionality. Codes are from NCI{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-BreastCancerStageCS.html">BreastCancerStageCS</a></td>
-      <td>Codes representing the overall stage of the cancer, based on criteria defined by the staging system being used. The preferred staging system is American Joint Committee on Cancer, 8th Edition, Breast Cancer Chapter. Codes and descriptions have been redacted due to copyright restrictions.</td>
+      <td><a href="CodeSystem-shr-oncology-BreastCancerTypeCS.html">BreastCancerTypeCS</a></td>
+      <td>{% capture md_text %}Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-BreastCancerTypeCS.html">BreastCancerTypeCS</a></td>
-      <td>Histologic types of breast cancer. Codes are drawn from ICD-O-3. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.</td>
+      <td><a href="CodeSystem-shr-oncology-BreastSpecimenTypeCS.html">BreastSpecimenTypeCS</a></td>
+      <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-BreastSiteCS.html">BreastSiteCS</a></td>
-      <td>Topography of the breast. Codes are drawn from ICD-O-3. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.</td>
+      <td><a href="CodeSystem-shr-core-ConditionCategoryCS.html">ConditionCategoryCS</a></td>
+      <td>{% capture md_text %}undefined{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-BreastSpecimenCollectionMethodCS.html">BreastSpecimenCollectionMethodCS</a></td>
-      <td>The surgical method used to obtain the tissue sample.</td>
+      <td><a href="CodeSystem-cimi-context-ExceptionValueCS.html">ExceptionValueCS</a></td>
+      <td>{% capture md_text %}Reasons that a value associated with a test or other finding is missing. Includes all codes from 	http://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-BreastSpecimenTypeCS.html">BreastSpecimenTypeCS</a></td>
-      <td>The type of specimen obtained from the breast.</td>
+      <td><a href="CodeSystem-cimi-entity-LanguageQualifierCS.html">LanguageQualifierCS</a></td>
+      <td>{% capture md_text %}A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-cimi-statement-DiagnosticServiceCS.html">DiagnosticServiceCS</a></td>
-      <td>The type of laboratory service used in producing a laboratory result</td>
+      <td><a href="CodeSystem-shr-oncology-LymphNodeClinicalMethodCS.html">LymphNodeClinicalMethodCS</a></td>
+      <td>{% capture md_text %}The method of lymph node sample collection for clinical LNI assessment.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-cimi-ExceptionValueCS.html">ExceptionValueCS</a></td>
-      <td>Reasons that a value associated with a test or other finding is missing. Extended set based on http://hl7.org/fhir/ValueSet/observation-valueabsentreason</td>
+      <td><a href="CodeSystem-shr-oncology-MorphologyBehaviorCS.html">MorphologyBehaviorCS</a></td>
+      <td>{% capture md_text %}The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes. Codes are presented as local codes because they are portions of the full code to be post-coordinated, and not full ICD-O-3 codes.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-HER2IHCMethodCS.html">HER2IHCMethodCS</a></td>
-      <td>Value set containing methods of determining HER2 status by immunohistochemistry</td>
+      <td><a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html">PerformanceGradingScaleCS</a></td>
+      <td>{% capture md_text %}A simple performance grading scale. Also useful for grading quality.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-HER2ISHMethodCS.html">HER2ISHMethodCS</a></td>
-      <td>Value set containing In Situ Hybridization methods of determining HER2 status</td>
+      <td><a href="CodeSystem-shr-oncology-RecurrenceRiskScoreInterpretationCS.html">RecurrenceRiskScoreInterpretationCS</a></td>
+      <td>{% capture md_text %}Interpretations of risk as high, intermediate, or low. Answer set taken from LOINC LL3198-0.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-HER2StatusCS.html">HER2StatusCS</a></td>
-      <td>HER2 status overall result</td>
+      <td><a href="CodeSystem-shr-oncology-StageTimingPrefixCS.html">StageTimingPrefixCS</a></td>
+      <td>{% capture md_text %}When staging was done, relative to treatment events (qualifier).{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-oncology-MammaprintRiskScoreInterpretationCS.html">MammaprintRiskScoreInterpretationCS</a></td>
-      <td>Intepretation of Mammaprint Recurrence Score</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-MitoticCountScoreCS.html">MitoticCountScoreCS</a></td>
-      <td>Value set containing the scores for Nottingham Histologic Score Mitotic Rate</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-MorphologyBehaviorCS.html">MorphologyBehaviorCS</a></td>
-      <td>The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes. Codes are presented as local codes due to the lack of a ICD-O-3 terminology server available to the FHIR IG publisher.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-NuclearGradeCS.html">NuclearGradeCS</a></td>
-      <td>The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. The nuclear grade is a part of overall tumor grade.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-OncotypeDxDCISRiskScoreInterpretationCS.html">OncotypeDxDCISRiskScoreInterpretationCS</a></td>
-      <td>Intepretation of OncotypeDX DCIS (Ductal Carcinoma In Situ) Recurrence Score</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-OncotypeDxInvasiveRiskScoreInterpretationCS.html">OncotypeDxInvasiveRiskScoreInterpretationCS</a></td>
-      <td>Intepretation of OncotypeDX Recurrence Score for invasive cancers.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-PositiveNegativeCS.html">PositiveNegativeCS</a></td>
-      <td>Value set containing the values positive and negative. Values are from National Library of Medicine Metathesaurus.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-PositiveNegativeEquivocalCS.html">PositiveNegativeEquivocalCS</a></td>
-      <td>Interpretation of a test result as positive, negative or equivocal.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-RecurrenceRiskScoreInterpretationCS.html">RecurrenceRiskScoreInterpretationCS</a></td>
-      <td>Interpretations of risk as high, intermediate, or low. Answer set taken from LOINC LL3198-0</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-StageTimingPrefixCS.html">StageTimingPrefixCS</a></td>
-      <td>When staging was done, relative to treatment events.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-StagingMethodCS.html">StagingMethodCS</a></td>
-      <td>The methodology or standard used to assign the cancer&#039;s overall stage.</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-oncology-StainingIntensityCS.html">StainingIntensityCS</a></td>
-      <td>Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).</td>
+      <td><a href="CodeSystem-shr-core-YesNoCS.html">YesNoCS</a></td>
+      <td>{% capture md_text %}Code set indicating yes or no.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="CodeSystem-shr-core-YesNoUnknownCS.html">YesNoUnknownCS</a></td>
-      <td>A simple value set containing the values Yes (or true), No (or false), and Unknown</td>
+      <td>{% capture md_text %}Code set indicating yes, no, or unknown.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     
   </tbody>

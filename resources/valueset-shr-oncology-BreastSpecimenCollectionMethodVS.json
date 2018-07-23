@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-BreastSpecimenCollectionMethodVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastSpecimenCollectionMethodVS ValueSet</b></p>\n<p>The surgical method used to obtain the tissue sample.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastSpecimenCollectionMethodVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.BreastSpecimenCollectionMethodVS"
+    }
+  ],
+  "name": "BreastSpecimenCollectionMethodVS",
+  "title": "BC BreastSpecimenCollectionMethodVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "The surgical method used to obtain the tissue sample.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "9911007",
+            "display": "Core needle biopsy (procedure)"
+          },
+          {
+            "code": "48635004",
+            "display": "Fine needle biopsy (procedure)"
+          },
+          {
+            "code": "172043006",
+            "display": "Simple mastectomy (procedure)"
+          },
+          {
+            "code": "237372000",
+            "display": "Excisional biopsy of breast (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

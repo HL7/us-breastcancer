@@ -1,0 +1,416 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-PresenceContext-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC PresenceContext Logical Model</b></p>\n  <p>PresenceContext indicates that the finding in question exists or is present to some level of certainty.\nFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-PresenceContext-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.PresenceContext"
+    }
+  ],
+  "name": "PresenceContextModel",
+  "title": "BC PresenceContext Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "PresenceContext indicates that the finding in question exists or is present to some level of certainty.\nFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "410515003"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-PresenceContext-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-PresenceContext-model",
+        "path": "cimi-context-PresenceContext-model",
+        "definition": "PresenceContext indicates that the finding in question exists or is present to some level of certainty.\nFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-PresenceContext-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.contextCode",
+        "path": "cimi-context-PresenceContext-model.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.contextCode.value",
+        "path": "cimi-context-PresenceContext-model.contextCode.value",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-ContextCode-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-PresenceContextVS"
+          }
+        }
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.encounter",
+        "path": "cimi-context-PresenceContext-model.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.verificationStatus",
+        "path": "cimi-context-PresenceContext-model.verificationStatus",
+        "short": "Whether an assessment has been confirmed by testing or observation.",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.verificationStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.onset",
+        "path": "cimi-context-PresenceContext-model.onset",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "85585-8"
+          }
+        ],
+        "short": "The beginning or first appearance of a mental or physical disorder.",
+        "definition": "The beginning or first appearance of a mental or physical disorder.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.onset",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Onset-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.abatement",
+        "path": "cimi-context-PresenceContext-model.abatement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "88878-4"
+          }
+        ],
+        "short": "The end, remission or resolution.",
+        "definition": "The end, remission or resolution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.abatement",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Abatement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.certainty",
+        "path": "cimi-context-PresenceContext-model.certainty",
+        "short": "The degree of confidence in a conclusion or assertion.",
+        "definition": "The degree of confidence in a conclusion or assertion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.certainty",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Certainty-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-PresenceContext-model",
+        "path": "cimi-context-PresenceContext-model",
+        "definition": "PresenceContext indicates that the finding in question exists or is present to some level of certainty.\nFor example, if the finding involves a myocardial infarction, the presence context implies that cardiac arrest has (or may have) taken place. Note that the name Presence is used rather than Present to prevent confusion with the temporal meaning of present.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-PresenceContext-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.contextCode",
+        "path": "cimi-context-PresenceContext-model.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.contextCode.value",
+        "path": "cimi-context-PresenceContext-model.contextCode.value",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-ContextCode-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-PresenceContextVS"
+          }
+        }
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.encounter",
+        "path": "cimi-context-PresenceContext-model.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.verificationStatus",
+        "path": "cimi-context-PresenceContext-model.verificationStatus",
+        "short": "Whether an assessment has been confirmed by testing or observation.",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.verificationStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.onset",
+        "path": "cimi-context-PresenceContext-model.onset",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "85585-8"
+          }
+        ],
+        "short": "The beginning or first appearance of a mental or physical disorder.",
+        "definition": "The beginning or first appearance of a mental or physical disorder.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.onset",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Onset-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.abatement",
+        "path": "cimi-context-PresenceContext-model.abatement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "88878-4"
+          }
+        ],
+        "short": "The end, remission or resolution.",
+        "definition": "The end, remission or resolution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.abatement",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Abatement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-PresenceContext-model.certainty",
+        "path": "cimi-context-PresenceContext-model.certainty",
+        "short": "The degree of confidence in a conclusion or assertion.",
+        "definition": "The degree of confidence in a conclusion or assertion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-PresenceContext-model.certainty",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Certainty-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

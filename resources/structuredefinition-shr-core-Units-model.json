@@ -15,14 +15,14 @@
   "name": "UnitsModel",
   "title": "BC Units Logical Model",
   "status": "draft",
-  "date": "2018-04-01",
+  "date": "2018-07-23",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
@@ -80,9 +80,9 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/ucum-units"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-AllUnitsVS"
           }
         }
       }
@@ -135,9 +135,9 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/ucum-units"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-AllUnitsVS"
           }
         }
       }

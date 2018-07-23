@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-HER2FISHMethodVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC HER2FISHMethodVS ValueSet</b></p>\n<p>Value set containing In Situ Hybridization methods of determining HER2 status</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-HER2FISHMethodVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.HER2FISHMethodVS"
+    }
+  ],
+  "name": "HER2FISHMethodVS",
+  "title": "BC HER2FISHMethodVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "Value set containing In Situ Hybridization methods of determining HER2 status",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "257430009",
+            "display": "Double probe"
+          },
+          {
+            "code": "257453005",
+            "display": "Single probe"
+          }
+        ]
+      }
+    ]
+  }
+}

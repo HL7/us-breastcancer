@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-FindingContext-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingContext Logical Model</b></p>\n  <p>The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc. This class aligns with the SNOMED Situation with Explicit Context.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingContext-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.FindingContext"
+    }
+  ],
+  "name": "FindingContextModel",
+  "title": "BC FindingContext Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc. This class aligns with the SNOMED Situation with Explicit Context.",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "410514004"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-FindingContext-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-FindingContext-model",
+        "path": "cimi-context-FindingContext-model",
+        "definition": "The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc. This class aligns with the SNOMED Situation with Explicit Context.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-FindingContext-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-FindingContext-model.contextCode",
+        "path": "cimi-context-FindingContext-model.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-FindingContext-model.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-FindingContext-model.encounter",
+        "path": "cimi-context-FindingContext-model.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-FindingContext-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-FindingContext-model",
+        "path": "cimi-context-FindingContext-model",
+        "definition": "The base class for representing the ontological status of a finding, e.g., present, absent, goal, risk, expectation, etc. This class aligns with the SNOMED Situation with Explicit Context.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-FindingContext-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-FindingContext-model.contextCode",
+        "path": "cimi-context-FindingContext-model.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-FindingContext-model.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-FindingContext-model.encounter",
+        "path": "cimi-context-FindingContext-model.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-FindingContext-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

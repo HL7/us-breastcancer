@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-LymphNodeMobilityVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LymphNodeMobilityVS ValueSet</b></p>\n<p>Values expressing the degree of moveability of lymph node upon palpation.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-LymphNodeMobilityVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.LymphNodeMobilityVS"
+    }
+  ],
+  "name": "LymphNodeMobilityVS",
+  "title": "BC LymphNodeMobilityVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "Values expressing the degree of moveability of lymph node upon palpation.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "261010008",
+            "display": "Fixed (qualifier)"
+          },
+          {
+            "code": "300824007",
+            "display": "Moveable (qualifier)"
+          }
+        ]
+      }
+    ]
+  }
+}

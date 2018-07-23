@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "shr-core-PerformanceGradingScaleCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC PerformanceGradingScaleCS CodeSystem</b></p>\n<p>A simple performance grading scale. Also useful for grading quality.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-core-PerformanceGradingScaleCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "shr.core.PerformanceGradingScaleCS"
+  },
+  "name": "PerformanceGradingScaleCS",
+  "title": "BC PerformanceGradingScaleCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "A simple performance grading scale. Also useful for grading quality.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "excellent",
+      "definition": "Excellent",
+      "display": "Excellent"
+    },
+    {
+      "code": "very_good",
+      "definition": "Very good",
+      "display": "Very good"
+    },
+    {
+      "code": "good",
+      "definition": "Good",
+      "display": "Good"
+    },
+    {
+      "code": "fair",
+      "definition": "Fair",
+      "display": "Fair"
+    },
+    {
+      "code": "poor",
+      "definition": "Poor",
+      "display": "Poor"
+    }
+  ]
+}

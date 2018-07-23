@@ -3,7 +3,7 @@
   "id": "shr-core-Quantity-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Quantity Logical Model</b></p>\n  <p>A quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Quantity Logical Model</b></p>\n  <p>A quantity with units, whose value may be bounded from above or below, as defined in FHIR</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model",
   "identifier": [
@@ -15,19 +15,19 @@
   "name": "QuantityModel",
   "title": "BC Quantity Logical Model",
   "status": "draft",
-  "date": "2018-04-01",
+  "date": "2018-07-23",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
   ],
-  "description": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+  "description": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR",
   "kind": "logical",
   "abstract": false,
   "type": "shr-core-Quantity-model",
@@ -38,7 +38,7 @@
       {
         "id": "shr-core-Quantity-model",
         "path": "shr-core-Quantity-model",
-        "definition": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+        "definition": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "min": 0,
         "max": "*",
         "base": {
@@ -53,8 +53,8 @@
       {
         "id": "shr-core-Quantity-model.value",
         "path": "shr-core-Quantity-model.value",
-        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.",
-        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
+        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "alias": [
           "decimal"
         ],
@@ -123,7 +123,7 @@
       {
         "id": "shr-core-Quantity-model",
         "path": "shr-core-Quantity-model",
-        "definition": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+        "definition": "A quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "min": 0,
         "max": "*",
         "base": {
@@ -138,8 +138,8 @@
       {
         "id": "shr-core-Quantity-model.value",
         "path": "shr-core-Quantity-model.value",
-        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.",
-        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR.\n\nThis definition is not fully consistent with CIMI V0.0.4 (whose definition of Quantity lacks a comparator, but includes numerical precision). Complex data types that appear frequently in FHIR have not been profiled, even if CIMI defines them differently. This choice means that the breast cancer profiles use the native FHIR datatype, rather than having to substitute a CIMI profile everywhere the native type is used.",
+        "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
+        "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "alias": [
           "decimal"
         ],

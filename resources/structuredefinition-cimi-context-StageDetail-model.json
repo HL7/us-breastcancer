@@ -1,0 +1,124 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-StageDetail-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC StageDetail Logical Model</b></p>\n  <p>The full staging information</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-StageDetail-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.StageDetail"
+    }
+  ],
+  "name": "StageDetailModel",
+  "title": "BC StageDetail Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "The full staging information",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-StageDetail-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-StageDetail-model",
+        "path": "cimi-context-StageDetail-model",
+        "definition": "The full staging information",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-StageDetail-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-StageDetail-model.value",
+        "path": "cimi-context-StageDetail-model.value",
+        "short": "Observation representing the full staging information",
+        "definition": "Observation representing the full staging information",
+        "alias": [
+          "observation"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-StageDetail-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-StageDetail-model",
+        "path": "cimi-context-StageDetail-model",
+        "definition": "The full staging information",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-StageDetail-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-StageDetail-model.value",
+        "path": "cimi-context-StageDetail-model.value",
+        "short": "Observation representing the full staging information",
+        "definition": "Observation representing the full staging information",
+        "alias": [
+          "observation"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-StageDetail-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

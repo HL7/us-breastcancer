@@ -1,0 +1,510 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-statement-LaboratoryObservation-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC LaboratoryObservation Logical Model</b></p>\n  <p>A coded finding based on a specimen collected from a patient.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-LaboratoryObservation-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.statement.LaboratoryObservation"
+    }
+  ],
+  "name": "LaboratoryObservationModel",
+  "title": "BC LaboratoryObservation Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A coded finding based on a specimen collected from a patient.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-statement-LaboratoryObservation-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-statement-LaboratoryObservation-model",
+        "path": "cimi-statement-LaboratoryObservation-model",
+        "definition": "A coded finding based on a specimen collected from a patient.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.personOfRecord",
+        "path": "cimi-statement-LaboratoryObservation-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.subjectIfNotPersonOfRecord",
+        "path": "cimi-statement-LaboratoryObservation-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.sourceOfInformation",
+        "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.value",
+        "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.value",
+        "short": "AnyPersonOrOrganization",
+        "definition": "AnyPersonOrOrganization",
+        "alias": [
+          "entityOrRole",
+          "anyPersonOrOrganization"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.recorded",
+        "path": "cimi-statement-LaboratoryObservation-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.signed",
+        "path": "cimi-statement-LaboratoryObservation-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.laboratoryObservationTopic",
+        "path": "cimi-statement-LaboratoryObservation-model.laboratoryObservationTopic",
+        "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
+        "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.laboratoryObservationTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-LaboratoryObservationTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.observationContext",
+        "path": "cimi-statement-LaboratoryObservation-model.observationContext",
+        "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "alias": [
+          "statementContext"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.observationContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ObservationContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-statement-LaboratoryObservation-model",
+        "path": "cimi-statement-LaboratoryObservation-model",
+        "definition": "A coded finding based on a specimen collected from a patient.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.personOfRecord",
+        "path": "cimi-statement-LaboratoryObservation-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.subjectIfNotPersonOfRecord",
+        "path": "cimi-statement-LaboratoryObservation-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.sourceOfInformation",
+        "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.value",
+        "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.value",
+        "short": "AnyPersonOrOrganization",
+        "definition": "AnyPersonOrOrganization",
+        "alias": [
+          "entityOrRole",
+          "anyPersonOrOrganization"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.recorded",
+        "path": "cimi-statement-LaboratoryObservation-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.signed",
+        "path": "cimi-statement-LaboratoryObservation-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.laboratoryObservationTopic",
+        "path": "cimi-statement-LaboratoryObservation-model.laboratoryObservationTopic",
+        "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
+        "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.laboratoryObservationTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-LaboratoryObservationTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-LaboratoryObservation-model.observationContext",
+        "path": "cimi-statement-LaboratoryObservation-model.observationContext",
+        "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "alias": [
+          "statementContext"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-LaboratoryObservation-model.observationContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ObservationContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

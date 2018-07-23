@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-NuclearGradeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC NuclearGradeVS ValueSet</b></p>\n<p>The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. The nuclear grade is a part of overall tumor grade. Local codes are used due to unavailability of suitable LOINC and Snomed codes.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-NuclearGradeVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.NuclearGradeVS"
+    }
+  ],
+  "name": "NuclearGradeVS",
+  "title": "BC NuclearGradeVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. The nuclear grade is a part of overall tumor grade. Local codes are used due to unavailability of suitable LOINC and Snomed codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "54102005",
+            "display": "G1 grade (finding) - well differentiated"
+          },
+          {
+            "code": "1663004",
+            "display": "G2 grade (finding)\t- moderately differentiated"
+          },
+          {
+            "code": "61026006",
+            "display": "G3 grade (finding)\t- pooly differentiated"
+          },
+          {
+            "code": "258245003",
+            "display": "G4 grade (finding) - undifferentiated"
+          }
+        ]
+      }
+    ]
+  }
+}

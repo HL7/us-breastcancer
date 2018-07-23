@@ -1,0 +1,2199 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-oncology-BreastCancerPresenceStatement-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Logical Model</b></p>\n  <p>Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerPresenceStatement-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.BreastCancerPresenceStatement"
+    }
+  ],
+  "name": "BreastCancerPresenceStatementModel",
+  "title": "BC BreastCancerPresenceStatement Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "126926005",
+      "display": "Neoplasm of breast (disorder)"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-oncology-BreastCancerPresenceStatement-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model",
+        "definition": "Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.personOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1299487"
+          }
+        ],
+        "short": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+        "definition": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+        "alias": [
+          "entityOrRole",
+          "patient"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
+        "short": "PatientOrPractitionerOrRelatedPerson",
+        "definition": "PatientOrPractitionerOrRelatedPerson",
+        "alias": [
+          "entityOrRole",
+          "patientOrPractitionerOrRelatedPerson"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-PatientOrPractitionerOrRelatedPerson-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.signed",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "short": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
+        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerTypeVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-FindingMethod-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "short": "Code representing a class or division of people or things having particular shared characteristics",
+        "definition": "Code representing a class or division of people or things having particular shared characteristics",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+        "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
+        "short": "The context for a condition that is known, suspected, or possibly present.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.",
+        "alias": [
+          "statementContext"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode.value",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-PresenceContextVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.encounter",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.verificationStatus",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.verificationStatus",
+        "short": "Whether an assessment has been confirmed by testing or observation.",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.verificationStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.onset",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.onset",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "85585-8"
+          }
+        ],
+        "short": "The beginning or first appearance of a mental or physical disorder.",
+        "definition": "The beginning or first appearance of a mental or physical disorder.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.onset",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Onset-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.abatement",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.abatement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "88878-4"
+          }
+        ],
+        "short": "The end, remission or resolution.",
+        "definition": "The end, remission or resolution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.abatement",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Abatement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.certainty",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.certainty",
+        "short": "The degree of confidence in a conclusion or assertion.",
+        "definition": "The degree of confidence in a conclusion or assertion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.certainty",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Certainty-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus",
+        "short": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ClinicalStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus.value",
+        "short": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-clinical"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.whenClinicallyRecognized",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.whenClinicallyRecognized",
+        "short": "The time at which a condition or condition was first identified in a healthcare context.",
+        "definition": "The time at which a condition or condition was first identified in a healthcare context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.whenClinicallyRecognized",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-WhenClinicallyRecognized-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "89251-3",
+            "display": "Condition present on admission"
+          }
+        ],
+        "short": "If the problem or condition existed before the current episode of care.",
+        "definition": "If the problem or condition existed before the current episode of care.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Preexisting-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0392364"
+          }
+        ],
+        "short": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "definition": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Severity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity.value",
+        "short": "Code representing degree of harshness or extent of a symptom, disorder, or condition.",
+        "definition": "Code representing degree of harshness or extent of a symptom, disorder, or condition.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-severity"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C3858539",
+            "display": "Criticality"
+          }
+        ],
+        "short": "The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "definition": "The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Criticality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality.value",
+        "short": "Code representing the potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "definition": "Code representing the potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0699749"
+          }
+        ],
+        "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.value",
+        "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+        "short": "The full staging information",
+        "definition": "The full staging information",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C2216702",
+            "display": "Malignant Neoplasm of Breast Staging"
+          }
+        ],
+        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
+        "alias": [
+          "observation",
+          "breastCancerStage"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerStage-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+        "short": "A description of the morphology and behavioral characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-MorphologyBehavior-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior.value",
+        "short": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
+        "definition": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-MorphologyBehavior-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-MorphologyBehaviorVS"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model",
+        "definition": "Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.personOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1299487"
+          }
+        ],
+        "short": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+        "definition": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+        "alias": [
+          "entityOrRole",
+          "patient"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
+        "short": "PatientOrPractitionerOrRelatedPerson",
+        "definition": "PatientOrPractitionerOrRelatedPerson",
+        "alias": [
+          "entityOrRole",
+          "patientOrPractitionerOrRelatedPerson"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-PatientOrPractitionerOrRelatedPerson-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.signed",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "short": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "alias": [
+          "statementTopic"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
+        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerTypeVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-topic-FindingMethod-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "short": "Code representing a class or division of people or things having particular shared characteristics",
+        "definition": "Code representing a class or division of people or things having particular shared characteristics",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+        "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
+        "short": "The context for a condition that is known, suspected, or possibly present.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.",
+        "alias": [
+          "statementContext"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode.value",
+        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.contextCode.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-PresenceContextVS"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.encounter",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.verificationStatus",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.verificationStatus",
+        "short": "Whether an assessment has been confirmed by testing or observation.",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.verificationStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.onset",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.onset",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "85585-8"
+          }
+        ],
+        "short": "The beginning or first appearance of a mental or physical disorder.",
+        "definition": "The beginning or first appearance of a mental or physical disorder.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.onset",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Onset-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.abatement",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.abatement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "88878-4"
+          }
+        ],
+        "short": "The end, remission or resolution.",
+        "definition": "The end, remission or resolution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.abatement",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Abatement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.certainty",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.certainty",
+        "short": "The degree of confidence in a conclusion or assertion.",
+        "definition": "The degree of confidence in a conclusion or assertion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.certainty",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Certainty-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus",
+        "short": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ClinicalStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus.value",
+        "short": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "Code representing a flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.clinicalStatus.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-clinical"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.whenClinicallyRecognized",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.whenClinicallyRecognized",
+        "short": "The time at which a condition or condition was first identified in a healthcare context.",
+        "definition": "The time at which a condition or condition was first identified in a healthcare context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.whenClinicallyRecognized",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-WhenClinicallyRecognized-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "89251-3",
+            "display": "Condition present on admission"
+          }
+        ],
+        "short": "If the problem or condition existed before the current episode of care.",
+        "definition": "If the problem or condition existed before the current episode of care.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Preexisting-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0392364"
+          }
+        ],
+        "short": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "definition": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Severity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity.value",
+        "short": "Code representing degree of harshness or extent of a symptom, disorder, or condition.",
+        "definition": "Code representing degree of harshness or extent of a symptom, disorder, or condition.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-severity"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C3858539",
+            "display": "Criticality"
+          }
+        ],
+        "short": "The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "definition": "The potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Criticality-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality.value",
+        "short": "Code representing the potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "definition": "Code representing the potential clinical harm associated with a condition. When the worst case result is assessed to have a life-threatening or organ system threatening potential, it is considered to be of high criticality.",
+        "alias": [
+          "code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.criticality.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"
+          }
+        }
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0699749"
+          }
+        ],
+        "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.value",
+        "short": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "definition": "Code representing the relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+        "short": "The full staging information",
+        "definition": "The full staging information",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C2216702",
+            "display": "Malignant Neoplasm of Breast Staging"
+          }
+        ],
+        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
+        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
+        "alias": [
+          "observation",
+          "breastCancerStage"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerStage-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+        "short": "A description of the morphology and behavioral characteristics of the cancer.",
+        "definition": "A description of the morphology and behavioral characteristics of the cancer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-MorphologyBehavior-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior.value",
+        "short": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
+        "definition": "Code representing a description of the morphology and behavioral characteristics of the cancer.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-MorphologyBehavior-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-MorphologyBehaviorVS"
+          }
+        }
+      }
+    ]
+  }
+}

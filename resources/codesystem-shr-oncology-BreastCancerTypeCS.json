@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "shr-oncology-BreastCancerTypeCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerTypeCS CodeSystem</b></p>\n<p>Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-oncology-BreastCancerTypeCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "shr.oncology.BreastCancerTypeCS"
+  },
+  "name": "BreastCancerTypeCS",
+  "title": "BC BreastCancerTypeCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "8571",
+      "definition": "Metaplastic carcinoma with mesenchymal differentiation- corresponds to ICDO3#8571 Metaplastic carcinoma with mesenchymal differentiation",
+      "display": "Metaplastic carcinoma with mesenchymal differentiation- corresponds to ICDO3#8571 Metaplastic carcinoma with mesenchymal differentiation"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-RelevantTime-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC RelevantTime Logical Model</b></p>\n  <p>The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.RelevantTime"
+    }
+  ],
+  "name": "RelevantTimeModel",
+  "title": "BC RelevantTime Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-RelevantTime-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-RelevantTime-model",
+        "path": "cimi-context-RelevantTime-model",
+        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-RelevantTime-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-RelevantTime-model.value[x]",
+        "path": "cimi-context-RelevantTime-model.value[x]",
+        "short": "DateTime or TimePeriod representing the time or time period that the finding addresses.",
+        "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "alias": [
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-RelevantTime-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-RelevantTime-model",
+        "path": "cimi-context-RelevantTime-model",
+        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-RelevantTime-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-RelevantTime-model.value[x]",
+        "path": "cimi-context-RelevantTime-model.value[x]",
+        "short": "DateTime or TimePeriod representing the time or time period that the finding addresses.",
+        "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "alias": [
+          "dateTime",
+          "timePeriod"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-RelevantTime-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

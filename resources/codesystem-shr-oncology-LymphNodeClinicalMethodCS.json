@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "shr-oncology-LymphNodeClinicalMethodCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LymphNodeClinicalMethodCS CodeSystem</b></p>\n<p>The method of lymph node sample collection for clinical LNI assessment.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-oncology-LymphNodeClinicalMethodCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/breastcancer",
+    "value": "shr.oncology.LymphNodeClinicalMethodCS"
+  },
+  "name": "LymphNodeClinicalMethodCS",
+  "title": "BC LymphNodeClinicalMethodCS CodeSystem",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "The method of lymph node sample collection for clinical LNI assessment.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "exam",
+      "definition": "Exam",
+      "display": "Exam"
+    },
+    {
+      "code": "imaging",
+      "definition": "Imaging",
+      "display": "Imaging"
+    }
+  ]
+}

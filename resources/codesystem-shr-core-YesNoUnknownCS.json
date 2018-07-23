@@ -3,7 +3,7 @@
   "id": "shr-core-YesNoUnknownCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC YesNoUnknownCS CodeSystem</b></p>\n<p>A simple value set containing the values Yes (or true), No (or false), and Unknown</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC YesNoUnknownCS CodeSystem</b></p>\n<p>Code set indicating yes, no, or unknown.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-core-YesNoUnknownCS",
   "identifier": {
@@ -19,13 +19,13 @@
       "telecom": [
         {
           "system": "url",
-          "value": "http://standardhealthrecord.org"
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
         }
       ]
     }
   ],
-  "date": "2018-04-01",
-  "description": "A simple value set containing the values Yes (or true), No (or false), and Unknown",
+  "date": "2018-07-23",
+  "description": "Code set indicating yes, no, or unknown.",
   "caseSensitive": true,
   "content": "complete",
   "count": 3,

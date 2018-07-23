@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-PositiveNegativeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC PositiveNegativeVS ValueSet</b></p>\n<p>Value set containing the values positive and negative. VSAC  value set OID 2.16.840.1.113762.1.4.1166.62.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-PositiveNegativeVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.core.PositiveNegativeVS"
+    }
+  ],
+  "name": "PositiveNegativeVS",
+  "title": "BC PositiveNegativeVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-07-23",
+  "description": "Value set containing the values positive and negative. VSAC  value set OID 2.16.840.1.113762.1.4.1166.62.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10828004",
+            "display": "Positive"
+          },
+          {
+            "code": "260385009",
+            "display": "Negative"
+          }
+        ]
+      }
+    ]
+  }
+}

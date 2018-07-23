@@ -1,0 +1,182 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-Race-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Race Logical Model</b></p>\n  <p>Subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Race-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.entity.Race"
+    }
+  ],
+  "name": "RaceModel",
+  "title": "BC Race Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0034510"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-Race-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-Race-model",
+        "path": "cimi-entity-Race-model",
+        "definition": "Subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Race-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-Race-model.value",
+        "path": "cimi-entity-Race-model.value",
+        "short": "Code representing subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+        "definition": "Code representing subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-Race-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+          }
+        }
+      },
+      {
+        "id": "cimi-entity-Race-model.raceDetail",
+        "path": "cimi-entity-Race-model.raceDetail",
+        "short": "Additional description of race or heritage.",
+        "definition": "Additional description of race or heritage.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Race-model.raceDetail",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RaceDetail-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-Race-model",
+        "path": "cimi-entity-Race-model",
+        "definition": "Subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Race-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-Race-model.value",
+        "path": "cimi-entity-Race-model.value",
+        "short": "Code representing subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+        "definition": "Code representing subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-Race-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+          }
+        }
+      },
+      {
+        "id": "cimi-entity-Race-model.raceDetail",
+        "path": "cimi-entity-Race-model.raceDetail",
+        "short": "Additional description of race or heritage.",
+        "definition": "Additional description of race or heritage.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Race-model.raceDetail",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RaceDetail-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

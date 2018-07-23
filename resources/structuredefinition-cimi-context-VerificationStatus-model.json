@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-context-VerificationStatus-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC VerificationStatus Logical Model</b></p>\n  <p>Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.context.VerificationStatus"
+    }
+  ],
+  "name": "VerificationStatusModel",
+  "title": "BC VerificationStatus Logical Model",
+  "status": "draft",
+  "date": "2018-07-23",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-context-VerificationStatus-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-context-VerificationStatus-model",
+        "path": "cimi-context-VerificationStatus-model",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-VerificationStatus-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-VerificationStatus-model.value",
+        "path": "cimi-context-VerificationStatus-model.value",
+        "short": "Code representing whether an assessment has been confirmed by testing or observation.",
+        "definition": "Code representing whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-VerificationStatus-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-context-VerificationStatus-model",
+        "path": "cimi-context-VerificationStatus-model",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-context-VerificationStatus-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-context-VerificationStatus-model.value",
+        "path": "cimi-context-VerificationStatus-model.value",
+        "short": "Code representing whether an assessment has been confirmed by testing or observation.",
+        "definition": "Code representing whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-context-VerificationStatus-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}
