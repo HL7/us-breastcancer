@@ -3,12 +3,12 @@
   "id": "shr-oncology-BreastCancerPresenceStatement",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Profile</b></p>\n  <p>Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.oncology.BreastCancerPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  PersonOfRecord maps to subject\n  ConditionTopic.Category maps to category\n  ConditionTopic.TopicCode maps to code\n  constrain bodySite to 0..0\n  ConditionTopic.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/condition-targetBodySite \n  ConditionPresenceContext.Encounter maps to context\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerPresenceStatement Profile</b></p>\n  <p>Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.oncology.BreastCancerPresenceStatement maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:\n  PersonOfRecord maps to subject\n  ConditionAssertionTopic.Category maps to category\n  ConditionAssertionTopic.TopicCode maps to code\n  constrain bodySite to 0..0\n  ConditionAssertionTopic.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/condition-targetBodySite \n  ConditionPresenceContext.Encounter maps to context\n  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus\n  ConditionPresenceContext.VerificationStatus maps to verificationStatus\n  ConditionPresenceContext.Onset maps to onset[x]\n  ConditionPresenceContext.Abatement maps to abatement[x]\n  ConditionPresenceContext.Severity maps to severity\n  ConditionPresenceContext.Stage maps to stage\n  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary\n  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerPresenceStatement",
   "name": "BreastCancerPresenceStatementProfile",
   "status": "draft",
-  "date": "2018-07-23",
+  "date": "2018-07-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {

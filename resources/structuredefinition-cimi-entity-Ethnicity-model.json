@@ -15,7 +15,7 @@
   "name": "EthnicityModel",
   "title": "BC Ethnicity Logical Model",
   "status": "draft",
-  "date": "2018-07-23",
+  "date": "2018-07-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -82,7 +82,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"
           }
         }
       },
@@ -152,7 +152,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"
           }
         }
       },

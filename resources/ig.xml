@@ -65,34 +65,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastClinicalLymphNodeInvolvement" />
-                <display value="BC BreastClinicalLymphNodeInvolvement Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastLymphNodeBodySite" />
-                <display value="BC BreastLymphNodeBodySite Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastLymphNodeSpecimen" />
-                <display value="BC BreastLymphNodeSpecimen Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement" />
-                <display value="BC BreastPathologicalLymphNodeInvolvement Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/shr-oncology-BreastSite" />
                 <display value="BC BreastSite Profile" />
             </sourceReference>
@@ -487,20 +459,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/shr-core-CodeableConcept-extension" />
                 <display value="BC CodeableConcept Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-CollectionMethod-extension" />
-                <display value="BC CollectionMethod Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-CollectionSite-extension" />
-                <display value="BC CollectionSite Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -989,13 +947,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastLymphNodeGroupVS" />
-                <display value="BC BreastLymphNodeGroupVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/shr-oncology-BreastSiteVS" />
                 <display value="BC BreastSiteVS ValueSet" />
             </sourceReference>
@@ -1089,34 +1040,6 @@
             <sourceReference>
                 <reference value="ValueSet/cimi-entity-LanguageQualifierVS" />
                 <display value="BC LanguageQualifierVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeClinicalMethodVS" />
-                <display value="BC LymphNodeClinicalMethodVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeInvolvementVS" />
-                <display value="BC LymphNodeInvolvementVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeMobilityVS" />
-                <display value="BC LymphNodeMobilityVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeSamplingMethodVS" />
-                <display value="BC LymphNodeSamplingMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1290,13 +1213,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-oncology-LymphNodeClinicalMethodCS" />
-                <display value="BC LymphNodeClinicalMethodCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/shr-oncology-MorphologyBehaviorCS" />
                 <display value="BC MorphologyBehaviorCS CodeSystem" />
             </sourceReference>
@@ -1418,6 +1334,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Age-model" />
                   <display value="AgeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-AlleviatingFactor-model" />
+                  <display value="AlleviatingFactorModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1591,41 +1514,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastClinicalLymphNodeInvolvement-model" />
-                  <display value="BreastClinicalLymphNodeInvolvementModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model" />
-                  <display value="BreastLymphNodeBodySiteModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastLymphNodeInvolvement-model" />
-                  <display value="BreastLymphNodeInvolvementModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastLymphNodeSpecimen-model" />
-                  <display value="BreastLymphNodeSpecimenModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement-model" />
-                  <display value="BreastPathologicalLymphNodeInvolvementModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-BreastSite-model" />
                   <display value="BreastSiteModel" />
               </sourceReference>
@@ -1773,6 +1661,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-ConditionAssertionTopic-model" />
+                  <display value="ConditionAssertionTopicModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-ConditionCause-model" />
                   <display value="ConditionCauseModel" />
               </sourceReference>
@@ -1789,13 +1684,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-ConditionPresenceStatement-model" />
                   <display value="ConditionPresenceStatementModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-topic-ConditionTopic-model" />
-                  <display value="ConditionTopicModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2053,6 +1941,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-ExacerbatingFactor-model" />
+                  <display value="ExacerbatingFactorModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-context-ExceptionValue-model" />
                   <display value="ExceptionValueModel" />
               </sourceReference>
@@ -2076,13 +1971,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-model" />
                   <display value="ExternalHealthRecordModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model" />
-                  <display value="ExtraCapsularExtensionOfNodalTumorStatusModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2375,27 +2263,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-LymphNodeMobility-model" />
-                  <display value="LymphNodeMobilityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-LymphNodeSamplingMethod-model" />
-                  <display value="LymphNodeSamplingMethodModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-LymphNodeSize-model" />
-                  <display value="LymphNodeSizeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-MammaprintRecurrenceScore-model" />
                   <display value="MammaprintRecurrenceScoreModel" />
               </sourceReference>
@@ -2545,41 +2412,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-NuclearPositivity-model" />
                   <display value="NuclearPositivityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfLymphNodesWithIsolatedTumorCells-model" />
-                  <display value="NumberOfLymphNodesWithIsolatedTumorCellsModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfLymphNodesWithMacrometastases-model" />
-                  <display value="NumberOfLymphNodesWithMacrometastasesModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfLymphNodesWithMicrometastases-model" />
-                  <display value="NumberOfLymphNodesWithMicrometastasesModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfRegionalLymphNodes-model" />
-                  <display value="NumberOfRegionalLymphNodesModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfSentinelLymphNodes-model" />
-                  <display value="NumberOfSentinelLymphNodesModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2774,13 +2606,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-context-Preexisting-model" />
-                  <display value="PreexistingModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-element-PreferredFlag-model" />
                   <display value="PreferredFlagModel" />
               </sourceReference>
@@ -2797,6 +2622,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-context-PresenceContext-model" />
                   <display value="PresenceContextModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-context-PresentOnAdmission-model" />
+                  <display value="PresentOnAdmissionModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -3210,13 +3042,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-TopicCode-model" />
                   <display value="TopicCodeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TotalNumberOfLymphNodesExamined-model" />
-                  <display value="TotalNumberOfLymphNodesExaminedModel" />
               </sourceReference>
           </resource>
           <resource>

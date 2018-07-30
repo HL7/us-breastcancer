@@ -15,7 +15,7 @@
   "name": "BreastCancerPresenceStatementModel",
   "title": "BC BreastCancerPresenceStatement Logical Model",
   "status": "draft",
-  "date": "2018-07-23",
+  "date": "2018-07-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -287,17 +287,17 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic",
         "short": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
-        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
         "alias": [
           "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic",
           "min": 1,
           "max": "1"
         },
@@ -311,14 +311,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -332,8 +332,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "alias": [
@@ -342,7 +342,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode.value",
           "min": 1,
           "max": "1"
         },
@@ -362,14 +362,14 @@
         }
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -383,8 +383,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod.value",
         "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "alias": [
@@ -413,8 +413,8 @@
         }
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.details",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.details",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -426,7 +426,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.details",
           "min": 0,
           "max": "1"
         },
@@ -440,14 +440,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.media",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.media",
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.media",
           "min": 0,
           "max": "*"
         },
@@ -461,14 +461,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -482,8 +482,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -492,7 +492,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -512,14 +512,14 @@
         }
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.breastSite",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.breastSite",
         "short": "A body site specific to the breast structure.",
         "definition": "A body site specific to the breast structure.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.breastSite",
           "min": 0,
           "max": "*"
         },
@@ -533,20 +533,74 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.conditionCause",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.conditionCause",
         "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
         "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.conditionCause",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.alleviatingFactor",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.alleviatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that reduce the severity of the pathology",
+        "definition": "Activities that reduce the severity of the pathology",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.alleviatingFactor",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-AlleviatingFactor-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.exacerbatingFactor",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.exacerbatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that increase the severity of the pathology",
+        "definition": "Activities that increase the severity of the pathology",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.exacerbatingFactor",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ExacerbatingFactor-model"
           }
         ],
         "mustSupport": false,
@@ -818,8 +872,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.presentOnAdmission",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.presentOnAdmission",
         "code": [
           {
             "system": "http://loinc.org",
@@ -832,13 +886,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.presentOnAdmission",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Preexisting-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-PresentOnAdmission-model"
           }
         ],
         "mustSupport": false,
@@ -1365,17 +1419,17 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic",
         "short": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
-        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
         "alias": [
           "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic",
           "min": 1,
           "max": "1"
         },
@@ -1389,14 +1443,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -1410,8 +1464,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode.value",
         "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
         "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "alias": [
@@ -1420,7 +1474,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.topicCode.value",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.topicCode.value",
           "min": 1,
           "max": "1"
         },
@@ -1440,14 +1494,14 @@
         }
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -1461,8 +1515,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.findingMethod.value",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.findingMethod.value",
         "short": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "Code representing the technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "alias": [
@@ -1491,8 +1545,8 @@
         }
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.details",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.details",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1504,7 +1558,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.details",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.details",
           "min": 0,
           "max": "1"
         },
@@ -1518,14 +1572,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.media",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.media",
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.media",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.media",
           "min": 0,
           "max": "*"
         },
@@ -1539,14 +1593,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -1560,8 +1614,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category.value",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category.value",
         "short": "Code representing a class or division of people or things having particular shared characteristics",
         "definition": "Code representing a class or division of people or things having particular shared characteristics",
         "alias": [
@@ -1570,7 +1624,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.category.value",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.category.value",
           "min": 1,
           "max": "1"
         },
@@ -1590,14 +1644,14 @@
         }
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.breastSite",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.breastSite",
         "short": "A body site specific to the breast structure.",
         "definition": "A body site specific to the breast structure.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.breastSite",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.breastSite",
           "min": 0,
           "max": "*"
         },
@@ -1611,20 +1665,74 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.conditionCause",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.conditionCause",
         "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
         "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionTopic.conditionCause",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.conditionCause",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.alleviatingFactor",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.alleviatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that reduce the severity of the pathology",
+        "definition": "Activities that reduce the severity of the pathology",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.alleviatingFactor",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-AlleviatingFactor-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.exacerbatingFactor",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.exacerbatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that increase the severity of the pathology",
+        "definition": "Activities that increase the severity of the pathology",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionAssertionTopic.exacerbatingFactor",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ExacerbatingFactor-model"
           }
         ],
         "mustSupport": false,
@@ -1896,8 +2004,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.presentOnAdmission",
+        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.presentOnAdmission",
         "code": [
           {
             "system": "http://loinc.org",
@@ -1910,13 +2018,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.preexisting",
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.presentOnAdmission",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Preexisting-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-PresentOnAdmission-model"
           }
         ],
         "mustSupport": false,

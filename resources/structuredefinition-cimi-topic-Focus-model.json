@@ -15,7 +15,7 @@
   "name": "FocusModel",
   "title": "BC Focus Logical Model",
   "status": "draft",
-  "date": "2018-07-23",
+  "date": "2018-07-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -56,6 +56,7 @@
         "short": "Choice of types representing the aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "definition": "Choice of types representing the aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "alias": [
+          "string",
           "codeableConcept",
           "identifier",
           "entityOrRole"
@@ -68,6 +69,9 @@
           "max": "1"
         },
         "type": [
+          {
+            "code": "string"
+          },
           {
             "code": "Coding"
           },
@@ -108,6 +112,7 @@
         "short": "Choice of types representing the aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "definition": "Choice of types representing the aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "alias": [
+          "string",
           "codeableConcept",
           "identifier",
           "entityOrRole"
@@ -120,6 +125,9 @@
           "max": "1"
         },
         "type": [
+          {
+            "code": "string"
+          },
           {
             "code": "Coding"
           },

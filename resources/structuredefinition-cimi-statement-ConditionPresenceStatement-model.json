@@ -15,7 +15,7 @@
   "name": "ConditionPresenceStatementModel",
   "title": "BC ConditionPresenceStatement Logical Model",
   "status": "draft",
-  "date": "2018-07-23",
+  "date": "2018-07-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -280,23 +280,23 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-ConditionPresenceStatement-model.conditionTopic",
-        "path": "cimi-statement-ConditionPresenceStatement-model.conditionTopic",
+        "id": "cimi-statement-ConditionPresenceStatement-model.conditionAssertionTopic",
+        "path": "cimi-statement-ConditionPresenceStatement-model.conditionAssertionTopic",
         "short": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
-        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
         "alias": [
           "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-statement-ConditionPresenceStatement-model.conditionTopic",
+          "path": "cimi-statement-ConditionPresenceStatement-model.conditionAssertionTopic",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionTopic-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionAssertionTopic-model"
           }
         ],
         "mustSupport": false,
@@ -576,23 +576,23 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-ConditionPresenceStatement-model.conditionTopic",
-        "path": "cimi-statement-ConditionPresenceStatement-model.conditionTopic",
+        "id": "cimi-statement-ConditionPresenceStatement-model.conditionAssertionTopic",
+        "path": "cimi-statement-ConditionPresenceStatement-model.conditionAssertionTopic",
         "short": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
-        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.\nCIMI deviation: AnatomicalLocation is included here, rather than being a property of FindingSiteAssertionTopic, since it is a common property of conditions. Severity, diseasePhase, periodicity, and other properites of an actual observed condition belong in ConditionPresenceContext.",
+        "definition": "A condition, independent of context. 'Condition' is interpreted broadly to include disorder, abnormality, problem, injury, complaint, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble, independent of context.",
         "alias": [
           "statementTopic"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-statement-ConditionPresenceStatement-model.conditionTopic",
+          "path": "cimi-statement-ConditionPresenceStatement-model.conditionAssertionTopic",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionTopic-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionAssertionTopic-model"
           }
         ],
         "mustSupport": false,

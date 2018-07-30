@@ -3,7 +3,7 @@
   "id": "cimi-topic-AssertionTopic-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AssertionTopic Logical Model</b></p>\n  <p>The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC AssertionTopic Logical Model</b></p>\n  <p>The base topic for conditions, allergies, adverse events, etc. These are things asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the TopicCode is the substance, for a Condition, the TopicCode represents the type of condition found.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-AssertionTopic-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "AssertionTopicModel",
   "title": "BC AssertionTopic Logical Model",
   "status": "draft",
-  "date": "2018-07-23",
+  "date": "2018-07-30",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.",
+  "description": "The base topic for conditions, allergies, adverse events, etc. These are things asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the TopicCode is the substance, for a Condition, the TopicCode represents the type of condition found.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-topic-AssertionTopic-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-topic-AssertionTopic-model",
         "path": "cimi-topic-AssertionTopic-model",
-        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.",
+        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the TopicCode is the substance, for a Condition, the TopicCode represents the type of condition found.",
         "min": 0,
         "max": "*",
         "base": {
@@ -147,7 +147,7 @@
       {
         "id": "cimi-topic-AssertionTopic-model",
         "path": "cimi-topic-AssertionTopic-model",
-        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things that are asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the value is the substance, for a Condition, the Value represents the type of condition found.",
+        "definition": "The base topic for conditions, allergies, adverse events, etc. These are things asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the TopicCode is the substance, for a Condition, the TopicCode represents the type of condition found.",
         "min": 0,
         "max": "*",
         "base": {
