@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalNote",
   "name": "ClinicalNoteProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -256,7 +256,7 @@
           "extensions",
           "user content"
         ],
-        "min": 0,
+        "min": 3,
         "max": "*",
         "type": [
           {
@@ -430,7 +430,7 @@
         },
         "short": "Extension",
         "definition": "An Extension",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Element.extension",
@@ -745,6 +745,12 @@
         "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic."
       },
       {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension",
+        "path": "DomainResource.extension",
+        "min": 3,
+        "max": "*"
+      },
+      {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:personofrecord",
         "path": "DomainResource.extension",
         "slicing": {
@@ -887,6 +893,12 @@
           }
         ],
         "sliceName": "findingtopic"
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingtopic.extension",
+        "path": "DomainResource.extension.extension",
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:recordedcontext",

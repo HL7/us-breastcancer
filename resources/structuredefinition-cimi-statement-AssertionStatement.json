@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-AssertionStatement",
   "name": "AssertionStatementProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -256,7 +256,7 @@
           "extensions",
           "user content"
         ],
-        "min": 0,
+        "min": 3,
         "max": "*",
         "type": [
           {
@@ -482,6 +482,12 @@
         "path": "DomainResource",
         "short": "BC AssertionStatement Profile",
         "definition": "A clinical statement that asserts presence or absence."
+      },
+      {
+        "id": "DomainResource:cimi-statement-AssertionStatement.extension",
+        "path": "DomainResource.extension",
+        "min": 3,
+        "max": "*"
       },
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:personofrecord",

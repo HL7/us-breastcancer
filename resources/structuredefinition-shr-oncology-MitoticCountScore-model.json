@@ -3,7 +3,7 @@
   "id": "shr-oncology-MitoticCountScore-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MitoticCountScore Logical Model</b></p>\n  <p>Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MitoticCountScore Logical Model</b></p>\n  <p>The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-MitoticCountScore-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "MitoticCountScoreModel",
   "title": "BC MitoticCountScore Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,11 +27,12 @@
       ]
     }
   ],
-  "description": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+  "description": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
   "keyword": [
     {
       "system": "http://loinc.org",
-      "code": "85300-2"
+      "code": "85300-2",
+      "display": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham"
     }
   ],
   "kind": "logical",
@@ -44,7 +45,7 @@
       {
         "id": "shr-oncology-MitoticCountScore-model",
         "path": "shr-oncology-MitoticCountScore-model",
-        "definition": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +60,8 @@
       {
         "id": "shr-oncology-MitoticCountScore-model.value",
         "path": "shr-oncology-MitoticCountScore-model.value",
-        "short": "Code representing mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
-        "definition": "Code representing mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "short": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "definition": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
         "alias": [
           "codeableConcept"
         ],
@@ -219,7 +220,7 @@
       {
         "id": "shr-oncology-MitoticCountScore-model",
         "path": "shr-oncology-MitoticCountScore-model",
-        "definition": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
         "min": 0,
         "max": "*",
         "base": {
@@ -234,8 +235,8 @@
       {
         "id": "shr-oncology-MitoticCountScore-model.value",
         "path": "shr-oncology-MitoticCountScore-model.value",
-        "short": "Code representing mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
-        "definition": "Code representing mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "short": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "definition": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
         "alias": [
           "codeableConcept"
         ],

@@ -15,7 +15,7 @@
   "name": "EstrogenReceptorStatusModel",
   "title": "BC EstrogenReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1131,8 +1131,8 @@
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService",
         "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService",
-        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
+        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "min": 0,
         "max": "*",
         "base": {
@@ -1152,8 +1152,8 @@
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
         "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
+        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "alias": [
           "codeableConcept"
         ],
@@ -1246,8 +1246,8 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Coding.system",
           "min": 0,
@@ -1258,6 +1258,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "http://hl7.org/fhir/v2/0074",
         "isSummary": true,
         "mapping": [
           {
@@ -1281,7 +1282,7 @@
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -1326,7 +1327,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "pathology",
+        "fixedCode": "PAT",
         "isSummary": true,
         "mapping": [
           {
@@ -3087,8 +3088,8 @@
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService",
         "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService",
-        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
+        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "min": 0,
         "max": "*",
         "base": {
@@ -3108,8 +3109,8 @@
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
         "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
+        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "alias": [
           "codeableConcept"
         ],
@@ -3202,8 +3203,8 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Coding.system",
           "min": 0,
@@ -3214,6 +3215,7 @@
             "code": "uri"
           }
         ],
+        "fixedUri": "http://hl7.org/fhir/v2/0074",
         "isSummary": true,
         "mapping": [
           {
@@ -3237,7 +3239,7 @@
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Coding.version",
           "min": 0,
@@ -3282,7 +3284,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "pathology",
+        "fixedCode": "PAT",
         "isSummary": true,
         "mapping": [
           {

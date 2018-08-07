@@ -15,7 +15,7 @@
   "name": "BreastSpecimenModel",
   "title": "BC BreastSpecimen Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -489,7 +489,8 @@
         "code": [
           {
             "system": "http://loinc.org",
-            "code": "44778-9"
+            "code": "44778-9",
+            "display": "Cold ischemic time {Organ}"
           }
         ],
         "short": "The time period between the chilling of a tissue or tissue sample and the time it is warmed.",
@@ -968,7 +969,8 @@
         "code": [
           {
             "system": "http://loinc.org",
-            "code": "44778-9"
+            "code": "44778-9",
+            "display": "Cold ischemic time {Organ}"
           }
         ],
         "short": "The time period between the chilling of a tissue or tissue sample and the time it is warmed.",

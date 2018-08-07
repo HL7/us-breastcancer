@@ -3,7 +3,7 @@
   "id": "shr-oncology-NuclearPleomorphismScore-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC NuclearPleomorphismScore Logical Model</b></p>\n  <p>Nuclear pleomorphism in Breast tumor Qualitative by Nottingham.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC NuclearPleomorphismScore Logical Model</b></p>\n  <p>The degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NuclearPleomorphismScore-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "NuclearPleomorphismScoreModel",
   "title": "BC NuclearPleomorphismScore Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,11 +27,12 @@
       ]
     }
   ],
-  "description": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+  "description": "The degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
   "keyword": [
     {
       "system": "http://loinc.org",
-      "code": "44645-0"
+      "code": "44645-0",
+      "display": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham"
     }
   ],
   "kind": "logical",
@@ -44,7 +45,7 @@
       {
         "id": "shr-oncology-NuclearPleomorphismScore-model",
         "path": "shr-oncology-NuclearPleomorphismScore-model",
-        "definition": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+        "definition": "The degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +60,8 @@
       {
         "id": "shr-oncology-NuclearPleomorphismScore-model.value",
         "path": "shr-oncology-NuclearPleomorphismScore-model.value",
-        "short": "Code representing nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
-        "definition": "Code representing nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+        "short": "Code representing the degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
+        "definition": "Code representing the degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
         "alias": [
           "codeableConcept"
         ],
@@ -219,7 +220,7 @@
       {
         "id": "shr-oncology-NuclearPleomorphismScore-model",
         "path": "shr-oncology-NuclearPleomorphismScore-model",
-        "definition": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+        "definition": "The degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
         "min": 0,
         "max": "*",
         "base": {
@@ -234,8 +235,8 @@
       {
         "id": "shr-oncology-NuclearPleomorphismScore-model.value",
         "path": "shr-oncology-NuclearPleomorphismScore-model.value",
-        "short": "Code representing nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
-        "definition": "Code representing nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+        "short": "Code representing the degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
+        "definition": "Code representing the degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
         "alias": [
           "codeableConcept"
         ],

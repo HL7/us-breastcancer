@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSpecimen",
   "name": "BreastSpecimenProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1191,7 +1191,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -1229,7 +1229,8 @@
         "id": "Specimen:shr-oncology-BreastSpecimen.processing:shr-oncology-ColdIschemiaTime.procedure.coding:Fixed_44778-9",
         "path": "Specimen.processing.procedure.coding",
         "sliceName": "Fixed_44778-9",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Cold ischemic time {Organ}",
+        "definition": "Cold ischemic time {Organ}",
         "min": 1,
         "max": "1",
         "type": [
@@ -2034,13 +2035,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Specimen:shr-oncology-BreastSpecimen.processing:shr-oncology-ColdIschemiaTime.procedure.coding:Fixed_44778-9",
         "path": "Specimen.processing.procedure.coding",
         "sliceName": "Fixed_44778-9",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Cold ischemic time {Organ}",
+        "definition": "Cold ischemic time {Organ}",
         "min": 1,
         "max": "1",
         "type": [

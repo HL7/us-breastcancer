@@ -3,7 +3,7 @@
   "id": "cimi-topic-DiagnosticService-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DiagnosticService Logical Model</b></p>\n  <p>The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC DiagnosticService Logical Model</b></p>\n  <p>The service completing the observations, e.g. biochemistry, microbiology, blood bank.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "DiagnosticServiceModel",
   "title": "BC DiagnosticService Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+  "description": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-topic-DiagnosticService-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-topic-DiagnosticService-model",
         "path": "cimi-topic-DiagnosticService-model",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "min": 0,
         "max": "*",
         "base": {
@@ -53,8 +53,8 @@
       {
         "id": "cimi-topic-DiagnosticService-model.value",
         "path": "cimi-topic-DiagnosticService-model.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
+        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "alias": [
           "codeableConcept"
         ],
@@ -76,7 +76,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-statement-DiagnosticServiceVS"
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
           }
         }
       }
@@ -87,7 +87,7 @@
       {
         "id": "cimi-topic-DiagnosticService-model",
         "path": "cimi-topic-DiagnosticService-model",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "min": 0,
         "max": "*",
         "base": {
@@ -102,8 +102,8 @@
       {
         "id": "cimi-topic-DiagnosticService-model.value",
         "path": "cimi-topic-DiagnosticService-model.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank, etc.",
+        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
+        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
         "alias": [
           "codeableConcept"
         ],
@@ -125,7 +125,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-statement-DiagnosticServiceVS"
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
           }
         }
       }

@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-DCISNuclearGradeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC DCISNuclearGradeVS ValueSet</b></p>\n<p>The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-DCISNuclearGradeVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.DCISNuclearGradeVS"
+    }
+  ],
+  "name": "DCISNuclearGradeVS",
+  "title": "BC DCISNuclearGradeVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-07",
+  "description": "The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "369781009",
+            "display": "Ductal carcinoma in situ nuclear pleomorphism, grade 1: monotonous nuclei, 1.5 - 2.0 red blood cells diameters, with finely dispersed chromatin and only occasional nucleoli (finding)"
+          },
+          {
+            "code": "369782002",
+            "display": "Ductal carcinoma in situ nuclear pleomorphism, grade 2: neither nuclear grade 1 nor nuclear grade 3 (finding)"
+          },
+          {
+            "code": "369783007",
+            "display": "Ductal carcinoma in situ nuclear pleomorphism, grade 3: Markedly pleomorphic nuclei, usually >2.5 red blood cells diameters, with coarse chromatin and multiple nucleoli (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

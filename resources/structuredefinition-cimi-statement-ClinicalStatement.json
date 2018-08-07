@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalStatement",
   "name": "ClinicalStatementProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -256,7 +256,7 @@
           "extensions",
           "user content"
         ],
-        "min": 0,
+        "min": 2,
         "max": "*",
         "type": [
           {
@@ -482,6 +482,12 @@
         "path": "DomainResource",
         "short": "BC ClinicalStatement Profile",
         "definition": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model. A clinical statement is composed of the StatementTopic class (grouping of attributes for capturing information about a procedure or a clinical finding) and the StatementContext class (grouping of attributes providing the context for the statement topic such as whether a procedure was performed, requested, not performed or whether a finding is suspected present or absent in the patient). At the archetype level, the topic and context components are coordinated to form the clinical statement. For instance, the composition of the ProcedureTopic with the NotPerformed context indicates that the given procedure was not performed."
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalStatement.extension",
+        "path": "DomainResource.extension",
+        "min": 2,
+        "max": "*"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:personofrecord",

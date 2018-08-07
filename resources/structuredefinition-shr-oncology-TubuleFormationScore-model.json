@@ -3,7 +3,7 @@
   "id": "shr-oncology-TubuleFormationScore-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC TubuleFormationScore Logical Model</b></p>\n  <p>Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC TubuleFormationScore Logical Model</b></p>\n  <p>The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TubuleFormationScore-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "TubuleFormationScoreModel",
   "title": "BC TubuleFormationScore Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,12 +27,12 @@
       ]
     }
   ],
-  "description": "Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+  "description": "The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
   "keyword": [
     {
       "system": "http://loinc.org",
       "code": "85321-8",
-      "display": "Granular differentiation"
+      "display": "Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham"
     }
   ],
   "kind": "logical",
@@ -45,7 +45,7 @@
       {
         "id": "shr-oncology-TubuleFormationScore-model",
         "path": "shr-oncology-TubuleFormationScore-model",
-        "definition": "Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,8 +60,8 @@
       {
         "id": "shr-oncology-TubuleFormationScore-model.value",
         "path": "shr-oncology-TubuleFormationScore-model.value",
-        "short": "Code representing glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
-        "definition": "Code representing glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "short": "Code representing the degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
+        "definition": "Code representing the degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
         "alias": [
           "codeableConcept"
         ],
@@ -220,7 +220,7 @@
       {
         "id": "shr-oncology-TubuleFormationScore-model",
         "path": "shr-oncology-TubuleFormationScore-model",
-        "definition": "Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
         "min": 0,
         "max": "*",
         "base": {
@@ -235,8 +235,8 @@
       {
         "id": "shr-oncology-TubuleFormationScore-model.value",
         "path": "shr-oncology-TubuleFormationScore-model.value",
-        "short": "Code representing glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
-        "definition": "Code representing glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "short": "Code representing the degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
+        "definition": "Code representing the degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
         "alias": [
           "codeableConcept"
         ],

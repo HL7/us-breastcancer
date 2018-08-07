@@ -58,6 +58,10 @@
       <td>{% capture md_text %}Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="ValueSet-shr-oncology-BreastLymphNodeGroupVS.html">BreastLymphNodeGroupVS</a></td>
+      <td>{% capture md_text %}The regional lymph node locations{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="ValueSet-shr-oncology-BreastSiteVS.html">BreastSiteVS</a></td>
       <td>{% capture md_text %}Topography of the breast. Codes are drawn from Snomed and correspond to ICD-O-3.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -78,16 +82,16 @@
       <td>{% capture md_text %}undefined{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="ValueSet-shr-oncology-DCISNuclearGradeVS.html">DCISNuclearGradeVS</a></td>
+      <td>{% capture md_text %}The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="ValueSet-cimi-context-DeltaFlagVS.html">DeltaFlagVS</a></td>
       <td>{% capture md_text %}Indicators for degree of change (delta) from the last or previous measurement.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-cimi-entity-DeviceVS.html">DeviceVS</a></td>
       <td>{% capture md_text %}Codes describing medical devices.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-statement-DiagnosticServiceVS.html">DiagnosticServiceVS</a></td>
-      <td>{% capture md_text %}The type of laboratory service used in producing a laboratory result. Note -- we may want to include additional descendants of SCT#224891009 (Healthcare services){% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-cimi-context-ExceptionValueVS.html">ExceptionValueVS</a></td>
@@ -110,8 +114,24 @@
       <td>{% capture md_text %}Value set containing possible scores resulting from determining HER2 status by immunohistochemistry. Based on LNC#LL4396-9 answer list.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="ValueSet-shr-oncology-Ki-67NuclearAntigenVS.html">Ki-67NuclearAntigenVS</a></td>
+      <td>{% capture md_text %}An evaluation of the quantitative value from the Ki-67.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="ValueSet-cimi-entity-LanguageQualifierVS.html">LanguageQualifierVS</a></td>
       <td>{% capture md_text %}A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-shr-oncology-LymphNodeInvolvementVS.html">LymphNodeInvolvementVS</a></td>
+      <td>{% capture md_text %}The pathological finding for lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-shr-oncology-LymphNodeMobilityVS.html">LymphNodeMobilityVS</a></td>
+      <td>{% capture md_text %}Values expressing the degree of moveability of lymph node upon palpation.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-shr-oncology-LymphNodeSamplingMethodVS.html">LymphNodeSamplingMethodVS</a></td>
+      <td>{% capture md_text %}The procedure method used to obtain the specimen analyzed for the pathological lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-MitoticCountScoreNullVS.html">MitoticCountScoreNullVS</a></td>
@@ -136,10 +156,6 @@
     <tr>
       <td><a href="ValueSet-shr-oncology-NottinghamNullVS.html">NottinghamNullVS</a></td>
       <td>{% capture md_text %}Data absent reasons (null values) for Nottingham Combined Grade scores. Removes non-applicable values from the ExceptionValueVS, and adds values that align with LOINC normative answer list LL4561-8{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-NuclearGradeVS.html">NuclearGradeVS</a></td>
-      <td>{% capture md_text %}The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. The nuclear grade is a part of overall tumor grade. Local codes are used due to unavailability of suitable LOINC and Snomed codes.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html">NuclearPleomorphismScoreVS</a></td>
@@ -179,6 +195,10 @@
 1 = greater than 75% of the tumor area contains tubular or glandular structures
 2 = 10 to 75% of the tumor area contains tubular structures
 3 = less than 10% of the tumor area contains tubular structures{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-shr-oncology-TumorMarginDescriptionVS.html">TumorMarginDescriptionVS</a></td>
+      <td>{% capture md_text %}An evaluation of the lesion around the margins surrounding the tumor.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-shr-core-YesNoUnknownVS.html">YesNoUnknownVS</a></td>

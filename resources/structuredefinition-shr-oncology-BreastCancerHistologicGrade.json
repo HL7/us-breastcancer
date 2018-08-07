@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerHistologicGrade",
   "name": "BreastCancerHistologicGradeProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -476,7 +476,7 @@
         },
         "short": "Extension",
         "definition": "An Extension",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Element.extension",
@@ -1274,7 +1274,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -1716,7 +1716,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -1754,7 +1754,8 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_44648-4",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Histologic grade [Score] in Breast cancer specimen Qualitative by Nottingham",
+        "definition": "Histologic grade [Score] in Breast cancer specimen Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -3166,7 +3167,7 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-TubuleFormationScore",
         "path": "Observation.component",
         "short": "TubuleFormationScore",
-        "definition": "Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3414,7 +3415,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -3452,8 +3453,8 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-TubuleFormationScore.code.coding:Fixed_85321-8",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_85321-8",
-        "short": "Granular differentiation",
-        "definition": "Granular differentiation",
+        "short": "Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham",
+        "definition": "Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -4141,7 +4142,7 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-NuclearPleomorphismScore",
         "path": "Observation.component",
         "short": "NuclearPleomorphismScore",
-        "definition": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+        "definition": "The degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
         "min": 0,
         "max": "1",
         "base": {
@@ -4389,7 +4390,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -4427,7 +4428,8 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-NuclearPleomorphismScore.code.coding:Fixed_44645-0",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_44645-0",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham",
+        "definition": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -5115,7 +5117,7 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-MitoticCountScore",
         "path": "Observation.component",
         "short": "MitoticCountScore",
-        "definition": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
         "min": 0,
         "max": "1",
         "base": {
@@ -5363,7 +5365,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -5401,7 +5403,8 @@
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-MitoticCountScore.code.coding:Fixed_85300-2",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_85300-2",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham",
+        "definition": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -6139,6 +6142,12 @@
         "sliceName": "sourceofinformation"
       },
       {
+        "id": "Observation:shr-oncology-BreastCancerHistologicGrade.extension:sourceofinformation.extension",
+        "path": "Observation.extension.extension",
+        "min": 1,
+        "max": "*"
+      },
+      {
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.extension:recorded",
         "path": "Observation.extension",
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -6183,7 +6192,9 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.category.coding:Fixed_laboratory",
@@ -6226,13 +6237,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.code.coding:Fixed_44648-4",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_44648-4",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Histologic grade [Score] in Breast cancer specimen Qualitative by Nottingham",
+        "definition": "Histologic grade [Score] in Breast cancer specimen Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -6405,7 +6419,7 @@
         "path": "Observation.component",
         "sliceName": "shr-oncology-TubuleFormationScore",
         "short": "TubuleFormationScore",
-        "definition": "Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.",
         "min": 0,
         "max": "1"
       },
@@ -6426,14 +6440,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-TubuleFormationScore.code.coding:Fixed_85321-8",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_85321-8",
-        "short": "Granular differentiation",
-        "definition": "Granular differentiation",
+        "short": "Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham",
+        "definition": "Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -6489,7 +6505,7 @@
         "path": "Observation.component",
         "sliceName": "shr-oncology-NuclearPleomorphismScore",
         "short": "NuclearPleomorphismScore",
-        "definition": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham.",
+        "definition": "The degree of nuclear pleomorphism (variability of nuclei) in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Increasing degrees of pleomorphism are associated with increasingly aggressive cancers.",
         "min": 0,
         "max": "1"
       },
@@ -6510,13 +6526,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-NuclearPleomorphismScore.code.coding:Fixed_44645-0",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_44645-0",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham",
+        "definition": "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [
@@ -6572,7 +6591,7 @@
         "path": "Observation.component",
         "sliceName": "shr-oncology-MitoticCountScore",
         "short": "MitoticCountScore",
-        "definition": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham.",
+        "definition": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
         "min": 0,
         "max": "1"
       },
@@ -6593,13 +6612,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-BreastCancerHistologicGrade.component:shr-oncology-MitoticCountScore.code.coding:Fixed_85300-2",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_85300-2",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham",
+        "definition": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham",
         "min": 1,
         "max": "1",
         "type": [

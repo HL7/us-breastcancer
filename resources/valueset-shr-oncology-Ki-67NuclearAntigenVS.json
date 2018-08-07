@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-Ki-67NuclearAntigenVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC Ki-67NuclearAntigenVS ValueSet</b></p>\n<p>An evaluation of the quantitative value from the Ki-67.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-Ki-67NuclearAntigenVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.Ki-67NuclearAntigenVS"
+    }
+  ],
+  "name": "Ki-67NuclearAntigenVS",
+  "title": "BC Ki-67NuclearAntigenVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-07",
+  "description": "An evaluation of the quantitative value from the Ki-67.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "62482003",
+            "display": "Low (qualifier value)"
+          },
+          {
+            "code": "11896004",
+            "display": "Intermediate (qualifier value)"
+          },
+          {
+            "code": "75540009",
+            "display": "High (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

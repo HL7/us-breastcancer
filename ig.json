@@ -14,7 +14,7 @@
     "qa": "qa",
     "specification": "http://hl7.org/fhir/STU3/"
   },
-  "npm-name": "us-breastcancer",
+  "npm-name": "hl7.fhir.us.breastcancer",
   "sct-edition": "http://snomed.info/sct/731000124108",
   "gen-examples": "false",
   "do-transforms": "false",
@@ -65,14 +65,35 @@
     "StructureDefinition/cimi-statement-AssertionStatement": {
       "base": "StructureDefinition-cimi-statement-AssertionStatement.html"
     },
+    "StructureDefinition/shr-oncology-BreastCancerDistantMetastasesClassification": {
+      "base": "StructureDefinition-shr-oncology-BreastCancerDistantMetastasesClassification.html"
+    },
+    "StructureDefinition/shr-oncology-BreastCancerGeneticAnalysisObservation": {
+      "base": "StructureDefinition-shr-oncology-BreastCancerGeneticAnalysisObservation.html"
+    },
     "StructureDefinition/shr-oncology-BreastCancerHistologicGrade": {
       "base": "StructureDefinition-shr-oncology-BreastCancerHistologicGrade.html"
     },
     "StructureDefinition/shr-oncology-BreastCancerPresenceStatement": {
       "base": "StructureDefinition-shr-oncology-BreastCancerPresenceStatement.html"
     },
+    "StructureDefinition/shr-oncology-BreastCancerPrimaryTumorClassification": {
+      "base": "StructureDefinition-shr-oncology-BreastCancerPrimaryTumorClassification.html"
+    },
+    "StructureDefinition/shr-oncology-BreastCancerRegionalNodesClassification": {
+      "base": "StructureDefinition-shr-oncology-BreastCancerRegionalNodesClassification.html"
+    },
     "StructureDefinition/shr-oncology-BreastCancerStage": {
       "base": "StructureDefinition-shr-oncology-BreastCancerStage.html"
+    },
+    "StructureDefinition/shr-oncology-BreastClinicalLymphNodeInvolvement": {
+      "base": "StructureDefinition-shr-oncology-BreastClinicalLymphNodeInvolvement.html"
+    },
+    "StructureDefinition/shr-oncology-BreastLymphNodeBodySite": {
+      "base": "StructureDefinition-shr-oncology-BreastLymphNodeBodySite.html"
+    },
+    "StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement": {
+      "base": "StructureDefinition-shr-oncology-BreastPathologicalLymphNodeInvolvement.html"
     },
     "StructureDefinition/shr-oncology-BreastSite": {
       "base": "StructureDefinition-shr-oncology-BreastSite.html"
@@ -130,6 +151,9 @@
     },
     "StructureDefinition/cimi-element-Identifier": {
       "base": "StructureDefinition-cimi-element-Identifier.html"
+    },
+    "StructureDefinition/shr-oncology-Ki-67NuclearAntigen": {
+      "base": "StructureDefinition-shr-oncology-Ki-67NuclearAntigen.html"
     },
     "StructureDefinition/cimi-statement-LaboratoryObservation": {
       "base": "StructureDefinition-cimi-statement-LaboratoryObservation.html"
@@ -199,6 +223,12 @@
     },
     "StructureDefinition/cimi-entity-Substance": {
       "base": "StructureDefinition-cimi-entity-Substance.html"
+    },
+    "StructureDefinition/shr-oncology-TumorDimensions": {
+      "base": "StructureDefinition-shr-oncology-TumorDimensions.html"
+    },
+    "StructureDefinition/shr-oncology-TumorMargins": {
+      "base": "StructureDefinition-shr-oncology-TumorMargins.html"
     },
     "StructureDefinition/cimi-context-Abatement-extension": {
       "base": "StructureDefinition-cimi-context-Abatement-extension.html",
@@ -531,6 +561,9 @@
     "ValueSet/shr-oncology-BreastCancerTypeVS": {
       "base": "ValueSet-shr-oncology-BreastCancerTypeVS.html"
     },
+    "ValueSet/shr-oncology-BreastLymphNodeGroupVS": {
+      "base": "ValueSet-shr-oncology-BreastLymphNodeGroupVS.html"
+    },
     "ValueSet/shr-oncology-BreastSiteVS": {
       "base": "ValueSet-shr-oncology-BreastSiteVS.html"
     },
@@ -546,14 +579,14 @@
     "ValueSet/shr-core-ConditionCategoryVS": {
       "base": "ValueSet-shr-core-ConditionCategoryVS.html"
     },
+    "ValueSet/shr-oncology-DCISNuclearGradeVS": {
+      "base": "ValueSet-shr-oncology-DCISNuclearGradeVS.html"
+    },
     "ValueSet/cimi-context-DeltaFlagVS": {
       "base": "ValueSet-cimi-context-DeltaFlagVS.html"
     },
     "ValueSet/cimi-entity-DeviceVS": {
       "base": "ValueSet-cimi-entity-DeviceVS.html"
-    },
-    "ValueSet/cimi-statement-DiagnosticServiceVS": {
-      "base": "ValueSet-cimi-statement-DiagnosticServiceVS.html"
     },
     "ValueSet/cimi-context-ExceptionValueVS": {
       "base": "ValueSet-cimi-context-ExceptionValueVS.html"
@@ -570,8 +603,20 @@
     "ValueSet/shr-oncology-HER2byIHCScoreVS": {
       "base": "ValueSet-shr-oncology-HER2byIHCScoreVS.html"
     },
+    "ValueSet/shr-oncology-Ki-67NuclearAntigenVS": {
+      "base": "ValueSet-shr-oncology-Ki-67NuclearAntigenVS.html"
+    },
     "ValueSet/cimi-entity-LanguageQualifierVS": {
       "base": "ValueSet-cimi-entity-LanguageQualifierVS.html"
+    },
+    "ValueSet/shr-oncology-LymphNodeInvolvementVS": {
+      "base": "ValueSet-shr-oncology-LymphNodeInvolvementVS.html"
+    },
+    "ValueSet/shr-oncology-LymphNodeMobilityVS": {
+      "base": "ValueSet-shr-oncology-LymphNodeMobilityVS.html"
+    },
+    "ValueSet/shr-oncology-LymphNodeSamplingMethodVS": {
+      "base": "ValueSet-shr-oncology-LymphNodeSamplingMethodVS.html"
     },
     "ValueSet/shr-oncology-MitoticCountScoreNullVS": {
       "base": "ValueSet-shr-oncology-MitoticCountScoreNullVS.html"
@@ -590,9 +635,6 @@
     },
     "ValueSet/shr-oncology-NottinghamNullVS": {
       "base": "ValueSet-shr-oncology-NottinghamNullVS.html"
-    },
-    "ValueSet/shr-oncology-NuclearGradeVS": {
-      "base": "ValueSet-shr-oncology-NuclearGradeVS.html"
     },
     "ValueSet/shr-oncology-NuclearPleomorphismScoreVS": {
       "base": "ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html"
@@ -620,6 +662,9 @@
     },
     "ValueSet/shr-oncology-TubuleFormationScoreVS": {
       "base": "ValueSet-shr-oncology-TubuleFormationScoreVS.html"
+    },
+    "ValueSet/shr-oncology-TumorMarginDescriptionVS": {
+      "base": "ValueSet-shr-oncology-TumorMarginDescriptionVS.html"
     },
     "ValueSet/shr-core-YesNoUnknownVS": {
       "base": "ValueSet-shr-core-YesNoUnknownVS.html"
@@ -845,6 +890,20 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-BRCA1Variant-model": {
+      "base": "StructureDefinition-shr-oncology-BRCA1Variant-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-BRCA2Variant-model": {
+      "base": "StructureDefinition-shr-oncology-BRCA2Variant-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/shr-core-BinaryData-model": {
       "base": "StructureDefinition-shr-core-BinaryData-model.html",
       "template-base": "sd-logical.html",
@@ -875,6 +934,13 @@
     },
     "StructureDefinition/shr-oncology-BreastCancerDistantMetastasesClassification-model": {
       "base": "StructureDefinition-shr-oncology-BreastCancerDistantMetastasesClassification-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-BreastCancerGeneticAnalysisObservation-model": {
+      "base": "StructureDefinition-shr-oncology-BreastCancerGeneticAnalysisObservation-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -917,6 +983,34 @@
     },
     "StructureDefinition/shr-oncology-BreastCancerStageTopic-model": {
       "base": "StructureDefinition-shr-oncology-BreastCancerStageTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-BreastClinicalLymphNodeInvolvement-model": {
+      "base": "StructureDefinition-shr-oncology-BreastClinicalLymphNodeInvolvement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model": {
+      "base": "StructureDefinition-shr-oncology-BreastLymphNodeBodySite-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-BreastLymphNodeInvolvement-model": {
+      "base": "StructureDefinition-shr-oncology-BreastLymphNodeInvolvement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement-model": {
+      "base": "StructureDefinition-shr-oncology-BreastPathologicalLymphNodeInvolvement-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1384,6 +1478,13 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model": {
+      "base": "StructureDefinition-shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-element-FamilyName-model": {
       "base": "StructureDefinition-cimi-element-FamilyName-model.html",
       "template-base": "sd-logical.html",
@@ -1608,6 +1709,20 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-Ki-67NuclearAntigen-model": {
+      "base": "StructureDefinition-shr-oncology-Ki-67NuclearAntigen-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-Ki-67NuclearAntigenValue-model": {
+      "base": "StructureDefinition-shr-oncology-Ki-67NuclearAntigenValue-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-statement-LaboratoryObservation-model": {
       "base": "StructureDefinition-cimi-statement-LaboratoryObservation-model.html",
       "template-base": "sd-logical.html",
@@ -1666,6 +1781,27 @@
     },
     "StructureDefinition/shr-core-LowerBound-model": {
       "base": "StructureDefinition-shr-core-LowerBound-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-LymphNodeMobility-model": {
+      "base": "StructureDefinition-shr-oncology-LymphNodeMobility-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-LymphNodeSamplingMethod-model": {
+      "base": "StructureDefinition-shr-oncology-LymphNodeSamplingMethod-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-LymphNodeSize-model": {
+      "base": "StructureDefinition-shr-oncology-LymphNodeSize-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1820,6 +1956,41 @@
     },
     "StructureDefinition/shr-oncology-NuclearPositivity-model": {
       "base": "StructureDefinition-shr-oncology-NuclearPositivity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-NumberOfLymphNodesWithIsolatedTumorCells-model": {
+      "base": "StructureDefinition-shr-oncology-NumberOfLymphNodesWithIsolatedTumorCells-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-NumberOfLymphNodesWithMacrometastases-model": {
+      "base": "StructureDefinition-shr-oncology-NumberOfLymphNodesWithMacrometastases-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-NumberOfLymphNodesWithMicrometastases-model": {
+      "base": "StructureDefinition-shr-oncology-NumberOfLymphNodesWithMicrometastases-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-NumberOfRegionalLymphNodes-model": {
+      "base": "StructureDefinition-shr-oncology-NumberOfRegionalLymphNodes-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-NumberOfSentinelLymphNodes-model": {
+      "base": "StructureDefinition-shr-oncology-NumberOfSentinelLymphNodes-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -2259,6 +2430,13 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-SizeOfGrossTumorBed-model": {
+      "base": "StructureDefinition-shr-oncology-SizeOfGrossTumorBed-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-entity-SocialSecurityNumber-model": {
       "base": "StructureDefinition-cimi-entity-SocialSecurityNumber-model.html",
       "template-base": "sd-logical.html",
@@ -2455,8 +2633,50 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-TotalNumberOfLymphNodesExamined-model": {
+      "base": "StructureDefinition-shr-oncology-TotalNumberOfLymphNodesExamined-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/shr-oncology-TubuleFormationScore-model": {
       "base": "StructureDefinition-shr-oncology-TubuleFormationScore-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-TumorDimensions-model": {
+      "base": "StructureDefinition-shr-oncology-TumorDimensions-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-TumorMarginDescription-model": {
+      "base": "StructureDefinition-shr-oncology-TumorMarginDescription-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-TumorMargins-model": {
+      "base": "StructureDefinition-shr-oncology-TumorMargins-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-TumorPrimaryDimensionSize-model": {
+      "base": "StructureDefinition-shr-oncology-TumorPrimaryDimensionSize-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-TumorSecondaryDimensionSize-model": {
+      "base": "StructureDefinition-shr-oncology-TumorSecondaryDimensionSize-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

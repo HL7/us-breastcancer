@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerPresenceStatement",
   "name": "BreastCancerPresenceStatementProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1062,7 +1062,7 @@
         },
         "short": "Extension",
         "definition": "An Extension",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Element.extension",
@@ -2782,6 +2782,12 @@
           }
         ],
         "sliceName": "sourceofinformation"
+      },
+      {
+        "id": "Condition:shr-oncology-BreastCancerPresenceStatement.extension:sourceofinformation.extension",
+        "path": "Condition.extension.extension",
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Condition:shr-oncology-BreastCancerPresenceStatement.extension:recorded",

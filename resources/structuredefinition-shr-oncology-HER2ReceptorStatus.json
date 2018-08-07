@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-HER2ReceptorStatus",
   "name": "HER2ReceptorStatusProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -476,7 +476,7 @@
         },
         "short": "Extension",
         "definition": "An Extension",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Element.extension",
@@ -1274,7 +1274,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -1716,7 +1716,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -4049,6 +4049,12 @@
         "sliceName": "sourceofinformation"
       },
       {
+        "id": "Observation:shr-oncology-HER2ReceptorStatus.extension:sourceofinformation.extension",
+        "path": "Observation.extension.extension",
+        "min": 1,
+        "max": "*"
+      },
+      {
         "id": "Observation:shr-oncology-HER2ReceptorStatus.extension:recorded",
         "path": "Observation.extension",
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -4093,7 +4099,9 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2ReceptorStatus.category.coding:Fixed_laboratory",
@@ -4136,7 +4144,9 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2ReceptorStatus.code.coding:Fixed_48676-1",
@@ -4297,7 +4307,9 @@
         "path": "Observation.related",
         "sliceName": "shr-oncology-HER2byIHC",
         "short": "HER2byIHC",
-        "definition": "HER2 presence in Breast cancer specimen by Immunohistochemistry (IHC)."
+        "definition": "HER2 presence in Breast cancer specimen by Immunohistochemistry (IHC).",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2ReceptorStatus.related:shr-oncology-HER2byIHC.type",
@@ -4319,7 +4331,9 @@
         "path": "Observation.related",
         "sliceName": "shr-oncology-HER2byFISH",
         "short": "HER2byFISH",
-        "definition": "HER2 receptor status as determined by single-probe or dual-probe Fluorescence In Situ Hybridization (FISH)."
+        "definition": "HER2 receptor status as determined by single-probe or dual-probe Fluorescence In Situ Hybridization (FISH).",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2ReceptorStatus.related:shr-oncology-HER2byFISH.type",

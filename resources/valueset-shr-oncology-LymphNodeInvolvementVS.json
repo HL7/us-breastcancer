@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-LymphNodeInvolvementVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LymphNodeInvolvementVS ValueSet</b></p>\n<p>The pathological finding for lymph node involvement.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-LymphNodeInvolvementVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.LymphNodeInvolvementVS"
+    }
+  ],
+  "name": "LymphNodeInvolvementVS",
+  "title": "BC LymphNodeInvolvementVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-07",
+  "description": "The pathological finding for lymph node involvement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "399374009",
+            "display": "Regional lymph node metastasis present (finding)"
+          },
+          {
+            "code": "399522007",
+            "display": "Regional lymph nodes cannot be assessed (finding)"
+          },
+          {
+            "code": "399647000",
+            "display": "No regional lymph node metastasis (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -40,6 +40,16 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastCancerDistantMetastasesClassification.html">BreastCancerDistantMetastasesClassification</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The presence of distant metastases, based on criteria defined by the staging system being used.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastCancerGeneticAnalysisObservation.html">BreastCancerGeneticAnalysisObservation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The status of genes known or suspected to play a role in breast cancer risk, for example, the tumor suppressor genes, BRCA1 and BRCA2.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-shr-oncology-BreastCancerHistologicGrade.html">BreastCancerHistologicGrade</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}The Elston Grade/Nottingham Score, representative of the aggressive potential of the tumor. Well differentiated cells (Grade 1) look similar to normal cells and are usually slow growing, while poorly differentiated cells (Grade 3) look very different than normal and are fast-growing.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -50,9 +60,34 @@
       <td>{% capture md_text %}Diagnosis of cancer originating in the tissues of the breast, and potentially spread to other organs of the body.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastCancerPrimaryTumorClassification.html">BreastCancerPrimaryTumorClassification</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The size and extent of the primary tumor, based on criteria defined by the staging system being used.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The presence of metastases in regional lymph nodes, based on criteria defined by the staging system being used.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-shr-oncology-BreastCancerStage.html">BreastCancerStage</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastClinicalLymphNodeInvolvement.html">BreastClinicalLymphNodeInvolvement</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Clinical assessment of lymph nodes for presence of cancer cells in staging the N category in cancers.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastLymphNodeBodySite.html">BreastLymphNodeBodySite</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/bodysite.html">BodySite</a></td>
+      <td>{% capture md_text %}A body site specific to the lymph node structure.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastPathologicalLymphNodeInvolvement.html">BreastPathologicalLymphNodeInvolvement</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Clinical assessment of lymph nodes for presence of cancer cells in staging the N category in cancers.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-shr-oncology-BreastSite.html">BreastSite</a></td>
@@ -67,7 +102,7 @@
     <tr>
       <td><a href="StructureDefinition-shr-oncology-DCISNuclearGrade.html">DCISNuclearGrade</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-shr-oncology-EstrogenReceptorStatus.html">EstrogenReceptorStatus</a></td>
@@ -89,6 +124,11 @@ The current approach is that positive/negative designation is a value, even thou
       <td><a href="StructureDefinition-shr-oncology-HER2byIHC.html">HER2byIHC</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}HER2 presence in Breast cancer specimen by Immunohistochemistry (IHC).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-Ki-67NuclearAntigen.html">Ki-67NuclearAntigen</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence.  The Ki-67 antigen is measured numerically as a percentage, and as an ordinal. The more positive cells there are, the more quickly they are dividing and forming new cells. ReferenceRange: Low <10, Intermediate 10-20, >20 High.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-shr-oncology-MammaprintRecurrenceScore.html">MammaprintRecurrenceScore</a></td>
@@ -319,6 +359,16 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       <td><a href="StructureDefinition-cimi-entity-Substance.html">Substance</a></td>
       <td><a href="http://hl7.org/fhir/STU3/substance.html">Substance</a></td>
       <td>{% capture md_text %}Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-TumorDimensions.html">TumorDimensions</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-oncology-TumorMargins.html">TumorMargins</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The edge or border of the tissue removed in cancer surgery. The margin is described as negative or clean when the pathologist finds no cancer cells at the edge of the tissue, suggesting that all of the cancer has been removed. The margin is described as positive or involved when the pathologist finds cancer cells at the edge of the tissue, suggesting that all of the cancer has not been removed.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     
   </tbody>

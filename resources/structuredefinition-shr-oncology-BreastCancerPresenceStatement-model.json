@@ -15,7 +15,7 @@
   "name": "BreastCancerPresenceStatementModel",
   "title": "BC BreastCancerPresenceStatement Logical Model",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1122,6 +1122,12 @@
       {
         "id": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
         "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+        "code": [
+          {
+            "system": "urn:tbd",
+            "code": "TBD"
+          }
+        ],
         "short": "A description of the morphology and behavioral characteristics of the cancer.",
         "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": 0,
@@ -2254,6 +2260,12 @@
       {
         "id": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
         "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
+        "code": [
+          {
+            "system": "urn:tbd",
+            "code": "TBD"
+          }
+        ],
         "short": "A description of the morphology and behavioral characteristics of the cancer.",
         "definition": "A description of the morphology and behavioral characteristics of the cancer.",
         "min": 0,

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-HER2byFISH",
   "name": "HER2byFISHProfile",
   "status": "draft",
-  "date": "2018-07-30",
+  "date": "2018-08-07",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -476,7 +476,7 @@
         },
         "short": "Extension",
         "definition": "An Extension",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Element.extension",
@@ -1274,7 +1274,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -1716,7 +1716,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -3481,7 +3481,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -3519,7 +3519,8 @@
         "id": "Observation:shr-oncology-HER2byFISH.component:shr-oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_74860-8",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "HER2 signals/nucleus [Entitic number] in Tissue by FISH",
+        "definition": "HER2 signals/nucleus [Entitic number] in Tissue by FISH",
         "min": 1,
         "max": "1",
         "type": [
@@ -4469,7 +4470,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -4507,7 +4508,8 @@
         "id": "Observation:shr-oncology-HER2byFISH.component:shr-oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_74861-6",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "CEP17 signals/nucleus [Entitic number] in Tissue by FISH",
+        "definition": "CEP17 signals/nucleus [Entitic number] in Tissue by FISH",
         "min": 1,
         "max": "1",
         "type": [
@@ -5457,7 +5459,7 @@
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
@@ -5495,7 +5497,8 @@
         "id": "Observation:shr-oncology-HER2byFISH.component:shr-oncology-HER2toCEP17Ratio.code.coding:Fixed_49683-6",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_49683-6",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "HER2/CEP17 [Ratio] in Tissue by FISH",
+        "definition": "HER2/CEP17 [Ratio] in Tissue by FISH",
         "min": 1,
         "max": "1",
         "type": [
@@ -6247,6 +6250,12 @@
         "sliceName": "sourceofinformation"
       },
       {
+        "id": "Observation:shr-oncology-HER2byFISH.extension:sourceofinformation.extension",
+        "path": "Observation.extension.extension",
+        "min": 1,
+        "max": "*"
+      },
+      {
         "id": "Observation:shr-oncology-HER2byFISH.extension:recorded",
         "path": "Observation.extension",
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -6291,7 +6300,9 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2byFISH.category.coding:Fixed_laboratory",
@@ -6334,7 +6345,9 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2byFISH.code.coding:Fixed_85318-4",
@@ -6566,13 +6579,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2byFISH.component:shr-oncology-AverageHER2SignalsPerCell.code.coding:Fixed_74860-8",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_74860-8",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "HER2 signals/nucleus [Entitic number] in Tissue by FISH",
+        "definition": "HER2 signals/nucleus [Entitic number] in Tissue by FISH",
         "min": 1,
         "max": "1",
         "type": [
@@ -6643,13 +6659,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2byFISH.component:shr-oncology-AverageCEP17SignalsPerCell.code.coding:Fixed_74861-6",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_74861-6",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "CEP17 signals/nucleus [Entitic number] in Tissue by FISH",
+        "definition": "CEP17 signals/nucleus [Entitic number] in Tissue by FISH",
         "min": 1,
         "max": "1",
         "type": [
@@ -6720,13 +6739,16 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation:shr-oncology-HER2byFISH.component:shr-oncology-HER2toCEP17Ratio.code.coding:Fixed_49683-6",
         "path": "Observation.component.code.coding",
         "sliceName": "Fixed_49683-6",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "HER2/CEP17 [Ratio] in Tissue by FISH",
+        "definition": "HER2/CEP17 [Ratio] in Tissue by FISH",
         "min": 1,
         "max": "1",
         "type": [
