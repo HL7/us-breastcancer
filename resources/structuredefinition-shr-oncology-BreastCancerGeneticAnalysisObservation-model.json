@@ -15,7 +15,7 @@
   "name": "BreastCancerGeneticAnalysisObservationModel",
   "title": "BC BreastCancerGeneticAnalysisObservation Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -64,156 +64,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.recorded",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.signed",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -873,37 +725,15 @@
         "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
         "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.laboratoryObservationTopic.panelMembers",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-PanelMembers-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.laboratoryObservationTopic.panelMembers.observation",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.laboratoryObservationTopic.panelMembers.observation",
-        "short": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.",
-        "definition": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "cimi-topic-PanelMembers-model.observation",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -1779,156 +1609,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.recorded",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.signed",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -2588,37 +2270,15 @@
         "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
         "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.laboratoryObservationTopic.panelMembers",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-PanelMembers-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.laboratoryObservationTopic.panelMembers.observation",
-        "path": "shr-oncology-BreastCancerGeneticAnalysisObservation-model.laboratoryObservationTopic.panelMembers.observation",
-        "short": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.",
-        "definition": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "cimi-topic-PanelMembers-model.observation",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,

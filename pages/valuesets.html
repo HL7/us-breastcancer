@@ -90,10 +90,6 @@
       <td>{% capture md_text %}Indicators for degree of change (delta) from the last or previous measurement.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="ValueSet-cimi-entity-DeviceVS.html">DeviceVS</a></td>
-      <td>{% capture md_text %}Codes describing medical devices.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
       <td><a href="ValueSet-cimi-context-ExceptionValueVS.html">ExceptionValueVS</a></td>
       <td>{% capture md_text %}Reasons that a value associated with a test or other finding is missing. Includes all codes from 	http://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -135,7 +131,7 @@
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-MitoticCountScoreNullVS.html">MitoticCountScoreNullVS</a></td>
-      <td>{% capture md_text %}Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7. Answer list seems to be erroneously missing LNC#LA27219-7{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-MitoticCountScoreVS.html">MitoticCountScoreVS</a></td>
@@ -143,7 +139,11 @@
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-MorphologyBehaviorVS.html">MorphologyBehaviorVS</a></td>
-      <td>{% capture md_text %}The morphologic behavior of the cancer. These are the suffix to the ICD-O-3 histologic type codes. Codes are presented as local codes because they are portions of the full code to be post-coordinated, and not full ICD-O-3 codes.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}The morphologic behavior of the cancer. These are equivalent to the suffix to the ICD-O-3 histologic type codes.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeNullVS.html">NottinghamCombinedGradeNullVS</a></td>
+      <td>{% capture md_text %}Data absent reasons (null values) for Nottingham Combined Grade scores. Removes non-applicable values from the ExceptionValueVS, and adds values that align with LOINC normative answer list LL4561-8{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeVS.html">NottinghamCombinedGradeVS</a></td>
@@ -152,10 +152,6 @@
     <tr>
       <td><a href="ValueSet-shr-oncology-NottinghamComponentNullVS.html">NottinghamComponentNullVS</a></td>
       <td>{% capture md_text %}Data absent reasons (null values) for nuclear pleomorphism count and tubule formation score. Aligns with LOINC normative answer lists LL4382-9 and LL4380-3.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-NottinghamNullVS.html">NottinghamNullVS</a></td>
-      <td>{% capture md_text %}Data absent reasons (null values) for Nottingham Combined Grade scores. Removes non-applicable values from the ExceptionValueVS, and adds values that align with LOINC normative answer list LL4561-8{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html">NuclearPleomorphismScoreVS</a></td>

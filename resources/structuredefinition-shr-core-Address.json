@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address",
   "name": "AddressProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -172,12 +172,6 @@
             "code": "code"
           }
         ],
-        "example": [
-          {
-            "label": "General",
-            "valueCode": "home"
-          }
-        ],
         "isModifier": true,
         "isSummary": true,
         "binding": {
@@ -218,12 +212,6 @@
         "type": [
           {
             "code": "code"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valueCode": "both"
           }
         ],
         "isSummary": true,
@@ -269,12 +257,6 @@
             "code": "string"
           }
         ],
-        "example": [
-          {
-            "label": "General",
-            "valueString": "137 Nowhere Street, Erewhon 9132"
-          }
-        ],
         "isSummary": true,
         "mapping": [
           {
@@ -305,12 +287,6 @@
           }
         ],
         "orderMeaning": "The order in which lines should appear in an address label",
-        "example": [
-          {
-            "label": "General",
-            "valueString": "137 Nowhere Street"
-          }
-        ],
         "isSummary": true,
         "mapping": [
           {
@@ -344,12 +320,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valueString": "Erewhon"
           }
         ],
         "isSummary": true,
@@ -386,12 +356,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valueString": "Madison"
           }
         ],
         "isSummary": true,
@@ -455,12 +419,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valueString": "9132"
           }
         ],
         "isSummary": true,
@@ -527,15 +485,6 @@
         "type": [
           {
             "code": "Period"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valuePeriod": {
-              "start": "2010-03-23",
-              "end": "2010-07-01"
-            }
           }
         ],
         "isSummary": true,

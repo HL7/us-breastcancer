@@ -235,11 +235,6 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td>{% capture md_text %}An electronic means of contacting an organization or individual.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-entity-Device.html">Device</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/device.html">Device</a></td>
-      <td>{% capture md_text %}A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-encounter-Encounter.html">Encounter</a></td>
       <td><a href="http://hl7.org/fhir/STU3/encounter.html">Encounter</a></td>
       <td>{% capture md_text %}A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -324,11 +319,6 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       <td><a href="StructureDefinition-cimi-entity-RelatedPerson.html">RelatedPerson</a></td>
       <td><a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a></td>
       <td>{% capture md_text %}A person in a role defined in relationship to a patient{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-cimi-element-Signature.html">Signature</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#signature">Signature</a></td>
-      <td>{% capture md_text %}A digital Signature - XML DigSig, JWT, Graphical image of signature, etc.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-statement-SimpleCodedLaboratoryObservation.html">SimpleCodedLaboratoryObservation</a></td>

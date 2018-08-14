@@ -15,7 +15,7 @@
   "name": "BreastCancerRegionalNodesClassificationModel",
   "title": "BC BreastCancerRegionalNodesClassification Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -71,156 +71,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.recorded",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.signed",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -1093,8 +945,9 @@
         "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
         "code": [
           {
-            "system": "urn:tbd",
-            "code": "TBD"
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1550721",
+            "display": "suffix"
           }
         ],
         "short": "A suffix used in conjuction with certain cancer stages, based on criteria defined by the staging system being used.",
@@ -1834,156 +1687,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.recorded",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.signed",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -2856,8 +2561,9 @@
         "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
         "code": [
           {
-            "system": "urn:tbd",
-            "code": "TBD"
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1550721",
+            "display": "suffix"
           }
         ],
         "short": "A suffix used in conjuction with certain cancer stages, based on criteria defined by the staging system being used.",

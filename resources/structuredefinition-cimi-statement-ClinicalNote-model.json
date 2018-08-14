@@ -15,7 +15,7 @@
   "name": "ClinicalNoteModel",
   "title": "BC ClinicalNote Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -71,127 +71,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.recorded",
-        "path": "cimi-statement-ClinicalNote-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.recordedContext",
-        "path": "cimi-statement-ClinicalNote-model.recordedContext",
-        "short": "Context for recording a finding, used to indicate an evaluation has been made.",
-        "definition": "Context for recording a finding, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.recordedContext",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RecordedContext-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.signed",
-        "path": "cimi-statement-ClinicalNote-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -306,6 +187,30 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalNote-model.recordedContext",
+        "path": "cimi-statement-ClinicalNote-model.recordedContext",
+        "short": "Context for recording a finding, used to indicate an evaluation has been made.",
+        "definition": "Context for recording a finding, used to indicate an evaluation has been made.",
+        "alias": [
+          "statementContext"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalNote-model.recordedContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RecordedContext-model"
           }
         ],
         "mustSupport": false,
@@ -345,127 +250,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.recorded",
-        "path": "cimi-statement-ClinicalNote-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.recordedContext",
-        "path": "cimi-statement-ClinicalNote-model.recordedContext",
-        "short": "Context for recording a finding, used to indicate an evaluation has been made.",
-        "definition": "Context for recording a finding, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.recordedContext",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RecordedContext-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.signed",
-        "path": "cimi-statement-ClinicalNote-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -580,6 +366,30 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalNote-model.recordedContext",
+        "path": "cimi-statement-ClinicalNote-model.recordedContext",
+        "short": "Context for recording a finding, used to indicate an evaluation has been made.",
+        "definition": "Context for recording a finding, used to indicate an evaluation has been made.",
+        "alias": [
+          "statementContext"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalNote-model.recordedContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RecordedContext-model"
           }
         ],
         "mustSupport": false,

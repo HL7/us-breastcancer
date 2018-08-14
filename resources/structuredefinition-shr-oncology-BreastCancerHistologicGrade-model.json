@@ -15,7 +15,7 @@
   "name": "BreastCancerHistologicGradeModel",
   "title": "BC BreastCancerHistologicGrade Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -71,156 +71,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.recorded",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.signed",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -1957,7 +1809,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-NottinghamNullVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-NottinghamCombinedGradeNullVS"
           }
         }
       },
@@ -2063,156 +1915,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.recorded",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerHistologicGrade-model.signed",
-        "path": "shr-oncology-BreastCancerHistologicGrade-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerHistologicGrade-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -3949,7 +3653,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-NottinghamNullVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-NottinghamCombinedGradeNullVS"
           }
         }
       },

@@ -243,10 +243,6 @@ The Prosigna Score is reported on a 0-100 scale (referred to as ROR Score or Ris
         <td>{% capture md_text %}The base topic for conditions, allergies, adverse events, etc. These are things asserted to exist or not. The Value is interpreted in the context of the class; for an AdverseSensitivityToSubstance, the TopicCode is the substance, for a Condition, the TopicCode represents the type of condition found.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-core-Attribution-model.html">Attribution</a></td>
-        <td>{% capture md_text %}Information ascribing the record to a particular contributor or responsible person.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-shr-oncology-AverageCEP17SignalsPerCell-model.html">AverageCEP17SignalsPerCell</a></td>
         <td>{% capture md_text %}Average number CEP17 signals per cell (dual probe only){% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -342,7 +338,7 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <tr>
         <td><a href="StructureDefinition-shr-oncology-ColdIschemiaTime-model.html">ColdIschemiaTime</a></td>
         <td>{% capture md_text %}The time period between the chilling of a tissue or tissue sample and the time it is warmed.
-CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to FHIR Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.{% endcapture %}{{ md_text | markdownify }}</td>
+CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing maps to FHIR Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (and beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-CollectionMethod-model.html">CollectionMethod</a></td>
@@ -841,10 +837,6 @@ Observation has a value representing the result (answer), or an ExceptionValue i
         <td>{% capture md_text %}The person or organization who observed or informed the reporter about the characteristic, potentially the clinician, the patient, or a related person.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-element-OnBehalfOf-model.html">OnBehalfOf</a></td>
-        <td>{% capture md_text %}The party represented by the actual participant.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-context-Onset-model.html">Onset</a></td>
         <td>{% capture md_text %}The beginning or first appearance of a mental or physical disorder.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -979,14 +971,6 @@ For example, if the finding involves a myocardial infarction, the presence conte
         <td>{% capture md_text %}Context for recording a finding, used to indicate an evaluation has been made.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-core-Recorded-model.html">Recorded</a></td>
-        <td>{% capture md_text %}The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-core-RecordedOn-model.html">RecordedOn</a></td>
-        <td>{% capture md_text %}The time of the attribution action.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-topic-ReferenceRange-model.html">ReferenceRange</a></td>
         <td>{% capture md_text %}The usual or acceptable range for a test result.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -1028,22 +1012,6 @@ The clinically relevant time is not necessarily when the information is gathered
         <td>{% capture md_text %}Degree of harshness or extent of a symptom, disorder, or condition.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-element-Signatory-model.html">Signatory</a></td>
-        <td>{% capture md_text %}The party signing.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-element-Signature-model.html">Signature</a></td>
-        <td>{% capture md_text %}A digital Signature - XML DigSig, JWT, Graphical image of signature, etc.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-element-SignatureType-model.html">SignatureType</a></td>
-        <td>{% capture md_text %}Type of signature{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-core-Signed-model.html">Signed</a></td>
-        <td>{% capture md_text %}Provenance information specific to the signing of the clinical statement.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-statement-SimpleCodedLaboratoryObservation-model.html">SimpleCodedLaboratoryObservation</a></td>
         <td>{% capture md_text %}A coded finding from a laboratory test without further panel members or components.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -1062,10 +1030,6 @@ The clinically relevant time is not necessarily when the information is gathered
       <tr>
         <td><a href="StructureDefinition-cimi-entity-SocialSecurityNumber-model.html">SocialSecurityNumber</a></td>
         <td>{% capture md_text %}A US social security number (SSN).{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-core-SourceOfInformation-model.html">SourceOfInformation</a></td>
-        <td>{% capture md_text %}The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-SourceSpecimen-model.html">SourceSpecimen</a></td>
@@ -1139,10 +1103,6 @@ StatementTopic class attributes are aligned with SNOMED CT Concept Model attribu
         <td>{% capture md_text %}The current standing or state.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-core-SubjectIfNotPersonOfRecord-model.html">SubjectIfNotPersonOfRecord</a></td>
-        <td>{% capture md_text %}The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-entity-Substance-model.html">Substance</a></td>
         <td>{% capture md_text %}Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -1186,6 +1146,10 @@ For action topics, the TopicCode represents the action being described. For find
         <td>{% capture md_text %}The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
+        <td><a href="StructureDefinition-shr-oncology-TumorDimensionSize-model.html">TumorDimensionSize</a></td>
+        <td>{% capture md_text %}Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
         <td><a href="StructureDefinition-shr-oncology-TumorDimensions-model.html">TumorDimensions</a></td>
         <td>{% capture md_text %}Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -1196,14 +1160,6 @@ For action topics, the TopicCode represents the action being described. For find
       <tr>
         <td><a href="StructureDefinition-shr-oncology-TumorMargins-model.html">TumorMargins</a></td>
         <td>{% capture md_text %}The edge or border of the tissue removed in cancer surgery. The margin is described as negative or clean when the pathologist finds no cancer cells at the edge of the tissue, suggesting that all of the cancer has been removed. The margin is described as positive or involved when the pathologist finds cancer cells at the edge of the tissue, suggesting that all of the cancer has not been removed.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-shr-oncology-TumorPrimaryDimensionSize-model.html">TumorPrimaryDimensionSize</a></td>
-        <td>{% capture md_text %}The longest diameter of the primary tumor.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-shr-oncology-TumorSecondaryDimensionSize-model.html">TumorSecondaryDimensionSize</a></td>
-        <td>{% capture md_text %}The longest perpendicular diameter of the primary tumor.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-Type-model.html">Type</a></td>

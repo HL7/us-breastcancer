@@ -15,7 +15,7 @@
   "name": "GroupCharacteristicModel",
   "title": "BC GroupCharacteristic Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -64,7 +64,8 @@
         "alias": [
           "boolean",
           "quantity",
-          "range"
+          "range",
+          "codeableConcept"
         ],
         "min": 1,
         "max": "1",
@@ -82,6 +83,9 @@
           },
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -190,7 +194,8 @@
         "alias": [
           "boolean",
           "quantity",
-          "range"
+          "range",
+          "codeableConcept"
         ],
         "min": 1,
         "max": "1",
@@ -208,6 +213,9 @@
           },
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

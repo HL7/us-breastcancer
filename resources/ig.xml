@@ -170,13 +170,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-Device" />
-                <display value="BC Device Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-encounter-Encounter" />
                 <display value="BC Encounter Profile" />
             </sourceReference>
@@ -366,13 +359,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-element-Signature" />
-                <display value="BC Signature Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-SimpleCodedLaboratoryObservation" />
                 <display value="BC SimpleCodedLaboratoryObservation Profile" />
             </sourceReference>
@@ -480,13 +466,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-extension" />
                 <display value="BC AnonymizedFlag Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-Attribution-extension" />
-                <display value="BC Attribution Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -620,13 +599,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-encounter-Encounter-extension" />
                 <display value="BC Encounter Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-EntityOrRole-extension" />
-                <display value="BC EntityOrRole Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -814,27 +786,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-core-Recorded-extension" />
-                <display value="BC Recorded Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-RecordedOn-extension" />
-                <display value="BC RecordedOn Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension" />
-                <display value="BC RelationshipToPersonOfRecord Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-context-RelevantTime-extension" />
                 <display value="BC RelevantTime Extension" />
             </sourceReference>
@@ -849,29 +800,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-element-Signature-extension" />
-                <display value="BC Signature Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-Signed-extension" />
-                <display value="BC Signed Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-extension" />
                 <display value="BC SocialSecurityNumber Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-SourceOfInformation-extension" />
-                <display value="BC SourceOfInformation Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -928,13 +858,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-topic-StatementTopic-extension" />
                 <display value="BC StatementTopic Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension" />
-                <display value="BC SubjectIfNotPersonOfRecord Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -1073,13 +996,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/cimi-entity-DeviceVS" />
-                <display value="BC DeviceVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/cimi-context-ExceptionValueVS" />
                 <display value="BC ExceptionValueVS ValueSet" />
             </sourceReference>
@@ -1171,6 +1087,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/shr-oncology-NottinghamCombinedGradeNullVS" />
+                <display value="BC NottinghamCombinedGradeNullVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/shr-oncology-NottinghamCombinedGradeVS" />
                 <display value="BC NottinghamCombinedGradeVS ValueSet" />
             </sourceReference>
@@ -1180,13 +1103,6 @@
             <sourceReference>
                 <reference value="ValueSet/shr-oncology-NottinghamComponentNullVS" />
                 <display value="BC NottinghamComponentNullVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-NottinghamNullVS" />
-                <display value="BC NottinghamNullVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1283,6 +1199,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="CodeSystem/BC-basic-resource-type" />
+                <display value="BC Basic Resource Type CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="CodeSystem/shr-oncology-BreastCancerTypeCS" />
                 <display value="BC BreastCancerTypeCS CodeSystem" />
             </sourceReference>
@@ -1313,13 +1236,6 @@
             <sourceReference>
                 <reference value="CodeSystem/cimi-entity-LanguageQualifierCS" />
                 <display value="BC LanguageQualifierCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/shr-oncology-MorphologyBehaviorCS" />
-                <display value="BC MorphologyBehaviorCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -1509,13 +1425,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-AssertionTopic-model" />
                   <display value="AssertionTopicModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-Attribution-model" />
-                  <display value="AttributionModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2683,13 +2592,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-element-OnBehalfOf-model" />
-                  <display value="OnBehalfOfModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-OncotypeDxDCISRecurrenceScore-model" />
                   <display value="OncotypeDxDCISRecurrenceScoreModel" />
               </sourceReference>
@@ -2949,20 +2851,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-Recorded-model" />
-                  <display value="RecordedModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-RecordedOn-model" />
-                  <display value="RecordedOnModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-ReferenceRange-model" />
                   <display value="ReferenceRangeModel" />
               </sourceReference>
@@ -3033,34 +2921,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-element-Signatory-model" />
-                  <display value="SignatoryModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-element-Signature-model" />
-                  <display value="SignatureModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-element-SignatureType-model" />
-                  <display value="SignatureTypeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-Signed-model" />
-                  <display value="SignedModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-SimpleCodedLaboratoryObservation-model" />
                   <display value="SimpleCodedLaboratoryObservationModel" />
               </sourceReference>
@@ -3091,13 +2951,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-model" />
                   <display value="SocialSecurityNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-SourceOfInformation-model" />
-                  <display value="SourceOfInformationModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -3222,13 +3075,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model" />
-                  <display value="SubjectIfNotPersonOfRecordModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-Substance-model" />
                   <display value="SubstanceModel" />
               </sourceReference>
@@ -3299,6 +3145,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-TumorDimensionSize-model" />
+                  <display value="TumorDimensionSizeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-TumorDimensions-model" />
                   <display value="TumorDimensionsModel" />
               </sourceReference>
@@ -3315,20 +3168,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-TumorMargins-model" />
                   <display value="TumorMarginsModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorPrimaryDimensionSize-model" />
-                  <display value="TumorPrimaryDimensionSizeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorSecondaryDimensionSize-model" />
-                  <display value="TumorSecondaryDimensionSizeModel" />
               </sourceReference>
           </resource>
           <resource>

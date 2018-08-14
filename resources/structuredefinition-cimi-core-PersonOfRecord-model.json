@@ -15,7 +15,7 @@
   "name": "PersonOfRecordModel",
   "title": "BC PersonOfRecord Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -51,32 +51,17 @@
         "isSummary": false
       },
       {
-        "id": "cimi-core-PersonOfRecord-model.value",
-        "path": "cimi-core-PersonOfRecord-model.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1299487"
-          }
-        ],
-        "short": "Patient representing the person this entry belongs to.",
-        "definition": "Patient representing the person this entry belongs to.",
-        "alias": [
-          "patient"
-        ],
-        "min": 1,
-        "max": "1",
+        "id": "cimi-core-PersonOfRecord-model.intentionallyBlank",
+        "path": "cimi-core-PersonOfRecord-model.intentionallyBlank",
+        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "min": 0,
+        "max": "0",
         "base": {
-          "path": "cimi-core-PersonOfRecord-model.value",
-          "min": 1,
-          "max": "1"
+          "path": "cimi-core-PersonOfRecord-model.intentionallyBlank",
+          "min": 0,
+          "max": "0"
         },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
-          }
-        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
@@ -101,32 +86,17 @@
         "isSummary": false
       },
       {
-        "id": "cimi-core-PersonOfRecord-model.value",
-        "path": "cimi-core-PersonOfRecord-model.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1299487"
-          }
-        ],
-        "short": "Patient representing the person this entry belongs to.",
-        "definition": "Patient representing the person this entry belongs to.",
-        "alias": [
-          "patient"
-        ],
-        "min": 1,
-        "max": "1",
+        "id": "cimi-core-PersonOfRecord-model.intentionallyBlank",
+        "path": "cimi-core-PersonOfRecord-model.intentionallyBlank",
+        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
+        "min": 0,
+        "max": "0",
         "base": {
-          "path": "cimi-core-PersonOfRecord-model.value",
-          "min": 1,
-          "max": "1"
+          "path": "cimi-core-PersonOfRecord-model.intentionallyBlank",
+          "min": 0,
+          "max": "0"
         },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
-          }
-        ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false

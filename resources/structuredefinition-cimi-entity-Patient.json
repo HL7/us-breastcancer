@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient",
   "name": "PatientProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -845,12 +845,6 @@
             "code": "uri"
           }
         ],
-        "example": [
-          {
-            "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
-          }
-        ],
         "mustSupport": true,
         "isSummary": true,
         "mapping": [
@@ -888,12 +882,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valueString": "123456"
           }
         ],
         "mustSupport": true,

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen",
   "name": "SpecimenProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -555,7 +555,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
           },
           {
             "code": "Reference",
@@ -1554,7 +1554,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
           },
           {
             "code": "Reference",

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-AssertionPresenceStatement",
   "name": "AssertionPresenceStatementProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -295,102 +295,6 @@
         "sliceName": "personofrecord"
       },
       {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:subjectifnotpersonofrecord",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:sourceofinformation",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:recorded",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-extension"
-          }
-        ],
-        "sliceName": "recorded"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:signed",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-extension"
-          }
-        ],
-        "sliceName": "signed"
-      },
-      {
         "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:findingtopic",
         "path": "DomainResource.extension",
         "slicing": {
@@ -512,102 +416,6 @@
           }
         ],
         "sliceName": "personofrecord"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:subjectifnotpersonofrecord",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:sourceofinformation",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:recorded",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-extension"
-          }
-        ],
-        "sliceName": "recorded"
-      },
-      {
-        "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:signed",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-extension"
-          }
-        ],
-        "sliceName": "signed"
       },
       {
         "id": "DomainResource:cimi-statement-AssertionPresenceStatement.extension:findingtopic",

@@ -15,7 +15,7 @@
   "name": "BreastCancerPresenceStatementModel",
   "title": "BC BreastCancerPresenceStatement Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -71,215 +71,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1299487"
-          }
-        ],
-        "short": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
-        "definition": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
-        "alias": [
-          "entityOrRole",
-          "patient"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
-        "short": "PatientOrPractitionerOrRelatedPerson",
-        "definition": "PatientOrPractitionerOrRelatedPerson",
-        "alias": [
-          "entityOrRole",
-          "patientOrPractitionerOrRelatedPerson"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-PatientOrPractitionerOrRelatedPerson-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.signed",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -911,11 +704,11 @@
         "short": "Degree of harshness or extent of a symptom, disorder, or condition.",
         "definition": "Degree of harshness or extent of a symptom, disorder, or condition.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -1124,8 +917,9 @@
         "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
         "code": [
           {
-            "system": "urn:tbd",
-            "code": "TBD"
+            "system": "http://snomed.info/sct",
+            "code": "246463000",
+            "display": "Behavior of tumor (attribute)"
           }
         ],
         "short": "A description of the morphology and behavioral characteristics of the cancer.",
@@ -1209,215 +1003,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1299487"
-          }
-        ],
-        "short": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
-        "definition": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
-        "alias": [
-          "entityOrRole",
-          "patient"
-        ],
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.value",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.subjectIfNotPersonOfRecord.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
-        "short": "PatientOrPractitionerOrRelatedPerson",
-        "definition": "PatientOrPractitionerOrRelatedPerson",
-        "alias": [
-          "entityOrRole",
-          "patientOrPractitionerOrRelatedPerson"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-PatientOrPractitionerOrRelatedPerson-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
-        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.recorded",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Recorded-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.signed",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
-        "short": "Provenance information specific to the signing of the clinical statement.",
-        "definition": "Provenance information specific to the signing of the clinical statement.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.signed",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-Signed-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -2049,11 +1636,11 @@
         "short": "Degree of harshness or extent of a symptom, disorder, or condition.",
         "definition": "Degree of harshness or extent of a symptom, disorder, or condition.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.severity",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -2262,8 +1849,9 @@
         "path": "shr-oncology-BreastCancerPresenceStatement-model.morphologyBehavior",
         "code": [
           {
-            "system": "urn:tbd",
-            "code": "TBD"
+            "system": "http://snomed.info/sct",
+            "code": "246463000",
+            "display": "Behavior of tumor (attribute)"
           }
         ],
         "short": "A description of the morphology and behavioral characteristics of the cancer.",

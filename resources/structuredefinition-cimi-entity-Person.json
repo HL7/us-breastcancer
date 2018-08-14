@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Person",
   "name": "PersonProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -559,7 +559,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/breastcancer/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/BC-basic-resource-type",
               "code": "cimi-entity-Person"
             }
           ]
@@ -827,7 +827,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/breastcancer/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/BC-basic-resource-type",
               "code": "cimi-entity-Person"
             }
           ]

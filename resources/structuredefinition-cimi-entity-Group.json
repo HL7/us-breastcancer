@@ -3,12 +3,12 @@
   "id": "cimi-entity-Group",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Group Profile</b></p>\n  <p>A set of entities (personnel, material, or places) to be considered together. May be a pool of like-type resources, a team, or combination of personnel, material and places.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.entity.Group maps to Group:\n  ActiveFlag maps to active\n  Type maps to type\n  Actual maps to actual\n  constrain code to 0..0\n  Title maps to name\n  GroupCharacteristic maps to characteristic.value[x]\n  GroupCharacteristic.GroupCharacteristicCode maps to characteristic.code\n  GroupCharacteristic.ExcludeFlag maps to characteristic.exclude\n  GroupCharacteristic.TimePeriod maps to characteristic.period\n  Member.Patient maps to member.entity\n  Member.Practitioner maps to member.entity\n  Member.Device maps to member.entity\n  Member.Medication maps to member.entity\n  Member.Substance maps to member.entity\n  Member.ParticipationPeriod maps to member.period\n  Member.ActiveFlag maps to member.inactive // TODO this is an inverse TF mapping\n  Count maps to quantity\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Group Profile</b></p>\n  <p>A set of entities (personnel, material, or places) to be considered together. May be a pool of like-type resources, a team, or combination of personnel, material and places.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.entity.Group maps to Group:\n  ActiveFlag maps to active\n  Type maps to type\n  Actual maps to actual\n  Title maps to name\n  GroupCharacteristic maps to characteristic.value[x]\n  GroupCharacteristic.GroupCharacteristicCode maps to characteristic.code\n  GroupCharacteristic.ExcludeFlag maps to characteristic.exclude\n  GroupCharacteristic.TimePeriod maps to characteristic.period\n  Member.Patient maps to member.entity\n  Member.Practitioner maps to member.entity\n  Member.Device maps to member.entity\n  Member.Medication maps to member.entity\n  Member.Substance maps to member.entity\n  Member.ParticipationPeriod maps to member.period\n  Member.ActiveFlag maps to member.inactive // TODO this is an inverse TF mapping\n  Count maps to quantity\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Group",
   "name": "GroupProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -454,7 +454,7 @@
         "definition": "Provides a specific type of resource the group includes; e.g. \"cow\", \"syringe\", etc.",
         "comment": "This would generally be omitted for Person resources.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -685,6 +685,9 @@
         "max": "1",
         "type": [
           {
+            "code": "CodeableConcept"
+          },
+          {
             "code": "boolean"
           },
           {
@@ -885,7 +888,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
           },
           {
             "code": "Reference",
@@ -938,31 +941,6 @@
         "definition": "A set of entities (personnel, material, or places) to be considered together. May be a pool of like-type resources, a team, or combination of personnel, material and places."
       },
       {
-        "id": "Group:cimi-entity-Group.code",
-        "path": "Group.code",
-        "min": 0,
-        "max": "0"
-      },
-      {
-        "id": "Group:cimi-entity-Group.characteristic",
-        "path": "Group.characteristic"
-      },
-      {
-        "id": "Group:cimi-entity-Group.characteristic.value[x]",
-        "path": "Group.characteristic.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          }
-        ]
-      },
-      {
         "id": "Group:cimi-entity-Group.member",
         "path": "Group.member"
       },
@@ -980,7 +958,7 @@
           },
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
           },
           {
             "code": "Reference",

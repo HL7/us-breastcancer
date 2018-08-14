@@ -181,7 +181,7 @@ if (location.href.indexOf('is-external=true') == -1) {
     
     </div>
     <div class="block"><p>The time period between the chilling of a tissue or tissue sample and the time it is warmed.
-CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing should actually map to FHIR Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.</p></div>
+CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing maps to FHIR Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (and beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.</p></div>
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -219,11 +219,7 @@ CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a '
         
       </td>
       <td class="colLast">
-                  <div class="block">
-            
-                          <a href="../../ValueSet-shr-oncology-BreastSpecimenTypeVS.html" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastSpecimenTypeVS</a>
-                        (REQUIRED)
-          </div>
+                  <div class="block">http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastSpecimenTypeVS (REQUIRED)</div>
               </td>
       <!-- <td class="colLast">
         <div class="block">BreastSpecimen</div>
@@ -245,11 +241,7 @@ CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a '
         
       </td>
       <td class="colLast">
-                  <div class="block">
-            
-                          <a href="../../ValueSet-shr-oncology-BreastSpecimenCollectionMethodVS.html" target="_top">http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastSpecimenCollectionMethodVS</a>
-                        (REQUIRED)
-          </div>
+                  <div class="block">http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastSpecimenCollectionMethodVS (REQUIRED)</div>
               </td>
       <!-- <td class="colLast">
         <div class="block">BreastSpecimen</div>

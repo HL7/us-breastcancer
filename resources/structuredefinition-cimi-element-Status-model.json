@@ -15,7 +15,7 @@
   "name": "StatusModel",
   "title": "BC Status Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -79,9 +79,6 @@
           },
           {
             "code": "Coding"
-          },
-          {
-            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -127,9 +124,6 @@
         "type": [
           {
             "code": "code"
-          },
-          {
-            "code": "Coding"
           },
           {
             "code": "Coding"

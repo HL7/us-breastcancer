@@ -15,7 +15,7 @@
   "name": "TotalNumberOfLymphNodesExaminedModel",
   "title": "BC TotalNumberOfLymphNodesExamined Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -28,6 +28,13 @@
     }
   ],
   "description": "Total number of lymph nodes examined for the presence of cancer cells",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "444025001",
+      "display": "Number of lymph nodes examined (observable entity)"
+    }
+  ],
   "kind": "logical",
   "abstract": false,
   "type": "shr-oncology-TotalNumberOfLymphNodesExamined-model",

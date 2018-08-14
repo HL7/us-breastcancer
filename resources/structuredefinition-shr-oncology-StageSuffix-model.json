@@ -15,7 +15,7 @@
   "name": "StageSuffixModel",
   "title": "BC StageSuffix Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -30,8 +30,9 @@
   "description": "A suffix used in conjuction with certain cancer stages, based on criteria defined by the staging system being used.",
   "keyword": [
     {
-      "system": "urn:tbd",
-      "code": "TBD"
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C1550721",
+      "display": "suffix"
     }
   ],
   "kind": "logical",

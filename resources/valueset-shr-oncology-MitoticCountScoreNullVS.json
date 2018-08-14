@@ -3,7 +3,7 @@
   "id": "shr-oncology-MitoticCountScoreNullVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC MitoticCountScoreNullVS ValueSet</b></p>\n<p>Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC MitoticCountScoreNullVS ValueSet</b></p>\n<p>Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7. Answer list seems to be erroneously missing LNC#LA27219-7</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-MitoticCountScoreNullVS",
   "identifier": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-07",
-  "description": "Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7.",
+  "date": "2018-08-13",
+  "description": "Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7. Answer list seems to be erroneously missing LNC#LA27219-7",
   "compose": {
     "include": [
       {

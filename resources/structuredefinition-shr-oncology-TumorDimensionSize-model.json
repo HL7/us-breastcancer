@@ -1,21 +1,21 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "shr-oncology-TumorSecondaryDimensionSize-model",
+  "id": "shr-oncology-TumorDimensionSize-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC TumorSecondaryDimensionSize Logical Model</b></p>\n  <p>The longest perpendicular diameter of the primary tumor.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC TumorDimensionSize Logical Model</b></p>\n  <p>Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorSecondaryDimensionSize-model",
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorDimensionSize-model",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/breastcancer",
-      "value": "shr.oncology.TumorSecondaryDimensionSize"
+      "value": "shr.oncology.TumorDimensionSize"
     }
   ],
-  "name": "TumorSecondaryDimensionSizeModel",
-  "title": "BC TumorSecondaryDimensionSize Logical Model",
+  "name": "TumorDimensionSizeModel",
+  "title": "BC TumorDimensionSize Logical Model",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-13",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -27,29 +27,22 @@
       ]
     }
   ],
-  "description": "The longest perpendicular diameter of the primary tumor.",
-  "keyword": [
-    {
-      "system": "http://snomed.info/sct",
-      "code": "399738003",
-      "display": "Secondary tumor size (observable entity)"
-    }
-  ],
+  "description": "Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
   "kind": "logical",
   "abstract": false,
-  "type": "shr-oncology-TumorSecondaryDimensionSize-model",
+  "type": "shr-oncology-TumorDimensionSize-model",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
     "element": [
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model",
-        "definition": "The longest perpendicular diameter of the primary tumor.",
+        "id": "shr-oncology-TumorDimensionSize-model",
+        "path": "shr-oncology-TumorDimensionSize-model",
+        "definition": "Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model",
+          "path": "shr-oncology-TumorDimensionSize-model",
           "min": 0,
           "max": "*"
         },
@@ -58,17 +51,17 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value",
-        "short": "Quantity representing the longest perpendicular diameter of the primary tumor.",
-        "definition": "Quantity representing the longest perpendicular diameter of the primary tumor.",
+        "id": "shr-oncology-TumorDimensionSize-model.value",
+        "path": "shr-oncology-TumorDimensionSize-model.value",
+        "short": "Quantity representing measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
+        "definition": "Quantity representing measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
         "alias": [
           "quantity"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.value",
+          "path": "shr-oncology-TumorDimensionSize-model.value",
           "min": 1,
           "max": "1"
         },
@@ -82,8 +75,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.value",
+        "id": "shr-oncology-TumorDimensionSize-model.value.value",
+        "path": "shr-oncology-TumorDimensionSize-model.value.value",
         "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "alias": [
@@ -106,8 +99,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.comparator",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.comparator",
+        "id": "shr-oncology-TumorDimensionSize-model.value.comparator",
+        "path": "shr-oncology-TumorDimensionSize-model.value.comparator",
         "short": "Comparator",
         "definition": "Comparator",
         "min": 0,
@@ -127,8 +120,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units",
         "short": "Code for the unit of measure of the quantity.",
         "definition": "Code for the unit of measure of the quantity.",
         "min": 0,
@@ -148,8 +141,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -178,8 +171,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.id",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.id",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.id",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -205,8 +198,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.extension",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.extension",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.extension",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -244,8 +237,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.system",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.system",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.system",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -280,8 +273,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.version",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.version",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.version",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -314,8 +307,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.code",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.code",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.code",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -349,14 +342,14 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.display",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.display",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -389,8 +382,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.userSelected",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.userSelected",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.userSelected",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -424,14 +417,14 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.topicCode",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.topicCode",
+        "id": "shr-oncology-TumorDimensionSize-model.topicCode",
+        "path": "shr-oncology-TumorDimensionSize-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.topicCode",
+          "path": "shr-oncology-TumorDimensionSize-model.topicCode",
           "min": 0,
           "max": "1"
         },
@@ -445,14 +438,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue",
+        "id": "shr-oncology-TumorDimensionSize-model.exceptionValue",
+        "path": "shr-oncology-TumorDimensionSize-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
         "definition": "Reason that a value associated with a test or other finding is missing.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue",
+          "path": "shr-oncology-TumorDimensionSize-model.exceptionValue",
           "min": 0,
           "max": "1"
         },
@@ -466,8 +459,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue.value",
+        "id": "shr-oncology-TumorDimensionSize-model.exceptionValue.value",
+        "path": "shr-oncology-TumorDimensionSize-model.exceptionValue.value",
         "short": "Code representing reason that a value associated with a test or other finding is missing.",
         "definition": "Code representing reason that a value associated with a test or other finding is missing.",
         "alias": [
@@ -496,8 +489,8 @@
         }
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.interpretation",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.interpretation",
+        "id": "shr-oncology-TumorDimensionSize-model.interpretation",
+        "path": "shr-oncology-TumorDimensionSize-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -509,7 +502,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.interpretation",
+          "path": "shr-oncology-TumorDimensionSize-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -523,8 +516,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.referenceRange",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.referenceRange",
+        "id": "shr-oncology-TumorDimensionSize-model.referenceRange",
+        "path": "shr-oncology-TumorDimensionSize-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -536,7 +529,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.referenceRange",
+          "path": "shr-oncology-TumorDimensionSize-model.referenceRange",
           "min": 0,
           "max": "*"
         },
@@ -554,13 +547,13 @@
   "differential": {
     "element": [
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model",
-        "definition": "The longest perpendicular diameter of the primary tumor.",
+        "id": "shr-oncology-TumorDimensionSize-model",
+        "path": "shr-oncology-TumorDimensionSize-model",
+        "definition": "Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model",
+          "path": "shr-oncology-TumorDimensionSize-model",
           "min": 0,
           "max": "*"
         },
@@ -569,17 +562,17 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value",
-        "short": "Quantity representing the longest perpendicular diameter of the primary tumor.",
-        "definition": "Quantity representing the longest perpendicular diameter of the primary tumor.",
+        "id": "shr-oncology-TumorDimensionSize-model.value",
+        "path": "shr-oncology-TumorDimensionSize-model.value",
+        "short": "Quantity representing measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
+        "definition": "Quantity representing measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.",
         "alias": [
           "quantity"
         ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.value",
+          "path": "shr-oncology-TumorDimensionSize-model.value",
           "min": 1,
           "max": "1"
         },
@@ -593,8 +586,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.value",
+        "id": "shr-oncology-TumorDimensionSize-model.value.value",
+        "path": "shr-oncology-TumorDimensionSize-model.value.value",
         "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "alias": [
@@ -617,8 +610,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.comparator",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.comparator",
+        "id": "shr-oncology-TumorDimensionSize-model.value.comparator",
+        "path": "shr-oncology-TumorDimensionSize-model.value.comparator",
         "short": "Comparator",
         "definition": "Comparator",
         "min": 0,
@@ -638,8 +631,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units",
         "short": "Code for the unit of measure of the quantity.",
         "definition": "Code for the unit of measure of the quantity.",
         "min": 0,
@@ -659,8 +652,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -689,8 +682,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.id",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.id",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.id",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.id",
         "representation": [
           "xmlAttr"
         ],
@@ -716,8 +709,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.extension",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.extension",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.extension",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.extension",
         "slicing": {
           "discriminator": [
             {
@@ -755,8 +748,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.system",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.system",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.system",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -791,8 +784,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.version",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.version",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.version",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -825,8 +818,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.code",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.code",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.code",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -860,14 +853,14 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.display",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.display",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -900,8 +893,8 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.userSelected",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.value.units.value.userSelected",
+        "id": "shr-oncology-TumorDimensionSize-model.value.units.value.userSelected",
+        "path": "shr-oncology-TumorDimensionSize-model.value.units.value.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -935,14 +928,14 @@
         ]
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.topicCode",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.topicCode",
+        "id": "shr-oncology-TumorDimensionSize-model.topicCode",
+        "path": "shr-oncology-TumorDimensionSize-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.topicCode",
+          "path": "shr-oncology-TumorDimensionSize-model.topicCode",
           "min": 0,
           "max": "1"
         },
@@ -956,14 +949,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue",
+        "id": "shr-oncology-TumorDimensionSize-model.exceptionValue",
+        "path": "shr-oncology-TumorDimensionSize-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
         "definition": "Reason that a value associated with a test or other finding is missing.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue",
+          "path": "shr-oncology-TumorDimensionSize-model.exceptionValue",
           "min": 0,
           "max": "1"
         },
@@ -977,8 +970,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue.value",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.exceptionValue.value",
+        "id": "shr-oncology-TumorDimensionSize-model.exceptionValue.value",
+        "path": "shr-oncology-TumorDimensionSize-model.exceptionValue.value",
         "short": "Code representing reason that a value associated with a test or other finding is missing.",
         "definition": "Code representing reason that a value associated with a test or other finding is missing.",
         "alias": [
@@ -1007,8 +1000,8 @@
         }
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.interpretation",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.interpretation",
+        "id": "shr-oncology-TumorDimensionSize-model.interpretation",
+        "path": "shr-oncology-TumorDimensionSize-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1020,7 +1013,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.interpretation",
+          "path": "shr-oncology-TumorDimensionSize-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -1034,8 +1027,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-TumorSecondaryDimensionSize-model.referenceRange",
-        "path": "shr-oncology-TumorSecondaryDimensionSize-model.referenceRange",
+        "id": "shr-oncology-TumorDimensionSize-model.referenceRange",
+        "path": "shr-oncology-TumorDimensionSize-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1047,7 +1040,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-TumorSecondaryDimensionSize-model.referenceRange",
+          "path": "shr-oncology-TumorDimensionSize-model.referenceRange",
           "min": 0,
           "max": "*"
         },
