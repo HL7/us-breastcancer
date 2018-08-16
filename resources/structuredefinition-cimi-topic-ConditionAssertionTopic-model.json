@@ -15,7 +15,7 @@
   "name": "ConditionAssertionTopicModel",
   "title": "BC ConditionAssertionTopic Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -64,30 +64,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-topic-ConditionAssertionTopic-model.topicCode.value",
-        "path": "cimi-topic-ConditionAssertionTopic-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -115,12 +91,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "cimi-topic-ConditionAssertionTopic-model.details",
@@ -142,7 +124,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -181,30 +163,6 @@
           "path": "cimi-topic-ConditionAssertionTopic-model.category",
           "min": 1,
           "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-topic-ConditionAssertionTopic-model.category.value",
-        "path": "cimi-topic-ConditionAssertionTopic-model.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Category-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -262,7 +220,15 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Entity-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalStatement-model"
           }
         ],
         "mustSupport": false,
@@ -289,7 +255,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-AlleviatingFactor-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -316,7 +282,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ExacerbatingFactor-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -356,30 +322,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-topic-ConditionAssertionTopic-model.topicCode.value",
-        "path": "cimi-topic-ConditionAssertionTopic-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -407,12 +349,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "cimi-topic-ConditionAssertionTopic-model.details",
@@ -434,7 +382,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -473,30 +421,6 @@
           "path": "cimi-topic-ConditionAssertionTopic-model.category",
           "min": 1,
           "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-topic-ConditionAssertionTopic-model.category.value",
-        "path": "cimi-topic-ConditionAssertionTopic-model.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Category-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -554,7 +478,15 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionCause-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Entity-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalStatement-model"
           }
         ],
         "mustSupport": false,
@@ -581,7 +513,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-AlleviatingFactor-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -608,7 +540,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ExacerbatingFactor-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

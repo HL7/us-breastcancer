@@ -15,7 +15,7 @@
   "name": "HER2ReceptorStatusModel",
   "title": "BC HER2ReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -84,9 +84,6 @@
         "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic",
         "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
         "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "alias": [
-          "statementTopic"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -117,30 +114,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "short": "HER2 [Interpretation] in Tissue",
-        "definition": "HER2 [Interpretation] in Tissue",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -149,8 +122,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -176,8 +149,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -191,10 +164,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -215,8 +184,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -251,8 +220,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -285,8 +254,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -320,14 +289,14 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -360,8 +329,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -408,12 +377,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.details",
@@ -435,7 +410,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -448,11 +423,11 @@
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.media",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -477,30 +452,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -509,8 +460,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -519,7 +470,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.id",
           "min": 0,
           "max": "1"
         },
@@ -536,8 +487,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -551,14 +502,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.extension",
           "min": 0,
           "max": "*"
         },
@@ -575,8 +522,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -584,7 +531,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.system",
           "min": 1,
           "max": "1"
         },
@@ -611,15 +558,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.version",
           "min": 0,
           "max": "1"
         },
@@ -645,15 +592,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.code",
           "min": 1,
           "max": "1"
         },
@@ -680,21 +627,21 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.display",
           "min": 0,
           "max": "1"
         },
@@ -720,8 +667,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -729,7 +676,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -795,7 +742,17 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Focus-model"
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -808,11 +765,11 @@
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.device",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -860,7 +817,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -1024,30 +985,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-DiagnosticService-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1056,8 +993,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1083,8 +1020,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1098,10 +1035,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1122,8 +1055,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1158,8 +1091,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1192,8 +1125,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1227,14 +1160,14 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1267,8 +1200,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1306,9 +1239,6 @@
         "path": "shr-oncology-HER2ReceptorStatus-model.observationContext",
         "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1339,30 +1269,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1371,8 +1277,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1381,7 +1287,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.id",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.id",
           "min": 0,
           "max": "1"
         },
@@ -1398,8 +1304,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1413,14 +1319,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.extension",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.extension",
           "min": 0,
           "max": "*"
         },
@@ -1437,8 +1339,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1446,7 +1348,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.system",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.system",
           "min": 1,
           "max": "1"
         },
@@ -1473,15 +1375,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.version",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.version",
           "min": 0,
           "max": "1"
         },
@@ -1507,15 +1409,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.code",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.code",
           "min": 1,
           "max": "1"
         },
@@ -1542,21 +1444,21 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.display",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.display",
           "min": 0,
           "max": "1"
         },
@@ -1582,8 +1484,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1591,7 +1493,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.userSelected",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -1657,12 +1559,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.findingStatus",
@@ -1678,12 +1586,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.relevantTime",
@@ -1699,7 +1613,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -1732,9 +1649,6 @@
         "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1767,30 +1681,6 @@
         "base": {
           "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1828,12 +1718,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.issued",
@@ -1849,7 +1745,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -1870,7 +1766,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,
@@ -1923,9 +1832,6 @@
         "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic",
         "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
         "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "alias": [
-          "statementTopic"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1956,30 +1862,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "short": "HER2 [Interpretation] in Tissue",
-        "definition": "HER2 [Interpretation] in Tissue",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1988,8 +1870,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2015,8 +1897,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2030,10 +1912,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2054,8 +1932,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2090,8 +1968,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2124,8 +2002,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2159,14 +2037,14 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2199,8 +2077,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2247,12 +2125,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.details",
@@ -2274,7 +2158,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -2287,11 +2171,11 @@
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.media",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -2316,30 +2200,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2348,8 +2208,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2358,7 +2218,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.id",
           "min": 0,
           "max": "1"
         },
@@ -2375,8 +2235,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2390,14 +2250,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.extension",
           "min": 0,
           "max": "*"
         },
@@ -2414,8 +2270,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2423,7 +2279,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.system",
           "min": 1,
           "max": "1"
         },
@@ -2450,15 +2306,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.version",
           "min": 0,
           "max": "1"
         },
@@ -2484,15 +2340,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.code",
           "min": 1,
           "max": "1"
         },
@@ -2519,21 +2375,21 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.display",
           "min": 0,
           "max": "1"
         },
@@ -2559,8 +2415,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2568,7 +2424,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+          "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -2634,7 +2490,17 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Focus-model"
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -2647,11 +2513,11 @@
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.device",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -2699,7 +2565,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -2863,30 +2733,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-DiagnosticService-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2895,8 +2741,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2922,8 +2768,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2937,10 +2783,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2961,8 +2803,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2997,8 +2839,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -3031,8 +2873,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -3066,14 +2908,14 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -3106,8 +2948,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -3145,9 +2987,6 @@
         "path": "shr-oncology-HER2ReceptorStatus-model.observationContext",
         "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -3178,30 +3017,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -3210,8 +3025,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.id",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.id",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.id",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -3220,7 +3035,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.id",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.id",
           "min": 0,
           "max": "1"
         },
@@ -3237,8 +3052,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.extension",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.extension",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.extension",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -3252,14 +3067,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.extension",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.extension",
           "min": 0,
           "max": "*"
         },
@@ -3276,8 +3087,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.system",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.system",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.system",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -3285,7 +3096,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.system",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.system",
           "min": 1,
           "max": "1"
         },
@@ -3312,15 +3123,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.version",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.version",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.version",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.version",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.version",
           "min": 0,
           "max": "1"
         },
@@ -3346,15 +3157,15 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.code",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.code",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.code",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.code",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.code",
           "min": 1,
           "max": "1"
         },
@@ -3381,21 +3192,21 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.display",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.display",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.display",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.display",
           "min": 0,
           "max": "1"
         },
@@ -3421,8 +3232,8 @@
         ]
       },
       {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.userSelected",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.userSelected",
+        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.userSelected",
+        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -3430,7 +3241,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.value.userSelected",
+          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.contextCode.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -3496,12 +3307,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.findingStatus",
@@ -3517,12 +3334,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.relevantTime",
@@ -3538,7 +3361,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -3571,9 +3397,6 @@
         "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -3606,30 +3429,6 @@
         "base": {
           "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue.value",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.exceptionValue.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -3667,12 +3466,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.issued",
@@ -3688,7 +3493,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -3709,7 +3514,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,

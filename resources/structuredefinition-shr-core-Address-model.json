@@ -15,7 +15,7 @@
   "name": "AddressModel",
   "title": "BC Address Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -59,6 +59,12 @@
       {
         "id": "shr-core-Address-model.purpose",
         "path": "shr-core-Address-model.purpose",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Why the item is used.",
         "definition": "Why the item is used.",
         "min": 0,
@@ -66,36 +72,6 @@
         "base": {
           "path": "shr-core-Address-model.purpose",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Purpose-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-Address-model.purpose.value",
-        "path": "shr-core-Address-model.purpose.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing why the item is used.",
-        "definition": "Code representing why the item is used.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Purpose-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -133,30 +109,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-Address-model.type.value",
-        "path": "shr-core-Address-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -190,7 +142,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-DisplayText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -203,15 +155,15 @@
         "short": "Part of an address that contains the house number, apartment number, street name, street direction, P.O. Box number, delivery hints, and similar address information. (Source: HL7 FHIR).",
         "definition": "Part of an address that contains the house number, apartment number, street name, street direction, P.O. Box number, delivery hints, and similar address information. (Source: HL7 FHIR).",
         "min": 0,
-        "max": "2",
+        "max": "*",
         "base": {
           "path": "shr-core-Address-model.addressLine",
           "min": 0,
-          "max": "2"
+          "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-AddressLine-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -238,7 +190,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-City-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -265,7 +217,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-District-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -292,7 +244,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-State-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -319,7 +271,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PostalCode-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -337,16 +289,16 @@
         ],
         "short": "Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes.",
         "definition": "Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-Address-model.country",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Country-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -402,6 +354,12 @@
       {
         "id": "shr-core-Address-model.purpose",
         "path": "shr-core-Address-model.purpose",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Why the item is used.",
         "definition": "Why the item is used.",
         "min": 0,
@@ -409,36 +367,6 @@
         "base": {
           "path": "shr-core-Address-model.purpose",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Purpose-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-Address-model.purpose.value",
-        "path": "shr-core-Address-model.purpose.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing why the item is used.",
-        "definition": "Code representing why the item is used.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Purpose-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -476,30 +404,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-Address-model.type.value",
-        "path": "shr-core-Address-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -533,7 +437,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-DisplayText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -546,15 +450,15 @@
         "short": "Part of an address that contains the house number, apartment number, street name, street direction, P.O. Box number, delivery hints, and similar address information. (Source: HL7 FHIR).",
         "definition": "Part of an address that contains the house number, apartment number, street name, street direction, P.O. Box number, delivery hints, and similar address information. (Source: HL7 FHIR).",
         "min": 0,
-        "max": "2",
+        "max": "*",
         "base": {
           "path": "shr-core-Address-model.addressLine",
           "min": 0,
-          "max": "2"
+          "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-AddressLine-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -581,7 +485,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-City-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -608,7 +512,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-District-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -635,7 +539,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-State-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -662,7 +566,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-PostalCode-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -680,16 +584,16 @@
         ],
         "short": "Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes.",
         "definition": "Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-Address-model.country",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Country-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,

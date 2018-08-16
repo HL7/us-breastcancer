@@ -16,13 +16,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Address" />
-                <display value="BC Address Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-element-AnatomicalLocation" />
                 <display value="BC AnatomicalLocation Profile" />
             </sourceReference>
@@ -151,13 +144,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-ConditionPresenceStatement" />
                 <display value="BC ConditionPresenceStatement Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-ContactPoint" />
-                <display value="BC ContactPoint Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -317,6 +303,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="StructureDefinition/cimi-core-PersonOfRecord" />
+                <display value="BC PersonOfRecord Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-Person" />
                 <display value="BC Person Profile" />
             </sourceReference>
@@ -422,13 +415,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-AccessTime-extension" />
-                <display value="BC AccessTime Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-ActiveFlagAsaCodeableConcept-extension" />
                 <display value="BC ActiveFlagAsaCodeableConcept Extension" />
             </sourceReference>
@@ -459,13 +445,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-AdministrativeGender-extension" />
                 <display value="BC AdministrativeGender Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-extension" />
-                <display value="BC AnonymizedFlag Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -534,20 +513,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Country-extension" />
-                <display value="BC Country Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-CountryOfIssue-extension" />
-                <display value="BC CountryOfIssue Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-DateOfBirth-extension" />
                 <display value="BC DateOfBirth Extension" />
             </sourceReference>
@@ -576,20 +541,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-DriversLicenseNumber-extension" />
-                <display value="BC DriversLicenseNumber Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-EffectiveTimePeriod-extension" />
-                <display value="BC EffectiveTimePeriod Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-encounter-EncounterClass-extension" />
                 <display value="BC EncounterClass Extension" />
             </sourceReference>
@@ -606,27 +557,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-context-ExceptionValue-extension" />
                 <display value="BC ExceptionValue Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-extension" />
-                <display value="BC ExternalHealthRecord Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-FathersName-extension" />
-                <display value="BC FathersName Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-FictionalPersonFlag-extension" />
-                <display value="BC FictionalPersonFlag Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -744,8 +674,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-PassportNumber-extension" />
-                <display value="BC PassportNumber Extension" />
+                <reference value="StructureDefinition/cimi-entity-Patient-extension" />
+                <display value="BC Patient Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -800,13 +730,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-extension" />
-                <display value="BC SocialSecurityNumber Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-SpecialHandling-extension" />
                 <display value="BC SpecialHandling Extension" />
             </sourceReference>
@@ -830,20 +753,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-SpokenLanguageProficiency-extension" />
                 <display value="BC SpokenLanguageProficiency Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-State-extension" />
-                <display value="BC State Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-StateOfIssue-extension" />
-                <display value="BC StateOfIssue Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -893,13 +802,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/primitive-code-extension" />
                 <display value="BC code Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-string-extension" />
-                <display value="BC string Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -991,6 +893,13 @@
             <sourceReference>
                 <reference value="ValueSet/cimi-context-DeltaFlagVS" />
                 <display value="BC DeltaFlagVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-oncology-EstrogenReceptorInterpretationTestsVS" />
+                <display value="BC EstrogenReceptorInterpretationTestsVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1143,6 +1052,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/shr-oncology-ProgesteroneReceptorInterpretationTestsVS" />
+                <display value="BC ProgesteroneReceptorInterpretationTestsVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="ValueSet/shr-oncology-RecurrenceRiskScoreInterpretationVS" />
                 <display value="BC RecurrenceRiskScoreInterpretationVS ValueSet" />
             </sourceReference>
@@ -1180,13 +1096,6 @@
             <sourceReference>
                 <reference value="ValueSet/shr-core-YesNoUnknownVS" />
                 <display value="BC YesNoUnknownVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-core-YesNoVS" />
-                <display value="BC YesNoVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1262,13 +1171,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-core-YesNoCS" />
-                <display value="BC YesNoCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/shr-core-YesNoUnknownCS" />
                 <display value="BC YesNoUnknownCS CodeSystem" />
             </sourceReference>
@@ -1278,13 +1180,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-context-Abatement-model" />
                   <display value="AbatementModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-AccessTime-model" />
-                  <display value="AccessTimeModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1346,13 +1241,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-AgeAtDeath-model" />
-                  <display value="AgeAtDeathModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-core-Age-model" />
                   <display value="AgeModel" />
               </sourceReference>
@@ -1376,13 +1264,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-element-AnatomicalLocation-model" />
                   <display value="AnatomicalLocationModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-model" />
-                  <display value="AnonymizedFlagModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1444,13 +1325,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-AverageStainingIntensity-model" />
-                  <display value="AverageStainingIntensityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-BRCA1Variant-model" />
                   <display value="BRCA1VariantModel" />
               </sourceReference>
@@ -1467,13 +1341,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-BinaryData-model" />
                   <display value="BinaryDataModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-BirthSex-model" />
-                  <display value="BirthSexModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1794,22 +1661,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-CountryOfIssue-model" />
-                  <display value="CountryOfIssueModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-core-CreationTime-model" />
                   <display value="CreationTimeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-context-Criticality-model" />
-                  <display value="CriticalityModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1824,20 +1677,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-DateOfBirth-model" />
                   <display value="DateOfBirthModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-DateOfDeath-model" />
-                  <display value="DateOfDeathModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-Deceased-model" />
-                  <display value="DeceasedModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1920,13 +1759,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-DriversLicenseNumber-model" />
-                  <display value="DriversLicenseNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-core-EffectiveTimePeriod-model" />
                   <display value="EffectiveTimePeriodModel" />
               </sourceReference>
@@ -1976,22 +1808,22 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-EstrogenReceptorAverageStainingIntensity-model" />
+                  <display value="EstrogenReceptorAverageStainingIntensityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-EstrogenReceptorNuclearPositivity-model" />
+                  <display value="EstrogenReceptorNuclearPositivityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-EstrogenReceptorStatus-model" />
                   <display value="EstrogenReceptorStatusModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-EthnicityDetail-model" />
-                  <display value="EthnicityDetailModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-Ethnicity-model" />
-                  <display value="EthnicityModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2032,13 +1864,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-model" />
-                  <display value="ExternalHealthRecordModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model" />
                   <display value="ExtraCapsularExtensionOfNodalTumorStatusModel" />
               </sourceReference>
@@ -2048,20 +1873,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-element-FamilyName-model" />
                   <display value="FamilyNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-FathersName-model" />
-                  <display value="FathersNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-FictionalPersonFlag-model" />
-                  <display value="FictionalPersonFlagModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2410,13 +2221,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MedicalInterpreterNeeded-model" />
-                  <display value="MedicalInterpreterNeededModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-MedicationIngredient-model" />
                   <display value="MedicationIngredientModel" />
               </sourceReference>
@@ -2459,27 +2263,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MothersMaidenName-model" />
-                  <display value="MothersMaidenNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MultipleBirth-model" />
-                  <display value="MultipleBirthModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MultipleBirthOrder-model" />
-                  <display value="MultipleBirthOrderModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-element-NameAsText-model" />
                   <display value="NameAsTextModel" />
               </sourceReference>
@@ -2510,13 +2293,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-NuclearPleomorphismScore-model" />
                   <display value="NuclearPleomorphismScoreModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NuclearPositivity-model" />
-                  <display value="NuclearPositivityModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2676,13 +2452,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-PassportNumber-model" />
-                  <display value="PassportNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-Patient-model" />
                   <display value="PatientModel" />
               </sourceReference>
@@ -2706,13 +2475,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-core-PersonOfRecord-model" />
                   <display value="PersonOfRecordModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-PlaceOfBirth-model" />
-                  <display value="PlaceOfBirthModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2774,6 +2536,20 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorAverageStainingIntensity-model" />
+                  <display value="ProgesteroneReceptorAverageStainingIntensityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorNuclearPositivity-model" />
+                  <display value="ProgesteroneReceptorNuclearPositivityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorStatus-model" />
                   <display value="ProgesteroneReceptorStatusModel" />
               </sourceReference>
@@ -2804,20 +2580,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Quantity-model" />
                   <display value="QuantityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-RaceDetail-model" />
-                  <display value="RaceDetailModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-Race-model" />
-                  <display value="RaceModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2949,13 +2711,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-model" />
-                  <display value="SocialSecurityNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-SourceSpecimen-model" />
                   <display value="SourceSpecimenModel" />
               </sourceReference>
@@ -3042,13 +2797,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-State-model" />
                   <display value="StateModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-StateOfIssue-model" />
-                  <display value="StateOfIssueModel" />
               </sourceReference>
           </resource>
           <resource>

@@ -15,7 +15,7 @@
   "name": "QuantityModel",
   "title": "BC Quantity Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "shr-core-Quantity-model.value",
         "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
-        "alias": [
-          "decimal"
-        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -140,9 +137,6 @@
         "path": "shr-core-Quantity-model.value",
         "short": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
         "definition": "Decimal representing a quantity with units, whose value may be bounded from above or below, as defined in FHIR",
-        "alias": [
-          "decimal"
-        ],
         "min": 0,
         "max": "1",
         "base": {

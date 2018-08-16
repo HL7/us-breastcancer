@@ -15,7 +15,7 @@
   "name": "PresenceContextModel",
   "title": "BC PresenceContext Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -70,30 +70,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-context-PresenceContext-model.contextCode.value",
-        "path": "cimi-context-PresenceContext-model.contextCode.value",
-        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
-        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -142,7 +118,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -169,7 +145,19 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Onset-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -196,7 +184,22 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Abatement-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -217,7 +220,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Certainty-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -257,30 +260,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-context-PresenceContext-model.contextCode.value",
-        "path": "cimi-context-PresenceContext-model.contextCode.value",
-        "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
-        "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -329,7 +308,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-VerificationStatus-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -356,7 +335,19 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Onset-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -383,7 +374,22 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Abatement-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -404,7 +410,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Certainty-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

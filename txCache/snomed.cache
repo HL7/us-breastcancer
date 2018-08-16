@@ -1,0 +1,6968 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "410515003"
+}, "valueSet" :null}####
+v: {
+  "display" : "Known present (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "277208005",
+  "display" : "M category (observable entity)"
+}, "valueSet" :null}####
+v: {
+  "display" : "M category (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "126926005",
+  "display" : "Neoplasm of breast (disorder)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Neoplasm of breast",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "246463000",
+  "display" : "Behavior of tumor (attribute)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Behavior of tumor",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "78873005",
+  "display" : "T category"
+}, "valueSet" :null}####
+v: {
+  "display" : "Tumor stages",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "399375005",
+  "display" : "Tumor size (observable entity)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Tumor size finding (finding)",
+  "severity" : "warning",
+  "error" : "The display \"Tumor size (observable entity)\" is not a valid display for the code {http://snomed.info/sct}399375005"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "277206009",
+  "display" : "N category"
+}, "valueSet" :null}####
+v: {
+  "display" : "N category (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260869008",
+  "display" : "Timing of stage"
+}, "valueSet" :null}####
+v: {
+  "display" : "Timing of stage",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "364109001",
+  "display" : "Size of lymph node (observable entity)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Size of lymph node",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "399656008",
+  "display" : "Status of tumor metastasis to regional lymph nodes (observable entity)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Status of tumor metastasis to regional lymph nodes (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "118890000",
+  "display" : "Procedure on lymph node (procedure)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Procedure on lymph node",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "444025001",
+  "display" : "Number of lymph nodes examined (observable entity)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Number of lymph nodes examined (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "410514004"
+}, "valueSet" :null}####
+v: {
+  "display" : "Finding context value (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "408677003"
+}, "valueSet" :null}####
+v: {
+  "display" : "Forename (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "715196001"
+}, "valueSet" :null}####
+v: {
+  "display" : "Person name suffix (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "123037004"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:226ee041-4cae-4bc8-b26c-2aef6bafecfb",
+    "timestamp" : "2018-08-16T04:53:06.957Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "106004",
+      "display" : "Posterior carpal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "107008",
+      "display" : "Fetal part of placenta"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "108003",
+      "display" : "Condylar emissary vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "110001",
+      "display" : "Visceral layer of Bowman's capsule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "111002",
+      "display" : "Parathyroid gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "116007",
+      "display" : "Subcutaneous tissue of medial surface of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "124002",
+      "display" : "Coronoid process of mandible"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "145009",
+      "display" : "Colloid milium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "149003",
+      "display" : "Central pair of microtubules, cilium or flagellum, not bacterial"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "155008",
+      "display" : "Deep circumflex artery of ilium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "161006",
+      "display" : "Thermal injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "167005",
+      "display" : "Supraclavicular part of brachial plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "182000",
+      "display" : "Canalization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "202009",
+      "display" : "Anterior division of renal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "205006",
+      "display" : "Left commissure of aortic valve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "206007",
+      "display" : "Gluteus maximus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "221001",
+      "display" : "Articular surface, phalanges, of fourth metacarpal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "227002",
+      "display" : "Canal of Hering"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "232001",
+      "display" : "Congenital fold"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233006",
+      "display" : "Hepatocolic ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "235004",
+      "display" : "Superior labial artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "246001",
+      "display" : "Lateral vestibular nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "247005",
+      "display" : "Mesotympanum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "251007",
+      "display" : "Pectoral region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255003",
+      "display" : "Calcified nodule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "256002",
+      "display" : "Kupffer cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "259009",
+      "display" : "Fibrous body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "263002",
+      "display" : "Thoracic nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "266005",
+      "display" : "Right lower lobe of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "272005",
+      "display" : "Superior articular process of lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "273000",
+      "display" : "Lateral myocardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "283001",
+      "display" : "Central axillary lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "284007",
+      "display" : "Flexor tendon and tendon sheath of fourth toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289002",
+      "display" : "Metacarpophalangeal joint of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301000",
+      "display" : "Fifth metatarsal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "311007",
+      "display" : "Plantar surface of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "315003",
+      "display" : "Skin of umbilicus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "318001",
+      "display" : "Cardiac impression of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "328005",
+      "display" : "Follicular papule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "339008",
+      "display" : "Blister"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "344001",
+      "display" : "Ankle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "345000",
+      "display" : "Penetrating atrioventricular bundle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "354002",
+      "display" : "Triton tumor, malignant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "356000",
+      "display" : "Reticular corium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "367004",
+      "display" : "Clubbing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "393006",
+      "display" : "Wall of urinary bladder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "394000",
+      "display" : "Abnormal trabeculation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402006",
+      "display" : "Dental branches of inferior alveolar artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "405008",
+      "display" : "Posterior temporal diploic vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "414003",
+      "display" : "Gastric fundus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "419008",
+      "display" : "Functional dilatation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "420002",
+      "display" : "Anastomosis, heterocladic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "422005",
+      "display" : "Inferior surface of tongue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "446003",
+      "display" : "Trochanteric bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "457008",
+      "display" : "Collateral ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "461002",
+      "display" : "Lateral corticospinal tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "464005",
+      "display" : "Basophilic normoblast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "465006",
+      "display" : "Ascending frontal gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "471000",
+      "display" : "Flexor hallucis longus in leg"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "480000",
+      "display" : "Cardiopulmonary circulatory system"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "485005",
+      "display" : "TC - Transverse colon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "487002",
+      "display" : "Coil/whorled fibers"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "511008",
+      "display" : "Fibrous meningioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "528006",
+      "display" : "Costal surface of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "552004",
+      "display" : "Vagus nerve parasympathetic fibers to cardiac plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "565008",
+      "display" : "Intervertebral disc space of fifth lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "575006",
+      "display" : "Cholesteatoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "582005",
+      "display" : "Head of phalanx of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "587004",
+      "display" : "Capsule of proximal interphalangeal joint of third toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "589001",
+      "display" : "Interventricular septum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "595000",
+      "display" : "Palpebral fissure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "605004",
+      "display" : "Severe inflammatory atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "608002",
+      "display" : "Subcutaneous tissue of philtrum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "621009",
+      "display" : "Multivesicular body, internal vesicles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "635006",
+      "display" : "Tuberosity of distal phalanx of little toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "650002",
+      "display" : "Superior articular process of seventh thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "660006",
+      "display" : "Tracheal mucous membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "661005",
+      "display" : "Jaw region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "667009",
+      "display" : "Embryological structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "688000",
+      "display" : "Fetal hyaloid artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "691000",
+      "display" : "Small intestine submucosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "692007",
+      "display" : "Body of ischium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "723004",
+      "display" : "Dense intermediate filament bundles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "738003",
+      "display" : "Ball valve obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "774007",
+      "display" : "Head and neck"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "790007",
+      "display" : "Visceral surface of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "798000",
+      "display" : "Deep temporal veins"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "803009",
+      "display" : "Paraganglioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "808000",
+      "display" : "Posterior intercostal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "809008",
+      "display" : "Fetal chondrocranium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "810003",
+      "display" : "Spindle cell nevus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "823005",
+      "display" : "Posterior cervical spinal cord nerve root"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "830004",
+      "display" : "Spinous process of fifth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "835009",
+      "display" : "Peripheral T-cell lymphoma, AILD (Angioimmunoblastic Lymphadenopathy with Dysproteinemia)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "836005",
+      "display" : "Oral region of face"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "856006",
+      "display" : "Actinic keratosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "885000",
+      "display" : "Lamina muscularis of colonic mucous membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "895007",
+      "display" : "Anterior cruciate ligament of knee joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "900006",
+      "display" : "Mucin-producing adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "915007",
+      "display" : "Malignant melanoma in junctional nevus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "917004",
+      "display" : "Superior laryngeal aperture"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "921006",
+      "display" : "Thyrohyoid branch of ansa cervicalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "947002",
+      "display" : "Crus of diaphragm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "955009",
+      "display" : "Bronchus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "976004",
+      "display" : "Ovarian vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "985004",
+      "display" : "Psammomatous schwannoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "988002",
+      "display" : "Wet gangrene"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "996007",
+      "display" : "Meningeal branch of occipital artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "999000",
+      "display" : "Mixed ductal-endocrine carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1005009",
+      "display" : "Entire diaphragmatic lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1012000",
+      "display" : "Structure of fibrous portion of pericardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1015003",
+      "display" : "Structure of peritonsillar tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1028005",
+      "display" : "Sebaceous gland structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1030007",
+      "display" : "Structure of vesicular bursa of sternohyoid muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1040005",
+      "display" : "Anterior open dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1063000",
+      "display" : "Frontozygomatic suture of skull"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1075005",
+      "display" : "Promonocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1076006",
+      "display" : "Subcutaneous prepatellar bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1086007",
+      "display" : "Female"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1087003",
+      "display" : "Sternothyroid muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1092001",
+      "display" : "Superior occipital gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1099005",
+      "display" : "Thymic cortex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1101003",
+      "display" : "Cranial cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1106008",
+      "display" : "Major calyx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1110006",
+      "display" : "Tarsal gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1122009",
+      "display" : "Inferior longitudinal muscle of tongue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1129000",
+      "display" : "Acidophilic body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1136004",
+      "display" : "Aortopulmonary septum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1138003",
+      "display" : "Moderate squamous cell atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1159005",
+      "display" : "Frenulum linguae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1172006",
+      "display" : "Odontoid process of axis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1173001",
+      "display" : "Mandibular nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1174007",
+      "display" : "Chromosomes, group E"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1188006",
+      "display" : "Superior open dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1193009",
+      "display" : "Teres major muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1216008",
+      "display" : "Synostosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1231004",
+      "display" : "Central nervous system meninges"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1236009",
+      "display" : "Duodenal serosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1243003",
+      "display" : "Inferior articular process of sixth cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1246006",
+      "display" : "Dorsal digital nerves of radial nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1263005",
+      "display" : "Distinctive arrangement of microtubules"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1277008",
+      "display" : "Vertebral nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1307006",
+      "display" : "Glottis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1311000",
+      "display" : "Telogen hair"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1338007",
+      "display" : "BCC - Basal cell carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1350001",
+      "display" : "Deep flexor tendon of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1353004",
+      "display" : "Gastric serosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1403006",
+      "display" : "Vastus lateralis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1425000",
+      "display" : "Posterior limb of stapes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1439000",
+      "display" : "Paravesicular lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1441004",
+      "display" : "Laryngeal saccule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1443001",
+      "display" : "Chromophobe carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1454006",
+      "display" : "Chronic fibrinous inflammation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1456008",
+      "display" : "Yellow fibrocartilage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1467009",
+      "display" : "Parietal branch of superficial temporal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1484003",
+      "display" : "Structure of metatarsal region of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1490004",
+      "display" : "Soft tissues of trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1502004",
+      "display" : "Anterior cecal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1511004",
+      "display" : "Ejaculatory duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1513001",
+      "display" : "Melanotic neuroectodermal tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1516009",
+      "display" : "Frontomental diameter of head"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1522000",
+      "display" : "Plaque"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1527006",
+      "display" : "Lamina of fourth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1537001",
+      "display" : "Intervertebral disc of eleventh thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1541002",
+      "display" : "Coccygeal plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1561008",
+      "display" : "Swollen sarcoplasmic reticulum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1562001",
+      "display" : "Nucleus pulposus of intervertebral disc of third lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1569005",
+      "display" : "Nail of third toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1580005",
+      "display" : "Nucleus ventralis lateralis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1581009",
+      "display" : "Ileal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1584001",
+      "display" : "Symphysis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1586004",
+      "display" : "Subependymal giant cell astrocytoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1600003",
+      "display" : "Splenius capitis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1605008",
+      "display" : "Histioblast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1610007",
+      "display" : "Otoconia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1611006",
+      "display" : "Paramammary lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1617005",
+      "display" : "Intrinsic larynx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1620002",
+      "display" : "Metaphase nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1623000",
+      "display" : "Myxopapillary ependymoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1626008",
+      "display" : "Third thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1627004",
+      "display" : "Medial collateral ligament of knee joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1630006",
+      "display" : "Supraorbital vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1631005",
+      "display" : "Foregut"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1650005",
+      "display" : "Hilum of left lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1655000",
+      "display" : "Transverse peduncular tract nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1659006",
+      "display" : "Nucleus medialis dorsalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1684009",
+      "display" : "Ligamentum teres of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1706004",
+      "display" : "Thymic lobule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1707008",
+      "display" : "Ventral nuclear group of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1711002",
+      "display" : "Periorbital region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1716007",
+      "display" : "Cupula ampullaris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1721005",
+      "display" : "Right tonsil"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1729007",
+      "display" : "Central tegmental tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1732005",
+      "display" : "TD - Thoracic duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1736008",
+      "display" : "Anteversion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1752006",
+      "display" : "Clear cell adenoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1765002",
+      "display" : "Structure of lymphatic vessel of thorax"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1780008",
+      "display" : "Premelanosome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1781007",
+      "display" : "Sacroiliac region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1791001",
+      "display" : "Radiation injury with fibrosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1797002",
+      "display" : "Naris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1806006",
+      "display" : "Eruption"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1818002",
+      "display" : "Greater circulus arteriosus of iris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1825009",
+      "display" : "Root of nose"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1832000",
+      "display" : "Scleral conjunctiva"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1840006",
+      "display" : "Arrector pili muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1849007",
+      "display" : "Pharyngeal recess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1853009",
+      "display" : "Structure of suprahyoid muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1874005",
+      "display" : "Promontory lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1893007",
+      "display" : "Joint of upper extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1895000",
+      "display" : "Musculophrenic vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1902009",
+      "display" : "Skin of external ear"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1910005",
+      "display" : "Ear"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1918003",
+      "display" : "Suprarenal aorta"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1927002",
+      "display" : "Left elbow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1929004",
+      "display" : "B-cell lymphoma, no ICD-O subtype"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1992003",
+      "display" : "Porus acusticus internus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1996000",
+      "display" : "Numeric atrophy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1997009",
+      "display" : "Cingulum dentis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2010005",
+      "display" : "Clavicular facet of scapula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2014001",
+      "display" : "Microlymphoblast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2019006",
+      "display" : "Sarcoplasmic bodies"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2020000",
+      "display" : "Superior thoracic artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2026006",
+      "display" : "Serous adenofibroma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2031008",
+      "display" : "Structure of anterior median fissure of spinal cord"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2033006",
+      "display" : "Right fallopian tube"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2044003",
+      "display" : "Vaginal nerves"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2048000",
+      "display" : "Lingual tonsil"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2049008",
+      "display" : "Chorionic villi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2052000",
+      "display" : "Acute necrosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2059009",
+      "display" : "Skin of ear lobule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2071003",
+      "display" : "Reticular formation of spinal cord"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2076008",
+      "display" : "Head of phalanx of hand"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2083001",
+      "display" : "Nucleus ambiguus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2092003",
+      "display" : "MM - Malignant melanoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2095001",
+      "display" : "Accessory sinus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2097009",
+      "display" : "Dyskeratosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2099007",
+      "display" : "Hemangioma - morphology"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2122006",
+      "display" : "Pressure atrophy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2123001",
+      "display" : "Mammilloinfundibular nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2142002",
+      "display" : "NM - Nodular melanoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2150006",
+      "display" : "Urinary tract transitional epithelial cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2156000",
+      "display" : "Glial cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2160002",
+      "display" : "Ligamentum arteriosum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2175005",
+      "display" : "Pharyngeal cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2182009",
+      "display" : "Endometrial zona basalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2192001",
+      "display" : "Clavicular part of pectoralis major muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2205003",
+      "display" : "Lamina of fifth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2209009",
+      "display" : "Cerebral basal surface"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2218006",
+      "display" : "Endothelial degeneration"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2221008",
+      "display" : "Malignant mesonephroma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2227007",
+      "display" : "Adrenal cortical carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2232008",
+      "display" : "Normal karyotype"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2236006",
+      "display" : "Lesser osseous pelvis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2246008",
+      "display" : "Type I hair cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2255006",
+      "display" : "Subserosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2285001",
+      "display" : "Structure of torcular Herophili"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2289007",
+      "display" : "Dicentric chromosome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2292006",
+      "display" : "Structure of nasopharyngeal gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2302002",
+      "display" : "Vein of the knee"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2305000",
+      "display" : "Structure of spinous process of cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2306004",
+      "display" : "Structure of base of third metacarpal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2327009",
+      "display" : "Salivary seromucous gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2330002",
+      "display" : "Structure of segmental bronchial branches"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2332005",
+      "display" : "Metencephalon of foetus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2334006",
+      "display" : "Renal calyx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2348006",
+      "display" : "Adenomatoid tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2349003",
+      "display" : "Structure of nasal suture of skull"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2372001",
+      "display" : "Structure of medial surface of toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2383005",
+      "display" : "Structure of papillary muscles of right ventricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2389009",
+      "display" : "Structure of superior margin of adrenal gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2395005",
+      "display" : "Structure of transverse facial artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2397002",
+      "display" : "Structure of first metatarsal facet of medial cuneiform bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2400006",
+      "display" : "Universal designation 21"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2402003",
+      "display" : "Structure of dorsum of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2412005",
+      "display" : "Maculopapule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2421006",
+      "display" : "Structure of submaxillary ganglion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2424003",
+      "display" : "Malignant mesenchymal tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2433001",
+      "display" : "Structure of digital tendon and tendon sheath of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2436009",
+      "display" : "Tunica intima of vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2453002",
+      "display" : "Subcutaneous tissue structure of posterior surface of forearm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2454008",
+      "display" : "Structure of articular surface, third metacarpal, of second metacarpal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2464004",
+      "display" : "Moderate cytologic atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2483006",
+      "display" : "Cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2484000",
+      "display" : "Skin structure of frenulum of clitoris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2489005",
+      "display" : "Structure of medial check ligament of eye"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2499000",
+      "display" : "Entire cisterna pontis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2502001",
+      "display" : "Membrane of lysosome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2504000",
+      "display" : "Structure of pancreatic plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2510000",
+      "display" : "Femoral triangle structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2539000",
+      "display" : "Structure of superior rectal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2543001",
+      "display" : "Structure of cuboid articular facet of fourth metatarsal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2550002",
+      "display" : "Bone structure of phalanx of thumb"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2559001",
+      "display" : "Claw-shaped deformity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2570008",
+      "display" : "Traction diverticulum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2577006",
+      "display" : "Structure of gracilis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2579009",
+      "display" : "Plasmablast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2592007",
+      "display" : "All extremities"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2600000",
+      "display" : "Structure of flexor pollicis longus muscle tendon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2620004",
+      "display" : "Intervertebral disc structure of third thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2639009",
+      "display" : "Neuroendocrine tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2653009",
+      "display" : "Structure of posterior thalamic radiation of internal capsule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2666009",
+      "display" : "Structure of semispinalis capitis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2672009",
+      "display" : "Structure of anterior cutaneous branch of lumbosacral plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2675006",
+      "display" : "Structure of anterior ethmoidal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2681003",
+      "display" : "Structure of dorsal nerve of penis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2682005",
+      "display" : "Bladder mucosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2686008",
+      "display" : "Structure of medial olfactory gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2687004",
+      "display" : "Structure of Bowman space"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2695000",
+      "display" : "Left maxillary sinus structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2703009",
+      "display" : "Entire calcarine artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2710003",
+      "display" : "Fibrolipoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2712006",
+      "display" : "Structure of capsule of ankle joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2718005",
+      "display" : "Structure of apical foramen of tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2726002",
+      "display" : "Structure of fold for stapes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2730004",
+      "display" : "Entire vitelline vein of placenta"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2734008",
+      "display" : "Major injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2735009",
+      "display" : "Papillary cystadenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2739003",
+      "display" : "Endometrial structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2741002",
+      "display" : "Structure of medial occipitotemporal gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2746007",
+      "display" : "Circular layer of gastric muscularis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2748008",
+      "display" : "Spinal cord structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2759004",
+      "display" : "Eccrine gland structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2763006",
+      "display" : "Comedo"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2771005",
+      "display" : "Lamina propria of ureter"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2784001",
+      "display" : "Traction injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2789006",
+      "display" : "Apocrine gland structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2792005",
+      "display" : "Structure of pars tensa of tympanic membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2803000",
+      "display" : "Structure of tendon sheath of popliteus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2810006",
+      "display" : "Structure of cremasteric fascia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2812003",
+      "display" : "Structure of head of femur"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2824005",
+      "display" : "Structure of spinous process of fourth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2826007",
+      "display" : "Structure of lamina of fourth lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2830005",
+      "display" : "Structure of dorsal digital nerves of lateral hallux and medial second toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2839006",
+      "display" : "Structure of perivesicular tissues of seminal vesicles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2841007",
+      "display" : "Renal artery structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2845003",
+      "display" : "Structure of respiratory epithelium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2848001",
+      "display" : "Structure of superficial epigastric artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2855004",
+      "display" : "Structure of accessory cephalic vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2861001",
+      "display" : "Entire gland (organ)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2881000",
+      "display" : "Anisokaryosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2894003",
+      "display" : "Structure of posterior epiglottis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2905008",
+      "display" : "Structure of anterior ligament of uterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2909002",
+      "display" : "Structure of posterior portion of diaphragmatic aspect of liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2920002",
+      "display" : "Structure of facial nerve motor branch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2922005",
+      "display" : "Structure of posterior papillary muscle of left ventricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2923000",
+      "display" : "Subcutaneous tissue structure of supraorbital area"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2952002",
+      "display" : "Proliferative inflammation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2953007",
+      "display" : "Microglandular hyperplasia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2954001",
+      "display" : "Supernumerary deciduous tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2962009",
+      "display" : "Adenofibroma, no ICD-O subtype"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2969000",
+      "display" : "Anatomical space structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2979003",
+      "display" : "Bone structure of medial cuneiform"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2985005",
+      "display" : "Mammary Paget's disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2986006",
+      "display" : "Structure of talar facet of navicular bone of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2998001",
+      "display" : "Entire right margin of uterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3003007",
+      "display" : "Internal capsule anterior limb structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3008003",
+      "display" : "White fibrocartilage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3028004",
+      "display" : "Transitional epithelial cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3039001",
+      "display" : "Subcutaneous tissue structure of thigh"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3042007",
+      "display" : "Structure of glomerular urinary pole"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3054007",
+      "display" : "Structure of articular surface, metacarpal, of phalanx of thumb"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3055008",
+      "display" : "Structure of bone marrow of vertebral body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3056009",
+      "display" : "Structure of anteroventral nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3057000",
+      "display" : "Nerve structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3058005",
+      "display" : "PNS - Peripheral nervous system"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3062004",
+      "display" : "Spinal arachnoid"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3068000",
+      "display" : "Structure of seminal vesicle lumen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3081007",
+      "display" : "Mitochondrion in division"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3093003",
+      "display" : "Structure of tendinous arch of pelvic fascia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3100007",
+      "display" : "Clinical crown of tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3102004",
+      "display" : "Anaplastic oligodendroglioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3113001",
+      "display" : "Structure of suprachoroidal space"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3117000",
+      "display" : "Structure of dorsal surface of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3118005",
+      "display" : "Structure of trabecula carnea of left ventricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3120008",
+      "display" : "Pleural membrane structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3134008",
+      "display" : "Structure of head of fourth metatarsal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3138006",
+      "display" : "Bone tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3139003",
+      "display" : "Ballooning degeneration"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3153003",
+      "display" : "Structure of tractus olivocochlearis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3156006",
+      "display" : "Structure of obturator artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3159004",
+      "display" : "Structure of costocervical trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3169005",
+      "display" : "Spinal nerve structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3172003",
+      "display" : "Lymphoepithelioid lymphoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3178004",
+      "display" : "Structure of raphe of soft palate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3194006",
+      "display" : "Endocardium of right atrium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3198009",
+      "display" : "Monostomatic sublingual gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3215002",
+      "display" : "Subcutaneous tissue structure of nuchal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3222005",
+      "display" : "All large arteries"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3227004",
+      "display" : "Left coronary artery main stem"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3236000",
+      "display" : "Structure of posterior segment of right upper lobe of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3243006",
+      "display" : "Structure of parametrial lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3255000",
+      "display" : "Papillary area"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3262009",
+      "display" : "Structure of root canal of tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3279003",
+      "display" : "Structure of pedicle of third cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3295003",
+      "display" : "Structure of ventral anterior nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3301002",
+      "display" : "Tectopontine fibers"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3302009",
+      "display" : "Splenic branch of splenic artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3313007",
+      "display" : "Chronic superficial ulcer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3315000",
+      "display" : "Structure of vestibulospinal tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3332001",
+      "display" : "Occipitofrontal diameter of head"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3336003",
+      "display" : "Haversian canal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3341006",
+      "display" : "Right lung structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3350008",
+      "display" : "Entire right commissure of pulmonic valve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3362007",
+      "display" : "Intertragal incisure structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3366005",
+      "display" : "Structure of anterior papillary muscle of left ventricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3370002",
+      "display" : "Structure of supporting tissue of rectum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3374006",
+      "display" : "Secondary spermatocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3377004",
+      "display" : "Structure of agger nasi"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3380003",
+      "display" : "Superficial injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3382006",
+      "display" : "Structure of rima oris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3383001",
+      "display" : "Nonsegmented basophil"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3394002",
+      "display" : "Suboccipitobregmatic diameter of head"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3395001",
+      "display" : "Structure of superior palpebral arch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3396000",
+      "display" : "Structure of mesogastrium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3400000",
+      "display" : "Cell of bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3404009",
+      "display" : "Bite"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3409004",
+      "display" : "Structure of lateral margin of forearm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3416003",
+      "display" : "Lengthening of short arm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3417007",
+      "display" : "Structure of rotator muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3438001",
+      "display" : "Deep lymphatic of upper extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3444002",
+      "display" : "Thalamostriate vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3447009",
+      "display" : "Penetrated oocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3460003",
+      "display" : "Structure of anterodorsal nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3462006",
+      "display" : "Structure of commissure of tricuspid valve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3467000",
+      "display" : "Cell to cell relationship, characterized by cell contact, separation minimal or absent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3471002",
+      "display" : "Posterior midline of trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3478008",
+      "display" : "Structure of vastus medialis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3481003",
+      "display" : "Structure of embryonic testis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3488009",
+      "display" : "Annulate lamella, cisternal lumen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3490005",
+      "display" : "Subcutaneous tissue structure of suboccipital region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3524005",
+      "display" : "Structure of lateral wall of mastoid antrum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3538003",
+      "display" : "Structure of capsule of proximal tibiofibular joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3541007",
+      "display" : "Structure of dorsal metatarsal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3553006",
+      "display" : "Structure of thyroid capsule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3556003",
+      "display" : "Structure of dorsal nucleus of trapezoid body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3563003",
+      "display" : "Muscularis of ureter"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3572006",
+      "display" : "Vertebral body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3578005",
+      "display" : "Structure of body of gallbladder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3582007",
+      "display" : "Structure of gastrophrenic ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3584008",
+      "display" : "T10 dorsal arch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3594003",
+      "display" : "Structure of straight part of longus colli muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3608004",
+      "display" : "Ischiococcygeus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3609007",
+      "display" : "Structure of occipital branch of posterior auricular artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3612005",
+      "display" : "External spontaneous fistula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3645005",
+      "display" : "Pregnancy luteoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3646006",
+      "display" : "Lamellipodium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3663005",
+      "display" : "Structure of tympanic ostium of Eustachian tube"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3665003",
+      "display" : "Pelvic wall structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3670005",
+      "display" : "Entire subpyloric lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3679006",
+      "display" : "Polycystic change"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3711007",
+      "display" : "Great vessel"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3743007",
+      "display" : "Structure of lateral thoracic artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3761003",
+      "display" : "Structure of nucleus pulposus of intervertebral disc of first thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3766008",
+      "display" : "Subcutaneous tissue structure of lower extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3785006",
+      "display" : "Entire dorsal metacarpal ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3788008",
+      "display" : "Structure of apical segment of right lower lobe of lung"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3789000",
+      "display" : "Enteroendocrine cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3810000",
+      "display" : "Septal cartilage structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3821009",
+      "display" : "Blunt injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3833004",
+      "display" : "Odontogenic tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3838008",
+      "display" : "Structure of apex of coccyx"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3839000",
+      "display" : "Lipid-rich carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3860006",
+      "display" : "Structure of transplanted liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3865001",
+      "display" : "Structure of interscapular region of back"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3867009",
+      "display" : "Structure of dorsal surface of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3875003",
+      "display" : "Urate tophus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3876002",
+      "display" : "Subcutaneous tissue structure of femoral region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3877006",
+      "display" : "Structure of common carotid plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3898006",
+      "display" : "Benign tumor morphology"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3910004",
+      "display" : "Subcutaneous tissue structure of lateral surface of fourth toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3916005",
+      "display" : "Structure of occipital lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3924000",
+      "display" : "Structure of pericardiophrenic artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3931001",
+      "display" : "OW - Oval window"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3935005",
+      "display" : "Head of tenth rib structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3937002",
+      "display" : "Structure of entorhinal cortex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3954005",
+      "display" : "Lacrimal sac structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3956007",
+      "display" : "Structure of fifth metatarsal articular facet of fourth metatarsal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3959000",
+      "display" : "Structure of rectus capitis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3960005",
+      "display" : "Olfactory tract structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3964001",
+      "display" : "Structure of gyrus of brain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3966004",
+      "display" : "Entire parietal branch of anterior cerebral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3977005",
+      "display" : "Subcutaneous tissue structure of concha"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3984002",
+      "display" : "Deep vein of clitoris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3989007",
+      "display" : "Structure of medial globus pallidus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4000000",
+      "display" : "Severe transitional cell atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4015004",
+      "display" : "Chromosomes, group A"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4019005",
+      "display" : "Posterior commissure of labium majorum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4023002",
+      "display" : "Recurrent closed dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4029003",
+      "display" : "Eosinophilic progranulocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4061004",
+      "display" : "Lateral orbital wall"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4066009",
+      "display" : "Structure of capsule of proximal interphalangeal joint of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4072009",
+      "display" : "Structure of fourth coccygeal vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4079000",
+      "display" : "Mucoepidermoid carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4081003",
+      "display" : "Entire dorsal lingual vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4093007",
+      "display" : "Structure of vagus nerve bronchial branch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4111006",
+      "display" : "Macula of the saccule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4117005",
+      "display" : "Lumbosacral spinal cord central canal structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4118000",
+      "display" : "Multilobular chondroma and osteoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4121003",
+      "display" : "Structure of superior frontal sulcus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4125007",
+      "display" : "Bursal cyst"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4146003",
+      "display" : "Structure of artery of extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4147007",
+      "display" : "Mass"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4148002",
+      "display" : "Structure of palmar surface of little finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4150005",
+      "display" : "Celiac nervous plexus structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4158003",
+      "display" : "Abdominal aortic plexus structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4159006",
+      "display" : "Hyparterial bronchus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4180000",
+      "display" : "Both lower extremities"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4193005",
+      "display" : "Entire extensor tendon and tendon sheath of fifth toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4196002",
+      "display" : "Eversion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4205002",
+      "display" : "Türk cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4212006",
+      "display" : "Epithelial cells"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4215008",
+      "display" : "Head of second rib structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4230004",
+      "display" : "Pacinian neurofibroma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4247003",
+      "display" : "Bone structure of first metacarpal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4258007",
+      "display" : "Posterior tibial vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4268002",
+      "display" : "Lateral spinorubral tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4276000",
+      "display" : "Structure of inferior articular process of seventh cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4281009",
+      "display" : "Structure of middle portion of ileum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4295007",
+      "display" : "Structure of paracortical area of lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4303006",
+      "display" : "Cartilage canal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4305004",
+      "display" : "Metastatic signet ring cell carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4312008",
+      "display" : "Anterior midline of abdomen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4317002",
+      "display" : "Structure of spinalis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4328003",
+      "display" : "Protoplasmic astrocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4335006",
+      "display" : "Upper jaw region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4352005",
+      "display" : "Structure of subchorionic space"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4358009",
+      "display" : "Structure of lateral surface of little finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4360006",
+      "display" : "Stratum spinosum structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4369007",
+      "display" : "Small intestine mucous membrane structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4371007",
+      "display" : "Structure of fourth metatarsal facet of lateral cuneiform bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4375003",
+      "display" : "Structure of incisure of cartilaginous portion of auditory canal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4377006",
+      "display" : "Structure of parafascicular nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4392007",
+      "display" : "Malignant mixed tumor, osteosarcomatous type"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4394008",
+      "display" : "Scala vestibuli structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4402002",
+      "display" : "Structure of anterior articular surface for talus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4419000",
+      "display" : "Tracheal submucosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4421005",
+      "display" : "Cellular structures"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4430002",
+      "display" : "Structure of clivus ossis sphenoidalis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4432005",
+      "display" : "Structure of ductus arteriosus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4442007",
+      "display" : "Dental arch structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4476003",
+      "display" : "Atypical glandular cells of undetermined significance"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4484004",
+      "display" : "Chromocenter alteration"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4486002",
+      "display" : "Structure of accessory sinus gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4513002",
+      "display" : "Obstruction by torsion and angulation, combined mechanism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4524000",
+      "display" : "Structure of subclavian plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4527007",
+      "display" : "Joint structure of lower extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4532008",
+      "display" : "Acute inflammation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4537002",
+      "display" : "Structure of internal medullary lamina of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4538007",
+      "display" : "Papulovesicular eruption"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4541003",
+      "display" : "Congenital failure of fusion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4548009",
+      "display" : "Lamellated granule, as in surfactant-secreting cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4549001",
+      "display" : "Entire vagus nerve parasympathetic fibers to liver, gallbladder, bile ducts and pancreas"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4553004",
+      "display" : "Mixed subependymoma-ependymoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4566004",
+      "display" : "Structure of tentorium cerebelli"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4573009",
+      "display" : "Desmosome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4578000",
+      "display" : "Skin structure of posterior surface of thigh"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4583008",
+      "display" : "Structure of splenius muscle of trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4584002",
+      "display" : "Scirrhous adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4588004",
+      "display" : "Structure of middle trunk of brachial plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4590003",
+      "display" : "Metastatic adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4596009",
+      "display" : "Larynx structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4603002",
+      "display" : "Structure of base of phalanx of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4606005",
+      "display" : "Tubercle of eighth rib structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4618001",
+      "display" : "Congenital dextrorotation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4621004",
+      "display" : "Structure of lesser tuberosity of humerus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4624007",
+      "display" : "Structure of lymphatic cord"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4631006",
+      "display" : "Tubular adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4647008",
+      "display" : "Lipid droplet, homogeneous"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4651005",
+      "display" : "Structure of tunica albuginea of corpus spongiosum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4658004",
+      "display" : "Skin structure of nuchal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4677002",
+      "display" : "Basal lamina, inclusion in subepithelial location"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4684005",
+      "display" : "Mesonephric duct hyperplasia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4686007",
+      "display" : "Blister due to degeneration of basal cells"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4703008",
+      "display" : "Cardinal vein structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4717004",
+      "display" : "Neutrophilic myelocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4718009",
+      "display" : "Entire venous plexus of the foramen ovale basis cranii"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4720007",
+      "display" : "Dystrophy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4743003",
+      "display" : "Structure of ventral sacrococcygeal ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4755009",
+      "display" : "Structure of medial surface of great toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4759003",
+      "display" : "Structure of gemellus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4766002",
+      "display" : "Structure of supracardinal vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4768001",
+      "display" : "Structure of perineal nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4774001",
+      "display" : "Structure of phrenic nerve pericardial branch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4775000",
+      "display" : "Structure of ventral posterior inferior nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4797003",
+      "display" : "Papillary adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4799000",
+      "display" : "Deiter cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4810005",
+      "display" : "Structure of uterine venous plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4812002",
+      "display" : "Anterior tibial compartment structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4828007",
+      "display" : "Femoral canal structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4830009",
+      "display" : "Hyperpigmentation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4840007",
+      "display" : "Subcutaneous tissue structure of ring finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4843009",
+      "display" : "Ampulla of semicircular duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4857006",
+      "display" : "Sequestrum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4861000",
+      "display" : "Structure of tuberculum impar"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4866005",
+      "display" : "Constrictor muscle of pharynx structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4870002",
+      "display" : "Structure of dorsal tegmental nuclei of midbrain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4871003",
+      "display" : "Lamina of modiolus of cochlea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4876008",
+      "display" : "Acute obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4881004",
+      "display" : "Entire sublingual vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4888005",
+      "display" : "Entire interlobular vein of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4897009",
+      "display" : "Cell membrane, prokaryotic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4905007",
+      "display" : "Structure of uterovaginal plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4906008",
+      "display" : "Mastoid antrum structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4916000",
+      "display" : "Pleomorphism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4919007",
+      "display" : "Congenital protrusion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4924005",
+      "display" : "Cerebellar gracile lobule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4935000",
+      "display" : "Adenocarcinoma in situ in villous adenoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4942000",
+      "display" : "Lower limb lymph node structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4947006",
+      "display" : "Contraction bands"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4950009",
+      "display" : "Sezary syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4954000",
+      "display" : "Structure of radial notch of ulna"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4956003",
+      "display" : "Subcutaneous tissue structure of back"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4958002",
+      "display" : "Amygdaloid structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4977000",
+      "display" : "Eccrine spiradenoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5001007",
+      "display" : "Structure of superior temporal sulcus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5008001",
+      "display" : "Pitting edema"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5014008",
+      "display" : "Benign interstitial cell tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5023006",
+      "display" : "Structure of yellow bone marrow"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5026003",
+      "display" : "Structure of posterior surface of prostate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5046008",
+      "display" : "Structure of superficial dorsal veins of clitoris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5052009",
+      "display" : "Primary cutaneous neuroendocrine carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5068003",
+      "display" : "Structure of obturator internus muscle ischial bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5069006",
+      "display" : "Structure of rugal column"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5076001",
+      "display" : "Structure of infrasternal angle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5115006",
+      "display" : "Structure of posterior auricular vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5122003",
+      "display" : "Entire angle of first rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5128004",
+      "display" : "Lens zonules"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5140004",
+      "display" : "Permanent upper right 6 tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5178002",
+      "display" : "Benign synovioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5183005",
+      "display" : "Inferior closed dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5188001",
+      "display" : "Round calculus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5192008",
+      "display" : "Structure of intervertebral foramen of twelfth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5194009",
+      "display" : "Structure of epithelium of lens"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5195005",
+      "display" : "Structure of right external carotid artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5204005",
+      "display" : "Superior ileocecal recess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5213007",
+      "display" : "Frontal vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5225005",
+      "display" : "Structure of uterine ostium of fallopian tube"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5228007",
+      "display" : "Right cerebral hemisphere structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5229004",
+      "display" : "Structure of mucosa of gallbladder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5237007",
+      "display" : "Pautrier microabscess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5242004",
+      "display" : "Synechia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5244003",
+      "display" : "Intraductal papilloma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5257006",
+      "display" : "Follicular adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5261000",
+      "display" : "Structure of thoracic intervertebral disc"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5272005",
+      "display" : "Skin structure of lateral portion of neck"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5279001",
+      "display" : "Structure of foramen singulare"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5296000",
+      "display" : "Structure of anterior mediastinal lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5314004",
+      "display" : "Acute dilatation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5324007",
+      "display" : "Structure of superior pole of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5329002",
+      "display" : "Bone structure of C4"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5336001",
+      "display" : "Structure of inferior frontal gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5347008",
+      "display" : "Synaptic specialization, cytoplasmic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5356000",
+      "display" : "Bowenoid papulosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5362005",
+      "display" : "Structure of median arcuate ligament of diaphragm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5366008",
+      "display" : "Hippocampal structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5379004",
+      "display" : "Small intestine muscularis propria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5382009",
+      "display" : "Superior fascia of perineum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5394000",
+      "display" : "Uterine paracervical lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5398002",
+      "display" : "Normal fat pad"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5399005",
+      "display" : "Dissecting hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5403001",
+      "display" : "Articular process of third lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5409002",
+      "display" : "Traumatic eviscerated structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5421003",
+      "display" : "Sex chromosome Y"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5427004",
+      "display" : "Apocrine intraepidermal duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5458003",
+      "display" : "Deep artery of clitoris"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5459006",
+      "display" : "Cardiac incisure of stomach"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5468008",
+      "display" : "Fracture, multiple"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5480000",
+      "display" : "Canalized thrombus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5491007",
+      "display" : "Lacrimal part of orbicularis oculi muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5493005",
+      "display" : "Metacarpophalangeal joint of little finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5498001",
+      "display" : "Superior aberrant ductule of epididymis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5501001",
+      "display" : "Hyaloid artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5520004",
+      "display" : "Subcutaneous tissue of chin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5538001",
+      "display" : "Tegmental portion of pons"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5542003",
+      "display" : "Crista marginalis of tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5544002",
+      "display" : "Longitudinal layer of duodenal muscularis propria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5560003",
+      "display" : "Alveolar ridge mucous membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5564007",
+      "display" : "Singlet"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5574005",
+      "display" : "Seventh costal cartilage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5580002",
+      "display" : "Tendon of supraspinatus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5597008",
+      "display" : "Retina of right eye"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5600009",
+      "display" : "Schneiderian carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5611001",
+      "display" : "Anulus fibrosus of intervertebral disc of fifth cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5625000",
+      "display" : "Navicular facet of intermediate cuneiform bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5627008",
+      "display" : "Right visceral pleura"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5633004",
+      "display" : "Muscular portion of interventricular septum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5640003",
+      "display" : "Granular atrophy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5643001",
+      "display" : "Canal of stomach"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5644007",
+      "display" : "Fractured membrane P face"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5653000",
+      "display" : "Inner surface of seventh rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5658009",
+      "display" : "Adenocarcinoma in tubulovillous adenoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5665001",
+      "display" : "Retina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5668004",
+      "display" : "Lower digestive tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5677006",
+      "display" : "Lenticular fasciculus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5682004",
+      "display" : "Subcutaneous tissue of upper extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5688000",
+      "display" : "Squamous cell carcinoma in situ with questionable stromal invasion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5696005",
+      "display" : "Articular part of tubercle of ninth rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5697001",
+      "display" : "Skin of lateral surface of finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5709001",
+      "display" : "Multifidus muscles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5713008",
+      "display" : "Submandibular triangle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5717009",
+      "display" : "Temporal fossa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5718004",
+      "display" : "Tendon and tendon sheath of leg and ankle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5727003",
+      "display" : "Anterior cervical lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5734001",
+      "display" : "Pressure groove"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5742000",
+      "display" : "Skin of forearm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5751008",
+      "display" : "Subcutaneous tissue of anterior portion of neck"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5755004",
+      "display" : "Cystic hyperplasia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5769004",
+      "display" : "Endocervical epithelium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5770003",
+      "display" : "Decompression injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5780004",
+      "display" : "Paradidymis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5798000",
+      "display" : "Diaphragm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5802004",
+      "display" : "Medium sized neuron"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5804003",
+      "display" : "Congenital growth disproportion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5814007",
+      "display" : "Angle of seventh rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5815008",
+      "display" : "Superior rectus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5816009",
+      "display" : "Duodenal fold"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5825003",
+      "display" : "Substantia propria of sclera"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5828001",
+      "display" : "Posterior cord of brachial plexus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5843004",
+      "display" : "Basaloid carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5847003",
+      "display" : "Superior articular process of seventh cervical vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5849000",
+      "display" : "Glial cell reaction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5854009",
+      "display" : "Orbital plate of ethmoid bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5862001",
+      "display" : "Mucous membrane eruption"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5868002",
+      "display" : "Serosa of urinary bladder"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5872003",
+      "display" : "Subcutaneous tissue of lateral border of sole of foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5881009",
+      "display" : "Tuberosity of distal phalanx of hand"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5882002",
+      "display" : "Endothelial sieve plate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5889006",
+      "display" : "Articular surface, third metacarpal, of fourth metacarpal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5890002",
+      "display" : "Posterior cells of ethmoid sinus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5893000",
+      "display" : "Superior recess of tympanic membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5898009",
+      "display" : "Myotome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5901005",
+      "display" : "Multiple internal injuries"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5909007",
+      "display" : "Glandular-stromal asynchrony of endometrium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5923009",
+      "display" : "Articular process of twelfth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5926001",
+      "display" : "Bronchial lumen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5928000",
+      "display" : "Great cardiac vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5942008",
+      "display" : "Tensor tympani muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5943003",
+      "display" : "Vestibular vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5944009",
+      "display" : "Posterior palatine arch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5948007",
+      "display" : "Capsule of distal interphalangeal joint of third toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5951000",
+      "display" : "Left wrist"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5953002",
+      "display" : "Eighth rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5958006",
+      "display" : "Small cell carcinoma, intermediate cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5960008",
+      "display" : "Depressed structure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5974001",
+      "display" : "Pressure cone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5976004",
+      "display" : "Subcutaneous tissue of eyelid"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5978003",
+      "display" : "Fracture, open, longitudinal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5979006",
+      "display" : "Episcleral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5996007",
+      "display" : "Chromosomes, group D"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6001004",
+      "display" : "Quadratus lumborum muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6004007",
+      "display" : "Intervertebral disc of second thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6006009",
+      "display" : "Circular layer of duodenal muscularis propria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6009002",
+      "display" : "Mesentery of ascending colon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6013009",
+      "display" : "Reticuloendothelial system"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6014003",
+      "display" : "Penicilliary arteries"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6023000",
+      "display" : "Heterolysosome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6032003",
+      "display" : "Columnar epithelial cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6046003",
+      "display" : "Outer surface of third rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6050005",
+      "display" : "Lacrimal vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6059006",
+      "display" : "Metacarpophalangeal joint of middle finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6062009",
+      "display" : "Deciduous mandibular right canine tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6073002",
+      "display" : "Ligament of left superior vena cava"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6074008",
+      "display" : "Capsule of temporomandibular joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6076005",
+      "display" : "Gastrointestinal subserosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6078006",
+      "display" : "Mucus retention"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6081001",
+      "display" : "Deformity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6104005",
+      "display" : "Subclavian nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6105006",
+      "display" : "Body of fifth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6110005",
+      "display" : "Facial nerve parasympathetic fibers"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6120000",
+      "display" : "Oncocytic metaplasia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6151007",
+      "display" : "Amphophilic stain reaction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6194002",
+      "display" : "Nail of fourth toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6216007",
+      "display" : "Postcapillary venule"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6217003",
+      "display" : "Piriform recess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6219000",
+      "display" : "Neoplasm, malignant, uncertain whether primary or metastatic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6223008",
+      "display" : "Mild koilocytotic atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6229007",
+      "display" : "Os lacrimale"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6250003",
+      "display" : "Fibromyxosarcoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6253001",
+      "display" : "Sulcus terminalis cordis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6266001",
+      "display" : "Granulomatous inflammation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6268000",
+      "display" : "Accessory phrenic nerves"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6269008",
+      "display" : "Subcutaneous tissue of scalp"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6279005",
+      "display" : "Skin of dorsal surface of finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6317000",
+      "display" : "Posterior basal branch of left pulmonary artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6320008",
+      "display" : "Collagenolysis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6325003",
+      "display" : "Aryepiglottic muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6326002",
+      "display" : "Fetal atloid articulation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6335009",
+      "display" : "Lymphoid follicle of stomach"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6359004",
+      "display" : "Hair medulla"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6371005",
+      "display" : "Lymphatics of thyroid gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6375001",
+      "display" : "Cavernous portion of urethra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6379007",
+      "display" : "Multiple adenomatous polyps"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6381009",
+      "display" : "Alpha heavy chain disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6392005",
+      "display" : "Coccygeal nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6404004",
+      "display" : "Ligamentum nuchae"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6406002",
+      "display" : "Membranous inflammation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6413002",
+      "display" : "Presymphysial lymph node"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6417001",
+      "display" : "Medial malleolus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6423006",
+      "display" : "Supraspinatus muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6424000",
+      "display" : "Structure of radiating portion of cortical lobule of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6437002",
+      "display" : "Dentinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6445007",
+      "display" : "Mast cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6448009",
+      "display" : "Posterior vagal trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6450001",
+      "display" : "Cytotrophoblast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6472004",
+      "display" : "Medial aspect of ovary"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6492006",
+      "display" : "Klatskin's tumor"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6504002",
+      "display" : "Glans clitoridis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6511003",
+      "display" : "Distal portion of circumflex branch of left coronary artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6530003",
+      "display" : "Cardiac valve leaflet"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6533001",
+      "display" : "Colonic haustra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6538005",
+      "display" : "Thyrocervical trunk"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6541001",
+      "display" : "Anterior commissure of mitral valve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6544009",
+      "display" : "Gastrohepatic ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6550004",
+      "display" : "Angular incisure of stomach"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6551000",
+      "display" : "Pollicis artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6553002",
+      "display" : "Inferior nasal turbinate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6564004",
+      "display" : "Medial border of sole"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6566002",
+      "display" : "Cerebellar hemisphere"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6572002",
+      "display" : "Base of phalanx of middle finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6574001",
+      "display" : "Necrosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6579006",
+      "display" : "Sebum retention"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6582001",
+      "display" : "Intrinsic obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6598008",
+      "display" : "Lingual nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6606008",
+      "display" : "Structure of dorsal intercuneiform ligaments"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6608009",
+      "display" : "Sphenoparietal sinus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6609001",
+      "display" : "Spongiosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6620001",
+      "display" : "Cuticle of nail"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6623004",
+      "display" : "Sternal muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6633007",
+      "display" : "Right posterior cerebral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6641007",
+      "display" : "Metatypical carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6643005",
+      "display" : "Right anterior cerebral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6646002",
+      "display" : "Anterior fossa of cranial cavity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6649009",
+      "display" : "Uterine subserosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6651008",
+      "display" : "Central lobule of cerebellum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6660000",
+      "display" : "Atypical intraductal hyperplasia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6684008",
+      "display" : "Articular facet of head of fibula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6685009",
+      "display" : "Right ankle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6711001",
+      "display" : "Arch of second lumbar vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6720005",
+      "display" : "Femoral nerve lateral muscular branches"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6731002",
+      "display" : "Pleural recess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6739000",
+      "display" : "Chorda tympani"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6742006",
+      "display" : "Callosomarginal branch of anterior cerebral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6750002",
+      "display" : "Mitochondrial inclusion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6757004",
+      "display" : "Right knee"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6780007",
+      "display" : "Hemoglobin cast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6787005",
+      "display" : "Tendon and tendon sheath of hand"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6789008",
+      "display" : "Spermatozoa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6799003",
+      "display" : "Macula of utricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6805009",
+      "display" : "Interstitial tissue of spleen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6820003",
+      "display" : "Obturator nerve anterior branch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6828005",
+      "display" : "Ligament of lumbosacral joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6829002",
+      "display" : "Pars ciliaris of retina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6834003",
+      "display" : "Axial skeleton"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6841009",
+      "display" : "Corticomedullary junction of kidney"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6842002",
+      "display" : "Desmoplastic fibroma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6844001",
+      "display" : "Spore crystal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6850006",
+      "display" : "Secondary foot process"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6855001",
+      "display" : "Macronucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6864006",
+      "display" : "Leaf of epiglottis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6866008",
+      "display" : "Habenular commissure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6871001",
+      "display" : "Visceral pericardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6894000",
+      "display" : "Medial surface of arm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6902008",
+      "display" : "Popliteal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6905005",
+      "display" : "Subcutaneous tissue of medial surface of third toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6912001",
+      "display" : "Lower alveolar ridge mucosa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6914000",
+      "display" : "Perivascular space"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6920004",
+      "display" : "Defect"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6921000",
+      "display" : "Right upper extremity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6930008",
+      "display" : "Jugular arch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6944002",
+      "display" : "Anterior labial veins"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6969002",
+      "display" : "Lymphocytic tissue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6975006",
+      "display" : "Anterior myocardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6981003",
+      "display" : "Posterior hypothalamic nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6987004",
+      "display" : "Collateral sulcus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6989001",
+      "display" : "Thoracolumbar region of back"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6991009",
+      "display" : "Subcutaneous tissue of jaw"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7003006",
+      "display" : "Chronic hemorrhage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7010000",
+      "display" : "Carcinomatosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7035006",
+      "display" : "Bile duct mucous membrane"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7050002",
+      "display" : "Subcutaneous tissue of external genitalia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7055007",
+      "display" : "Lupus erythematosus cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7067009",
+      "display" : "Right colic artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7076002",
+      "display" : "Interstitial tissue of myocardium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7078001",
+      "display" : "Hemosiderin pigmentation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7083009",
+      "display" : "Middle phalanx of index finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7090004",
+      "display" : "Supraaortic branches"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7091000",
+      "display" : "Ventral posterolateral nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7094008",
+      "display" : "Dilated pore of Winer"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7099003",
+      "display" : "Attachment plaque of desmosome or hemidesmosome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7117004",
+      "display" : "Fetal implantation site"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7121006",
+      "display" : "Maxillary right second molar tooth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7148007",
+      "display" : "Anulus fibrosus of intervertebral disc of thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7149004",
+      "display" : "False rib"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7154008",
+      "display" : "Trigeminal ganglion sensory root"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7160008",
+      "display" : "Base of metacarpal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7167006",
+      "display" : "Paraduodenal recess"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7173007",
+      "display" : "Cauda equina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7188002",
+      "display" : "Gustatory pore"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7192009",
+      "display" : "Isthmus tympani posticus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7227003",
+      "display" : "Hypoglossal nerve intrinsic tongue muscle branch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7234001",
+      "display" : "Inferior choroid vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7242000",
+      "display" : "Appendiceal muscularis propria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7244004",
+      "display" : "Decidual cast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7275008",
+      "display" : "Lymphatics of appendix and large intestine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7295002",
+      "display" : "Muscle of perineum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7296001",
+      "display" : "Deep inguinal ring"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7300000",
+      "display" : "Lymphoepithelial carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7311008",
+      "display" : "Anterior surface of arm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7313006",
+      "display" : "Open dislocation, incomplete"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7344002",
+      "display" : "Lingual gyrus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7345001",
+      "display" : "Ciliary processes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7347009",
+      "display" : "Infratendinous olecranon bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7362006",
+      "display" : "Lymphatic of head"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7372009",
+      "display" : "Inflammatory atypia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7376007",
+      "display" : "Left margin of uterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7378008",
+      "display" : "Paraventricular nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7384006",
+      "display" : "Plantar calcaneocuboidal ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7404008",
+      "display" : "Anterior semicircular duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7429002",
+      "display" : "Glomangioma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7435002",
+      "display" : "Ovarian ligament"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7471001",
+      "display" : "Lateral surface of sublingual gland"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7477002",
+      "display" : "Lipid, crystalline"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7480001",
+      "display" : "Iliotibial tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7494000",
+      "display" : "Cerebellar lenticular nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7498002",
+      "display" : "Plantar tarsal ligaments"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7507003",
+      "display" : "Anterior ligament of head of fibula"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7524009",
+      "display" : "Vasa vasorum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7532001",
+      "display" : "Vagus nerve parasympathetic fibers"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7554004",
+      "display" : "Deep head of flexor pollicis brevis muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7566005",
+      "display" : "Mitotic cell in anaphase"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7569003",
+      "display" : "Finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7591005",
+      "display" : "Intervertebral disc space of eleventh thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7597009",
+      "display" : "Subcutaneous tissue of vertex"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7605000",
+      "display" : "Connexon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7610001",
+      "display" : "Tenth thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7629007",
+      "display" : "Thalamoolivary tract"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7643002",
+      "display" : "Calcified hematoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7651004",
+      "display" : "Intervenous tubercle of right atrium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7652006",
+      "display" : "Frenulum labii"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7657000",
+      "display" : "Femoral artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7658005",
+      "display" : "Subtendinous bursa of triceps brachii muscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7697002",
+      "display" : "Pontine portion of medial longitudinal fasciculus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7712004",
+      "display" : "Subdural space of spinal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7726008",
+      "display" : "Skin of medial surface of fifth toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7736000",
+      "display" : "Posterior choroidal artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7742001",
+      "display" : "Palatine duct"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7744000",
+      "display" : "Congestive hypertrophy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7748002",
+      "display" : "Skin appendage"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7755000",
+      "display" : "Mesovarian margin of ovary"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7756004",
+      "display" : "Lamina of third thoracic vertebra"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7764005",
+      "display" : "Striate artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7769000",
+      "display" : "Right foot"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7783003",
+      "display" : "Sympathetic trunk spinal nerve branch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7796002",
+      "display" : "Lipogenic pigmentation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7820009",
+      "display" : "Lateral posterior nucleus of thalamus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7828002",
+      "display" : "Xanthine calculus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7829005",
+      "display" : "Anterior surface of manubrium"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7832008",
+      "display" : "Abdominal aorta"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7835005",
+      "display" : "Posterior margin of nasal septum"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7840002",
+      "display" : "Subcutaneous tissue of submental area"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7841003",
+      "display" : "Macrocytic normochromic erythrocyte"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7844006",
+      "display" : "Sternoclavicular joint"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7851002",
+      "display" : "Intracranial subdural space"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7854005",
+      "display" : "Mandibular canal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7872004",
+      "display" : "Myocardium of ventricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7874003",
+      "display" : "Scapular region of back"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7880006",
+      "display" : "Rhopheocytotic vesicle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7884002",
+      "display" : "Corneal corpuscle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7885001",
+      "display" : "Rotator cuff including muscles and tendons"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7892006",
+      "display" : "Submucosa of anal canal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7894007",
+      "display" : "Karyotype morphology"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7896009",
+      "display" : "Occipital angle of parietal bone"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7905002",
+      "display" : "Linear oblique"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7906001",
+      "display" : "Open dislocation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7911004",
+      "display" : "Olivocerebellar fibers"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7925003",
+      "display" : "Proximal phalanx of third toe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7936005",
+      "display" : "Ligament of diaphragm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7939003",
+      "display" : "Localized edema"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7944005",
+      "display" : "Helper cell"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7954009",
+      "display" : "Lamina propria of ethmoid sinus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7967007",
+      "display" : "First left aortic arch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7986004",
+      "display" : "Abdominopelvic portion of sympathetic nervous system"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7991003",
+      "display" : "Skin of glans penis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7999001",
+      "display" : "Articulations of auditory ossicles"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8001006",
+      "display" : "Mucous membrane of tongue"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8005002",
+      "display" : "Incomplete transposition"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8012006",
+      "display" : "Anterior communicating artery"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8017000",
+      "display" : "Inflow tract of right ventricle"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8024004",
+      "display" : "Limitans nucleus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8039003",
+      "display" : "Subcutaneous acromial bursa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8040001",
+      "display" : "Superficial flexor tendon of little finger"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8045006",
+      "display" : "Membrane-coating granule, amorphous"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8057002",
+      "display" : "Lateral nuclei of globus pallidus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8059004",
+      "display" : "Pancreatic veins"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8067007",
+      "display" : "Superficial circumflex iliac vein"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8068002",
+      "display" : "Stratum lemnisci of corpora quadrigemina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8070006",
+      "display" : "Secretory alteration of vagina"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8079007",
+      "display" : "Radial nerve"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "8091003",
+      "display" : "Intervertebral disc space of twelfth thoracic vertebra"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "360156006",
+        "display" : "Screening"
+      },
+      {
+        "code" : "160237006",
+        "display" : "History/Symptoms"
+      },
+      {
+        "code" : "261087003",
+        "display" : "Incidental"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:2387c823-41e7-4c69-a679-a3e4a7912a4d",
+    "timestamp" : "2018-08-16T04:53:52.364Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "360156006",
+      "display" : "Screening"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "160237006",
+      "display" : "History/Symptoms"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "261087003",
+      "display" : "Incidental"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "86049000",
+        "display" : "Malignant neoplasm, primary (morphologic abnormality)"
+      },
+      {
+        "code" : "68956006",
+        "display" : "Carcinoma in situ (morphologic abnormality) - corresponds to ICDO3#8010 Carcinoma, NOS"
+      },
+      {
+        "code" : "65692009",
+        "display" : "Spindle cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8032 Spindle cell carcinoma"
+      },
+      {
+        "code" : "128631001",
+        "display" : "Carcinoma with osteoclast-like giant cells (morphologic abnormality)- corresponds to ICDO3#8035 Carcinoma with osteoclast-like stromal giant cells"
+      },
+      {
+        "code" : "74364000",
+        "display" : "Small cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8041 Neuroendocrine carcinoma, poorly differentiated (small cell carcinoma)"
+      },
+      {
+        "code" : "59529006",
+        "display" : "Squamous cell carcinoma in situ (morphologic abnormality)- corresponds to ICDO3#8070 Squamous cell carcinoma"
+      },
+      {
+        "code" : "35917007",
+        "display" : "Adenocarcinoma, no subtype (morphologic abnormality)- corresponds to ICDO3#8140 Adenocarcinoma, N"
+      },
+      {
+        "code" : "11671000",
+        "display" : "Adenoid cystic carcinoma (morphologic abnormality)- corresponds to ICDO3#8200 Adenoid cystic carcinoma"
+      },
+      {
+        "code" : "30156004",
+        "display" : "Cribriform carcinoma (morphologic abnormality)- corresponds to ICDO3#8201 Cribriform carcinoma"
+      },
+      {
+        "code" : "19665009",
+        "display" : "Tubular adenoma (morphologic abnormality)- corresponds to ICDO3#8211 Tubular carcinoma"
+      },
+      {
+        "code" : "55937004",
+        "display" : "Neuroendocrine carcinoma (morphologic abnormality)- corresponds to ICDO3#8246 Neuroendocrine tumor, well-differentiated"
+      },
+      {
+        "code" : "128662002",
+        "display" : "Adenocarcinoma with mixed subtypes (morphologic abnormality)- corresponds to ICDO3#8255 Adenocarcinoma with mixed subtypes"
+      },
+      {
+        "code" : "89439007",
+        "display" : "Oxyphilic adenoma (morphologic abnormality)- corresponds to ICDO3#8290 Oncocytic carcinoma"
+      },
+      {
+        "code" : "3839000",
+        "display" : "Lipid-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8314 Lipid-rich carcinoma"
+      },
+      {
+        "code" : "74280008",
+        "display" : "Glycogen-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8315 Glycogen-rich clear cell carcinoma"
+      },
+      {
+        "code" : "36318001",
+        "display" : "Apocrine adenoma (morphologic abnormality)- corresponds to ICDO3#8401 Apocrine adenocarcinoma"
+      },
+      {
+        "code" : "78424008",
+        "display" : "Sebaceous adenoma (morphologic abnormality)- corresponds to ICDO3#8410 Sebaceous carcinoma"
+      },
+      {
+        "code" : "39892006",
+        "display" : "Mucoepidermoid tumor (morphologic abnormality)- corresponds to ICDO3#8430 Mucoepidermoid carcinoma"
+      },
+      {
+        "code" : "33170000",
+        "display" : "Mucinous adenoma (morphologic abnormality)- corresponds to ICDO3#8480 Mucinous carcinoma"
+      },
+      {
+        "code" : "86616005",
+        "display" : "Intraductal carcinoma, noninfiltrating (morphologic abnormality)- corresponds to ICDO3#8500 Ductal carcinoma"
+      },
+      {
+        "code" : "36425007",
+        "display" : "Comedocarcinoma (morphologic abnormality)- corresponds to ICDO3#8501 Comedocarcinoma, NOS"
+      },
+      {
+        "code" : "41919003",
+        "display" : "Juvenile carcinoma of the breast (morphologic abnormality)- corresponds to ICDO3#8502 Secretory carcinoma"
+      },
+      {
+        "code" : "30566004",
+        "display" : "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8503 Intraductal papillary carcinoma"
+      },
+      {
+        "code" : "47488001",
+        "display" : "Intracystic papillary adenoma (morphologic abnormality)- corresponds to ICDO3#8504 Encapsulated papillary carcinoma"
+      },
+      {
+        "code" : "128696009",
+        "display" : "Intraductal micropapillary carcinoma (morphologic abnormality)- corresponds to ICDO3#8507 Invasive micropapillary carcinoma"
+      },
+      {
+        "code" : "421980000",
+        "display" : "Papillary carcinoma, solid (morphologic abnormality)- corresponds to ICDO3#8509 Solid papillary carcinoma"
+      },
+      {
+        "code" : "32913002",
+        "display" : "Medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8510 Medullary carcinoma"
+      },
+      {
+        "code" : "128698005",
+        "display" : "Atypical medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8513 Atypical medullary carcinoma"
+      },
+      {
+        "code" : "58477004",
+        "display" : "Infiltrating ductular carcinoma (morphologic abnormality)- corresponds to ICDO3#8520 Invasive lobular carcinoma"
+      },
+      {
+        "code" : "35232005",
+        "display" : "Infiltrating duct and lobular carcinoma (morphologic abnormality)- corresponds to ICDO3#8521 Infiltrating ductular carcinoma"
+      },
+      {
+        "code" : "128700001",
+        "display" : "Infiltrating duct mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8522 Infiltrating duct and lobular carcinoma"
+      },
+      {
+        "code" : "128701002",
+        "display" : "Infiltrating lobular mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8524 Infiltrating lobular mixed with other types of carcinoma"
+      },
+      {
+        "code" : "128702009",
+        "display" : "Polymorphous low grade adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8525 Polymorphous carcinoma"
+      },
+      {
+        "code" : "32968003",
+        "display" : "Inflammatory carcinoma (morphologic abnormality)- corresponds to ICDO3#8530 Inflammatory carcinoma"
+      },
+      {
+        "code" : "2985005",
+        "display" : "Paget's disease, mammary (morphologic abnormality)- corresponds to ICDO3#8540 Paget disease of the nipple"
+      },
+      {
+        "code" : "82591005",
+        "display" : "Paget's disease and infiltrating duct carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8541 Paget disease and infiltrating duct carcinoma of breast"
+      },
+      {
+        "code" : "54666007",
+        "display" : "Paget's disease and intraductal carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8543 Paget disease and intraductal carcinoma"
+      },
+      {
+        "code" : "15176003",
+        "display" : "Adenocarcinoma with squamous metaplasia (morphologic abnormality)- corresponds to ICDO3#8570 Low-grade adenosquamous carcinoma"
+      },
+      {
+        "code" : "733875004",
+        "display" : "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8572 Fibromatosis-like metaplastic carcinoma"
+      },
+      {
+        "code" : "128704005",
+        "display" : "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality)- corresponds to ICDO3#8574 Carcinoma with neuroendocrine differentiation"
+      },
+      {
+        "code" : "128705006",
+        "display" : "Metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8575 Metaplastic carcinoma"
+      },
+      {
+        "code" : "69291002",
+        "display" : "Myoepithelioma (morphologic abnormality)- corresponds to ICDO3#8982 Myoepithelial carcinoma"
+      },
+      {
+        "code" : "128765009",
+        "display" : "Adenomyoepithelioma (morphologic abnormality)- corresponds to ICDO3#8983 Adenomyoepithelioma with carcinoma"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:cff9d635-7e49-4a23-a57f-701ab1e0c05c",
+    "timestamp" : "2018-08-16T04:53:52.645Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "86049000",
+      "display" : "Malignant neoplasm, primary (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "68956006",
+      "display" : "Carcinoma in situ (morphologic abnormality) - corresponds to ICDO3#8010 Carcinoma, NOS"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "65692009",
+      "display" : "Spindle cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8032 Spindle cell carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128631001",
+      "display" : "Carcinoma with osteoclast-like giant cells (morphologic abnormality)- corresponds to ICDO3#8035 Carcinoma with osteoclast-like stromal giant cells"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74364000",
+      "display" : "Small cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8041 Neuroendocrine carcinoma, poorly differentiated (small cell carcinoma)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "59529006",
+      "display" : "Squamous cell carcinoma in situ (morphologic abnormality)- corresponds to ICDO3#8070 Squamous cell carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "35917007",
+      "display" : "Adenocarcinoma, no subtype (morphologic abnormality)- corresponds to ICDO3#8140 Adenocarcinoma, N"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "11671000",
+      "display" : "Adenoid cystic carcinoma (morphologic abnormality)- corresponds to ICDO3#8200 Adenoid cystic carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "30156004",
+      "display" : "Cribriform carcinoma (morphologic abnormality)- corresponds to ICDO3#8201 Cribriform carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "19665009",
+      "display" : "Tubular adenoma (morphologic abnormality)- corresponds to ICDO3#8211 Tubular carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55937004",
+      "display" : "Neuroendocrine carcinoma (morphologic abnormality)- corresponds to ICDO3#8246 Neuroendocrine tumor, well-differentiated"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128662002",
+      "display" : "Adenocarcinoma with mixed subtypes (morphologic abnormality)- corresponds to ICDO3#8255 Adenocarcinoma with mixed subtypes"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "89439007",
+      "display" : "Oxyphilic adenoma (morphologic abnormality)- corresponds to ICDO3#8290 Oncocytic carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3839000",
+      "display" : "Lipid-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8314 Lipid-rich carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74280008",
+      "display" : "Glycogen-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8315 Glycogen-rich clear cell carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "36318001",
+      "display" : "Apocrine adenoma (morphologic abnormality)- corresponds to ICDO3#8401 Apocrine adenocarcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "78424008",
+      "display" : "Sebaceous adenoma (morphologic abnormality)- corresponds to ICDO3#8410 Sebaceous carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "39892006",
+      "display" : "Mucoepidermoid tumor (morphologic abnormality)- corresponds to ICDO3#8430 Mucoepidermoid carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "33170000",
+      "display" : "Mucinous adenoma (morphologic abnormality)- corresponds to ICDO3#8480 Mucinous carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "86616005",
+      "display" : "Intraductal carcinoma, noninfiltrating (morphologic abnormality)- corresponds to ICDO3#8500 Ductal carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "36425007",
+      "display" : "Comedocarcinoma (morphologic abnormality)- corresponds to ICDO3#8501 Comedocarcinoma, NOS"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "41919003",
+      "display" : "Juvenile carcinoma of the breast (morphologic abnormality)- corresponds to ICDO3#8502 Secretory carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "30566004",
+      "display" : "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8503 Intraductal papillary carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "47488001",
+      "display" : "Intracystic papillary adenoma (morphologic abnormality)- corresponds to ICDO3#8504 Encapsulated papillary carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128696009",
+      "display" : "Intraductal micropapillary carcinoma (morphologic abnormality)- corresponds to ICDO3#8507 Invasive micropapillary carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "421980000",
+      "display" : "Papillary carcinoma, solid (morphologic abnormality)- corresponds to ICDO3#8509 Solid papillary carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "32913002",
+      "display" : "Medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8510 Medullary carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128698005",
+      "display" : "Atypical medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8513 Atypical medullary carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "58477004",
+      "display" : "Infiltrating ductular carcinoma (morphologic abnormality)- corresponds to ICDO3#8520 Invasive lobular carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "35232005",
+      "display" : "Infiltrating duct and lobular carcinoma (morphologic abnormality)- corresponds to ICDO3#8521 Infiltrating ductular carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128700001",
+      "display" : "Infiltrating duct mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8522 Infiltrating duct and lobular carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128701002",
+      "display" : "Infiltrating lobular mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8524 Infiltrating lobular mixed with other types of carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128702009",
+      "display" : "Polymorphous low grade adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8525 Polymorphous carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "32968003",
+      "display" : "Inflammatory carcinoma (morphologic abnormality)- corresponds to ICDO3#8530 Inflammatory carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2985005",
+      "display" : "Paget's disease, mammary (morphologic abnormality)- corresponds to ICDO3#8540 Paget disease of the nipple"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "82591005",
+      "display" : "Paget's disease and infiltrating duct carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8541 Paget disease and infiltrating duct carcinoma of breast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "54666007",
+      "display" : "Paget's disease and intraductal carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8543 Paget disease and intraductal carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "15176003",
+      "display" : "Adenocarcinoma with squamous metaplasia (morphologic abnormality)- corresponds to ICDO3#8570 Low-grade adenosquamous carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "733875004",
+      "display" : "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8572 Fibromatosis-like metaplastic carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128704005",
+      "display" : "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality)- corresponds to ICDO3#8574 Carcinoma with neuroendocrine differentiation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128705006",
+      "display" : "Metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8575 Metaplastic carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "69291002",
+      "display" : "Myoepithelioma (morphologic abnormality)- corresponds to ICDO3#8982 Myoepithelial carcinoma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128765009",
+      "display" : "Adenomyoepithelioma (morphologic abnormality)- corresponds to ICDO3#8983 Adenomyoepithelioma with carcinoma"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "245269009",
+        "display" : "Axillary lymph node group (body structure)"
+      },
+      {
+        "code" : "245282001",
+        "display" : "Internal mammary lymph node group (body structure)"
+      },
+      {
+        "code" : "245265003",
+        "display" : "Supraclavicular lymph node group (body structure)"
+      },
+      {
+        "code" : "279807001",
+        "display" : "Infraclavicular lymph node group (body structure)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:28ed9513-3eb8-4ee0-9077-bc395b90b32c",
+    "timestamp" : "2018-08-16T04:53:53.082Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "245269009",
+      "display" : "Axillary lymph node group (body structure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "245282001",
+      "display" : "Internal mammary lymph node group (body structure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "245265003",
+      "display" : "Supraclavicular lymph node group (body structure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "279807001",
+      "display" : "Infraclavicular lymph node group (body structure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "24142002",
+        "display" : "Nipple structure (body structure) - corresponds to ICDO3#C50.0"
+      },
+      {
+        "code" : "49058007",
+        "display" : "Structure of central portion of breast (body structure) - corresponds to ICDO3#C50.1"
+      },
+      {
+        "code" : "77831004",
+        "display" : "Structure of upper inner quadrant of breast (body structure) - corresponds to ICDO3#C50.2"
+      },
+      {
+        "code" : "19100000",
+        "display" : "Structure of lower inner quadrant of breast (body structure) - corresponds to ICDO3#C50.3"
+      },
+      {
+        "code" : "76365002",
+        "display" : "Structure of upper outer quadrant of breast (body structure) - corresponds to ICDO3#C50.4"
+      },
+      {
+        "code" : "33564002",
+        "display" : "Structure of lower outer quadrant of breast (body structure) - corresponds to ICDO3#C50.5"
+      },
+      {
+        "code" : "38412008",
+        "display" : "Structure of axillary tail of breast (body structure) - corresponds to ICDO3#C50.6"
+      },
+      {
+        "code" : "276825009",
+        "display" : "Overlapping sites (qualifier value) - corresponds to ICDO3#C50.8"
+      },
+      {
+        "code" : "76752008",
+        "display" : "Breast structure (body structure) - corresponds to ICDO3#C50.9"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:5390732f-00d4-4b50-b4cf-f69748bfd829",
+    "timestamp" : "2018-08-16T04:53:53.301Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "24142002",
+      "display" : "Nipple structure (body structure) - corresponds to ICDO3#C50.0"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "49058007",
+      "display" : "Structure of central portion of breast (body structure) - corresponds to ICDO3#C50.1"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "77831004",
+      "display" : "Structure of upper inner quadrant of breast (body structure) - corresponds to ICDO3#C50.2"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "19100000",
+      "display" : "Structure of lower inner quadrant of breast (body structure) - corresponds to ICDO3#C50.3"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76365002",
+      "display" : "Structure of upper outer quadrant of breast (body structure) - corresponds to ICDO3#C50.4"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "33564002",
+      "display" : "Structure of lower outer quadrant of breast (body structure) - corresponds to ICDO3#C50.5"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "38412008",
+      "display" : "Structure of axillary tail of breast (body structure) - corresponds to ICDO3#C50.6"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "276825009",
+      "display" : "Overlapping sites (qualifier value) - corresponds to ICDO3#C50.8"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76752008",
+      "display" : "Breast structure (body structure) - corresponds to ICDO3#C50.9"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "9911007",
+        "display" : "Core needle biopsy (procedure)"
+      },
+      {
+        "code" : "48635004",
+        "display" : "Fine needle biopsy (procedure)"
+      },
+      {
+        "code" : "172043006",
+        "display" : "Simple mastectomy (procedure)"
+      },
+      {
+        "code" : "237372000",
+        "display" : "Excisional biopsy of breast (procedure)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:f8fda51d-0ab7-4afb-b914-f3c62d1fb5e4",
+    "timestamp" : "2018-08-16T04:53:53.551Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "9911007",
+      "display" : "Core needle biopsy (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "48635004",
+      "display" : "Fine needle biopsy (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "172043006",
+      "display" : "Simple mastectomy (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "237372000",
+      "display" : "Excisional biopsy of breast (procedure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "119295008",
+        "display" : "Specimen obtained by aspiration (specimen)"
+      },
+      {
+        "code" : "16215491000119108",
+        "display" : "Specimen from breast duct obtained by excision (specimen)"
+      },
+      {
+        "code" : "122595009",
+        "display" : "Specimen from breast obtained by total mastectomy (specimen)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:f6891edb-9d11-4a0a-94c2-e172f5b6f7ce",
+    "timestamp" : "2018-08-16T04:53:53.817Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "119295008",
+      "display" : "Specimen obtained by aspiration (specimen)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "16215491000119108",
+      "display" : "Specimen from breast duct obtained by excision (specimen)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "122595009",
+      "display" : "Specimen from breast obtained by total mastectomy (specimen)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "272485000"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:b99a04b3-925c-42d9-ac9d-23023a5cef39",
+    "timestamp" : "2018-08-16T04:53:54.082Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "260318004",
+      "display" : "1 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260319007",
+      "display" : "1.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260322009",
+      "display" : "10 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260323004",
+      "display" : "10.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260324005",
+      "display" : "11 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260325006",
+      "display" : "11.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260326007",
+      "display" : "12 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260327003",
+      "display" : "12.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260328008",
+      "display" : "2 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260329000",
+      "display" : "2.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260330005",
+      "display" : "3 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260331009",
+      "display" : "3.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260333007",
+      "display" : "4 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260334001",
+      "display" : "4.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260335000",
+      "display" : "5 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260336004",
+      "display" : "5.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260337008",
+      "display" : "6 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260338003",
+      "display" : "6.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260339006",
+      "display" : "7 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260340008",
+      "display" : "7.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260341007",
+      "display" : "8 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260342000",
+      "display" : "8.30 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260343005",
+      "display" : "9 o'clock position"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260344004",
+      "display" : "9.30 o'clock position"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "369781009",
+        "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 1: monotonous nuclei, 1.5 - 2.0 red blood cells diameters, with finely dispersed chromatin and only occasional nucleoli (finding)"
+      },
+      {
+        "code" : "369782002",
+        "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 2: neither nuclear grade 1 nor nuclear grade 3 (finding)"
+      },
+      {
+        "code" : "369783007",
+        "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 3: Markedly pleomorphic nuclei, usually >2.5 red blood cells diameters, with coarse chromatin and multiple nucleoli (finding)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:935f0a07-97ef-45c6-b9ee-ac7ade82c291",
+    "timestamp" : "2018-08-16T04:53:55.614Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "369781009",
+      "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 1: monotonous nuclei, 1.5 - 2.0 red blood cells diameters, with finely dispersed chromatin and only occasional nucleoli (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "369782002",
+      "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 2: neither nuclear grade 1 nor nuclear grade 3 (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "369783007",
+      "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 3: Markedly pleomorphic nuclei, usually >2.5 red blood cells diameters, with coarse chromatin and multiple nucleoli (finding)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "263703002"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:8e6612c3-f033-4bec-b026-610b7e11c9dd",
+    "timestamp" : "2018-08-16T04:53:55.879Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1250004",
+      "display" : "Decreased"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "35105006",
+      "display" : "Increased"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "231877006",
+      "display" : "Worsened"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "385425000",
+      "display" : "Improved"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "385630006",
+      "display" : "Maintained"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "409051000",
+      "display" : "Stabilized"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "442387004",
+      "display" : "Increased relative to previous"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "442474009",
+      "display" : "Decreased relative to previous"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "257430009",
+        "display" : "Double probe"
+      },
+      {
+        "code" : "257453005",
+        "display" : "Single probe"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:fa212ae8-f994-4d45-adb5-b3da3c14c027",
+    "timestamp" : "2018-08-16T04:53:58.473Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "257430009",
+      "display" : "Double probe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "257453005",
+      "display" : "Single probe"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "62482003",
+        "display" : "Low (qualifier value)"
+      },
+      {
+        "code" : "11896004",
+        "display" : "Intermediate (qualifier value)"
+      },
+      {
+        "code" : "75540009",
+        "display" : "High (qualifier value)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:49255bf8-9efe-4952-b926-67b45c30c3d2",
+    "timestamp" : "2018-08-16T04:53:59.270Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "62482003",
+      "display" : "Low (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "11896004",
+      "display" : "Intermediate (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "75540009",
+      "display" : "High (qualifier value)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "399374009",
+        "display" : "Regional lymph node metastasis present (finding)"
+      },
+      {
+        "code" : "399522007",
+        "display" : "Regional lymph nodes cannot be assessed (finding)"
+      },
+      {
+        "code" : "399647000",
+        "display" : "No regional lymph node metastasis (finding)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:545d7b23-8b0c-4e5f-9666-0cc10440626a",
+    "timestamp" : "2018-08-16T04:53:59.567Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "399374009",
+      "display" : "Regional lymph node metastasis present (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399522007",
+      "display" : "Regional lymph nodes cannot be assessed (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399647000",
+      "display" : "No regional lymph node metastasis (finding)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "261010008",
+        "display" : "Fixed (qualifier)"
+      },
+      {
+        "code" : "300824007",
+        "display" : "Moveable (qualifier)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:1542aeff-2aac-4d9c-93da-6db779f6d511",
+    "timestamp" : "2018-08-16T04:53:59.833Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "261010008",
+      "display" : "Fixed (qualifier)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "300824007",
+      "display" : "Moveable (qualifier)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "396487001",
+        "display" : "Sentinel lymph node biopsy (procedure)"
+      },
+      {
+        "code" : "234262008",
+        "display" : "Axillary lymph node dissection"
+      },
+      {
+        "code" : "9911007",
+        "display" : "Core needle biopsy (procedure)"
+      },
+      {
+        "code" : "48635004",
+        "display" : "Fine needle biopsy (procedure)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:44723ac3-ae5b-40d9-b0f3-6e7e36911fa8",
+    "timestamp" : "2018-08-16T04:54:00.082Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "396487001",
+      "display" : "Sentinel lymph node biopsy (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "234262008",
+      "display" : "Axillary lymph node dissection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "9911007",
+      "display" : "Core needle biopsy (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "48635004",
+      "display" : "Fine needle biopsy (procedure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "3898006",
+        "display" : "Neoplasm, benign (morphologic abnormality)"
+      },
+      {
+        "code" : "86251006",
+        "display" : "Neoplasm, uncertain whether benign or malignant (morphologic abnormality)"
+      },
+      {
+        "code" : "127569003",
+        "display" : "In situ neoplasm (morphologic abnormality)"
+      },
+      {
+        "code" : "86049000",
+        "display" : "Malignant neoplasm, primary (morphologic abnormality)"
+      },
+      {
+        "code" : "14799000",
+        "display" : "Neoplasm, metastatic (morphologic abnormality)"
+      },
+      {
+        "code" : "6219000",
+        "display" : "Neoplasm, malignant, uncertain whether primary or metastatic (morphologic abnormality)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:f288aa12-87e8-4780-872e-935575c88465",
+    "timestamp" : "2018-08-16T04:54:00.832Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "3898006",
+      "display" : "Neoplasm, benign (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "86251006",
+      "display" : "Neoplasm, uncertain whether benign or malignant (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "127569003",
+      "display" : "In situ neoplasm (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "86049000",
+      "display" : "Malignant neoplasm, primary (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "14799000",
+      "display" : "Neoplasm, metastatic (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6219000",
+      "display" : "Neoplasm, malignant, uncertain whether primary or metastatic (morphologic abnormality)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "369790002",
+        "display" : "Nottingham Combined Grade I: 3-5 points (finding)"
+      },
+      {
+        "code" : "369791003",
+        "display" : "Nottingham Combined Grade II: 6-7 points (finding)"
+      },
+      {
+        "code" : "369792005",
+        "display" : "Nottingham Combined Grade III: 8-9 points (finding)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:d69d930f-72c3-4223-a22d-4bc26318253a",
+    "timestamp" : "2018-08-16T04:54:01.364Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "369790002",
+      "display" : "Nottingham Combined Grade I: 3-5 points (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "369791003",
+      "display" : "Nottingham Combined Grade II: 6-7 points (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "369792005",
+      "display" : "Nottingham Combined Grade III: 8-9 points (finding)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "10828004",
+        "display" : "Positive (qualifier value)"
+      },
+      {
+        "code" : "260385009",
+        "display" : "Negative (qualifier value)"
+      },
+      {
+        "code" : "42425007",
+        "display" : "Equivocal (qualifier value)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:5e058390-1e3a-4107-9e8f-50e9ab3030de",
+    "timestamp" : "2018-08-16T04:54:01.879Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10828004",
+      "display" : "Positive (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260385009",
+      "display" : "Negative (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "42425007",
+      "display" : "Equivocal (qualifier value)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "10828004",
+        "display" : "Positive"
+      },
+      {
+        "code" : "260385009",
+        "display" : "Negative"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:9512feb4-2198-4b5f-ad3a-0b7c40785715",
+    "timestamp" : "2018-08-16T04:54:02.145Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10828004",
+      "display" : "Positive"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260385009",
+      "display" : "Negative"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "410515003",
+        "display" : "Known present"
+      },
+      {
+        "code" : "410590009",
+        "display" : "Known possible"
+      },
+      {
+        "code" : "410592001",
+        "display" : "Probably present"
+      },
+      {
+        "code" : "415684004",
+        "display" : "Suspected"
+      },
+      {
+        "code" : "410593006",
+        "display" : "Probably not present"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:738e7baf-79a8-4a91-8c04-56b7b07ced87",
+    "timestamp" : "2018-08-16T04:54:02.411Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "410515003",
+      "display" : "Known present"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "410590009",
+      "display" : "Known possible"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "410592001",
+      "display" : "Probably present"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "415684004",
+      "display" : "Suspected"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "410593006",
+      "display" : "Probably not present"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "261665006",
+      "display" : "Unknown"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "260407003",
+        "display" : "Weak (qualifier value)"
+      },
+      {
+        "code" : "6736007",
+        "display" : "Moderate (qualifier value)"
+      },
+      {
+        "code" : "260404005",
+        "display" : "Strong (qualifier value)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:b46a2516-b200-41b7-8582-ad2027b02c6d",
+    "timestamp" : "2018-08-16T04:54:03.004Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "260407003",
+      "display" : "Weak (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6736007",
+      "display" : "Moderate (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260404005",
+      "display" : "Strong (qualifier value)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "129738007",
+        "display" : "Lesion with circumscribed margin"
+      },
+      {
+        "code" : "129741003",
+        "display" : "Lesion with indistinct margin"
+      },
+      {
+        "code" : "129739004",
+        "display" : "Lesion with microlobulated margin"
+      },
+      {
+        "code" : "129740002",
+        "display" : "Lesion with obscured margin"
+      },
+      {
+        "code" : "129742005",
+        "display" : "Lesion with spiculated margin"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:1ac47d72-2ea2-4637-a2e2-76e21db9042a",
+    "timestamp" : "2018-08-16T04:54:03.551Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "129738007",
+      "display" : "Lesion with circumscribed margin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "129741003",
+      "display" : "Lesion with indistinct margin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "129739004",
+      "display" : "Lesion with microlobulated margin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "129740002",
+      "display" : "Lesion with obscured margin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "129742005",
+      "display" : "Lesion with spiculated margin"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

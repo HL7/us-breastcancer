@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization",
   "name": "OrganizationProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -935,8 +935,7 @@
         },
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "condition": [
@@ -1798,16 +1797,6 @@
             "reference": "http://hl7.org/fhir/ValueSet/organization-type"
           }
         }
-      },
-      {
-        "id": "Organization:cimi-entity-Organization.address",
-        "path": "Organization.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
-          }
-        ]
       },
       {
         "id": "Organization:cimi-entity-Organization.partOf",

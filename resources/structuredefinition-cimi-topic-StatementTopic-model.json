@@ -15,7 +15,7 @@
   "name": "StatementTopicModel",
   "title": "BC StatementTopic Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -64,7 +64,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -104,7 +104,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

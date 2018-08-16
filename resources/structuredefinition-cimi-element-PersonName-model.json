@@ -15,7 +15,7 @@
   "name": "PersonNameModel",
   "title": "BC PersonName Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -70,7 +70,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-NameAsText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -80,6 +80,12 @@
       {
         "id": "cimi-element-PersonName-model.purpose",
         "path": "cimi-element-PersonName-model.purpose",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Why the item is used.",
         "definition": "Why the item is used.",
         "min": 0,
@@ -87,36 +93,6 @@
         "base": {
           "path": "cimi-element-PersonName-model.purpose",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Purpose-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-element-PersonName-model.purpose.value",
-        "path": "cimi-element-PersonName-model.purpose.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing why the item is used.",
-        "definition": "Code representing why the item is used.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Purpose-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -175,7 +151,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-PreferredFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -202,7 +178,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Prefix-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -233,7 +209,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-GivenName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -264,7 +240,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-MiddleName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -291,7 +267,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-FamilyName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -322,7 +298,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Suffix-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -362,7 +338,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-NameAsText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -372,6 +348,12 @@
       {
         "id": "cimi-element-PersonName-model.purpose",
         "path": "cimi-element-PersonName-model.purpose",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Why the item is used.",
         "definition": "Why the item is used.",
         "min": 0,
@@ -379,36 +361,6 @@
         "base": {
           "path": "cimi-element-PersonName-model.purpose",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Purpose-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-element-PersonName-model.purpose.value",
-        "path": "cimi-element-PersonName-model.purpose.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing why the item is used.",
-        "definition": "Code representing why the item is used.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Purpose-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -467,7 +419,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-PreferredFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -494,7 +446,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Prefix-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -525,7 +477,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-GivenName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -556,7 +508,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-MiddleName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -583,7 +535,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-FamilyName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -614,7 +566,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Suffix-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,

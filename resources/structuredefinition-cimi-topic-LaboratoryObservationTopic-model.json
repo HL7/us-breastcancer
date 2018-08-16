@@ -15,7 +15,7 @@
   "name": "LaboratoryObservationTopicModel",
   "title": "BC LaboratoryObservationTopic Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -64,7 +64,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -85,12 +85,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "cimi-topic-LaboratoryObservationTopic-model.details",
@@ -112,7 +118,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -154,30 +160,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Category-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -186,8 +168,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.id",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.id",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.id",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -213,8 +195,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.extension",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.extension",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.extension",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -228,10 +210,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -252,8 +230,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.system",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.system",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.system",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -288,8 +266,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.version",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.version",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.version",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -322,8 +300,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.code",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.code",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.code",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -357,14 +335,14 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.display",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.display",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -397,8 +375,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.userSelected",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.userSelected",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.userSelected",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -472,7 +450,17 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Focus-model"
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -537,7 +525,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -627,12 +619,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
+          }
+        }
       }
     ]
   },
@@ -667,7 +665,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -688,12 +686,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "cimi-topic-LaboratoryObservationTopic-model.details",
@@ -715,7 +719,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -757,30 +761,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Category-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -789,8 +769,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.id",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.id",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.id",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -816,8 +796,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.extension",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.extension",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.extension",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -831,10 +811,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -855,8 +831,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.system",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.system",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.system",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -891,8 +867,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.version",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.version",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.version",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -925,8 +901,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.code",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.code",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.code",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -960,14 +936,14 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.display",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.display",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1000,8 +976,8 @@
         ]
       },
       {
-        "id": "cimi-topic-LaboratoryObservationTopic-model.category.value.userSelected",
-        "path": "cimi-topic-LaboratoryObservationTopic-model.category.value.userSelected",
+        "id": "cimi-topic-LaboratoryObservationTopic-model.category.userSelected",
+        "path": "cimi-topic-LaboratoryObservationTopic-model.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1075,7 +1051,17 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Focus-model"
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -1140,7 +1126,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -1230,12 +1220,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
+          }
+        }
       }
     ]
   }

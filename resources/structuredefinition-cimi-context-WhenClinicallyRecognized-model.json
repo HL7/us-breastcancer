@@ -15,7 +15,7 @@
   "name": "WhenClinicallyRecognizedModel",
   "title": "BC WhenClinicallyRecognized Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-context-WhenClinicallyRecognized-model.value",
         "short": "Date representing the time at which a condition or condition was first identified in a healthcare context.",
         "definition": "Date representing the time at which a condition or condition was first identified in a healthcare context.",
-        "alias": [
-          "date"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-context-WhenClinicallyRecognized-model.value",
         "short": "Date representing the time at which a condition or condition was first identified in a healthcare context.",
         "definition": "Date representing the time at which a condition or condition was first identified in a healthcare context.",
-        "alias": [
-          "date"
-        ],
         "min": 1,
         "max": "1",
         "base": {

@@ -15,7 +15,7 @@
   "name": "EstrogenReceptorStatusModel",
   "title": "BC EstrogenReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -84,9 +84,6 @@
         "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic",
         "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
         "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "alias": [
-          "statementTopic"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -117,282 +114,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-EstrogenReceptorInterpretationTestsVS"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.system",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://loinc.org",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.code",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "16112-5",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.findingMethod",
@@ -408,12 +141,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.details",
@@ -435,7 +174,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -448,11 +187,11 @@
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.media",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -477,30 +216,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -509,8 +224,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.id",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -519,7 +234,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.id",
           "min": 0,
           "max": "1"
         },
@@ -536,8 +251,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.extension",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -551,14 +266,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.extension",
           "min": 0,
           "max": "*"
         },
@@ -575,8 +286,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.system",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -584,7 +295,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.system",
           "min": 1,
           "max": "1"
         },
@@ -611,15 +322,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.version",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.version",
           "min": 0,
           "max": "1"
         },
@@ -645,15 +356,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.code",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.code",
           "min": 1,
           "max": "1"
         },
@@ -680,21 +391,21 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.display",
           "min": 0,
           "max": "1"
         },
@@ -720,8 +431,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -729,7 +440,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -795,7 +506,17 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Focus-model"
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -808,11 +529,11 @@
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.device",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -860,7 +581,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -911,20 +636,27 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.nuclearPositivity",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.nuclearPositivity",
-        "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.\nWe are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorNuclearPositivity",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorNuclearPositivity",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "14228-1",
+            "display": "Cells.estrogen receptor/​100 cells in Tissue by Immune stain"
+          }
+        ],
+        "short": "The percentage of cells that test (stain) positive for the presence of estrogen receptors. We are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.",
+        "definition": "The percentage of cells that test (stain) positive for the presence of estrogen receptors. We are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.nuclearPositivity",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorNuclearPositivity",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NuclearPositivity-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-EstrogenReceptorNuclearPositivity-model"
           }
         ],
         "mustSupport": false,
@@ -932,27 +664,27 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.averageStainingIntensity",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.averageStainingIntensity",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorAverageStainingIntensity",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorAverageStainingIntensity",
         "code": [
           {
-            "system": "http://snomed.info/sct",
-            "code": "444775005",
-            "display": "Average intensity of positive staining neoplastic cells (observable entity)"
+            "system": "http://loinc.org",
+            "code": "85310-1",
+            "display": "Estrogen receptor fluorescence intensity [Type] in Breast cancer specimen by Immune stain"
           }
         ],
-        "short": "The degree or magnitude of staining (nuclear positivity) across cells in the specimen.",
-        "definition": "The degree or magnitude of staining (nuclear positivity) across cells in the specimen.",
+        "short": "The degree or magnitude of staining across positively stained tumor cells on the entire tissue section relative to the intensity of positive controls run with the same batch.",
+        "definition": "The degree or magnitude of staining across positively stained tumor cells on the entire tissue section relative to the intensity of positive controls run with the same batch.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.averageStainingIntensity",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorAverageStainingIntensity",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-AverageStainingIntensity-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-EstrogenReceptorAverageStainingIntensity-model"
           }
         ],
         "mustSupport": false,
@@ -994,30 +726,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-DiagnosticService-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1026,8 +734,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1053,8 +761,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1068,10 +776,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1092,8 +796,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1128,8 +832,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1162,8 +866,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1197,14 +901,14 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1237,8 +941,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1276,9 +980,6 @@
         "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext",
         "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1309,30 +1010,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1341,8 +1018,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.id",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.id",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1351,7 +1028,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.id",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.id",
           "min": 0,
           "max": "1"
         },
@@ -1368,8 +1045,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.extension",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.extension",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1383,14 +1060,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.extension",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.extension",
           "min": 0,
           "max": "*"
         },
@@ -1407,8 +1080,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.system",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.system",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1416,7 +1089,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.system",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.system",
           "min": 1,
           "max": "1"
         },
@@ -1443,15 +1116,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.version",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.version",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.version",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.version",
           "min": 0,
           "max": "1"
         },
@@ -1477,15 +1150,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.code",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.code",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.code",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.code",
           "min": 1,
           "max": "1"
         },
@@ -1512,21 +1185,21 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.display",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.display",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.display",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.display",
           "min": 0,
           "max": "1"
         },
@@ -1552,8 +1225,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.userSelected",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.userSelected",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1561,7 +1234,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.userSelected",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -1627,12 +1300,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.findingStatus",
@@ -1648,12 +1327,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.relevantTime",
@@ -1669,7 +1354,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -1702,9 +1390,6 @@
         "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1737,30 +1422,6 @@
         "base": {
           "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1798,12 +1459,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.issued",
@@ -1819,7 +1486,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -1840,7 +1507,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,
@@ -1893,9 +1573,6 @@
         "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic",
         "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
         "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "alias": [
-          "statementTopic"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1926,282 +1603,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-EstrogenReceptorInterpretationTestsVS"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.system",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://loinc.org",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.code",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "16112-5",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.findingMethod",
@@ -2217,12 +1630,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.details",
@@ -2244,7 +1663,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -2257,11 +1676,11 @@
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.media",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -2286,30 +1705,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2318,8 +1713,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.id",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2328,7 +1723,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.id",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.id",
           "min": 0,
           "max": "1"
         },
@@ -2345,8 +1740,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.extension",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2360,14 +1755,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.extension",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.extension",
           "min": 0,
           "max": "*"
         },
@@ -2384,8 +1775,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.system",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2393,7 +1784,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.system",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.system",
           "min": 1,
           "max": "1"
         },
@@ -2420,15 +1811,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.version",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.version",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.version",
           "min": 0,
           "max": "1"
         },
@@ -2454,15 +1845,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.code",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.code",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.code",
           "min": 1,
           "max": "1"
         },
@@ -2489,21 +1880,21 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.display",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.display",
           "min": 0,
           "max": "1"
         },
@@ -2529,8 +1920,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2538,7 +1929,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.value.userSelected",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.category.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -2604,7 +1995,17 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Focus-model"
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -2617,11 +2018,11 @@
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.device",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -2669,7 +2070,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -2720,20 +2125,27 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.nuclearPositivity",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.nuclearPositivity",
-        "short": "The percentage of cells that test (stain) positive for the presence of a receptor.",
-        "definition": "The percentage of cells that test (stain) positive for the presence of a receptor.\nWe are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorNuclearPositivity",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorNuclearPositivity",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "14228-1",
+            "display": "Cells.estrogen receptor/​100 cells in Tissue by Immune stain"
+          }
+        ],
+        "short": "The percentage of cells that test (stain) positive for the presence of estrogen receptors. We are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.",
+        "definition": "The percentage of cells that test (stain) positive for the presence of estrogen receptors. We are seeking feedback on whether nuclear positivity should be an exact percentage or a range of percentages. As currently defined, an exact nuclear positivity could be represented by a zero-width range, where the lower and upper bounds would be the same number.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.nuclearPositivity",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorNuclearPositivity",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NuclearPositivity-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-EstrogenReceptorNuclearPositivity-model"
           }
         ],
         "mustSupport": false,
@@ -2741,27 +2153,27 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.averageStainingIntensity",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.averageStainingIntensity",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorAverageStainingIntensity",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorAverageStainingIntensity",
         "code": [
           {
-            "system": "http://snomed.info/sct",
-            "code": "444775005",
-            "display": "Average intensity of positive staining neoplastic cells (observable entity)"
+            "system": "http://loinc.org",
+            "code": "85310-1",
+            "display": "Estrogen receptor fluorescence intensity [Type] in Breast cancer specimen by Immune stain"
           }
         ],
-        "short": "The degree or magnitude of staining (nuclear positivity) across cells in the specimen.",
-        "definition": "The degree or magnitude of staining (nuclear positivity) across cells in the specimen.",
+        "short": "The degree or magnitude of staining across positively stained tumor cells on the entire tissue section relative to the intensity of positive controls run with the same batch.",
+        "definition": "The degree or magnitude of staining across positively stained tumor cells on the entire tissue section relative to the intensity of positive controls run with the same batch.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.averageStainingIntensity",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.evaluationComponent.estrogenReceptorAverageStainingIntensity",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-AverageStainingIntensity-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-EstrogenReceptorAverageStainingIntensity-model"
           }
         ],
         "mustSupport": false,
@@ -2803,30 +2215,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value",
-        "short": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "Code representing the service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-DiagnosticService-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2835,8 +2223,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.id",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2862,8 +2250,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.extension",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2877,10 +2265,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2901,8 +2285,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.system",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2937,8 +2321,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.version",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2971,8 +2355,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.code",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -3006,14 +2390,14 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.display",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -3046,8 +2430,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.value.userSelected",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.laboratoryObservationTopic.diagnosticService.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -3085,9 +2469,6 @@
         "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext",
         "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -3118,30 +2499,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -3150,8 +2507,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.id",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.id",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.id",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -3160,7 +2517,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.id",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.id",
           "min": 0,
           "max": "1"
         },
@@ -3177,8 +2534,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.extension",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.extension",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.extension",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -3192,14 +2549,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.extension",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.extension",
           "min": 0,
           "max": "*"
         },
@@ -3216,8 +2569,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.system",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.system",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.system",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -3225,7 +2578,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.system",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.system",
           "min": 1,
           "max": "1"
         },
@@ -3252,15 +2605,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.version",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.version",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.version",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.version",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.version",
           "min": 0,
           "max": "1"
         },
@@ -3286,15 +2639,15 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.code",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.code",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.code",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.code",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.code",
           "min": 1,
           "max": "1"
         },
@@ -3321,21 +2674,21 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.display",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.display",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.display",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.display",
           "min": 0,
           "max": "1"
         },
@@ -3361,8 +2714,8 @@
         ]
       },
       {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.userSelected",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.userSelected",
+        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.userSelected",
+        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -3370,7 +2723,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.value.userSelected",
+          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.contextCode.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -3436,12 +2789,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.findingStatus",
@@ -3457,12 +2816,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.relevantTime",
@@ -3478,7 +2843,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -3511,9 +2879,6 @@
         "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -3546,30 +2911,6 @@
         "base": {
           "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue.value",
-        "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-EstrogenReceptorStatus-model.observationContext.exceptionValue.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -3607,12 +2948,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-EstrogenReceptorStatus-model.observationContext.issued",
@@ -3628,7 +2975,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -3649,7 +2996,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,

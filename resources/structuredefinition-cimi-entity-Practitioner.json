@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner",
   "name": "PractitionerProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1104,8 +1104,7 @@
         },
         "type": [
           {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ContactPoint"
+            "code": "ContactPoint"
           }
         ],
         "isSummary": true,
@@ -1140,8 +1139,7 @@
         },
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "isSummary": true,
@@ -1252,7 +1250,7 @@
         "definition": "Image of the person.",
         "requirements": "Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Practitioner.photo",
           "min": 0,
@@ -1608,35 +1606,9 @@
         ]
       },
       {
-        "id": "Practitioner:cimi-entity-Practitioner.telecom",
-        "path": "Practitioner.telecom",
-        "type": [
-          {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ContactPoint"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner:cimi-entity-Practitioner.address",
-        "path": "Practitioner.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
-          }
-        ]
-      },
-      {
         "id": "Practitioner:cimi-entity-Practitioner.gender",
         "path": "Practitioner.gender",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Practitioner:cimi-entity-Practitioner.photo",
-        "path": "Practitioner.photo",
-        "min": 0,
         "max": "1"
       },
       {

@@ -15,7 +15,7 @@
   "name": "DeviceModel",
   "title": "BC Device Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -70,7 +70,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Type-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -91,7 +91,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-DeviceUdi-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -112,7 +112,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-VendorModelNumber-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -133,7 +133,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ManufacturerName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -154,7 +154,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ManufactureDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -175,7 +175,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ExpirationDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -202,7 +202,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Version-model"
+            "code": "string"
+          },
+          {
+            "code": "id"
           }
         ],
         "mustSupport": false,
@@ -223,7 +226,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Url-model"
+            "code": "uri"
           }
         ],
         "mustSupport": false,
@@ -269,7 +272,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Type-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -290,7 +293,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-DeviceUdi-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -311,7 +314,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-VendorModelNumber-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -332,7 +335,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ManufacturerName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -353,7 +356,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ManufactureDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -374,7 +377,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ExpirationDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -401,7 +404,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Version-model"
+            "code": "string"
+          },
+          {
+            "code": "id"
           }
         ],
         "mustSupport": false,
@@ -422,7 +428,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Url-model"
+            "code": "uri"
           }
         ],
         "mustSupport": false,

@@ -188,83 +188,9 @@ if (location.href.indexOf('is-external=true') == -1) {
         <li>
     <ul>
           <li class="last">
-    <a href="../cimi-statement/LaboratoryObservation.html">LaboratoryObservation</a>
-  </li>
-      </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                            <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-          <li class="last">
-    <a href="../cimi-statement/CodedLaboratoryObservation.html">CodedLaboratoryObservation</a>
-  </li>
-      </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                            <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-        <li>
-    <ul>
-          <li class="last">
     <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a>
   </li>
       </ul>
-  </li>
-    </ul>
-  </li>
-    </ul>
   </li>
     </ul>
   </li>
@@ -322,25 +248,25 @@ if (location.href.indexOf('is-external=true') == -1) {
       <td class="colMiddle">
         <code><strong>DataType</strong></code>
         
-          <div class="block">Constrained in <a href="../cimi-statement/LaboratoryObservation.html">LaboratoryObservation</a></div>
+          <div class="block">Constrained in <a href="../cimi-statement/Observation.html">Observation</a></div>
         
       </td>
       <td class="colLast">
                   <div class="block">
             
-                          <a href="../cimi-topic/LaboratoryObservationTopic.html">LaboratoryObservationTopic</a>
+                          <a href="../cimi-topic/ObservationTopic.html">ObservationTopic</a>
                         
           </div>
               </td>
       <!-- <td class="colLast">
-        <div class="block">LaboratoryObservation</div>
+        <div class="block">Observation</div>
       </td> -->
     </tr>
       
       <tr class="altColor">
     
       <td class="colFirst">
-        <code><strong>StatementTopic.ReferenceRange</strong></code>
+        <code><strong>StatementTopic.Category</strong></code>
         
           <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
         
@@ -348,18 +274,40 @@ if (location.href.indexOf('is-external=true') == -1) {
       <td class="colMiddle">
         <code><strong>Cardinality</strong></code>
         
-          <div class="block">Constrained in <a href="../cimi-statement/CodedLaboratoryObservation.html">CodedLaboratoryObservation</a></div>
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
         
       </td>
       <td class="colLast">
-                  <div class="block">0..0</div>
+                  <div class="block">1..1</div>
               </td>
       <!-- <td class="colLast">
-        <div class="block">CodedLaboratoryObservation</div>
+        <div class="block">BreastCancerRegionalNodesClassification</div>
       </td> -->
     </tr>
       
       <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Category.CodeableConcept</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Fixed Value</strong></code>
+        
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">http://hl7.org/fhir/observation-category (code: exam)</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerRegionalNodesClassification</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
     
       <td class="colFirst">
         <code><strong>StatementTopic.Focus</strong></code>
@@ -385,7 +333,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       </td> -->
     </tr>
       
-      <tr class="altColor">
+      <tr class="rowColor">
     
       <td class="colFirst">
         <code><strong>StatementTopic.TopicCode.CodeableConcept</strong></code>
@@ -407,10 +355,120 @@ if (location.href.indexOf('is-external=true') == -1) {
       </td> -->
     </tr>
       
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Precondition</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerRegionalNodesClassification</div>
+      </td> -->
+    </tr>
+      
       <tr class="rowColor">
     
       <td class="colFirst">
-        <code><strong>StatementTopic.DiagnosticService</strong></code>
+        <code><strong>StatementTopic.FindingMethod</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerRegionalNodesClassification</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Media</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerRegionalNodesClassification</div>
+      </td> -->
+    </tr>
+      
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.Device</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerRegionalNodesClassification</div>
+      </td> -->
+    </tr>
+      
+      <tr class="altColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.ReferenceRange</strong></code>
+        
+          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
+        
+      </td>
+      <td class="colMiddle">
+        <code><strong>Cardinality</strong></code>
+        
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
+        
+      </td>
+      <td class="colLast">
+                  <div class="block">0..0</div>
+              </td>
+      <!-- <td class="colLast">
+        <div class="block">BreastCancerRegionalNodesClassification</div>
+      </td> -->
+    </tr>
+      
+      <tr class="rowColor">
+    
+      <td class="colFirst">
+        <code><strong>StatementTopic.AnatomicalLocation</strong></code>
         
           <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
         
@@ -433,50 +491,6 @@ if (location.href.indexOf('is-external=true') == -1) {
     
       <td class="colFirst">
         <code><strong>StatementTopic.Specimen</strong></code>
-        
-          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Cardinality</strong></code>
-        
-          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">0..0</div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">BreastCancerRegionalNodesClassification</div>
-      </td> -->
-    </tr>
-      
-      <tr class="rowColor">
-    
-      <td class="colFirst">
-        <code><strong>StatementTopic.Precondition</strong></code>
-        
-          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Cardinality</strong></code>
-        
-          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">0..0</div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">BreastCancerRegionalNodesClassification</div>
-      </td> -->
-    </tr>
-      
-      <tr class="altColor">
-    
-      <td class="colFirst">
-        <code><strong>StatementTopic.FindingMethod</strong></code>
         
           <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
         
@@ -610,7 +624,7 @@ if (location.href.indexOf('is-external=true') == -1) {
       <td class="colMiddle">
         <code><strong>DataType</strong></code>
         
-          <div class="block">Constrained in <a href="../cimi-statement/CodedLaboratoryObservation.html">CodedLaboratoryObservation</a></div>
+          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
         
       </td>
       <td class="colLast">
@@ -621,44 +635,10 @@ if (location.href.indexOf('is-external=true') == -1) {
           </div>
               </td>
       <!-- <td class="colLast">
-        <div class="block">CodedLaboratoryObservation</div>
-      </td> -->
-    </tr>
-      
-      <tr class="altColor">
-    
-      <td class="colFirst">
-        <code><strong>StatementContext.ResultValue.CodeableConcept</strong></code>
-        
-          <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Value Set</strong></code>
-        
-          <div class="block">Constrained in <a href="../shr-oncology/BreastCancerRegionalNodesClassification.html">BreastCancerRegionalNodesClassification</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">urn:tbd (REQUIRED)</div>
-              </td>
-      <!-- <td class="colLast">
         <div class="block">BreastCancerRegionalNodesClassification</div>
       </td> -->
     </tr>
   </table>                                            <ul class="blockList">
-                                      <li class="blockList">
-                      <a name="properties_inherited_from_class_java.lang.Object"></a>
-                      <h3>Properties inherited from&nbsp;
-                        <a href="../cimi-statement/CodedLaboratoryObservation.html">CodedLaboratoryObservation</a>
-                      </h3>
-                                          </li>
-                                      <li class="blockList">
-                      <a name="properties_inherited_from_class_java.lang.Object"></a>
-                      <h3>Properties inherited from&nbsp;
-                        <a href="../cimi-statement/LaboratoryObservation.html">LaboratoryObservation</a>
-                      </h3>
-                                          </li>
                                       <li class="blockList">
                       <a name="properties_inherited_from_class_java.lang.Object"></a>
                       <h3>Properties inherited from&nbsp;

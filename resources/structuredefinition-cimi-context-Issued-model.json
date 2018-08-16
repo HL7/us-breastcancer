@@ -15,7 +15,7 @@
   "name": "IssuedModel",
   "title": "BC Issued Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-context-Issued-model.value",
         "short": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
         "definition": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
-        "alias": [
-          "instant"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-context-Issued-model.value",
         "short": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
         "definition": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
-        "alias": [
-          "instant"
-        ],
         "min": 1,
         "max": "1",
         "base": {

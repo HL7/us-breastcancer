@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson",
   "name": "RelatedPersonProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -490,8 +490,7 @@
         "max": "*",
         "type": [
           {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ContactPoint"
+            "code": "ContactPoint"
           }
         ],
         "isSummary": true,
@@ -578,8 +577,7 @@
         "max": "*",
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "isSummary": true,
@@ -601,7 +599,7 @@
         "definition": "Image of the person.",
         "requirements": "Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Attachment"
@@ -677,32 +675,6 @@
             "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
           }
         ]
-      },
-      {
-        "id": "RelatedPerson:cimi-entity-RelatedPerson.telecom",
-        "path": "RelatedPerson.telecom",
-        "type": [
-          {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ContactPoint"
-          }
-        ]
-      },
-      {
-        "id": "RelatedPerson:cimi-entity-RelatedPerson.address",
-        "path": "RelatedPerson.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
-          }
-        ]
-      },
-      {
-        "id": "RelatedPerson:cimi-entity-RelatedPerson.photo",
-        "path": "RelatedPerson.photo",
-        "min": 0,
-        "max": "1"
       }
     ]
   },

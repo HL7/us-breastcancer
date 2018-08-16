@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "description": "Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).",
   "compose": {
     "include": [
@@ -34,20 +34,16 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "260413007",
-            "display": "None (qualifier value)"
+            "code": "260407003",
+            "display": "Weak (qualifier value)"
           },
           {
-            "code": "450501000124104",
-            "display": "Light intensity (qualifier value)"
+            "code": "6736007",
+            "display": "Moderate (qualifier value)"
           },
           {
-            "code": "4901000175103",
-            "display": "Moderate intensity (qualifier value)"
-          },
-          {
-            "code": "450511000124101",
-            "display": "High intensity (qualifier value)"
+            "code": "260404005",
+            "display": "Strong (qualifier value)"
           }
         ]
       }

@@ -189,11 +189,6 @@ The Prosigna Score is reported on a 0-100 scale (referred to as ROR Score or Ris
       <td>{% capture md_text %}Identifier assigned by the lab{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-core-Address.html">Address</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
-      <td>{% capture md_text %}An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-element-AnatomicalLocation.html">AnatomicalLocation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/bodysite.html">BodySite</a></td>
       <td>{% capture md_text %}A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -228,11 +223,6 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td><a href="StructureDefinition-cimi-statement-ConditionPresenceStatement.html">ConditionPresenceStatement</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>{% capture md_text %}A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-shr-core-ContactPoint.html">ContactPoint</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#contactpoint">ContactPoint</a></td>
-      <td>{% capture md_text %}An electronic means of contacting an organization or individual.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-encounter-Encounter.html">Encounter</a></td>
@@ -299,6 +289,11 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       <td><a href="StructureDefinition-cimi-entity-Patient.html">Patient</a></td>
       <td><a href="http://hl7.org/fhir/STU3/patient.html">Patient</a></td>
       <td>{% capture md_text %}A person in the role of a patient, including extended demographic information about the subject of this health record.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-PersonOfRecord.html">PersonOfRecord</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/patient.html">Patient</a></td>
+      <td>{% capture md_text %}The person this entry belongs to.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-entity-Person.html">Person</a></td>

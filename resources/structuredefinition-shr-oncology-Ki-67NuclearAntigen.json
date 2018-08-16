@@ -3,12 +3,12 @@
   "id": "shr-oncology-Ki-67NuclearAntigen",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Ki-67NuclearAntigen Profile</b></p>\n  <p>Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence.  The Ki-67 antigen is measured numerically as a percentage, and as an ordinal. The more positive cells there are, the more quickly they are dividing and forming new cells. ReferenceRange: Low &lt;10, Intermediate 10-20, &gt;20 High.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.oncology.Ki-67NuclearAntigen maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  LaboratoryObservationTopic.TopicCode maps to code\n  LaboratoryObservationTopic.FindingMethod maps to method\n  LaboratoryObservationTopic.Details maps to comment\n  LaboratoryObservationTopic.Category maps to category\n  LaboratoryObservationTopic.AnatomicalLocation maps to bodySite\n  LaboratoryObservationTopic.Device maps to device\n  LaboratoryObservationTopic.Specimen maps to specimen\n  LaboratoryObservationTopic.ReferenceRange maps to referenceRange\n  LaboratoryObservationTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  LaboratoryObservationTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  LaboratoryObservationTopic.ReferenceRange.Type maps to referenceRange.type\n  LaboratoryObservationTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  LaboratoryObservationTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\t\n  LaboratoryObservationTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  LaboratoryObservationTopic.EvaluationComponent._Concept maps to component.code\n  LaboratoryObservationTopic.EvaluationComponent.Quantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.string maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Range maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Ratio maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Media maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.time maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.dateTime maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  LaboratoryObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  LaboratoryObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  LaboratoryObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ObservationContext.ResultValue maps to value[x]\n  ObservationContext.ExceptionValue maps to dataAbsentReason\n  ObservationContext.Interpretation maps to interpretation\n  ObservationContext.Issued maps to issued\n  ObservationContext.FindingStatus maps to status\n  ObservationContext.RelevantTime maps to effective[x]\n  ObservationContext.DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Ki-67NuclearAntigen Profile</b></p>\n  <p>Ki-67 is a protein phosphatase whose expression is strongly associated with cell proliferation and encoded by the MKI67 gene. The Ki67 labeling index is the fraction of Ki-67-positive cells to total cells in a tumor specimen and may be useful for determining prognosis with respect to survival and disease recurrence.  The Ki-67 antigen is measured numerically as a percentage, and as an ordinal. The more positive cells there are, the more quickly they are dividing and forming new cells. ReferenceRange: Low &lt;10, Intermediate 10-20, &gt;20 High.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.oncology.Ki-67NuclearAntigen maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  LaboratoryObservationTopic.TopicCode maps to code\n  LaboratoryObservationTopic.FindingMethod maps to method\n  LaboratoryObservationTopic.Details maps to comment\n  LaboratoryObservationTopic.Category maps to category\n  LaboratoryObservationTopic.AnatomicalLocation maps to bodySite\n  LaboratoryObservationTopic.Device maps to device\n  LaboratoryObservationTopic.Specimen maps to specimen\n  LaboratoryObservationTopic.ReferenceRange maps to referenceRange\n  LaboratoryObservationTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  LaboratoryObservationTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  LaboratoryObservationTopic.ReferenceRange.Type maps to referenceRange.type\n  LaboratoryObservationTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  LaboratoryObservationTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  LaboratoryObservationTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  LaboratoryObservationTopic.EvaluationComponent._Concept maps to component.code\n  LaboratoryObservationTopic.EvaluationComponent.Quantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.string maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Range maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Ratio maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Media maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.time maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.dateTime maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  LaboratoryObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  LaboratoryObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  LaboratoryObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ObservationContext.ResultValue maps to value[x]\n  ObservationContext.ExceptionValue maps to dataAbsentReason\n  ObservationContext.Interpretation maps to interpretation\n  ObservationContext.Issued maps to issued\n  ObservationContext.FindingStatus maps to status\n  ObservationContext.RelevantTime maps to effective[x]\n  ObservationContext.DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-Ki-67NuclearAntigen",
   "name": "Ki-67NuclearAntigenProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1491,7 +1491,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
           }
         ],
         "mustSupport": true,
@@ -1992,7 +1992,7 @@
         "definition": "The device used to generate the observation data.",
         "comment": "An extension should be used if further typing of the device is needed.  Devices used to support obtaining an observation can be represented using either an extension or through the Observation.related element.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.device",
           "min": 0,
@@ -3925,6 +3925,16 @@
         "fixedCode": "33055-5"
       },
       {
+        "id": "Observation:shr-oncology-Ki-67NuclearAntigen.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
+          }
+        ]
+      },
+      {
         "id": "Observation:shr-oncology-Ki-67NuclearAntigen.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "type": [
@@ -3990,6 +4000,8 @@
       {
         "id": "Observation:shr-oncology-Ki-67NuclearAntigen.device",
         "path": "Observation.device",
+        "min": 0,
+        "max": "0",
         "type": [
           {
             "code": "Reference",

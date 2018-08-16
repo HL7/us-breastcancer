@@ -15,7 +15,7 @@
   "name": "BreastSpecimenModel",
   "title": "BC BreastSpecimen Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -91,30 +91,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenStatus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.specimenStatus.value",
-        "path": "shr-oncology-BreastSpecimen-model.specimenStatus.value",
-        "short": "Code representing state of the specimen, such as obtained, processed, used.",
-        "definition": "Code representing state of the specimen, such as obtained, processed, used.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-SpecimenStatus-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -148,30 +124,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.type.value",
-        "path": "shr-oncology-BreastSpecimen-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -199,7 +151,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-CollectionSource-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Group-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Substance-model"
           }
         ],
         "mustSupport": false,
@@ -220,7 +185,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-CollectionTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -237,30 +205,6 @@
         "base": {
           "path": "shr-oncology-BreastSpecimen-model.collectionMethod",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-CollectionMethod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.collectionMethod.value",
-        "path": "shr-oncology-BreastSpecimen-model.collectionMethod.value",
-        "short": "Code representing how the specimen was obtained.",
-        "definition": "Code representing how the specimen was obtained.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-CollectionMethod-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -304,10 +248,6 @@
         "path": "shr-oncology-BreastSpecimen-model.collectionSite.value",
         "short": "A body site specific to the breast structure.",
         "definition": "A body site specific to the breast structure.",
-        "alias": [
-          "anatomicalLocation",
-          "breastSite"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -350,10 +290,6 @@
         "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "alias": [
-          "specimen",
-          "breastSpecimen"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -391,7 +327,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ReceivedTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -455,7 +391,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-HandlingRisk-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -476,7 +412,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecialHandling-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -487,6 +423,10 @@
         "id": "shr-oncology-BreastSpecimen-model.coldIschemiaTime",
         "path": "shr-oncology-BreastSpecimen-model.coldIschemiaTime",
         "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1948053"
+          },
           {
             "system": "http://loinc.org",
             "code": "44778-9",
@@ -504,7 +444,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-ColdIschemiaTime-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -571,30 +511,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenStatus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.specimenStatus.value",
-        "path": "shr-oncology-BreastSpecimen-model.specimenStatus.value",
-        "short": "Code representing state of the specimen, such as obtained, processed, used.",
-        "definition": "Code representing state of the specimen, such as obtained, processed, used.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-SpecimenStatus-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -628,30 +544,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.type.value",
-        "path": "shr-oncology-BreastSpecimen-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -679,7 +571,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-CollectionSource-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Group-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Substance-model"
           }
         ],
         "mustSupport": false,
@@ -700,7 +605,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-CollectionTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -717,30 +625,6 @@
         "base": {
           "path": "shr-oncology-BreastSpecimen-model.collectionMethod",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-CollectionMethod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.collectionMethod.value",
-        "path": "shr-oncology-BreastSpecimen-model.collectionMethod.value",
-        "short": "Code representing how the specimen was obtained.",
-        "definition": "Code representing how the specimen was obtained.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-CollectionMethod-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -784,10 +668,6 @@
         "path": "shr-oncology-BreastSpecimen-model.collectionSite.value",
         "short": "A body site specific to the breast structure.",
         "definition": "A body site specific to the breast structure.",
-        "alias": [
-          "anatomicalLocation",
-          "breastSite"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -830,10 +710,6 @@
         "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
         "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
         "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "alias": [
-          "specimen",
-          "breastSpecimen"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -871,7 +747,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ReceivedTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -935,7 +811,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-HandlingRisk-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -956,7 +832,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecialHandling-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -967,6 +843,10 @@
         "id": "shr-oncology-BreastSpecimen-model.coldIschemiaTime",
         "path": "shr-oncology-BreastSpecimen-model.coldIschemiaTime",
         "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1948053"
+          },
           {
             "system": "http://loinc.org",
             "code": "44778-9",
@@ -984,7 +864,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-ColdIschemiaTime-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,

@@ -15,7 +15,7 @@
   "name": "BreastCancerPrimaryTumorClassificationModel",
   "title": "BC BreastCancerPrimaryTumorClassification Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -80,17 +80,20 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic",
-        "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "alias": [
-          "statementTopic"
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
         ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic",
           "min": 1,
           "max": "1"
         },
@@ -104,38 +107,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value",
-        "short": "T category",
-        "definition": "T category",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -149,8 +128,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.id",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.id",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.id",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -176,8 +155,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.extension",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.extension",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.extension",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -191,10 +170,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -215,8 +190,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.system",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.system",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.system",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -251,8 +226,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.version",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.version",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.version",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -285,8 +260,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.code",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.code",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.code",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -320,14 +295,14 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.display",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.display",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -360,8 +335,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.userSelected",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.userSelected",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -395,29 +370,35 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.findingMethod",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.findingMethod",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.findingMethod",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.findingMethod",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.findingMethod",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.details",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.details",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.details",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.details",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -429,13 +410,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.details",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.details",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -443,16 +424,16 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.media",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.media",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.media",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.media",
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.media",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.media",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -464,38 +445,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category",
-          "min": 1,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category",
           "min": 1,
           "max": "1"
         },
@@ -509,8 +466,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.id",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.id",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.id",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -519,7 +476,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
@@ -536,8 +493,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.extension",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.extension",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.extension",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -551,14 +508,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -575,8 +528,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.system",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.system",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.system",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -584,8 +537,8 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.system",
-          "min": 1,
+          "path": "Coding.system",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -611,15 +564,15 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.version",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.version",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.version",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.version",
+          "path": "Coding.version",
           "min": 0,
           "max": "1"
         },
@@ -645,16 +598,16 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.code",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.code",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.code",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.code",
-          "min": 1,
+          "path": "Coding.code",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -662,7 +615,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "laboratory",
+        "fixedCode": "exam",
         "isSummary": true,
         "mapping": [
           {
@@ -680,21 +633,21 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.display",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.display",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.display",
+          "path": "Coding.display",
           "min": 0,
           "max": "1"
         },
@@ -720,8 +673,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.userSelected",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.userSelected",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.userSelected",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -729,7 +682,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.userSelected",
+          "path": "Coding.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -755,26 +708,20 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.anatomicalLocation",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.anatomicalLocation",
-        "code": [
-          {
-            "system": "http://loinc.org",
-            "code": "72369-2"
-          }
-        ],
-        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.breastSite",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.anatomicalLocation",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.breastSite",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
           }
         ],
         "mustSupport": false,
@@ -782,14 +729,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus",
         "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus",
           "min": 0,
           "max": "1"
         },
@@ -803,8 +750,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus.valueIdentifier",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus.valueIdentifier",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus.valueIdentifier",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -813,13 +760,10 @@
         ],
         "short": "A unique string that identifies a specific person or thing.",
         "definition": "A unique string that identifies a specific person or thing.",
-        "alias": [
-          "identifier"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus.valueIdentifier",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus.valueIdentifier",
           "min": 1,
           "max": "1"
         },
@@ -833,16 +777,16 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.device",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.device",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.device",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.device",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.device",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -855,16 +799,16 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.specimen",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.specimen",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.specimen",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.specimen",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.specimen",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
@@ -877,20 +821,24 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.precondition",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.precondition",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.precondition",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.precondition",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.precondition",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -898,8 +846,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.referenceRange",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.referenceRange",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.referenceRange",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -911,7 +859,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.referenceRange",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -925,14 +873,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -941,8 +889,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent.stageSuffix",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent.stageSuffix",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -955,7 +903,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent.stageSuffix",
           "min": 0,
           "max": "1"
         },
@@ -969,14 +917,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers",
         "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
         "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers",
           "min": 0,
           "max": "1"
         },
@@ -990,14 +938,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation",
         "short": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.",
         "definition": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation",
           "min": 0,
           "max": "1"
         },
@@ -1006,8 +954,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorDimensions",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorDimensions",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorDimensions",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorDimensions",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -1020,7 +968,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorDimensions",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorDimensions",
           "min": 0,
           "max": "1"
         },
@@ -1035,8 +983,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorMargins",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorMargins",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorMargins",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorMargins",
         "code": [
           {
             "system": "http://loinc.org",
@@ -1049,7 +997,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorMargins",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorMargins",
           "min": 0,
           "max": "1"
         },
@@ -1064,34 +1012,10 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.diagnosticService",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.diagnosticService",
-        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.diagnosticService",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext",
         "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext",
         "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1122,30 +1046,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1154,8 +1054,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.id",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.id",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.id",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1164,7 +1064,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.id",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.id",
           "min": 0,
           "max": "1"
         },
@@ -1181,8 +1081,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.extension",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.extension",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.extension",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1196,14 +1096,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.extension",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.extension",
           "min": 0,
           "max": "*"
         },
@@ -1220,8 +1116,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.system",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.system",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.system",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1229,7 +1125,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.system",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.system",
           "min": 1,
           "max": "1"
         },
@@ -1256,15 +1152,15 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.version",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.version",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.version",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.version",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.version",
           "min": 0,
           "max": "1"
         },
@@ -1290,15 +1186,15 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.code",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.code",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.code",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.code",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.code",
           "min": 1,
           "max": "1"
         },
@@ -1325,21 +1221,21 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.display",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.display",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.display",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.display",
           "min": 0,
           "max": "1"
         },
@@ -1365,8 +1261,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.userSelected",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.userSelected",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.userSelected",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1374,7 +1270,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.userSelected",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -1440,12 +1336,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.findingStatus",
@@ -1461,12 +1363,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.relevantTime",
@@ -1482,7 +1390,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -1515,9 +1426,6 @@
         "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -1544,30 +1452,6 @@
         "base": {
           "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1605,12 +1489,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.issued",
@@ -1626,7 +1516,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -1647,7 +1537,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,
@@ -1696,17 +1599,20 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic",
-        "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "alias": [
-          "statementTopic"
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
         ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic",
           "min": 1,
           "max": "1"
         },
@@ -1720,38 +1626,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value",
-        "short": "T category",
-        "definition": "T category",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -1765,8 +1647,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.id",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.id",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.id",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1792,8 +1674,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.extension",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.extension",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.extension",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1807,10 +1689,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1831,8 +1709,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.system",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.system",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.system",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1867,8 +1745,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.version",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.version",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.version",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1901,8 +1779,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.code",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.code",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.code",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1936,14 +1814,14 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.display",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.display",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1976,8 +1854,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.userSelected",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.topicCode.value.userSelected",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.userSelected",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2011,29 +1889,35 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.findingMethod",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.findingMethod",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.findingMethod",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.findingMethod",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.findingMethod",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.details",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.details",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.details",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.details",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2045,13 +1929,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.details",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.details",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -2059,16 +1943,16 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.media",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.media",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.media",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.media",
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.media",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.media",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -2080,38 +1964,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category",
-          "min": 1,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value",
-        "short": "Code representing a class or division of people or things having particular shared characteristics",
-        "definition": "Code representing a class or division of people or things having particular shared characteristics",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category",
           "min": 1,
           "max": "1"
         },
@@ -2125,8 +1985,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.id",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.id",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.id",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2135,7 +1995,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
@@ -2152,8 +2012,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.extension",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.extension",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.extension",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2167,14 +2027,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2191,8 +2047,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.system",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.system",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.system",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2200,8 +2056,8 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.system",
-          "min": 1,
+          "path": "Coding.system",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -2227,15 +2083,15 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.version",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.version",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.version",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.version",
+          "path": "Coding.version",
           "min": 0,
           "max": "1"
         },
@@ -2261,16 +2117,16 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.code",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.code",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.code",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.code",
-          "min": 1,
+          "path": "Coding.code",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -2278,7 +2134,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "laboratory",
+        "fixedCode": "exam",
         "isSummary": true,
         "mapping": [
           {
@@ -2296,21 +2152,21 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.display",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.display",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.display",
+          "path": "Coding.display",
           "min": 0,
           "max": "1"
         },
@@ -2336,8 +2192,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.userSelected",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.userSelected",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.userSelected",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2345,7 +2201,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.category.value.userSelected",
+          "path": "Coding.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -2371,26 +2227,20 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.anatomicalLocation",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.anatomicalLocation",
-        "code": [
-          {
-            "system": "http://loinc.org",
-            "code": "72369-2"
-          }
-        ],
-        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.breastSite",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.anatomicalLocation",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.breastSite",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
           }
         ],
         "mustSupport": false,
@@ -2398,14 +2248,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus",
         "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus",
           "min": 0,
           "max": "1"
         },
@@ -2419,8 +2269,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus.valueIdentifier",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus.valueIdentifier",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus.valueIdentifier",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2429,13 +2279,10 @@
         ],
         "short": "A unique string that identifies a specific person or thing.",
         "definition": "A unique string that identifies a specific person or thing.",
-        "alias": [
-          "identifier"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.focus.valueIdentifier",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.focus.valueIdentifier",
           "min": 1,
           "max": "1"
         },
@@ -2449,16 +2296,16 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.device",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.device",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.device",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.device",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.device",
           "min": 0,
-          "max": "1"
+          "max": "0"
         },
         "type": [
           {
@@ -2471,16 +2318,16 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.specimen",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.specimen",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.specimen",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.specimen",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.specimen",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
@@ -2493,20 +2340,24 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.precondition",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.precondition",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.precondition",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.precondition",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.precondition",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -2514,8 +2365,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.referenceRange",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.referenceRange",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.referenceRange",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2527,7 +2378,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.referenceRange",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -2541,14 +2392,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -2557,8 +2408,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent.stageSuffix",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent.stageSuffix",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2571,7 +2422,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.evaluationComponent.stageSuffix",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.evaluationComponent.stageSuffix",
           "min": 0,
           "max": "1"
         },
@@ -2585,14 +2436,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers",
         "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
         "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers",
           "min": 0,
           "max": "1"
         },
@@ -2606,14 +2457,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation",
         "short": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.",
         "definition": "Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation",
           "min": 0,
           "max": "1"
         },
@@ -2622,8 +2473,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorDimensions",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorDimensions",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorDimensions",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorDimensions",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -2636,7 +2487,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorDimensions",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorDimensions",
           "min": 0,
           "max": "1"
         },
@@ -2651,8 +2502,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorMargins",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorMargins",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorMargins",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorMargins",
         "code": [
           {
             "system": "http://loinc.org",
@@ -2665,7 +2516,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.panelMembers.observation.tumorMargins",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationTopic.panelMembers.observation.tumorMargins",
           "min": 0,
           "max": "1"
         },
@@ -2680,34 +2531,10 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.diagnosticService",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.diagnosticService",
-        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.laboratoryObservationTopic.diagnosticService",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-DiagnosticService-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext",
         "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext",
         "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
         "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -2738,30 +2565,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2770,8 +2573,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.id",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.id",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.id",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2780,7 +2583,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.id",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.id",
           "min": 0,
           "max": "1"
         },
@@ -2797,8 +2600,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.extension",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.extension",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.extension",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2812,14 +2615,10 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.extension",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.extension",
           "min": 0,
           "max": "*"
         },
@@ -2836,8 +2635,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.system",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.system",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.system",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2845,7 +2644,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.system",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.system",
           "min": 1,
           "max": "1"
         },
@@ -2872,15 +2671,15 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.version",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.version",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.version",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.version",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.version",
           "min": 0,
           "max": "1"
         },
@@ -2906,15 +2705,15 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.code",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.code",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.code",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.code",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.code",
           "min": 1,
           "max": "1"
         },
@@ -2941,21 +2740,21 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.display",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.display",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.display",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.display",
           "min": 0,
           "max": "1"
         },
@@ -2981,8 +2780,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.userSelected",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.userSelected",
+        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.userSelected",
+        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2990,7 +2789,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.value.userSelected",
+          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.contextCode.userSelected",
           "min": 0,
           "max": "1"
         },
@@ -3056,12 +2855,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.findingStatus",
@@ -3077,12 +2882,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.relevantTime",
@@ -3098,7 +2909,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -3131,9 +2945,6 @@
         "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -3160,30 +2971,6 @@
         "base": {
           "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue.value",
-        "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.exceptionValue.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -3221,12 +3008,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "shr-oncology-BreastCancerPrimaryTumorClassification-model.observationContext.issued",
@@ -3242,7 +3035,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -3263,7 +3056,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,

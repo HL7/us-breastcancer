@@ -15,7 +15,7 @@
   "name": "ClinicalNoteModel",
   "title": "BC ClinicalNote Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -84,9 +84,6 @@
         "path": "cimi-statement-ClinicalNote-model.findingTopic",
         "short": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.",
         "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
-        "alias": [
-          "statementTopic"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -111,13 +108,13 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.topicCode",
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.topicCode",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -132,18 +129,24 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.findingMethod",
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "cimi-statement-ClinicalNote-model.findingTopic.details",
@@ -159,13 +162,13 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.details",
-          "min": 0,
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.details",
+          "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -180,7 +183,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.media",
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.media",
           "min": 0,
           "max": "*"
         },
@@ -198,9 +201,6 @@
         "path": "cimi-statement-ClinicalNote-model.recordedContext",
         "short": "Context for recording a finding, used to indicate an evaluation has been made.",
         "definition": "Context for recording a finding, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -263,9 +263,6 @@
         "path": "cimi-statement-ClinicalNote-model.findingTopic",
         "short": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.",
         "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
-        "alias": [
-          "statementTopic"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -290,13 +287,13 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.topicCode",
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.topicCode",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -311,18 +308,24 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.findingMethod",
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "cimi-statement-ClinicalNote-model.findingTopic.details",
@@ -338,13 +341,13 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.details",
-          "min": 0,
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.details",
+          "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Details-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -359,7 +362,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-topic-FindingTopic-model.media",
+          "path": "cimi-statement-ClinicalNote-model.findingTopic.media",
           "min": 0,
           "max": "*"
         },
@@ -377,9 +380,6 @@
         "path": "cimi-statement-ClinicalNote-model.recordedContext",
         "short": "Context for recording a finding, used to indicate an evaluation has been made.",
         "definition": "Context for recording a finding, used to indicate an evaluation has been made.",
-        "alias": [
-          "statementContext"
-        ],
         "min": 1,
         "max": "1",
         "base": {

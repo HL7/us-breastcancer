@@ -15,7 +15,7 @@
   "name": "TumorMarginDescriptionModel",
   "title": "BC TumorMarginDescription Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "shr-oncology-TumorMarginDescription-model.value",
         "short": "Code representing description of the edge or border of tumor in situ by radiologist or of removed tumor by pathologist.",
         "definition": "Code representing description of the edge or border of tumor in situ by radiologist or of removed tumor by pathologist.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -94,7 +91,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -111,30 +108,6 @@
         "base": {
           "path": "shr-oncology-TumorMarginDescription-model.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-TumorMarginDescription-model.exceptionValue.value",
-        "path": "shr-oncology-TumorMarginDescription-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ExceptionValue-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -172,12 +145,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-TumorMarginDescription-model.referenceRange",
@@ -230,9 +209,6 @@
         "path": "shr-oncology-TumorMarginDescription-model.value",
         "short": "Code representing description of the edge or border of tumor in situ by radiologist or of removed tumor by pathologist.",
         "definition": "Code representing description of the edge or border of tumor in situ by radiologist or of removed tumor by pathologist.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -269,7 +245,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -286,30 +262,6 @@
         "base": {
           "path": "shr-oncology-TumorMarginDescription-model.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-TumorMarginDescription-model.exceptionValue.value",
-        "path": "shr-oncology-TumorMarginDescription-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ExceptionValue-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -347,12 +299,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "shr-oncology-TumorMarginDescription-model.referenceRange",

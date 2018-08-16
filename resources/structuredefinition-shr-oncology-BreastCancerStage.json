@@ -3,12 +3,12 @@
   "id": "shr-oncology-BreastCancerStage",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerStage Profile</b></p>\n  <p>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.oncology.BreastCancerStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  BreastCancerStageTopic.TopicCode maps to code\n  BreastCancerStageTopic.FindingMethod maps to method\n  BreastCancerStageTopic.Details maps to comment\n  BreastCancerStageTopic.Category maps to category\n  BreastCancerStageTopic.AnatomicalLocation maps to bodySite\n  BreastCancerStageTopic.Device maps to device\n  BreastCancerStageTopic.Specimen maps to specimen\n  BreastCancerStageTopic.ReferenceRange maps to referenceRange\n  BreastCancerStageTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  BreastCancerStageTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  BreastCancerStageTopic.ReferenceRange.Type maps to referenceRange.type\n  BreastCancerStageTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  BreastCancerStageTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\t\n  BreastCancerStageTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  BreastCancerStageTopic.EvaluationComponent._Concept maps to component.code\n  BreastCancerStageTopic.EvaluationComponent.Quantity maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.string maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.Range maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.Ratio maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.Media maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.time maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.dateTime maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  BreastCancerStageTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  BreastCancerStageTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  BreastCancerStageTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ObservationContext.ResultValue maps to value[x]\n  ObservationContext.ExceptionValue maps to dataAbsentReason\n  ObservationContext.Interpretation maps to interpretation\n  ObservationContext.Issued maps to issued\n  ObservationContext.FindingStatus maps to status\n  ObservationContext.RelevantTime maps to effective[x]\n  ObservationContext.DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastCancerStage Profile</b></p>\n  <p>The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>shr.oncology.BreastCancerStage maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  BreastCancerStageTopic.TopicCode maps to code\n  BreastCancerStageTopic.FindingMethod maps to method\n  BreastCancerStageTopic.Details maps to comment\n  BreastCancerStageTopic.Category maps to category\n  BreastCancerStageTopic.AnatomicalLocation maps to bodySite\n  BreastCancerStageTopic.Device maps to device\n  BreastCancerStageTopic.Specimen maps to specimen\n  BreastCancerStageTopic.ReferenceRange maps to referenceRange\n  BreastCancerStageTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  BreastCancerStageTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  BreastCancerStageTopic.ReferenceRange.Type maps to referenceRange.type\n  BreastCancerStageTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  BreastCancerStageTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  BreastCancerStageTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  BreastCancerStageTopic.EvaluationComponent._Concept maps to component.code\n  BreastCancerStageTopic.EvaluationComponent.Quantity maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.string maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.Range maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.Ratio maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.Media maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.time maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.dateTime maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  BreastCancerStageTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  BreastCancerStageTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  BreastCancerStageTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  BreastCancerStageTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ObservationContext.ResultValue maps to value[x]\n  ObservationContext.ExceptionValue maps to dataAbsentReason\n  ObservationContext.Interpretation maps to interpretation\n  ObservationContext.Issued maps to issued\n  ObservationContext.FindingStatus maps to status\n  ObservationContext.RelevantTime maps to effective[x]\n  ObservationContext.DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerStage",
   "name": "BreastCancerStageProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1113,7 +1113,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
           }
         ],
         "mustSupport": true,
@@ -1541,7 +1541,7 @@
         "comment": "Only used if not implicit in code for Observation.code.",
         "requirements": "In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.method",
           "min": 0,
@@ -4344,6 +4344,16 @@
         "fixedCode": "C2216702"
       },
       {
+        "id": "Observation:shr-oncology-BreastCancerStage.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
+          }
+        ]
+      },
+      {
         "id": "Observation:shr-oncology-BreastCancerStage.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "type": [
@@ -4383,6 +4393,8 @@
       {
         "id": "Observation:shr-oncology-BreastCancerStage.method",
         "path": "Observation.method",
+        "min": 0,
+        "max": "0",
         "binding": {
           "strength": "preferred",
           "valueSetReference": {

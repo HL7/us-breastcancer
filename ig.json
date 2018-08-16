@@ -53,9 +53,6 @@
     "StructureDefinition/cimi-entity-AccessionIdentifier": {
       "base": "StructureDefinition-cimi-entity-AccessionIdentifier.html"
     },
-    "StructureDefinition/shr-core-Address": {
-      "base": "StructureDefinition-shr-core-Address.html"
-    },
     "StructureDefinition/cimi-element-AnatomicalLocation": {
       "base": "StructureDefinition-cimi-element-AnatomicalLocation.html"
     },
@@ -112,9 +109,6 @@
     },
     "StructureDefinition/cimi-statement-ConditionPresenceStatement": {
       "base": "StructureDefinition-cimi-statement-ConditionPresenceStatement.html"
-    },
-    "StructureDefinition/shr-core-ContactPoint": {
-      "base": "StructureDefinition-shr-core-ContactPoint.html"
     },
     "StructureDefinition/shr-oncology-DCISNuclearGrade": {
       "base": "StructureDefinition-shr-oncology-DCISNuclearGrade.html"
@@ -182,6 +176,9 @@
     "StructureDefinition/cimi-entity-Patient": {
       "base": "StructureDefinition-cimi-entity-Patient.html"
     },
+    "StructureDefinition/cimi-core-PersonOfRecord": {
+      "base": "StructureDefinition-cimi-core-PersonOfRecord.html"
+    },
     "StructureDefinition/cimi-entity-Person": {
       "base": "StructureDefinition-cimi-entity-Person.html"
     },
@@ -228,10 +225,6 @@
       "base": "StructureDefinition-cimi-context-Abatement-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-AccessTime-extension": {
-      "base": "StructureDefinition-cimi-entity-AccessTime-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-entity-ActiveFlagAsaCodeableConcept-extension": {
       "base": "StructureDefinition-cimi-entity-ActiveFlagAsaCodeableConcept-extension.html",
       "template-base": "sd-extension.html"
@@ -250,10 +243,6 @@
     },
     "StructureDefinition/cimi-entity-AdministrativeGender-extension": {
       "base": "StructureDefinition-cimi-entity-AdministrativeGender-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-AnonymizedFlag-extension": {
-      "base": "StructureDefinition-cimi-entity-AnonymizedFlag-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-entity-Capacity-extension": {
@@ -292,14 +281,6 @@
       "base": "StructureDefinition-cimi-context-ContextCode-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-Country-extension": {
-      "base": "StructureDefinition-shr-core-Country-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-CountryOfIssue-extension": {
-      "base": "StructureDefinition-cimi-entity-CountryOfIssue-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-entity-DateOfBirth-extension": {
       "base": "StructureDefinition-cimi-entity-DateOfBirth-extension.html",
       "template-base": "sd-extension.html"
@@ -316,14 +297,6 @@
       "base": "StructureDefinition-shr-oncology-DistanceFromBreastSiteToNipple-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-DriversLicenseNumber-extension": {
-      "base": "StructureDefinition-cimi-entity-DriversLicenseNumber-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/shr-core-EffectiveTimePeriod-extension": {
-      "base": "StructureDefinition-shr-core-EffectiveTimePeriod-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-encounter-EncounterClass-extension": {
       "base": "StructureDefinition-cimi-encounter-EncounterClass-extension.html",
       "template-base": "sd-extension.html"
@@ -334,18 +307,6 @@
     },
     "StructureDefinition/cimi-context-ExceptionValue-extension": {
       "base": "StructureDefinition-cimi-context-ExceptionValue-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-ExternalHealthRecord-extension": {
-      "base": "StructureDefinition-cimi-entity-ExternalHealthRecord-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-FathersName-extension": {
-      "base": "StructureDefinition-cimi-entity-FathersName-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-FictionalPersonFlag-extension": {
-      "base": "StructureDefinition-cimi-entity-FictionalPersonFlag-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-topic-FindingMethod-extension": {
@@ -412,8 +373,8 @@
       "base": "StructureDefinition-cimi-element-PartOf-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-PassportNumber-extension": {
-      "base": "StructureDefinition-cimi-entity-PassportNumber-extension.html",
+    "StructureDefinition/cimi-entity-Patient-extension": {
+      "base": "StructureDefinition-cimi-entity-Patient-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-core-PersonOfRecord-extension": {
@@ -444,10 +405,6 @@
       "base": "StructureDefinition-cimi-entity-SequenceNumber-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-SocialSecurityNumber-extension": {
-      "base": "StructureDefinition-cimi-entity-SocialSecurityNumber-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-entity-SpecialHandling-extension": {
       "base": "StructureDefinition-cimi-entity-SpecialHandling-extension.html",
       "template-base": "sd-extension.html"
@@ -462,14 +419,6 @@
     },
     "StructureDefinition/cimi-entity-SpokenLanguageProficiency-extension": {
       "base": "StructureDefinition-cimi-entity-SpokenLanguageProficiency-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/shr-core-State-extension": {
-      "base": "StructureDefinition-shr-core-State-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-StateOfIssue-extension": {
-      "base": "StructureDefinition-cimi-entity-StateOfIssue-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-context-StatementContext-extension": {
@@ -498,10 +447,6 @@
     },
     "StructureDefinition/primitive-code-extension": {
       "base": "StructureDefinition-primitive-code-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-string-extension": {
-      "base": "StructureDefinition-primitive-string-extension.html",
       "template-base": "sd-extension.html"
     },
     "ValueSet/shr-core-AllUnitsVS": {
@@ -542,6 +487,9 @@
     },
     "ValueSet/cimi-context-DeltaFlagVS": {
       "base": "ValueSet-cimi-context-DeltaFlagVS.html"
+    },
+    "ValueSet/shr-oncology-EstrogenReceptorInterpretationTestsVS": {
+      "base": "ValueSet-shr-oncology-EstrogenReceptorInterpretationTestsVS.html"
     },
     "ValueSet/cimi-context-ExceptionValueVS": {
       "base": "ValueSet-cimi-context-ExceptionValueVS.html"
@@ -606,6 +554,9 @@
     "ValueSet/cimi-context-PresenceContextVS": {
       "base": "ValueSet-cimi-context-PresenceContextVS.html"
     },
+    "ValueSet/shr-oncology-ProgesteroneReceptorInterpretationTestsVS": {
+      "base": "ValueSet-shr-oncology-ProgesteroneReceptorInterpretationTestsVS.html"
+    },
     "ValueSet/shr-oncology-RecurrenceRiskScoreInterpretationVS": {
       "base": "ValueSet-shr-oncology-RecurrenceRiskScoreInterpretationVS.html"
     },
@@ -623,9 +574,6 @@
     },
     "ValueSet/shr-core-YesNoUnknownVS": {
       "base": "ValueSet-shr-core-YesNoUnknownVS.html"
-    },
-    "ValueSet/shr-core-YesNoVS": {
-      "base": "ValueSet-shr-core-YesNoVS.html"
     },
     "CodeSystem/cimi-element-AnatomicalDirectionCS": {
       "base": "CodeSystem-cimi-element-AnatomicalDirectionCS.html"
@@ -657,21 +605,11 @@
     "CodeSystem/shr-oncology-StageTimingPrefixCS": {
       "base": "CodeSystem-shr-oncology-StageTimingPrefixCS.html"
     },
-    "CodeSystem/shr-core-YesNoCS": {
-      "base": "CodeSystem-shr-core-YesNoCS.html"
-    },
     "CodeSystem/shr-core-YesNoUnknownCS": {
       "base": "CodeSystem-shr-core-YesNoUnknownCS.html"
     },
     "StructureDefinition/cimi-context-Abatement-model": {
       "base": "StructureDefinition-cimi-context-Abatement-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-AccessTime-model": {
-      "base": "StructureDefinition-cimi-entity-AccessTime-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -733,13 +671,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-AgeAtDeath-model": {
-      "base": "StructureDefinition-cimi-entity-AgeAtDeath-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-core-Age-model": {
       "base": "StructureDefinition-shr-core-Age-model.html",
       "template-base": "sd-logical.html",
@@ -763,13 +694,6 @@
     },
     "StructureDefinition/cimi-element-AnatomicalLocation-model": {
       "base": "StructureDefinition-cimi-element-AnatomicalLocation-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-AnonymizedFlag-model": {
-      "base": "StructureDefinition-cimi-entity-AnonymizedFlag-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -831,13 +755,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-oncology-AverageStainingIntensity-model": {
-      "base": "StructureDefinition-shr-oncology-AverageStainingIntensity-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-oncology-BRCA1Variant-model": {
       "base": "StructureDefinition-shr-oncology-BRCA1Variant-model.html",
       "template-base": "sd-logical.html",
@@ -854,13 +771,6 @@
     },
     "StructureDefinition/shr-core-BinaryData-model": {
       "base": "StructureDefinition-shr-core-BinaryData-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-BirthSex-model": {
-      "base": "StructureDefinition-cimi-entity-BirthSex-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1181,22 +1091,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-CountryOfIssue-model": {
-      "base": "StructureDefinition-cimi-entity-CountryOfIssue-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-core-CreationTime-model": {
       "base": "StructureDefinition-shr-core-CreationTime-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-context-Criticality-model": {
-      "base": "StructureDefinition-cimi-context-Criticality-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1211,20 +1107,6 @@
     },
     "StructureDefinition/cimi-entity-DateOfBirth-model": {
       "base": "StructureDefinition-cimi-entity-DateOfBirth-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-DateOfDeath-model": {
-      "base": "StructureDefinition-cimi-entity-DateOfDeath-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-Deceased-model": {
-      "base": "StructureDefinition-cimi-entity-Deceased-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1307,13 +1189,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-DriversLicenseNumber-model": {
-      "base": "StructureDefinition-cimi-entity-DriversLicenseNumber-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-core-EffectiveTimePeriod-model": {
       "base": "StructureDefinition-shr-core-EffectiveTimePeriod-model.html",
       "template-base": "sd-logical.html",
@@ -1363,22 +1238,22 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-EstrogenReceptorAverageStainingIntensity-model": {
+      "base": "StructureDefinition-shr-oncology-EstrogenReceptorAverageStainingIntensity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-EstrogenReceptorNuclearPositivity-model": {
+      "base": "StructureDefinition-shr-oncology-EstrogenReceptorNuclearPositivity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/shr-oncology-EstrogenReceptorStatus-model": {
       "base": "StructureDefinition-shr-oncology-EstrogenReceptorStatus-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-EthnicityDetail-model": {
-      "base": "StructureDefinition-cimi-entity-EthnicityDetail-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-Ethnicity-model": {
-      "base": "StructureDefinition-cimi-entity-Ethnicity-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1419,13 +1294,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-ExternalHealthRecord-model": {
-      "base": "StructureDefinition-cimi-entity-ExternalHealthRecord-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model": {
       "base": "StructureDefinition-shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model.html",
       "template-base": "sd-logical.html",
@@ -1435,20 +1303,6 @@
     },
     "StructureDefinition/cimi-element-FamilyName-model": {
       "base": "StructureDefinition-cimi-element-FamilyName-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-FathersName-model": {
-      "base": "StructureDefinition-cimi-entity-FathersName-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-FictionalPersonFlag-model": {
-      "base": "StructureDefinition-cimi-entity-FictionalPersonFlag-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1797,13 +1651,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-MedicalInterpreterNeeded-model": {
-      "base": "StructureDefinition-cimi-entity-MedicalInterpreterNeeded-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-entity-MedicationIngredient-model": {
       "base": "StructureDefinition-cimi-entity-MedicationIngredient-model.html",
       "template-base": "sd-logical.html",
@@ -1846,27 +1693,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-MothersMaidenName-model": {
-      "base": "StructureDefinition-cimi-entity-MothersMaidenName-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-MultipleBirth-model": {
-      "base": "StructureDefinition-cimi-entity-MultipleBirth-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-MultipleBirthOrder-model": {
-      "base": "StructureDefinition-cimi-entity-MultipleBirthOrder-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-element-NameAsText-model": {
       "base": "StructureDefinition-cimi-element-NameAsText-model.html",
       "template-base": "sd-logical.html",
@@ -1897,13 +1723,6 @@
     },
     "StructureDefinition/shr-oncology-NuclearPleomorphismScore-model": {
       "base": "StructureDefinition-shr-oncology-NuclearPleomorphismScore-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/shr-oncology-NuclearPositivity-model": {
-      "base": "StructureDefinition-shr-oncology-NuclearPositivity-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -2063,13 +1882,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-PassportNumber-model": {
-      "base": "StructureDefinition-cimi-entity-PassportNumber-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-entity-Patient-model": {
       "base": "StructureDefinition-cimi-entity-Patient-model.html",
       "template-base": "sd-logical.html",
@@ -2093,13 +1905,6 @@
     },
     "StructureDefinition/cimi-core-PersonOfRecord-model": {
       "base": "StructureDefinition-cimi-core-PersonOfRecord-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-PlaceOfBirth-model": {
-      "base": "StructureDefinition-cimi-entity-PlaceOfBirth-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -2161,6 +1966,20 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-ProgesteroneReceptorAverageStainingIntensity-model": {
+      "base": "StructureDefinition-shr-oncology-ProgesteroneReceptorAverageStainingIntensity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-ProgesteroneReceptorNuclearPositivity-model": {
+      "base": "StructureDefinition-shr-oncology-ProgesteroneReceptorNuclearPositivity-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/shr-oncology-ProgesteroneReceptorStatus-model": {
       "base": "StructureDefinition-shr-oncology-ProgesteroneReceptorStatus-model.html",
       "template-base": "sd-logical.html",
@@ -2191,20 +2010,6 @@
     },
     "StructureDefinition/shr-core-Quantity-model": {
       "base": "StructureDefinition-shr-core-Quantity-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-RaceDetail-model": {
-      "base": "StructureDefinition-cimi-entity-RaceDetail-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-Race-model": {
-      "base": "StructureDefinition-cimi-entity-Race-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -2336,13 +2141,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-SocialSecurityNumber-model": {
-      "base": "StructureDefinition-cimi-entity-SocialSecurityNumber-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-entity-SourceSpecimen-model": {
       "base": "StructureDefinition-cimi-entity-SourceSpecimen-model.html",
       "template-base": "sd-logical.html",
@@ -2429,13 +2227,6 @@
     },
     "StructureDefinition/shr-core-State-model": {
       "base": "StructureDefinition-shr-core-State-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-StateOfIssue-model": {
-      "base": "StructureDefinition-cimi-entity-StateOfIssue-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

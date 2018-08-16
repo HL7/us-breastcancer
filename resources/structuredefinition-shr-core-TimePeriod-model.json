@@ -15,7 +15,7 @@
   "name": "TimePeriodModel",
   "title": "BC TimePeriod Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -76,7 +76,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriodStart-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -103,7 +103,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriodEnd-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -149,7 +149,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriodStart-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -176,7 +176,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriodEnd-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,

@@ -15,7 +15,7 @@
   "name": "OnsetModel",
   "title": "BC Onset Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -61,13 +61,6 @@
         "path": "cimi-context-Onset-model.value[x]",
         "short": "Choice of types representing the beginning or first appearance of a mental or physical disorder.",
         "definition": "Choice of types representing the beginning or first appearance of a mental or physical disorder.",
-        "alias": [
-          "dateTime",
-          "age",
-          "timePeriod",
-          "range",
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -120,13 +113,6 @@
         "path": "cimi-context-Onset-model.value[x]",
         "short": "Choice of types representing the beginning or first appearance of a mental or physical disorder.",
         "definition": "Choice of types representing the beginning or first appearance of a mental or physical disorder.",
-        "alias": [
-          "dateTime",
-          "age",
-          "timePeriod",
-          "range",
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {

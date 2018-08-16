@@ -15,7 +15,7 @@
   "name": "ContextCodeModel",
   "title": "BC ContextCode Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-context-ContextCode-model.value",
         "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-context-ContextCode-model.value",
         "short": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
         "definition": "Code representing a code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {

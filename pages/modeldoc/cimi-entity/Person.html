@@ -191,54 +191,6 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../cimi-entity/AnonymizedFlag.html">AnonymizedFlag</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Flag indicating if personally identifiable information has been withheld or disguised.</p></div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
-          
-                      <a href="../cimi-entity/AnonymizedFlag.html">AnonymizedFlag</a>
-                    
-        </div>
-                        <div class="block">0..1</div>
-            </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../cimi-entity/FictionalPersonFlag.html">FictionalPersonFlag</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Flag indicating if this record represents a fictional (synthetic, not real) person.</p></div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
-          
-                      <a href="../cimi-entity/FictionalPersonFlag.html">FictionalPersonFlag</a>
-                    
-        </div>
-                        <div class="block">0..1</div>
-            </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
       <code><strong><a href="../cimi-entity/DateOfBirth.html">DateOfBirth</a></strong></code>
     
     </div>
@@ -327,7 +279,7 @@ if (location.href.indexOf('is-external=true') == -1) {
                       <a href="../cimi-entity/Headshot.html">Headshot</a>
                     
         </div>
-                        <div class="block">0..1</div>
+                        <div class="block">0..*</div>
             </td>
 </tr>                        
   <tr class="altColor">
@@ -400,30 +352,6 @@ if (location.href.indexOf('is-external=true') == -1) {
                     
         </div>
                         <div class="block">0..1</div>
-            </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../cimi-entity/ExternalHealthRecord.html">ExternalHealthRecord</a></strong></code>
-    
-    </div>
-    <div class="block"><p>A health record other than the current health record; may have been used to help populate the current record.</p></div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
-          
-                      <a href="../cimi-entity/ExternalHealthRecord.html">ref(ExternalHealthRecord)</a>
-                    
-        </div>
-                        <div class="block">0..*</div>
             </td>
 </tr>            </table>                                            <ul class="blockList">
                                       <li class="blockList">

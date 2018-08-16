@@ -15,7 +15,7 @@
   "name": "ResourceSizeModel",
   "title": "BC ResourceSize Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "shr-core-ResourceSize-model.value",
         "short": "UnsignedInt representing number of bytes of content in the resource (if url provided)",
         "definition": "UnsignedInt representing number of bytes of content in the resource (if url provided)",
-        "alias": [
-          "unsignedInt"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "shr-core-ResourceSize-model.value",
         "short": "UnsignedInt representing number of bytes of content in the resource (if url provided)",
         "definition": "UnsignedInt representing number of bytes of content in the resource (if url provided)",
-        "alias": [
-          "unsignedInt"
-        ],
         "min": 1,
         "max": "1",
         "base": {

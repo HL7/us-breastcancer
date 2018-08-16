@@ -15,7 +15,7 @@
   "name": "ObservationContextModel",
   "title": "BC ObservationContext Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -64,30 +64,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-context-ObservationContext-model.contextCode.value",
-        "path": "cimi-context-ObservationContext-model.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -96,8 +72,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.id",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.id",
+        "id": "cimi-context-ObservationContext-model.contextCode.id",
+        "path": "cimi-context-ObservationContext-model.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -123,8 +99,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.extension",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.extension",
+        "id": "cimi-context-ObservationContext-model.contextCode.extension",
+        "path": "cimi-context-ObservationContext-model.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -138,10 +114,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -162,8 +134,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.system",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.system",
+        "id": "cimi-context-ObservationContext-model.contextCode.system",
+        "path": "cimi-context-ObservationContext-model.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -198,8 +170,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.version",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.version",
+        "id": "cimi-context-ObservationContext-model.contextCode.version",
+        "path": "cimi-context-ObservationContext-model.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -232,8 +204,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.code",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.code",
+        "id": "cimi-context-ObservationContext-model.contextCode.code",
+        "path": "cimi-context-ObservationContext-model.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -267,14 +239,14 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.display",
+        "id": "cimi-context-ObservationContext-model.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "cimi-context-ObservationContext-model.contextCode.value.display",
+        "path": "cimi-context-ObservationContext-model.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -307,8 +279,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.userSelected",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.userSelected",
+        "id": "cimi-context-ObservationContext-model.contextCode.userSelected",
+        "path": "cimi-context-ObservationContext-model.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -382,12 +354,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "cimi-context-ObservationContext-model.findingStatus",
@@ -403,12 +381,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "cimi-context-ObservationContext-model.relevantTime",
@@ -424,7 +408,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -445,7 +432,31 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ResultValue-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -462,30 +473,6 @@
         "base": {
           "path": "cimi-context-ObservationContext-model.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-context-ObservationContext-model.exceptionValue.value",
-        "path": "cimi-context-ObservationContext-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ExceptionValue-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -523,12 +510,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "cimi-context-ObservationContext-model.issued",
@@ -544,7 +537,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -565,7 +558,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,
@@ -605,30 +611,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-context-ObservationContext-model.contextCode.value",
-        "path": "cimi-context-ObservationContext-model.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -637,8 +619,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.id",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.id",
+        "id": "cimi-context-ObservationContext-model.contextCode.id",
+        "path": "cimi-context-ObservationContext-model.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -664,8 +646,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.extension",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.extension",
+        "id": "cimi-context-ObservationContext-model.contextCode.extension",
+        "path": "cimi-context-ObservationContext-model.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -679,10 +661,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -703,8 +681,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.system",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.system",
+        "id": "cimi-context-ObservationContext-model.contextCode.system",
+        "path": "cimi-context-ObservationContext-model.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -739,8 +717,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.version",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.version",
+        "id": "cimi-context-ObservationContext-model.contextCode.version",
+        "path": "cimi-context-ObservationContext-model.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -773,8 +751,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.code",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.code",
+        "id": "cimi-context-ObservationContext-model.contextCode.code",
+        "path": "cimi-context-ObservationContext-model.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -808,14 +786,14 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.display",
+        "id": "cimi-context-ObservationContext-model.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "cimi-context-ObservationContext-model.contextCode.value.display",
+        "path": "cimi-context-ObservationContext-model.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -848,8 +826,8 @@
         ]
       },
       {
-        "id": "cimi-context-ObservationContext-model.contextCode.value.userSelected",
-        "path": "cimi-context-ObservationContext-model.contextCode.value.userSelected",
+        "id": "cimi-context-ObservationContext-model.contextCode.userSelected",
+        "path": "cimi-context-ObservationContext-model.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -923,12 +901,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "cimi-context-ObservationContext-model.findingStatus",
@@ -944,12 +928,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-FindingStatus-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-status"
+          }
+        }
       },
       {
         "id": "cimi-context-ObservationContext-model.relevantTime",
@@ -965,7 +955,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -986,7 +979,31 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ResultValue-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Quantity-model"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Ratio-model"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -1003,30 +1020,6 @@
         "base": {
           "path": "cimi-context-ObservationContext-model.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-context-ObservationContext-model.exceptionValue.value",
-        "path": "cimi-context-ObservationContext-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-context-ExceptionValue-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1064,12 +1057,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "cimi-context-ObservationContext-model.issued",
@@ -1085,7 +1084,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Issued-model"
+            "code": "instant"
           }
         ],
         "mustSupport": false,
@@ -1106,7 +1105,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Observer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Practitioner-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Organization-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
           }
         ],
         "mustSupport": false,

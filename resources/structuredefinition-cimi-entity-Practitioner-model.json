@@ -15,7 +15,7 @@
   "name": "PractitionerModel",
   "title": "BC Practitioner Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -98,67 +98,13 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.humanName",
+          "path": "cimi-entity-Practitioner-model.person.humanName",
           "min": 1,
           "max": "*"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "path": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C3858751"
-          }
-        ],
-        "short": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "definition": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.anonymizedFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnonymizedFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "path": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0887933"
-          }
-        ],
-        "short": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "definition": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.fictionalPersonFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-FictionalPersonFlag-model"
           }
         ],
         "mustSupport": false,
@@ -183,13 +129,16 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.dateOfBirth",
+          "path": "cimi-entity-Practitioner-model.person.dateOfBirth",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-DateOfBirth-model"
+            "code": "date"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -210,18 +159,24 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.administrativeGender",
+          "path": "cimi-entity-Practitioner-model.person.administrativeGender",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AdministrativeGender-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
+        }
       },
       {
         "id": "cimi-entity-Practitioner-model.person.address",
@@ -237,7 +192,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.address",
+          "path": "cimi-entity-Practitioner-model.person.address",
           "min": 0,
           "max": "*"
         },
@@ -256,15 +211,15 @@
         "short": "A photograph showing a person's face.",
         "definition": "A photograph showing a person's face.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.headshot",
+          "path": "cimi-entity-Practitioner-model.person.headshot",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Headshot-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
           }
         ],
         "mustSupport": false,
@@ -285,7 +240,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.contactPoint",
+          "path": "cimi-entity-Practitioner-model.person.contactPoint",
           "min": 0,
           "max": "*"
         },
@@ -306,7 +261,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.languageUsed",
+          "path": "cimi-entity-Practitioner-model.person.languageUsed",
           "min": 0,
           "max": "*"
         },
@@ -327,35 +282,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.activeFlag",
+          "path": "cimi-entity-Practitioner-model.person.activeFlag",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ActiveFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "path": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "short": "A health record other than the current health record; may have been used to help populate the current record.",
-        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "cimi-entity-Person-model.externalHealthRecord",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ExternalHealthRecord-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
@@ -477,67 +410,13 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.humanName",
+          "path": "cimi-entity-Practitioner-model.person.humanName",
           "min": 1,
           "max": "*"
         },
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "path": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C3858751"
-          }
-        ],
-        "short": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "definition": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.anonymizedFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AnonymizedFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "path": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0887933"
-          }
-        ],
-        "short": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "definition": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.fictionalPersonFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-FictionalPersonFlag-model"
           }
         ],
         "mustSupport": false,
@@ -562,13 +441,16 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.dateOfBirth",
+          "path": "cimi-entity-Practitioner-model.person.dateOfBirth",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-DateOfBirth-model"
+            "code": "date"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -589,18 +471,24 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.administrativeGender",
+          "path": "cimi-entity-Practitioner-model.person.administrativeGender",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AdministrativeGender-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
+        }
       },
       {
         "id": "cimi-entity-Practitioner-model.person.address",
@@ -616,7 +504,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.address",
+          "path": "cimi-entity-Practitioner-model.person.address",
           "min": 0,
           "max": "*"
         },
@@ -635,15 +523,15 @@
         "short": "A photograph showing a person's face.",
         "definition": "A photograph showing a person's face.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.headshot",
+          "path": "cimi-entity-Practitioner-model.person.headshot",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Headshot-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
           }
         ],
         "mustSupport": false,
@@ -664,7 +552,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.contactPoint",
+          "path": "cimi-entity-Practitioner-model.person.contactPoint",
           "min": 0,
           "max": "*"
         },
@@ -685,7 +573,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.languageUsed",
+          "path": "cimi-entity-Practitioner-model.person.languageUsed",
           "min": 0,
           "max": "*"
         },
@@ -706,35 +594,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.activeFlag",
+          "path": "cimi-entity-Practitioner-model.person.activeFlag",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ActiveFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "path": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "short": "A health record other than the current health record; may have been used to help populate the current record.",
-        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "cimi-entity-Person-model.externalHealthRecord",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-ExternalHealthRecord-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,

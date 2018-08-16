@@ -15,7 +15,7 @@
   "name": "ColdIschemiaTimeModel",
   "title": "BC ColdIschemiaTime Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -68,9 +68,6 @@
         ],
         "short": "TimePeriod representing the time period between the chilling of a tissue or tissue sample and the time it is warmed.",
         "definition": "TimePeriod representing the time period between the chilling of a tissue or tissue sample and the time it is warmed.\nCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing maps to FHIR Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (and beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
-        "alias": [
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -117,9 +114,6 @@
         ],
         "short": "TimePeriod representing the time period between the chilling of a tissue or tissue sample and the time it is warmed.",
         "definition": "TimePeriod representing the time period between the chilling of a tissue or tissue sample and the time it is warmed.\nCIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a 'SpecimenProcessingPerformed' clinical statement, mapped to FHIR Procedure. However, specimen processing maps to FHIR Specimen.processing, part of the Specimen resource. It would be a difficult mapping exercise (and beyond the scope of this IG) to express the mapping rule that any CIMI SpecimenProcessingPerformed clinical statement needs to mapped to FHIR by (1) finding the corresponding Specimen entity, and (2) mapping the content of (possibly multiple) SpecimenProcessingPerformed into the FHIR Specimen resource. To avoid this complexity, the breast cancer model expresses the cold ischemia time as an attribute of the BreastSpecimen rather than a separate procedure.",
-        "alias": [
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {

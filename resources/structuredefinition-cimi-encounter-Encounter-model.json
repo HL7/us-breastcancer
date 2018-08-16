@@ -15,7 +15,7 @@
   "name": "EncounterModel",
   "title": "BC Encounter Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -86,7 +86,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-EncounterClass-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -107,12 +107,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-EncounterType-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"
+          }
+        }
       },
       {
         "id": "cimi-encounter-Encounter-model.timePeriod",
@@ -150,27 +156,6 @@
             "code": "C0449438"
           }
         ],
-        "short": "The current standing or state.",
-        "definition": "The current standing or state.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-encounter-Encounter-model.status",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Status-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-encounter-Encounter-model.status.value[x]",
-        "path": "cimi-encounter-Encounter-model.status.value[x]",
         "slicing": {
           "discriminator": [
             {
@@ -181,17 +166,12 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Choice of types representing the current standing or state.",
-        "definition": "Choice of types representing the current standing or state.",
-        "alias": [
-          "code",
-          "coding",
-          "codeableConcept"
-        ],
+        "short": "The current standing or state.",
+        "definition": "The current standing or state.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-element-Status-model.value[x]",
+          "path": "cimi-encounter-Encounter-model.status",
           "min": 1,
           "max": "1"
         },
@@ -216,7 +196,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-element-Status-model.value[x]",
+          "path": "cimi-encounter-Encounter-model.status.valueCode",
           "min": 1,
           "max": "1"
         },
@@ -261,10 +241,6 @@
         "path": "cimi-encounter-Encounter-model.partOf.value",
         "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
-        "alias": [
-          "independent",
-          "encounter"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -387,7 +363,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-EncounterClass-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -408,12 +384,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-EncounterType-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"
+          }
+        }
       },
       {
         "id": "cimi-encounter-Encounter-model.timePeriod",
@@ -451,27 +433,6 @@
             "code": "C0449438"
           }
         ],
-        "short": "The current standing or state.",
-        "definition": "The current standing or state.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-encounter-Encounter-model.status",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Status-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-encounter-Encounter-model.status.value[x]",
-        "path": "cimi-encounter-Encounter-model.status.value[x]",
         "slicing": {
           "discriminator": [
             {
@@ -482,17 +443,12 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Choice of types representing the current standing or state.",
-        "definition": "Choice of types representing the current standing or state.",
-        "alias": [
-          "code",
-          "coding",
-          "codeableConcept"
-        ],
+        "short": "The current standing or state.",
+        "definition": "The current standing or state.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-element-Status-model.value[x]",
+          "path": "cimi-encounter-Encounter-model.status",
           "min": 1,
           "max": "1"
         },
@@ -517,7 +473,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-element-Status-model.value[x]",
+          "path": "cimi-encounter-Encounter-model.status.valueCode",
           "min": 1,
           "max": "1"
         },
@@ -562,10 +518,6 @@
         "path": "cimi-encounter-Encounter-model.partOf.value",
         "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
-        "alias": [
-          "independent",
-          "encounter"
-        ],
         "min": 1,
         "max": "1",
         "base": {

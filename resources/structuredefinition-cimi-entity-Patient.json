@@ -3,12 +3,12 @@
   "id": "cimi-entity-Patient",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Patient Profile</b></p>\n  <p>A person in the role of a patient, including extended demographic information about the subject of this health record.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.entity.Patient maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  Person.ActiveFlag maps to active\n  Person.HumanName maps to name\n  Person.AdministrativeGender maps to gender\n  Person.Headshot maps to photo\n  Person.Address maps to address\n  Person.ContactPoint maps to telecom\n  Person.LanguageUsed maps to communication\n  Person.DateOfBirth maps to birthDate\n  PlaceOfBirth maps to http://hl7.org/fhir/StructureDefinition/birthPlace\n  MultipleBirth maps to multipleBirth[x].boolean\n  MultipleBirth.MultipleBirthOrder maps to multipleBirth[x].integer\n  BirthSex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  MaritalStatus maps to maritalStatus\n  MothersMaidenName maps to http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\n  MedicalInterpreterNeeded maps to http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired\n  Deceased maps to deceased[x].boolean\n  Deceased.DateOfDeath maps to deceased[x].dateTime\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC Patient Profile</b></p>\n  <p>A person in the role of a patient, including extended demographic information about the subject of this health record.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.entity.Patient maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  Person.ActiveFlag maps to active\n  Person.HumanName maps to name\n  Person.AdministrativeGender maps to gender\n  Person.Headshot maps to photo\n  Person.Address maps to address\n  Person.ContactPoint maps to telecom\n  Person.LanguageUsed maps to communication\n  Person.DateOfBirth maps to birthDate\n  MaritalStatus maps to maritalStatus\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient",
   "name": "PatientProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -343,6 +343,7 @@
         "id": "Patient:cimi-entity-Patient.extension:race",
         "path": "Patient.extension",
         "sliceName": "race",
+        "short": "Extension",
         "definition": "An Extension",
         "min": 0,
         "max": "1",
@@ -370,6 +371,7 @@
         "id": "Patient:cimi-entity-Patient.extension:ethnicity",
         "path": "Patient.extension",
         "sliceName": "ethnicity",
+        "short": "Extension",
         "definition": "An Extension",
         "min": 0,
         "max": "1",
@@ -397,6 +399,7 @@
         "id": "Patient:cimi-entity-Patient.extension:birthsex",
         "path": "Patient.extension",
         "sliceName": "birthsex",
+        "short": "Extension",
         "definition": "An Extension",
         "min": 0,
         "max": "1",
@@ -419,181 +422,6 @@
             "map": "Patient.extension"
           }
         ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:placeofbirth",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "The location of a birth event. There may be multiple entries, but a person has only one place of birth.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/birthPlace"
-          }
-        ],
-        "sliceName": "placeofbirth"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:medicalinterpreterneeded",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "Whether the subject requires an interpreter to communicate with an English-speaking provider.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-          }
-        ],
-        "sliceName": "medicalinterpreterneeded"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:mothersmaidenname",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "The name of the mother as it was or likely to have been recorded on the birth certificate of the subject. This is most likely the name prior to marriage of the mother (aka the maiden name).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
-          }
-        ],
-        "sliceName": "mothersmaidenname"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:fathersname",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "The name of the father as it was or likely to have been recorded on the birth certificate of the subject; most likely the name of the father at the time of birth of the subject.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-FathersName-extension"
-          }
-        ],
-        "sliceName": "fathersname"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:socialsecuritynumber",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "A US social security number (SSN).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SocialSecurityNumber-extension"
-          }
-        ],
-        "sliceName": "socialsecuritynumber"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:driverslicensenumber",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "Identifying information from a drivers license.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-DriversLicenseNumber-extension"
-          }
-        ],
-        "sliceName": "driverslicensenumber"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:passportnumber",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "Credential indicating citizenship.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-PassportNumber-extension"
-          }
-        ],
-        "sliceName": "passportnumber"
       },
       {
         "id": "Patient:cimi-entity-Patient.modifierExtension",
@@ -1397,8 +1225,7 @@
         },
         "type": [
           {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ContactPoint"
+            "code": "ContactPoint"
           }
         ],
         "isSummary": true,
@@ -1544,58 +1371,7 @@
             "identity": "cda",
             "map": "n/a"
           }
-        ],
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.deceasedDateTime:dateTime",
-        "path": "Patient.deceasedDateTime",
-        "sliceName": "dateTime",
-        "short": "Indicates if the individual is deceased or not",
-        "definition": "Indicates if the individual is deceased or not.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Patient.deceased[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.deceasedBoolean:boolean",
-        "path": "Patient.deceasedBoolean",
-        "sliceName": "boolean",
-        "short": "Indicates if the individual is deceased or not",
-        "definition": "Indicates if the individual is deceased or not.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Patient.deceased[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true
+        ]
       },
       {
         "id": "Patient:cimi-entity-Patient.address",
@@ -1613,8 +1389,7 @@
         },
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "isSummary": true,
@@ -1718,55 +1493,6 @@
             "identity": "cda",
             "map": "n/a"
           }
-        ],
-        "slicing": {
-          "id": "2",
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.multipleBirthInteger:integer",
-        "path": "Patient.multipleBirthInteger",
-        "sliceName": "integer",
-        "short": "Whether patient is part of a multiple birth",
-        "definition": "Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Patient.multipleBirth[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.multipleBirthBoolean:boolean",
-        "path": "Patient.multipleBirthBoolean",
-        "sliceName": "boolean",
-        "short": "Whether patient is part of a multiple birth",
-        "definition": "Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Patient.multipleBirth[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
         ]
       },
       {
@@ -1776,7 +1502,7 @@
         "definition": "Image of the patient.",
         "requirements": "Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Patient.photo",
           "min": 0,
@@ -3004,252 +2730,12 @@
         "mustSupport": false
       },
       {
-        "id": "Patient:cimi-entity-Patient.extension:race",
-        "path": "Patient.extension"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:ethnicity",
-        "path": "Patient.extension"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:birthsex",
-        "path": "Patient.extension"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:placeofbirth",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "The location of a birth event. There may be multiple entries, but a person has only one place of birth.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/birthPlace"
-          }
-        ],
-        "sliceName": "placeofbirth"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:medicalinterpreterneeded",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "Whether the subject requires an interpreter to communicate with an English-speaking provider.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-          }
-        ],
-        "sliceName": "medicalinterpreterneeded"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:mothersmaidenname",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "The name of the mother as it was or likely to have been recorded on the birth certificate of the subject. This is most likely the name prior to marriage of the mother (aka the maiden name).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
-          }
-        ],
-        "sliceName": "mothersmaidenname"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:fathersname",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "The name of the father as it was or likely to have been recorded on the birth certificate of the subject; most likely the name of the father at the time of birth of the subject.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-FathersName-extension"
-          }
-        ],
-        "sliceName": "fathersname"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:socialsecuritynumber",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "A US social security number (SSN).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SocialSecurityNumber-extension"
-          }
-        ],
-        "sliceName": "socialsecuritynumber"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:driverslicensenumber",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "Identifying information from a drivers license.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-DriversLicenseNumber-extension"
-          }
-        ],
-        "sliceName": "driverslicensenumber"
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.extension:passportnumber",
-        "path": "Patient.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "definition": "Credential indicating citizenship.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-PassportNumber-extension"
-          }
-        ],
-        "sliceName": "passportnumber"
-      },
-      {
         "id": "Patient:cimi-entity-Patient.name",
         "path": "Patient.name",
         "type": [
           {
             "code": "HumanName",
             "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.telecom",
-        "path": "Patient.telecom",
-        "type": [
-          {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-ContactPoint"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.deceased[x]",
-        "path": "Patient.deceased[x]",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.deceasedDateTime:dateTime",
-        "path": "Patient.deceasedDateTime",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.deceasedBoolean:boolean",
-        "path": "Patient.deceasedBoolean",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.address",
-        "path": "Patient.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Address"
           }
         ]
       },
@@ -3273,45 +2759,6 @@
             "reference": "http://hl7.org/fhir/ValueSet/marital-status"
           }
         }
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.multipleBirth[x]",
-        "path": "Patient.multipleBirth[x]",
-        "slicing": {
-          "id": "2",
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.multipleBirthInteger:integer",
-        "path": "Patient.multipleBirthInteger",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.multipleBirthBoolean:boolean",
-        "path": "Patient.multipleBirthBoolean",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.photo",
-        "path": "Patient.photo",
-        "min": 0,
-        "max": "1"
       }
     ]
   },
