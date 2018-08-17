@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-HER2byFISHVSInterpretationTestsVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC HER2byFISHVSInterpretationTestsVS ValueSet</b></p>\n<p>Laboratory observations holding the interpretation of FISH HER2 receptor tests (e.g. positive, negative, equivocal)</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-HER2byFISHVSInterpretationTestsVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.HER2byFISHVSInterpretationTestsVS"
+    }
+  ],
+  "name": "HER2byFISHVSInterpretationTestsVS",
+  "title": "BC HER2byFISHVSInterpretationTestsVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-17",
+  "description": "Laboratory observations holding the interpretation of FISH HER2 receptor tests (e.g. positive, negative, equivocal)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "31150-6",
+            "display": "HER2 [Presence] in Tissue by FISH"
+          },
+          {
+            "code": "85318-4",
+            "display": "HER2 [Presence] in Breast cancer specimen by FISH"
+          }
+        ]
+      }
+    ]
+  }
+}

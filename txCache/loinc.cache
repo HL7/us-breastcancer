@@ -11,6 +11,10 @@
       {
         "code" : "40556-3",
         "display" : "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
+      },
+      {
+        "code" : "85337-4",
+        "display" : "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
       }]
     }]
   }
@@ -20,8 +24,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ca1cacfc-cbb3-4adc-ae9b-db71b5fcf3fa",
-    "timestamp" : "2018-08-17T02:44:01.613Z",
+    "identifier" : "urn:uuid:25ab5c60-31f1-402c-bee4-9e0a9fb10f22",
+    "timestamp" : "2018-08-17T18:48:37.458Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -39,6 +43,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "40556-3",
       "display" : "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85337-4",
+      "display" : "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
     }]
   }
 },
@@ -62,8 +71,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:10b11821-2cb9-49dd-95e4-6c94e13efb42",
-    "timestamp" : "2018-08-17T02:44:01.848Z",
+    "identifier" : "urn:uuid:5729284e-aec9-49f7-9499-47a1aa8c3ab5",
+    "timestamp" : "2018-08-17T18:48:37.630Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -9083,6 +9092,98 @@ e: {
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
+        "code" : "31150-6",
+        "display" : "HER2 [Presence] in Tissue by FISH"
+      },
+      {
+        "code" : "85318-4",
+        "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:69f235a5-4abf-45e1-aea6-09f41d7fc655",
+    "timestamp" : "2018-08-17T18:48:38.395Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "31150-6",
+      "display" : "HER2 [Presence] in Tissue by FISH"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85318-4",
+      "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18474-7",
+        "display" : "HER2 Ag [Presence] in Tissue by Immune stain"
+      },
+      {
+        "code" : "85319-2",
+        "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:265d35db-9869-4118-bfb9-fe024c684d01",
+    "timestamp" : "2018-08-17T18:48:38.567Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "18474-7",
+      "display" : "HER2 Ag [Presence] in Tissue by Immune stain"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85319-2",
+      "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
         "code" : "LA11884-6",
         "display" : "Indeterminate"
       }]
@@ -9094,8 +9195,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f8b23a5e-777e-4a20-b5a1-b043af48c1f7",
-    "timestamp" : "2018-08-17T02:44:03.207Z",
+    "identifier" : "urn:uuid:dc610493-d1ec-4466-8bee-73dafee27a73",
+    "timestamp" : "2018-08-17T18:48:38.755Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -9143,8 +9244,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:7fdd53c2-204b-4529-a266-5b9d912daa26",
-    "timestamp" : "2018-08-17T02:44:03.441Z",
+    "identifier" : "urn:uuid:2115ff82-3dea-4ebb-ab84-0228f117b11f",
+    "timestamp" : "2018-08-17T18:48:38.927Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -9184,223 +9285,16 @@ e: {
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
-        "code" : "LA27220-5",
-        "display" : "No residual invasive carcinoma after presurgical (neoadjuvant) therapy"
-      },
-      {
-        "code" : "LA27221-3",
-        "display" : "Score cannot be determined"
-      }]
-    }]
-  }
-}}
-####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:026febc9-7169-4b4c-a5ad-de672c5fe64e",
-    "timestamp" : "2018-08-17T02:44:04.816Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA27220-5",
-      "display" : "No residual invasive carcinoma after presurgical (neoadjuvant) therapy"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27221-3",
-      "display" : "Score cannot be determined"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA27225-4",
-        "display" : "Score 1"
-      },
-      {
-        "code" : "LA27226-2",
-        "display" : "Score 2"
-      },
-      {
-        "code" : "LA27227-0",
-        "display" : "Score 3"
-      }]
-    }]
-  }
-}}
-####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:7c5035e2-628a-4c05-a4b2-3360814219b3",
-    "timestamp" : "2018-08-17T02:44:05.035Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA27225-4",
-      "display" : "Score 1"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27226-2",
-      "display" : "Score 2"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27227-0",
-      "display" : "Score 3"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA27219-7",
-        "display" : "Only microinvasion present (not graded)"
-      },
-      {
-        "code" : "LA27220-5",
-        "display" : "No residual invasive carcinoma after presurgical (neoadjuvant) therapy"
-      },
-      {
-        "code" : "LA27221-3",
-        "display" : "Score cannot be determined"
-      }]
-    }]
-  }
-}}
-####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:6b546dcf-6b73-4fe3-bbbd-bd8a1ee7597b",
-    "timestamp" : "2018-08-17T02:44:05.457Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA27219-7",
-      "display" : "Only microinvasion present (not graded)"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27220-5",
-      "display" : "No residual invasive carcinoma after presurgical (neoadjuvant) therapy"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27221-3",
-      "display" : "Score cannot be determined"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA27222-1",
-        "display" : "Score 1: Nuclei small with little increase in size in comparison with normal outlines, uniform clear chromatin, little variation in size."
-      },
-      {
-        "code" : "LA27223-9",
-        "display" : "Score 2: Cells larger than normal with open vesicular nuclei, visible nucleo size and shape."
-      },
-      {
-        "code" : "LA27224-7",
-        "display" : "Score 3: Vesicular nuclei, often with prominent nucleoli, exhibited marked occasionally with very large and bizzare forms."
-      }]
-    }]
-  }
-}}
-####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:3b469a7b-4821-49a9-9e32-49646ecb8b49",
-    "timestamp" : "2018-08-17T02:44:05.863Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA27222-1",
-      "display" : "Score 1: Nuclei small with little increase in size in comparison with normal outlines, uniform clear chromatin, little variation in size."
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27223-9",
-      "display" : "Score 2: Cells larger than normal with open vesicular nuclei, visible nucleo size and shape."
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27224-7",
-      "display" : "Score 3: Vesicular nuclei, often with prominent nucleoli, exhibited marked occasionally with very large and bizzare forms."
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
         "code" : "16113-3",
         "display" : "Progesterone receptor [Interpretation] in TissueProgesterone receptor [Interpretation] in Tissue"
       },
       {
         "code" : "40557-1",
         "display" : "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
+      },
+      {
+        "code" : "85339-0",
+        "display" : "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
       }]
     }]
   }
@@ -9410,8 +9304,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:3afb4d60-d34e-4572-b56f-03eab1547aab",
-    "timestamp" : "2018-08-17T02:44:06.785Z",
+    "identifier" : "urn:uuid:b58786f4-b1a5-4674-b8aa-ce5e1837ce23",
+    "timestamp" : "2018-08-17T18:48:41.005Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -9429,61 +9323,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "40557-1",
       "display" : "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA27216-3",
-        "display" : "Score 1: >75% of tumor area forming glandular/tubular structures"
-      },
-      {
-        "code" : "LA27217-1",
-        "display" : "Score 2: 10% to 75% of tumor area forming glandular/tubular structures"
-      },
-      {
-        "code" : "LA27218-9",
-        "display" : "Score 3: <10% of tumor area forming glandular/tubular structures"
-      }]
-    }]
-  }
-}}
-####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:21109ca7-ac67-4f7e-8d87-90faae146f6d",
-    "timestamp" : "2018-08-17T02:44:07.285Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA27216-3",
-      "display" : "Score 1: >75% of tumor area forming glandular/tubular structures"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "LA27217-1",
-      "display" : "Score 2: 10% to 75% of tumor area forming glandular/tubular structures"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA27218-9",
-      "display" : "Score 3: <10% of tumor area forming glandular/tubular structures"
+      "code" : "85339-0",
+      "display" : "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
     }]
   }
 },

@@ -208,8 +208,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:115ef53d-25d4-45ee-aa3b-490bda7f940c",
-    "timestamp" : "2018-08-17T02:43:15.629Z",
+    "identifier" : "urn:uuid:2bdabe54-d673-4369-a340-8f888bd23a3d",
+    "timestamp" : "2018-08-17T18:47:51.552Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5229,16 +5229,44 @@ e: {
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "360156006",
-        "display" : "Screening"
+        "code" : "113011001",
+        "display" : "Palpation (procedure)"
       },
       {
-        "code" : "160237006",
-        "display" : "History/Symptoms"
+        "code" : "32750006",
+        "display" : "Inspection (procedure)"
       },
       {
-        "code" : "261087003",
-        "display" : "Incidental"
+        "code" : "71651007",
+        "display" : "Mammography (procedure)"
+      },
+      {
+        "code" : "82918005",
+        "display" : "Positron emission tomography (procedure)"
+      },
+      {
+        "code" : "16310003",
+        "display" : "Diagnostic ultrasonography (procedure)"
+      },
+      {
+        "code" : "113091000",
+        "display" : "Magnetic resonance imaging (procedure)"
+      },
+      {
+        "code" : "448764002",
+        "display" : "Ultrasound elastography (procedure)"
+      },
+      {
+        "code" : "725404004",
+        "display" : "Molecular breast imaging (procedure)"
+      },
+      {
+        "code" : "62434009",
+        "display" : "Breast thermography (procedure)"
+      },
+      {
+        "code" : "450566007",
+        "display" : "Digital breast tomosynthesis (procedure)"
       }]
     }]
   }
@@ -5248,8 +5276,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:04bde9b4-2fb5-401a-bf3a-a1e03fbc4196",
-    "timestamp" : "2018-08-17T02:43:58.051Z",
+    "identifier" : "urn:uuid:9177f272-b05e-43d0-bf38-3cd7a267392d",
+    "timestamp" : "2018-08-17T18:48:34.458Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5260,18 +5288,53 @@ e: {
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "360156006",
-      "display" : "Screening"
+      "code" : "113011001",
+      "display" : "Palpation (procedure)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "160237006",
-      "display" : "History/Symptoms"
+      "code" : "32750006",
+      "display" : "Inspection (procedure)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "261087003",
-      "display" : "Incidental"
+      "code" : "71651007",
+      "display" : "Mammography (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "82918005",
+      "display" : "Positron emission tomography (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "16310003",
+      "display" : "Diagnostic ultrasonography (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "113091000",
+      "display" : "Magnetic resonance imaging (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "448764002",
+      "display" : "Ultrasound elastography (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "725404004",
+      "display" : "Molecular breast imaging (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62434009",
+      "display" : "Breast thermography (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "450566007",
+      "display" : "Digital breast tomosynthesis (procedure)"
     }]
   }
 },
@@ -5284,176 +5347,168 @@ e: {
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "86049000",
-        "display" : "Malignant neoplasm, primary (morphologic abnormality)"
+        "code" : "82711006",
+        "display" : "Infiltrating duct carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "68956006",
-        "display" : "Carcinoma in situ (morphologic abnormality) - corresponds to ICDO3#8010 Carcinoma, NOS"
-      },
-      {
-        "code" : "65692009",
-        "display" : "Spindle cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8032 Spindle cell carcinoma"
+        "code" : "16741004",
+        "display" : "Pleomorphic carcinoma (morphologic abnormality)"
       },
       {
         "code" : "128631001",
-        "display" : "Carcinoma with osteoclast-like giant cells (morphologic abnormality)- corresponds to ICDO3#8035 Carcinoma with osteoclast-like stromal giant cells"
+        "display" : "Carcinoma with osteoclast-like giant cells (morphologic abnormality)"
       },
       {
-        "code" : "74364000",
-        "display" : "Small cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8041 Neuroendocrine carcinoma, poorly differentiated (small cell carcinoma)"
+        "code" : "89740008",
+        "display" : "Lobular carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "59529006",
-        "display" : "Squamous cell carcinoma in situ (morphologic abnormality)- corresponds to ICDO3#8070 Squamous cell carcinoma"
-      },
-      {
-        "code" : "35917007",
-        "display" : "Adenocarcinoma, no subtype (morphologic abnormality)- corresponds to ICDO3#8140 Adenocarcinoma, N"
-      },
-      {
-        "code" : "11671000",
-        "display" : "Adenoid cystic carcinoma (morphologic abnormality)- corresponds to ICDO3#8200 Adenoid cystic carcinoma"
+        "code" : "4631006",
+        "display" : "Tubular adenocarcinoma (morphologic abnormality)"
       },
       {
         "code" : "30156004",
-        "display" : "Cribriform carcinoma (morphologic abnormality)- corresponds to ICDO3#8201 Cribriform carcinoma"
+        "display" : "Cribriform carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "19665009",
-        "display" : "Tubular adenoma (morphologic abnormality)- corresponds to ICDO3#8211 Tubular carcinoma"
-      },
-      {
-        "code" : "55937004",
-        "display" : "Neuroendocrine carcinoma (morphologic abnormality)- corresponds to ICDO3#8246 Neuroendocrine tumor, well-differentiated"
-      },
-      {
-        "code" : "128662002",
-        "display" : "Adenocarcinoma with mixed subtypes (morphologic abnormality)- corresponds to ICDO3#8255 Adenocarcinoma with mixed subtypes"
-      },
-      {
-        "code" : "89439007",
-        "display" : "Oxyphilic adenoma (morphologic abnormality)- corresponds to ICDO3#8290 Oncocytic carcinoma"
-      },
-      {
-        "code" : "3839000",
-        "display" : "Lipid-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8314 Lipid-rich carcinoma"
-      },
-      {
-        "code" : "74280008",
-        "display" : "Glycogen-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8315 Glycogen-rich clear cell carcinoma"
-      },
-      {
-        "code" : "36318001",
-        "display" : "Apocrine adenoma (morphologic abnormality)- corresponds to ICDO3#8401 Apocrine adenocarcinoma"
-      },
-      {
-        "code" : "78424008",
-        "display" : "Sebaceous adenoma (morphologic abnormality)- corresponds to ICDO3#8410 Sebaceous carcinoma"
-      },
-      {
-        "code" : "39892006",
-        "display" : "Mucoepidermoid tumor (morphologic abnormality)- corresponds to ICDO3#8430 Mucoepidermoid carcinoma"
-      },
-      {
-        "code" : "33170000",
-        "display" : "Mucinous adenoma (morphologic abnormality)- corresponds to ICDO3#8480 Mucinous carcinoma"
-      },
-      {
-        "code" : "86616005",
-        "display" : "Intraductal carcinoma, noninfiltrating (morphologic abnormality)- corresponds to ICDO3#8500 Ductal carcinoma"
-      },
-      {
-        "code" : "36425007",
-        "display" : "Comedocarcinoma (morphologic abnormality)- corresponds to ICDO3#8501 Comedocarcinoma, NOS"
-      },
-      {
-        "code" : "41919003",
-        "display" : "Juvenile carcinoma of the breast (morphologic abnormality)- corresponds to ICDO3#8502 Secretory carcinoma"
-      },
-      {
-        "code" : "30566004",
-        "display" : "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8503 Intraductal papillary carcinoma"
-      },
-      {
-        "code" : "47488001",
-        "display" : "Intracystic papillary adenoma (morphologic abnormality)- corresponds to ICDO3#8504 Encapsulated papillary carcinoma"
-      },
-      {
-        "code" : "128696009",
-        "display" : "Intraductal micropapillary carcinoma (morphologic abnormality)- corresponds to ICDO3#8507 Invasive micropapillary carcinoma"
-      },
-      {
-        "code" : "421980000",
-        "display" : "Papillary carcinoma, solid (morphologic abnormality)- corresponds to ICDO3#8509 Solid papillary carcinoma"
+        "code" : "72495009",
+        "display" : "Mucinous adenocarcinoma (morphologic abnormality)"
       },
       {
         "code" : "32913002",
-        "display" : "Medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8510 Medullary carcinoma"
+        "display" : "Medullary carcinoma (morphologic abnormality)"
       },
       {
         "code" : "128698005",
-        "display" : "Atypical medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8513 Atypical medullary carcinoma"
+        "display" : "Atypical medullary carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "58477004",
-        "display" : "Infiltrating ductular carcinoma (morphologic abnormality)- corresponds to ICDO3#8520 Invasive lobular carcinoma"
+        "code" : "82711006",
+        "display" : "Infiltrating duct carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "35232005",
-        "display" : "Infiltrating duct and lobular carcinoma (morphologic abnormality)- corresponds to ICDO3#8521 Infiltrating ductular carcinoma"
+        "code" : "22694002",
+        "display" : "Adenocarcinoma with apocrine metaplasia (morphologic abnormality)"
       },
       {
-        "code" : "128700001",
-        "display" : "Infiltrating duct mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8522 Infiltrating duct and lobular carcinoma"
-      },
-      {
-        "code" : "128701002",
-        "display" : "Infiltrating lobular mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8524 Infiltrating lobular mixed with other types of carcinoma"
-      },
-      {
-        "code" : "128702009",
-        "display" : "Polymorphous low grade adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8525 Polymorphous carcinoma"
-      },
-      {
-        "code" : "32968003",
-        "display" : "Inflammatory carcinoma (morphologic abnormality)- corresponds to ICDO3#8530 Inflammatory carcinoma"
-      },
-      {
-        "code" : "2985005",
-        "display" : "Paget's disease, mammary (morphologic abnormality)- corresponds to ICDO3#8540 Paget disease of the nipple"
-      },
-      {
-        "code" : "82591005",
-        "display" : "Paget's disease and infiltrating duct carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8541 Paget disease and infiltrating duct carcinoma of breast"
-      },
-      {
-        "code" : "54666007",
-        "display" : "Paget's disease and intraductal carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8543 Paget disease and intraductal carcinoma"
-      },
-      {
-        "code" : "15176003",
-        "display" : "Adenocarcinoma with squamous metaplasia (morphologic abnormality)- corresponds to ICDO3#8570 Low-grade adenosquamous carcinoma"
-      },
-      {
-        "code" : "733875004",
-        "display" : "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8572 Fibromatosis-like metaplastic carcinoma"
-      },
-      {
-        "code" : "128704005",
-        "display" : "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality)- corresponds to ICDO3#8574 Carcinoma with neuroendocrine differentiation"
+        "code" : "703578005",
+        "display" : "Invasive micropapillary carcinoma of breast (morphologic abnormality)"
       },
       {
         "code" : "128705006",
-        "display" : "Metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8575 Metaplastic carcinoma"
+        "display" : "Metaplastic carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "69291002",
-        "display" : "Myoepithelioma (morphologic abnormality)- corresponds to ICDO3#8982 Myoepithelial carcinoma"
+        "code" : "59367005",
+        "display" : "Adenosquamous carcinoma (morphologic abnormality)"
       },
       {
-        "code" : "128765009",
-        "display" : "Adenomyoepithelioma (morphologic abnormality)- corresponds to ICDO3#8983 Adenomyoepithelioma with carcinoma"
+        "code" : "15176003",
+        "display" : "Adenocarcinoma with squamous metaplasia (morphologic abnormality)"
+      },
+      {
+        "code" : "733875004",
+        "display" : "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "399739006",
+        "display" : "Metaplastic squamous cell carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "65692009",
+        "display" : "Spindle cell carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "128705006",
+        "display" : "Metaplastic carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "128884000",
+        "display" : "Malignant myoepithelioma (morphologic abnormality)"
+      },
+      {
+        "code" : "703644009",
+        "display" : "Adenomyoepithelioma with carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "11671000",
+        "display" : "Adenoid cystic carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "55937004",
+        "display" : "Neuroendocrine carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "719105002",
+        "display" : "Small cell neuroendocrine carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "128704005",
+        "display" : "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality("
+      },
+      {
+        "code" : "41919003",
+        "display" : "Juvenile carcinoma of the breast (morphologic abnormality)"
+      },
+      {
+        "code" : "64524002",
+        "display" : "Intraductal papillary adenocarcinoma with invasion (morphologic abnormality)"
+      },
+      {
+        "code" : "45410002",
+        "display" : "Acinar cell carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "4079000",
+        "display" : "Mucoepidermoid carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "57596004",
+        "display" : "Oxyphilic adenocarcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "3839000",
+        "display" : "Lipid-rich carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "74280008",
+        "display" : "Glycogen-rich carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "78424008",
+        "display" : "Sebaceous adenocarcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "399935008",
+        "display" : "Ductal carcinoma in situ - category (morphologic abnormality)"
+      },
+      {
+        "code" : "30566004",
+        "display" : "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "703545003",
+        "display" : "Encapsulated papillary carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "703547006",
+        "display" : "Encapsulated papillary carcinoma with invasion (morphologic abnormality)"
+      },
+      {
+        "code" : "703546002",
+        "display" : "Solid papillary carcinoma in situ (morphologic abnormality)"
+      },
+      {
+        "code" : "703594003",
+        "display" : "Solid papillary carcinoma with invasion (morphologic abnormality)"
+      },
+      {
+        "code" : "32968003",
+        "display" : "Inflammatory carcinoma (morphologic abnormality)"
+      },
+      {
+        "code" : "2985005",
+        "display" : "Paget's disease, mammary (morphologic abnormality)"
       }]
     }]
   }
@@ -5463,8 +5518,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:022bd255-33a7-4733-9d05-d9e921678fdd",
-    "timestamp" : "2018-08-17T02:43:58.285Z",
+    "identifier" : "urn:uuid:7e6ce171-37ca-4109-8303-d2d42a18a9be",
+    "timestamp" : "2018-08-17T18:48:34.599Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5475,218 +5530,198 @@ e: {
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "86049000",
-      "display" : "Malignant neoplasm, primary (morphologic abnormality)"
+      "code" : "82711006",
+      "display" : "Infiltrating duct carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "68956006",
-      "display" : "Carcinoma in situ (morphologic abnormality) - corresponds to ICDO3#8010 Carcinoma, NOS"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "65692009",
-      "display" : "Spindle cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8032 Spindle cell carcinoma"
+      "code" : "16741004",
+      "display" : "Pleomorphic carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "128631001",
-      "display" : "Carcinoma with osteoclast-like giant cells (morphologic abnormality)- corresponds to ICDO3#8035 Carcinoma with osteoclast-like stromal giant cells"
+      "display" : "Carcinoma with osteoclast-like giant cells (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "74364000",
-      "display" : "Small cell carcinoma (morphologic abnormality)- corresponds to ICDO3#8041 Neuroendocrine carcinoma, poorly differentiated (small cell carcinoma)"
+      "code" : "89740008",
+      "display" : "Lobular carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "59529006",
-      "display" : "Squamous cell carcinoma in situ (morphologic abnormality)- corresponds to ICDO3#8070 Squamous cell carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "35917007",
-      "display" : "Adenocarcinoma, no subtype (morphologic abnormality)- corresponds to ICDO3#8140 Adenocarcinoma, N"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "11671000",
-      "display" : "Adenoid cystic carcinoma (morphologic abnormality)- corresponds to ICDO3#8200 Adenoid cystic carcinoma"
+      "code" : "4631006",
+      "display" : "Tubular adenocarcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "30156004",
-      "display" : "Cribriform carcinoma (morphologic abnormality)- corresponds to ICDO3#8201 Cribriform carcinoma"
+      "display" : "Cribriform carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "19665009",
-      "display" : "Tubular adenoma (morphologic abnormality)- corresponds to ICDO3#8211 Tubular carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "55937004",
-      "display" : "Neuroendocrine carcinoma (morphologic abnormality)- corresponds to ICDO3#8246 Neuroendocrine tumor, well-differentiated"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "128662002",
-      "display" : "Adenocarcinoma with mixed subtypes (morphologic abnormality)- corresponds to ICDO3#8255 Adenocarcinoma with mixed subtypes"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "89439007",
-      "display" : "Oxyphilic adenoma (morphologic abnormality)- corresponds to ICDO3#8290 Oncocytic carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "3839000",
-      "display" : "Lipid-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8314 Lipid-rich carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "74280008",
-      "display" : "Glycogen-rich carcinoma (morphologic abnormality)- corresponds to ICDO3#8315 Glycogen-rich clear cell carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "36318001",
-      "display" : "Apocrine adenoma (morphologic abnormality)- corresponds to ICDO3#8401 Apocrine adenocarcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "78424008",
-      "display" : "Sebaceous adenoma (morphologic abnormality)- corresponds to ICDO3#8410 Sebaceous carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "39892006",
-      "display" : "Mucoepidermoid tumor (morphologic abnormality)- corresponds to ICDO3#8430 Mucoepidermoid carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "33170000",
-      "display" : "Mucinous adenoma (morphologic abnormality)- corresponds to ICDO3#8480 Mucinous carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "86616005",
-      "display" : "Intraductal carcinoma, noninfiltrating (morphologic abnormality)- corresponds to ICDO3#8500 Ductal carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "36425007",
-      "display" : "Comedocarcinoma (morphologic abnormality)- corresponds to ICDO3#8501 Comedocarcinoma, NOS"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "41919003",
-      "display" : "Juvenile carcinoma of the breast (morphologic abnormality)- corresponds to ICDO3#8502 Secretory carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "30566004",
-      "display" : "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8503 Intraductal papillary carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "47488001",
-      "display" : "Intracystic papillary adenoma (morphologic abnormality)- corresponds to ICDO3#8504 Encapsulated papillary carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "128696009",
-      "display" : "Intraductal micropapillary carcinoma (morphologic abnormality)- corresponds to ICDO3#8507 Invasive micropapillary carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "421980000",
-      "display" : "Papillary carcinoma, solid (morphologic abnormality)- corresponds to ICDO3#8509 Solid papillary carcinoma"
+      "code" : "72495009",
+      "display" : "Mucinous adenocarcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "32913002",
-      "display" : "Medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8510 Medullary carcinoma"
+      "display" : "Medullary carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "128698005",
-      "display" : "Atypical medullary carcinoma (morphologic abnormality)- corresponds to ICDO3#8513 Atypical medullary carcinoma"
+      "display" : "Atypical medullary carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "58477004",
-      "display" : "Infiltrating ductular carcinoma (morphologic abnormality)- corresponds to ICDO3#8520 Invasive lobular carcinoma"
+      "code" : "22694002",
+      "display" : "Adenocarcinoma with apocrine metaplasia (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "35232005",
-      "display" : "Infiltrating duct and lobular carcinoma (morphologic abnormality)- corresponds to ICDO3#8521 Infiltrating ductular carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "128700001",
-      "display" : "Infiltrating duct mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8522 Infiltrating duct and lobular carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "128701002",
-      "display" : "Infiltrating lobular mixed with other types of carcinoma (morphologic abnormality)- corresponds to ICDO3#8524 Infiltrating lobular mixed with other types of carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "128702009",
-      "display" : "Polymorphous low grade adenocarcinoma (morphologic abnormality)- corresponds to ICDO3#8525 Polymorphous carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "32968003",
-      "display" : "Inflammatory carcinoma (morphologic abnormality)- corresponds to ICDO3#8530 Inflammatory carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "2985005",
-      "display" : "Paget's disease, mammary (morphologic abnormality)- corresponds to ICDO3#8540 Paget disease of the nipple"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "82591005",
-      "display" : "Paget's disease and infiltrating duct carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8541 Paget disease and infiltrating duct carcinoma of breast"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "54666007",
-      "display" : "Paget's disease and intraductal carcinoma of breast (morphologic abnormality)- corresponds to ICDO3#8543 Paget disease and intraductal carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "15176003",
-      "display" : "Adenocarcinoma with squamous metaplasia (morphologic abnormality)- corresponds to ICDO3#8570 Low-grade adenosquamous carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "733875004",
-      "display" : "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8572 Fibromatosis-like metaplastic carcinoma"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "128704005",
-      "display" : "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality)- corresponds to ICDO3#8574 Carcinoma with neuroendocrine differentiation"
+      "code" : "703578005",
+      "display" : "Invasive micropapillary carcinoma of breast (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "128705006",
-      "display" : "Metaplastic carcinoma (morphologic abnormality)- corresponds to ICDO3#8575 Metaplastic carcinoma"
+      "display" : "Metaplastic carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "69291002",
-      "display" : "Myoepithelioma (morphologic abnormality)- corresponds to ICDO3#8982 Myoepithelial carcinoma"
+      "code" : "59367005",
+      "display" : "Adenosquamous carcinoma (morphologic abnormality)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "128765009",
-      "display" : "Adenomyoepithelioma (morphologic abnormality)- corresponds to ICDO3#8983 Adenomyoepithelioma with carcinoma"
+      "code" : "15176003",
+      "display" : "Adenocarcinoma with squamous metaplasia (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "733875004",
+      "display" : "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399739006",
+      "display" : "Metaplastic squamous cell carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "65692009",
+      "display" : "Spindle cell carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128884000",
+      "display" : "Malignant myoepithelioma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703644009",
+      "display" : "Adenomyoepithelioma with carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "11671000",
+      "display" : "Adenoid cystic carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55937004",
+      "display" : "Neuroendocrine carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "719105002",
+      "display" : "Small cell neuroendocrine carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "128704005",
+      "display" : "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality("
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "41919003",
+      "display" : "Juvenile carcinoma of the breast (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "64524002",
+      "display" : "Intraductal papillary adenocarcinoma with invasion (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "45410002",
+      "display" : "Acinar cell carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "4079000",
+      "display" : "Mucoepidermoid carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "57596004",
+      "display" : "Oxyphilic adenocarcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3839000",
+      "display" : "Lipid-rich carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74280008",
+      "display" : "Glycogen-rich carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "78424008",
+      "display" : "Sebaceous adenocarcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399935008",
+      "display" : "Ductal carcinoma in situ - category (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "30566004",
+      "display" : "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703545003",
+      "display" : "Encapsulated papillary carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703547006",
+      "display" : "Encapsulated papillary carcinoma with invasion (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703546002",
+      "display" : "Solid papillary carcinoma in situ (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703594003",
+      "display" : "Solid papillary carcinoma with invasion (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "32968003",
+      "display" : "Inflammatory carcinoma (morphologic abnormality)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2985005",
+      "display" : "Paget's disease, mammary (morphologic abnormality)"
     }]
   }
 },
@@ -5722,8 +5757,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:24b01810-fa70-4652-bb5b-cff85d256438",
-    "timestamp" : "2018-08-17T02:43:58.629Z",
+    "identifier" : "urn:uuid:1d76e969-f501-4142-bcda-e269816b0ba9",
+    "timestamp" : "2018-08-17T18:48:34.817Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5764,39 +5799,39 @@ e: {
       "system" : "http://snomed.info/sct",
       "concept" : [{
         "code" : "24142002",
-        "display" : "Nipple structure (body structure) - corresponds to ICDO3#C50.0"
+        "display" : "Nipple structure (body structure)"
       },
       {
         "code" : "49058007",
-        "display" : "Structure of central portion of breast (body structure) - corresponds to ICDO3#C50.1"
+        "display" : "Structure of central portion of breast (body structure)"
       },
       {
         "code" : "77831004",
-        "display" : "Structure of upper inner quadrant of breast (body structure) - corresponds to ICDO3#C50.2"
+        "display" : "Structure of upper inner quadrant of breast (body structure)"
       },
       {
         "code" : "19100000",
-        "display" : "Structure of lower inner quadrant of breast (body structure) - corresponds to ICDO3#C50.3"
+        "display" : "Structure of lower inner quadrant of breast (body structure)"
       },
       {
         "code" : "76365002",
-        "display" : "Structure of upper outer quadrant of breast (body structure) - corresponds to ICDO3#C50.4"
+        "display" : "Structure of upper outer quadrant of breast (body structure)"
       },
       {
         "code" : "33564002",
-        "display" : "Structure of lower outer quadrant of breast (body structure) - corresponds to ICDO3#C50.5"
+        "display" : "Structure of lower outer quadrant of breast (body structure)"
       },
       {
         "code" : "38412008",
-        "display" : "Structure of axillary tail of breast (body structure) - corresponds to ICDO3#C50.6"
+        "display" : "Structure of axillary tail of breast (body structure)"
       },
       {
         "code" : "276825009",
-        "display" : "Overlapping sites (qualifier value) - corresponds to ICDO3#C50.8"
+        "display" : "Overlapping sites (qualifier value)"
       },
       {
         "code" : "76752008",
-        "display" : "Breast structure (body structure) - corresponds to ICDO3#C50.9"
+        "display" : "Breast structure (body structure)"
       }]
     }]
   }
@@ -5806,8 +5841,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:a67b85e5-3275-454c-a804-965342401fd8",
-    "timestamp" : "2018-08-17T02:43:58.801Z",
+    "identifier" : "urn:uuid:2b9b8bee-fb1a-4b1f-9300-3c2cda927b7f",
+    "timestamp" : "2018-08-17T18:48:34.942Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5819,47 +5854,47 @@ e: {
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "24142002",
-      "display" : "Nipple structure (body structure) - corresponds to ICDO3#C50.0"
+      "display" : "Nipple structure (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "49058007",
-      "display" : "Structure of central portion of breast (body structure) - corresponds to ICDO3#C50.1"
+      "display" : "Structure of central portion of breast (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "77831004",
-      "display" : "Structure of upper inner quadrant of breast (body structure) - corresponds to ICDO3#C50.2"
+      "display" : "Structure of upper inner quadrant of breast (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "19100000",
-      "display" : "Structure of lower inner quadrant of breast (body structure) - corresponds to ICDO3#C50.3"
+      "display" : "Structure of lower inner quadrant of breast (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "76365002",
-      "display" : "Structure of upper outer quadrant of breast (body structure) - corresponds to ICDO3#C50.4"
+      "display" : "Structure of upper outer quadrant of breast (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "33564002",
-      "display" : "Structure of lower outer quadrant of breast (body structure) - corresponds to ICDO3#C50.5"
+      "display" : "Structure of lower outer quadrant of breast (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "38412008",
-      "display" : "Structure of axillary tail of breast (body structure) - corresponds to ICDO3#C50.6"
+      "display" : "Structure of axillary tail of breast (body structure)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "276825009",
-      "display" : "Overlapping sites (qualifier value) - corresponds to ICDO3#C50.8"
+      "display" : "Overlapping sites (qualifier value)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "76752008",
-      "display" : "Breast structure (body structure) - corresponds to ICDO3#C50.9"
+      "display" : "Breast structure (body structure)"
     }]
   }
 },
@@ -5895,8 +5930,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:af081ab9-83f0-44d1-b3c9-18852bd24c1e",
-    "timestamp" : "2018-08-17T02:43:59.035Z",
+    "identifier" : "urn:uuid:63b0e74e-5ed9-4be7-97fa-7be801c1b7c4",
+    "timestamp" : "2018-08-17T18:48:35.130Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5955,8 +5990,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:465323df-2a98-4920-bdca-3eceae1fb8cd",
-    "timestamp" : "2018-08-17T02:43:59.269Z",
+    "identifier" : "urn:uuid:ebf1d21a-057e-4f92-9dac-4f4998747135",
+    "timestamp" : "2018-08-17T18:48:35.317Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6007,8 +6042,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:e90e0ada-9213-4fb3-9bd4-97aa8136ee07",
-    "timestamp" : "2018-08-17T02:43:59.488Z",
+    "identifier" : "urn:uuid:bd7ced86-dbd6-4bac-a512-e68cf938e677",
+    "timestamp" : "2018-08-17T18:48:35.489Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6158,6 +6193,10 @@ e: {
       {
         "code" : "369783007",
         "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 3: Markedly pleomorphic nuclei, usually >2.5 red blood cells diameters, with coarse chromatin and multiple nucleoli (finding)"
+      },
+      {
+        "code" : "384741006",
+        "display" : "Grade cannot be determined (finding)"
       }]
     }]
   }
@@ -6167,8 +6206,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:9b2602d6-1e74-41a9-9990-7f8d26904d19",
-    "timestamp" : "2018-08-17T02:44:00.832Z",
+    "identifier" : "urn:uuid:ebc4e13f-00bc-4bd5-ada8-d437c7c3411a",
+    "timestamp" : "2018-08-17T18:48:36.692Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6191,6 +6230,11 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "369783007",
       "display" : "Ductal carcinoma in situ nuclear pleomorphism, grade 3: Markedly pleomorphic nuclei, usually >2.5 red blood cells diameters, with coarse chromatin and multiple nucleoli (finding)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "384741006",
+      "display" : "Grade cannot be determined (finding)"
     }]
   }
 },
@@ -6219,8 +6263,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:6d387eeb-90ab-4fc7-97f2-cf042fba49d6",
-    "timestamp" : "2018-08-17T02:44:01.051Z",
+    "identifier" : "urn:uuid:7c024917-570c-4189-abd4-b07ccde521fd",
+    "timestamp" : "2018-08-17T18:48:36.864Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6295,8 +6339,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:6bcbcd5e-77b0-400d-8316-21b06b168fcc",
-    "timestamp" : "2018-08-17T02:44:02.988Z",
+    "identifier" : "urn:uuid:a859a512-bc13-462f-a7d1-71275743c3f4",
+    "timestamp" : "2018-08-17T18:48:38.208Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6345,8 +6389,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:03fd5f42-dac6-4177-af06-f03d615f393b",
-    "timestamp" : "2018-08-17T02:44:03.676Z",
+    "identifier" : "urn:uuid:81f63f51-efaf-427a-ad27-c6c4ea72dcc8",
+    "timestamp" : "2018-08-17T18:48:39.036Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6396,8 +6440,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:906decdd-7622-4b02-9baf-5da15afc1042",
-    "timestamp" : "2018-08-17T02:44:03.910Z",
+    "identifier" : "urn:uuid:ae77bee1-6a39-4feb-a584-4c88b7828124",
+    "timestamp" : "2018-08-17T18:48:39.224Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6446,8 +6490,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:49e47a53-7cbb-4f6e-949b-11999d965c88",
-    "timestamp" : "2018-08-17T02:44:04.129Z",
+    "identifier" : "urn:uuid:13f5b69d-ca9f-4a5a-9bf1-4a07c4833377",
+    "timestamp" : "2018-08-17T18:48:39.661Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6497,8 +6541,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:39a3e797-bed5-41ff-ab4f-e8774468ad5b",
-    "timestamp" : "2018-08-17T02:44:04.348Z",
+    "identifier" : "urn:uuid:b9c46a89-e77d-4a06-8334-b324412d1674",
+    "timestamp" : "2018-08-17T18:48:39.833Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6551,8 +6595,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f7bdd0c3-e0d9-4758-b8b0-913194a338c7",
-    "timestamp" : "2018-08-17T02:44:04.598Z",
+    "identifier" : "urn:uuid:be1e10cb-8028-4d40-a067-1cec20045cb1",
+    "timestamp" : "2018-08-17T18:48:40.020Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6623,8 +6667,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:eb4344f5-9ca3-44bc-a192-6bd8a4db14a0",
-    "timestamp" : "2018-08-17T02:44:05.238Z",
+    "identifier" : "urn:uuid:678c5bdb-30b1-496d-87c4-b80fe72c126e",
+    "timestamp" : "2018-08-17T18:48:40.145Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6674,61 +6718,6 @@ e: {
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "369790002",
-        "display" : "Nottingham Combined Grade I: 3-5 points (finding)"
-      },
-      {
-        "code" : "369791003",
-        "display" : "Nottingham Combined Grade II: 6-7 points (finding)"
-      },
-      {
-        "code" : "369792005",
-        "display" : "Nottingham Combined Grade III: 8-9 points (finding)"
-      }]
-    }]
-  }
-}}
-####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:cfed6e9d-963a-4ec2-bb9e-69fb904730d8",
-    "timestamp" : "2018-08-17T02:44:05.676Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "369790002",
-      "display" : "Nottingham Combined Grade I: 3-5 points (finding)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "369791003",
-      "display" : "Nottingham Combined Grade II: 6-7 points (finding)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "369792005",
-      "display" : "Nottingham Combined Grade III: 8-9 points (finding)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
         "code" : "10828004",
         "display" : "Positive (qualifier value)"
       },
@@ -6739,6 +6728,10 @@ e: {
       {
         "code" : "42425007",
         "display" : "Equivocal (qualifier value)"
+      },
+      {
+        "code" : "82334004",
+        "display" : "Indeterminate (qualifier value)"
       }]
     }]
   }
@@ -6748,8 +6741,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e6e056ba-cfc7-4014-8c03-5f734fcb60db",
-    "timestamp" : "2018-08-17T02:44:06.113Z",
+    "identifier" : "urn:uuid:24409dad-5809-4d38-ae79-dbc8123504b8",
+    "timestamp" : "2018-08-17T18:48:40.270Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6772,6 +6765,11 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "42425007",
       "display" : "Equivocal (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "82334004",
+      "display" : "Indeterminate (qualifier value)"
     }]
   }
 },
@@ -6785,11 +6783,15 @@ e: {
       "system" : "http://snomed.info/sct",
       "concept" : [{
         "code" : "10828004",
-        "display" : "Positive"
+        "display" : "Positive (qualifier value)"
       },
       {
         "code" : "260385009",
-        "display" : "Negative"
+        "display" : "Negative (qualifier value)"
+      },
+      {
+        "code" : "82334004",
+        "display" : "Indeterminate (qualifier value)"
       }]
     }]
   }
@@ -6799,8 +6801,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b0487794-41b7-4d21-9de1-54f745310c3f",
-    "timestamp" : "2018-08-17T02:44:06.347Z",
+    "identifier" : "urn:uuid:c2a399d1-fe01-4142-a254-f2ee1da1c5ab",
+    "timestamp" : "2018-08-17T18:48:40.442Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6812,12 +6814,63 @@ e: {
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "10828004",
-      "display" : "Positive"
+      "display" : "Positive (qualifier value)"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "260385009",
-      "display" : "Negative"
+      "display" : "Negative (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "82334004",
+      "display" : "Indeterminate (qualifier value)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "10828004",
+        "display" : "Positive (qualifier value)"
+      },
+      {
+        "code" : "260385009",
+        "display" : "Negative (qualifier value)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:7fa3997d-a622-488b-94ca-fe11a6d079b9",
+    "timestamp" : "2018-08-17T18:48:40.661Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10828004",
+      "display" : "Positive (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "260385009",
+      "display" : "Negative (qualifier value)"
     }]
   }
 },
@@ -6861,8 +6914,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:01b334fd-740d-4282-a0f9-89e46dd5d432",
-    "timestamp" : "2018-08-17T02:44:06.566Z",
+    "identifier" : "urn:uuid:17f29894-401b-45a8-bde8-c9285a7f67c2",
+    "timestamp" : "2018-08-17T18:48:40.833Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6931,8 +6984,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:3ef9836e-c27f-4a67-a99e-69ba5dd632c9",
-    "timestamp" : "2018-08-17T02:44:07.051Z",
+    "identifier" : "urn:uuid:adfd70ca-2b47-4704-ae58-deb7f0114201",
+    "timestamp" : "2018-08-17T18:48:41.224Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6994,8 +7047,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e2c1b69d-4a82-43ad-80e4-dfff9089bff0",
-    "timestamp" : "2018-08-17T02:44:07.504Z",
+    "identifier" : "urn:uuid:5417ecce-b751-47ee-bb5e-8decbd32ff84",
+    "timestamp" : "2018-08-17T18:48:41.395Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"

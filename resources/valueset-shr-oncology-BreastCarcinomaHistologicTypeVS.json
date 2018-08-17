@@ -1,0 +1,229 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-BreastCarcinomaHistologicTypeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCarcinomaHistologicTypeVS ValueSet</b></p>\n<p>Histologic types of breast carcinomas, including invasive carcinoma and ductal carcinoma in situ. Codes are drawn from SNOMED CT; local codes are used where SNOMED CT codes are unavailable.\nThe codes are intended to match the scope of breast carcinoma histologic types specified in ICD-O-3. Additional SNOMED CT codes may be appropriate to include in this value set. We are requesting feedback on the perceived need to request SNOMED CT codes to represent the histologic types currently represented by local codes.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.BreastCarcinomaHistologicTypeVS"
+    }
+  ],
+  "name": "BreastCarcinomaHistologicTypeVS",
+  "title": "BC BreastCarcinomaHistologicTypeVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-17",
+  "description": "Histologic types of breast carcinomas, including invasive carcinoma and ductal carcinoma in situ. Codes are drawn from SNOMED CT; local codes are used where SNOMED CT codes are unavailable.\nThe codes are intended to match the scope of breast carcinoma histologic types specified in ICD-O-3. Additional SNOMED CT codes may be appropriate to include in this value set. We are requesting feedback on the perceived need to request SNOMED CT codes to represent the histologic types currently represented by local codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "82711006",
+            "display": "Infiltrating duct carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "16741004",
+            "display": "Pleomorphic carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "128631001",
+            "display": "Carcinoma with osteoclast-like giant cells (morphologic abnormality)"
+          },
+          {
+            "code": "89740008",
+            "display": "Lobular carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "4631006",
+            "display": "Tubular adenocarcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "30156004",
+            "display": "Cribriform carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "72495009",
+            "display": "Mucinous adenocarcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "32913002",
+            "display": "Medullary carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "128698005",
+            "display": "Atypical medullary carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "82711006",
+            "display": "Infiltrating duct carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "22694002",
+            "display": "Adenocarcinoma with apocrine metaplasia (morphologic abnormality)"
+          },
+          {
+            "code": "703578005",
+            "display": "Invasive micropapillary carcinoma of breast (morphologic abnormality)"
+          },
+          {
+            "code": "128705006",
+            "display": "Metaplastic carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "59367005",
+            "display": "Adenosquamous carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "15176003",
+            "display": "Adenocarcinoma with squamous metaplasia (morphologic abnormality)"
+          },
+          {
+            "code": "733875004",
+            "display": "Fibromatosis-like metaplastic carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "399739006",
+            "display": "Metaplastic squamous cell carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "65692009",
+            "display": "Spindle cell carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "128705006",
+            "display": "Metaplastic carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "128884000",
+            "display": "Malignant myoepithelioma (morphologic abnormality)"
+          },
+          {
+            "code": "703644009",
+            "display": "Adenomyoepithelioma with carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "11671000",
+            "display": "Adenoid cystic carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "55937004",
+            "display": "Neuroendocrine carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "719105002",
+            "display": "Small cell neuroendocrine carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "128704005",
+            "display": "Adenocarcinoma with neuroendocrine differentiation (morphologic abnormality("
+          },
+          {
+            "code": "41919003",
+            "display": "Juvenile carcinoma of the breast (morphologic abnormality)"
+          },
+          {
+            "code": "64524002",
+            "display": "Intraductal papillary adenocarcinoma with invasion (morphologic abnormality)"
+          },
+          {
+            "code": "45410002",
+            "display": "Acinar cell carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "4079000",
+            "display": "Mucoepidermoid carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "57596004",
+            "display": "Oxyphilic adenocarcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "3839000",
+            "display": "Lipid-rich carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "74280008",
+            "display": "Glycogen-rich carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "78424008",
+            "display": "Sebaceous adenocarcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "399935008",
+            "display": "Ductal carcinoma in situ - category (morphologic abnormality)"
+          },
+          {
+            "code": "30566004",
+            "display": "Noninfiltrating intraductal papillary adenocarcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "703545003",
+            "display": "Encapsulated papillary carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "703547006",
+            "display": "Encapsulated papillary carcinoma with invasion (morphologic abnormality)"
+          },
+          {
+            "code": "703546002",
+            "display": "Solid papillary carcinoma in situ (morphologic abnormality)"
+          },
+          {
+            "code": "703594003",
+            "display": "Solid papillary carcinoma with invasion (morphologic abnormality)"
+          },
+          {
+            "code": "32968003",
+            "display": "Inflammatory carcinoma (morphologic abnormality)"
+          },
+          {
+            "code": "2985005",
+            "display": "Paget's disease, mammary (morphologic abnormality)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-oncology-BreastCarcinomaHistologicTypeCS",
+        "concept": [
+          {
+            "code": "metaplastic_chondroid",
+            "display": "Metaplastic carcinoma with chondroid differentiation"
+          },
+          {
+            "code": "metaplastic_osseous",
+            "display": "Metaplastic carcinoma with osseous differentiation"
+          },
+          {
+            "code": "metaplastic_mesenchymal",
+            "display": "Metaplastic carcinoma with mesenchymal differentiation"
+          },
+          {
+            "code": "metaplastic_mixed",
+            "display": "Mixed metaplastic carcinoma"
+          },
+          {
+            "code": "polymorphous_carcinoma",
+            "display": "Polymorphous carcinoma"
+          }
+        ]
+      }
+    ]
+  }
+}

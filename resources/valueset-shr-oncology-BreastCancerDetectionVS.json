@@ -3,7 +3,7 @@
   "id": "shr-oncology-BreastCancerDetectionVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerDetectionVS ValueSet</b></p>\n<p>Basis for cancer detection, from HL7 CDA® R2 Implementation Guide: Clinical Oncology Treatment Plan and Summary, Release 1 - US Realm Standard for Trial Use Release 3, October 2016, Volume 2 — Templates and Supporting Material.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastCancerDetectionVS ValueSet</b></p>\n<p>The method with which breast cancer was detected.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS",
   "identifier": [
@@ -26,24 +26,52 @@
       ]
     }
   ],
-  "date": "2018-08-16",
-  "description": "Basis for cancer detection, from HL7 CDA® R2 Implementation Guide: Clinical Oncology Treatment Plan and Summary, Release 1 - US Realm Standard for Trial Use Release 3, October 2016, Volume 2 — Templates and Supporting Material.",
+  "date": "2018-08-17",
+  "description": "The method with which breast cancer was detected.",
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "360156006",
-            "display": "Screening"
+            "code": "113011001",
+            "display": "Palpation (procedure)"
           },
           {
-            "code": "160237006",
-            "display": "History/Symptoms"
+            "code": "32750006",
+            "display": "Inspection (procedure)"
           },
           {
-            "code": "261087003",
-            "display": "Incidental"
+            "code": "71651007",
+            "display": "Mammography (procedure)"
+          },
+          {
+            "code": "82918005",
+            "display": "Positron emission tomography (procedure)"
+          },
+          {
+            "code": "16310003",
+            "display": "Diagnostic ultrasonography (procedure)"
+          },
+          {
+            "code": "113091000",
+            "display": "Magnetic resonance imaging (procedure)"
+          },
+          {
+            "code": "448764002",
+            "display": "Ultrasound elastography (procedure)"
+          },
+          {
+            "code": "725404004",
+            "display": "Molecular breast imaging (procedure)"
+          },
+          {
+            "code": "62434009",
+            "display": "Breast thermography (procedure)"
+          },
+          {
+            "code": "450566007",
+            "display": "Digital breast tomosynthesis (procedure)"
           }
         ]
       }

@@ -3,7 +3,7 @@
   "id": "shr-oncology-BreastSiteVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastSiteVS ValueSet</b></p>\n<p>Topography of the breast. Codes are drawn from Snomed and correspond to ICD-O-3.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastSiteVS ValueSet</b></p>\n<p>Topography of the breast. Codes are drawn from SNOMED CT and can be regarded as equivalent to ICD-O-3 topography codes.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastSiteVS",
   "identifier": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-16",
-  "description": "Topography of the breast. Codes are drawn from Snomed and correspond to ICD-O-3.",
+  "date": "2018-08-17",
+  "description": "Topography of the breast. Codes are drawn from SNOMED CT and can be regarded as equivalent to ICD-O-3 topography codes.",
   "compose": {
     "include": [
       {
@@ -35,39 +35,39 @@
         "concept": [
           {
             "code": "24142002",
-            "display": "Nipple structure (body structure) - corresponds to ICDO3#C50.0"
+            "display": "Nipple structure (body structure)"
           },
           {
             "code": "49058007",
-            "display": "Structure of central portion of breast (body structure) - corresponds to ICDO3#C50.1"
+            "display": "Structure of central portion of breast (body structure)"
           },
           {
             "code": "77831004",
-            "display": "Structure of upper inner quadrant of breast (body structure) - corresponds to ICDO3#C50.2"
+            "display": "Structure of upper inner quadrant of breast (body structure)"
           },
           {
             "code": "19100000",
-            "display": "Structure of lower inner quadrant of breast (body structure) - corresponds to ICDO3#C50.3"
+            "display": "Structure of lower inner quadrant of breast (body structure)"
           },
           {
             "code": "76365002",
-            "display": "Structure of upper outer quadrant of breast (body structure) - corresponds to ICDO3#C50.4"
+            "display": "Structure of upper outer quadrant of breast (body structure)"
           },
           {
             "code": "33564002",
-            "display": "Structure of lower outer quadrant of breast (body structure) - corresponds to ICDO3#C50.5"
+            "display": "Structure of lower outer quadrant of breast (body structure)"
           },
           {
             "code": "38412008",
-            "display": "Structure of axillary tail of breast (body structure) - corresponds to ICDO3#C50.6"
+            "display": "Structure of axillary tail of breast (body structure)"
           },
           {
             "code": "276825009",
-            "display": "Overlapping sites (qualifier value) - corresponds to ICDO3#C50.8"
+            "display": "Overlapping sites (qualifier value)"
           },
           {
             "code": "76752008",
-            "display": "Breast structure (body structure) - corresponds to ICDO3#C50.9"
+            "display": "Breast structure (body structure)"
           }
         ]
       }

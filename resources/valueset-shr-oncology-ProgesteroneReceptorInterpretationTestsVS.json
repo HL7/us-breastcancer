@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "description": "Laboratory observations holding the interpretation of progesterone receptor status (e.g. positive, negative).",
   "compose": {
     "include": [
@@ -40,6 +40,10 @@
           {
             "code": "40557-1",
             "display": "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
+          },
+          {
+            "code": "85339-0",
+            "display": "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
           }
         ]
       }

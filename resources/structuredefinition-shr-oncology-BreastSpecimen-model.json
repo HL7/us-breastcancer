@@ -15,7 +15,7 @@
   "name": "BreastSpecimenModel",
   "title": "BC BreastSpecimen Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -236,27 +236,6 @@
         },
         "type": [
           {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.collectionSite.value",
-        "path": "shr-oncology-BreastSpecimen-model.collectionSite.value",
-        "short": "A body site specific to the breast structure.",
-        "definition": "A body site specific to the breast structure.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastSpecimen-model.collectionSite.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
           }
         ],
@@ -274,27 +253,6 @@
         "base": {
           "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
-        "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
-        "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -677,27 +635,6 @@
         },
         "type": [
           {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.collectionSite.value",
-        "path": "shr-oncology-BreastSpecimen-model.collectionSite.value",
-        "short": "A body site specific to the breast structure.",
-        "definition": "A body site specific to the breast structure.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastSpecimen-model.collectionSite.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
           }
         ],
@@ -715,27 +652,6 @@
         "base": {
           "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
-        "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
-        "short": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "definition": "Specimen resulting from biopsy or excision of breast and surrounding tissue.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastSpecimen-model.sourceSpecimen.value",
-          "min": 1,
           "max": "1"
         },
         "type": [

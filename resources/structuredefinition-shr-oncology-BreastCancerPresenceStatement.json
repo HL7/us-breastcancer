@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerPresenceStatement",
   "name": "BreastCancerPresenceStatementProfile",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -813,7 +813,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS"
           }
         },
         "mapping": [
@@ -1675,7 +1675,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS"
           }
         }
       },

@@ -870,8 +870,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastCancerTypeVS" />
-                <display value="BC BreastCancerTypeVS ValueSet" />
+                <reference value="ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS" />
+                <display value="BC BreastCarcinomaHistologicTypeVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -940,13 +940,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/cimi-context-ExceptionValueVS" />
-                <display value="BC ExceptionValueVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/shr-core-FindingMethodVS" />
                 <display value="BC FindingMethodVS ValueSet" />
             </sourceReference>
@@ -956,6 +949,20 @@
             <sourceReference>
                 <reference value="ValueSet/shr-oncology-HER2FISHMethodVS" />
                 <display value="BC HER2FISHMethodVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-oncology-HER2byFISHVSInterpretationTestsVS" />
+                <display value="BC HER2byFISHVSInterpretationTestsVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-oncology-HER2byIHCInterpretationTestsVS" />
+                <display value="BC HER2byIHCInterpretationTestsVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1017,50 +1024,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-MitoticCountScoreNullVS" />
-                <display value="BC MitoticCountScoreNullVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-MitoticCountScoreVS" />
-                <display value="BC MitoticCountScoreVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/shr-oncology-MorphologyBehaviorVS" />
                 <display value="BC MorphologyBehaviorVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-NottinghamCombinedGradeNullVS" />
-                <display value="BC NottinghamCombinedGradeNullVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-NottinghamCombinedGradeVS" />
-                <display value="BC NottinghamCombinedGradeVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-NottinghamComponentNullVS" />
-                <display value="BC NottinghamComponentNullVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-NuclearPleomorphismScoreVS" />
-                <display value="BC NuclearPleomorphismScoreVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1073,8 +1038,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-core-PositiveNegativeEquivocalVS" />
-                <display value="BC PositiveNegativeEquivocalVS ValueSet" />
+                <reference value="ValueSet/shr-core-PositiveNegativeEquivocalIndeterminateVS" />
+                <display value="BC PositiveNegativeEquivocalIndeterminateVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-PositiveNegativeIndeterminateVS" />
+                <display value="BC PositiveNegativeIndeterminateVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1122,13 +1094,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-TubuleFormationScoreVS" />
-                <display value="BC TubuleFormationScoreVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/shr-oncology-TumorMarginDescriptionVS" />
                 <display value="BC TumorMarginDescriptionVS ValueSet" />
             </sourceReference>
@@ -1157,8 +1122,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-oncology-BreastCancerTypeCS" />
-                <display value="BC BreastCancerTypeCS CodeSystem" />
+                <reference value="CodeSystem/shr-oncology-BreastCarcinomaHistologicTypeCS" />
+                <display value="BC BreastCarcinomaHistologicTypeCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -1173,13 +1138,6 @@
             <sourceReference>
                 <reference value="CodeSystem/shr-core-ConditionCategoryCS" />
                 <display value="BC ConditionCategoryCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/cimi-context-ExceptionValueCS" />
-                <display value="BC ExceptionValueCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>

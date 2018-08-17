@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement",
   "name": "BreastPathologicalLymphNodeInvolvementProfile",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1833,7 +1833,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -3300,7 +3300,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -4275,7 +4275,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -5244,7 +5244,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -6213,7 +6213,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -7182,7 +7182,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -8151,7 +8151,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -9120,7 +9120,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -10089,7 +10089,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -11064,7 +11064,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -11601,7 +11601,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -11784,7 +11784,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -11870,7 +11870,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -11950,7 +11950,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -12024,7 +12024,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -12098,7 +12098,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -12172,7 +12172,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -12246,7 +12246,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -12320,7 +12320,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -12400,7 +12400,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },

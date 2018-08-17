@@ -21,7 +21,7 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
-<h2>Primary Value Sets defined as part of this Implementation Guide</h2>
+<h2>Primary value sets defined as part of this Implementation Guide</h2>
 
 <table class="codes">
   <thead>
@@ -45,11 +45,12 @@
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-BreastCancerDetectionVS.html">BreastCancerDetectionVS</a></td>
-        <td>{% capture md_text %}Basis for cancer detection, from HL7 CDA® R2 Implementation Guide: Clinical Oncology Treatment Plan and Summary, Release 1 - US Realm Standard for Trial Use Release 3, October 2016, Volume 2 — Templates and Supporting Material.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}The method with which breast cancer was detected.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="ValueSet-shr-oncology-BreastCancerTypeVS.html">BreastCancerTypeVS</a></td>
-        <td>{% capture md_text %}Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="ValueSet-shr-oncology-BreastCarcinomaHistologicTypeVS.html">BreastCarcinomaHistologicTypeVS</a></td>
+        <td>{% capture md_text %}Histologic types of breast carcinomas, including invasive carcinoma and ductal carcinoma in situ. Codes are drawn from SNOMED CT; local codes are used where SNOMED CT codes are unavailable.
+The codes are intended to match the scope of breast carcinoma histologic types specified in ICD-O-3. Additional SNOMED CT codes may be appropriate to include in this value set. We are requesting feedback on the perceived need to request SNOMED CT codes to represent the histologic types currently represented by local codes.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-BreastLymphNodeGroupVS.html">BreastLymphNodeGroupVS</a></td>
@@ -57,7 +58,7 @@
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-BreastSiteVS.html">BreastSiteVS</a></td>
-        <td>{% capture md_text %}Topography of the breast. Codes are drawn from Snomed and correspond to ICD-O-3.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}Topography of the breast. Codes are drawn from SNOMED CT and can be regarded as equivalent to ICD-O-3 topography codes.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-BreastSpecimenCollectionMethodVS.html">BreastSpecimenCollectionMethodVS</a></td>
@@ -65,7 +66,7 @@
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-BreastSpecimenTypeVS.html">BreastSpecimenTypeVS</a></td>
-        <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from SNOMED CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-core-ClockDirectionVS.html">ClockDirectionVS</a></td>
@@ -84,16 +85,20 @@
         <td>{% capture md_text %}Laboratory observations holding the interpretation of estrogen receptor status (e.g. positive, negative).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="ValueSet-cimi-context-ExceptionValueVS.html">ExceptionValueVS</a></td>
-        <td>{% capture md_text %}Reasons that a value associated with a test or other finding is missing. Includes all codes from 	http://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="ValueSet-shr-core-FindingMethodVS.html">FindingMethodVS</a></td>
         <td></td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-HER2FISHMethodVS.html">HER2FISHMethodVS</a></td>
         <td>{% capture md_text %}Value set containing In Situ Hybridization methods of determining HER2 status{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-HER2byFISHVSInterpretationTestsVS.html">HER2byFISHVSInterpretationTestsVS</a></td>
+        <td>{% capture md_text %}Laboratory observations holding the interpretation of FISH HER2 receptor tests (e.g. positive, negative, equivocal){% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-HER2byIHCInterpretationTestsVS.html">HER2byIHCInterpretationTestsVS</a></td>
+        <td>{% capture md_text %}Laboratory observations holding the interpretation of immunohistochemistry HER2 receptor tests (e.g. positive, negative, equivocal).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-HER2byIHCScoreNullVS.html">HER2byIHCScoreNullVS</a></td>
@@ -124,36 +129,16 @@
         <td>{% capture md_text %}The procedure method used to obtain the specimen analyzed for the pathological lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="ValueSet-shr-oncology-MitoticCountScoreNullVS.html">MitoticCountScoreNullVS</a></td>
-        <td>{% capture md_text %}Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7. Answer list seems to be erroneously missing LNC#LA27219-7{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="ValueSet-shr-oncology-MitoticCountScoreVS.html">MitoticCountScoreVS</a></td>
-        <td>{% capture md_text %}The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade (NHG). The specific scores assigned to the number of mitoses depends on the size of the high power fields (HPF). For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="ValueSet-shr-oncology-MorphologyBehaviorVS.html">MorphologyBehaviorVS</a></td>
         <td>{% capture md_text %}The morphologic behavior of the cancer. These are equivalent to the suffix to the ICD-O-3 histologic type codes.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeNullVS.html">NottinghamCombinedGradeNullVS</a></td>
-        <td>{% capture md_text %}Data absent reasons (null values) for Nottingham Combined Grade scores. Removes non-applicable values from the ExceptionValueVS, and adds values that align with LOINC normative answer list LL4561-8{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="ValueSet-shr-core-PositiveNegativeEquivocalIndeterminateVS.html">PositiveNegativeEquivocalIndeterminateVS</a></td>
+        <td>{% capture md_text %}Interpretation of a test result as positive, negative, equivocal, or indeterminate.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeVS.html">NottinghamCombinedGradeVS</a></td>
-        <td>{% capture md_text %}Combined score from the Nottingham grading system.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="ValueSet-shr-oncology-NottinghamComponentNullVS.html">NottinghamComponentNullVS</a></td>
-        <td>{% capture md_text %}Data absent reasons (null values) for nuclear pleomorphism count and tubule formation score. Aligns with LOINC normative answer lists LL4382-9 and LL4380-3.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html">NuclearPleomorphismScoreVS</a></td>
-        <td>{% capture md_text %}Value set containing the scores for nuclear pleomorphism. Aligns with LOINC normative answer list LL4382-9{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="ValueSet-shr-core-PositiveNegativeEquivocalVS.html">PositiveNegativeEquivocalVS</a></td>
-        <td>{% capture md_text %}Interpretation of a test result as positive, negative or equivocal. Equivalent values to LOINC LL2009-0.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="ValueSet-shr-core-PositiveNegativeIndeterminateVS.html">PositiveNegativeIndeterminateVS</a></td>
+        <td>{% capture md_text %}Value set containing the values positive, negative and indeterminate. Equivalent to values in LOINC answer list LL2038-9/LL759-2{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-core-PositiveNegativeVS.html">PositiveNegativeVS</a></td>
@@ -174,13 +159,6 @@
       <tr>
         <td><a href="ValueSet-shr-oncology-StainingIntensityVS.html">StainingIntensityVS</a></td>
         <td>{% capture md_text %}Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="ValueSet-shr-oncology-TubuleFormationScoreVS.html">TubuleFormationScoreVS</a></td>
-        <td>{% capture md_text %}The degree of glandular differentiation or tubule formation in breast carcinoma. Aligns with normative LOINC answer list LL4380-3. Less aggressive cancers have more tubule formation, with scores assigned as follows:
-1 = greater than 75% of the tumor area contains tubular or glandular structures
-2 = 10 to 75% of the tumor area contains tubular structures
-3 = less than 10% of the tumor area contains tubular structures{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="ValueSet-shr-oncology-TumorMarginDescriptionVS.html">TumorMarginDescriptionVS</a></td>

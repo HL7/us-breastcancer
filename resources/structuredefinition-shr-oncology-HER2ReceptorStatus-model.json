@@ -15,7 +15,7 @@
   "name": "HER2ReceptorStatusModel",
   "title": "BC HER2ReceptorStatus Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -1606,27 +1606,6 @@
         },
         "type": [
           {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
-        "short": "A set of codes drawn from different coding systems, representing the same concept.",
-        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1636,7 +1615,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-PositiveNegativeEquivocalVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-PositiveNegativeEquivocalIndeterminateVS"
           }
         }
       },
@@ -1663,7 +1642,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -3323,27 +3302,6 @@
         },
         "type": [
           {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
-        "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
-        "short": "A set of codes drawn from different coding systems, representing the same concept.",
-        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-HER2ReceptorStatus-model.observationContext.resultValue.valueCodeableConcept",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -3353,7 +3311,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-PositiveNegativeEquivocalVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-PositiveNegativeEquivocalIndeterminateVS"
           }
         }
       },
@@ -3380,7 +3338,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },

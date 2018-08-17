@@ -3,7 +3,7 @@
   "id": "shr-oncology-BreastSpecimenTypeCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastSpecimenTypeCS CodeSystem</b></p>\n<p>The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC BreastSpecimenTypeCS CodeSystem</b></p>\n<p>The type of specimen obtained from the breast. Codes are drawn from SNOMED CT where available. Local codes are used where Snomed codes are currently unavailable.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/CodeSystem/shr-oncology-BreastSpecimenTypeCS",
   "identifier": {
@@ -24,8 +24,8 @@
       ]
     }
   ],
-  "date": "2018-08-16",
-  "description": "The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.",
+  "date": "2018-08-17",
+  "description": "The type of specimen obtained from the breast. Codes are drawn from SNOMED CT where available. Local codes are used where Snomed codes are currently unavailable.",
   "caseSensitive": true,
   "content": "complete",
   "count": 3,

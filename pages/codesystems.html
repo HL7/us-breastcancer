@@ -21,7 +21,7 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
-<h2>Primary Code Systems defined as part of this Implementation Guide</h2>
+<h2>Primary code systems defined as part of this Implementation Guide</h2>
 
 <table class="codes">
   <thead>
@@ -40,20 +40,17 @@
         <td>{% capture md_text %}Anatomical location or specimen further detailing directionality. Codes are from NCI{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="CodeSystem-shr-oncology-BreastCancerTypeCS.html">BreastCancerTypeCS</a></td>
-        <td>{% capture md_text %}Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="CodeSystem-shr-oncology-BreastCarcinomaHistologicTypeCS.html">BreastCarcinomaHistologicTypeCS</a></td>
+        <td>{% capture md_text %}Histologic types of breast carcinomas, including invasive carcinoma and ductal carcinoma in situ. Codes are drawn from SNOMED CT; local codes are used where SNOMED CT codes are unavailable.
+The codes are intended to match the scope of breast carcinoma histologic types specified in ICD-O-3. Additional SNOMED CT codes may be appropriate to include in this value set. We are requesting feedback on the perceived need to request SNOMED CT codes to represent the histologic types currently represented by local codes.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-shr-oncology-BreastSpecimenTypeCS.html">BreastSpecimenTypeCS</a></td>
-        <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from SNOMED CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-shr-core-ConditionCategoryCS.html">ConditionCategoryCS</a></td>
         <td></td>
-      </tr>
-      <tr>
-        <td><a href="CodeSystem-cimi-context-ExceptionValueCS.html">ExceptionValueCS</a></td>
-        <td>{% capture md_text %}Reasons that a value associated with a test or other finding is missing. Includes all codes from 	http://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-shr-oncology-RecurrenceRiskScoreInterpretationCS.html">RecurrenceRiskScoreInterpretationCS</a></td>

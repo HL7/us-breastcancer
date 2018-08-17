@@ -477,8 +477,8 @@
     "ValueSet/shr-oncology-BreastCancerDetectionVS": {
       "base": "ValueSet-shr-oncology-BreastCancerDetectionVS.html"
     },
-    "ValueSet/shr-oncology-BreastCancerTypeVS": {
-      "base": "ValueSet-shr-oncology-BreastCancerTypeVS.html"
+    "ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS": {
+      "base": "ValueSet-shr-oncology-BreastCarcinomaHistologicTypeVS.html"
     },
     "ValueSet/shr-oncology-BreastLymphNodeGroupVS": {
       "base": "ValueSet-shr-oncology-BreastLymphNodeGroupVS.html"
@@ -507,14 +507,17 @@
     "ValueSet/shr-oncology-EstrogenReceptorInterpretationTestsVS": {
       "base": "ValueSet-shr-oncology-EstrogenReceptorInterpretationTestsVS.html"
     },
-    "ValueSet/cimi-context-ExceptionValueVS": {
-      "base": "ValueSet-cimi-context-ExceptionValueVS.html"
-    },
     "ValueSet/shr-core-FindingMethodVS": {
       "base": "ValueSet-shr-core-FindingMethodVS.html"
     },
     "ValueSet/shr-oncology-HER2FISHMethodVS": {
       "base": "ValueSet-shr-oncology-HER2FISHMethodVS.html"
+    },
+    "ValueSet/shr-oncology-HER2byFISHVSInterpretationTestsVS": {
+      "base": "ValueSet-shr-oncology-HER2byFISHVSInterpretationTestsVS.html"
+    },
+    "ValueSet/shr-oncology-HER2byIHCInterpretationTestsVS": {
+      "base": "ValueSet-shr-oncology-HER2byIHCInterpretationTestsVS.html"
     },
     "ValueSet/shr-oncology-HER2byIHCScoreNullVS": {
       "base": "ValueSet-shr-oncology-HER2byIHCScoreNullVS.html"
@@ -540,32 +543,17 @@
     "ValueSet/shr-oncology-LymphNodeSamplingMethodVS": {
       "base": "ValueSet-shr-oncology-LymphNodeSamplingMethodVS.html"
     },
-    "ValueSet/shr-oncology-MitoticCountScoreNullVS": {
-      "base": "ValueSet-shr-oncology-MitoticCountScoreNullVS.html"
-    },
-    "ValueSet/shr-oncology-MitoticCountScoreVS": {
-      "base": "ValueSet-shr-oncology-MitoticCountScoreVS.html"
-    },
     "ValueSet/shr-oncology-MorphologyBehaviorVS": {
       "base": "ValueSet-shr-oncology-MorphologyBehaviorVS.html"
-    },
-    "ValueSet/shr-oncology-NottinghamCombinedGradeNullVS": {
-      "base": "ValueSet-shr-oncology-NottinghamCombinedGradeNullVS.html"
-    },
-    "ValueSet/shr-oncology-NottinghamCombinedGradeVS": {
-      "base": "ValueSet-shr-oncology-NottinghamCombinedGradeVS.html"
-    },
-    "ValueSet/shr-oncology-NottinghamComponentNullVS": {
-      "base": "ValueSet-shr-oncology-NottinghamComponentNullVS.html"
-    },
-    "ValueSet/shr-oncology-NuclearPleomorphismScoreVS": {
-      "base": "ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html"
     },
     "ValueSet/shr-core-PerformanceGradingScaleVS": {
       "base": "ValueSet-shr-core-PerformanceGradingScaleVS.html"
     },
-    "ValueSet/shr-core-PositiveNegativeEquivocalVS": {
-      "base": "ValueSet-shr-core-PositiveNegativeEquivocalVS.html"
+    "ValueSet/shr-core-PositiveNegativeEquivocalIndeterminateVS": {
+      "base": "ValueSet-shr-core-PositiveNegativeEquivocalIndeterminateVS.html"
+    },
+    "ValueSet/shr-core-PositiveNegativeIndeterminateVS": {
+      "base": "ValueSet-shr-core-PositiveNegativeIndeterminateVS.html"
     },
     "ValueSet/shr-core-PositiveNegativeVS": {
       "base": "ValueSet-shr-core-PositiveNegativeVS.html"
@@ -585,9 +573,6 @@
     "ValueSet/shr-oncology-StainingIntensityVS": {
       "base": "ValueSet-shr-oncology-StainingIntensityVS.html"
     },
-    "ValueSet/shr-oncology-TubuleFormationScoreVS": {
-      "base": "ValueSet-shr-oncology-TubuleFormationScoreVS.html"
-    },
     "ValueSet/shr-oncology-TumorMarginDescriptionVS": {
       "base": "ValueSet-shr-oncology-TumorMarginDescriptionVS.html"
     },
@@ -600,17 +585,14 @@
     "CodeSystem/BC-basic-resource-type": {
       "base": "CodeSystem-BC-basic-resource-type.html"
     },
-    "CodeSystem/shr-oncology-BreastCancerTypeCS": {
-      "base": "CodeSystem-shr-oncology-BreastCancerTypeCS.html"
+    "CodeSystem/shr-oncology-BreastCarcinomaHistologicTypeCS": {
+      "base": "CodeSystem-shr-oncology-BreastCarcinomaHistologicTypeCS.html"
     },
     "CodeSystem/shr-oncology-BreastSpecimenTypeCS": {
       "base": "CodeSystem-shr-oncology-BreastSpecimenTypeCS.html"
     },
     "CodeSystem/shr-core-ConditionCategoryCS": {
       "base": "CodeSystem-shr-core-ConditionCategoryCS.html"
-    },
-    "CodeSystem/cimi-context-ExceptionValueCS": {
-      "base": "CodeSystem-cimi-context-ExceptionValueCS.html"
     },
     "CodeSystem/cimi-entity-LanguageQualifierCS": {
       "base": "CodeSystem-cimi-entity-LanguageQualifierCS.html"

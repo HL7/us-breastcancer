@@ -15,7 +15,7 @@
   "name": "BreastCancerPresenceStatementModel",
   "title": "BC BreastCancerPresenceStatement Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
   "contact": [
     {
@@ -123,7 +123,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS"
           }
         }
       },
@@ -691,27 +691,6 @@
       {
         "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
         "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
-        "short": "The full staging information",
-        "definition": "The full staging information",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -719,13 +698,13 @@
             "display": "Malignant Neoplasm of Breast Staging"
           }
         ],
-        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
-        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
-        "min": 1,
+        "short": "The full staging information",
+        "definition": "The full staging information",
+        "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
-          "min": 1,
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -857,7 +836,7 @@
         "binding": {
           "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerTypeVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS"
           }
         }
       },
@@ -1425,27 +1404,6 @@
       {
         "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
         "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
-        "short": "The full staging information",
-        "definition": "The full staging information",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
-        "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1453,13 +1411,13 @@
             "display": "Malignant Neoplasm of Breast Staging"
           }
         ],
-        "short": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
-        "definition": "The stage of a breast cancer. Different staging systems use different staging groups, so there are currently no terminology bindings associated with this class.",
-        "min": 1,
+        "short": "The full staging information",
+        "definition": "The full staging information",
+        "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail.value",
-          "min": 1,
+          "path": "shr-oncology-BreastCancerPresenceStatement-model.conditionPresenceContext.stage.stageDetail",
+          "min": 0,
           "max": "1"
         },
         "type": [

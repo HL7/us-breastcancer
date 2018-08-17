@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-PositiveNegativeEquivocalIndeterminateVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC PositiveNegativeEquivocalIndeterminateVS ValueSet</b></p>\n<p>Interpretation of a test result as positive, negative, equivocal, or indeterminate.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-PositiveNegativeEquivocalIndeterminateVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.core.PositiveNegativeEquivocalIndeterminateVS"
+    }
+  ],
+  "name": "PositiveNegativeEquivocalIndeterminateVS",
+  "title": "BC PositiveNegativeEquivocalIndeterminateVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-17",
+  "description": "Interpretation of a test result as positive, negative, equivocal, or indeterminate.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10828004",
+            "display": "Positive (qualifier value)"
+          },
+          {
+            "code": "260385009",
+            "display": "Negative (qualifier value)"
+          },
+          {
+            "code": "42425007",
+            "display": "Equivocal (qualifier value)"
+          },
+          {
+            "code": "82334004",
+            "display": "Indeterminate (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}
