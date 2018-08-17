@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-oncology-TumorIdentifier-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC TumorIdentifier Logical Model</b></p>\n  <p>A human-readable identifier for the lesion; e.g., a letter or integer.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.TumorIdentifier"
+    }
+  ],
+  "name": "TumorIdentifierModel",
+  "title": "BC TumorIdentifier Logical Model",
+  "status": "draft",
+  "date": "2018-08-16",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-oncology-TumorIdentifier-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-oncology-TumorIdentifier-model",
+        "path": "shr-oncology-TumorIdentifier-model",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-TumorIdentifier-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-TumorIdentifier-model.value",
+        "path": "shr-oncology-TumorIdentifier-model.value",
+        "short": "String representing a human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "String representing a human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-TumorIdentifier-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-oncology-TumorIdentifier-model",
+        "path": "shr-oncology-TumorIdentifier-model",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-TumorIdentifier-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-TumorIdentifier-model.value",
+        "path": "shr-oncology-TumorIdentifier-model.value",
+        "short": "String representing a human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "String representing a human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-oncology-TumorIdentifier-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

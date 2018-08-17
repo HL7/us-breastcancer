@@ -80,14 +80,20 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic",
-        "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic",
           "min": 1,
           "max": "1"
         },
@@ -101,14 +107,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -122,8 +128,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.id",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.id",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.id",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -149,8 +155,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.extension",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.extension",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.extension",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -184,8 +190,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.system",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.system",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.system",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -220,8 +226,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.version",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.version",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.version",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -254,8 +260,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.code",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.code",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.code",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -289,14 +295,14 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.display",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.display",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -329,8 +335,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.userSelected",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.userSelected",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.userSelected",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -364,14 +370,14 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.findingMethod",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.findingMethod",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.findingMethod",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.findingMethod",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -384,15 +390,15 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "preferred",
+          "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-LymphNodeClinicalMethodVS"
           }
         }
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.details",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.details",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.details",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.details",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -404,7 +410,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.details",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.details",
           "min": 0,
           "max": "1"
         },
@@ -418,14 +424,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.media",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.media",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.media",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.media",
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.media",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.media",
           "min": 0,
           "max": "0"
         },
@@ -439,14 +445,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.category",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -457,271 +463,29 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-category"
+          }
+        }
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.id",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.breastLymphNodeBodySite",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.breastLymphNodeBodySite",
+        "short": "A body site specific to the lymph node structure.",
+        "definition": "A body site specific to the lymph node structure.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.id",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.breastLymphNodeBodySite",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.extension",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.system",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.system",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/observation-category",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.version",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.code",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.code",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "laboratory",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.userSelected",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.anatomicalLocation",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.anatomicalLocation",
-        "code": [
-          {
-            "system": "http://loinc.org",
-            "code": "72369-2"
-          }
-        ],
-        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.anatomicalLocation",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model"
           }
         ],
         "mustSupport": false,
@@ -729,62 +493,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0600091"
-          }
-        ],
-        "short": "A unique string that identifies a specific person or thing.",
-        "definition": "A unique string that identifies a specific person or thing.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.device",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.device",
           "min": 0,
           "max": "1"
         },
@@ -799,234 +515,19 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.specimen",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.accessionIdentifier",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.accessionIdentifier",
-        "short": "Identifier assigned by the lab",
-        "definition": "Identifier assigned by the lab",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.accessionIdentifier",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AccessionIdentifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenStatus",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenStatus",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449438"
-          }
-        ],
-        "short": "State of the specimen, such as obtained, processed, used.",
-        "definition": "State of the specimen, such as obtained, processed, used.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenStatus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/specimen-status"
-          }
-        }
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.type",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.type",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0332307"
-          }
-        ],
-        "short": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.type",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/v2-0487"
-          }
-        }
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSource",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSource",
-        "short": "The person or thing the sample was obtained from.",
-        "definition": "The person or thing the sample was obtained from.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSource",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Group-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Substance-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionTime",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionTime",
-        "short": "When the sample was obtained, as a specific time or time period.",
-        "definition": "When the sample was obtained, as a specific time or time period.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionTime",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionMethod",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionMethod",
-        "short": "How the specimen was obtained.",
-        "definition": "How the specimen was obtained.",
-        "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionMethod",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.specimen",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSite",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSite",
-        "code": [
-          {
-            "system": "http://loinc.org",
-            "code": "72369-2"
-          }
-        ],
-        "short": "The body site where specimen was collected",
-        "definition": "The body site where specimen was collected",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSite",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.sourceSpecimen",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.sourceSpecimen",
-        "short": "Identifier for the source specimen from which this specimen was derived.",
-        "definition": "Identifier for the source specimen from which this specimen was derived.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.sourceSpecimen",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen-model"
           }
@@ -1036,126 +537,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.receivedTime",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.receivedTime",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C2735124"
-          }
-        ],
-        "short": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
-        "definition": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.receivedTime",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenContainer",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenContainer",
-        "short": "Direct container of specimen (tube&#47;slide, etc.)",
-        "definition": "Direct container of specimen (tube&#47;slide, etc.)",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenContainer",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenContainer-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenTreatment",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenTreatment",
-        "short": "Treatment performed on the specimen.",
-        "definition": "Treatment performed on the specimen.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenTreatment",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenTreatment-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.handlingRisk",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.handlingRisk",
-        "short": "Cautions on the handling of this specimen.",
-        "definition": "Cautions on the handling of this specimen.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.handlingRisk",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specialHandling",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specialHandling",
-        "short": "Information about the proper handling of the specimen.",
-        "definition": "Information about the proper handling of the specimen.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specialHandling",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.precondition",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.precondition",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.precondition",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.precondition",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.precondition",
           "min": 0,
           "max": "0"
         },
@@ -1173,8 +562,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.referenceRange",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.referenceRange",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.referenceRange",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1184,11 +573,11 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.referenceRange",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.referenceRange",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -1200,14 +589,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -1216,8 +605,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeMobility",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeMobility",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeMobility",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeMobility",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -1229,7 +618,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeMobility",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeMobility",
           "min": 0,
           "max": "1"
         },
@@ -1243,8 +632,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeSize",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeSize",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeSize",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeSize",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -1257,7 +646,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeSize",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeSize",
           "min": 0,
           "max": "1"
         },
@@ -1271,14 +660,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.panelMembers",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.panelMembers",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.panelMembers",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.panelMembers",
         "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
         "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.panelMembers",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.panelMembers",
           "min": 0,
           "max": "0"
         },
@@ -1290,268 +679,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService",
-        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.id",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.extension",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.system",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Coding.system",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.version",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Coding.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.code",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.code",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "exam",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.userSelected",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
       },
       {
         "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationContext",
@@ -2144,14 +1271,20 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic",
-        "short": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
-        "definition": "The topic composition for laboratory observations. A specimen is required, anatomical location is excluded (since the specimen indicates the collection body site). Also includes a diagnostic service (indicating the type of laboratory), not present in general observations.",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic",
           "min": 1,
           "max": "1"
         },
@@ -2165,14 +1298,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode",
           "min": 1,
           "max": "1"
         },
@@ -2186,8 +1319,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.id",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.id",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.id",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2213,8 +1346,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.extension",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.extension",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.extension",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2248,8 +1381,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.system",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.system",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.system",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2284,8 +1417,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.version",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.version",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.version",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2318,8 +1451,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.code",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.code",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.code",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2353,14 +1486,14 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.display",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.display",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2393,8 +1526,8 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.userSelected",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.topicCode.userSelected",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.userSelected",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2428,14 +1561,14 @@
         ]
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.findingMethod",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.findingMethod",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.findingMethod",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.findingMethod",
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.findingMethod",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.findingMethod",
           "min": 0,
           "max": "1"
         },
@@ -2448,15 +1581,15 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "preferred",
+          "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-LymphNodeClinicalMethodVS"
           }
         }
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.details",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.details",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.details",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.details",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -2468,7 +1601,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.details",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.details",
           "min": 0,
           "max": "1"
         },
@@ -2482,14 +1615,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.media",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.media",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.media",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.media",
         "short": "A file that contains audio, video, image, or similar content.",
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.media",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.media",
           "min": 0,
           "max": "0"
         },
@@ -2503,14 +1636,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.category",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.category",
         "short": "A class or division of people or things having particular shared characteristics",
         "definition": "A class or division of people or things having particular shared characteristics",
         "min": 1,
         "max": "*",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.category",
           "min": 1,
           "max": "*"
         },
@@ -2521,271 +1654,29 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-category"
+          }
+        }
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.id",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.breastLymphNodeBodySite",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.breastLymphNodeBodySite",
+        "short": "A body site specific to the lymph node structure.",
+        "definition": "A body site specific to the lymph node structure.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.id",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.breastLymphNodeBodySite",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.extension",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.system",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.system",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/observation-category",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.version",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.code",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.code",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "laboratory",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.userSelected",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.category.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.anatomicalLocation",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.anatomicalLocation",
-        "code": [
-          {
-            "system": "http://loinc.org",
-            "code": "72369-2"
-          }
-        ],
-        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.anatomicalLocation",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model"
           }
         ],
         "mustSupport": false,
@@ -2793,62 +1684,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0600091"
-          }
-        ],
-        "short": "A unique string that identifies a specific person or thing.",
-        "definition": "A unique string that identifies a specific person or thing.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.device",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.device",
           "min": 0,
           "max": "1"
         },
@@ -2863,234 +1706,19 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.specimen",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.accessionIdentifier",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.accessionIdentifier",
-        "short": "Identifier assigned by the lab",
-        "definition": "Identifier assigned by the lab",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.accessionIdentifier",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AccessionIdentifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenStatus",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenStatus",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449438"
-          }
-        ],
-        "short": "State of the specimen, such as obtained, processed, used.",
-        "definition": "State of the specimen, such as obtained, processed, used.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenStatus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/specimen-status"
-          }
-        }
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.type",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.type",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0332307"
-          }
-        ],
-        "short": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.type",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/v2-0487"
-          }
-        }
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSource",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSource",
-        "short": "The person or thing the sample was obtained from.",
-        "definition": "The person or thing the sample was obtained from.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSource",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Group-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Substance-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionTime",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionTime",
-        "short": "When the sample was obtained, as a specific time or time period.",
-        "definition": "When the sample was obtained, as a specific time or time period.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionTime",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionMethod",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionMethod",
-        "short": "How the specimen was obtained.",
-        "definition": "How the specimen was obtained.",
-        "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionMethod",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.specimen",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSite",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSite",
-        "code": [
-          {
-            "system": "http://loinc.org",
-            "code": "72369-2"
-          }
-        ],
-        "short": "The body site where specimen was collected",
-        "definition": "The body site where specimen was collected",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.collectionSite",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.sourceSpecimen",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.sourceSpecimen",
-        "short": "Identifier for the source specimen from which this specimen was derived.",
-        "definition": "Identifier for the source specimen from which this specimen was derived.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.sourceSpecimen",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen-model"
           }
@@ -3100,126 +1728,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.receivedTime",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.receivedTime",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C2735124"
-          }
-        ],
-        "short": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
-        "definition": "Time the item was delivered to, or accepted by, the receiving facility or unit.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.receivedTime",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenContainer",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenContainer",
-        "short": "Direct container of specimen (tube&#47;slide, etc.)",
-        "definition": "Direct container of specimen (tube&#47;slide, etc.)",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenContainer",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenContainer-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenTreatment",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenTreatment",
-        "short": "Treatment performed on the specimen.",
-        "definition": "Treatment performed on the specimen.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specimenTreatment",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenTreatment-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.handlingRisk",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.handlingRisk",
-        "short": "Cautions on the handling of this specimen.",
-        "definition": "Cautions on the handling of this specimen.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.handlingRisk",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specialHandling",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specialHandling",
-        "short": "Information about the proper handling of the specimen.",
-        "definition": "Information about the proper handling of the specimen.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen.specialHandling",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.precondition",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.precondition",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.precondition",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.precondition",
         "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.precondition",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.precondition",
           "min": 0,
           "max": "0"
         },
@@ -3237,8 +1753,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.referenceRange",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.referenceRange",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.referenceRange",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -3248,11 +1764,11 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.referenceRange",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.referenceRange",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -3264,14 +1780,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent",
         "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent",
           "min": 0,
           "max": "1"
         },
@@ -3280,8 +1796,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeMobility",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeMobility",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeMobility",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeMobility",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -3293,7 +1809,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeMobility",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeMobility",
           "min": 0,
           "max": "1"
         },
@@ -3307,8 +1823,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeSize",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeSize",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeSize",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeSize",
         "code": [
           {
             "system": "http://snomed.info/sct",
@@ -3321,7 +1837,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.evaluationComponent.lymphNodeSize",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.evaluationComponent.lymphNodeSize",
           "min": 0,
           "max": "1"
         },
@@ -3335,14 +1851,14 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.panelMembers",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.panelMembers",
+        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.panelMembers",
+        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.panelMembers",
         "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
         "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.panelMembers",
+          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationTopic.panelMembers",
           "min": 0,
           "max": "0"
         },
@@ -3354,268 +1870,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService",
-        "short": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "definition": "The service completing the observations, e.g. biochemistry, microbiology, blood bank.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.id",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.extension",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.system",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.system",
-        "short": "Identity of the terminology system",
-        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
-        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
-        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Coding.system",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.3"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystem"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.version",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.version",
-        "short": "Version of the system - if relevant",
-        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
-        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Coding.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.7"
-          },
-          {
-            "identity": "rim",
-            "map": "./codeSystemVersion"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.code",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.code",
-        "short": "Symbol in syntax defined by the system",
-        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
-        "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Coding.code",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "fixedCode": "exam",
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.1"
-          },
-          {
-            "identity": "rim",
-            "map": "./code"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.display",
-        "short": "Representation defined by the system",
-        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
-        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "C*E.2 - but note this is not well followed"
-          },
-          {
-            "identity": "rim",
-            "map": "CV.displayName"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
-          }
-        ]
-      },
-      {
-        "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.userSelected",
-        "path": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.laboratoryObservationTopic.diagnosticService.userSelected",
-        "short": "If this coding was chosen directly by the user",
-        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
-        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
-        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Coding.userSelected",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "v2",
-            "map": "Sometimes implied by being first"
-          },
-          {
-            "identity": "rim",
-            "map": "CD.codingRationale"
-          },
-          {
-            "identity": "orim",
-            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
-          }
-        ]
       },
       {
         "id": "shr-oncology-BreastClinicalLymphNodeInvolvement-model.observationContext",

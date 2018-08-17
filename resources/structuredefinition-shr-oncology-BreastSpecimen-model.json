@@ -420,6 +420,27 @@
         "isSummary": false
       },
       {
+        "id": "shr-oncology-BreastSpecimen-model.tumorIdentifier",
+        "path": "shr-oncology-BreastSpecimen-model.tumorIdentifier",
+        "short": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastSpecimen-model.tumorIdentifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "shr-oncology-BreastSpecimen-model.coldIschemiaTime",
         "path": "shr-oncology-BreastSpecimen-model.coldIschemiaTime",
         "code": [
@@ -833,6 +854,27 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastSpecimen-model.tumorIdentifier",
+        "path": "shr-oncology-BreastSpecimen-model.tumorIdentifier",
+        "short": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastSpecimen-model.tumorIdentifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,

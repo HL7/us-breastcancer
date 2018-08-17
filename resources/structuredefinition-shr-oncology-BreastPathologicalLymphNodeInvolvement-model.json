@@ -729,54 +729,6 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0600091"
-          }
-        ],
-        "short": "A unique string that identifies a specific person or thing.",
-        "definition": "A unique string that identifies a specific person or thing.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
         "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -803,11 +755,11 @@
         "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
-          "min": 0,
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1967,58 +1919,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.focus",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "string"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.media",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.media",
-        "short": "A file that contains audio, video, image, or similar content.",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.media",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
           }
         ],
         "mustSupport": false,
@@ -2716,54 +2616,6 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0600091"
-          }
-        ],
-        "short": "A unique string that identifies a specific person or thing.",
-        "definition": "A unique string that identifies a specific person or thing.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.focus.valueIdentifier",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
         "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -2790,11 +2642,11 @@
         "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
         "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
         "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.laboratoryObservationTopic.specimen",
-          "min": 0,
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -3954,58 +3806,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.focus",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "string"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.media",
-        "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.media",
-        "short": "A file that contains audio, video, image, or similar content.",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-oncology-BreastPathologicalLymphNodeInvolvement-model.media",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
           }
         ],
         "mustSupport": false,

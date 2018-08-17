@@ -273,16 +273,6 @@
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:personofrecord",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person this entry belongs to.",
         "min": 1,
         "max": "1",
@@ -297,16 +287,6 @@
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:findingtopic",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 1,
         "max": "1",
@@ -321,16 +301,6 @@
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:statementcontext",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.\nThe StatementContext class aligns with the SNOMED CT Situations with Explicit Context (SWEC) Concept Model. The StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information. It also often holds provenance information relevant to the context of the clinical statement. It is important to note that by default the context applies to the conjunction of the attribute specified in the statement. For instance, if a clinical statement has a topic describing a rash on left arm and a context of 'absent', then the statement states that the subject of interest did not have a rash on the left arm but might have had one on the right arm.",
         "min": 1,
         "max": "1",
@@ -396,16 +366,6 @@
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:personofrecord",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person this entry belongs to.",
         "min": 1,
         "max": "1",
@@ -420,16 +380,6 @@
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:findingtopic",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.\nThe subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
         "min": 1,
         "max": "1",
@@ -444,16 +394,6 @@
       {
         "id": "DomainResource:cimi-statement-AssertionStatement.extension:statementcontext",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement.\nThe StatementContext class aligns with the SNOMED CT Situations with Explicit Context (SWEC) Concept Model. The StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information. It also often holds provenance information relevant to the context of the clinical statement. It is important to note that by default the context applies to the conjunction of the attribute specified in the statement. For instance, if a clinical statement has a topic describing a rash on left arm and a context of 'absent', then the statement states that the subject of interest did not have a rash on the left arm but might have had one on the right arm.",
         "min": 1,
         "max": "1",

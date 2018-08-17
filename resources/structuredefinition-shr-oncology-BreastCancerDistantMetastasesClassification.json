@@ -406,6 +406,20 @@
         "sliceName": "deltaflag"
       },
       {
+        "id": "Observation:shr-oncology-BreastCancerDistantMetastasesClassification.extension:tumoridentifier",
+        "path": "Observation.extension",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-extension"
+          }
+        ],
+        "sliceName": "tumoridentifier"
+      },
+      {
         "id": "Observation:shr-oncology-BreastCancerDistantMetastasesClassification.modifierExtension",
         "path": "Observation.modifierExtension",
         "short": "Extensions that cannot be ignored",
@@ -1967,7 +1981,7 @@
         "comment": "Only used if not implicit in code for Observation.code.",
         "requirements": "In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Observation.method",
           "min": 0,
@@ -1979,9 +1993,9 @@
           }
         ],
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS"
           }
         },
         "mapping": [
@@ -3682,6 +3696,20 @@
         "sliceName": "deltaflag"
       },
       {
+        "id": "Observation:shr-oncology-BreastCancerDistantMetastasesClassification.extension:tumoridentifier",
+        "path": "Observation.extension",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-extension"
+          }
+        ],
+        "sliceName": "tumoridentifier"
+      },
+      {
         "id": "Observation:shr-oncology-BreastCancerDistantMetastasesClassification.category",
         "path": "Observation.category",
         "min": 1,
@@ -3829,12 +3857,10 @@
       {
         "id": "Observation:shr-oncology-BreastCancerDistantMetastasesClassification.method",
         "path": "Observation.method",
-        "min": 0,
-        "max": "0",
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS"
           }
         }
       },

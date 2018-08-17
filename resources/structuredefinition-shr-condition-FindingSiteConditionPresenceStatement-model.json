@@ -1,0 +1,214 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-condition-FindingSiteConditionPresenceStatement-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingSiteConditionPresenceStatement Logical Model</b></p>\n  <p>Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-condition-FindingSiteConditionPresenceStatement-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.condition.FindingSiteConditionPresenceStatement"
+    }
+  ],
+  "name": "FindingSiteConditionPresenceStatementModel",
+  "title": "BC FindingSiteConditionPresenceStatement Logical Model",
+  "status": "draft",
+  "date": "2018-08-16",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-condition-FindingSiteConditionPresenceStatement-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model",
+        "definition": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model.personOfRecord",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model.findingSiteConditionTopic",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model.findingSiteConditionTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1268086"
+          }
+        ],
+        "short": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.",
+        "definition": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.\nThe FindingSiteCondition topic provides not only the AnatomicalLocation (as in CIMI FindingSiteAssertionTopic), tbut also the type of structure found at that location, such as a wound or tumor.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model.findingSiteConditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-condition-FindingSiteConditionTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model.conditionPresenceContext",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model.conditionPresenceContext",
+        "short": "The context for a condition that is known, suspected, or possibly present.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model.conditionPresenceContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ConditionPresenceContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model",
+        "definition": "Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model.personOfRecord",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model.findingSiteConditionTopic",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model.findingSiteConditionTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1268086"
+          }
+        ],
+        "short": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.",
+        "definition": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.\nThe FindingSiteCondition topic provides not only the AnatomicalLocation (as in CIMI FindingSiteAssertionTopic), tbut also the type of structure found at that location, such as a wound or tumor.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model.findingSiteConditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-condition-FindingSiteConditionTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteConditionPresenceStatement-model.conditionPresenceContext",
+        "path": "shr-condition-FindingSiteConditionPresenceStatement-model.conditionPresenceContext",
+        "short": "The context for a condition that is known, suspected, or possibly present.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteConditionPresenceStatement-model.conditionPresenceContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ConditionPresenceContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

@@ -735,54 +735,6 @@
         "isSummary": false
       },
       {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus.valueIdentifier",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0600091"
-          }
-        ],
-        "short": "A unique string that identifies a specific person or thing.",
-        "definition": "A unique string that identifies a specific person or thing.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus.valueIdentifier",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.device",
         "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -2253,54 +2205,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus.valueIdentifier",
-        "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus.valueIdentifier",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0600091"
-          }
-        ],
-        "short": "A unique string that identifies a specific person or thing.",
-        "definition": "A unique string that identifies a specific person or thing.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerRegionalNodesClassification-model.observationTopic.focus.valueIdentifier",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
           }
         ],
         "mustSupport": false,

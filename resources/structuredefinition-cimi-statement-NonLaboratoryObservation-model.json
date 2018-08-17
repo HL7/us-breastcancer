@@ -1,0 +1,790 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-statement-NonLaboratoryObservation-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC NonLaboratoryObservation Logical Model</b></p>\n  <p>An observation not based on a specimen.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-NonLaboratoryObservation-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "cimi.statement.NonLaboratoryObservation"
+    }
+  ],
+  "name": "NonLaboratoryObservationModel",
+  "title": "BC NonLaboratoryObservation Logical Model",
+  "status": "draft",
+  "date": "2018-08-16",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "An observation not based on a specimen.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-statement-NonLaboratoryObservation-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model",
+        "path": "cimi-statement-NonLaboratoryObservation-model",
+        "definition": "An observation not based on a specimen.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.personOfRecord",
+        "path": "cimi-statement-NonLaboratoryObservation-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ObservationTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.topicCode",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.findingMethod",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.details",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.media",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.category",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-category"
+          }
+        }
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.anatomicalLocation",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.anatomicalLocation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72369-2"
+          }
+        ],
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.anatomicalLocation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.device",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.device",
+        "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
+        "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.device",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.specimen",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.specimen",
+        "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
+        "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.specimen",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.precondition",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.precondition",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.precondition",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.referenceRange",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.referenceRange",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.evaluationComponent",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.evaluationComponent",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
+        "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.evaluationComponent",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-EvaluationComponent-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.panelMembers",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.panelMembers",
+        "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
+        "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.panelMembers",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-PanelMembers-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationContext",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationContext",
+        "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ObservationContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model",
+        "path": "cimi-statement-NonLaboratoryObservation-model",
+        "definition": "An observation not based on a specimen.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.personOfRecord",
+        "path": "cimi-statement-NonLaboratoryObservation-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1554188"
+          }
+        ],
+        "short": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "definition": "The base class, independent of context for evaluations (measurements, tests, or questions). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ObservationTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.topicCode",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.findingMethod",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+          }
+        }
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.details",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.media",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.category",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-category"
+          }
+        }
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.anatomicalLocation",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.anatomicalLocation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72369-2"
+          }
+        ],
+        "short": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "definition": "A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.anatomicalLocation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.device",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.device",
+        "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
+        "definition": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.device",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Device-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.specimen",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.specimen",
+        "short": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
+        "definition": "A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.specimen",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Specimen-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.precondition",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.precondition",
+        "short": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.precondition",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-Observation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.referenceRange",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.referenceRange",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.evaluationComponent",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.evaluationComponent",
+        "short": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
+        "definition": "A simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.evaluationComponent",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-EvaluationComponent-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationTopic.panelMembers",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.panelMembers",
+        "short": "PanelMembers represent the elements of a group of a related but independent evaluations.",
+        "definition": "PanelMembers represent the elements of a group of a related but independent evaluations.\nExamples are the measurements that compose a complete blood count (CBC), or the elements of a pathology report. Each member is an independent evaluation, but the grouping reflects a composite lab order, shared specimen, or a single report author. Typically the Category and Reason are not given for individual findings that are part of the panel, but rather given at the level of the panel itself.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationTopic.panelMembers",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-PanelMembers-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-NonLaboratoryObservation-model.observationContext",
+        "path": "cimi-statement-NonLaboratoryObservation-model.observationContext",
+        "short": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "definition": "Context for recording an evaluation result, used to indicate an evaluation has been made.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-NonLaboratoryObservation-model.observationContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ObservationContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

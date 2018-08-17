@@ -85,6 +85,10 @@
         <td>{% capture md_text %}Specimen resulting from biopsy or excision of breast and surrounding tissue.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
+        <td><a href="StructureDefinition-shr-oncology-BreastTumor-model.html">BreastTumor</a></td>
+        <td>{% capture md_text %}An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI){% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
         <td><a href="StructureDefinition-shr-oncology-DCISNuclearGrade-model.html">DCISNuclearGrade</a></td>
         <td>{% capture md_text %}An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -338,11 +342,15 @@ CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a '
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-Comparator-model.html">Comparator</a></td>
-        <td>{% capture md_text %}undefined{% endcapture %}{{ md_text | markdownify }}</td>
+        <td></td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-oncology-CompleteMembraneStainingPercent-model.html">CompleteMembraneStainingPercent</a></td>
         <td>{% capture md_text %}Percentage of cells with uniform intense complete membrane staining.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-cimi-statement-ComponentOnlyNonLaboratoryObservation-model.html">ComponentOnlyNonLaboratoryObservation</a></td>
+        <td>{% capture md_text %}An observation with components, but without a result value or panel members.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-topic-ConditionAssertionTopic-model.html">ConditionAssertionTopic</a></td>
@@ -510,6 +518,19 @@ Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Conce
         <td>{% capture md_text %}The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
+        <td><a href="StructureDefinition-shr-condition-FindingSiteConditionPresenceStatement-model.html">FindingSiteConditionPresenceStatement</a></td>
+        <td>{% capture md_text %}Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-shr-condition-FindingSiteConditionTopic-model.html">FindingSiteConditionTopic</a></td>
+        <td>{% capture md_text %}Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.
+The FindingSiteCondition topic provides not only the AnatomicalLocation (as in CIMI FindingSiteAssertionTopic), tbut also the type of structure found at that location, such as a wound or tumor.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-shr-condition-FindingSiteIdentifier-model.html">FindingSiteIdentifier</a></td>
+        <td>{% capture md_text %}A human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
         <td><a href="StructureDefinition-cimi-statement-FindingStatement-model.html">FindingStatement</a></td>
         <td>{% capture md_text %}Any clinical statement representing a finding.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -521,10 +542,6 @@ Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Conce
         <td><a href="StructureDefinition-cimi-topic-FindingTopic-model.html">FindingTopic</a></td>
         <td>{% capture md_text %}Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-topic-Focus-model.html">Focus</a></td>
-        <td>{% capture md_text %}The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion){% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-GeopoliticalLocation-model.html">GeopoliticalLocation</a></td>
@@ -717,6 +734,10 @@ The subject of a finding can be the entire patient, or an entity such as a locat
       <tr>
         <td><a href="StructureDefinition-cimi-core-NonIndependent-model.html">NonIndependent</a></td>
         <td>{% capture md_text %}Parent for classes in CIMI that do not have enough context to stand alone. These reusable building blocks/data elements can be used to create classes by composition.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-cimi-statement-NonLaboratoryObservation-model.html">NonLaboratoryObservation</a></td>
+        <td>{% capture md_text %}An observation not based on a specimen.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-oncology-NuclearPleomorphismScore-model.html">NuclearPleomorphismScore</a></td>
@@ -947,6 +968,14 @@ The clinically relevant time is not necessarily when the information is gathered
         <td>{% capture md_text %}The largest dimension of the gross tumor bed and surrounding fibrotic area.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
+        <td><a href="StructureDefinition-shr-oncology-SizeOfLongestDiameter-model.html">SizeOfLongestDiameter</a></td>
+        <td>{% capture md_text %}Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-shr-oncology-SizeOfShortAxis-model.html">SizeOfShortAxis</a></td>
+        <td>{% capture md_text %}Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
         <td><a href="StructureDefinition-cimi-entity-SourceSpecimen-model.html">SourceSpecimen</a></td>
         <td>{% capture md_text %}Identifier for the source specimen from which this specimen was derived.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -1057,12 +1086,12 @@ For action topics, the TopicCode represents the action being described. For find
         <td>{% capture md_text %}The degree of glandular differentiation or tubule formation in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Less aggressive cancers have more tubule formation.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-oncology-TumorDimensionSize-model.html">TumorDimensionSize</a></td>
-        <td>{% capture md_text %}Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="StructureDefinition-shr-oncology-TumorDimensions-model.html">TumorDimensions</a></td>
+        <td>{% capture md_text %}Dimension size of the tumor sample evaluated for staging.  Dimensions include a size measurements for the longest diameter and the short axis (per RECIST guidelines) as well as margin measurements.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-oncology-TumorDimensions-model.html">TumorDimensions</a></td>
-        <td>{% capture md_text %}Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="StructureDefinition-shr-oncology-TumorIdentifier-model.html">TumorIdentifier</a></td>
+        <td>{% capture md_text %}A human-readable identifier for the lesion; e.g., a letter or integer.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-oncology-TumorMarginDescription-model.html">TumorMarginDescription</a></td>

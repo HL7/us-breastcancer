@@ -229,7 +229,31 @@ if (location.href.indexOf('is-external=true') == -1) {
   </tr>
   
       
-                                        </table>                              <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
+                                                    
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../shr-oncology/TumorIdentifier.html">TumorIdentifier</a></strong></code>
+    
+    </div>
+    <div class="block"><p>A human-readable identifier for the lesion; e.g., a letter or integer.</p></div>
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../shr-oncology/TumorIdentifier.html">TumorIdentifier</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>            </table>                              <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
     <th class="colFirst" scope="col">Properties Constrained</th>
     <th class="colMiddle">Constraint</th>
@@ -354,19 +378,19 @@ if (location.href.indexOf('is-external=true') == -1) {
       <tr class="altColor">
     
       <td class="colFirst">
-        <code><strong>StatementTopic.FindingMethod</strong></code>
+        <code><strong>StatementTopic.FindingMethod.CodeableConcept</strong></code>
         
           <div class="block">Defined in <a href="../cimi-statement/ClinicalStatement.html">ClinicalStatement</a></div>
         
       </td>
       <td class="colMiddle">
-        <code><strong>Cardinality</strong></code>
+        <code><strong>Value Set</strong></code>
         
           <div class="block">Constrained in <a href="../shr-oncology/BreastCancerDistantMetastasesClassification.html">BreastCancerDistantMetastasesClassification</a></div>
         
       </td>
       <td class="colLast">
-                  <div class="block">0..0</div>
+                  <div class="block">http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS (REQUIRED)</div>
               </td>
       <!-- <td class="colLast">
         <div class="block">BreastCancerDistantMetastasesClassification</div>

@@ -21,9 +21,7 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
-<h2>
-  Value Sets defined as part of this Implementation Guide
-</h2>
+<h2>Primary Value Sets defined as part of this Implementation Guide</h2>
 
 <table class="codes">
   <thead>
@@ -38,177 +36,157 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="ValueSet-shr-core-AllUnitsVS.html">AllUnitsVS</a></td>
-      <td>{% capture md_text %}undefined{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-element-AnatomicalDirectionVS.html">AnatomicalDirectionVS</a></td>
-      <td>{% capture md_text %}Anatomical location or specimen further detailing directionality. Codes are from NCI{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-element-AnatomicalLocationVS.html">AnatomicalLocationVS</a></td>
-      <td>{% capture md_text %}Codes that describe normal and pathologic anatomic systems, regions, cavities, and spaces.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-BreastCancerDetectionVS.html">BreastCancerDetectionVS</a></td>
-      <td>{% capture md_text %}Basis for cancer detection, from HL7 CDA® R2 Implementation Guide: Clinical Oncology Treatment Plan and Summary, Release 1 - US Realm Standard for Trial Use Release 3, October 2016, Volume 2 — Templates and Supporting Material.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-BreastCancerTypeVS.html">BreastCancerTypeVS</a></td>
-      <td>{% capture md_text %}Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-BreastLymphNodeGroupVS.html">BreastLymphNodeGroupVS</a></td>
-      <td>{% capture md_text %}The regional lymph node locations{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-BreastSiteVS.html">BreastSiteVS</a></td>
-      <td>{% capture md_text %}Topography of the breast. Codes are drawn from Snomed and correspond to ICD-O-3.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-BreastSpecimenCollectionMethodVS.html">BreastSpecimenCollectionMethodVS</a></td>
-      <td>{% capture md_text %}The surgical method used to obtain the tissue sample.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-BreastSpecimenTypeVS.html">BreastSpecimenTypeVS</a></td>
-      <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-ClockDirectionVS.html">ClockDirectionVS</a></td>
-      <td>{% capture md_text %}The relative direction of an object described using the analogy of a 12-hour clock to describe angles and directions. One imagines a clock face lying either upright or flat in front of oneself, and identifies the twelve hour markings with the directions in which they point.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-ConditionCategoryVS.html">ConditionCategoryVS</a></td>
-      <td>{% capture md_text %}undefined{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-DCISNuclearGradeVS.html">DCISNuclearGradeVS</a></td>
-      <td>{% capture md_text %}The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-context-DeltaFlagVS.html">DeltaFlagVS</a></td>
-      <td>{% capture md_text %}Indicators for degree of change (delta) from the last or previous measurement.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-EstrogenReceptorInterpretationTestsVS.html">EstrogenReceptorInterpretationTestsVS</a></td>
-      <td>{% capture md_text %}Laboratory observations holding the interpretation of estrogen receptor status (e.g. positive, negative).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-context-ExceptionValueVS.html">ExceptionValueVS</a></td>
-      <td>{% capture md_text %}Reasons that a value associated with a test or other finding is missing. Includes all codes from 	http://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-FindingMethodVS.html">FindingMethodVS</a></td>
-      <td>{% capture md_text %}undefined{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-HER2FISHMethodVS.html">HER2FISHMethodVS</a></td>
-      <td>{% capture md_text %}Value set containing In Situ Hybridization methods of determining HER2 status{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-HER2byIHCScoreNullVS.html">HER2byIHCScoreNullVS</a></td>
-      <td>{% capture md_text %}Null values permissible for HER2 status by immunohistochemistry. Based on LNC#LL4396-9 answer list.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-HER2byIHCScoreVS.html">HER2byIHCScoreVS</a></td>
-      <td>{% capture md_text %}Value set containing possible scores resulting from determining HER2 status by immunohistochemistry. Based on LNC#LL4396-9 answer list.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-Ki-67NuclearAntigenVS.html">Ki-67NuclearAntigenVS</a></td>
-      <td>{% capture md_text %}An evaluation of the quantitative value from the Ki-67.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-entity-LanguageQualifierVS.html">LanguageQualifierVS</a></td>
-      <td>{% capture md_text %}A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-LymphNodeInvolvementVS.html">LymphNodeInvolvementVS</a></td>
-      <td>{% capture md_text %}The pathological finding for lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-LymphNodeMobilityVS.html">LymphNodeMobilityVS</a></td>
-      <td>{% capture md_text %}Values expressing the degree of moveability of lymph node upon palpation.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-LymphNodeSamplingMethodVS.html">LymphNodeSamplingMethodVS</a></td>
-      <td>{% capture md_text %}The procedure method used to obtain the specimen analyzed for the pathological lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-MitoticCountScoreNullVS.html">MitoticCountScoreNullVS</a></td>
-      <td>{% capture md_text %}Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7. Answer list seems to be erroneously missing LNC#LA27219-7{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-MitoticCountScoreVS.html">MitoticCountScoreVS</a></td>
-      <td>{% capture md_text %}The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade (NHG). The specific scores assigned to the number of mitoses depends on the size of the high power fields (HPF). For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-MorphologyBehaviorVS.html">MorphologyBehaviorVS</a></td>
-      <td>{% capture md_text %}The morphologic behavior of the cancer. These are equivalent to the suffix to the ICD-O-3 histologic type codes.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeNullVS.html">NottinghamCombinedGradeNullVS</a></td>
-      <td>{% capture md_text %}Data absent reasons (null values) for Nottingham Combined Grade scores. Removes non-applicable values from the ExceptionValueVS, and adds values that align with LOINC normative answer list LL4561-8{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeVS.html">NottinghamCombinedGradeVS</a></td>
-      <td>{% capture md_text %}Combined score from the Nottingham grading system.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-NottinghamComponentNullVS.html">NottinghamComponentNullVS</a></td>
-      <td>{% capture md_text %}Data absent reasons (null values) for nuclear pleomorphism count and tubule formation score. Aligns with LOINC normative answer lists LL4382-9 and LL4380-3.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html">NuclearPleomorphismScoreVS</a></td>
-      <td>{% capture md_text %}Value set containing the scores for nuclear pleomorphism. Aligns with LOINC normative answer list LL4382-9{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-PerformanceGradingScaleVS.html">PerformanceGradingScaleVS</a></td>
-      <td>{% capture md_text %}A simple performance grading scale. Also useful for grading quality.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-PositiveNegativeEquivocalVS.html">PositiveNegativeEquivocalVS</a></td>
-      <td>{% capture md_text %}Interpretation of a test result as positive, negative or equivocal. Equivalent values to LOINC LL2009-0.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-PositiveNegativeVS.html">PositiveNegativeVS</a></td>
-      <td>{% capture md_text %}Value set containing the values positive and negative. VSAC  value set OID 2.16.840.1.113762.1.4.1166.62.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-cimi-context-PresenceContextVS.html">PresenceContextVS</a></td>
-      <td>{% capture md_text %}A code describing whether the finding in question is present, possible, suspected, etc.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-ProgesteroneReceptorInterpretationTestsVS.html">ProgesteroneReceptorInterpretationTestsVS</a></td>
-      <td>{% capture md_text %}Laboratory observations holding the interpretation of progesterone receptor status (e.g. positive, negative).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-RecurrenceRiskScoreInterpretationVS.html">RecurrenceRiskScoreInterpretationVS</a></td>
-      <td>{% capture md_text %}Interpretations of risk as high, intermediate, or low. Answer set taken from LOINC LL3198-0.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-StageTimingPrefixVS.html">StageTimingPrefixVS</a></td>
-      <td>{% capture md_text %}When staging was done, relative to treatment events (qualifier).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-StainingIntensityVS.html">StainingIntensityVS</a></td>
-      <td>{% capture md_text %}Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-TubuleFormationScoreVS.html">TubuleFormationScoreVS</a></td>
-      <td>{% capture md_text %}The degree of glandular differentiation or tubule formation in breast carcinoma. Aligns with normative LOINC answer list LL4380-3. Less aggressive cancers have more tubule formation, with scores assigned as follows:
+        <td><a href="ValueSet-cimi-element-AnatomicalDirectionVS.html">AnatomicalDirectionVS</a></td>
+        <td>{% capture md_text %}Anatomical location or specimen further detailing directionality. Codes are from NCI{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-cimi-element-AnatomicalLocationVS.html">AnatomicalLocationVS</a></td>
+        <td>{% capture md_text %}Codes that describe normal and pathologic anatomic systems, regions, cavities, and spaces.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-BreastCancerDetectionVS.html">BreastCancerDetectionVS</a></td>
+        <td>{% capture md_text %}Basis for cancer detection, from HL7 CDA® R2 Implementation Guide: Clinical Oncology Treatment Plan and Summary, Release 1 - US Realm Standard for Trial Use Release 3, October 2016, Volume 2 — Templates and Supporting Material.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-BreastCancerTypeVS.html">BreastCancerTypeVS</a></td>
+        <td>{% capture md_text %}Histologic types of breast cancer. Codes are drawn from Snomed. Correspondence to ICD-O-3 is specified. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-BreastLymphNodeGroupVS.html">BreastLymphNodeGroupVS</a></td>
+        <td>{% capture md_text %}The regional lymph node locations{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-BreastSiteVS.html">BreastSiteVS</a></td>
+        <td>{% capture md_text %}Topography of the breast. Codes are drawn from Snomed and correspond to ICD-O-3.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-BreastSpecimenCollectionMethodVS.html">BreastSpecimenCollectionMethodVS</a></td>
+        <td>{% capture md_text %}The surgical method used to obtain the tissue sample.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-BreastSpecimenTypeVS.html">BreastSpecimenTypeVS</a></td>
+        <td>{% capture md_text %}The type of specimen obtained from the breast. Codes are drawn from Snomed CT where available. Local codes are used where Snomed codes are currently unavailable.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-core-ClockDirectionVS.html">ClockDirectionVS</a></td>
+        <td>{% capture md_text %}The relative direction of an object described using the analogy of a 12-hour clock to describe angles and directions. One imagines a clock face lying either upright or flat in front of oneself, and identifies the twelve hour markings with the directions in which they point.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-core-ConditionCategoryVS.html">ConditionCategoryVS</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-DCISNuclearGradeVS.html">DCISNuclearGradeVS</a></td>
+        <td>{% capture md_text %}The nuclear grade describes how closely the nuclei of cancer cells look like the nuclei of normal breast cells. In general, the higher the nuclear grade, the more abnormal the nuclei are and the more aggressive the tumor cells tend to be. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-EstrogenReceptorInterpretationTestsVS.html">EstrogenReceptorInterpretationTestsVS</a></td>
+        <td>{% capture md_text %}Laboratory observations holding the interpretation of estrogen receptor status (e.g. positive, negative).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-cimi-context-ExceptionValueVS.html">ExceptionValueVS</a></td>
+        <td>{% capture md_text %}Reasons that a value associated with a test or other finding is missing. Includes all codes from 	http://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-core-FindingMethodVS.html">FindingMethodVS</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-HER2FISHMethodVS.html">HER2FISHMethodVS</a></td>
+        <td>{% capture md_text %}Value set containing In Situ Hybridization methods of determining HER2 status{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-HER2byIHCScoreNullVS.html">HER2byIHCScoreNullVS</a></td>
+        <td>{% capture md_text %}Null values permissible for HER2 status by immunohistochemistry. Based on LNC#LL4396-9 answer list.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-HER2byIHCScoreVS.html">HER2byIHCScoreVS</a></td>
+        <td>{% capture md_text %}Value set containing possible scores resulting from determining HER2 status by immunohistochemistry. Based on LNC#LL4396-9 answer list.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-Ki-67NuclearAntigenVS.html">Ki-67NuclearAntigenVS</a></td>
+        <td>{% capture md_text %}An evaluation of the quantitative value from the Ki-67.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-LymphNodeClinicalMethodVS.html">LymphNodeClinicalMethodVS</a></td>
+        <td>{% capture md_text %}The method of lymph node sample collection for clinical LNI assessment.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-LymphNodeInvolvementVS.html">LymphNodeInvolvementVS</a></td>
+        <td>{% capture md_text %}The pathological finding for lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-LymphNodeMobilityVS.html">LymphNodeMobilityVS</a></td>
+        <td>{% capture md_text %}Values expressing the degree of moveability of lymph node upon palpation.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-LymphNodeSamplingMethodVS.html">LymphNodeSamplingMethodVS</a></td>
+        <td>{% capture md_text %}The procedure method used to obtain the specimen analyzed for the pathological lymph node involvement.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-MitoticCountScoreNullVS.html">MitoticCountScoreNullVS</a></td>
+        <td>{% capture md_text %}Data absent reasons (null values) for mitotic count. Aligns with LOINC normative answer list LL4383-7. Answer list seems to be erroneously missing LNC#LA27219-7{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-MitoticCountScoreVS.html">MitoticCountScoreVS</a></td>
+        <td>{% capture md_text %}The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade (NHG). The specific scores assigned to the number of mitoses depends on the size of the high power fields (HPF). For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-MorphologyBehaviorVS.html">MorphologyBehaviorVS</a></td>
+        <td>{% capture md_text %}The morphologic behavior of the cancer. These are equivalent to the suffix to the ICD-O-3 histologic type codes.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeNullVS.html">NottinghamCombinedGradeNullVS</a></td>
+        <td>{% capture md_text %}Data absent reasons (null values) for Nottingham Combined Grade scores. Removes non-applicable values from the ExceptionValueVS, and adds values that align with LOINC normative answer list LL4561-8{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-NottinghamCombinedGradeVS.html">NottinghamCombinedGradeVS</a></td>
+        <td>{% capture md_text %}Combined score from the Nottingham grading system.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-NottinghamComponentNullVS.html">NottinghamComponentNullVS</a></td>
+        <td>{% capture md_text %}Data absent reasons (null values) for nuclear pleomorphism count and tubule formation score. Aligns with LOINC normative answer lists LL4382-9 and LL4380-3.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-NuclearPleomorphismScoreVS.html">NuclearPleomorphismScoreVS</a></td>
+        <td>{% capture md_text %}Value set containing the scores for nuclear pleomorphism. Aligns with LOINC normative answer list LL4382-9{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-core-PositiveNegativeEquivocalVS.html">PositiveNegativeEquivocalVS</a></td>
+        <td>{% capture md_text %}Interpretation of a test result as positive, negative or equivocal. Equivalent values to LOINC LL2009-0.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-core-PositiveNegativeVS.html">PositiveNegativeVS</a></td>
+        <td>{% capture md_text %}Value set containing the values positive and negative. VSAC  value set OID 2.16.840.1.113762.1.4.1166.62.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-ProgesteroneReceptorInterpretationTestsVS.html">ProgesteroneReceptorInterpretationTestsVS</a></td>
+        <td>{% capture md_text %}Laboratory observations holding the interpretation of progesterone receptor status (e.g. positive, negative).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-RecurrenceRiskScoreInterpretationVS.html">RecurrenceRiskScoreInterpretationVS</a></td>
+        <td>{% capture md_text %}Interpretations of risk as high, intermediate, or low. Answer set taken from LOINC LL3198-0.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-StageTimingPrefixVS.html">StageTimingPrefixVS</a></td>
+        <td>{% capture md_text %}When staging was done, relative to treatment events (qualifier).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-StainingIntensityVS.html">StainingIntensityVS</a></td>
+        <td>{% capture md_text %}Part of the Allred scoring, based on the intensity of that staining, on a scale of 0 (Negative) to 3 (Strong).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-TubuleFormationScoreVS.html">TubuleFormationScoreVS</a></td>
+        <td>{% capture md_text %}The degree of glandular differentiation or tubule formation in breast carcinoma. Aligns with normative LOINC answer list LL4380-3. Less aggressive cancers have more tubule formation, with scores assigned as follows:
 1 = greater than 75% of the tumor area contains tubular or glandular structures
 2 = 10 to 75% of the tumor area contains tubular structures
 3 = less than 10% of the tumor area contains tubular structures{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-oncology-TumorMarginDescriptionVS.html">TumorMarginDescriptionVS</a></td>
-      <td>{% capture md_text %}An evaluation of the lesion around the margins surrounding the tumor.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-shr-core-YesNoUnknownVS.html">YesNoUnknownVS</a></td>
-      <td>{% capture md_text %}Code set indicating yes, no, or unknown.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    
+      </tr>
+      <tr>
+        <td><a href="ValueSet-shr-oncology-TumorMarginDescriptionVS.html">TumorMarginDescriptionVS</a></td>
+        <td>{% capture md_text %}An evaluation of the lesion around the margins surrounding the tumor.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      
   </tbody>
 </table>
 

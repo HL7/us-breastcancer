@@ -406,6 +406,20 @@
         "sliceName": "deltaflag"
       },
       {
+        "id": "Observation:shr-oncology-BreastCancerPrimaryTumorClassification.extension:tumoridentifier",
+        "path": "Observation.extension",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-extension"
+          }
+        ],
+        "sliceName": "tumoridentifier"
+      },
+      {
         "id": "Observation:shr-oncology-BreastCancerPrimaryTumorClassification.modifierExtension",
         "path": "Observation.modifierExtension",
         "short": "Extensions that cannot be ignored",
@@ -2473,7 +2487,7 @@
         "id": "Observation:shr-oncology-BreastCancerPrimaryTumorClassification.related:shr-oncology-TumorDimensions",
         "path": "Observation.related",
         "short": "TumorDimensions",
-        "definition": "Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.",
+        "definition": "Dimension size of the tumor sample evaluated for staging.  Dimensions include a size measurements for the longest diameter and the short axis (per RECIST guidelines) as well as margin measurements.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3930,6 +3944,20 @@
         "sliceName": "deltaflag"
       },
       {
+        "id": "Observation:shr-oncology-BreastCancerPrimaryTumorClassification.extension:tumoridentifier",
+        "path": "Observation.extension",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-extension"
+          }
+        ],
+        "sliceName": "tumoridentifier"
+      },
+      {
         "id": "Observation:shr-oncology-BreastCancerPrimaryTumorClassification.category",
         "path": "Observation.category",
         "min": 1,
@@ -4151,7 +4179,7 @@
         "path": "Observation.related",
         "sliceName": "shr-oncology-TumorDimensions",
         "short": "TumorDimensions",
-        "definition": "Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.",
+        "definition": "Dimension size of the tumor sample evaluated for staging.  Dimensions include a size measurements for the longest diameter and the short axis (per RECIST guidelines) as well as margin measurements.",
         "min": 0,
         "max": "1"
       },

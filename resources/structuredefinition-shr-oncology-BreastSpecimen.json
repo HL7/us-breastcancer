@@ -365,6 +365,20 @@
         "sliceName": "specialhandling"
       },
       {
+        "id": "Specimen:shr-oncology-BreastSpecimen.extension:tumoridentifier",
+        "path": "Specimen.extension",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-extension"
+          }
+        ],
+        "sliceName": "tumoridentifier"
+      },
+      {
         "id": "Specimen:shr-oncology-BreastSpecimen.modifierExtension",
         "path": "Specimen.modifierExtension",
         "short": "Extensions that cannot be ignored",
@@ -1913,6 +1927,20 @@
           }
         ],
         "sliceName": "specialhandling"
+      },
+      {
+        "id": "Specimen:shr-oncology-BreastSpecimen.extension:tumoridentifier",
+        "path": "Specimen.extension",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorIdentifier-extension"
+          }
+        ],
+        "sliceName": "tumoridentifier"
       },
       {
         "id": "Specimen:shr-oncology-BreastSpecimen.accessionIdentifier",

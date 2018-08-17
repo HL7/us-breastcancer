@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-oncology-LymphNodeClinicalMethodVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC LymphNodeClinicalMethodVS ValueSet</b></p>\n<p>The method of lymph node sample collection for clinical LNI assessment.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-LymphNodeClinicalMethodVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.oncology.LymphNodeClinicalMethodVS"
+    }
+  ],
+  "name": "LymphNodeClinicalMethodVS",
+  "title": "BC LymphNodeClinicalMethodVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-16",
+  "description": "The method of lymph node sample collection for clinical LNI assessment.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "363679005",
+            "display": "Physical examination procedure (procedure)"
+          },
+          {
+            "code": "363679005",
+            "display": "Imaging (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

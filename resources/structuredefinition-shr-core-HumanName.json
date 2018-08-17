@@ -156,16 +156,6 @@
       {
         "id": "HumanName:shr-core-HumanName.extension:preferredflag",
         "path": "HumanName.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Code indicating the preference associated with the use of this name.",
         "min": 0,
         "max": "1",
@@ -409,16 +399,6 @@
       {
         "id": "HumanName:shr-core-HumanName.extension:preferredflag",
         "path": "HumanName.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Code indicating the preference associated with the use of this name.",
         "min": 0,
         "max": "1",

@@ -100,6 +100,11 @@
       <td>{% capture md_text %}Specimen resulting from biopsy or excision of breast and surrounding tissue.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-shr-oncology-BreastTumor.html">BreastTumor</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
+      <td>{% capture md_text %}An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI){% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-shr-oncology-DCISNuclearGrade.html">DCISNuclearGrade</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}An evaluation of the size and shape of the nucleus in tumor cells and the percentage of tumor cells that are in the process of dividing or growing. Cancers with low nuclear grade grow and spread less quickly than cancers with high nuclear grade. In breast cancer, nuclear grade is typically evaluated for ductal carcinoma in situ (DCIS) only.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -220,6 +225,11 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td>{% capture md_text %}A coded finding from a laboratory test.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-cimi-statement-ComponentOnlyNonLaboratoryObservation.html">ComponentOnlyNonLaboratoryObservation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}An observation with components, but without a result value or panel members.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-cimi-statement-ConditionPresenceStatement.html">ConditionPresenceStatement</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>{% capture md_text %}A condition that is or may be present in a subject. 'Condition' is interpreted broadly and could be a disorder, abnormality, problem, injury, complaint, functionality, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -233,6 +243,11 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td><a href="StructureDefinition-cimi-entity-Entity.html">Entity</a></td>
       <td><a href="http://hl7.org/fhir/STU3/basic.html">Basic</a></td>
       <td>{% capture md_text %}Root class for entities such as people, organizations, and devices that have a separately identifiable existence.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-condition-FindingSiteConditionPresenceStatement.html">FindingSiteConditionPresenceStatement</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
+      <td>{% capture md_text %}Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-statement-FindingStatement.html">FindingStatement</a></td>
@@ -268,6 +283,11 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td><a href="StructureDefinition-cimi-entity-NationalProviderIdentifier.html">NationalProviderIdentifier</a></td>
       <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
       <td>{% capture md_text %}A unique 10 digit number to allow US healthcare providers to identify themselves in a standard way throughout the healthcare industry.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-NonLaboratoryObservation.html">NonLaboratoryObservation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}An observation not based on a specimen.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-statement-Observation.html">Observation</a></td>
@@ -348,7 +368,7 @@ Observation has a value representing the result (answer), or an ExceptionValue i
     <tr>
       <td><a href="StructureDefinition-shr-oncology-TumorDimensions.html">TumorDimensions</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}Dimension size of the tumor sample evaluated for staging.  Dimensions include a size measurements for the longest diameter and the short axis (per RECIST guidelines) as well as margin measurements.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-shr-oncology-TumorMargins.html">TumorMargins</a></td>

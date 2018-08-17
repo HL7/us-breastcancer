@@ -741,25 +741,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-StageSuffix-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -1140,26 +1121,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AccessionIdentifier-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenTreatment-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1483,6 +1445,101 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "shr-oncology-BreastSpecimen-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-AccessionIdentifier-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-SpecimenTreatment-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "shr-oncology-BreastTumor-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ConditionPresenceContext-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Stage-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1938,6 +1995,44 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "cimi-statement-ComponentOnlyNonLaboratoryObservation-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ObservationTopic-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "cimi-topic-ConditionAssertionTopic-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -1995,25 +2090,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Stage-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "cimi-statement-ConditionPresenceStatement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -2034,25 +2110,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ConditionAssertionTopic-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ConditionPresenceContext-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2888,6 +2945,82 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "shr-condition-FindingSiteConditionPresenceStatement-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-condition-FindingSiteConditionTopic-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "shr-condition-FindingSiteConditionTopic-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "shr-condition-FindingSiteIdentifier-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "cimi-statement-FindingStatement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -2927,25 +3060,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "cimi-topic-FindingTopic-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "cimi-topic-Focus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4142,6 +4256,25 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "cimi-statement-NonLaboratoryObservation-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "shr-oncology-NuclearPleomorphismScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -4295,25 +4428,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "cimi-statement-Observation-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ObservationTopic-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5510,6 +5624,44 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "shr-oncology-SizeOfLongestDiameter-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "shr-oncology-SizeOfShortAxis-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "cimi-entity-SourceSpecimen-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -5549,6 +5701,25 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "cimi-entity-SpecimenContainer-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6023,25 +6194,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TumorDimensionSize-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "shr-oncology-TumorDimensions-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -6061,7 +6213,26 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorDimensionSize-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-SizeOfLongestDiameter-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-SizeOfShortAxis-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6081,6 +6252,25 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-SizeOfGrossTumorBed-model"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system "
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "shr-oncology-TumorIdentifier-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {

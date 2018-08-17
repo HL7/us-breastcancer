@@ -56,12 +56,12 @@ v: {
 {"code" : {
   "system" : "http://snomed.info/sct",
   "code" : "399375005",
-  "display" : "Tumor size (observable entity)"
+  "display" : "Tumor size finding (finding)"
 }, "valueSet" :null}####
 v: {
   "display" : "Tumor size finding (finding)",
-  "severity" : "warning",
-  "error" : "The display \"Tumor size (observable entity)\" is not a valid display for the code {http://snomed.info/sct}399375005"
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -132,6 +132,17 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
+  "code" : "395557000",
+  "display" : "Tumor finding (finding)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Tumor finding (finding)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
   "code" : "410514004"
 }, "valueSet" :null}####
 v: {
@@ -156,6 +167,17 @@ v: {
 }, "valueSet" :null}####
 v: {
   "display" : "Person name suffix (observable entity)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "103340004",
+  "display" : "Short axis (qualifier value)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Short axis",
   "severity" : null,
   "error" : ""
 }
@@ -186,8 +208,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:226ee041-4cae-4bc8-b26c-2aef6bafecfb",
-    "timestamp" : "2018-08-16T04:53:06.957Z",
+    "identifier" : "urn:uuid:115ef53d-25d4-45ee-aa3b-490bda7f940c",
+    "timestamp" : "2018-08-17T02:43:15.629Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5226,8 +5248,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:2387c823-41e7-4c69-a679-a3e4a7912a4d",
-    "timestamp" : "2018-08-16T04:53:52.364Z",
+    "identifier" : "urn:uuid:04bde9b4-2fb5-401a-bf3a-a1e03fbc4196",
+    "timestamp" : "2018-08-17T02:43:58.051Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5441,8 +5463,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:cff9d635-7e49-4a23-a57f-701ab1e0c05c",
-    "timestamp" : "2018-08-16T04:53:52.645Z",
+    "identifier" : "urn:uuid:022bd255-33a7-4733-9d05-d9e921678fdd",
+    "timestamp" : "2018-08-17T02:43:58.285Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5700,8 +5722,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:28ed9513-3eb8-4ee0-9077-bc395b90b32c",
-    "timestamp" : "2018-08-16T04:53:53.082Z",
+    "identifier" : "urn:uuid:24b01810-fa70-4652-bb5b-cff85d256438",
+    "timestamp" : "2018-08-17T02:43:58.629Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5784,8 +5806,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:5390732f-00d4-4b50-b4cf-f69748bfd829",
-    "timestamp" : "2018-08-16T04:53:53.301Z",
+    "identifier" : "urn:uuid:a67b85e5-3275-454c-a804-965342401fd8",
+    "timestamp" : "2018-08-17T02:43:58.801Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5873,8 +5895,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f8fda51d-0ab7-4afb-b914-f3c62d1fb5e4",
-    "timestamp" : "2018-08-16T04:53:53.551Z",
+    "identifier" : "urn:uuid:af081ab9-83f0-44d1-b3c9-18852bd24c1e",
+    "timestamp" : "2018-08-17T02:43:59.035Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5933,8 +5955,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f6891edb-9d11-4a0a-94c2-e172f5b6f7ce",
-    "timestamp" : "2018-08-16T04:53:53.817Z",
+    "identifier" : "urn:uuid:465323df-2a98-4920-bdca-3eceae1fb8cd",
+    "timestamp" : "2018-08-17T02:43:59.269Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5985,8 +6007,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b99a04b3-925c-42d9-ac9d-23023a5cef39",
-    "timestamp" : "2018-08-16T04:53:54.082Z",
+    "identifier" : "urn:uuid:e90e0ada-9213-4fb3-9bd4-97aa8136ee07",
+    "timestamp" : "2018-08-17T02:43:59.488Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6145,8 +6167,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:935f0a07-97ef-45c6-b9ee-ac7ade82c291",
-    "timestamp" : "2018-08-16T04:53:55.614Z",
+    "identifier" : "urn:uuid:9b2602d6-1e74-41a9-9990-7f8d26904d19",
+    "timestamp" : "2018-08-17T02:44:00.832Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6197,8 +6219,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:8e6612c3-f033-4bec-b026-610b7e11c9dd",
-    "timestamp" : "2018-08-16T04:53:55.879Z",
+    "identifier" : "urn:uuid:6d387eeb-90ab-4fc7-97f2-cf042fba49d6",
+    "timestamp" : "2018-08-17T02:44:01.051Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6273,8 +6295,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:fa212ae8-f994-4d45-adb5-b3da3c14c027",
-    "timestamp" : "2018-08-16T04:53:58.473Z",
+    "identifier" : "urn:uuid:6bcbcd5e-77b0-400d-8316-21b06b168fcc",
+    "timestamp" : "2018-08-17T02:44:02.988Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6323,8 +6345,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:49255bf8-9efe-4952-b926-67b45c30c3d2",
-    "timestamp" : "2018-08-16T04:53:59.270Z",
+    "identifier" : "urn:uuid:03fd5f42-dac6-4177-af06-f03d615f393b",
+    "timestamp" : "2018-08-17T02:44:03.676Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6359,6 +6381,52 @@ e: {
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
+        "code" : "363679005",
+        "display" : "Physical examination procedure (procedure)"
+      },
+      {
+        "code" : "363679005",
+        "display" : "Imaging (procedure)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:906decdd-7622-4b02-9baf-5da15afc1042",
+    "timestamp" : "2018-08-17T02:44:03.910Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "363679005",
+      "display" : "Physical examination procedure (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "363679005",
+      "display" : "Imaging (procedure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
         "code" : "399374009",
         "display" : "Regional lymph node metastasis present (finding)"
       },
@@ -6378,8 +6446,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:545d7b23-8b0c-4e5f-9666-0cc10440626a",
-    "timestamp" : "2018-08-16T04:53:59.567Z",
+    "identifier" : "urn:uuid:49e47a53-7cbb-4f6e-949b-11999d965c88",
+    "timestamp" : "2018-08-17T02:44:04.129Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6429,8 +6497,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:1542aeff-2aac-4d9c-93da-6db779f6d511",
-    "timestamp" : "2018-08-16T04:53:59.833Z",
+    "identifier" : "urn:uuid:39a3e797-bed5-41ff-ab4f-e8774468ad5b",
+    "timestamp" : "2018-08-17T02:44:04.348Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6483,8 +6551,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:44723ac3-ae5b-40d9-b0f3-6e7e36911fa8",
-    "timestamp" : "2018-08-16T04:54:00.082Z",
+    "identifier" : "urn:uuid:f7bdd0c3-e0d9-4758-b8b0-913194a338c7",
+    "timestamp" : "2018-08-17T02:44:04.598Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6555,8 +6623,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f288aa12-87e8-4780-872e-935575c88465",
-    "timestamp" : "2018-08-16T04:54:00.832Z",
+    "identifier" : "urn:uuid:eb4344f5-9ca3-44bc-a192-6bd8a4db14a0",
+    "timestamp" : "2018-08-17T02:44:05.238Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6625,8 +6693,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:d69d930f-72c3-4223-a22d-4bc26318253a",
-    "timestamp" : "2018-08-16T04:54:01.364Z",
+    "identifier" : "urn:uuid:cfed6e9d-963a-4ec2-bb9e-69fb904730d8",
+    "timestamp" : "2018-08-17T02:44:05.676Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6680,8 +6748,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:5e058390-1e3a-4107-9e8f-50e9ab3030de",
-    "timestamp" : "2018-08-16T04:54:01.879Z",
+    "identifier" : "urn:uuid:e6e056ba-cfc7-4014-8c03-5f734fcb60db",
+    "timestamp" : "2018-08-17T02:44:06.113Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6731,8 +6799,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:9512feb4-2198-4b5f-ad3a-0b7c40785715",
-    "timestamp" : "2018-08-16T04:54:02.145Z",
+    "identifier" : "urn:uuid:b0487794-41b7-4d21-9de1-54f745310c3f",
+    "timestamp" : "2018-08-17T02:44:06.347Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6793,8 +6861,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:738e7baf-79a8-4a91-8c04-56b7b07ced87",
-    "timestamp" : "2018-08-16T04:54:02.411Z",
+    "identifier" : "urn:uuid:01b334fd-740d-4282-a0f9-89e46dd5d432",
+    "timestamp" : "2018-08-17T02:44:06.566Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6863,8 +6931,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b46a2516-b200-41b7-8582-ad2027b02c6d",
-    "timestamp" : "2018-08-16T04:54:03.004Z",
+    "identifier" : "urn:uuid:3ef9836e-c27f-4a67-a99e-69ba5dd632c9",
+    "timestamp" : "2018-08-17T02:44:07.051Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6926,8 +6994,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:1ac47d72-2ea2-4637-a2e2-76e21db9042a",
-    "timestamp" : "2018-08-16T04:54:03.551Z",
+    "identifier" : "urn:uuid:e2c1b69d-4a82-43ad-80e4-dfff9089bff0",
+    "timestamp" : "2018-08-17T02:44:07.504Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"

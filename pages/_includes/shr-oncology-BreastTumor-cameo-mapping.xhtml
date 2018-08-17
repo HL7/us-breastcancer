@@ -1,0 +1,22 @@
+
+<p> </p>
+<p><b>BC Mapping Source</b></p>
+<p>This structure represents the following BC mapping definition:</p>
+<pre>
+shr.oncology.BreastTumor maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition:
+  PersonOfRecord maps to subject
+  FindingSiteConditionTopic.Category maps to category
+  FindingSiteConditionTopic.TopicCode maps to code
+  constrain bodySite to 0..0
+  FindingSiteConditionTopic.AnatomicalLocation maps to http://hl7.org/fhir/StructureDefinition/condition-targetBodySite
+  ConditionPresenceContext.Encounter maps to context
+  ConditionPresenceContext.ClinicalStatus maps to clinicalStatus
+  ConditionPresenceContext.VerificationStatus maps to verificationStatus
+  ConditionPresenceContext.Onset maps to onset[x]
+  ConditionPresenceContext.Abatement maps to abatement[x]
+  ConditionPresenceContext.Severity maps to severity
+  ConditionPresenceContext.Stage maps to stage
+  ConditionPresenceContext.Stage.CodeableConcept maps to stage.summary
+  ConditionPresenceContext.Stage.StageDetail maps to stage.assessment
+
+</pre>

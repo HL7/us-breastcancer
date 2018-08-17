@@ -479,6 +479,16 @@
         <tr class="altColor">
       
         <td class="colFirst">
+          <a href="shr-oncology/BreastTumor.html">BreastTumor</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI)</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
           <a href="cimi-entity/Capacity.html">Capacity</a>
         </td>
         <td class="colLast">
@@ -685,6 +695,16 @@ CIMI Alignment: In CIMI Version 0.0.4, specimen processing is represented as a '
         </td>
         <td class="colLast">
           <div class="block"><p>Percentage of cells with uniform intense complete membrane staining.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
+          <a href="cimi-statement/ComponentOnlyNonLaboratoryObservation.html">ComponentOnlyNonLaboratoryObservation</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>An observation with components, but without a result value or panel members.</p></div>
         </td>
       </tr>
       
@@ -1123,6 +1143,37 @@ The current approach is that positive/negative designation is a value, even thou
         <tr class="altColor">
       
         <td class="colFirst">
+          <a href="shr-condition/FindingSiteConditionPresenceStatement.html">FindingSiteConditionPresenceStatement</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>Presence of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds. Body structures are continuants that allow observations of the same body structure to be related to be tracked over time.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
+          <a href="shr-condition/FindingSiteConditionTopic.html">FindingSiteConditionTopic</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.
+The FindingSiteCondition topic provides not only the AnatomicalLocation (as in CIMI FindingSiteAssertionTopic), tbut also the type of structure found at that location, such as a wound or tumor.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
+          <a href="shr-condition/FindingSiteIdentifier.html">FindingSiteIdentifier</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>A human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
           <a href="cimi-statement/FindingStatement.html">FindingStatement</a>
         </td>
         <td class="colLast">
@@ -1148,16 +1199,6 @@ The current approach is that positive/negative designation is a value, even thou
         <td class="colLast">
           <div class="block"><p>Base class - independent of context - for all kinds of determinations: questions/answers, conditions, observations, allergies, and other findings.
 The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p></div>
-        </td>
-      </tr>
-      
-        <tr class="altColor">
-      
-        <td class="colFirst">
-          <a href="cimi-topic/Focus.html">Focus</a>
-        </td>
-        <td class="colLast">
-          <div class="block"><p>The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)</p></div>
         </td>
       </tr>
       
@@ -1690,6 +1731,16 @@ The is currently no LOINC code for Mammaprint test.</p></div>
         </td>
         <td class="colLast">
           <div class="block"><p>Parent for classes in CIMI that do not have enough context to stand alone. These reusable building blocks/data elements can be used to create classes by composition.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
+          <a href="cimi-statement/NonLaboratoryObservation.html">NonLaboratoryObservation</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>An observation not based on a specimen.</p></div>
         </td>
       </tr>
       
@@ -2304,6 +2355,26 @@ The clinically relevant time is not necessarily when the information is gathered
         <tr class="altColor">
       
         <td class="colFirst">
+          <a href="shr-oncology/SizeOfLongestDiameter.html">SizeOfLongestDiameter</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
+          <a href="shr-oncology/SizeOfShortAxis.html">SizeOfShortAxis</a>
+        </td>
+        <td class="colLast">
+          <div class="block"><p>Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.</p></div>
+        </td>
+      </tr>
+      
+        <tr class="altColor">
+      
+        <td class="colFirst">
           <a href="cimi-entity/SourceSpecimen.html">SourceSpecimen</a>
         </td>
         <td class="colLast">
@@ -2571,17 +2642,17 @@ If the start element is missing, the start of the period is not known. If the en
           <a href="shr-oncology/TumorDimensions.html">TumorDimensions</a>
         </td>
         <td class="colLast">
-          <div class="block"><p>Dimension size of the tumor sample evaluated for staging.  Dimensions include a height, width, and margin measurements.</p></div>
+          <div class="block"><p>Dimension size of the tumor sample evaluated for staging.  Dimensions include a size measurements for the longest diameter and the short axis (per RECIST guidelines) as well as margin measurements.</p></div>
         </td>
       </tr>
       
         <tr class="altColor">
       
         <td class="colFirst">
-          <a href="shr-oncology/TumorDimensionSize.html">TumorDimensionSize</a>
+          <a href="shr-oncology/TumorIdentifier.html">TumorIdentifier</a>
         </td>
         <td class="colLast">
-          <div class="block"><p>Measurements for the primary tumor size which includes the longest diameter of the primary tumor and the longest perpendicular diameter of the primary tumor.</p></div>
+          <div class="block"><p>A human-readable identifier for the lesion; e.g., a letter or integer.</p></div>
         </td>
       </tr>
       

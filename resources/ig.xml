@@ -121,6 +121,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="StructureDefinition/shr-oncology-BreastTumor" />
+                <display value="BC BreastTumor Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-ClinicalNote" />
                 <display value="BC ClinicalNote Profile" />
             </sourceReference>
@@ -137,6 +144,13 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-CodedLaboratoryObservation" />
                 <display value="BC CodedLaboratoryObservation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-ComponentOnlyNonLaboratoryObservation" />
+                <display value="BC ComponentOnlyNonLaboratoryObservation Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -172,6 +186,13 @@
             <sourceReference>
                 <reference value="StructureDefinition/shr-oncology-EstrogenReceptorStatus" />
                 <display value="BC EstrogenReceptorStatus Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-condition-FindingSiteConditionPresenceStatement" />
+                <display value="BC FindingSiteConditionPresenceStatement Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -256,6 +277,13 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-NationalProviderIdentifier" />
                 <display value="BC NationalProviderIdentifier Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-NonLaboratoryObservation" />
+                <display value="BC NonLaboratoryObservation Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -779,6 +807,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="StructureDefinition/shr-oncology-TumorIdentifier-extension" />
+                <display value="BC TumorIdentifier Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="StructureDefinition/shr-core-Type-extension" />
                 <display value="BC Type Extension" />
             </sourceReference>
@@ -949,6 +984,13 @@
             <sourceReference>
                 <reference value="ValueSet/cimi-entity-LanguageQualifierVS" />
                 <display value="BC LanguageQualifierVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-oncology-LymphNodeClinicalMethodVS" />
+                <display value="BC LymphNodeClinicalMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1458,6 +1500,13 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-BreastTumor-model" />
+                  <display value="BreastTumorModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-Capacity-model" />
                   <display value="CapacityModel" />
               </sourceReference>
@@ -1586,6 +1635,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-oncology-CompleteMembraneStainingPercent-model" />
                   <display value="CompleteMembraneStainingPercentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ComponentOnlyNonLaboratoryObservation-model" />
+                  <display value="ComponentOnlyNonLaboratoryObservationModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1892,6 +1948,27 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/shr-condition-FindingSiteConditionPresenceStatement-model" />
+                  <display value="FindingSiteConditionPresenceStatementModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-condition-FindingSiteConditionTopic-model" />
+                  <display value="FindingSiteConditionTopicModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-condition-FindingSiteIdentifier-model" />
+                  <display value="FindingSiteIdentifierModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-FindingStatement-model" />
                   <display value="FindingStatementModel" />
               </sourceReference>
@@ -1908,13 +1985,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-FindingTopic-model" />
                   <display value="FindingTopicModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-topic-Focus-model" />
-                  <display value="FocusModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2286,6 +2356,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-core-NonIndependent-model" />
                   <display value="NonIndependentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-NonLaboratoryObservation-model" />
+                  <display value="NonLaboratoryObservationModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2711,6 +2788,20 @@
           <resource>
               <example value="false" />
               <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-SizeOfLongestDiameter-model" />
+                  <display value="SizeOfLongestDiameterModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-oncology-SizeOfShortAxis-model" />
+                  <display value="SizeOfShortAxisModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-SourceSpecimen-model" />
                   <display value="SourceSpecimenModel" />
               </sourceReference>
@@ -2893,15 +2984,15 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorDimensionSize-model" />
-                  <display value="TumorDimensionSizeModel" />
+                  <reference value="StructureDefinition/shr-oncology-TumorDimensions-model" />
+                  <display value="TumorDimensionsModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorDimensions-model" />
-                  <display value="TumorDimensionsModel" />
+                  <reference value="StructureDefinition/shr-oncology-TumorIdentifier-model" />
+                  <display value="TumorIdentifierModel" />
               </sourceReference>
           </resource>
           <resource>

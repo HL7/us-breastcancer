@@ -375,11 +375,11 @@
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.findingMethod",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
@@ -390,9 +390,9 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS"
           }
         }
       },
@@ -728,37 +728,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.focus",
-        "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.focus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -1466,6 +1435,27 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerDistantMetastasesClassification-model.tumorIdentifier",
+        "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.tumorIdentifier",
+        "short": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.tumorIdentifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1809,11 +1799,11 @@
         "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.findingMethod",
           "min": 0,
-          "max": "0"
+          "max": "1"
         },
         "type": [
           {
@@ -1824,9 +1814,9 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-oncology-BreastCancerDetectionVS"
           }
         }
       },
@@ -2162,37 +2152,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-AnatomicalLocation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.focus",
-        "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.observationTopic.focus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-element-Identifier-model"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-EntityOrRole-model"
           }
         ],
         "mustSupport": false,
@@ -2900,6 +2859,27 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-RelatedPerson-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-oncology-BreastCancerDistantMetastasesClassification-model.tumorIdentifier",
+        "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.tumorIdentifier",
+        "short": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-oncology-BreastCancerDistantMetastasesClassification-model.tumorIdentifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "string"
           }
         ],
         "mustSupport": false,

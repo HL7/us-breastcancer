@@ -481,11 +481,11 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "shr-oncology-SizeOfGrossTumorBed-model.referenceRange",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {
@@ -946,11 +946,11 @@
         "short": "The usual or acceptable range for a test result.",
         "definition": "The usual or acceptable range for a test result.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "shr-oncology-SizeOfGrossTumorBed-model.referenceRange",
           "min": 0,
-          "max": "*"
+          "max": "0"
         },
         "type": [
           {

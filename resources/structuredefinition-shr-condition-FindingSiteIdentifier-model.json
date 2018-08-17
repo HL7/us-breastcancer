@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-condition-FindingSiteIdentifier-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC FindingSiteIdentifier Logical Model</b></p>\n  <p>A human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-condition-FindingSiteIdentifier-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "shr.condition.FindingSiteIdentifier"
+    }
+  ],
+  "name": "FindingSiteIdentifierModel",
+  "title": "BC FindingSiteIdentifier Logical Model",
+  "status": "draft",
+  "date": "2018-08-16",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-condition-FindingSiteIdentifier-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-condition-FindingSiteIdentifier-model",
+        "path": "shr-condition-FindingSiteIdentifier-model",
+        "definition": "A human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-condition-FindingSiteIdentifier-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteIdentifier-model.value",
+        "path": "shr-condition-FindingSiteIdentifier-model.value",
+        "short": "String representing a human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+        "definition": "String representing a human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteIdentifier-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-condition-FindingSiteIdentifier-model",
+        "path": "shr-condition-FindingSiteIdentifier-model",
+        "definition": "A human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-condition-FindingSiteIdentifier-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-condition-FindingSiteIdentifier-model.value",
+        "path": "shr-condition-FindingSiteIdentifier-model.value",
+        "short": "String representing a human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+        "definition": "String representing a human-readable identifier for the condition at the finding site, for example, a wound number or tumor identifier.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-condition-FindingSiteIdentifier-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

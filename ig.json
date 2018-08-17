@@ -98,6 +98,9 @@
     "StructureDefinition/shr-oncology-BreastSpecimen": {
       "base": "StructureDefinition-shr-oncology-BreastSpecimen.html"
     },
+    "StructureDefinition/shr-oncology-BreastTumor": {
+      "base": "StructureDefinition-shr-oncology-BreastTumor.html"
+    },
     "StructureDefinition/cimi-statement-ClinicalNote": {
       "base": "StructureDefinition-cimi-statement-ClinicalNote.html"
     },
@@ -106,6 +109,9 @@
     },
     "StructureDefinition/cimi-statement-CodedLaboratoryObservation": {
       "base": "StructureDefinition-cimi-statement-CodedLaboratoryObservation.html"
+    },
+    "StructureDefinition/cimi-statement-ComponentOnlyNonLaboratoryObservation": {
+      "base": "StructureDefinition-cimi-statement-ComponentOnlyNonLaboratoryObservation.html"
     },
     "StructureDefinition/cimi-statement-ConditionPresenceStatement": {
       "base": "StructureDefinition-cimi-statement-ConditionPresenceStatement.html"
@@ -121,6 +127,9 @@
     },
     "StructureDefinition/shr-oncology-EstrogenReceptorStatus": {
       "base": "StructureDefinition-shr-oncology-EstrogenReceptorStatus.html"
+    },
+    "StructureDefinition/shr-condition-FindingSiteConditionPresenceStatement": {
+      "base": "StructureDefinition-shr-condition-FindingSiteConditionPresenceStatement.html"
     },
     "StructureDefinition/cimi-statement-FindingStatement": {
       "base": "StructureDefinition-cimi-statement-FindingStatement.html"
@@ -157,6 +166,9 @@
     },
     "StructureDefinition/cimi-entity-NationalProviderIdentifier": {
       "base": "StructureDefinition-cimi-entity-NationalProviderIdentifier.html"
+    },
+    "StructureDefinition/cimi-statement-NonLaboratoryObservation": {
+      "base": "StructureDefinition-cimi-statement-NonLaboratoryObservation.html"
     },
     "StructureDefinition/cimi-statement-Observation": {
       "base": "StructureDefinition-cimi-statement-Observation.html"
@@ -433,6 +445,10 @@
       "base": "StructureDefinition-cimi-topic-TopicCode-extension.html",
       "template-base": "sd-extension.html"
     },
+    "StructureDefinition/shr-oncology-TumorIdentifier-extension": {
+      "base": "StructureDefinition-shr-oncology-TumorIdentifier-extension.html",
+      "template-base": "sd-extension.html"
+    },
     "StructureDefinition/shr-core-Type-extension": {
       "base": "StructureDefinition-shr-core-Type-extension.html",
       "template-base": "sd-extension.html"
@@ -511,6 +527,9 @@
     },
     "ValueSet/cimi-entity-LanguageQualifierVS": {
       "base": "ValueSet-cimi-entity-LanguageQualifierVS.html"
+    },
+    "ValueSet/shr-oncology-LymphNodeClinicalMethodVS": {
+      "base": "ValueSet-shr-oncology-LymphNodeClinicalMethodVS.html"
     },
     "ValueSet/shr-oncology-LymphNodeInvolvementVS": {
       "base": "ValueSet-shr-oncology-LymphNodeInvolvementVS.html"
@@ -888,6 +907,13 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-BreastTumor-model": {
+      "base": "StructureDefinition-shr-oncology-BreastTumor-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-entity-Capacity-model": {
       "base": "StructureDefinition-cimi-entity-Capacity-model.html",
       "template-base": "sd-logical.html",
@@ -1016,6 +1042,13 @@
     },
     "StructureDefinition/shr-oncology-CompleteMembraneStainingPercent-model": {
       "base": "StructureDefinition-shr-oncology-CompleteMembraneStainingPercent-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/cimi-statement-ComponentOnlyNonLaboratoryObservation-model": {
+      "base": "StructureDefinition-cimi-statement-ComponentOnlyNonLaboratoryObservation-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1322,6 +1355,27 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-condition-FindingSiteConditionPresenceStatement-model": {
+      "base": "StructureDefinition-shr-condition-FindingSiteConditionPresenceStatement-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-condition-FindingSiteConditionTopic-model": {
+      "base": "StructureDefinition-shr-condition-FindingSiteConditionTopic-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-condition-FindingSiteIdentifier-model": {
+      "base": "StructureDefinition-shr-condition-FindingSiteIdentifier-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-statement-FindingStatement-model": {
       "base": "StructureDefinition-cimi-statement-FindingStatement-model.html",
       "template-base": "sd-logical.html",
@@ -1338,13 +1392,6 @@
     },
     "StructureDefinition/cimi-topic-FindingTopic-model": {
       "base": "StructureDefinition-cimi-topic-FindingTopic-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-topic-Focus-model": {
-      "base": "StructureDefinition-cimi-topic-Focus-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1716,6 +1763,13 @@
     },
     "StructureDefinition/cimi-core-NonIndependent-model": {
       "base": "StructureDefinition-cimi-core-NonIndependent-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/cimi-statement-NonLaboratoryObservation-model": {
+      "base": "StructureDefinition-cimi-statement-NonLaboratoryObservation-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -2141,6 +2195,20 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
+    "StructureDefinition/shr-oncology-SizeOfLongestDiameter-model": {
+      "base": "StructureDefinition-shr-oncology-SizeOfLongestDiameter-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/shr-oncology-SizeOfShortAxis-model": {
+      "base": "StructureDefinition-shr-oncology-SizeOfShortAxis-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
     "StructureDefinition/cimi-entity-SourceSpecimen-model": {
       "base": "StructureDefinition-cimi-entity-SourceSpecimen-model.html",
       "template-base": "sd-logical.html",
@@ -2323,15 +2391,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-oncology-TumorDimensionSize-model": {
-      "base": "StructureDefinition-shr-oncology-TumorDimensionSize-model.html",
+    "StructureDefinition/shr-oncology-TumorDimensions-model": {
+      "base": "StructureDefinition-shr-oncology-TumorDimensions-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-oncology-TumorDimensions-model": {
-      "base": "StructureDefinition-shr-oncology-TumorDimensions-model.html",
+    "StructureDefinition/shr-oncology-TumorIdentifier-model": {
+      "base": "StructureDefinition-shr-oncology-TumorIdentifier-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

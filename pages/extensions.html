@@ -22,6 +22,7 @@
 <!-- ============CONTENT CONTENT=============== -->
 
 <h2>Primary extensions defined as part of this Implementation Guide</h2>
+
 <table class="codes">
   <thead>
     <tr>
@@ -35,6 +36,10 @@
   </thead>
   <tbody>
     <tr>
+          <td><a href="StructureDefinition-shr-core-Category-extension.html">Category</a></td>
+          <td>{% capture md_text %}A class or division of people or things having particular shared characteristics{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
           <td><a href="StructureDefinition-shr-core-ClockDirection-extension.html">ClockDirection</a></td>
           <td>{% capture md_text %}A direction indicated by an angle relative to 12 o'clock.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
@@ -61,6 +66,16 @@
         <tr>
           <td><a href="StructureDefinition-cimi-entity-SpecimenTreatment-extension.html">SpecimenTreatment</a></td>
           <td>{% capture md_text %}Treatment performed on the specimen.{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-cimi-topic-TopicCode-extension.html">TopicCode</a></td>
+          <td>{% capture md_text %}The concept representing the finding or action that is the topic of the statement.
+
+For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.{% endcapture %}{{ md_text | markdownify }}</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-shr-oncology-TumorIdentifier-extension.html">TumorIdentifier</a></td>
+          <td>{% capture md_text %}A human-readable identifier for the lesion; e.g., a letter or integer.{% endcapture %}{{ md_text | markdownify }}</td>
         </tr>
         
   </tbody>
