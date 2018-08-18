@@ -138,27 +138,6 @@
         "isSummary": false
       },
       {
-        "id": "shr-core-HumanName-model.preferredFlag",
-        "path": "shr-core-HumanName-model.preferredFlag",
-        "short": "Code indicating the preference associated with the use of this name.",
-        "definition": "Code indicating the preference associated with the use of this name.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-HumanName-model.preferredFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "shr-core-HumanName-model.prefix",
         "path": "shr-core-HumanName-model.prefix",
         "code": [
@@ -399,27 +378,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-EffectiveTimePeriod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-HumanName-model.preferredFlag",
-        "path": "shr-core-HumanName-model.preferredFlag",
-        "short": "Code indicating the preference associated with the use of this name.",
-        "definition": "Code indicating the preference associated with the use of this name.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "shr-core-HumanName-model.preferredFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
           }
         ],
         "mustSupport": false,

@@ -34,6 +34,7 @@ cimi.statement.SimpleLaboratoryObservation maps to http://hl7.org/fhir/us/core/S
   LaboratoryObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation
   LaboratoryObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange
   fix related.type to #has-member
+  LaboratoryObservationTopic.PanelMembers maps to related
   LaboratoryObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)
   ObservationContext.ResultValue maps to value[x]
   ObservationContext.ExceptionValue maps to dataAbsentReason

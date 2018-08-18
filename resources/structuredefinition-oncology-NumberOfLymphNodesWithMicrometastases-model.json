@@ -1,0 +1,339 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC NumberOfLymphNodesWithMicrometastases Logical Model</b></p>\n  <p>Number of lymph nodes with micrometastases examined</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NumberOfLymphNodesWithMicrometastases-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.NumberOfLymphNodesWithMicrometastases"
+    }
+  ],
+  "name": "NumberOfLymphNodesWithMicrometastasesModel",
+  "title": "BC NumberOfLymphNodesWithMicrometastases Logical Model",
+  "status": "draft",
+  "date": "2018-08-17",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Number of lymph nodes with micrometastases examined",
+  "keyword": [
+    {
+      "system": "http://loinc.org",
+      "code": "85344-0",
+      "display": "Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+        "definition": "Number of lymph nodes with micrometastases examined",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.value",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.value",
+        "short": "Quantity representing number of lymph nodes with micrometastases examined",
+        "definition": "Quantity representing number of lymph nodes with micrometastases examined",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-IntegerQuantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.topicCode",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.topicCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.exceptionValue",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.interpretation",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.referenceRange",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.referenceRange",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+        "definition": "Number of lymph nodes with micrometastases examined",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.value",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.value",
+        "short": "Quantity representing number of lymph nodes with micrometastases examined",
+        "definition": "Quantity representing number of lymph nodes with micrometastases examined",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-IntegerQuantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.topicCode",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.topicCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.exceptionValue",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.interpretation",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
+      },
+      {
+        "id": "oncology-NumberOfLymphNodesWithMicrometastases-model.referenceRange",
+        "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-NumberOfLymphNodesWithMicrometastases-model.referenceRange",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

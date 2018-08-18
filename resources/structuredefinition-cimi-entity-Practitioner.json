@@ -746,8 +746,7 @@
         },
         "type": [
           {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
+            "code": "HumanName"
           }
         ],
         "mustSupport": true,
@@ -1592,16 +1591,6 @@
           {
             "code": "Identifier",
             "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-NationalProviderIdentifier"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner:cimi-entity-Practitioner.name",
-        "path": "Practitioner.name",
-        "type": [
-          {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
           }
         ]
       },

@@ -586,9 +586,9 @@
         ],
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
           }
         },
         "mapping": [
@@ -791,7 +791,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ],
         "mustSupport": true,
@@ -1505,16 +1505,6 @@
         "max": "1"
       },
       {
-        "id": "Condition:shr-condition-FindingSiteConditionPresenceStatement.category",
-        "path": "Condition.category",
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-ConditionCategoryVS"
-          }
-        }
-      },
-      {
         "id": "Condition:shr-condition-FindingSiteConditionPresenceStatement.severity",
         "path": "Condition.severity",
         "binding": {
@@ -1536,16 +1526,6 @@
         "path": "Condition.bodySite",
         "min": 0,
         "max": "0"
-      },
-      {
-        "id": "Condition:shr-condition-FindingSiteConditionPresenceStatement.subject",
-        "path": "Condition.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
-          }
-        ]
       },
       {
         "id": "Condition:shr-condition-FindingSiteConditionPresenceStatement.context",

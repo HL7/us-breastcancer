@@ -163,8 +163,7 @@
         },
         "type": [
           {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
+            "code": "HumanName"
           }
         ],
         "mapping": [
@@ -208,8 +207,7 @@
         "min": 1,
         "type": [
           {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
+            "code": "HumanName"
           }
         ]
       }

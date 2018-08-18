@@ -3,7 +3,7 @@
   "id": "cimi-statement-LaboratoryObservation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC LaboratoryObservation Profile</b></p>\n  <p>A coded finding based on a specimen collected from a patient.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.statement.LaboratoryObservation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  LaboratoryObservationTopic.TopicCode maps to code\n  LaboratoryObservationTopic.FindingMethod maps to method\n  LaboratoryObservationTopic.Details maps to comment\n  LaboratoryObservationTopic.Category maps to category\n  LaboratoryObservationTopic.AnatomicalLocation maps to bodySite\n  LaboratoryObservationTopic.Device maps to device\n  LaboratoryObservationTopic.Specimen maps to specimen\n  LaboratoryObservationTopic.ReferenceRange maps to referenceRange\n  LaboratoryObservationTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  LaboratoryObservationTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  LaboratoryObservationTopic.ReferenceRange.Type maps to referenceRange.type\n  LaboratoryObservationTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  LaboratoryObservationTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  LaboratoryObservationTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  LaboratoryObservationTopic.EvaluationComponent._Concept maps to component.code\n  LaboratoryObservationTopic.EvaluationComponent.Quantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.string maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Range maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Ratio maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Media maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.time maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.dateTime maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  LaboratoryObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  LaboratoryObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  LaboratoryObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ObservationContext.ResultValue maps to value[x]\n  ObservationContext.ExceptionValue maps to dataAbsentReason\n  ObservationContext.Interpretation maps to interpretation\n  ObservationContext.Issued maps to issued\n  ObservationContext.FindingStatus maps to status\n  ObservationContext.RelevantTime maps to effective[x]\n  ObservationContext.DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC LaboratoryObservation Profile</b></p>\n  <p>A coded finding based on a specimen collected from a patient.</p>\n  <p><b>BC Mapping Summary</b></p>\n  <p><pre>cimi.statement.LaboratoryObservation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  LaboratoryObservationTopic.TopicCode maps to code\n  LaboratoryObservationTopic.FindingMethod maps to method\n  LaboratoryObservationTopic.Details maps to comment\n  LaboratoryObservationTopic.Category maps to category\n  LaboratoryObservationTopic.AnatomicalLocation maps to bodySite\n  LaboratoryObservationTopic.Device maps to device\n  LaboratoryObservationTopic.Specimen maps to specimen\n  LaboratoryObservationTopic.ReferenceRange maps to referenceRange\n  LaboratoryObservationTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  LaboratoryObservationTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  LaboratoryObservationTopic.ReferenceRange.Type maps to referenceRange.type\n  LaboratoryObservationTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  LaboratoryObservationTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  LaboratoryObservationTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  LaboratoryObservationTopic.EvaluationComponent._Concept maps to component.code\n  LaboratoryObservationTopic.EvaluationComponent.Quantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.string maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Range maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Ratio maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.Media maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.time maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.dateTime maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  LaboratoryObservationTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  LaboratoryObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  LaboratoryObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  LaboratoryObservationTopic.PanelMembers maps to related\n  LaboratoryObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ObservationContext.ResultValue maps to value[x]\n  ObservationContext.ExceptionValue maps to dataAbsentReason\n  ObservationContext.Interpretation maps to interpretation\n  ObservationContext.Issued maps to issued\n  ObservationContext.FindingStatus maps to status\n  ObservationContext.RelevantTime maps to effective[x]\n  ObservationContext.DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-LaboratoryObservation",
   "name": "LaboratoryObservationProfile",
@@ -1112,7 +1112,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ],
         "mustSupport": true,
@@ -1627,7 +1627,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://loinc.org/vs"
           }
         },
         "mapping": [
@@ -2071,7 +2071,7 @@
         "comment": "For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4).",
         "requirements": "Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes a QuestionnaireResponse from which the measure is derived.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Observation.related",
           "min": 0,
@@ -2968,16 +2968,6 @@
         "fixedCode": "laboratory"
       },
       {
-        "id": "Observation:cimi-statement-LaboratoryObservation.subject",
-        "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord"
-          }
-        ]
-      },
-      {
         "id": "Observation:cimi-statement-LaboratoryObservation.value[x]",
         "path": "Observation.value[x]",
         "type": [
@@ -3039,7 +3029,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://loinc.org/vs"
           }
         }
       },
@@ -3088,7 +3078,9 @@
       },
       {
         "id": "Observation:cimi-statement-LaboratoryObservation.related",
-        "path": "Observation.related"
+        "path": "Observation.related",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Observation:cimi-statement-LaboratoryObservation.related.type",

@@ -1,0 +1,339 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-TotalNumberOfLymphNodesExamined-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC TotalNumberOfLymphNodesExamined Logical Model</b></p>\n  <p>Total number of lymph nodes examined for the presence of cancer cells</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-TotalNumberOfLymphNodesExamined-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.TotalNumberOfLymphNodesExamined"
+    }
+  ],
+  "name": "TotalNumberOfLymphNodesExaminedModel",
+  "title": "BC TotalNumberOfLymphNodesExamined Logical Model",
+  "status": "draft",
+  "date": "2018-08-17",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Total number of lymph nodes examined for the presence of cancer cells",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "444025001",
+      "display": "Number of lymph nodes examined (observable entity)"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-TotalNumberOfLymphNodesExamined-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model",
+        "definition": "Total number of lymph nodes examined for the presence of cancer cells",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.value",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.value",
+        "short": "Quantity representing total number of lymph nodes examined for the presence of cancer cells",
+        "definition": "Quantity representing total number of lymph nodes examined for the presence of cancer cells",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-IntegerQuantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.topicCode",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.topicCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.exceptionValue",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.interpretation",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.referenceRange",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.referenceRange",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model",
+        "definition": "Total number of lymph nodes examined for the presence of cancer cells",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.value",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.value",
+        "short": "Quantity representing total number of lymph nodes examined for the presence of cancer cells",
+        "definition": "Quantity representing total number of lymph nodes examined for the presence of cancer cells",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-IntegerQuantity-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.topicCode",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.topicCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.exceptionValue",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.interpretation",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
+      },
+      {
+        "id": "oncology-TotalNumberOfLymphNodesExamined-model.referenceRange",
+        "path": "oncology-TotalNumberOfLymphNodesExamined-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-TotalNumberOfLymphNodesExamined-model.referenceRange",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

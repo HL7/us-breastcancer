@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-EstrogenReceptorInterpretationTestsVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC EstrogenReceptorInterpretationTestsVS ValueSet</b></p>\n<p>Laboratory observations holding the interpretation of estrogen receptor status (e.g. positive, negative).</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-EstrogenReceptorInterpretationTestsVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.EstrogenReceptorInterpretationTestsVS"
+    }
+  ],
+  "name": "EstrogenReceptorInterpretationTestsVS",
+  "title": "BC EstrogenReceptorInterpretationTestsVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-17",
+  "description": "Laboratory observations holding the interpretation of estrogen receptor status (e.g. positive, negative).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16112-5",
+            "display": "Estrogen receptor [Interpretation] in Tissue"
+          },
+          {
+            "code": "40556-3",
+            "display": "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
+          },
+          {
+            "code": "85337-4",
+            "display": "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
+          }
+        ]
+      }
+    ]
+  }
+}

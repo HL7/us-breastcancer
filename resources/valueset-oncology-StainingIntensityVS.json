@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-StainingIntensityVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC StainingIntensityVS ValueSet</b></p>\n<p>Staining intensity, to be reported as weak, moderate, or strong.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-StainingIntensityVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.StainingIntensityVS"
+    }
+  ],
+  "name": "StainingIntensityVS",
+  "title": "BC StainingIntensityVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-17",
+  "description": "Staining intensity, to be reported as weak, moderate, or strong.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260407003",
+            "display": "Weak (qualifier value)"
+          },
+          {
+            "code": "6736007",
+            "display": "Moderate (qualifier value)"
+          },
+          {
+            "code": "260404005",
+            "display": "Strong (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

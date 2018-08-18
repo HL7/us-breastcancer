@@ -73,7 +73,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://loinc.org/vs"
           }
         }
       }
@@ -119,7 +119,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-FindingMethodVS"
+            "reference": "http://loinc.org/vs"
           }
         }
       }

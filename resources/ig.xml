@@ -37,99 +37,92 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerDistantMetastasesClassification" />
+                <reference value="StructureDefinition/oncology-BreastCancerDistantMetastasesClassification" />
                 <display value="BC BreastCancerDistantMetastasesClassification Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerGeneticAnalysisObservation" />
+                <reference value="StructureDefinition/oncology-BreastCancerGeneticAnalysisObservation" />
                 <display value="BC BreastCancerGeneticAnalysisObservation Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerHistologicGrade" />
+                <reference value="StructureDefinition/oncology-BreastCancerHistologicGrade" />
                 <display value="BC BreastCancerHistologicGrade Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerPresenceStatement" />
+                <reference value="StructureDefinition/oncology-BreastCancerPresenceStatement" />
                 <display value="BC BreastCancerPresenceStatement Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerPrimaryTumorClassification" />
+                <reference value="StructureDefinition/oncology-BreastCancerPrimaryTumorClassification" />
                 <display value="BC BreastCancerPrimaryTumorClassification Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerRegionalNodesClassification" />
+                <reference value="StructureDefinition/oncology-BreastCancerRegionalNodesClassification" />
                 <display value="BC BreastCancerRegionalNodesClassification Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastCancerStage" />
+                <reference value="StructureDefinition/oncology-BreastCancerStage" />
                 <display value="BC BreastCancerStage Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastClinicalLymphNodeInvolvement" />
+                <reference value="StructureDefinition/oncology-BreastClinicalLymphNodeInvolvement" />
                 <display value="BC BreastClinicalLymphNodeInvolvement Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastLymphNodeBodySite" />
+                <reference value="StructureDefinition/oncology-BreastLymphNodeBodySite" />
                 <display value="BC BreastLymphNodeBodySite Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement" />
+                <reference value="StructureDefinition/oncology-BreastPathologicalLymphNodeInvolvement" />
                 <display value="BC BreastPathologicalLymphNodeInvolvement Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastSite" />
+                <reference value="StructureDefinition/oncology-BreastSite" />
                 <display value="BC BreastSite Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastSpecimen" />
+                <reference value="StructureDefinition/oncology-BreastSpecimen" />
                 <display value="BC BreastSpecimen Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-BreastTumor" />
+                <reference value="StructureDefinition/oncology-BreastTumor" />
                 <display value="BC BreastTumor Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-statement-ClinicalNote" />
-                <display value="BC ClinicalNote Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -163,7 +156,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-DCISNuclearGrade" />
+                <reference value="StructureDefinition/oncology-DCISNuclearGrade" />
                 <display value="BC DCISNuclearGrade Profile" />
             </sourceReference>
         </resource>
@@ -184,7 +177,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-EstrogenReceptorStatus" />
+                <reference value="StructureDefinition/oncology-EstrogenReceptorStatus" />
                 <display value="BC EstrogenReceptorStatus Profile" />
             </sourceReference>
         </resource>
@@ -212,29 +205,22 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-HER2ReceptorStatus" />
+                <reference value="StructureDefinition/oncology-HER2ReceptorStatus" />
                 <display value="BC HER2ReceptorStatus Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-HER2byFISH" />
+                <reference value="StructureDefinition/oncology-HER2byFISH" />
                 <display value="BC HER2byFISH Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-HER2byIHC" />
+                <reference value="StructureDefinition/oncology-HER2byIHC" />
                 <display value="BC HER2byIHC Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-HumanName" />
-                <display value="BC HumanName Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -247,7 +233,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-Ki-67NuclearAntigen" />
+                <reference value="StructureDefinition/oncology-Ki-67NuclearAntigen" />
                 <display value="BC Ki-67NuclearAntigen Profile" />
             </sourceReference>
         </resource>
@@ -261,7 +247,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-MammaprintRecurrenceScore" />
+                <reference value="StructureDefinition/oncology-MammaprintRecurrenceScore" />
                 <display value="BC MammaprintRecurrenceScore Profile" />
             </sourceReference>
         </resource>
@@ -296,14 +282,14 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-OncotypeDxDCISRecurrenceScore" />
+                <reference value="StructureDefinition/oncology-OncotypeDxDCISRecurrenceScore" />
                 <display value="BC OncotypeDxDCISRecurrenceScore Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-OncotypeDxInvasiveRecurrenceScore" />
+                <reference value="StructureDefinition/oncology-OncotypeDxInvasiveRecurrenceScore" />
                 <display value="BC OncotypeDxInvasiveRecurrenceScore Profile" />
             </sourceReference>
         </resource>
@@ -324,20 +310,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-Patient" />
-                <display value="BC Patient Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-PersonOfRecord" />
-                <display value="BC PersonOfRecord Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-Person" />
                 <display value="BC Person Profile" />
             </sourceReference>
@@ -352,14 +324,14 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorStatus" />
+                <reference value="StructureDefinition/oncology-ProgesteroneReceptorStatus" />
                 <display value="BC ProgesteroneReceptorStatus Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-ProsignaRecurrenceScore" />
+                <reference value="StructureDefinition/oncology-ProsignaRecurrenceScore" />
                 <display value="BC ProsignaRecurrenceScore Profile" />
             </sourceReference>
         </resource>
@@ -422,14 +394,14 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-TumorDimensions" />
+                <reference value="StructureDefinition/oncology-TumorDimensions" />
                 <display value="BC TumorDimensions Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-TumorMargins" />
+                <reference value="StructureDefinition/oncology-TumorMargins" />
                 <display value="BC TumorMargins Profile" />
             </sourceReference>
         </resource>
@@ -499,13 +471,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-statement-ClinicalNote-extension" />
-                <display value="BC ClinicalNote Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/shr-core-ClockDirection-extension" />
                 <display value="BC ClockDirection Extension" />
             </sourceReference>
@@ -555,22 +520,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-encounter-Diagnosis-extension" />
-                <display value="BC Diagnosis Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-DistanceFromBreastSiteToNipple-extension" />
+                <reference value="StructureDefinition/oncology-DistanceFromBreastSiteToNipple-extension" />
                 <display value="BC DistanceFromBreastSiteToNipple Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-encounter-EncounterClass-extension" />
-                <display value="BC EncounterClass Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -592,13 +543,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-topic-FindingMethod-extension" />
                 <display value="BC FindingMethod Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-context-FindingStatus-extension" />
-                <display value="BC FindingStatus Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -639,13 +583,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-core-Independent-extension" />
-                <display value="BC Independent Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-context-Interpretation-extension" />
                 <display value="BC Interpretation Extension" />
             </sourceReference>
@@ -681,7 +618,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-MorphologyBehavior-extension" />
+                <reference value="StructureDefinition/oncology-MorphologyBehavior-extension" />
                 <display value="BC MorphologyBehavior Extension" />
             </sourceReference>
         </resource>
@@ -695,20 +632,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-element-PartOf-extension" />
-                <display value="BC PartOf Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-Patient-extension" />
-                <display value="BC Patient Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-core-PersonOfRecord-extension" />
                 <display value="BC PersonOfRecord Extension" />
             </sourceReference>
@@ -716,36 +639,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-element-PreferredFlag-extension" />
-                <display value="BC PreferredFlag Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-context-PresenceContext-extension" />
                 <display value="BC PresenceContext Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-PriorityRank-extension" />
-                <display value="BC PriorityRank Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-context-RecordedContext-extension" />
-                <display value="BC RecordedContext Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-context-RelevantTime-extension" />
-                <display value="BC RelevantTime Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -807,7 +702,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-oncology-TumorIdentifier-extension" />
+                <reference value="StructureDefinition/oncology-TumorIdentifier-extension" />
                 <display value="BC TumorIdentifier Extension" />
             </sourceReference>
         </resource>
@@ -835,13 +730,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/primitive-code-extension" />
-                <display value="BC code Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="ValueSet/shr-core-AllUnitsVS" />
                 <display value="BC AllUnitsVS ValueSet" />
             </sourceReference>
@@ -863,42 +751,42 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastCancerDetectionVS" />
+                <reference value="ValueSet/oncology-BreastCancerDetectionVS" />
                 <display value="BC BreastCancerDetectionVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastCarcinomaHistologicTypeVS" />
+                <reference value="ValueSet/oncology-BreastCarcinomaHistologicTypeVS" />
                 <display value="BC BreastCarcinomaHistologicTypeVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastLymphNodeGroupVS" />
+                <reference value="ValueSet/oncology-BreastLymphNodeGroupVS" />
                 <display value="BC BreastLymphNodeGroupVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastSiteVS" />
+                <reference value="ValueSet/oncology-BreastSiteVS" />
                 <display value="BC BreastSiteVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastSpecimenCollectionMethodVS" />
+                <reference value="ValueSet/oncology-BreastSpecimenCollectionMethodVS" />
                 <display value="BC BreastSpecimenCollectionMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-BreastSpecimenTypeVS" />
+                <reference value="ValueSet/oncology-BreastSpecimenTypeVS" />
                 <display value="BC BreastSpecimenTypeVS ValueSet" />
             </sourceReference>
         </resource>
@@ -912,14 +800,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-core-ConditionCategoryVS" />
-                <display value="BC ConditionCategoryVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-DCISNuclearGradeVS" />
+                <reference value="ValueSet/oncology-DCISNuclearGradeVS" />
                 <display value="BC DCISNuclearGradeVS ValueSet" />
             </sourceReference>
         </resource>
@@ -933,56 +814,42 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-EstrogenReceptorInterpretationTestsVS" />
+                <reference value="ValueSet/oncology-EstrogenReceptorInterpretationTestsVS" />
                 <display value="BC EstrogenReceptorInterpretationTestsVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-core-FindingMethodVS" />
-                <display value="BC FindingMethodVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-HER2FISHMethodVS" />
+                <reference value="ValueSet/oncology-HER2FISHMethodVS" />
                 <display value="BC HER2FISHMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-HER2byFISHVSInterpretationTestsVS" />
+                <reference value="ValueSet/oncology-HER2byFISHVSInterpretationTestsVS" />
                 <display value="BC HER2byFISHVSInterpretationTestsVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-HER2byIHCInterpretationTestsVS" />
+                <reference value="ValueSet/oncology-HER2byIHCInterpretationTestsVS" />
                 <display value="BC HER2byIHCInterpretationTestsVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-HER2byIHCScoreNullVS" />
-                <display value="BC HER2byIHCScoreNullVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-oncology-HER2byIHCScoreVS" />
+                <reference value="ValueSet/oncology-HER2byIHCScoreVS" />
                 <display value="BC HER2byIHCScoreVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-Ki-67NuclearAntigenVS" />
+                <reference value="ValueSet/oncology-Ki-67NuclearAntigenVS" />
                 <display value="BC Ki-67NuclearAntigenVS ValueSet" />
             </sourceReference>
         </resource>
@@ -996,35 +863,35 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeClinicalMethodVS" />
+                <reference value="ValueSet/oncology-LymphNodeClinicalMethodVS" />
                 <display value="BC LymphNodeClinicalMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeInvolvementVS" />
+                <reference value="ValueSet/oncology-LymphNodeInvolvementVS" />
                 <display value="BC LymphNodeInvolvementVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeMobilityVS" />
+                <reference value="ValueSet/oncology-LymphNodeMobilityVS" />
                 <display value="BC LymphNodeMobilityVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-LymphNodeSamplingMethodVS" />
+                <reference value="ValueSet/oncology-LymphNodeSamplingMethodVS" />
                 <display value="BC LymphNodeSamplingMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-MorphologyBehaviorVS" />
+                <reference value="ValueSet/oncology-MorphologyBehaviorVS" />
                 <display value="BC MorphologyBehaviorVS ValueSet" />
             </sourceReference>
         </resource>
@@ -1066,35 +933,35 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-ProgesteroneReceptorInterpretationTestsVS" />
+                <reference value="ValueSet/oncology-ProgesteroneReceptorInterpretationTestsVS" />
                 <display value="BC ProgesteroneReceptorInterpretationTestsVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-RecurrenceRiskScoreInterpretationVS" />
+                <reference value="ValueSet/oncology-RecurrenceRiskScoreInterpretationVS" />
                 <display value="BC RecurrenceRiskScoreInterpretationVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-StageTimingPrefixVS" />
+                <reference value="ValueSet/oncology-StageTimingPrefixVS" />
                 <display value="BC StageTimingPrefixVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-StainingIntensityVS" />
+                <reference value="ValueSet/oncology-StainingIntensityVS" />
                 <display value="BC StainingIntensityVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-oncology-TumorMarginDescriptionVS" />
+                <reference value="ValueSet/oncology-TumorMarginDescriptionVS" />
                 <display value="BC TumorMarginDescriptionVS ValueSet" />
             </sourceReference>
         </resource>
@@ -1122,22 +989,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-oncology-BreastCarcinomaHistologicTypeCS" />
+                <reference value="CodeSystem/oncology-BreastCarcinomaHistologicTypeCS" />
                 <display value="BC BreastCarcinomaHistologicTypeCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-oncology-BreastSpecimenTypeCS" />
+                <reference value="CodeSystem/oncology-BreastSpecimenTypeCS" />
                 <display value="BC BreastSpecimenTypeCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/shr-core-ConditionCategoryCS" />
-                <display value="BC ConditionCategoryCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -1157,14 +1017,14 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-oncology-RecurrenceRiskScoreInterpretationCS" />
+                <reference value="CodeSystem/oncology-RecurrenceRiskScoreInterpretationCS" />
                 <display value="BC RecurrenceRiskScoreInterpretationCS CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="CodeSystem/shr-oncology-StageTimingPrefixCS" />
+                <reference value="CodeSystem/oncology-StageTimingPrefixCS" />
                 <display value="BC StageTimingPrefixCS CodeSystem" />
             </sourceReference>
         </resource>
@@ -1311,28 +1171,28 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-AverageCEP17SignalsPerCell-model" />
+                  <reference value="StructureDefinition/oncology-AverageCEP17SignalsPerCell-model" />
                   <display value="AverageCEP17SignalsPerCellModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-AverageHER2SignalsPerCell-model" />
+                  <reference value="StructureDefinition/oncology-AverageHER2SignalsPerCell-model" />
                   <display value="AverageHER2SignalsPerCellModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BRCA1Variant-model" />
+                  <reference value="StructureDefinition/oncology-BRCA1Variant-model" />
                   <display value="BRCA1VariantModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BRCA2Variant-model" />
+                  <reference value="StructureDefinition/oncology-BRCA2Variant-model" />
                   <display value="BRCA2VariantModel" />
               </sourceReference>
           </resource>
@@ -1360,105 +1220,105 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerDistantMetastasesClassification-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerDistantMetastasesClassification-model" />
                   <display value="BreastCancerDistantMetastasesClassificationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerGeneticAnalysisObservation-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerGeneticAnalysisObservation-model" />
                   <display value="BreastCancerGeneticAnalysisObservationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerHistologicGrade-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerHistologicGrade-model" />
                   <display value="BreastCancerHistologicGradeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerPresenceStatement-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerPresenceStatement-model" />
                   <display value="BreastCancerPresenceStatementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerPrimaryTumorClassification-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerPrimaryTumorClassification-model" />
                   <display value="BreastCancerPrimaryTumorClassificationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerRegionalNodesClassification-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerRegionalNodesClassification-model" />
                   <display value="BreastCancerRegionalNodesClassificationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerStage-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerStage-model" />
                   <display value="BreastCancerStageModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastCancerStageTopic-model" />
+                  <reference value="StructureDefinition/oncology-BreastCancerStageTopic-model" />
                   <display value="BreastCancerStageTopicModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastClinicalLymphNodeInvolvement-model" />
+                  <reference value="StructureDefinition/oncology-BreastClinicalLymphNodeInvolvement-model" />
                   <display value="BreastClinicalLymphNodeInvolvementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model" />
+                  <reference value="StructureDefinition/oncology-BreastLymphNodeBodySite-model" />
                   <display value="BreastLymphNodeBodySiteModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastLymphNodeInvolvement-model" />
+                  <reference value="StructureDefinition/oncology-BreastLymphNodeInvolvement-model" />
                   <display value="BreastLymphNodeInvolvementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastPathologicalLymphNodeInvolvement-model" />
+                  <reference value="StructureDefinition/oncology-BreastPathologicalLymphNodeInvolvement-model" />
                   <display value="BreastPathologicalLymphNodeInvolvementModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastSite-model" />
+                  <reference value="StructureDefinition/oncology-BreastSite-model" />
                   <display value="BreastSiteModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastSpecimen-model" />
+                  <reference value="StructureDefinition/oncology-BreastSpecimen-model" />
                   <display value="BreastSpecimenModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-BreastTumor-model" />
+                  <reference value="StructureDefinition/oncology-BreastTumor-model" />
                   <display value="BreastTumorModel" />
               </sourceReference>
           </resource>
@@ -1488,13 +1348,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-City-model" />
                   <display value="CityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-statement-ClinicalNote-model" />
-                  <display value="ClinicalNoteModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1549,7 +1402,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ColdIschemiaTime-model" />
+                  <reference value="StructureDefinition/oncology-ColdIschemiaTime-model" />
                   <display value="ColdIschemiaTimeModel" />
               </sourceReference>
           </resource>
@@ -1591,7 +1444,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-CompleteMembraneStainingPercent-model" />
+                  <reference value="StructureDefinition/oncology-CompleteMembraneStainingPercent-model" />
                   <display value="CompleteMembraneStainingPercentModel" />
               </sourceReference>
           </resource>
@@ -1682,7 +1535,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-DCISNuclearGrade-model" />
+                  <reference value="StructureDefinition/oncology-DCISNuclearGrade-model" />
                   <display value="DCISNuclearGradeModel" />
               </sourceReference>
           </resource>
@@ -1731,13 +1584,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-encounter-Diagnosis-model" />
-                  <display value="DiagnosisModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-DiagnosticService-model" />
                   <display value="DiagnosticServiceModel" />
               </sourceReference>
@@ -1752,7 +1598,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-DistanceFromBreastSiteToNipple-model" />
+                  <reference value="StructureDefinition/oncology-DistanceFromBreastSiteToNipple-model" />
                   <display value="DistanceFromBreastSiteToNippleModel" />
               </sourceReference>
           </resource>
@@ -1787,13 +1633,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-encounter-EncounterClass-model" />
-                  <display value="EncounterClassModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-encounter-Encounter-model" />
                   <display value="EncounterModel" />
               </sourceReference>
@@ -1822,21 +1661,21 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-EstrogenReceptorAverageStainingIntensity-model" />
+                  <reference value="StructureDefinition/oncology-EstrogenReceptorAverageStainingIntensity-model" />
                   <display value="EstrogenReceptorAverageStainingIntensityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-EstrogenReceptorNuclearPositivity-model" />
+                  <reference value="StructureDefinition/oncology-EstrogenReceptorNuclearPositivity-model" />
                   <display value="EstrogenReceptorNuclearPositivityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-EstrogenReceptorStatus-model" />
+                  <reference value="StructureDefinition/oncology-EstrogenReceptorStatus-model" />
                   <display value="EstrogenReceptorStatusModel" />
               </sourceReference>
           </resource>
@@ -1878,7 +1717,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model" />
+                  <reference value="StructureDefinition/oncology-ExtraCapsularExtensionOfNodalTumorStatus-model" />
                   <display value="ExtraCapsularExtensionOfNodalTumorStatusModel" />
               </sourceReference>
           </resource>
@@ -1983,28 +1822,28 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-HER2ReceptorStatus-model" />
+                  <reference value="StructureDefinition/oncology-HER2ReceptorStatus-model" />
                   <display value="HER2ReceptorStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-HER2byFISH-model" />
+                  <reference value="StructureDefinition/oncology-HER2byFISH-model" />
                   <display value="HER2byFISHModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-HER2byIHC-model" />
+                  <reference value="StructureDefinition/oncology-HER2byIHC-model" />
                   <display value="HER2byIHCModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-HER2toCEP17Ratio-model" />
+                  <reference value="StructureDefinition/oncology-HER2toCEP17Ratio-model" />
                   <display value="HER2toCEP17RatioModel" />
               </sourceReference>
           </resource>
@@ -2109,14 +1948,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-Ki-67NuclearAntigen-model" />
+                  <reference value="StructureDefinition/oncology-Ki-67NuclearAntigen-model" />
                   <display value="Ki-67NuclearAntigenModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-Ki-67NuclearAntigenValue-model" />
+                  <reference value="StructureDefinition/oncology-Ki-67NuclearAntigenValue-model" />
                   <display value="Ki-67NuclearAntigenValueModel" />
               </sourceReference>
           </resource>
@@ -2186,28 +2025,28 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-LymphNodeMobility-model" />
+                  <reference value="StructureDefinition/oncology-LymphNodeMobility-model" />
                   <display value="LymphNodeMobilityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-LymphNodeSamplingMethod-model" />
+                  <reference value="StructureDefinition/oncology-LymphNodeSamplingMethod-model" />
                   <display value="LymphNodeSamplingMethodModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-LymphNodeSize-model" />
+                  <reference value="StructureDefinition/oncology-LymphNodeSize-model" />
                   <display value="LymphNodeSizeModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-MammaprintRecurrenceScore-model" />
+                  <reference value="StructureDefinition/oncology-MammaprintRecurrenceScore-model" />
                   <display value="MammaprintRecurrenceScoreModel" />
               </sourceReference>
           </resource>
@@ -2230,13 +2069,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-ManufacturerName-model" />
                   <display value="ManufacturerNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MaritalStatus-model" />
-                  <display value="MaritalStatusModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2277,14 +2109,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-MitoticCountScore-model" />
+                  <reference value="StructureDefinition/oncology-MitoticCountScore-model" />
                   <display value="MitoticCountScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-MorphologyBehavior-model" />
+                  <reference value="StructureDefinition/oncology-MorphologyBehavior-model" />
                   <display value="MorphologyBehaviorModel" />
               </sourceReference>
           </resource>
@@ -2326,42 +2158,42 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NuclearPleomorphismScore-model" />
+                  <reference value="StructureDefinition/oncology-NuclearPleomorphismScore-model" />
                   <display value="NuclearPleomorphismScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfLymphNodesWithIsolatedTumorCells-model" />
+                  <reference value="StructureDefinition/oncology-NumberOfLymphNodesWithIsolatedTumorCells-model" />
                   <display value="NumberOfLymphNodesWithIsolatedTumorCellsModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfLymphNodesWithMacrometastases-model" />
+                  <reference value="StructureDefinition/oncology-NumberOfLymphNodesWithMacrometastases-model" />
                   <display value="NumberOfLymphNodesWithMacrometastasesModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfLymphNodesWithMicrometastases-model" />
+                  <reference value="StructureDefinition/oncology-NumberOfLymphNodesWithMicrometastases-model" />
                   <display value="NumberOfLymphNodesWithMicrometastasesModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfRegionalLymphNodes-model" />
+                  <reference value="StructureDefinition/oncology-NumberOfRegionalLymphNodes-model" />
                   <display value="NumberOfRegionalLymphNodesModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-NumberOfSentinelLymphNodes-model" />
+                  <reference value="StructureDefinition/oncology-NumberOfSentinelLymphNodes-model" />
                   <display value="NumberOfSentinelLymphNodesModel" />
               </sourceReference>
           </resource>
@@ -2403,14 +2235,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-OncotypeDxDCISRecurrenceScore-model" />
+                  <reference value="StructureDefinition/oncology-OncotypeDxDCISRecurrenceScore-model" />
                   <display value="OncotypeDxDCISRecurrenceScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-OncotypeDxInvasiveRecurrenceScore-model" />
+                  <reference value="StructureDefinition/oncology-OncotypeDxInvasiveRecurrenceScore-model" />
                   <display value="OncotypeDxInvasiveRecurrenceScoreModel" />
               </sourceReference>
           </resource>
@@ -2536,13 +2368,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-element-PreferredFlag-model" />
-                  <display value="PreferredFlagModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-element-Prefix-model" />
                   <display value="PrefixModel" />
               </sourceReference>
@@ -2571,28 +2396,28 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorAverageStainingIntensity-model" />
+                  <reference value="StructureDefinition/oncology-ProgesteroneReceptorAverageStainingIntensity-model" />
                   <display value="ProgesteroneReceptorAverageStainingIntensityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorNuclearPositivity-model" />
+                  <reference value="StructureDefinition/oncology-ProgesteroneReceptorNuclearPositivity-model" />
                   <display value="ProgesteroneReceptorNuclearPositivityModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ProgesteroneReceptorStatus-model" />
+                  <reference value="StructureDefinition/oncology-ProgesteroneReceptorStatus-model" />
                   <display value="ProgesteroneReceptorStatusModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-ProsignaRecurrenceScore-model" />
+                  <reference value="StructureDefinition/oncology-ProsignaRecurrenceScore-model" />
                   <display value="ProsignaRecurrenceScoreModel" />
               </sourceReference>
           </resource>
@@ -2739,21 +2564,21 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-SizeOfGrossTumorBed-model" />
+                  <reference value="StructureDefinition/oncology-SizeOfGrossTumorBed-model" />
                   <display value="SizeOfGrossTumorBedModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-SizeOfLongestDiameter-model" />
+                  <reference value="StructureDefinition/oncology-SizeOfLongestDiameter-model" />
                   <display value="SizeOfLongestDiameterModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-SizeOfShortAxis-model" />
+                  <reference value="StructureDefinition/oncology-SizeOfShortAxis-model" />
                   <display value="SizeOfShortAxisModel" />
               </sourceReference>
           </resource>
@@ -2830,14 +2655,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-StageSuffix-model" />
+                  <reference value="StructureDefinition/oncology-StageSuffix-model" />
                   <display value="StageSuffixModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-StageTimingPrefix-model" />
+                  <reference value="StructureDefinition/oncology-StageTimingPrefix-model" />
                   <display value="StageTimingPrefixModel" />
               </sourceReference>
           </resource>
@@ -2928,42 +2753,42 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TotalNumberOfLymphNodesExamined-model" />
+                  <reference value="StructureDefinition/oncology-TotalNumberOfLymphNodesExamined-model" />
                   <display value="TotalNumberOfLymphNodesExaminedModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TubuleFormationScore-model" />
+                  <reference value="StructureDefinition/oncology-TubuleFormationScore-model" />
                   <display value="TubuleFormationScoreModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorDimensions-model" />
+                  <reference value="StructureDefinition/oncology-TumorDimensions-model" />
                   <display value="TumorDimensionsModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorIdentifier-model" />
+                  <reference value="StructureDefinition/oncology-TumorIdentifier-model" />
                   <display value="TumorIdentifierModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorMarginDescription-model" />
+                  <reference value="StructureDefinition/oncology-TumorMarginDescription-model" />
                   <display value="TumorMarginDescriptionModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-oncology-TumorMargins-model" />
+                  <reference value="StructureDefinition/oncology-TumorMargins-model" />
                   <display value="TumorMarginsModel" />
               </sourceReference>
           </resource>

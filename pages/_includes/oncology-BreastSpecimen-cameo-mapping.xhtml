@@ -1,0 +1,26 @@
+
+<p> </p>
+<p><b>BC Mapping Source</b></p>
+<p>This structure represents the following BC mapping definition:</p>
+<pre>
+oncology.BreastSpecimen maps to Specimen:
+  AccessionIdentifier maps to accessionIdentifier
+  SpecimenStatus maps to status
+  Type maps to type
+  CollectionSource maps to subject
+  CollectionSite.AnatomicalLocation maps to collection.bodySite
+  CollectionMethod.CodeableConcept maps to collection.method
+  SourceSpecimen maps to parent
+  ReceivedTime maps to receivedTime
+  SpecimenContainer.Identifier maps to container.identifier
+  SpecimenContainer.Details maps to container.description
+  SpecimenContainer.Type maps to container.type
+  SpecimenContainer.Capacity maps to container.capacity
+  SpecimenContainer.SpecimenQuantity maps to container.specimenQuantity
+  SpecimenContainer.Additive maps to container.additive[x]
+  ColdIschemiaTime maps to processing (slice on = procedure)
+  ColdIschemiaTime.TimePeriod maps to processing.time[x]
+  ColdIschemiaTime._Concept maps to processing.procedure
+  constrain processing.additive to 0..0
+
+</pre>

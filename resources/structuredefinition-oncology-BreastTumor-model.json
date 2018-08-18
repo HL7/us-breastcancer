@@ -1,0 +1,2407 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-BreastTumor-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC BreastTumor Logical Model</b></p>\n  <p>An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI)</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastTumor-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.BreastTumor"
+    }
+  ],
+  "name": "BreastTumorModel",
+  "title": "BC BreastTumor Logical Model",
+  "status": "draft",
+  "date": "2018-08-17",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI)",
+  "keyword": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "395557000",
+      "display": "Tumor finding (finding)"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-BreastTumor-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-BreastTumor-model",
+        "path": "oncology-BreastTumor-model",
+        "definition": "An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.personOfRecord",
+        "path": "oncology-BreastTumor-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1268086"
+          }
+        ],
+        "short": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.",
+        "definition": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.\nThe FindingSiteCondition topic provides not only the AnatomicalLocation (as in CIMI FindingSiteAssertionTopic), tbut also the type of structure found at that location, such as a wound or tumor.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.topicCode",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.findingMethod",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.details",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.media",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.category",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.breastSite",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.breastSite",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.conditionCause",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.conditionCause",
+        "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.conditionCause",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Entity-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalStatement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.alleviatingFactor",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.alleviatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that reduce the severity of the pathology",
+        "definition": "Activities that reduce the severity of the pathology",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.alleviatingFactor",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.exacerbatingFactor",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.exacerbatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that increase the severity of the pathology",
+        "definition": "Activities that increase the severity of the pathology",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.exacerbatingFactor",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.tumorIdentifier",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.tumorIdentifier",
+        "short": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.tumorIdentifier",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext",
+        "short": "The context for a condition that is known, suspected, or possibly present.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ConditionPresenceContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.contextCode",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-PresenceContextVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.encounter",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.verificationStatus",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.verificationStatus",
+        "short": "Whether an assessment has been confirmed by testing or observation.",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.verificationStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.onset",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.onset",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "85585-8"
+          }
+        ],
+        "short": "The beginning or first appearance of a mental or physical disorder.",
+        "definition": "The beginning or first appearance of a mental or physical disorder.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.onset",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.abatement",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.abatement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "88878-4"
+          }
+        ],
+        "short": "The end, remission or resolution.",
+        "definition": "The end, remission or resolution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.abatement",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.certainty",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.certainty",
+        "short": "The degree of confidence in a conclusion or assertion.",
+        "definition": "The degree of confidence in a conclusion or assertion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.certainty",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.clinicalStatus",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.clinicalStatus",
+        "short": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.clinicalStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-clinical"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.whenClinicallyRecognized",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.whenClinicallyRecognized",
+        "short": "The time at which a condition or condition was first identified in a healthcare context.",
+        "definition": "The time at which a condition or condition was first identified in a healthcare context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.whenClinicallyRecognized",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.presentOnAdmission",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.presentOnAdmission",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "89251-3",
+            "display": "Condition present on admission"
+          }
+        ],
+        "short": "If the problem or condition existed before the current episode of care.",
+        "definition": "If the problem or condition existed before the current episode of care.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.presentOnAdmission",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-YesNoUnknownVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.severity",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.severity",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0392364"
+          }
+        ],
+        "short": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "definition": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.severity",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-severity"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.stage",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.stage",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0699749"
+          }
+        ],
+        "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Stage-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode",
+        "path": "oncology-BreastTumor-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.id",
+        "path": "oncology-BreastTumor-model.topicCode.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.extension",
+        "path": "oncology-BreastTumor-model.topicCode.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.system",
+        "path": "oncology-BreastTumor-model.topicCode.system",
+        "short": "Identity of the terminology system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
+        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
+        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://snomed.info/sct",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystem"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.version",
+        "path": "oncology-BreastTumor-model.topicCode.version",
+        "short": "Version of the system - if relevant",
+        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
+        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.7"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystemVersion"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.code",
+        "path": "oncology-BreastTumor-model.topicCode.code",
+        "short": "Symbol in syntax defined by the system",
+        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "requirements": "Need to refer to a particular code in the system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "395557000",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./code"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "oncology-BreastTumor-model.topicCode.display",
+        "short": "Representation defined by the system",
+        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.2 - but note this is not well followed"
+          },
+          {
+            "identity": "rim",
+            "map": "CV.displayName"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.userSelected",
+        "path": "oncology-BreastTumor-model.topicCode.userSelected",
+        "short": "If this coding was chosen directly by the user",
+        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
+        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
+        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "Sometimes implied by being first"
+          },
+          {
+            "identity": "rim",
+            "map": "CD.codingRationale"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category",
+        "path": "oncology-BreastTumor-model.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.category",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.id",
+        "path": "oncology-BreastTumor-model.category.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.extension",
+        "path": "oncology-BreastTumor-model.category.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.system",
+        "path": "oncology-BreastTumor-model.category.system",
+        "short": "Identity of the terminology system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
+        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
+        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/observation-category",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystem"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.version",
+        "path": "oncology-BreastTumor-model.category.version",
+        "short": "Version of the system - if relevant",
+        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
+        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.7"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystemVersion"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.code",
+        "path": "oncology-BreastTumor-model.category.code",
+        "short": "Symbol in syntax defined by the system",
+        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "requirements": "Need to refer to a particular code in the system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "exam",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./code"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "oncology-BreastTumor-model.category.display",
+        "short": "Representation defined by the system",
+        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.2 - but note this is not well followed"
+          },
+          {
+            "identity": "rim",
+            "map": "CV.displayName"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.userSelected",
+        "path": "oncology-BreastTumor-model.category.userSelected",
+        "short": "If this coding was chosen directly by the user",
+        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
+        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
+        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "Sometimes implied by being first"
+          },
+          {
+            "identity": "rim",
+            "map": "CD.codingRationale"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-BreastTumor-model",
+        "path": "oncology-BreastTumor-model",
+        "definition": "An abnormal mass of tissue that results when cells divide more than they should or do not die when they should. Tumors may be benign (not cancer), or malignant (cancer). Also called neoplasm. (source: NCI)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.personOfRecord",
+        "path": "oncology-BreastTumor-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.personOfRecord",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1268086"
+          }
+        ],
+        "short": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.",
+        "definition": "Presence (or absence) of a distinct anatomical or pathological morphological feature or organizational pattern, acquired or innate. Examples include tissue types, tumors, and wounds.\nThe FindingSiteCondition topic provides not only the AnatomicalLocation (as in CIMI FindingSiteAssertionTopic), tbut also the type of structure found at that location, such as a wound or tumor.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.topicCode",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-problem"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.findingMethod",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.findingMethod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-BreastCancerDetectionVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.details",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.details",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.details",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.media",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.category",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.category",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.breastSite",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.breastSite",
+        "short": "A body site specific to the breast structure.",
+        "definition": "A body site specific to the breast structure.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.breastSite",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.conditionCause",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.conditionCause",
+        "short": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "definition": "The cause of the condition. This includes such causes as disease vectors and endogenous states (e.g., macular degeneration due to diabetes), substances, medications, micro-organisms, and forces associated with the occurrence of a Condition from temporal or causative perspectives",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.conditionCause",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Entity-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-statement-ClinicalStatement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.alleviatingFactor",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.alleviatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that reduce the severity of the pathology",
+        "definition": "Activities that reduce the severity of the pathology",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.alleviatingFactor",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.exacerbatingFactor",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.exacerbatingFactor",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55258-8"
+          }
+        ],
+        "short": "Activities that increase the severity of the pathology",
+        "definition": "Activities that increase the severity of the pathology",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.exacerbatingFactor",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.findingSiteConditionTopic.tumorIdentifier",
+        "path": "oncology-BreastTumor-model.findingSiteConditionTopic.tumorIdentifier",
+        "short": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "definition": "A human-readable identifier for the lesion; e.g., a letter or integer.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.findingSiteConditionTopic.tumorIdentifier",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext",
+        "short": "The context for a condition that is known, suspected, or possibly present.",
+        "definition": "The context for a condition that is known, suspected, or possibly present.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-ConditionPresenceContext-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.contextCode",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.contextCode",
+        "short": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.",
+        "definition": "A code representing the ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc.\nAttribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.contextCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/cimi-context-PresenceContextVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.encounter",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.verificationStatus",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.verificationStatus",
+        "short": "Whether an assessment has been confirmed by testing or observation.",
+        "definition": "Whether an assessment has been confirmed by testing or observation.\nCIMI Alignment: This attribute corresponds to FindingContext.status, but has been defined to align with FHIR. In AllergyIntolerance, the type is code.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.verificationStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.onset",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.onset",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "85585-8"
+          }
+        ],
+        "short": "The beginning or first appearance of a mental or physical disorder.",
+        "definition": "The beginning or first appearance of a mental or physical disorder.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.onset",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.abatement",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.abatement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "88878-4"
+          }
+        ],
+        "short": "The end, remission or resolution.",
+        "definition": "The end, remission or resolution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.abatement",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Age-model"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-TimePeriod-model"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-Range-model"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.certainty",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.certainty",
+        "short": "The degree of confidence in a conclusion or assertion.",
+        "definition": "The degree of confidence in a conclusion or assertion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.certainty",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.clinicalStatus",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.clinicalStatus",
+        "short": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "definition": "A flag indicating whether the condition is active or inactive, recurring, in remission, or resolved (as of the last update of the Condition).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.clinicalStatus",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-clinical"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.whenClinicallyRecognized",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.whenClinicallyRecognized",
+        "short": "The time at which a condition or condition was first identified in a healthcare context.",
+        "definition": "The time at which a condition or condition was first identified in a healthcare context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.whenClinicallyRecognized",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.presentOnAdmission",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.presentOnAdmission",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "89251-3",
+            "display": "Condition present on admission"
+          }
+        ],
+        "short": "If the problem or condition existed before the current episode of care.",
+        "definition": "If the problem or condition existed before the current episode of care.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.presentOnAdmission",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/breastcancer/ValueSet/shr-core-YesNoUnknownVS"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.severity",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.severity",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0392364"
+          }
+        ],
+        "short": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "definition": "Degree of harshness or extent of a symptom, disorder, or condition.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.severity",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/condition-severity"
+          }
+        }
+      },
+      {
+        "id": "oncology-BreastTumor-model.conditionPresenceContext.stage",
+        "path": "oncology-BreastTumor-model.conditionPresenceContext.stage",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0699749"
+          }
+        ],
+        "short": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "definition": "The relative advancement in the course of a disease. The value is the summary stage or stage group. StageDetail optionally contains the full staging information.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-BreastTumor-model.conditionPresenceContext.stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-Stage-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode",
+        "path": "oncology-BreastTumor-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.topicCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.id",
+        "path": "oncology-BreastTumor-model.topicCode.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.extension",
+        "path": "oncology-BreastTumor-model.topicCode.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.system",
+        "path": "oncology-BreastTumor-model.topicCode.system",
+        "short": "Identity of the terminology system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
+        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
+        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://snomed.info/sct",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystem"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.version",
+        "path": "oncology-BreastTumor-model.topicCode.version",
+        "short": "Version of the system - if relevant",
+        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
+        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.7"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystemVersion"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.code",
+        "path": "oncology-BreastTumor-model.topicCode.code",
+        "short": "Symbol in syntax defined by the system",
+        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "requirements": "Need to refer to a particular code in the system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "395557000",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./code"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "oncology-BreastTumor-model.topicCode.display",
+        "short": "Representation defined by the system",
+        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.2 - but note this is not well followed"
+          },
+          {
+            "identity": "rim",
+            "map": "CV.displayName"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.topicCode.userSelected",
+        "path": "oncology-BreastTumor-model.topicCode.userSelected",
+        "short": "If this coding was chosen directly by the user",
+        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
+        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
+        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "Sometimes implied by being first"
+          },
+          {
+            "identity": "rim",
+            "map": "CD.codingRationale"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category",
+        "path": "oncology-BreastTumor-model.category",
+        "short": "A class or division of people or things having particular shared characteristics",
+        "definition": "A class or division of people or things having particular shared characteristics",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-BreastTumor-model.category",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.id",
+        "path": "oncology-BreastTumor-model.category.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.extension",
+        "path": "oncology-BreastTumor-model.category.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.system",
+        "path": "oncology-BreastTumor-model.category.system",
+        "short": "Identity of the terminology system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
+        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
+        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/observation-category",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystem"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.version",
+        "path": "oncology-BreastTumor-model.category.version",
+        "short": "Version of the system - if relevant",
+        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
+        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.7"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystemVersion"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.code",
+        "path": "oncology-BreastTumor-model.category.code",
+        "short": "Symbol in syntax defined by the system",
+        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "requirements": "Need to refer to a particular code in the system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "exam",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./code"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "oncology-BreastTumor-model.category.display",
+        "short": "Representation defined by the system",
+        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.2 - but note this is not well followed"
+          },
+          {
+            "identity": "rim",
+            "map": "CV.displayName"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
+          }
+        ]
+      },
+      {
+        "id": "oncology-BreastTumor-model.category.userSelected",
+        "path": "oncology-BreastTumor-model.category.userSelected",
+        "short": "If this coding was chosen directly by the user",
+        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
+        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
+        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "Sometimes implied by being first"
+          },
+          {
+            "identity": "rim",
+            "map": "CD.codingRationale"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
+          }
+        ]
+      }
+    ]
+  }
+}

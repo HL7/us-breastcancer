@@ -463,8 +463,7 @@
         "max": "*",
         "type": [
           {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
+            "code": "HumanName"
           }
         ],
         "isSummary": true,
@@ -665,16 +664,6 @@
             "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
           }
         }
-      },
-      {
-        "id": "RelatedPerson:cimi-entity-RelatedPerson.name",
-        "path": "RelatedPerson.name",
-        "type": [
-          {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-core-HumanName"
-          }
-        ]
       }
     ]
   },

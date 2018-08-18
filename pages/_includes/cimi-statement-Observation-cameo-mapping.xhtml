@@ -34,6 +34,7 @@ cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefiniti
   ObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation
   ObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange
   fix related.type to #has-member
+  ObservationTopic.PanelMembers maps to related
   ObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)
   ObservationContext.ResultValue maps to value[x]
   ObservationContext.ExceptionValue maps to dataAbsentReason

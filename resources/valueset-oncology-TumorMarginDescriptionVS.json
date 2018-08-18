@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "oncology-TumorMarginDescriptionVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>BC TumorMarginDescriptionVS ValueSet</b></p>\n<p>An evaluation of the lesion around the margins surrounding the tumor.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/ValueSet/oncology-TumorMarginDescriptionVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.TumorMarginDescriptionVS"
+    }
+  ],
+  "name": "TumorMarginDescriptionVS",
+  "title": "BC TumorMarginDescriptionVS ValueSet",
+  "status": "draft",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-17",
+  "description": "An evaluation of the lesion around the margins surrounding the tumor.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "129738007",
+            "display": "Lesion with circumscribed margin"
+          },
+          {
+            "code": "129741003",
+            "display": "Lesion with indistinct margin"
+          },
+          {
+            "code": "129739004",
+            "display": "Lesion with microlobulated margin"
+          },
+          {
+            "code": "129740002",
+            "display": "Lesion with obscured margin"
+          },
+          {
+            "code": "129742005",
+            "display": "Lesion with spiculated margin"
+          }
+        ]
+      }
+    ]
+  }
+}

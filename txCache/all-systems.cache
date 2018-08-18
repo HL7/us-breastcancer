@@ -532,7 +532,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-AverageCEP17SignalsPerCell-model"
+  "code" : "oncology-AverageCEP17SignalsPerCell-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -589,7 +589,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-AverageHER2SignalsPerCell-model"
+  "code" : "oncology-AverageHER2SignalsPerCell-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -608,7 +608,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BRCA1Variant-model"
+  "code" : "oncology-BRCA1Variant-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -627,7 +627,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BRCA2Variant-model"
+  "code" : "oncology-BRCA2Variant-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -703,7 +703,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerDistantMetastasesClassification-model"
+  "code" : "oncology-BreastCancerDistantMetastasesClassification-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -741,7 +741,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-StageSuffix-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-StageSuffix-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -779,7 +779,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerGeneticAnalysisObservation-model"
+  "code" : "oncology-BreastCancerGeneticAnalysisObservation-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -798,7 +798,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BRCA1Variant-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BRCA1Variant-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -817,7 +817,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BRCA2Variant-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BRCA2Variant-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -874,7 +874,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerHistologicGrade-model"
+  "code" : "oncology-BreastCancerHistologicGrade-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -893,7 +893,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TubuleFormationScore-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-TubuleFormationScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -912,7 +912,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NuclearPleomorphismScore-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NuclearPleomorphismScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -931,7 +931,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-MitoticCountScore-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MitoticCountScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -950,7 +950,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerPresenceStatement-model"
+  "code" : "oncology-BreastCancerPresenceStatement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -969,7 +969,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastSite-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastSite-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -988,7 +988,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerPrimaryTumorClassification-model"
+  "code" : "oncology-BreastCancerPrimaryTumorClassification-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1007,7 +1007,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerRegionalNodesClassification-model"
+  "code" : "oncology-BreastCancerRegionalNodesClassification-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1026,7 +1026,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerStage-model"
+  "code" : "oncology-BreastCancerStage-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1045,7 +1045,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastCancerStageTopic-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastCancerStageTopic-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1064,7 +1064,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastCancerStageTopic-model"
+  "code" : "oncology-BreastCancerStageTopic-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1102,7 +1102,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastClinicalLymphNodeInvolvement-model"
+  "code" : "oncology-BreastClinicalLymphNodeInvolvement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1121,7 +1121,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastLymphNodeBodySite-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastLymphNodeBodySite-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1140,7 +1140,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-LymphNodeMobility-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-LymphNodeMobility-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1159,7 +1159,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-LymphNodeSize-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-LymphNodeSize-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1178,7 +1178,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastLymphNodeBodySite-model"
+  "code" : "oncology-BreastLymphNodeBodySite-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1197,7 +1197,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastLymphNodeInvolvement-model"
+  "code" : "oncology-BreastLymphNodeInvolvement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1216,7 +1216,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastPathologicalLymphNodeInvolvement-model"
+  "code" : "oncology-BreastPathologicalLymphNodeInvolvement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1235,7 +1235,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-BreastLymphNodeInvolvement-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-BreastLymphNodeInvolvement-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1254,7 +1254,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-LymphNodeSamplingMethod-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-LymphNodeSamplingMethod-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1273,7 +1273,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TotalNumberOfLymphNodesExamined-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-TotalNumberOfLymphNodesExamined-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1292,7 +1292,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NumberOfRegionalLymphNodes-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NumberOfRegionalLymphNodes-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1311,7 +1311,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NumberOfSentinelLymphNodes-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NumberOfSentinelLymphNodes-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1330,7 +1330,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NumberOfLymphNodesWithIsolatedTumorCells-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NumberOfLymphNodesWithIsolatedTumorCells-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1349,7 +1349,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NumberOfLymphNodesWithMicrometastases-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NumberOfLymphNodesWithMicrometastases-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1368,7 +1368,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-NumberOfLymphNodesWithMacrometastases-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-NumberOfLymphNodesWithMacrometastases-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1387,7 +1387,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ExtraCapsularExtensionOfNodalTumorStatus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1406,7 +1406,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastSite-model"
+  "code" : "oncology-BreastSite-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1444,7 +1444,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastSpecimen-model"
+  "code" : "oncology-BreastSpecimen-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1501,7 +1501,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-BreastTumor-model"
+  "code" : "oncology-BreastTumor-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1635,44 +1635,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "shr-core-City-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "cimi-statement-ClinicalNote-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-context-RecordedContext-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1862,7 +1824,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-ColdIschemiaTime-model"
+  "code" : "oncology-ColdIschemiaTime-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1976,7 +1938,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-CompleteMembraneStainingPercent-model"
+  "code" : "oncology-CompleteMembraneStainingPercent-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2261,7 +2223,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-DCISNuclearGrade-model"
+  "code" : "oncology-DCISNuclearGrade-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2394,25 +2356,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "cimi-encounter-Diagnosis-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "cimi-topic-DiagnosticService-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -2451,7 +2394,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-DistanceFromBreastSiteToNipple-model"
+  "code" : "oncology-DistanceFromBreastSiteToNipple-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2546,45 +2489,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "cimi-encounter-EncounterClass-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "cimi-encounter-Encounter-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-encounter-Diagnosis-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2660,7 +2565,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-EstrogenReceptorAverageStainingIntensity-model"
+  "code" : "oncology-EstrogenReceptorAverageStainingIntensity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2679,7 +2584,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-EstrogenReceptorNuclearPositivity-model"
+  "code" : "oncology-EstrogenReceptorNuclearPositivity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2698,7 +2603,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-EstrogenReceptorStatus-model"
+  "code" : "oncology-EstrogenReceptorStatus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2717,7 +2622,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-EstrogenReceptorNuclearPositivity-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-EstrogenReceptorNuclearPositivity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2736,7 +2641,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-EstrogenReceptorAverageStainingIntensity-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-EstrogenReceptorAverageStainingIntensity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2869,7 +2774,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-ExtraCapsularExtensionOfNodalTumorStatus-model"
+  "code" : "oncology-ExtraCapsularExtensionOfNodalTumorStatus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3211,7 +3116,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-HER2ReceptorStatus-model"
+  "code" : "oncology-HER2ReceptorStatus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3230,7 +3135,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-HER2byFISH-model"
+  "code" : "oncology-HER2byFISH-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3249,7 +3154,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-AverageHER2SignalsPerCell-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-AverageHER2SignalsPerCell-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3268,7 +3173,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-AverageCEP17SignalsPerCell-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-AverageCEP17SignalsPerCell-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3287,7 +3192,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-HER2toCEP17Ratio-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-HER2toCEP17Ratio-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3306,7 +3211,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-HER2byIHC-model"
+  "code" : "oncology-HER2byIHC-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3325,7 +3230,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-CompleteMembraneStainingPercent-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-CompleteMembraneStainingPercent-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3344,7 +3249,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-HER2toCEP17Ratio-model"
+  "code" : "oncology-HER2toCEP17Ratio-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3629,7 +3534,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-Ki-67NuclearAntigen-model"
+  "code" : "oncology-Ki-67NuclearAntigen-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3648,7 +3553,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-Ki-67NuclearAntigenValue-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-Ki-67NuclearAntigenValue-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3667,7 +3572,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-Ki-67NuclearAntigenValue-model"
+  "code" : "oncology-Ki-67NuclearAntigenValue-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3857,7 +3762,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-LymphNodeMobility-model"
+  "code" : "oncology-LymphNodeMobility-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3876,7 +3781,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-LymphNodeSamplingMethod-model"
+  "code" : "oncology-LymphNodeSamplingMethod-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3895,7 +3800,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-LymphNodeSize-model"
+  "code" : "oncology-LymphNodeSize-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3914,7 +3819,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-MammaprintRecurrenceScore-model"
+  "code" : "oncology-MammaprintRecurrenceScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3972,25 +3877,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "cimi-entity-ManufacturerName-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "cimi-entity-MaritalStatus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4142,7 +4028,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-MitoticCountScore-model"
+  "code" : "oncology-MitoticCountScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4161,7 +4047,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-MorphologyBehavior-model"
+  "code" : "oncology-MorphologyBehavior-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4275,7 +4161,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-NuclearPleomorphismScore-model"
+  "code" : "oncology-NuclearPleomorphismScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4294,7 +4180,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-NumberOfLymphNodesWithIsolatedTumorCells-model"
+  "code" : "oncology-NumberOfLymphNodesWithIsolatedTumorCells-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4313,7 +4199,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-NumberOfLymphNodesWithMacrometastases-model"
+  "code" : "oncology-NumberOfLymphNodesWithMacrometastases-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4332,7 +4218,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-NumberOfLymphNodesWithMicrometastases-model"
+  "code" : "oncology-NumberOfLymphNodesWithMicrometastases-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4351,7 +4237,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-NumberOfRegionalLymphNodes-model"
+  "code" : "oncology-NumberOfRegionalLymphNodes-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4370,7 +4256,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-NumberOfSentinelLymphNodes-model"
+  "code" : "oncology-NumberOfSentinelLymphNodes-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4484,7 +4370,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-OncotypeDxDCISRecurrenceScore-model"
+  "code" : "oncology-OncotypeDxDCISRecurrenceScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4503,7 +4389,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-OncotypeDxInvasiveRecurrenceScore-model"
+  "code" : "oncology-OncotypeDxInvasiveRecurrenceScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -4978,25 +4864,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "cimi-element-PreferredFlag-model"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system "
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "cimi-element-Prefix-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -5073,7 +4940,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-ProgesteroneReceptorAverageStainingIntensity-model"
+  "code" : "oncology-ProgesteroneReceptorAverageStainingIntensity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5092,7 +4959,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-ProgesteroneReceptorNuclearPositivity-model"
+  "code" : "oncology-ProgesteroneReceptorNuclearPositivity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5111,7 +4978,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-ProgesteroneReceptorStatus-model"
+  "code" : "oncology-ProgesteroneReceptorStatus-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5130,7 +4997,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-ProgesteroneReceptorNuclearPositivity-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ProgesteroneReceptorNuclearPositivity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5149,7 +5016,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-ProgesteroneReceptorAverageStainingIntensity-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-ProgesteroneReceptorAverageStainingIntensity-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5168,7 +5035,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-ProsignaRecurrenceScore-model"
+  "code" : "oncology-ProsignaRecurrenceScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5605,7 +5472,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-SizeOfGrossTumorBed-model"
+  "code" : "oncology-SizeOfGrossTumorBed-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5624,7 +5491,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-SizeOfLongestDiameter-model"
+  "code" : "oncology-SizeOfLongestDiameter-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5643,7 +5510,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-SizeOfShortAxis-model"
+  "code" : "oncology-SizeOfShortAxis-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5871,7 +5738,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-StageSuffix-model"
+  "code" : "oncology-StageSuffix-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5890,7 +5757,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-StageTimingPrefix-model"
+  "code" : "oncology-StageTimingPrefix-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6156,7 +6023,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TotalNumberOfLymphNodesExamined-model"
+  "code" : "oncology-TotalNumberOfLymphNodesExamined-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6175,7 +6042,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TubuleFormationScore-model"
+  "code" : "oncology-TubuleFormationScore-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6194,7 +6061,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TumorDimensions-model"
+  "code" : "oncology-TumorDimensions-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6213,7 +6080,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-SizeOfLongestDiameter-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-SizeOfLongestDiameter-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6232,7 +6099,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-SizeOfShortAxis-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-SizeOfShortAxis-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6251,7 +6118,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-SizeOfGrossTumorBed-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-SizeOfGrossTumorBed-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6270,7 +6137,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TumorIdentifier-model"
+  "code" : "oncology-TumorIdentifier-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6289,7 +6156,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TumorMarginDescription-model"
+  "code" : "oncology-TumorMarginDescription-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6308,7 +6175,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "shr-oncology-TumorMargins-model"
+  "code" : "oncology-TumorMargins-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6327,7 +6194,7 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/shr-oncology-TumorMarginDescription-model"
+  "code" : "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-TumorMarginDescription-model"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {

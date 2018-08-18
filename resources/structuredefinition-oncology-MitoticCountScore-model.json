@@ -1,0 +1,351 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-MitoticCountScore-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BC MitoticCountScore Logical Model</b></p>\n  <p>The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/oncology-MitoticCountScore-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/breastcancer",
+      "value": "oncology.MitoticCountScore"
+    }
+  ],
+  "name": "MitoticCountScoreModel",
+  "title": "BC MitoticCountScore Logical Model",
+  "status": "draft",
+  "date": "2018-08-17",
+  "publisher": "The HL7 Cancer Interoperability Group sponsored by Clinical Interoperability Council Work Group (CIC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+  "keyword": [
+    {
+      "system": "http://loinc.org",
+      "code": "85300-2",
+      "display": "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "oncology-MitoticCountScore-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "oncology-MitoticCountScore-model",
+        "path": "oncology-MitoticCountScore-model",
+        "definition": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-MitoticCountScore-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.value",
+        "path": "oncology-MitoticCountScore-model.value",
+        "short": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "definition": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://loinc.org/vs/LL4383-7"
+          }
+        }
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.topicCode",
+        "path": "oncology-MitoticCountScore-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.topicCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.exceptionValue",
+        "path": "oncology-MitoticCountScore-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.interpretation",
+        "path": "oncology-MitoticCountScore-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.referenceRange",
+        "path": "oncology-MitoticCountScore-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.referenceRange",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "oncology-MitoticCountScore-model",
+        "path": "oncology-MitoticCountScore-model",
+        "definition": "The degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "oncology-MitoticCountScore-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.value",
+        "path": "oncology-MitoticCountScore-model.value",
+        "short": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "definition": "Code representing the degree of mitotic activity in breast carcinoma is one component of the Nottingham histologic grade, which is a prognostic indicator for patients with breast carcinoma. Mitotic activity is assessed as the number of mitoses per 10 high power fields (HPF), with increasing mitotic activity being an indicator of more aggressive cancer. The specific scores assigned to the number of mitoses depends on the size of the HPF. For example, for a HPF size of 0.274 mm^2, less than 10 mitoses per 10 HPF gets a score of 1, 10-19 gets a score of 2, and greater than or equal to 20 gets a score of 3. When larger or smaller HPFs are used, the cutoffs for the number of mitoses corresponding to a specific score are adjusted according to published guidelines.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://loinc.org/vs/LL4383-7"
+          }
+        }
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.topicCode",
+        "path": "oncology-MitoticCountScore-model.topicCode",
+        "short": "The concept representing the finding or action that is the topic of the statement.",
+        "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic independent of the context of the action or the finding.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.topicCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.exceptionValue",
+        "path": "oncology-MitoticCountScore-model.exceptionValue",
+        "short": "Reason that a value associated with a test or other finding is missing.",
+        "definition": "Reason that a value associated with a test or other finding is missing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.exceptionValue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.interpretation",
+        "path": "oncology-MitoticCountScore-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
+      },
+      {
+        "id": "oncology-MitoticCountScore-model.referenceRange",
+        "path": "oncology-MitoticCountScore-model.referenceRange",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0883335"
+          }
+        ],
+        "short": "The usual or acceptable range for a test result.",
+        "definition": "The usual or acceptable range for a test result.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "oncology-MitoticCountScore-model.referenceRange",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-topic-ReferenceRange-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

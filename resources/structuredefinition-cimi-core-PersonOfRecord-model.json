@@ -56,11 +56,11 @@
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1299487"
+            "code": "C0027361"
           }
         ],
-        "short": "Patient representing the person this entry belongs to.",
-        "definition": "Patient representing the person this entry belongs to.",
+        "short": "Person representing the person this entry belongs to.",
+        "definition": "Person representing the person this entry belongs to.",
         "min": 1,
         "max": "1",
         "base": {
@@ -71,7 +71,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -103,11 +103,11 @@
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1299487"
+            "code": "C0027361"
           }
         ],
-        "short": "Patient representing the person this entry belongs to.",
-        "definition": "Patient representing the person this entry belongs to.",
+        "short": "Person representing the person this entry belongs to.",
+        "definition": "Person representing the person this entry belongs to.",
         "min": 1,
         "max": "1",
         "base": {
@@ -118,7 +118,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Patient-model"
+            "targetProfile": "http://hl7.org/fhir/us/breastcancer/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
