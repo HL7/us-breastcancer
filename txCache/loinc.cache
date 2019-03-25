@@ -18,8 +18,7 @@
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -69,8 +68,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -115,8 +113,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -173,8 +170,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -238,8 +234,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -271,6 +266,437 @@ e: {
     }]
   }
 },
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "88878-4"
+}, "valueSet" :null}####
+v: {
+  "display" : "Date of condition abatement",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "55258-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem alleviating factors Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72369-2"
+}, "valueSet" :null}####
+v: {
+  "display" : "Body site identification panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "74861-6",
+  "display" : "CEP17 signals/nucleus [Entitic number] in Tissue by FISH"
+}, "valueSet" :null}####
+v: {
+  "display" : "CEP17 signals/nucleus [Entitic number] in Tissue by FISH",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "74860-8",
+  "display" : "HER2 signals/nucleus [Entitic number] in Tissue by FISH"
+}, "valueSet" :null}####
+v: {
+  "display" : "HER2 signals/nucleus [Entitic number] in Tissue by FISH",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "21639-0",
+  "display" : "BRCA1 gene mutations tested for in Blood or Tissue by Molecular genetics method Nominal"
+}, "valueSet" :null}####
+v: {
+  "display" : "BRCA1 gene mutations tested for in Blood or Tissue by Molecular genetics method Nominal",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "38531-0",
+  "display" : "BRCA2 gene mutations tested for in Blood or Tissue by Molecular genetics method Nominal"
+}, "valueSet" :null}####
+v: {
+  "display" : "BRCA2 gene mutations tested for in Blood or Tissue by Molecular genetics method Nominal",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "44648-4",
+  "display" : "Histologic grade [Score] in Breast cancer specimen Qualitative by Nottingham"
+}, "valueSet" :null}####
+v: {
+  "display" : "Histologic grade [Score] in Breast cancer specimen Qualitative by Nottingham",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85321-8",
+  "display" : "Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham"
+}, "valueSet" :null}####
+v: {
+  "display" : "Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham",
+  "severity" : "warning",
+  "error" : "The display \"Granular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham\" is not a valid display for the code {http://loinc.org}85321-8 - should be one of [\"Glandular differentiation [Score] in Breast cancer specimen Qualitative by Nottingham\",\"Gland diff Br ca spec Ql Nottingham\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "44645-0",
+  "display" : "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham"
+}, "valueSet" :null}####
+v: {
+  "display" : "Nuclear pleomorphism in Breast tumor Qualitative by Nottingham",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85300-2",
+  "display" : "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham"
+}, "valueSet" :null}####
+v: {
+  "display" : "Mitotic rate [Score] in Breast cancer specimen Qualitative by Nottingham",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85585-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "Date of condition onset",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89251-3",
+  "display" : "Condition present on admission"
+}, "valueSet" :null}####
+v: {
+  "display" : "Condition present on admission",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "44669-0",
+  "display" : "Margin involvement in Breast tumor"
+}, "valueSet" :null}####
+v: {
+  "display" : "Margin involvement in Breast tumor",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48676-1",
+  "display" : "HER2 [Interpretation] in Tissue"
+}, "valueSet" :null}####
+v: {
+  "display" : "HER2 [Interpretation] in Tissue",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "16112-5",
+  "display" : "Estrogen receptor [Interpretation] in Tissue"
+}, "valueSet" :null}####
+v: {
+  "display" : "Estrogen receptor [Interpretation] in Tissue",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "16113-3",
+  "display" : "Progesterone receptor [Interpretation] in Tissue"
+}, "valueSet" :null}####
+v: {
+  "display" : "Progesterone receptor [Interpretation] in Tissue",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "21894-1",
+  "display" : "Regional lymph nodes examined [#] Specimen"
+}, "valueSet" :null}####
+v: {
+  "display" : "Regional lymph nodes examined [#] Specimen",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85347-3",
+  "display" : "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
+}, "valueSet" :null}####
+v: {
+  "display" : "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85352-3",
+  "display" : "Lymph nodes with isolated tumor cells [#] in Cancer specimen by Light microscopy"
+}, "valueSet" :null}####
+v: {
+  "display" : "Lymph nodes with isolated tumor cells [#] in Cancer specimen by Light microscopy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85344-0",
+  "display" : "Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy"
+}, "valueSet" :null}####
+v: {
+  "display" : "Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85343-2",
+  "display" : "Lymph nodes with macrometastases [#] in Cancer specimen by Light microscopy"
+}, "valueSet" :null}####
+v: {
+  "display" : "Lymph nodes with macrometastases [#] in Cancer specimen by Light microscopy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85350-7",
+  "display" : "Extranodal extension of carcinoma [Presence] in Cancer specimen by Light microscopy"
+}, "valueSet" :null}####
+v: {
+  "display" : "Extranodal extension of carcinoma [Presence] in Cancer specimen by Light microscopy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72294-2"
+}, "valueSet" :null}####
+v: {
+  "display" : "Undermining clock position of Wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "44778-9",
+  "display" : "Cold ischemic time {Organ}"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cold ischemic time {organ}",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85328-3",
+  "display" : "Cells.HER2 uniform intense membrane staining/100 cells"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cells.HER2 uniform intense membrane staining/100 cells in Breast cancer specimen by Immune stain",
+  "severity" : "warning",
+  "error" : "The display \"Cells.HER2 uniform intense membrane staining/100 cells\" is not a valid display for the code {http://loinc.org}85328-3 - should be one of [\"Cells.HER2 uniform intense membrane staining/100 cells in Breast cancer specimen by Immune stain\",\"HER2 unif int NFr Br ca spec ImStn\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "21112-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "Birth date",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85310-1",
+  "display" : "Estrogen receptor fluorescence intensity [Type] in Breast cancer specimen by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "Estrogen receptor fluorescence intensity [Type] in Breast cancer specimen by Immune stain",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "14228-1",
+  "display" : "Cells.estrogen receptor/​100 cells in Tissue by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cells.estrogen receptor/100 cells in Tissue by Immune stain",
+  "severity" : "warning",
+  "error" : "The display \"Cells.estrogen receptor/​100 cells in Tissue by Immune stain\" is not a valid display for the code {http://loinc.org}14228-1 - should be one of [\"Cells.estrogen receptor/100 cells in Tissue by Immune stain\",\"ER+ cells NFr Tiss ImStn\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "45394-4"
+}, "valueSet" :null}####
+v: {
+  "display" : "Last name",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "45392-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "First name",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85319-2",
+  "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85318-4",
+  "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
+}, "valueSet" :null}####
+v: {
+  "display" : "HER2 [Presence] in Breast cancer specimen by FISH",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "49683-6",
+  "display" : "HER2/CEP17 [Ratio] in Tissue by FISH"
+}, "valueSet" :null}####
+v: {
+  "display" : "HER2/CEP17 [Ratio] in Tissue by FISH",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "45395-1"
+}, "valueSet" :null}####
+v: {
+  "display" : "Name suffix",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "33055-5",
+  "display" : "Ki-67 nuclear Ag [Presence] in Tissue by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "Ki-67 nuclear Ag [Presence] in Tissue by Immune stain",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "29593-1",
+  "display" : "Cells.Ki-67 nuclear Ag/​100 cells in Tissue by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cells.Ki-67 nuclear Ag/100 cells in Tissue by Immune stain",
+  "severity" : "warning",
+  "error" : "The display \"Cells.Ki-67 nuclear Ag/​100 cells in Tissue by Immune stain\" is not a valid display for the code {http://loinc.org}29593-1 - should be one of [\"Cells.Ki-67 nuclear Ag/100 cells in Tissue by Immune stain\",\"Ki-67 nuclear Ag NFr Tiss ImStn\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85331-7",
+  "display" : "Progesterone receptor fluorescence intensity [Type] in Breast cancer specimen by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "Progesterone receptor fluorescence intensity [Type] in Breast cancer specimen by Immune stain",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "14230-7",
+  "display" : "Cells.progesterone receptor/​100 cells in Tissue by Immune stain"
+}, "valueSet" :null}####
+v: {
+  "display" : "Cells.progesterone receptor/100 cells in Tissue by Immune stain",
+  "severity" : "warning",
+  "error" : "The display \"Cells.progesterone receptor/​100 cells in Tissue by Immune stain\" is not a valid display for the code {http://loinc.org}14230-7 - should be one of [\"Cells.progesterone receptor/100 cells in Tissue by Immune stain\",\"PR+ cells NFr Tiss ImStn\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "76544-6",
+  "display" : "Breast cancer 10-year risk of distant recurrence score Calculated by Prosigna"
+}, "valueSet" :null}####
+v: {
+  "display" : "Breast cancer 10-year risk of distant recurrence score Calculated by Prosigna",
+  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------

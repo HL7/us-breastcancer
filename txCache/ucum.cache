@@ -6,8 +6,7 @@
       "system" : "http://unitsofmeasure.org"
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -20,8 +19,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:82b43668-34ba-49e0-8103-d4675ad59567",
-    "timestamp" : "2018-08-18T01:20:47.435Z",
+    "identifier" : "urn:uuid:9aef427c-fc45-4fd6-a7ae-ee3c9184a81e",
+    "timestamp" : "2019-03-25T14:40:58-04:00",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -765,6 +764,11 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
+      "code" : "[M'U]",
+      "display" : "M unit"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
       "code" : "[nmi_i]",
       "display" : "nautical mile"
     },
@@ -805,7 +809,7 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "[pptr]",
+      "code" : "[ppt]",
       "display" : "part per trillion"
     },
     {
@@ -1185,7 +1189,7 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "{Ehrlich'U}/100.g",
+      "code" : "{Ehrlich'U}/100g",
       "display" : "Ehrlich unit per 100 gram"
     },
     {
@@ -1260,7 +1264,7 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "U{G}",
+      "code" : "{G}U",
       "display" : "G unit"
     },
     {
@@ -1465,8 +1469,8 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "{NonspecificOunce}",
-      "display" : "NonspecificOunce"
+      "code" : "{NonspecifcOunce}",
+      "display" : "NonspecifcOunce"
     },
     {
       "system" : "http://unitsofmeasure.org",
@@ -2257,6 +2261,11 @@ e: {
       "system" : "http://unitsofmeasure.org",
       "code" : "Hz",
       "display" : "Hertz"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "iU",
+      "display" : "international unit"
     },
     {
       "system" : "http://unitsofmeasure.org",
@@ -3115,7 +3124,7 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "mmol/kg{H20}",
+      "code" : "mmol/kg[H20]",
       "display" : "millimole per kilogram of water"
     },
     {
@@ -4540,6 +4549,11 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
+      "code" : "{Ehrlich'U}/100.g",
+      "display" : "Ehrlich unit per 100 gram"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
       "code" : "{EIA_index}",
       "display" : "EIA index"
     },
@@ -5022,21 +5036,6 @@ e: {
       "system" : "http://unitsofmeasure.org",
       "code" : "umol/min/g{mucosa}",
       "display" : "micromole per minute per gram of mucosa"
-    },
-    {
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mU/mmol{creat}",
-      "display" : "milli  enzyme unit per millimole of creatinine"
-    },
-    {
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mU/g{Hb}",
-      "display" : "milli enzyme unit per gram of hemoglobin"
-    },
-    {
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mU/g{protein}",
-      "display" : "milli enzyme unit per gram of protein"
     }]
   }
 },

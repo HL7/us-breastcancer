@@ -6,20 +6,15 @@
       "system" : "urn:iso:std:iso:4217"
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ae390600-3c5a-4af9-b4f2-b3e95edd6327",
-    "timestamp" : "2018-08-18T01:20:47.982Z",
+    "identifier" : "urn:uuid:01b6e8ee-06c2-40d5-b3c5-c5b179179c32",
+    "timestamp" : "2019-03-25T14:40:58-04:00",
     "parameter" : [{
       "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
       "valueString" : "-1"
     }],
     "contains" : [{
@@ -289,6 +284,11 @@ e: {
     },
     {
       "system" : "urn:iso:std:iso:4217",
+      "code" : "GGP",
+      "display" : "Guernsey Pound"
+    },
+    {
+      "system" : "urn:iso:std:iso:4217",
       "code" : "GHS",
       "display" : "Ghanaian cedi"
     },
@@ -354,6 +354,11 @@ e: {
     },
     {
       "system" : "urn:iso:std:iso:4217",
+      "code" : "IMP",
+      "display" : "Isle of Man Pound"
+    },
+    {
+      "system" : "urn:iso:std:iso:4217",
       "code" : "INR",
       "display" : "Indian rupee"
     },
@@ -371,6 +376,11 @@ e: {
       "system" : "urn:iso:std:iso:4217",
       "code" : "ISK",
       "display" : "Icelandic króna"
+    },
+    {
+      "system" : "urn:iso:std:iso:4217",
+      "code" : "JEP",
+      "display" : "Jersey Pound"
     },
     {
       "system" : "urn:iso:std:iso:4217",
@@ -741,6 +751,11 @@ e: {
       "system" : "urn:iso:std:iso:4217",
       "code" : "TTD",
       "display" : "Trinidad and Tobago dollar"
+    },
+    {
+      "system" : "urn:iso:std:iso:4217",
+      "code" : "TVD",
+      "display" : "Tuvalu Dollar"
     },
     {
       "system" : "urn:iso:std:iso:4217",
