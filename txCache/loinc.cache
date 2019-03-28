@@ -1,274 +1,4 @@
 -------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "16112-5",
-        "display" : "Estrogen receptor [Interpretation] in Tissue"
-      },
-      {
-        "code" : "40556-3",
-        "display" : "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
-      },
-      {
-        "code" : "85337-4",
-        "display" : "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:52bb1829-317f-4d20-8c5b-cbe9024a1c91",
-    "timestamp" : "2018-08-18T01:21:48.514Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "16112-5",
-      "display" : "Estrogen receptor [Interpretation] in Tissue"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "40556-3",
-      "display" : "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "85337-4",
-      "display" : "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "31150-6",
-        "display" : "HER2 [Presence] in Tissue by FISH"
-      },
-      {
-        "code" : "85318-4",
-        "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:2f3257f9-dc3b-473e-8790-92afd783e368",
-    "timestamp" : "2018-08-18T01:21:48.858Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "31150-6",
-      "display" : "HER2 [Presence] in Tissue by FISH"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "85318-4",
-      "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "18474-7",
-        "display" : "HER2 Ag [Presence] in Tissue by Immune stain"
-      },
-      {
-        "code" : "85319-2",
-        "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:1c18c46c-7193-4b4e-a7bd-7f32041937ad",
-    "timestamp" : "2018-08-18T01:21:49.029Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "18474-7",
-      "display" : "HER2 Ag [Presence] in Tissue by Immune stain"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "85319-2",
-      "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6111-4",
-        "display" : "0"
-      },
-      {
-        "code" : "LA11841-6",
-        "display" : "1+"
-      },
-      {
-        "code" : "LA11842-4",
-        "display" : "2+"
-      },
-      {
-        "code" : "LA11843-2",
-        "display" : "3+"
-      },
-      {
-        "code" : "LA11884-6",
-        "display" : "Indeterminate"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:74d4a09c-45fb-4020-81e3-636a704dce5b",
-    "timestamp" : "2018-08-18T01:21:49.201Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA6111-4",
-      "display" : "0"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA11841-6",
-      "display" : "1+"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA11842-4",
-      "display" : "2+"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA11843-2",
-      "display" : "3+"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA11884-6",
-      "display" : "Indeterminate"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "16113-3",
-        "display" : "Progesterone receptor [Interpretation] in TissueProgesterone receptor [Interpretation] in Tissue"
-      },
-      {
-        "code" : "40557-1",
-        "display" : "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
-      },
-      {
-        "code" : "85339-0",
-        "display" : "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:bf8e6e0a-8aec-4d10-b968-c9477082624e",
-    "timestamp" : "2018-08-18T01:21:51.092Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "16113-3",
-      "display" : "Progesterone receptor [Interpretation] in TissueProgesterone receptor [Interpretation] in Tissue"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "40557-1",
-      "display" : "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "85339-0",
-      "display" : "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
   "code" : "88878-4"
@@ -697,6 +427,276 @@ v: {
 v: {
   "display" : "Breast cancer 10-year risk of distant recurrence score Calculated by Prosigna",
   "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "16112-5",
+        "display" : "Estrogen receptor [Interpretation] in Tissue"
+      },
+      {
+        "code" : "40556-3",
+        "display" : "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
+      },
+      {
+        "code" : "85337-4",
+        "display" : "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:a3297372-a9d2-4a00-919e-4c1e12000725",
+    "timestamp" : "2019-03-28T14:03:32-04:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "16112-5",
+      "display" : "Estrogen receptor [Interpretation] in Tissue"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "40556-3",
+      "display" : "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85337-4",
+      "display" : "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "31150-6",
+        "display" : "HER2 [Presence] in Tissue by FISH"
+      },
+      {
+        "code" : "85318-4",
+        "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:9249ba5f-ac1f-491d-b7dc-410482f15ca4",
+    "timestamp" : "2019-03-28T14:03:32-04:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "31150-6",
+      "display" : "HER2 [Presence] in Tissue by FISH"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85318-4",
+      "display" : "HER2 [Presence] in Breast cancer specimen by FISH"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18474-7",
+        "display" : "HER2 Ag [Presence] in Tissue by Immune stain"
+      },
+      {
+        "code" : "85319-2",
+        "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:5f31f765-a82e-44ab-8c30-017992c1d060",
+    "timestamp" : "2019-03-28T14:03:33-04:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "18474-7",
+      "display" : "HER2 Ag [Presence] in Tissue by Immune stain"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85319-2",
+      "display" : "HER2 [Presence] in Breast cancer specimen by Immune stain"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6111-4",
+        "display" : "0"
+      },
+      {
+        "code" : "LA11841-6",
+        "display" : "1+"
+      },
+      {
+        "code" : "LA11842-4",
+        "display" : "2+"
+      },
+      {
+        "code" : "LA11843-2",
+        "display" : "3+"
+      },
+      {
+        "code" : "LA11884-6",
+        "display" : "Indeterminate"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:dece6bb1-916b-464d-93c2-f433921e8437",
+    "timestamp" : "2019-03-28T14:03:33-04:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA6111-4",
+      "display" : "0"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA11841-6",
+      "display" : "1+"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA11842-4",
+      "display" : "2+"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA11843-2",
+      "display" : "3+"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA11884-6",
+      "display" : "Indeterminate"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "16113-3",
+        "display" : "Progesterone receptor [Interpretation] in TissueProgesterone receptor [Interpretation] in Tissue"
+      },
+      {
+        "code" : "40557-1",
+        "display" : "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
+      },
+      {
+        "code" : "85339-0",
+        "display" : "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:2d628e47-a65a-4938-960d-e733e2024b69",
+    "timestamp" : "2019-03-28T14:03:37-04:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "16113-3",
+      "display" : "Progesterone receptor [Interpretation] in TissueProgesterone receptor [Interpretation] in Tissue"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "40557-1",
+      "display" : "Progesterone receptor Ag [Presence] in Tissue by Immune stainProgesterone receptor Ag [Presence] in Tissue by Immune stain"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85339-0",
+      "display" : "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------
